@@ -1,14 +1,17 @@
 import * as vscode from 'vscode';
 
 // this method is called when vs code is activated
-export async function displayUnderline(context: vscode.ExtensionContext, map: Map<string, string>) {
+export async function displayUnderline(context: vscode.ExtensionContext, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
 
 	console.log('decorator sample is activated');
 
 	let timeout: NodeJS.Timer | undefined = undefined;
 
 	const AzureRMDecorationType = vscode.window.createTextEditorDecorationType({
-		textDecoration: 'green wavy underline'
+		textDecoration: 'wavy underline green',
+		overviewRulerColor: new vscode.ThemeColor('editorWarning.foreground'),
+		borderColor: new vscode.ThemeColor('editorWarning.foreground'),
+		rangeBehavior: vscode.DecorationRangeBehavior.OpenOpen
 	});
 
 	let activeEditor = vscode.window.activeTextEditor;
@@ -23,7 +26,7 @@ export async function displayUnderline(context: vscode.ExtensionContext, map: Ma
 		
 		let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
 		while ((match = re.exec(text))) {
-			if (map.has(match.toString())) {
+			if (sourceCmdlets.has(match.toString())) {
 				const startPos = activeEditor.document.positionAt(match.index);
 				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				const decoration = { range: new vscode.Range(startPos, endPos), hoverMessage: 'AzureRM' };

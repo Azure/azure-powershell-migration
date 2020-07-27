@@ -1,0 +1,3354 @@
+[
+    {
+        "Command":  "Add-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificatePolicy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "CertificateVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureKeyVaultCertificateOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultCertificateOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "FilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateString",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateCollection",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureKeyVaultCertificateContact",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "CertificateVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncludeVersions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludePending",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultCertificateContact",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultCertificateIssuer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "IssuerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureKeyVaultCertificatePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "IssuerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DnsName",
+                               "Aliases":  [
+                                               "DnsNames"
+                                           ]
+                           },
+                           {
+                               "Name":  "RenewAtNumberOfDaysBeforeExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RenewAtPercentageLifetime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecretContentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReuseKeyOnRenewal",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyUsage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ekus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ValidityInMonths",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAtNumberOfDaysBeforeExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAtPercentageLifetime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyNotExportable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultCertificateContact",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultCertificateIssuer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "IssuerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultCertificateOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultCertificateIssuer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "IssuerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "IssuerProvider",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OrganizationDetails",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Issuer"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultCertificatePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "CertificatePolicy"
+                                           ]
+                           },
+                           {
+                               "Name":  "RenewAtNumberOfDaysBeforeExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RenewAtPercentageLifetime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecretContentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReuseKeyOnRenewal",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DnsName",
+                               "Aliases":  [
+                                               "DnsNames"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyUsage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ekus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ValidityInMonths",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IssuerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAtNumberOfDaysBeforeExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAtPercentageLifetime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyNotExportable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateTransparency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmKeyVault",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmKeyVault",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "VaultName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForTemplateDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDiskEncryption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableSoftDelete",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnablePurgeProtection",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmKeyVault",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureRmKeyVaultRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmKeyVaultAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServicePrincipalName",
+                               "Aliases":  [
+                                               "SPN"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserPrincipalName",
+                               "Aliases":  [
+                                               "UPN"
+                                           ]
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForTemplateDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDiskEncryption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmKeyVaultAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServicePrincipalName",
+                               "Aliases":  [
+                                               "SPN"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserPrincipalName",
+                               "Aliases":  [
+                                               "UPN"
+                                           ]
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PermissionsToKeys",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PermissionsToSecrets",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PermissionsToCertificates",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PermissionsToStorage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForTemplateDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnabledForDiskEncryption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BypassObjectIdValidation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Backup-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Key"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "KeyVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncludeVersions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "SecretVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncludeVersions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureKeyVaultKeyRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureKeyVaultSecretRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyFilePassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Destination",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyOps",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "Size",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "KeyVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyOps",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecretValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "SecretVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultCertificatePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureKeyVaultCertificateAdministratorDetails",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "FirstName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LastName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PhoneNumber",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureKeyVaultCertificateOrganizationDetails",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AdministratorDetails",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Backup-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Secret"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureKeyVaultSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccountResourceId",
+                               "Aliases":  [
+                                               "StorageAccountResourceId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ActiveKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableAutoRegenerateKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegenerationPeriod",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ActiveKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoRegenerateKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegenerationPeriod",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureKeyVaultManagedStorageAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureKeyVaultManagedStorageSasDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SasDefinitionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InRemovedState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultManagedStorageSasDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SasDefinitionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "TemplateUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SasType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Disable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "ValidityPeriod",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureKeyVaultManagedStorageSasDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SasDefinitionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureKeyVaultCertificateRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Backup-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Certificate"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureKeyVaultCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Backup-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "StorageAccount"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureKeyVaultManagedStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureKeyVaultManagedStorageSasDefinitionRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SasDefinitionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Undo-AzureKeyVaultManagedStorageAccountRemoval",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmKeyVaultNetworkRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IpAddressRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmKeyVaultNetworkRuleSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultAction",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Bypass",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IpAddressRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmKeyVaultNetworkRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IpAddressRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "KeyVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyOps",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultSecretAttribute",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SecretName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "SecretVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultKeyAttribute",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "KeyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "KeyVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expires",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyOps",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureKeyVaultCertificateAttribute",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.KeyVault",
+        "Version":  "5.2.1",
+        "Parameters":  [
+                           {
+                               "Name":  "VaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CertificateName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "CertificateVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "Enable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

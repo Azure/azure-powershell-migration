@@ -1,0 +1,2223 @@
+[
+    {
+        "Command":  "Get-AzureRmAppServicePlan",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAppServicePlan",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "AdminSiteName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NumberofWorkers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WorkerSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PerSiteScaling",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAppServicePlan",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NumberofWorkers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WorkerSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PerSiteScaling",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HyperV",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAppServicePlan",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSlotConfigName",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSlotMetrics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Metrics",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Granularity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InstanceDetails",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSlotPublishingProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Format",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeDisasterRecoveryEndpoints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceWebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreSourceControl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreCustomHostNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppSettingsOverrides",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerImageName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUser",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableContainerContinuousDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Reset-AzureRmWebAppSlotPublishingProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restart-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultDocuments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NetFrameworkVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PhpVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequestTracingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpLoggingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedErrorLoggingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppSettings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionStrings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HandlerMappings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ManagedPipelineMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebSocketsEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Use32BitWorkerProcess",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoSwapSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NumberOfWorkers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerImageName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUser",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableContainerContinuousDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpsOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmWebAppSlotConfigName",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "AppSettingNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionStringNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RemoveAllAppSettingNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RemoveAllConnectionStringNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Switch-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "SourceSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SwapWithPreviewAction",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PreserveVnet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebAppDatabaseBackupSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionString",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionStringName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureRmWebAppBackup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Databases",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreConflictingHostNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BlobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAppServicePlanMetrics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Metrics",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Granularity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InstanceDetails",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSSLBinding",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebAppName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebAppSSLBinding",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebAppName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmWebAppSSLBinding",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeleteCertificate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebAppName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Edit-AzureRmWebAppBackupConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "FrequencyInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FrequencyUnit",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RetentionPeriodInDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeepAtLeastOneBackup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Databases",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppBackup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "BackupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppBackupConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppBackupList",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppMetrics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Metrics",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Granularity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InstanceDetails",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppPublishingProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Format",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeDisasterRecoveryEndpoints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebAppBackup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "BackupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Databases",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebAppName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceWebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  [
+                                               "TrafficManagerProfileName",
+                                               "TrafficManagerProfileId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContainerImageName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUser",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableContainerContinuousDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreSourceControl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreCustomHostNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppSettingsOverrides",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AseResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeSourceWebAppSlots",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GitRepositoryPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmWebAppBackup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "BackupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Reset-AzureRmWebAppPublishingProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restart-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "AppServicePlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultDocuments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NetFrameworkVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PhpVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequestTracingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpLoggingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedErrorLoggingEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AppSettings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionStrings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HandlerMappings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ManagedPipelineMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebSocketsEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Use32BitWorkerProcess",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoSwapSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerImageName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryUser",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerRegistryPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableContainerContinuousDeployment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HostNames",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NumberOfWorkers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpsOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppSnapshot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureRmWebAppSnapshot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "RecoverConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDeletedWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureRmDeletedWebApp",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetSlot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetAppServicePlanName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RestoreContentOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmWebAppContainerContinuousDeploymentUrl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "SlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enter-AzureRmWebAppContainerPSSession",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmWebAppContainerPSSession",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "SlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Swap-AzureRmWebAppSlot",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Websites",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "SourceSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationSlotName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SwapWithPreviewAction",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PreserveVnet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebApp",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

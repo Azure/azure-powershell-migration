@@ -1,0 +1,626 @@
+[
+    {
+        "Command":  "Get-AzureRmApplicationInsights",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Full",
+                               "Aliases":  [
+                                               "IncludeDailyCap",
+                                               "IncludeDailyCapStatus",
+                                               "IncludePricingPlan"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApplicationInsights",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Kind",
+                               "Aliases":  [
+                                               "ApplicationKind"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApplicationInsights",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApplicationInsightsPricingPlan",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PricingPlan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DailyCapGB",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableNotificationWhenHitCap",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApplicationInsightsDailyCap",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DailyCapGB",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableNotificationWhenHitCap",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApplicationInsightsContinuousExport",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ExportId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApplicationInsightsContinuousExport",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ExportId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DocumentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageLocation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageSASUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApplicationInsightsContinuousExport",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DocumentType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageLocation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageSASUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApplicationInsightsContinuousExport",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ExportId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApplicationInsightsApiKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ApiKeyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApplicationInsightsApiKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Permissions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApplicationInsightsApiKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApplicationInsights",
+        "Version":  "0.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ApplicationInsightsComponent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ApplicationInsightsComponentName",
+                                               "ComponentName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ApiKeyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

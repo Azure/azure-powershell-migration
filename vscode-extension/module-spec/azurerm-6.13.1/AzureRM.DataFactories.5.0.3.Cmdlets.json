@@ -1,0 +1,1347 @@
+[
+    {
+        "Command":  "Remove-AzureRmDataFactory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "DataFactoryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryRun",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatasetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactorySlice",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "EndDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatasetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Save-AzureRmDataFactoryLog",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DownloadLogs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Output",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataFactorySliceStatus",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "EndDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UpdateType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatasetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryEncryptValue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GatewayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NonCredentialValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthenticationType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Server",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Database",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryGateway",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryGateway",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryGatewayKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GatewayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryGatewayAuthkey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "DataFactory"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GatewayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryGatewayAuthkey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "DataFactory"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GatewayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataFactoryGateway",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataFactoryGateway",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataFactoryHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "HubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryLinkedService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryActivityWindow",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatasetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ActivityName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WindowState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WindowSubstate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OrderBy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WindowStart",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WindowEnd",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunStart",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunEnd",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Top",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryLinkedService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataFactoryLinkedService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "LinkedServiceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataFactoryPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "PipelineName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Resume-AzureRmDataFactoryPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "PipelineName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataFactoryPipelineActivePeriod",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "PipelineName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndDateTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoResolve",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForceRecalculate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Suspend-AzureRmDataFactoryPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "PipelineName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataFactoryDataset",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataFactoryDataset",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataFactoryDataset",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataFactories",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DataFactoryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "DatasetName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]
