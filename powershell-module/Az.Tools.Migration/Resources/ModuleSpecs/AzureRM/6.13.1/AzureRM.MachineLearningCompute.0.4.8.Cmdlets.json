@@ -1,0 +1,359 @@
+[
+    {
+        "Command":  "Get-AzureRmMlOpCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmMlOpClusterKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmMlOpClusterSystemServicesUpdateAvailability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmMlOpClusterSystemService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmMlOpCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OrchestratorType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MasterCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AgentCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AgentVmSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GlobalServiceConfigurationETag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslCertificate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslCName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureContainerRegistry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "GlobalServiceConfigurationAdditionalProperties",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmMlOpCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeAllResources",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmMlOpCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.MachineLearningCompute",
+        "Version":  "0.4.8",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Cluster"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AgentCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslCertificate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SslCName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

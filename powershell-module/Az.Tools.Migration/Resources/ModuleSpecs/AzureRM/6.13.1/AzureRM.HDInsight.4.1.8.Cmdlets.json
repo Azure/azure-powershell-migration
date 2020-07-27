@@ -1,0 +1,1661 @@
+[
+    {
+        "Command":  "Get-AzureRmHDInsightJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NumOfJobs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightSqoopJobDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Command",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LibDir",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Wait-AzureRmHDInsightJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeoutInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WaitIntervalInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightStreamingMapReduceJobDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Arguments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CommandEnvironment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Defines",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Mapper",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OutputPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Reducer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightMapReduceJobDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Arguments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClassName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Defines",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JarFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LibJars",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightPigJobDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Arguments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Query",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightHiveJobDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Arguments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Defines",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Query",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunAsFileJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightJobOutput",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayOutputType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Invoke-AzureRmHDInsightHiveJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Arguments",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Files",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StatusFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Defines",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Query",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunAsFileJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Use-AzureRmHDInsightCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmHDInsightJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmHDInsightJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobDefinition",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  [
+                                               "ClusterCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightComponentVersion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComponentName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComponentVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightSecurityProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Domain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DomainUserCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OrganizationalUnitDN",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LdapsUrls",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterUsersGroupDNs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmHDInsightDefaultStorage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightStorage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightScriptAction",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightMetastore",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetastoreType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SqlAzureServerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightConfigValues",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Core",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HiveSite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HiveEnv",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OozieSite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OozieEnv",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebHCat",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HBaseSite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HBaseEnv",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Storm",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Yarn",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MapRed",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tez",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Hdfs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RServer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SparkDefaults",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SparkThriftConf",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Spark2Defaults",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Spark2ThriftConf",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightProperties",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Revoke-AzureRmHDInsightRdpServicesAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Revoke-AzureRmHDInsightHttpServicesAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Grant-AzureRmHDInsightRdpServicesAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RdpCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RdpAccessExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Grant-AzureRmHDInsightHttpServicesAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightClusterConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultStorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OozieMetastore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HiveMetastore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HeadNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WorkerNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EdgeNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZookeeperNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFileContents",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AadTenantId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmHDInsightCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmHDInsightClusterSize",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetInstanceCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightPersistedScriptAction",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightScriptActionHistory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptExecutionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmHDInsightPersistedScriptAction",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmHDInsightPersistedScriptAction",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptExecutionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Submit-AzureRmHDInsightScriptAction",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NodeTypes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PersistOnSuccess",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmHDInsightCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterSizeInNodes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageAccountType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OozieMetastore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HiveMetastore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AdditionalStorageAccounts",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Configurations",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptActions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultStorageRootPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HeadNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WorkerNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EdgeNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZookeeperNodeSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComponentVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubnetName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OSType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SshCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SshPublicKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RdpCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RdpAccessExpiry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFileContents",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AadTenantId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecurityProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisksPerWorkerNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmHDInsightClusterIdentity",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Config",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFileContents",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AadTenantId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmHDInsightOperationsManagementSuite",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "WorkspaceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PrimaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmHDInsightOperationsManagementSuite",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightOperationsManagementSuite",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmHDInsightOMS",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "WorkspaceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PrimaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmHDInsightOMS",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmHDInsightOMS",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.HDInsight",
+        "Version":  "4.1.8",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]
