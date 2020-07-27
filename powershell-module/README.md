@@ -31,7 +31,7 @@ This can optionally be run for a single file by specifying the **-FilePath** par
 
 ``` powershell
 # find AzureRM references
-$references = Find-AzureRmCommandReferences -DirectoryPath 'C:\source\my-project' -AzureRmModuleVersion 6.13.1
+$references = Find-AzUpgradeCommandReference -DirectoryPath "C:\source\my-project" -AzureRmVersion "6.13.1"
 
 # print out the references to the console
 $references.Items | Format-List
@@ -45,7 +45,7 @@ Run this step to generate an upgrade plan for moving the AzureRM references in y
 
 ``` powershell
 # generate the plan
-$plan = New-AzUpgradeModulePlan -AzureRmCmdReferences $references -AzModuleVersion 4.2.0
+$plan = New-AzUpgradeModulePlan -AzureRmCmdReference $references -AzModuleVersion 4.4.0
 
 # print out the upgrade steps to the console
 $plan.UpgradeSteps | Format-List
