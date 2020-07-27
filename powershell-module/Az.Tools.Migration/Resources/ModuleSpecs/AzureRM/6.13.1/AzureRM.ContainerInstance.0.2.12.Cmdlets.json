@@ -1,0 +1,222 @@
+[
+    {
+        "Command":  "New-AzureRmContainerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerInstance",
+        "Version":  "0.2.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Image",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureFileVolumeShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureFileVolumeAccountCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureFileVolumeMountPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OsType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RestartPolicy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Cpu",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MemoryInGB",
+                               "Aliases":  [
+                                               "Memory"
+                                           ]
+                           },
+                           {
+                               "Name":  "IpAddressType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DnsNameLabel",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Command",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnvironmentVariable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryServerDomain",
+                               "Aliases":  [
+                                               "RegistryServer"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerInstance",
+        "Version":  "0.2.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmContainerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerInstance",
+        "Version":  "0.2.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerInstanceLog",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerInstance",
+        "Version":  "0.2.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputContainerGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tail",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

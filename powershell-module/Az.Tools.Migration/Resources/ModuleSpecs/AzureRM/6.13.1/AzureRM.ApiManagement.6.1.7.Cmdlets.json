@@ -1,0 +1,4278 @@
+[
+    {
+        "Command":  "Add-AzureRmApiManagementRegion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiManagement",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementSsoToken",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementHostnameConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "CertificateThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Hostname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementCustomHostnameConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Hostname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HostnameType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HostNameCertificateInformation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultSslBinding",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NegotiateClientCertificate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementSystemCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "StoreName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementRegion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementVirtualNetwork",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubnetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementRegion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiManagement",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementHostnames",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiManagement",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PortalHostnameConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProxyHostnameConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmApiManagementDeployment",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiManagement",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VpnType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AdditionalRegions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmApiManagementRegion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiManagement",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmApiManagementHostnameCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HostnameType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Backup-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetContainerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetBlobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Organization",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AdminEmail",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VpnType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AdditionalRegions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomHostnameConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SystemCertificateConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restore-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceContainerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceBlobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmApiManagementApiToProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmApiManagementProductToGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmApiManagementUserToGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Export-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SpecificationFormat",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SaveAs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementApiRelease",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReleaseId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementApiRevision",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementApiVersionSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiVersionSetId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementAuthorizationServer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementLogger",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoggerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementOpenIdConnectProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OpenIdConnectProviderId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Format",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SaveAs",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Title",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementProperty",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PropertyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementTenantSyncState",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FirstName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LastName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Email",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementUserSsoUrl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementTenantAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementTenantGitAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SpecificationFormat",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SpecificationPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SpecificationUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WsdlServiceName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WsdlEndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocols",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationScope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyHeaderName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyQueryParamName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductIds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementApiRevision",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementApiRelease",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReleaseId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Note",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementApiVersionSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiVersionSetId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Scheme",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HeaderName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementAuthorizationServer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientRegistrationPageUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationEndpointUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TokenEndpointUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRequestMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GrantTypes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientAuthenticationMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TokenBodyParameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SupportState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultScope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccessTokenSendingMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceOwnerUsername",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceOwnerPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxBytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementContext",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExternalId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementLogger",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoggerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionString",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InstrumentationKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsBuffered",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementOpenIdConnectProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OpenIdConnectProviderId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetadataEndpointUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Method",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UrlTemplate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TemplateParameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Request",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Responses",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Title",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LegalTerms",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionRequired",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApprovalRequired",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionsLimit",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PrimaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecondaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementBackendServiceFabric",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ManagementEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientCertificateThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxPartitionResolutionRetry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerX509Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerCertificateThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FirstName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LastName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Email",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Note",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementProperty",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PropertyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Publish-AzureRmApiManagementTenantGitConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Branch",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ValidateOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementApiRelease",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReleaseId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementApiRevision",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementApiVersionSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiVersionSetId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementApiFromProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementAuthorizationServer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementLogger",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoggerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementOpenIdConnectProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OpenIdConnectProviderId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeleteSubscriptions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementProductFromGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementProperty",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PropertyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeleteSubscriptions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementUserFromGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Save-AzureRmApiManagementTenantGitConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Branch",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagement",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementApi",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocols",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationScope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyHeaderName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyQueryParamName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmApiManagementApiRelease",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReleaseId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Note",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementApiRevision",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocols",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationScope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyHeaderName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionKeyQueryParamName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementApiVersionSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiVersionSetId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Scheme",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HeaderName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementAuthorizationServer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientRegistrationPageUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationEndpointUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TokenEndpointUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRequestMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GrantTypes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientAuthenticationMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TokenBodyParameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SupportState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultScope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccessTokenSendingMethods",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceOwnerUsername",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceOwnerPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxBytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PfxPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementLogger",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoggerId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionString",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InstrumentationKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsBuffered",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementOpenIdConnectProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OpenIdConnectProviderId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetadataEndpointUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Method",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UrlTemplate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TemplateParameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Request",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Responses",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Format",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApiRevision",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PolicyFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PolicyUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementProduct",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProductId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Title",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LegalTerms",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionRequired",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApprovalRequired",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionsLimit",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementProperty",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PropertyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubscriptionId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PrimaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecondaryKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiresOn",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StateComment",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FirstName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LastName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Email",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Note",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementTenantAccess",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Enabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementIdentityProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementIdentityProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowedTenants",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementIdentityProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientSecret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowedTenants",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementIdentityProvider",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmApiManagementBackend",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BackendId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementBackend",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BackendId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Url",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Title",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkipCertificateChainValidation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkipCertificateNameValidation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Proxy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceFabricCluster",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementBackendCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "CertificateThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Query",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Header",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationHeaderScheme",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationHeaderParameter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmApiManagementBackendProxy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Url",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProxyCredential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmApiManagementBackend",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BackendId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Url",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Title",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkipCertificateChainValidation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkipCertificateNameValidation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Proxy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceFabricCluster",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmApiManagementBackend",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ApiManagement",
+        "Version":  "6.1.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BackendId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

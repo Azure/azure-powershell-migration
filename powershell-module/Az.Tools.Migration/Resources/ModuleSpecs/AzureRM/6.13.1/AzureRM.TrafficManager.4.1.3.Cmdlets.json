@@ -1,0 +1,902 @@
+[
+    {
+        "Command":  "Add-AzureRmTrafficManagerCustomHeaderToEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerCustomHeaderFromEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmTrafficManagerCustomHeaderToProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerCustomHeaderFromProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmTrafficManagerEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Target",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Weight",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointLocation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MinChildEndpoints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GeoMapping",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubnetMapping",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomHeader",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerEndpointConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmTrafficManagerEndpointConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Target",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Weight",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointLocation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MinChildEndpoints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GeoMapping",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubnetMapping",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomHeader",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmTrafficManagerExpectedStatusCodeRange",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Min",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Max",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerExpectedStatusCodeRange",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Min",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmTrafficManagerIpAddressRange",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "First",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Last",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Scope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerIpAddressRange",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "First",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "TrafficManagerProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmTrafficManagerProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.TrafficManager",
+        "Version":  "4.1.3",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RelativeDnsName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ttl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TrafficRoutingMethod",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MonitorProtocol",
+                               "Aliases":  [
+                                               "ProtocolForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MonitorPort",
+                               "Aliases":  [
+                                               "PortForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MonitorPath",
+                               "Aliases":  [
+                                               "PathForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MonitorIntervalInSeconds",
+                               "Aliases":  [
+                                               "IntervalInSecondsForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MonitorTimeoutInSeconds",
+                               "Aliases":  [
+                                               "TimeoutInSecondsForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MonitorToleratedNumberOfFailures",
+                               "Aliases":  [
+                                               "ToleratedNumberOfFailuresForMonitor"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxReturn",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "CustomHeader",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpectedStatusCodeRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

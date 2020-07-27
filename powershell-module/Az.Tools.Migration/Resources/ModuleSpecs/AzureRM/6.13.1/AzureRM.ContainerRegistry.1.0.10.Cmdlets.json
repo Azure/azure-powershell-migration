@@ -1,0 +1,882 @@
+[
+    {
+        "Command":  "New-AzureRmContainerRegistry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  [
+                                               "ContainerRegistrySku",
+                                               "RegistrySku"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableAdminUser",
+                               "Aliases":  [
+                                               "EnableAdmin"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerRegistry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncludeDetail",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmContainerRegistry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnableAdminUser",
+                               "Aliases":  [
+                                               "EnableAdmin"
+                                           ]
+                           },
+                           {
+                               "Name":  "DisableAdminUser",
+                               "Aliases":  [
+                                               "DisableAdmin"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  [
+                                               "ContainerRegistrySku",
+                                               "RegistrySku"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmContainerRegistry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerRegistryCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmContainerRegistryCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PasswordName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmContainerRegistryNameAvailability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ContainerRegistryName",
+                                               "RegistryName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerRegistryReplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ReplicationName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmContainerRegistryReplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  [
+                                               "ReplicationLocation"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ReplicationName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmContainerRegistryReplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ReplicationName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Replicatoin",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmContainerRegistryWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  [
+                                               "WebhookUri"
+                                           ]
+                           },
+                           {
+                               "Name":  "Action",
+                               "Aliases":  [
+                                               "WebhookActions"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Header",
+                               "Aliases":  [
+                                               "WebhookHeaders"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  [
+                                               "WebhookStatus"
+                                           ]
+                           },
+                           {
+                               "Name":  "Scope",
+                               "Aliases":  [
+                                               "WebhookScope"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  [
+                                               "WebhookLocation"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerRegistryWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Registry",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmContainerRegistryWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  [
+                                               "WebhookUri"
+                                           ]
+                           },
+                           {
+                               "Name":  "Action",
+                               "Aliases":  [
+                                               "WebhookActions"
+                                           ]
+                           },
+                           {
+                               "Name":  "Webhook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Header",
+                               "Aliases":  [
+                                               "WebhookHeaders"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  [
+                                               "WebhookStatus"
+                                           ]
+                           },
+                           {
+                               "Name":  "Scope",
+                               "Aliases":  [
+                                               "WebhookScope"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmContainerRegistryWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Webhook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmContainerRegistryWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Webhook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmContainerRegistryWebhookEvent",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ContainerRegistry",
+        "Version":  "1.0.10",
+        "Parameters":  [
+                           {
+                               "Name":  "WebhookName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistryName",
+                               "Aliases":  [
+                                               "ContainerRegistryName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Webhook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

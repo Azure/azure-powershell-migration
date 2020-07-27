@@ -1,0 +1,1167 @@
+[
+    {
+        "Command":  "Get-AzureRmStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  [
+                                               "StorageAccountType",
+                                               "AccountType",
+                                               "Type"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Kind",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccessTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UseSubDomain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnableHttpsTrafficOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NetworkRuleSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmStorageAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmCurrentStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmStorageAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  [
+                                               "StorageAccountType",
+                                               "AccountType",
+                                               "Type"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccessTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UseSubDomain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnableHttpsTrafficOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageEncryption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyvaultEncryption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AssignIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NetworkRuleSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UpgradeToStorageV2",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageAccountNameAvailability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageUsage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmStorageAccountNetworkRuleSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Bypass",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultAction",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageAccountNetworkRuleSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmStorageAccountNetworkRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "IPRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkResourceId",
+                               "Aliases":  [
+                                               "SubnetId",
+                                               "VirtualNetworkId"
+                                           ]
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmStorageAccountNetworkRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "StorageAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "IPRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualNetworkResourceId",
+                               "Aliases":  [
+                                               "SubnetId",
+                                               "VirtualNetworkId"
+                                           ]
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "PublicAccess",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PublicAccess",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmStorageContainerLegalHold",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmStorageContainerLegalHold",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "ContainerName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmStorageContainerImmutabilityPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContainerName",
+                               "Aliases":  [
+                                               "N"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "ImmutabilityPolicy"
+                                           ]
+                           },
+                           {
+                               "Name":  "ImmutabilityPeriod",
+                               "Aliases":  [
+                                               "ImmutabilityPeriodSinceCreationInDays"
+                                           ]
+                           },
+                           {
+                               "Name":  "Etag",
+                               "Aliases":  [
+                                               "IfMatch"
+                                           ]
+                           },
+                           {
+                               "Name":  "ExtendPolicy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmStorageContainerImmutabilityPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContainerName",
+                               "Aliases":  [
+                                               "N"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Etag",
+                               "Aliases":  [
+                                               "IfMatch"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmStorageContainerImmutabilityPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContainerName",
+                               "Aliases":  [
+                                               "N"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Etag",
+                               "Aliases":  [
+                                               "IfMatch"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "ImmutabilityPolicy"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Lock-AzureRmStorageContainerImmutabilityPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Storage",
+        "Version":  "5.2.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContainerName",
+                               "Aliases":  [
+                                               "N"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Etag",
+                               "Aliases":  [
+                                               "IfMatch"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "ImmutabilityPolicy"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]
