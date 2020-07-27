@@ -11,7 +11,7 @@ function New-AzUpgradeModulePlan
         Specifies the AzureRM module version used in your existing PowerShell scripts(s) or modules.
 
     .PARAMETER ToAzVersion
-        Specifies the Az module version to upgrade to.
+        Specifies the Az module version to upgrade to. Currently, only Az version 4.4.0 is supported.
 
     .PARAMETER FilePath
         Specifies the path to a single PowerShell file.
