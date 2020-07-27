@@ -14,9 +14,18 @@ exports.deactivate = exports.activate = void 0;
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require("vscode");
 const multiStepInput_1 = require("./multiStepInput");
+const displayUnderline_1 = require("./displayUnderline");
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
+    const map = new Map();
+    map.set("New-AzureRMResourceGroup", "New-AzResourceGroup");
+    map.set("New-AzureRMAppservicePlan", "New-AzAppservicePlan");
+    map.set("New-AzureRMWebApp", "New-AzWebApp");
+    map.set("New-AzureRMSQLServer", "New-AzSQLServer");
+    map.set("New-AzureRmSqlServerFirewallRule", "New-AzSqlServerFirewallRule");
+    map.set("New-AzureRMSQLDatabase", "New-AzSQLDatabase");
+    map.set("Set-AzureRMWebApp", "Set-AzWebApp");
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "psmigration" is now active!');
@@ -24,9 +33,8 @@ function activate(context) {
     // Now provide the implementation of the command with registerCommand
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('psmigration.psMigration', () => __awaiter(this, void 0, void 0, function* () {
-        let settings = multiStepInput_1.multiStepInput(context);
-        // Display a message box to the user
-        // vscode.window.showInformationMessage('Hello VS Code!');
+        let settings = yield multiStepInput_1.multiStepInput(context);
+        displayUnderline_1.displayUnderline(context, map);
     }));
     context.subscriptions.push(disposable);
 }
