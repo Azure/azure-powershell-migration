@@ -2,38 +2,40 @@ function New-AzUpgradeModulePlan
 {
     <#
     .SYNOPSIS
-        Generates a new upgrade plan for migrating to the Az module.
+        Generates a new upgrade plan for migrating to the Az PowerShell module.
 
     .DESCRIPTION
-        Generates a new upgrade plan for migrating to the Az module. The upgrade plan details the specific file/offset
-        points that require changes move AzureRM commands to Az commands.
+        Generates a new upgrade plan for migrating to the Az PowerShell module. The upgrade plan details the specific file/offset points that require changes when moving from AzureRM commands to Az commands.
 
     .PARAMETER FromAzureRmVersion
-        Specify the AzureRM module version used in your existing PowerShell file(s)/modules.
+        Specifies the AzureRM module version used in your existing PowerShell scripts(s) or modules.
 
     .PARAMETER ToAzVersion
-        Specify the Az module version to upgrade to.
+        Specifies the Az module version to upgrade to. Currently, only Az version 4.4.0 is supported.
 
     .PARAMETER FilePath
-        Specify the path to a single PowerShell file.
+        Specifies the path to a single PowerShell file.
 
     .PARAMETER DirectoryPath
-        Specify the path to the folder where PowerShell scripts or modules reside.
+        Specifies the path to a folder where PowerShell scripts or modules reside.
 
-    .PARAMETER AzureRmCmdReferences
-        Specify the AzureRM command references collection output from the Find-AzUpgradeCommandReference cmdlet.
-
-    .EXAMPLE
-        PS C:\ New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath "C:\scripts\my-azure-script.ps1"
-        Generates a new Az module upgrade plan for the script file 'C:\scripts\my-azure-script.ps1'.
+    .PARAMETER AzureRmCmdReference
+        Specifies the AzureRM command references output from the Find-AzUpgradeCommandReference cmdlet.
 
     .EXAMPLE
-        PS C:\ New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath "C:\scripts"
-        Generates a new Az module upgrade plan for the script/module files under C:\scripts.
+        The following example generates a new Az module upgrade plan for the script file 'C:\Scripts\my-azure-script.ps1'.
+
+        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath 'C:\Scripts\my-azure-script.ps1'
 
     .EXAMPLE
-        PS C:\ Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzureRmVersion "6.13.1" | New-AzUpgradeModulePlan -ToAzVersion 4.4.0
-        Generates a new Az module upgrade plan for the script/module files under C:\scripts.
+        The following example generates a new Az module upgrade plan for the script and module files located under C:\Scripts.
+
+        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts'
+
+    .EXAMPLE
+        The following example generates a new Az module upgrade plan for the script and module files under C:\Scripts.
+
+        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1' | New-AzUpgradeModulePlan -ToAzVersion 4.4.0
     #>
     [CmdletBinding()]
     Param

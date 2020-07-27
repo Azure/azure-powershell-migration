@@ -5,28 +5,29 @@ function Find-AzUpgradeCommandReference
         Searches for AzureRM PowerShell command references in the specified file or folder.
 
     .DESCRIPTION
-        Searches for AzureRM PowerShell command references in the specified file or folder. When reviewing the specified file or folder
-        all of the cmdlets used in the files will be analyzed and compared against known AzureRM PowerShell commands. If commands match a known
+        Searches for AzureRM PowerShell command references in the specified file or folder. When reviewing the specified file or folder, all of the cmdlets used in the files will be analyzed and compared against known AzureRM PowerShell commands. If commands match a known
         AzureRM cmdlet, then output will be returned that shows the position/offset for each usage.
 
         The output of this command can be pipelined into the New-AzUpgradeModulePlan cmdlet to generate a detailed list of required upgrade changes.
 
     .PARAMETER FilePath
-        Specify the path to a single PowerShell file.
+        Specifies the path to a single PowerShell file.
 
     .PARAMETER DirectoryPath
-        Specify the path to the folder where PowerShell scripts or modules reside.
+        Specifies the path to the folder where PowerShell scripts or modules reside.
 
     .PARAMETER AzureRmVersion
-        Specify the AzureRM module version used in your existing PowerShell file(s)/modules.
+        Specifies the AzureRM module version used in your existing PowerShell file(s) or modules.
 
     .EXAMPLE
-        PS C:\> Find-AzUpgradeCommandReference -FilePath "C:\scripts\test.ps1" -AzureRmVersion "6.13.1"
-        Finds AzureRM PowerShell command references in the specified file.
+        The following example finds AzureRM PowerShell command references in the specified file.
+
+        Find-AzUpgradeCommandReference -FilePath 'C:\Scripts\test.ps1' -AzureRmVersion '6.13.1'
 
     .EXAMPLE
-        PS C:\> Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzureRmVersion "6.13.1"
-        Finds AzureRM PowerShell command references in the specified directory and subfolders.
+        The following example finds AzureRM PowerShell command references in the specified directory and subfolders.
+
+        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1'
     #>
     [CmdletBinding()]
     Param
