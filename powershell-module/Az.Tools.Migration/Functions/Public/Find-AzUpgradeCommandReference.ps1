@@ -57,8 +57,8 @@ function Find-AzUpgradeCommandReference
     Process
     {
         # load the command specs
-        Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmModuleVersion"
-        $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmModuleVersion
+        Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmVersion"
+        $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
 
         # synchronous results output instead of async. the reason for this is that
         # downstream commands will need the entire results object to process at once.
