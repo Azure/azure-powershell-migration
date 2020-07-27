@@ -1,0 +1,849 @@
+[
+    {
+        "Command":  "Get-AzureRmNotificationHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubListKeys",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubPNSCredentials",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHubObj",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHubAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SASRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHubKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PolicyKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmNotificationHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmNotificationHubAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmNotificationHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHubObj",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmNotificationHubAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NotificationHub",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SASRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubsNamespaceAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubsNamespaceListKeys",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHubsNamespaceAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SASRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHubsNamespaceKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PolicyKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmNotificationHubsNamespaceAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AuthorizationRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmNotificationHubsNamespaceAuthorizationRules",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SASRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmNotificationHubsNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmNotificationHubsNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmNotificationHubsNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmNotificationHubsNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.NotificationHubs",
+        "Version":  "5.0.3",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Critical",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

@@ -1,0 +1,357 @@
+[
+    {
+        "Command":  "Get-AzureRmCognitiveServicesAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCognitiveServicesAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCognitiveServicesAccountSkus",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "Type",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountType",
+                                               "AccountType",
+                                               "Kind"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCognitiveServicesAccountType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "TypeName",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountTypeName",
+                                               "AccountTypeName",
+                                               "KindName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCognitiveServicesAccountUsage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmCognitiveServicesAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountType",
+                                               "AccountType",
+                                               "Kind"
+                                           ]
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmCognitiveServicesAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmCognitiveServicesAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmCognitiveServicesAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.CognitiveServices",
+        "Version":  "0.9.12",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "CognitiveServicesAccountName",
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

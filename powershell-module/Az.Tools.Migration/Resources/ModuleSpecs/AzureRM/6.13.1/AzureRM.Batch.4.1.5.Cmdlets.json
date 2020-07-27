@@ -1,0 +1,2719 @@
+[
+    {
+        "Command":  "Remove-AzureRmBatchAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchAccountKeys",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmBatchAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoStorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PoolAllocationMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmBatchAccountKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmBatchAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoStorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmBatchApplicationPackage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Format",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ActivateOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchJobStatistics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmBatchApplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmBatchApplicationPackage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchApplicationPackage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchApplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmBatchApplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowUpdates",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmBatchApplication",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowUpdates",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ThumbprintAlgorithm",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ThumbprintAlgorithm",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "FilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RawData",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureBatchCertificateDeletion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ThumbprintAlgorithm",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureBatchComputeNodeScheduling",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableSchedulingOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureBatchComputeNodeScheduling",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchRemoteLoginSettings",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchComputeNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ids",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeallocationOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResizeTimeout",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Reset-AzureBatchComputeNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReimageOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Restart-AzureBatchComputeNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RebootOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchComputeNodeUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchNodeFile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TaskId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Recursive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchNodeFileContent",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TaskId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationStream",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ByteRangeStart",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ByteRangeEnd",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchRemoteDesktopProtocolFile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestinationStream",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchNodeFile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TaskId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Recursive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobSchedule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableJobOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CommonEnvironmentSettings",
+                               "Aliases":  [
+                                               "CommonEnvironmentSetting"
+                                           ]
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Constraints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobManagerTask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobPreparationTask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobReleaseTask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PoolInformation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UsesTaskDependencies",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OnTaskFailure",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OnAllTasksComplete",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Job",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TerminateReason",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobScheduleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobSchedule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expand",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchJobPreparationAndReleaseTaskStatus",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expand",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureBatchAutoScale",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureBatchAutoScale",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoScaleFormula",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoScaleEvaluationInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchPoolStatistics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchPoolUsageMetrics",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchPool",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expand",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchNodeAgentSku",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchPool",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VirtualMachineSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResizeTimeout",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetDedicatedComputeNodes",
+                               "Aliases":  [
+                                               "TargetDedicated"
+                                           ]
+                           },
+                           {
+                               "Name":  "TargetLowPriorityComputeNodes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoScaleEvaluationInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoScaleFormula",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxTasksPerComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TaskSchedulingPolicy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InterComputeNodeCommunicationEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateReferences",
+                               "Aliases":  [
+                                               "CertificateReference"
+                                           ]
+                           },
+                           {
+                               "Name":  "ApplicationPackageReferences",
+                               "Aliases":  [
+                                               "ApplicationPackageReference"
+                                           ]
+                           },
+                           {
+                               "Name":  "ApplicationLicenses",
+                               "Aliases":  [
+                                               "ApplicationLicense"
+                                           ]
+                           },
+                           {
+                               "Name":  "VirtualMachineConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CloudServiceConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NetworkConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchPool",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchPool",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Pool",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchPoolOSVersion",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetOSVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureBatchPoolResize",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetDedicatedComputeNodes",
+                               "Aliases":  [
+                                               "TargetDedicated"
+                                           ]
+                           },
+                           {
+                               "Name":  "TargetLowPriorityComputeNodes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResizeTimeout",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeDeallocationOption",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureBatchPoolResize",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureBatchAutoScale",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoScaleFormula",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchLocationQuotas",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchSubtask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TaskId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Job",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expand",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Job",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CommandLine",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceFiles",
+                               "Aliases":  [
+                                               "ResourceFile"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnvironmentSettings",
+                               "Aliases":  [
+                                               "EnvironmentSetting"
+                                           ]
+                           },
+                           {
+                               "Name":  "AuthenticationTokenSettings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserIdentity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AffinityInformation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Constraints",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MultiInstanceSettings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DependsOn",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ApplicationPackageReferences",
+                               "Aliases":  [
+                                               "ApplicationPackageReference"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tasks",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExitConditions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerSettings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchComputeNodeUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsAdmin",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchComputeNodeUser",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchComputeNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Pool",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Filter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Select",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Expand",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisplayName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Schedule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobSpecification",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureBatchJobSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchTaskCounts",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Job",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureBatchPoolNodeCounts",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Pool",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureBatchComputeNodeServiceLogUpload",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "PoolId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputeNode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContainerUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Reactivate-AzureBatchTask",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Task",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "BatchContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmBatchSubscriptionQuotas",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Batch",
+        "Version":  "4.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]
