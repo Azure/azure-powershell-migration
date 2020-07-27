@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import { MessagePort } from 'worker_threads';
 
 // this method is called when vs code is activated
 export async function displayUnderline(context: vscode.ExtensionContext, map: Map<string, string>) {

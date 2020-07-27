@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { QuickPickItem, window, Disposable, CancellationToken, QuickInputButton, QuickInput, ExtensionContext, QuickInputButtons, Uri } from 'vscode';
+import { QuickPickItem, window, Disposable, QuickInputButton, QuickInput, ExtensionContext, QuickInputButtons, Uri } from 'vscode';
 
 // -------------------------------------------------------
 // Helper code that wraps the API for the multi-step case.
@@ -204,11 +204,11 @@ export async function multiStepInput(context: ExtensionContext) {
 		light: Uri.file(context.asAbsolutePath('resources/light/add.svg')),
 	}, 'setTargetVersion');
 
-	const sourceVersionGroup: QuickPickItem[] = ['AzureVM','Az1.0','Az2.0','Az3.0']
+	const sourceVersionGroup: QuickPickItem[] = ['AzureRM','Az 1.0','Az 2.0','Az 3.0']
 		.map(label => ({ label }));
 
 	
-	const targetVersionGroup: QuickPickItem[] = ['Az1.0','Az2.0','Az3.0','Az4.0']
+	const targetVersionGroup: QuickPickItem[] = ['Az 1.0','Az 2.0','Az 3.0','Az 4.0']
 		.map(label => ({ label }));
 
 	interface State {

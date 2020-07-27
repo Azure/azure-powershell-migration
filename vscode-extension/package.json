@@ -1,23 +1,24 @@
 {
-	"name": "helloworld",
-	"displayName": "helloworld",
+	"name": "azure-powershell-migration",
+	"displayName": "Azure PowerShell Migration",
 	"description": "TBD",
 	"version": "0.0.1",
+	"publisher": "azure-powershell",
 	"engines": {
-		"vscode": "^1.47.0"
+		"vscode": "^1.26.0"
 	},
 	"categories": [
-		"Other"
+		"Azure"
 	],
 	"activationEvents": [
-		"onCommand:psmigration.psMigration"
+		"onCommand:azure-powershell-migration.selectVersion"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "psmigration.psMigration",
-				"title": "psmigration"
+				"title": "Select Azure PowerShell Version",
+				"command": "azure-powershell-migration.selectVersion"
 			}
 		]
 	},
