@@ -1,4 +1,4 @@
-# Original Source Code: https://github.com/Azure/azure-docs-powershell-samples/blob/71fcfc532af8b49361c7b64ade40b36d175c3d20/devtest-lab/add-marketplace-images-to-lab/add-marketplace-images-to-lab.ps1 
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/71fcfc532af8b49361c7b64ade40b36d175c3d20/devtest-lab/add-marketplace-images-to-lab/add-marketplace-images-to-lab.ps1 
 
 param
 (

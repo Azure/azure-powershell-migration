@@ -1,4 +1,4 @@
-#Original Source Code: https://github.com/Azure/azure-docs-powershell-samples/blob/26f8f493b3c83d23365c2d4a1c4be90ecece1dd4/virtual-network/vm-with-two-nics/vm-with-two-nics.ps1
+#Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/26f8f493b3c83d23365c2d4a1c4be90ecece1dd4/virtual-network/vm-with-two-nics/vm-with-two-nics.ps1
 # Variables for common values
 $rgName='MyResourceGroup'
 $location='eastus'

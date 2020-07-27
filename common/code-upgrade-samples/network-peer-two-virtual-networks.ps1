@@ -1,4 +1,4 @@
-#Original Code Source: https://github.com/Azure/azure-docs-powershell-samples/tree/26f8f493b3c83d23365c2d4a1c4be90ecece1dd4/virtual-network/peer-two-virtual-networks
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/tree/26f8f493b3c83d23365c2d4a1c4be90ecece1dd4/virtual-network/peer-two-virtual-networks
 # Variables for common values
 $rgName='MyResourceGroup'
 $location='eastus'

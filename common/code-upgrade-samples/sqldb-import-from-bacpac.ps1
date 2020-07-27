@@ -1,4 +1,4 @@
-# Original Code Source: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/import-from-bacpac/import-from-bacpac.ps1
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/import-from-bacpac/import-from-bacpac.ps1
 # Login-AzureRmAccount
 # Set the resource group name and location for your server
 $resourcegroupname = "myResourceGroup-$(Get-Random)"

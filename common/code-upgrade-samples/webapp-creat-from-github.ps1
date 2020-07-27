@@ -1,4 +1,4 @@
-# Original Source Code: https://github.com/Azure/azure-docs-powershell-samples/blob/77c8876ed0d79ba5538e3e583fe03aa514ae7661/app-service/deploy-github/deploy-github.ps1
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/77c8876ed0d79ba5538e3e583fe03aa514ae7661/app-service/deploy-github/deploy-github.ps1
 # Replace the following URL with a public GitHub repo URL
 $gitrepo="https://github.com/Azure-Samples/app-service-web-dotnet-get-started.git"
 $webappname="mywebapp$(Get-Random)"

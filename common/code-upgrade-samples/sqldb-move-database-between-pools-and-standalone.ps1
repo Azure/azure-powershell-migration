@@ -1,4 +1,4 @@
-#Original Source Code: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/move-database-between-pools-and-standalone/move-database-between-pools-and-standalone.ps1
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/move-database-between-pools-and-standalone/move-database-between-pools-and-standalone.ps1
 # Login-AzureRmAccount
 # Set the resource group name and location for your server
 $resourcegroupname = "myResourceGroup-$(Get-Random)"

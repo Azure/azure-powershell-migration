@@ -1,4 +1,4 @@
-# Original Code Source: https://github.com/Azure/azure-docs-powershell-samples/blob/a513b6fceae51aaea1daaa8edd4d6fc66590d172/virtual-machine/create-docker-host/create-docker-host.ps1
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/a513b6fceae51aaea1daaa8edd4d6fc66590d172/virtual-machine/create-docker-host/create-docker-host.ps1
 # Variables for common values
 $resourceGroup = "myResourceGroup"
 $location = "westeurope"

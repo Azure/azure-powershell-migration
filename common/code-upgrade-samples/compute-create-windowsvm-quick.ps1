@@ -1,4 +1,4 @@
-# Original Source Code: https://github.com/Azure/azure-docs-powershell-samples/blob/a513b6fceae51aaea1daaa8edd4d6fc66590d172/virtual-machine/create-vm-detailed/create-windows-vm-quick.ps1
+# Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/a513b6fceae51aaea1daaa8edd4d6fc66590d172/virtual-machine/create-vm-detailed/create-windows-vm-quick.ps1
 # Variables for common values
 $resourceGroup = "myResourceGroup"
 $location = "westeurope"
