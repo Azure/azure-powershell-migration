@@ -1,5 +1,5 @@
-# AzModuleMigration
-AzModuleMigration contains cmdlets to automatically upgrade a PowerShell script or module codebase from AzureRM to Az.
+# Az.Tools.Migration
+Az.Tools.Migration contains cmdlets to automatically upgrade a PowerShell script or module codebase from AzureRM to Az.
 
 # Contents
 * [Description](#description)
@@ -7,7 +7,7 @@ AzModuleMigration contains cmdlets to automatically upgrade a PowerShell script 
 * [Limitations](#limitations)
 
 # Description
-The AzModuleMigration PowerShell module contains cmdlets that can perform the following actions:
+The Az.Tools.Migration PowerShell module contains cmdlets that can perform the following actions:
 
 1. Detect AzureRM cmdlet references in PowerShell script or function files.
 2. Generate an upgrade plan to convert these AzureRM module references to Az module commands.
