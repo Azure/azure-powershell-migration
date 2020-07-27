@@ -64,7 +64,7 @@ function Invoke-AzUpgradeModulePlan
                         $currentFileContents = New-Object -TypeName System.Text.StringBuilder -ArgumentList $fileContents
                     }
 
-                    Invoke-ModuleUpgradeStep -Step $upgradeStep -FileContents $currentFileContents
+                    Invoke-ModuleUpgradeStep -Step $upgradeStep -FileContent $currentFileContents
 
                     # on the final upgrade step? or the next step is a different file?
                     # then write/close the currently in-process file.
@@ -75,13 +75,13 @@ function Invoke-AzUpgradeModulePlan
 
                         Set-Content -Path $currentFile -Value $currentFileContents.ToString()
 
-                        Out-FileBatchResult -Results $fileBatchResults -Success $true -Reason "Completed successfully."
+                        Out-FileBatchResult -ResultBatch $fileBatchResults -Success $true -Reason "Completed successfully."
                         $resetFileBuilder = $true
                     }
                 }
                 catch
                 {
-                    Out-FileBatchResult -Results $fileBatchResults -Success $false -Reason "A general error has occurred: $_"
+                    Out-FileBatchResult -ResultBatch $fileBatchResults -Success $false -Reason "A general error has occurred: $_"
                     $resetFileBuilder = $true
                 }
                 finally

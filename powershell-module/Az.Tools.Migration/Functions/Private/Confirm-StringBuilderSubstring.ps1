@@ -20,7 +20,7 @@ function Confirm-StringBuilderSubstring
         Specify the end offset position.
 
     .EXAMPLE
-        PS C:\ Confirm-StringBuilderSubstring -FileContents $builder -Substring '-test' -StartOffset 23 -EndOffset 28
+        PS C:\ Confirm-StringBuilderSubstring -FileContent $builder -Substring '-test' -StartOffset 23 -EndOffset 28
         Confirms that the substring '-test' exists at the specified offset.
     #>
     [CmdletBinding()]
@@ -31,7 +31,7 @@ function Confirm-StringBuilderSubstring
             HelpMessage='Specify the file contents wrapped in a stringbuilder.')]
         [System.Text.StringBuilder]
         [ValidateNotNull()]
-        $FileContents,
+        $FileContent,
 
         [Parameter(
             Mandatory=$true,
@@ -56,14 +56,14 @@ function Confirm-StringBuilderSubstring
     )
     Process
     {
-        if ($FileContents.Length -lt $StartOffset -or $FileContents.Length -lt $EndOffset)
+        if ($FileContent.Length -lt $StartOffset -or $FileContent.Length -lt $EndOffset)
         {
             throw 'Upgrade step failed: Offset positions are beyond the file range.'
         }
 
         for (([int]$i = $StartOffset), ([int]$j = 0); $i -lt $EndOffset; ($i++), ($j++))
         {
-            if ($FileContents[$i] -ne $Substring[$j])
+            if ($FileContent[$i] -ne $Substring[$j])
             {
                 throw 'Upgrade step failed: Offset positions are unexpected. This file may have already been upgraded or has changed since the upgrade plan was generated.'
             }

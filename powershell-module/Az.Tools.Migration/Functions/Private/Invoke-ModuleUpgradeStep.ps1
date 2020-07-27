@@ -15,7 +15,7 @@ function Invoke-ModuleUpgradeStep
         Specify the file contents wrapped in a stringbuilder.
 
     .EXAMPLE
-        PS C:\ Invoke-ModuleUpgradeStep -Step $upgradeStep -FileContents $contentsBuilder
+        PS C:\ Invoke-ModuleUpgradeStep -Step $upgradeStep -FileContent $contentsBuilder
         Performs an in-line text update for the specified module upgrade step.
     #>
     [CmdletBinding()]
@@ -33,7 +33,7 @@ function Invoke-ModuleUpgradeStep
             HelpMessage='Specify the file contents wrapped in a stringbuilder.')]
         [System.Text.StringBuilder]
         [ValidateNotNull()]
-        $FileContents
+        $FileContent
     )
     Process
     {
@@ -47,12 +47,12 @@ function Invoke-ModuleUpgradeStep
 
                 # safety check
                 # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContents $FileContents -Substring $Step.OriginalCmdletName `
+                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.OriginalCmdletName `
                     -StartOffset $Step.StartOffset -EndOffset $Step.EndOffset
 
                 # replacement code
-                $null = $FileContents.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
-                $null = $FileContents.Insert($Step.StartOffset, $Step.ReplacementCmdletName);
+                $null = $FileContent.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
+                $null = $FileContent.Insert($Step.StartOffset, $Step.ReplacementCmdletName);
             }
             "CmdletParameter"
             {
@@ -62,12 +62,12 @@ function Invoke-ModuleUpgradeStep
 
                 # safety check
                 # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContents $FileContents -Substring ("-{0}" -f $Step.OriginalParameterName) `
+                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring ("-{0}" -f $Step.OriginalParameterName) `
                     -StartOffset $Step.StartOffset -EndOffset $Step.EndOffset
 
                 # replacement code
-                $null = $FileContents.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
-                $null = $FileContents.Insert($Step.StartOffset, ("-{0}" -f $Step.ReplacementParameterName));
+                $null = $FileContent.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
+                $null = $FileContent.Insert($Step.StartOffset, ("-{0}" -f $Step.ReplacementParameterName));
             }
             default
             {

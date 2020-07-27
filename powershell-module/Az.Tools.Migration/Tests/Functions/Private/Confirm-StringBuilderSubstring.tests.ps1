@@ -11,7 +11,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $scriptBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
             # act / assert
-            { Confirm-StringBuilderSubstring -FileContents $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 19 -EndOffset 35 } | Should Not Throw
+            { Confirm-StringBuilderSubstring -FileContent $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 19 -EndOffset 35 } | Should Not Throw
         }
         It 'Should throw if the offset does not match' {
             # arrange
@@ -22,7 +22,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $scriptBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
             # act / assert
-            { Confirm-StringBuilderSubstring -FileContents $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 19 -EndOffset 35 } | Should Throw "Upgrade step failed: Offset positions are unexpected"
+            { Confirm-StringBuilderSubstring -FileContent $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 19 -EndOffset 35 } | Should Throw "Upgrade step failed: Offset positions are unexpected"
         }
         It 'Should throw if the offset extends past the file contents length' {
             # arrange
@@ -33,7 +33,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $scriptBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
             # act / assert
-            { Confirm-StringBuilderSubstring -FileContents $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 1119 -EndOffset 1135 } | Should Throw "Upgrade step failed: Offset positions are beyond"
+            { Confirm-StringBuilderSubstring -FileContent $scriptBuilder -Substring 'Set-AzureRmWebApp' -StartOffset 1119 -EndOffset 1135 } | Should Throw "Upgrade step failed: Offset positions are beyond"
         }
     }
 }

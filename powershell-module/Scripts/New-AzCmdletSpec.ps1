@@ -15,7 +15,7 @@
     Specify the output folder for where the files will be generated.
 
 .EXAMPLE
-    PS C:\ .\New-AzCmdletSpecs.ps1 -AzVersion "4.4.0" -OutputDirectory "$home\desktop\AzCmdletSpec"
+    PS C:\ .\New-AzCmdletSpec.ps1 -AzVersion "4.4.0" -OutputDirectory "$home\desktop\AzCmdletSpec"
     Generates a new Az module 4.4.0 cmdlet spec in the user's desktop folder.
 #>
 [CmdletBinding()]

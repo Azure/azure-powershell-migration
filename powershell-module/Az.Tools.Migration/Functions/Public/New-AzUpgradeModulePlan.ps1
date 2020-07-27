@@ -28,7 +28,7 @@ function New-AzUpgradeModulePlan
             ValueFromPipeline=$true,
             HelpMessage='Specify the AzureRM command references collection output from the Find-AzureRmCommandReferences cmdlet.')]
         [CommandReferenceCollection]
-        $AzureRmCmdReferences,
+        $AzureRmCmdReference,
 
         [Parameter(
             Mandatory=$true,
@@ -39,14 +39,14 @@ function New-AzUpgradeModulePlan
     )
     Process
     {
-        if ($AzureRmCmdReferences -eq $null -or $AzureRmCmdReferences.Items.Count -eq 0)
+        if ($AzureRmCmdReference -eq $null -or $AzureRmCmdReference.Items.Count -eq 0)
         {
             Write-Verbose -Message "No AzureRm command references were provided. No upgrade plan will be generated."
             return
         }
         else
         {
-            Write-Verbose -Message "$($AzureRmCmdReferences.Items.Count) AzureRm command reference(s) were provided. Upgrade plan will be generated."
+            Write-Verbose -Message "$($AzureRmCmdReference.Items.Count) AzureRm command reference(s) were provided. Upgrade plan will be generated."
         }
 
         Write-Verbose -Message "Importing cmdlet spec for Az $AzModuleVersion"
@@ -61,7 +61,7 @@ function New-AzUpgradeModulePlan
         # downstream commands will need the entire results object to process at once.
         $upgradePlan = New-Object -TypeName UpgradePlan
 
-        foreach ($rmCmdlet in $AzureRmCmdReferences.Items)
+        foreach ($rmCmdlet in $AzureRmCmdReference.Items)
         {
             Write-Verbose -Message "Checking upgrade potential for instance of $($rmCmdlet.CommandName)"
 

@@ -26,7 +26,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step.ReplacementCmdletName = "Set-AzWebApp"
 
             # act
-            Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder
+            Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
 
             # assert
             $scriptBuilder.ToString() | Should Be $expectedBuilder.ToString()
@@ -58,7 +58,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step.ReplacementParameterName = "AppName"
 
             # act
-            Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder
+            Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
 
             # assert
             $scriptBuilder.ToString() | Should Be $expectedBuilder.ToString()
@@ -81,10 +81,10 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step.ReplacementCmdletName = "Set-AzWebApp"
 
             # act
-            Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder
+            Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
 
             # assert (second attempt should throw since it has already been upgraded)
-            { Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder } | Should Throw "Upgrade step failed: Offset positions"
+            { Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder } | Should Throw "Upgrade step failed: Offset positions"
         }
         It 'Should not update a cmdlet parameter reference if the string offset does not match' {
             # arrange
@@ -107,10 +107,10 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step.ReplacementParameterName = "AppName"
 
             # act
-            Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder
+            Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
 
             # assert (second attempt should throw since it has already been upgraded)
-            { Invoke-ModuleUpgradeStep -Step $step -FileContents $scriptBuilder } | Should Throw "Upgrade step failed: Offset positions"
+            { Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder } | Should Throw "Upgrade step failed: Offset positions"
         }
     }
 }

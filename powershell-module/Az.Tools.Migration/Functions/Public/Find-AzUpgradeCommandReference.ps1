@@ -2,12 +2,12 @@ function Find-AzUpgradeCommandReference
 {
     <#
     .SYNOPSIS
-        Searches for Az PowerShell command references in the specified file or folder.
+        Searches for AzureRM PowerShell command references in the specified file or folder.
 
     .DESCRIPTION
-        Searches for Az PowerShell command references in the specified file or folder. When reviewing the specified file or folder
-        all of the cmdlets used in the files will be analyzed and compared against known Az PowerShell commands. If commands match a known
-        Az cmdlet, then output will be returned that shows the position/offset for each usage.
+        Searches for AzureRM PowerShell command references in the specified file or folder. When reviewing the specified file or folder
+        all of the cmdlets used in the files will be analyzed and compared against known AzureRM PowerShell commands. If commands match a known
+        AzureRM cmdlet, then output will be returned that shows the position/offset for each usage.
 
         The output of this command can be pipelined into the New-AzUpgradeModulePlan cmdlet to generate a detailed list of required upgrade changes.
 
@@ -17,16 +17,16 @@ function Find-AzUpgradeCommandReference
     .PARAMETER DirectoryPath
         Specify the path to the folder where PowerShell scripts or modules reside.
 
-    .PARAMETER AzModuleVersion
-        Specify the Az module major version used in your existing PowerShell file(s)/modules. For example: 1, 2, 3, or 4.
+    .PARAMETER AzureRmVersion
+        Specify the AzureRM module version used in your existing PowerShell file(s)/modules.
 
     .EXAMPLE
-        PS C:\> Find-AzUpgradeCommandReference -FilePath "C:\scripts\test.ps1" -AzModuleVersion 1
-        Finds Az PowerShell (v1.x) command references in the specified file.
+        PS C:\> Find-AzUpgradeCommandReference -FilePath "C:\scripts\test.ps1" -AzureRmVersion "6.13.1"
+        Finds AzureRM PowerShell command references in the specified file.
 
     .EXAMPLE
-        PS C:\> Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzModuleVersion 3
-        Finds Az PowerShell (v3.x) command references in the specified folder (any .ps1 or .psm1 files).
+        PS C:\> Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzureRmVersion "6.13.1"
+        Finds AzureRM PowerShell command references in the specified directory and subfolders.
     #>
     [CmdletBinding()]
     Param
@@ -49,28 +49,20 @@ function Find-AzUpgradeCommandReference
 
         [Parameter(
             Mandatory=$true,
-            HelpMessage="Specify the Az module version used in your existing PowerShell file(s)/modules.")]
-        [System.Int32]
-        [ValidateSet(1, 2, 3, 4)]
-        $AzModuleVersion
+            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules.")]
+        [System.String]
+        [ValidateSet("6.13.1")]
+        $AzureRmVersion
     )
     Process
     {
         # load the command specs
-        switch ($AzModuleVersion)
-        {
-            1 { $fullAzVersion = "1.8.0" }
-            2 { $fullAzVersion = "2.8.0" }
-            3 { $fullAzVersion = "3.8.0" }
-            4 { $fullAzVersion = "4.4.0" }
-        }
-
-        Write-Verbose -Message "Importing cmdlet spec for Az $AzModuleVersion"
-        $azSpec = Import-CmdletSpec -ModuleName "Az" -ModuleVersion $fullAzVersion
+        Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmModuleVersion"
+        $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmModuleVersion
 
         # synchronous results output instead of async. the reason for this is that
         # downstream commands will need the entire results object to process at once.
-        $azReferenceResults = New-Object -TypeName CommandReferenceCollection
+        $azureRmReferenceResults = New-Object -TypeName CommandReferenceCollection
 
         if ($PSCmdlet.ParameterSetName -eq 'ByFile')
         {
@@ -79,12 +71,12 @@ function Find-AzUpgradeCommandReference
                 throw "File was not found or was not accessible: $FilePath"
             }
 
-            Write-Verbose -Message "Searching for Az references in file: $FilePath"
-            $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $azSpec.ContainsKey($_.CommandName) -eq $true }
+            Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
+            $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
 
             foreach ($foundCmdlet in $foundCmdlets)
             {
-                $azReferenceResults.Items.Add($foundCmdlet)
+                $azureRmReferenceResults.Items.Add($foundCmdlet)
             }
         }
         elseif ($PSCmdlet.ParameterSetName -eq 'ByDirectory')
@@ -98,16 +90,16 @@ function Find-AzUpgradeCommandReference
 
             foreach ($file in $filesToSearch)
             {
-                Write-Verbose -Message "Searching for Az references in file: $($file.FullName)"
-                $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $azSpec.ContainsKey($_.CommandName) -eq $true }
+                Write-Verbose -Message "Searching for AzureRM references in file: $($file.FullName)"
+                $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
 
                 foreach ($foundCmdlet in $foundCmdlets)
                 {
-                    $azReferenceResults.Items.Add($foundCmdlet)
+                    $azureRmReferenceResults.Items.Add($foundCmdlet)
                 }
             }
         }
 
-        Write-Output -InputObject $azReferenceResults
+        Write-Output -InputObject $azureRmReferenceResults
     }
 }

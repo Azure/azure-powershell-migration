@@ -17,7 +17,7 @@ function Out-FileBatchResult
         Specify the reason/message for success or failure.
 
     .EXAMPLE
-        PS C:\ Out-FileBatchResult -Results $resultsBatch -Success $true -Reason "Completed successfully"
+        PS C:\ Out-FileBatchResult -ResultBatch $resultsBatch -Success $true -Reason "Completed successfully"
         Writes the current batch of file update results to the pipeline.
     #>
     [CmdletBinding()]
@@ -28,7 +28,7 @@ function Out-FileBatchResult
             HelpMessage='Specify the results batch.')]
         [System.Collections.Generic.List[UpgradeResult]]
         [ValidateNotNull()]
-        $Results,
+        $ResultBatch,
 
         [Parameter(
             Mandatory=$true,
@@ -46,7 +46,7 @@ function Out-FileBatchResult
     )
     Process
     {
-        foreach ($result in $Results)
+        foreach ($result in $ResultBatch)
         {
             # set the reason and success flag
             $result.Success = $Success
