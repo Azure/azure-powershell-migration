@@ -8,52 +8,112 @@ function New-AzUpgradeModulePlan
         Generates a new upgrade plan for migrating to the Az module. The upgrade plan details the specific file/offset
         points that require changes move AzureRM commands to Az commands.
 
-        The input to this command should be the output from the Find-AzureRmCommandReferences cmdlet.
+    .PARAMETER FromAzureRmVersion
+        Specify the AzureRM module version used in your existing PowerShell file(s)/modules.
 
-    .PARAMETER AzureRmCmdReferences
-        Specify the AzureRM command references collection output from the Find-AzureRmCommandReferences cmdlet.
-
-    .PARAMETER AzModuleVersion
+    .PARAMETER ToAzVersion
         Specify the Az module version to upgrade to.
 
+    .PARAMETER FilePath
+        Specify the path to a single PowerShell file.
+
+    .PARAMETER DirectoryPath
+        Specify the path to the folder where PowerShell scripts or modules reside.
+
+    .PARAMETER AzureRmCmdReferences
+        Specify the AzureRM command references collection output from the Find-AzUpgradeCommandReference cmdlet.
+
     .EXAMPLE
-        PS C:\ Find-AzureRmCommandReferences -FilePath "C:\scripts\test.ps1" -AzureRmModuleVersion 6.13.1 | New-AzUpgradeModulePlan -AzModuleVersion 4.4.0
-        Generates a new Az module upgrade plan for the test.ps1 script.
+        PS C:\ New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath "C:\scripts\my-azure-script.ps1"
+        Generates a new Az module upgrade plan for the script file 'C:\scripts\my-azure-script.ps1'.
+
+    .EXAMPLE
+        PS C:\ New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath "C:\scripts"
+        Generates a new Az module upgrade plan for the script/module files under C:\scripts.
+
+    .EXAMPLE
+        PS C:\ Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzureRmVersion "6.13.1" | New-AzUpgradeModulePlan -ToAzVersion 4.4.0
+        Generates a new Az module upgrade plan for the script/module files under C:\scripts.
     #>
     [CmdletBinding()]
     Param
     (
         [Parameter(
             Mandatory=$true,
+            ParameterSetName="FromReferences",
             ValueFromPipeline=$true,
-            HelpMessage='Specify the AzureRM command references collection output from the Find-AzureRmCommandReferences cmdlet.')]
+            HelpMessage='Specify the AzureRM command references collection output from the Find-AzUpgradeCommandReference cmdlet.')]
         [CommandReferenceCollection]
         $AzureRmCmdReference,
+
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="FromNewSearchByFile",
+            HelpMessage='Specify the Az module version to upgrade to.')]
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="FromNewSearchByDirectory",
+            HelpMessage='Specify the Az module version to upgrade to.')]
+        [System.String]
+        [ValidateSet('6.13.1')]
+        $FromAzureRmVersion,
+
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="FromNewSearchByFile",
+            HelpMessage="Specify the path to a single PowerShell file.")]
+        [System.String]
+        [ValidateNotNullOrEmpty()]
+        $FilePath,
+
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="FromNewSearchByDirectory",
+            HelpMessage="Specify the path to the folder where PowerShell scripts or modules reside.")]
+        [System.String]
+        [ValidateNotNullOrEmpty()]
+        $DirectoryPath,
 
         [Parameter(
             Mandatory=$true,
             HelpMessage='Specify the Az module version to upgrade to.')]
         [System.String]
         [ValidateSet('4.4.0')]
-        $AzModuleVersion
+        $ToAzVersion
     )
     Process
     {
+        # if an existing set of command references was not provided
+        # then call the Find cmdlet to search for those references.
+
+        if ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByFile')
+        {
+            Write-Verbose -Message "Searching for commands to upgrade, by file."
+            $AzureRmCmdReference = Find-AzUpgradeCommandReference -FilePath $FilePath -AzureRmVersion $FromAzureRmVersion
+        }
+        elseif ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByDirectory')
+        {
+            Write-Verbose -Message "Searching for commands to upgrade, by directory."
+            $AzureRmCmdReference = Find-AzUpgradeCommandReference -DirectoryPath $DirectoryPath -AzureRmVersion $FromAzureRmVersion
+        }
+
+        # we can't generate an upgrade plan without some cmdlet references, so quit early here if required.
+
         if ($AzureRmCmdReference -eq $null -or $AzureRmCmdReference.Items.Count -eq 0)
         {
-            Write-Verbose -Message "No AzureRm command references were provided. No upgrade plan will be generated."
+            Write-Verbose -Message "No AzureRm command references were found. No upgrade plan will be generated."
             return
         }
         else
         {
-            Write-Verbose -Message "$($AzureRmCmdReference.Items.Count) AzureRm command reference(s) were provided. Upgrade plan will be generated."
+            Write-Verbose -Message "$($AzureRmCmdReference.Items.Count) AzureRm command reference(s) were found. Upgrade plan will be generated."
         }
 
-        Write-Verbose -Message "Importing cmdlet spec for Az $AzModuleVersion"
-        $azCmdlets = Import-CmdletSpec -ModuleName "Az" -ModuleVersion $AzModuleVersion
+        Write-Verbose -Message "Importing cmdlet spec for Az $ToAzVersion"
+        $azCmdlets = Import-CmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
 
-        Write-Verbose -Message "Importing upgrade alias spec for Az $AzModuleVersion"
-        $upgradeAliases = Import-AliasSpec -ModuleVersion $AzModuleVersion
+        Write-Verbose -Message "Importing upgrade alias spec for Az $ToAzVersion"
+        $upgradeAliases = Import-AliasSpec -ModuleVersion $ToAzVersion
 
         $defaultParamNames = @("Debug", "ErrorAction", "ErrorVariable", "InformationAction", "InformationVariable", "OutVariable", "OutBuffer", "PipelineVariable", "Verbose", "WarningAction", "WarningVariable", "WhatIf", "Confirm")
 
