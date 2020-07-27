@@ -45,7 +45,7 @@ Run this step to generate an upgrade plan for moving the AzureRM references in y
 
 ``` powershell
 # generate the plan
-$plan = New-AzModuleUpgradePlan -AzureRmCmdReferences $references -AzModuleVersion 4.2.0
+$plan = New-AzUpgradeModulePlan -AzureRmCmdReferences $references -AzModuleVersion 4.2.0
 
 # print out the upgrade steps to the console
 $plan.UpgradeSteps | Format-List
@@ -62,7 +62,7 @@ Run this step to execute all of the steps in your upgrade plan to Az.
 ``` powershell
 # execute the upgrade plan.
 # this will prompt for confirmation.
-$result = Invoke-ModuleUpgradePlan -Plan $plan -Verbose
+$result = Invoke-AzUpgradeModulePlan -Plan $plan -Verbose
 
 # print the results to the console
 $result | Format-Table Success, Reason, Step

@@ -1,14 +1,14 @@
 Import-Module Az.Tools.Migration -Force
 
 InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
-    Describe 'Invoke-ModuleUpgradePlan tests' {
+    Describe 'Invoke-AzUpgradeModulePlan tests' {
         It 'Should immediately return if no upgrade steps are provided' {
             # arrange
             $plan = New-Object -TypeName UpgradePlan
 
             # act
             # this should not produce any output at all.
-            $results = Invoke-ModuleUpgradePlan -Plan $plan
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan
 
             # assert
             $results | Should Be $null
@@ -29,7 +29,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Set-Content -MockWith { } -Verifiable
 
             # act
-            $result = Invoke-ModuleUpgradePlan -Plan $plan -Confirm:$false
+            $result = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
 
             # assert
             $result | Should Not Be $null
@@ -77,7 +77,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Set-Content -MockWith { } -Verifiable
 
             # act
-            $results = Invoke-ModuleUpgradePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
 
             # assert
             $results | Should Not Be $null
@@ -115,7 +115,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Set-Content -MockWith { }
 
             # act
-            $results = Invoke-ModuleUpgradePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
 
             # assert
             $results | Should Not Be $null

@@ -1,7 +1,7 @@
 Import-Module Az.Tools.Migration -Force
 
 InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
-    Describe 'New-AzModuleUpgradePlan tests' {
+    Describe 'New-AzUpgradeModulePlan tests' {
         It 'Should be able to generate cmdlet upgrade plan steps' {
             # arrange
             $cmdlet1 = New-Object -TypeName CommandReference
@@ -14,7 +14,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets.Items.Add($cmdlet1)
 
             # act
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null
@@ -47,7 +47,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets.Items.Add($cmdlet1)
 
             # act
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null
@@ -134,7 +134,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets.Items.Add($cmdlet9)
 
             # act
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null
@@ -212,7 +212,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null
@@ -236,7 +236,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null
@@ -271,7 +271,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzModuleUpgradePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReferences $foundCmdlets -AzModuleVersion 4.4.0
 
             # assert
             $results | Should Not Be $null

@@ -1,4 +1,4 @@
-function Find-AzCommandReferences
+function Find-AzUpgradeCommandReference
 {
     <#
     .SYNOPSIS
@@ -9,7 +9,7 @@ function Find-AzCommandReferences
         all of the cmdlets used in the files will be analyzed and compared against known Az PowerShell commands. If commands match a known
         Az cmdlet, then output will be returned that shows the position/offset for each usage.
 
-        The output of this command can be pipelined into the New-AzModuleUpgradePlan cmdlet to generate a detailed list of required upgrade changes.
+        The output of this command can be pipelined into the New-AzUpgradeModulePlan cmdlet to generate a detailed list of required upgrade changes.
 
     .PARAMETER FilePath
         Specify the path to a single PowerShell file.
@@ -21,11 +21,11 @@ function Find-AzCommandReferences
         Specify the Az module major version used in your existing PowerShell file(s)/modules. For example: 1, 2, 3, or 4.
 
     .EXAMPLE
-        PS C:\> Find-AzCommandReferences -FilePath "C:\scripts\test.ps1" -AzModuleVersion 1
+        PS C:\> Find-AzUpgradeCommandReference -FilePath "C:\scripts\test.ps1" -AzModuleVersion 1
         Finds Az PowerShell (v1.x) command references in the specified file.
 
     .EXAMPLE
-        PS C:\> Find-AzCommandReferences -DirectoryPath "C:\scripts" -AzModuleVersion 3
+        PS C:\> Find-AzUpgradeCommandReference -DirectoryPath "C:\scripts" -AzModuleVersion 3
         Finds Az PowerShell (v3.x) command references in the specified folder (any .ps1 or .psm1 files).
     #>
     [CmdletBinding()]

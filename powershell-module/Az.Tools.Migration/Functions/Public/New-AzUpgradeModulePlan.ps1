@@ -1,4 +1,4 @@
-function New-AzModuleUpgradePlan
+function New-AzUpgradeModulePlan
 {
     <#
     .SYNOPSIS
@@ -17,7 +17,7 @@ function New-AzModuleUpgradePlan
         Specify the Az module version to upgrade to.
 
     .EXAMPLE
-        PS C:\ Find-AzureRmCommandReferences -FilePath "C:\scripts\test.ps1" -AzureRmModuleVersion 6.13.1 | New-AzModuleUpgradePlan -AzModuleVersion 4.4.0
+        PS C:\ Find-AzureRmCommandReferences -FilePath "C:\scripts\test.ps1" -AzureRmModuleVersion 6.13.1 | New-AzUpgradeModulePlan -AzModuleVersion 4.4.0
         Generates a new Az module upgrade plan for the test.ps1 script.
     #>
     [CmdletBinding()]

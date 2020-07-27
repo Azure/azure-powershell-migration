@@ -1,7 +1,7 @@
 Import-Module Az.Tools.Migration -Force
 
 InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
-    Describe 'Find-AzureRmCommandReferences tests' {
+    Describe 'Find-AzUpgradeCommandReference tests' {
         It 'Should ignore non-Azure cmdlets found in files' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
@@ -16,7 +16,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             }
 
             # act
-            $results = Find-AzureRmCommandReferences -FilePath "testfile.ps1" -AzureRmModuleVersion "6.13.1"
+            $results = Find-AzUpgradeCommandReference -FilePath "testfile.ps1" -AzModuleVersion 4
 
             # assert
             $results | Should Not Be $Null
@@ -25,7 +25,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Assert-VerifiableMock
         }
-        It 'Should correctly detect AzureRM cmdlets found in files by filename' {
+        It 'Should correctly detect Az cmdlets found in files by filename' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
 
@@ -35,22 +35,22 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 -MockWith `
             {
                 $cmd = New-Object -TypeName CommandReference
-                $cmd.CommandName = "Login-AzureRmAccount"
+                $cmd.CommandName = "Login-AzAccount"
                 Write-Output -InputObject $cmd
             }
 
             # act
-            $results = Find-AzureRmCommandReferences -FilePath "testfile.ps1" -AzureRmModuleVersion "6.13.1"
+            $results = Find-AzUpgradeCommandReference -FilePath "testfile.ps1" -AzModuleVersion 4
 
             # assert
             $results | Should Not Be $Null
             $results.GetType().FullName | Should Be "CommandReferenceCollection"
             $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Items[0].CommandName | Should Be "Login-AzAccount"
 
             Assert-VerifiableMock
         }
-        It 'Should correctly detect AzureRM cmdlets found in files found by directory search' {
+        It 'Should correctly detect Az cmdlets found in files found by directory search' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
             Mock -CommandName Get-ChildItem `
@@ -63,22 +63,22 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 -MockWith `
             {
                 $cmd = New-Object -TypeName CommandReference
-                $cmd.CommandName = "Login-AzureRmAccount"
+                $cmd.CommandName = "Login-AzAccount"
                 Write-Output -InputObject $cmd
             }
 
             # act
-            $results = Find-AzureRmCommandReferences -DirectoryPath "C:\test" -AzureRmModuleVersion "6.13.1"
+            $results = Find-AzUpgradeCommandReference -DirectoryPath "C:\test" -AzModuleVersion 4
 
             # assert
             $results | Should Not Be $Null
             $results.GetType().FullName | Should Be "CommandReferenceCollection"
             $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Items[0].CommandName | Should Be "Login-AzAccount"
 
             Assert-VerifiableMock
         }
-        It 'Should correctly detect case-insensitive AzureRM cmdlets found in files' {
+        It 'Should correctly detect case-insensitive Az cmdlets found in files' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
 
@@ -88,18 +88,18 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 -MockWith `
             {
                 $cmd = New-Object -TypeName CommandReference
-                $cmd.CommandName = "login-azurermaccount"
+                $cmd.CommandName = "login-azaccount"
                 Write-Output -InputObject $cmd
             }
 
             # act
-            $results = Find-AzureRmCommandReferences -FilePath "testfile.ps1" -AzureRmModuleVersion "6.13.1"
+            $results = Find-AzUpgradeCommandReference -FilePath "testfile.ps1" -AzModuleVersion 4
 
             # assert
             $results | Should Not Be $Null
             $results.GetType().FullName | Should Be "CommandReferenceCollection"
             $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Items[0].CommandName | Should Be "Login-AzAccount"
 
             Assert-VerifiableMock
         }
