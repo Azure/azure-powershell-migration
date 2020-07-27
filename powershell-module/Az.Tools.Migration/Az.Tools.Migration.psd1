@@ -46,7 +46,8 @@
 
     # Assemblies that must be loaded prior to importing this module
     RequiredAssemblies = @(
-        '.\Resources\Assembly\Newtonsoft.Json.dll'
+        '.\Resources\Assembly\Microsoft.ApplicationInsights.2.14.0\Microsoft.ApplicationInsights.dll',
+        '.\Resources\Assembly\Newtonsoft.Json.12.0.3\Newtonsoft.Json.dll'
     )
 
     # Script files (.ps1) that are run in the caller's environment prior to importing this module.
@@ -90,6 +91,9 @@
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
     PrivateData = @{
+        Constants = @{
+            PublicTelemetryInstrumentationKey = 'f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71'
+        }
         PSData = @{
             # Tags applied to this module. These help with module discovery in online galleries.
             # Tags = @()
