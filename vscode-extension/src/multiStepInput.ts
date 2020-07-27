@@ -40,7 +40,6 @@ interface InputBoxParameters {
 	shouldResume: () => Thenable<boolean>;
 }
 
-
 class MultiStepInput {
 
 	static async run<T>(start: InputStep) {
@@ -76,6 +75,50 @@ class MultiStepInput {
 		}
 		if (this.current) {
 			this.current.dispose();
+		}
+	}
+
+	async showQuickPick<T extends QuickPickItem, P extends QuickPickParameters<T>>({ title, step, totalSteps, items, activeItem, placeholder, buttons, shouldResume }: P) {
+		const disposables: Disposable[] = [];
+		try {
+			return await new Promise<T | (P extends { buttons: (infer I)[] } ? I : never)>((resolve, reject) => {
+				const input = window.createQuickPick<T>();
+				input.title = title;
+				input.step = step;
+				input.totalSteps = totalSteps;
+				input.placeholder = placeholder;
+				input.items = items;
+				if (activeItem) {
+					input.activeItems = [activeItem];
+				}
+				input.buttons = [
+					...(this.steps.length > 1 ? [QuickInputButtons.Back] : []),
+					...(buttons || [])
+				];
+				disposables.push(
+					input.onDidTriggerButton(item => {
+						if (item === QuickInputButtons.Back) {
+							reject(InputFlowAction.back);
+						} else {
+							resolve(<any>item);
+						}
+					}),
+					input.onDidChangeSelection(items => resolve(items[0])),
+					input.onDidHide(() => {
+						(async () => {
+							reject(shouldResume && await shouldResume() ? InputFlowAction.resume : InputFlowAction.cancel);
+						})()
+							.catch(reject);
+					})
+				);
+				if (this.current) {
+					this.current.dispose();
+				}
+				this.current = input;
+				this.current.show();
+			});
+		} finally {
+			disposables.forEach(d => d.dispose());
 		}
 	}
 
@@ -146,23 +189,45 @@ class MultiStepInput {
  */
 export async function multiStepInput(context: ExtensionContext) {
 
+	
+	class MyButton implements QuickInputButton {
+		constructor(public iconPath: { light: Uri; dark: Uri; }, public tooltip: string) { }
+	}
+
+	const setSrcVersionButton = new MyButton({
+		dark: Uri.file(context.asAbsolutePath('resources/dark/add.svg')),
+		light: Uri.file(context.asAbsolutePath('resources/light/add.svg')),
+	}, 'setSrcVersion');
+
+	const setTargetVersionButton = new MyButton({
+		dark: Uri.file(context.asAbsolutePath('resources/dark/add.svg')),
+		light: Uri.file(context.asAbsolutePath('resources/light/add.svg')),
+	}, 'setTargetVersion');
+
+	const sourceVersionGroup: QuickPickItem[] = ['AzureVM','Az1.0','Az2.0','Az3.0']
+		.map(label => ({ label }));
+
+	
+	const targetVersionGroup: QuickPickItem[] = ['Az1.0','Az2.0','Az3.0','Az4.0']
+		.map(label => ({ label }));
+
 	interface State {
 		title: string;
 		step: number;
 		totalSteps: number;
-		srcVersion: string;
-		targetVersion: string;
+		srcVersion: QuickPickItem | string;
+		targetVersion: QuickPickItem | string;
 	}
 
 	async function collectInputs() {
 		const state = {} as Partial<State>;
-		await MultiStepInput.run(input => setSourceVersion(input, state));
+		await MultiStepInput.run(input => setSourceVersionQuickPick(input, state));
 		return state as State;
 	}
 
 	const title = 'Set Migration Parameter';
 
-	async function setSourceVersion(input: MultiStepInput, state: Partial<State>) {
+	async function setSourceVersionBox(input: MultiStepInput, state: Partial<State>) {
 		state.srcVersion = await input.showInputBox({
 			title,
 			step: 1,
@@ -172,20 +237,56 @@ export async function multiStepInput(context: ExtensionContext) {
 			validate: validateNameIsUnique,
 			shouldResume: shouldResume
 		});
-		return (input: MultiStepInput) => setTargetVersion(input, state);
+		return (input: MultiStepInput) => setTargetVersionBox(input, state);
 	}
 
-	async function setTargetVersion(input: MultiStepInput, state: Partial<State>) {
+	async function setSourceVersionQuickPick(input: MultiStepInput, state: Partial<State>) {
+		const pick = await input.showQuickPick({
+			title,
+			step: 1,
+			totalSteps: 2,
+			placeholder: 'Set Source Version',
+			items: sourceVersionGroup,
+			activeItem: typeof state.srcVersion !== 'string' ? state.srcVersion : undefined,
+			buttons: [setSrcVersionButton],
+			shouldResume: shouldResume
+		});
+		if (pick instanceof MyButton) {
+			return (input: MultiStepInput) => setSourceVersionBox(input, state);
+		}
+		state.srcVersion = pick.label;
+		return (input: MultiStepInput) => setTargetVersionQuickPick(input, state);
+	}
+
+	async function setTargetVersionBox(input: MultiStepInput, state: Partial<State>) {
 		state.targetVersion = await input.showInputBox({
 			title,
 			step: 2,
 			totalSteps: 2,
-			value: state.targetVersion || '',
+			value: typeof state.targetVersion === 'string' ? state.targetVersion : '',
 			prompt: 'Set Target Version',
 			validate: validateNameIsUnique,
 			shouldResume: shouldResume
 		});
 	}
+
+	async function setTargetVersionQuickPick(input: MultiStepInput, state: Partial<State>) {
+		const pick = await input.showQuickPick({
+			title,
+			step: 2,
+			totalSteps: 2,
+			placeholder: 'Set Target Version',
+			items: targetVersionGroup,
+			activeItem: typeof state.targetVersion !== 'string' ? state.targetVersion : undefined,
+			buttons: [setTargetVersionButton],
+			shouldResume: shouldResume
+		});
+		if (pick instanceof MyButton) {
+			return (input: MultiStepInput) => setTargetVersionBox(input, state);
+		}
+		state.targetVersion = pick.label;
+	}
+
 
 	function shouldResume() {
 		// Could show a notification with the option to resume.
