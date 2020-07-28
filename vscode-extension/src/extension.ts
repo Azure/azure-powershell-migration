@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { displayUnderline } from './displayUnderline';
-import { loadAzCmdletSpec, loadAzureRMCmdletSpec } from './aliasMapping';
+import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec } from './aliasMapping';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -12,15 +12,19 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let disposable = vscode.commands.registerCommand('azure-powershell-migration.selectVersion', async () => {
 		// Get source version
-		const srcVersion=await getSrcVersion();
-		vscode.window.showInformationMessage(`Updating powershell scripts from  '${srcVersion}' to latest`);
+		var sourceVersion =await getSrcVersion();
 		
-		// Get Mapping according to srcVersion
-		const targetCmdlets = loadAzCmdletSpec();
-		const sourceCmdlets = loadAzureRMCmdletSpec();
+		if(sourceVersion!=undefined){
+			vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
+		
+			// Get Mapping according to srcVersion
+			const targetCmdlets = loadLatestVersionCmdletSpec();
+			const sourceCmdlets = loadSrcVersionCmdletSpec(sourceVersion);
+	
+			// update editor
+			displayUnderline(context, sourceCmdlets, targetCmdlets);
+		}
 
-		// update editor
-		displayUnderline(context, sourceCmdlets, targetCmdlets);
 	});
 
 	context.subscriptions.push(disposable);
