@@ -4,7 +4,8 @@ import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { displayUnderline } from './displayUnderline';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { QuickFixer } from './quickFix';
+import { COMMAND, QuickFixer, QuickFixinfo } from './quickFix';
+import { subscribeToDocumentChanges } from './diagnostics';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -24,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 			var aliasMapping = loadAliasMapping();
 
 			// update editor
-			displayUnderline(context, sourceCmdlets, targetCmdlets, aliasMapping);
+			// displayUnderline(context, sourceCmdlets, targetCmdlets, aliasMapping);
 		}
 	});
 
@@ -32,8 +33,20 @@ export function activate(context: vscode.ExtensionContext) {
 	let codeActionProvider = vscode.languages.registerCodeActionsProvider({language: 'powershell'}, quickFixer, {
 		providedCodeActionKinds: QuickFixer.providedCodeActionKinds
 	});
-
 	context.subscriptions.push(disposable, codeActionProvider);
+
+	const breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
+	context.subscriptions.push(breakingChangeDiagnostics);
+	subscribeToDocumentChanges(context, breakingChangeDiagnostics);
+	context.subscriptions.push(
+		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new QuickFixinfo(), {
+			providedCodeActionKinds: QuickFixinfo.providedCodeActionKinds
+		})
+	);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand(COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/azure/migrate-from-azurerm-to-az?view=azps-4.4.0')))
+	);
 
 	console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
 }
