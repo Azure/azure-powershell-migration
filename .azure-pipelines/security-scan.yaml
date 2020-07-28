@@ -7,26 +7,18 @@ pool:
   vmImage: "windows-2019"
 
 steps:
-- task: ea576cd4-c61f-48f8-97e7-a3cb07b90a6f@2 # CredScan@2
+- task: ms-codeanalysis.vss-microsoft-security-code-analysis-devops.build-task-credscan.CredScan@2
   displayName: 'Run CredScan'
   continueOnError: true
   inputs:
     toolMajorVersion: "V2"
     suppressionsFile: .azure-pipelines\credscan-suppressions.json
 
-- task: f5679091-e6da-4974-a8dc-0eec03a8ea63@1 # PostAnalysis@1
+- task: PostAnalysis@1
   inputs:
     AllTools: false
-    APIScan: false
     BinSkim: false
-    CodesignValidation: false
     CredScan: true
-    FortifySCA: false
-    FxCop: false
-    ModernCop: false
-    PoliCheck: false
     RoslynAnalyzers: false
-    SDLNativeRules: false
-    Semmle: false
     TSLint: false
     ToolLogsNotFoundAction: "Standard"
