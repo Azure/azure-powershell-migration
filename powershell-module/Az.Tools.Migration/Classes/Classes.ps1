@@ -129,10 +129,19 @@ class CmdletParameterUpgradeStep : UpgradeStep
     }
 }
 
+Enum UpgradePlanResultReasonCode
+{
+    WarningSplattedParameters = 1
+    ErrorNoUpgradeAlias = 2
+    ErrorNoModuleSpecMatch = 3
+    ErrorParameterNotFound = 4
+}
+
 class UpgradePlanResult
 {
     [CommandReference] $Command
     [System.String] $Reason
+    [UpgradePlanResultReasonCode] $ReasonCode
 
     [String] ToString()
     {

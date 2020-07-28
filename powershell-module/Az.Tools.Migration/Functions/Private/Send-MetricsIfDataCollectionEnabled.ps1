@@ -65,7 +65,36 @@ function Send-MetricsIfDataCollectionEnabled
                 }
                 "Plan"
                 {
-                    # implement
+                    $eventProps = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.String]'
+                    $eventProps.Add("ToAzureModuleName", $Properties.ToAzureModuleName)
+                    $eventProps.Add("ToAzureModuleVersion", $Properties.ToAzureModuleVersion)
+
+                    $eventMetrics = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Double]'
+                    $eventMetrics.Add("Plan.UpgradeStepsCount", [System.Double]($Properties.UpgradeStepsCount))
+                    $eventMetrics.Add("Plan.WarningsCount", [System.Double]($Properties.PlanWarnings.Count))
+                    $eventMetrics.Add("Plan.ErrorsCount", [System.Double]($Properties.PlanErrors.Count))
+
+                    $telemetryClient.TrackEvent("NewAzUpgradeModulePlan", $eventProps, $eventMetrics)
+
+                    if ($Properties.PlanWarnings -ne $null)
+                    {
+                        foreach ($planError in $Properties.PlanWarnings)
+                        {
+                            $eventProps["Command"] = $planError.Command.CommandName
+                            $eventProps["ReasonCode"] = $planError.ReasonCode.ToString()
+                            $telemetryClient.TrackEvent("NewAzUpgradeModulePlanWarning", $eventProps)
+                        }
+                    }
+
+                    if ($Properties.PlanErrors -ne $null)
+                    {
+                        foreach ($planError in $Properties.PlanErrors)
+                        {
+                            $eventProps["Command"] = $planError.Command.CommandName
+                            $eventProps["ReasonCode"] = $planError.ReasonCode.ToString()
+                            $telemetryClient.TrackEvent("NewAzUpgradeModulePlanError", $eventProps)
+                        }
+                    }
                 }
                 "Upgrade"
                 {
