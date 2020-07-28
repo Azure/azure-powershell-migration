@@ -78,4 +78,3 @@ $vmconfig = Add-AzureRmVMNetworkInterface -VM $vmConfig -id $nicVMbe.Id
 
 # Create a virtual machine
 $vm = New-AzureRmVM -ResourceGroupName $rgName -Location $location -VM $vmConfig
-

@@ -11,7 +11,7 @@ param
 
 function Get-Lab
 {
-    $lab = Find-AzureRmResource -ResourceType 'Microsoft.DevTestLab/labs' -ResourceNameEquals $DevTestLabName
+    $lab = Get-AzureRmResource -ResourceType 'Microsoft.DevTestLab/labs' -ResourceNameEquals $DevTestLabName
 
     if(!$lab)
     {
