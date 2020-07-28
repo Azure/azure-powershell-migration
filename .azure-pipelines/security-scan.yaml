@@ -14,7 +14,7 @@ steps:
     toolMajorVersion: "V2"
     suppressionsFile: .azure-pipelines\credscan-suppressions.json
 
-- task: PostAnalysis@1
+- task: ms-codeanalysis.vss-microsoft-security-code-analysis-devops.build-task-credscan.PostAnalysis@1
   inputs:
     AllTools: false
     BinSkim: false
