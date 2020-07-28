@@ -204,7 +204,7 @@ export async function multiStepInput(context: ExtensionContext) {
 		light: Uri.file(context.asAbsolutePath('resources/light/add.svg')),
 	}, 'setTargetVersion');
 
-	const sourceVersionGroup: QuickPickItem[] = ['AzureRM','Az 1.0','Az 2.0','Az 3.0']
+	const sourceVersionGroup: QuickPickItem[] = ['AzureVM','Az 1.0','Az 2.0','Az 3.0']
 		.map(label => ({ label }));
 
 	
