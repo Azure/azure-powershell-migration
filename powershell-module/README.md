@@ -14,8 +14,8 @@ script modules from AzureRM to the Az PowerShell module.
 The Az.Tools.Migration PowerShell module contains cmdlets that perform the following actions:
 
 1. Detect AzureRM cmdlet references in PowerShell scripts and script modules.
-2. Generate an upgrade plan to convert AzureRM module references to Az module commands.
-3. Execute the upgrade plan to modify your PowerShell codebase.
+1. Generate an upgrade plan to convert AzureRM module references to Az module commands.
+1. Execute the upgrade plan to modify your PowerShell codebase.
 
 ## Usage Instructions
 
@@ -29,22 +29,7 @@ Az.Tools.Migration module detects commands based on AzureRM 6.13.1.
 **IMPORTANT**: This module performs an in-place upgrade of the codebase you specify. Be certain that
 your target code is backed-up or checked-in to source control before proceeding.
 
-### Step 2: Detect AzureRM references
-
-Generate a list of all the AzureRM references in your codebase and save it to a variable.
-
-This step can optionally be run for a single file by specifying the `FilePath` parameter instead of the
-`DirectoryPath` parameter.
-
-```powershell
-# Find AzureRM references.
-$references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Source\my-project' -AzureRmVersion '6.13.1'
-
-# Review the list of references.
-$references.Items | Format-List
-```
-
-### Step 3: Generate an upgrade plan
+### Step 2: Generate an upgrade plan
 
 Generate an upgrade plan for moving the AzureRM references in your codebase to the Az PowerShell
 module. This step doesn't execute the plan, it only generates the upgrade steps.
@@ -53,9 +38,12 @@ module. This step doesn't execute the plan, it only generates the upgrade steps.
 contain commands or parameters that couldn't be upgraded automatically. These items require manual
 intervention during the upgrade.
 
+This step can optionally be run for a single file by specifying the `FilePath` parameter instead of the
+`DirectoryPath` parameter.
+
 ```powershell
 # Generate the upgrade plan.
-$plan = New-AzUpgradeModulePlan -AzureRmCmdReference $references -AzModuleVersion 4.4.0
+$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts'
 
 # Review the list of upgrade steps.
 $plan.UpgradeSteps | Format-List
@@ -65,7 +53,7 @@ $plan.Warnings | Format-Table
 $plan.Errors | Format-Table
 ```
 
-### Step 4: Execute the upgrade plan
+### Step 3: Execute the upgrade plan
 
 Execute the upgrade plan. This step performs an in-place upgrade of the specified codebase with the
 exception of the warning and errors from the previous step.
