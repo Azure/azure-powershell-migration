@@ -204,7 +204,7 @@ export async function multiStepInput(context: ExtensionContext) {
 		light: Uri.file(context.asAbsolutePath('resources/light/add.svg')),
 	}, 'setTargetVersion');
 
-	const sourceVersionGroup: QuickPickItem[] = ['AzureVM','Az 1.0','Az 2.0','Az 3.0']
+	const sourceVersionGroup: QuickPickItem[] = ['AzureRM','Az 1.0','Az 2.0','Az 3.0']
 		.map(label => ({ label }));
 
 	
@@ -304,4 +304,8 @@ export async function multiStepInput(context: ExtensionContext) {
 	const state = await collectInputs();
 	window.showInformationMessage(`Translating powershell scripts from  '${state.srcVersion}' to '${state.targetVersion}'`);
 	return [state.srcVersion,state.targetVersion];
+}
+
+export async function getSrcVersion(){
+	return window.showQuickPick(['AzureRM', 'Az1.0', 'Az2.0','Az3.0']);
 }

@@ -3,8 +3,6 @@ import * as vscode from 'vscode';
 // this method is called when vs code is activated
 export async function displayUnderline(context: vscode.ExtensionContext, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
 
-	console.log('decorator sample is activated');
-
 	let timeout: NodeJS.Timer | undefined = undefined;
 
 	const AzureRMDecorationType = vscode.window.createTextEditorDecorationType({
