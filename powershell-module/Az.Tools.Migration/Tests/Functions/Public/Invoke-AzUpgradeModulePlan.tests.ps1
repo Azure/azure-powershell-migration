@@ -6,6 +6,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # arrange
             $plan = New-Object -TypeName UpgradePlan
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             # act
             # this should not produce any output at all.
             $results = Invoke-AzUpgradeModulePlan -Plan $plan
@@ -27,6 +30,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
             Mock -CommandName Set-Content -MockWith { } -Verifiable
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
             $result = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
@@ -76,6 +82,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
             Mock -CommandName Set-Content -MockWith { } -Verifiable
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             # act
             $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
 
@@ -113,6 +122,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { throw 'Module update step failed!' } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
             Mock -CommandName Set-Content -MockWith { }
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
             $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false

@@ -92,8 +92,7 @@
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
     PrivateData = @{
         Constants = @{
-            #PublicTelemetryInstrumentationKey = 'f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71'
-            PublicTelemetryInstrumentationKey = 'd588067e-8799-4830-b1d4-7a796967042b'
+            PublicTelemetryInstrumentationKey = 'f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71'
         }
         PSData = @{
             # Tags applied to this module. These help with module discovery in online galleries.
