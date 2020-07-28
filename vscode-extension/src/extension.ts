@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { displayUnderline } from './displayUnderline';
-import { loadAzCmdletSpec, loadAzureRMCmdletSpec } from './aliasMapping';
+import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
 import { QuickFixer } from './quickFix';
 
 // this method is called when your extension is activated
@@ -11,25 +11,28 @@ import { QuickFixer } from './quickFix';
 export function activate(context: vscode.ExtensionContext) {
 	console.log('"azure-powershell-migration" is now activating ...');
 
-	let targetCmdlets = new Map<string, any>();
-	let sourceCmdlets = new Map<string, any>();
-
 	let disposable = vscode.commands.registerCommand('azure-powershell-migration.selectVersion', async () => {
 		// Get source version
-		const srcVersion=await getSrcVersion();
-		vscode.window.showInformationMessage(`Updating powershell scripts from  '${srcVersion}' to latest`);
+		var sourceVersion =await getSrcVersion();
 		
-		// Get Mapping according to srcVersion
-		targetCmdlets = loadAzCmdletSpec();
-		sourceCmdlets = loadAzureRMCmdletSpec();
+		if (sourceVersion != undefined) {
+			vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
+			
+			// Get Mapping according to srcVersion
+			var targetCmdlets = loadLatestVersionCmdletSpec();
+			var sourceCmdlets = loadSrcVersionCmdletSpec(sourceVersion);
+			var aliasMapping = loadAliasMapping();
 
-		// update editor
-		displayUnderline(context, sourceCmdlets, targetCmdlets);
+			// update editor
+			displayUnderline(context, sourceCmdlets, targetCmdlets, aliasMapping);
+		}
 	});
 
-	let codeActionProvider = vscode.languages.registerCodeActionsProvider({scheme: 'file'}, new QuickFixer(), {
+	var quickFixer = new QuickFixer();
+	let codeActionProvider = vscode.languages.registerCodeActionsProvider({scheme: 'file'}, quickFixer, {
 		providedCodeActionKinds: QuickFixer.providedCodeActionKinds
 	});
+	context.subscriptions.push(codeActionProvider);
 
 	context.subscriptions.push(disposable, codeActionProvider);
 

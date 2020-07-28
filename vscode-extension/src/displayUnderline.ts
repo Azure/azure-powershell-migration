@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 // this method is called when vs code is activated
-export async function displayUnderline(context: vscode.ExtensionContext, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
+export async function displayUnderline(context: vscode.ExtensionContext, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>, aliasMapping: Map<string, string>) {
 
 	let timeout: NodeJS.Timer | undefined = undefined;
 
@@ -24,7 +24,8 @@ export async function displayUnderline(context: vscode.ExtensionContext, sourceC
 		
 		let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
 		while ((match = re.exec(text))) {
-			if (sourceCmdlets.has(match.toString())) {
+			var t = match[0].toString();
+			if (aliasMapping.has(t)) {
 				const startPos = activeEditor.document.positionAt(match.index);
 				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				const decoration = { range: new vscode.Range(startPos, endPos), hoverMessage: 'AzureRM' };

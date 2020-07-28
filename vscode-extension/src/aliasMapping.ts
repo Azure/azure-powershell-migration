@@ -1,41 +1,58 @@
-export function loadAzCmdletSpec() {
-    const cmdlets = new Map();
+import * as fs from 'fs';
+import * as path from 'path';
 
-    var files = ['../module-spec/az-4.4.0/Az.Accounts.1.9.1.Cmdlets.json',
-                 '../module-spec/az-4.4.0/Az.KeyVault.2.0.0.Cmdlets.json',
-                 '../module-spec/az-4.4.0/Az.Resources.2.3.0.Cmdlets.json'
-                ];
-    for (let file of files) {
-        var map = loadCmdletSpecFromFile(file);
-        for (let key of map.keys()) {
-            cmdlets.set(key, map.get(key));
+export function loadLatestVersionCmdletSpec() {
+    var cmdlets = new Map();
+
+    const files_dir = path.join(__dirname,'../module-spec/az-4.4.0');
+
+    fs.readdirSync(files_dir).forEach(file => {
+        const file_path=path.join(files_dir,file);
+        if(fs.statSync(file_path).isFile()){
+            const map = loadCmdletSpecFromFile(file_path);
+            for (let key of map.keys()) {
+                cmdlets.set(key, map.get(key));
+            }
         }
-    }
+    })
+
     return cmdlets;
 }
 
-export function loadAzureRMCmdletSpec() {
-    const cmdlets = new Map();
+export function loadSrcVersionCmdletSpec(srcVersion: string) {
+    var cmdlets = new Map();
+    
+    const files_dir = path.join(__dirname,'../module-spec/azurerm-6.13.1');
 
-    var files = ['../module-spec/azurerm-6.13.1/AzureRM.Profile.5.8.2.Cmdlets.json',
-                 '../module-spec/azurerm-6.13.1/AzureRM.KeyVault.5.2.1.Cmdlets.json',
-                 '../module-spec/azurerm-6.13.1/AzureRM.Resources.6.7.3.Cmdlets.json'
-                ];
-    for (let file of files) {
-        var map = loadCmdletSpecFromFile(file);
-        for (let key of map.keys()) {
-            cmdlets.set(key, map.get(key));
+    fs.readdirSync(files_dir).forEach(file => {
+        const file_path=path.join(files_dir,file);
+        if(fs.statSync(file_path).isFile()){
+            const map = loadCmdletSpecFromFile(file_path);
+            for (let key of map.keys()) {
+                cmdlets.set(key, map.get(key));
+            }
         }
-    }
+    })
+
     return cmdlets;
 }
 
 function loadCmdletSpecFromFile(file: string) {
     const data = require(file);
 
-    const map = new Map();
-    for(var i =0; i<data.length; i++) {
+    var map = new Map();
+    for (var i = 0; i < data.length; i++) {
         map.set(data[i].Command, data[i]);
     }
     return map;
+}
+
+export function loadAliasMapping() {
+    var aliasMap = new Map<string, string>();
+    var file = '../module-spec/az-4.4.0/CmdletAliases/Aliases.json';
+    var data = require(file);
+    for(var i=0; i<data.length; i++) {
+        aliasMap.set(data[i].Name, data[i].ResolvedCommand);
+    }
+    return aliasMap;
 }
