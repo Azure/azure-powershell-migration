@@ -16,8 +16,8 @@ function Send-MetricsIfDataCollectionEnabled
         Specifies the metric properties.
 
     .EXAMPLE
-        PS C:\ Verb-Noun -Name 'Test'
-        Example description goes here.
+        PS C:\ Send-MetricsIfDataCollectionEnabled -Operation Plan -Properties $propertyBag
+        Sends 'Plan' operation metrics with the specified properties, if data collection is enabled.
     #>
     [CmdletBinding()]
     Param
@@ -49,6 +49,8 @@ function Send-MetricsIfDataCollectionEnabled
     {
         if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
         {
+            Write-Verbose -Message "Data collection option is enabled. Sending '$Operation' operation metrics."
+
             switch ($Operation)
             {
                 "Find"
@@ -107,6 +109,10 @@ function Send-MetricsIfDataCollectionEnabled
                     $telemetryClient.TrackEvent("InvokeAzUpgradeModulePlan", $null, $eventMetrics)
                 }
             }
+        }
+        else
+        {
+            Write-Verbose -Message "Data collection option is disabled. Metrics will not be sent."
         }
     }
     End
