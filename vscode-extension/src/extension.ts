@@ -4,11 +4,15 @@ import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { displayUnderline } from './displayUnderline';
 import { loadAzCmdletSpec, loadAzureRMCmdletSpec } from './aliasMapping';
+import { QuickFixer } from './quickFix';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 	console.log('"azure-powershell-migration" is now activating ...');
+
+	let targetCmdlets = new Map<string, any>();
+	let sourceCmdlets = new Map<string, any>();
 
 	let disposable = vscode.commands.registerCommand('azure-powershell-migration.selectVersion', async () => {
 		// Get source version
@@ -16,14 +20,18 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage(`Updating powershell scripts from  '${srcVersion}' to latest`);
 		
 		// Get Mapping according to srcVersion
-		const targetCmdlets = loadAzCmdletSpec();
-		const sourceCmdlets = loadAzureRMCmdletSpec();
+		targetCmdlets = loadAzCmdletSpec();
+		sourceCmdlets = loadAzureRMCmdletSpec();
 
 		// update editor
 		displayUnderline(context, sourceCmdlets, targetCmdlets);
 	});
 
-	context.subscriptions.push(disposable);
+	let codeActionProvider = vscode.languages.registerCodeActionsProvider({scheme: 'file'}, new QuickFixer(), {
+		providedCodeActionKinds: QuickFixer.providedCodeActionKinds
+	});
+
+	context.subscriptions.push(disposable, codeActionProvider);
 
 	console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
 }
