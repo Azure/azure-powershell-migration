@@ -5,3 +5,8 @@ trigger:
 
 pool:
   vmImage: "windows-2019"
+
+steps:
+- task: PowerShell@2
+  inputs:
+    filePath: 'Write-Host Hello'
