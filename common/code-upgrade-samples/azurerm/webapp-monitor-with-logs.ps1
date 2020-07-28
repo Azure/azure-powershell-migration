@@ -22,6 +22,3 @@ Set-AzureRMWebApp -RequestTracingEnabled $True -HttpLoggingEnabled $True -Detail
 
 # Make a Request
 Invoke-WebRequest -Method "Get" -Uri https://$AppName.azurewebsites.net/404 -ErrorAction SilentlyContinue
-
-# Download the Web App Logs
-#Get-AzureRMWebAppMetrics -ResourceGroupName $ResourceGroupName -Name $AppName -Metrics
