@@ -52,7 +52,7 @@ export function loadAliasMapping() {
     var file = '../module-spec/az-4.4.0/CmdletAliases/Aliases.json';
     var data = require(file);
     for(var i=0; i<data.length; i++) {
-        aliasMap.set(data[i].Name, data[i].ResolvedCommand);
+        aliasMap.set(data[i].Name.toLowerCase(), data[i].ResolvedCommand);
     }
     return aliasMap;
 }

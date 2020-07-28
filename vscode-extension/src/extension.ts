@@ -29,10 +29,9 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	var quickFixer = new QuickFixer();
-	let codeActionProvider = vscode.languages.registerCodeActionsProvider({scheme: 'file'}, quickFixer, {
+	let codeActionProvider = vscode.languages.registerCodeActionsProvider({language: 'powershell'}, quickFixer, {
 		providedCodeActionKinds: QuickFixer.providedCodeActionKinds
 	});
-	context.subscriptions.push(codeActionProvider);
 
 	context.subscriptions.push(disposable, codeActionProvider);
 

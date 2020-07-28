@@ -8,21 +8,21 @@ export class QuickFixer implements vscode.CodeActionProvider {
 	];
 
 	public provideCodeActions(document: vscode.TextDocument, range: vscode.Range): vscode.CodeAction[] | undefined {
+		const codeActions = [];
 		const editor = vscode.window.activeTextEditor;
 
 		const text = document.getText(editor?.selection).toString();
 		
 		var aliasMap = loadAliasMapping();
 
-		if (aliasMap.has(text)) {
-			var replace = aliasMap.get(text)!;
+		if (aliasMap.has(text.toLowerCase())) {
+			var replace = aliasMap.get(text.toLowerCase())!;
 			const replaceWithAz = this.createFix(document, range, replace);
 			replaceWithAz.isPreferred = true;
 
-			return [
-				replaceWithAz
-			];
+			codeActions.push(replaceWithAz);
 		}
+		return codeActions;
 	}
 
 	private createFix(document: vscode.TextDocument, range: vscode.Range, replace: string): vscode.CodeAction {
