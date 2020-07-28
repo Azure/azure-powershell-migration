@@ -61,7 +61,7 @@ $importRequest = New-AzureRmSqlDatabaseImport -ResourceGroupName $resourcegroupn
     -DatabaseMaxSizeBytes "262144000" `
     -StorageKeyType "StorageAccessKey" `
     -StorageKey $(Get-AzureRmStorageAccountKey -ResourceGroupName $resourcegroupname -StorageAccountName $storageaccountname).Value[0] `
-    -StorageUri "http://$storageaccountname.blob.core.windows.net/$storagecontainername/$bacpacfilename" `
+    -StorageUri "https://$storageaccountname.blob.core.windows.net/$storagecontainername/$bacpacfilename" `
     -Edition "Standard" `
     -ServiceObjectiveName "S3" `
     -AdministratorLogin "$adminlogin" `
