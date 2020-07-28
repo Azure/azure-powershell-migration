@@ -13,9 +13,6 @@ steps:
   inputs:
     toolMajorVersion: "V2"
     suppressionsFile: .azure-pipelines\credscan-suppressions.json
-    debugMode: true
-    folderSuppression: true
-
 
 - task: f5679091-e6da-4974-a8dc-0eec03a8ea63@1 # PostAnalysis@1
   inputs:
