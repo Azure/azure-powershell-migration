@@ -66,6 +66,8 @@
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
     FunctionsToExport = @(
+        'Disable-AzUpgradeDataCollection',
+        'Enable-AzUpgradeDataCollection',
         'Find-AzUpgradeCommandReference',
         'Invoke-AzUpgradeModulePlan',
         'New-AzUpgradeModulePlan'
@@ -91,9 +93,6 @@
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
     PrivateData = @{
-        Constants = @{
-            PublicTelemetryInstrumentationKey = 'f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71'
-        }
         PSData = @{
             # Tags applied to this module. These help with module discovery in online galleries.
             # Tags = @()

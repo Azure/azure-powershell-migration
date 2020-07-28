@@ -19,8 +19,8 @@ function Get-ModulePreferences
     )
     Process
     {
-        $configurationDirectory = "$home\.aztoolsmigration"
-        $configurationFileFullPath = Join-Path -Path $configurationDirectory -ChildPath "module-preferences.json"
+        $configurationDirectory = "$home\" + ([Constants]::ConfigurationDirectoryName)
+        $configurationFileFullPath = Join-Path -Path $configurationDirectory -ChildPath ([Constants]::ConfigurationFileName)
 
         try
         {

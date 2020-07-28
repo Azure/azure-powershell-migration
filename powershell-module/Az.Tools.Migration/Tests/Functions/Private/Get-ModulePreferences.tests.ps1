@@ -56,7 +56,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $result.DataCollectionEnabled | Should Be $false
             Assert-VerifiableMock
         }
-        It 'Should be still return module preferences in case of error' {
+        It 'Should still return module preferences in case of error' {
             # arrange
             # mock that the file does exist
             Mock -CommandName Test-Path -Verifiable -MockWith { return $true }

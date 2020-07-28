@@ -1,3 +1,10 @@
+class Constants
+{
+    static [System.String] $ConfigurationDirectoryName = ".aztoolsmigration"
+    static [System.String] $ConfigurationFileName = "module-preferences.json"
+    static [System.String] $PublicTelemetryInstrumentationKey = "f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71"
+}
+
 class ModulePreferences
 {
     [System.Boolean] $DataCollectionEnabled

@@ -17,7 +17,7 @@ function New-TelemetryClient
     )
     Process
     {
-        $instrumentationKey = $MyInvocation.MyCommand.Module.PrivateData.Constants['PublicTelemetryInstrumentationKey']
+        $instrumentationKey = [Constants]::PublicTelemetryInstrumentationKey
 
         $configuration = New-Object -TypeName Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration -ArgumentList $instrumentationKey
         $client = New-Object -TypeName Microsoft.ApplicationInsights.TelemetryClient -ArgumentList $configuration
