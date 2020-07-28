@@ -12,7 +12,7 @@ steps:
   continueOnError: true
   inputs:
     toolMajorVersion: "V2"
-    suppressionsFile: credScanSuppressions.json
+    suppressionsFile: .azure-pipelines\credscan-suppressions.json
     debugMode: true
     folderSuppression: true
 
