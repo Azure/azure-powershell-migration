@@ -7,6 +7,9 @@ pool:
   vmImage: "windows-2019"
 
 steps:
-- task: PowerShell@2
+- task: ms-codeanalysis.vss-microsoft-security-code-analysis-devops.build-task-credscan.CredScan@2
+  displayName: 'Run CredScan'
+  continueOnError: true
   inputs:
-    filePath: 'Write-Host Hello'
+    toolMajorVersion: "V2"
+    suppressionsFile: .azure-pipelines\credscan-suppressions.json
