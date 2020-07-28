@@ -39,7 +39,7 @@ function Send-MetricsIfDataCollectionEnabled
     )
     Begin
     {
-        $dataCollectionSettings = Get-DataCollectionSettings
+        $dataCollectionSettings = Get-ModulePreferences
         if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
         {
             $telemetryClient = New-TelemetryClient

@@ -1,7 +1,6 @@
-class DataCollectionSettings
+class ModulePreferences
 {
     [System.Boolean] $DataCollectionEnabled
-    [System.DateTime] $DataCollectionLastChanged
 }
 
 class AliasMapping
