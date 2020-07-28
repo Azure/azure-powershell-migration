@@ -4,15 +4,14 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
     Describe 'Invoke-SamplesTesting tests' {
         $TestFileDirectory = "C:\Users\dcaro\Projects\azure-powershell-migration\common\code-upgrade-samples\"
 
-        foreach ($Item in (Get-ChildITem $TestFileDirectory)) {
+        foreach ($Item in (Get-ChildITem (Join-Path $TestFileDirectory "azurerm") )) {
             Copy-Item -Path $Item.FullName -Destination "TestDrive:\${Item.name}"
         } 
 
         It "Can perform upgrade of compute-create-windowsvm-quick.ps1" {
-            $AzureRMFile = "compute-create-windowsvm-quick.ps1"
-            $AzFile = "compute-create-windowsvm-quick-az.ps1"            
-            $AzureRMFilePath = Join-Path $TestDrive $AzureRMFile
-            $AzFilePath = Join-Path $TestFileDirectory $AzFile
+            $TestFile = "compute-create-windowsvm-quick.ps1"           
+            $AzureRMFilePath = Join-Path $TestDrive $TestFile
+            $AzFilePath = Join-Path $TestFileDirectory "az" $TestFile
 
             $Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath $AzureRMFilePath
             Invoke-AzUpgradeModulePlan -Plan $Plan
@@ -31,10 +30,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         }
 
         It "Can perform upgrade of compute-create-wordpress-mysql.ps1" { 
-            $AzureRMFile = "compute-create-wordpress-mysql.ps1"
-            $AzFile = "compute-create-wordpress-mysql-az.ps1"            
-            $AzureRMFilePath = Join-Path $TestDrive $AzureRMFile
-            $AzFilePath = Join-Path $TestFileDirectory $AzFile
+            $TestFile = "compute-create-wordpress-mysql.ps1"
+            $AzureRMFilePath = Join-Path $TestDrive $TestFile
+            $AzFilePath = Join-Path $TestFileDirectory "az" $TestFile
 
             $Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath $AzureRMFilePath
             Invoke-AzUpgradeModulePlan -Plan $Plan
@@ -54,10 +52,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
 
         It "Can perform upgrade of compute-create-dockerhost.ps1" { 
-            $AzureRMFile = "compute-create-dockerhost.ps1"
-            $AzFile = "compute-create-dockerhost-az.ps1"            
-            $AzureRMFilePath = Join-Path $TestDrive $AzureRMFile
-            $AzFilePath = Join-Path $TestFileDirectory $AzFile
+            $TestFile = "compute-create-dockerhost.ps1"
+            $AzureRMFilePath = Join-Path $TestDrive $TestFile
+            $AzFilePath = Join-Path $TestFileDirectory "az" $TestFile
 
             $Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath $AzureRMFilePath
             Invoke-AzUpgradeModulePlan -Plan $Plan
