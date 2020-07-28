@@ -13,12 +13,3 @@ steps:
   inputs:
     toolMajorVersion: "V2"
     suppressionsFile: .azure-pipelines\credscan-suppressions.json
-
-- task: ms-codeanalysis.vss-microsoft-security-code-analysis-devops.build-task-credscan.PostAnalysis@1
-  inputs:
-    AllTools: false
-    BinSkim: false
-    CredScan: true
-    RoslynAnalyzers: false
-    TSLint: false
-    ToolLogsNotFoundAction: "Standard"
