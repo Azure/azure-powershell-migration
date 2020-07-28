@@ -98,7 +98,13 @@ function Send-MetricsIfDataCollectionEnabled
                 }
                 "Upgrade"
                 {
-                    # implement
+                    $eventMetrics = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Double]'
+                    $eventMetrics.Add("Upgrade.SuccessFileUpdateCount", [System.Double]($Properties.SuccessFileUpdateCount))
+                    $eventMetrics.Add("Upgrade.SuccessCommandUpdateCount", [System.Double]($Properties.SuccessCommandUpdateCount))
+                    $eventMetrics.Add("Upgrade.FailedFileUpdateCount", [System.Double]($Properties.FailedFileUpdateCount))
+                    $eventMetrics.Add("Upgrade.FailedCommandUpdateCount", [System.Double]($Properties.FailedCommandUpdateCount))
+
+                    $telemetryClient.TrackEvent("InvokeAzUpgradeModulePlan", $null, $eventMetrics)
                 }
             }
         }

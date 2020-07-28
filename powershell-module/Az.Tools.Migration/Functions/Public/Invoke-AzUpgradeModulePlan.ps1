@@ -42,6 +42,11 @@ function Invoke-AzUpgradeModulePlan
             $currentFile = $null
             $currentFileContents = $null
 
+            $successFileUpdateCount = 0
+            $successCommandUpdateCount = 0
+            $failedFileUpdateCount = 0
+            $failedCommandUpdateCount = 0
+
             $fileBatchResults = New-Object -TypeName 'System.Collections.Generic.List[UpgradeResult]'
 
             for ([int]$i = 0; $i -lt $Plan.UpgradeSteps.Count; $i++)
@@ -77,12 +82,16 @@ function Invoke-AzUpgradeModulePlan
 
                         Out-FileBatchResult -ResultBatch $fileBatchResults -Success $true -Reason "Completed successfully."
                         $resetFileBuilder = $true
+                        $successFileUpdateCount++
+                        $successCommandUpdateCount += $fileBatchResults.Count
                     }
                 }
                 catch
                 {
                     Out-FileBatchResult -ResultBatch $fileBatchResults -Success $false -Reason "A general error has occurred: $_"
                     $resetFileBuilder = $true
+                    $failedFileUpdateCount++
+                    $failedCommandUpdateCount += $fileBatchResults.Count
                 }
                 finally
                 {
@@ -94,6 +103,13 @@ function Invoke-AzUpgradeModulePlan
                     }
                 }
             }
+
+            Send-MetricsIfDataCollectionEnabled -Operation Upgrade -Properties ([PSCustomObject]@{
+                    SuccessFileUpdateCount = $successFileUpdateCount
+                    SuccessCommandUpdateCount = $successCommandUpdateCount
+                    FailedFileUpdateCount = $failedFileUpdateCount
+                    FailedCommandUpdateCount = $failedCommandUpdateCount
+                })
         }
     }
 }
