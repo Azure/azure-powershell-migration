@@ -79,6 +79,13 @@ function Find-AzUpgradeCommandReference
             {
                 $azureRmReferenceResults.Items.Add($foundCmdlet)
             }
+
+            Send-MetricsIfDataCollectionEnabled -Operation Find -Properties ([PSCustomObject]@{
+                    AzureCmdletCount = $azureRmReferenceResults.Items.Count
+                    AzureModuleName = "AzureRM"
+                    AzureModuleVersion = $AzureRmVersion
+                    FileCount = 1
+                })
         }
         elseif ($PSCmdlet.ParameterSetName -eq 'ByDirectory')
         {
@@ -99,6 +106,13 @@ function Find-AzUpgradeCommandReference
                     $azureRmReferenceResults.Items.Add($foundCmdlet)
                 }
             }
+
+            Send-MetricsIfDataCollectionEnabled -Operation Find -Properties ([PSCustomObject]@{
+                    AzureCmdletCount = $azureRmReferenceResults.Items.Count
+                    AzureModuleName = "AzureRM"
+                    AzureModuleVersion = $AzureRmVersion
+                    FileCount = $filesToSearch.Count
+                })
         }
 
         Write-Output -InputObject $azureRmReferenceResults

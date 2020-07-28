@@ -5,7 +5,7 @@ function New-TelemetryClient
         Returns a new instance of the TelemetryClient.
 
     .DESCRIPTION
-        Returns a new instance of the TelemetryClient. This is used for logging instrumentation.
+        Returns a new instance of the TelemetryClient. This is used for sending metrics.
 
     .EXAMPLE
         PS C:\ New-TelemetryClient

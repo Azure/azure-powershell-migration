@@ -1,3 +1,9 @@
+class DataCollectionSettings
+{
+    [System.Boolean] $DataCollectionEnabled
+    [System.DateTime] $DataCollectionLastChanged
+}
+
 class AliasMapping
 {
     [System.String] $Name
