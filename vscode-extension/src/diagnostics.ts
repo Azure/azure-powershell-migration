@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DepracatedCmdletInfo } from './quickFix';
+import { GET_INFO_COMMAND,GET_DEPRE_INFO_COMMAND,DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DeprecatedCmdletInfo } from './quickFix';
+	
 
 export class DiagnosticsManagement {
 	sourceCmdlets: Map<string, string> = new Map();
@@ -8,7 +9,7 @@ export class DiagnosticsManagement {
 	aliasMapping: Map<string, string> = new Map();
 	breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
 	cmdletRenameInfo = new CmdletRenameInfo();
-	depracatedCmdletInfo=new DepracatedCmdletInfo();
+	deprecatedCmdletInfo=new DeprecatedCmdletInfo();
 
 	constructor(context: vscode.ExtensionContext) {
 		// Register new action
@@ -37,10 +38,17 @@ export class DiagnosticsManagement {
 		);
 
 		context.subscriptions.push(
-			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.depracatedCmdletInfo, {
-				providedCodeActionKinds: DepracatedCmdletInfo.providedCodeActionKinds
+			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.deprecatedCmdletInfo, {
+				providedCodeActionKinds: DeprecatedCmdletInfo.providedCodeActionKinds
 			})
 		);
+		context.subscriptions.push(
+			vscode.commands.registerCommand(GET_INFO_COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/module')))
+		);
+		context.subscriptions.push(
+			vscode.commands.registerCommand(GET_DEPRE_INFO_COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0?view=azps-4.4.0#temporary-removal-of-user-login-using-pscredential')))
+		);
+		
 	}
 
 	refreshMapping(context: vscode.ExtensionContext, srcVersion: string): void {
@@ -55,7 +63,7 @@ export class DiagnosticsManagement {
 	refreshTextEditor(context: vscode.ExtensionContext): void {
 		
 		this.cmdletRenameInfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
-		this.depracatedCmdletInfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
+		this.deprecatedCmdletInfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
 
 		if (vscode.window.activeTextEditor) {
 			this.refreshTextEditorHelper(vscode.window.activeTextEditor.document);
@@ -116,5 +124,9 @@ export class DiagnosticsManagement {
 			}
 		}
 		return CORRECT_CMDLET;
+	}
+	
+	getInfoUrl():string{
+		return "";
 	}
 }

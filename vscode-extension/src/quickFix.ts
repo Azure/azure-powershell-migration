@@ -5,6 +5,9 @@ export const DEPRECATED_CMDLET = 'depracated cmdlet';
 export const CMDLET_RENAME = 'cmdlet rename';
 export const CORRECT_CMDLET = 'correct cmdlet';
 
+export const GET_INFO_COMMAND= 'getInfo';	
+export const GET_DEPRE_INFO_COMMAND= 'getdepreInfo';	
+
 export class CmdletRenameInfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
@@ -24,9 +27,16 @@ export class CmdletRenameInfo implements vscode.CodeActionProvider {
 	];
 
 	provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext, token: vscode.CancellationToken): vscode.CodeAction[] {
-		return context.diagnostics
-			.filter(diagnostic => diagnostic.code === CMDLET_RENAME)
-			.map(diagnostic => this.createCommandCodeAction(diagnostic));
+		var renameCmdlet= context.diagnostics
+						.filter(diagnostic => diagnostic.code === CMDLET_RENAME)
+						.map(diagnostic => this.createCommandCodeAction(diagnostic));
+		// Add action to get more info
+		const getInfo=context.diagnostics
+						.filter(diagnostic => diagnostic.code === CMDLET_RENAME)
+						.map(diagnostic => this.getInfo());
+		const actions=renameCmdlet.concat(getInfo);
+
+		return actions;
 	}
 
 	private createCommandCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
@@ -43,9 +53,16 @@ export class CmdletRenameInfo implements vscode.CodeActionProvider {
 		}
 		return fix;
 	}
+
+	private getInfo(): vscode.CodeAction {
+		const action = new vscode.CodeAction('Learn more...', vscode.CodeActionKind.QuickFix);
+		action.command = { command: GET_INFO_COMMAND, title: 'Learn more ...'};
+		
+		return action;
+	}
 }
 
-export class DepracatedCmdletInfo implements vscode.CodeActionProvider {
+export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();
@@ -63,9 +80,17 @@ export class DepracatedCmdletInfo implements vscode.CodeActionProvider {
 	];
 
 	provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext, token: vscode.CancellationToken): vscode.CodeAction[] {
-		return context.diagnostics
-			.filter(diagnostic => diagnostic.code === DEPRECATED_CMDLET)
-			.map(diagnostic => this.createCommandCodeAction(diagnostic));
+		var deleteCmdlet=context.diagnostics
+		.filter(diagnostic => diagnostic.code === DEPRECATED_CMDLET)
+		.map(diagnostic => this.createCommandCodeAction(diagnostic))
+		
+		// Add action to get more info
+		const getDeprecatedInfo=context.diagnostics
+						.filter(diagnostic => diagnostic.code === DEPRECATED_CMDLET)
+						.map(diagnostic => this.getDeprecatedInfo());
+		const actions=deleteCmdlet.concat(getDeprecatedInfo);
+
+		return actions;
 	}
 
 	private createCommandCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
@@ -92,4 +117,12 @@ export class DepracatedCmdletInfo implements vscode.CodeActionProvider {
 		}
 		return fix;
 	}
+
+	private getDeprecatedInfo(): vscode.CodeAction {
+		const action = new vscode.CodeAction('Learn more...', vscode.CodeActionKind.QuickFix);
+		action.command = { command: GET_DEPRE_INFO_COMMAND, title: 'Learn more ...'};
+		
+		return action;
+	}
+	
 }
