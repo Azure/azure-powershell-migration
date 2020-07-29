@@ -3,7 +3,7 @@
 import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { QuickFixinfo, DepracatedCmdletinfo } from './quickFix';
+import { CmdletRenameinfo, DepracatedCmdletinfo } from './quickFix';
 import { subscribeToDocumentChanges } from './diagnostics';
 
 // this method is called when your extension is activated
@@ -37,8 +37,8 @@ function quickFix(context: vscode.ExtensionContext, aliasMapping: Map<string, st
 	context.subscriptions.push(breakingChangeDiagnostics);
 	subscribeToDocumentChanges(context, breakingChangeDiagnostics, aliasMapping, sourceCmdlets, targetCmdlets);
 	context.subscriptions.push(
-		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new QuickFixinfo(aliasMapping, sourceCmdlets, targetCmdlets), {
-			providedCodeActionKinds: QuickFixinfo.providedCodeActionKinds
+		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new CmdletRenameinfo(aliasMapping, sourceCmdlets, targetCmdlets), {
+			providedCodeActionKinds: CmdletRenameinfo.providedCodeActionKinds
 		})
 	);
 	context.subscriptions.push(

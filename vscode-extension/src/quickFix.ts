@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { CMDLET_RENAME, DEPRECATED_CMDLET } from './diagnostics';
 
-export class QuickFixinfo implements vscode.CodeActionProvider {
+export class CmdletRenameinfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();
