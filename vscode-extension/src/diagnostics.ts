@@ -3,8 +3,8 @@ import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping
 import { GET_INFO_COMMAND,GET_DEPRE_INFO_COMMAND,DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DeprecatedCmdletInfo,PARAMETER_CHANGE,ParameterChangeInfo } from './quickFix';
 
 export class DiagnosticsManagement {
-	sourceCmdlets: Map<string, string> = new Map();
-	targetCmdlets: Map<string, string> = new Map();
+	sourceCmdlets: Map<string, any> = new Map();
+	targetCmdlets: Map<string, any> = new Map();
 	aliasMapping: Map<string, string> = new Map();
 	breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
 	cmdletRenameInfo = new CmdletRenameInfo();
@@ -53,7 +53,7 @@ export class DiagnosticsManagement {
 			vscode.commands.registerCommand(GET_INFO_COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/module')))
 		);
 		context.subscriptions.push(
-			vscode.commands.registerCommand(GET_DEPRE_INFO_COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0?view=azps-4.4.0#temporary-removal-of-user-login-using-pscredential')))
+			vscode.commands.registerCommand(GET_DEPRE_INFO_COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0')))
 		);
 		
 	}
@@ -88,8 +88,9 @@ export class DiagnosticsManagement {
 			let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
 			let match = null;
 			while ((match = re.exec(text))) {
-				var cmdletName = match[0].toString().toLowerCase();
-				var breakingChangeType = this.getBreakingChangeType(cmdletName);
+				var sourceCmdletName = match[0].toString();
+				var lowerCaseSrcCmdletName=sourceCmdletName.toLowerCase();
+				var breakingChangeType = this.getBreakingChangeType(lowerCaseSrcCmdletName);
 				const startPos = activeEditor.document.positionAt(match.index);
 				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				const range = new vscode.Range(startPos, endPos);
@@ -98,17 +99,31 @@ export class DiagnosticsManagement {
 
 				switch (breakingChangeType) {
 					case CMDLET_RENAME: {
-						diagnostic.message = "This cmdlet change its name.";
+						var targetCmdletName=this.aliasMapping.get(lowerCaseSrcCmdletName)!.toString();
+						var sourceCmdletModule:string=this.sourceCmdlets.get(lowerCaseSrcCmdletName).SourceModule.toLowerCase();
+						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
+						diagnostic.source=
+							"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
+							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
 						diagnostic.severity = 1;
+						diagnostic.message = sourceCmdletName+" changes to "+targetCmdletName+".";
 						break;
 					}
 					case PARAMETER_CHANGE: {
-						diagnostic.message = "This cmdlet has parameter changes.";
+						var targetCmdletName=this.aliasMapping.get(lowerCaseSrcCmdletName)!.toString();
+						var sourceCmdletModule:string=this.sourceCmdlets.get(lowerCaseSrcCmdletName).SourceModule.toLowerCase();
+						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
+						diagnostic.source=
+							"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
+							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
+						
+						diagnostic.message = sourceCmdletName+" changes its parameters.";
 						diagnostic.severity = 1;
 						break;
 					}
-					case DEPRECATED_CMDLET: {
-						diagnostic.message = "This is a deprecated cmdlet.";
+					case DEPRECATED_CMDLET: {				
+						diagnostic.source="\nSee more inforamtion: https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0\n";					
+						diagnostic.message = sourceCmdletName+" is a deprecated cmdlet.";
 						diagnostic.severity = 0;
 						break;
 					}

@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 export const BREAKING_CHANGE = 'breaking change';
-export const DEPRECATED_CMDLET = 'depracated cmdlet';
+export const DEPRECATED_CMDLET = 'deprecated cmdlet';
 export const CMDLET_RENAME = 'cmdlet rename';
 export const PARAMETER_CHANGE = 'parameter change';
 export const CORRECT_CMDLET = 'correct cmdlet';
