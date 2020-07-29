@@ -1,10 +1,12 @@
 import * as vscode from 'vscode';
 
 export const BREAKING_CHANGE = 'breaking change';
+
 export const DEPRECATED_CMDLET = 'depracated cmdlet';
 export const CMDLET_RENAME = 'cmdlet rename';
+export const CORRECT_CMDLET = 'correct cmdlet';
 
-export function refreshDiagnostics(doc: vscode.TextDocument, breakingChangeDiagnostics: vscode.DiagnosticCollection, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>): void {
+function refreshDiagnostics(doc: vscode.TextDocument, breakingChangeDiagnostics: vscode.DiagnosticCollection, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>): void {
 	const diagnostics: vscode.Diagnostic[] = [];
 
  	let activeEditor = vscode.window.activeTextEditor;
@@ -14,27 +16,50 @@ export function refreshDiagnostics(doc: vscode.TextDocument, breakingChangeDiagn
         let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
 		while ((match = re.exec(text))) {
 			var cmdletName = match[0].toString().toLowerCase();
-			var resolvedName = aliasMapping.get(cmdletName)?.toLowerCase();
+			var breakingCHangeType = getBreakingChangeType(cmdletName, aliasMapping, sourceCmdlets, targetCmdlets);
 			const startPos = activeEditor.document.positionAt(match.index);
 			const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 			const range = new vscode.Range(startPos, endPos);
-			
-			if (aliasMapping.has(cmdletName) && resolvedName && targetCmdlets.has(resolvedName)) {
-				const diagnostic = new vscode.Diagnostic(range, "This cmdlet change its name.",
+
+			switch (breakingCHangeType) {
+				case CMDLET_RENAME: {
+					const diagnostic = new vscode.Diagnostic(range, "This cmdlet change its name.",
+						vscode.DiagnosticSeverity.Information);
+					diagnostic.code = CMDLET_RENAME;
+					diagnostic.severity = 1;
+					diagnostics.push(diagnostic);
+					break;
+				}
+				case DEPRECATED_CMDLET: {
+					const diagnostic = new vscode.Diagnostic(range, "This is a deprecated cmdlet.",
 					vscode.DiagnosticSeverity.Information);
-				diagnostic.code = CMDLET_RENAME;
-				diagnostic.severity = 1;
-				diagnostics.push(diagnostic);
-			} else if (sourceCmdlets.has(cmdletName)) {
-				const diagnostic = new vscode.Diagnostic(range, "This is a deprecated cmdlet.",
-				vscode.DiagnosticSeverity.Information);
-				diagnostic.code = DEPRECATED_CMDLET;
-				diagnostic.severity = 0;
-				diagnostics.push(diagnostic);
+					diagnostic.code = DEPRECATED_CMDLET;
+					diagnostic.severity = 0;
+					diagnostics.push(diagnostic);
+					break;
+				}
+				case CORRECT_CMDLET: {
+					continue;
+				}
 			}
 		}
 	}
 	breakingChangeDiagnostics.set(doc.uri, diagnostics);
+}
+
+function getBreakingChangeType(cmdletName: string, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
+	cmdletName = cmdletName.toLowerCase();
+	if (sourceCmdlets.has(cmdletName)) {
+		if (aliasMapping.has(cmdletName)) {
+			var resolvedName = aliasMapping.get(cmdletName)!;
+			if (targetCmdlets.has(resolvedName.toLowerCase())) {
+				return CMDLET_RENAME;
+			} else {
+				return DEPRECATED_CMDLET;
+			}
+		}
+	}
+	return CORRECT_CMDLET;
 }
 
 export function subscribeToDocumentChanges(context: vscode.ExtensionContext, breakingChangeDiagnostics: vscode.DiagnosticCollection, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>): void {
