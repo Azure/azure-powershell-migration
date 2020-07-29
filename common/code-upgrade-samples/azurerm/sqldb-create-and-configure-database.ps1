@@ -1,5 +1,5 @@
 # Original source codet: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/create-and-configure-database/create-and-configure-database.ps1
-# Login-AzureRmAccount
+
 # Set the resource group name and location for your server
 $resourcegroupname = "myResourceGroup-$(Get-Random)"
 $location = "southcentralus"
@@ -34,6 +34,3 @@ $database = New-AzureRmSqlDatabase  -ResourceGroupName $resourcegroupname `
     -DatabaseName $databasename `
     -RequestedServiceObjectiveName "S0" `
     -SampleName "AdventureWorksLT"
-
-# Clean up deployment 
-# Remove-AzureRmResourceGroup -ResourceGroupName $resourcegroupname
