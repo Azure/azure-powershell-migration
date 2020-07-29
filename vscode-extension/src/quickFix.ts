@@ -1,15 +1,22 @@
 import * as vscode from 'vscode';
-import { CMDLET_RENAME, DEPRECATED_CMDLET } from './diagnostics';
+
+export const BREAKING_CHANGE = 'breaking change';
+export const DEPRECATED_CMDLET = 'depracated cmdlet';
+export const CMDLET_RENAME = 'cmdlet rename';
+export const CORRECT_CMDLET = 'correct cmdlet';
 
 export class CmdletRenameinfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();
 	targetCmdlets: Map<string, any> = new Map();
-	constructor(aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
-		this.aliasMapping = aliasMapping;
+
+	constructor(){}
+
+	updateMapping(sourceCmdlets: Map<string, string>,targetCmdlets: Map<string, string>,aliasMapping: Map<string, string>){
 		this.sourceCmdlets = sourceCmdlets;
 		this.targetCmdlets = targetCmdlets;
+		this.aliasMapping = aliasMapping;
 	}
 
 	public static readonly providedCodeActionKinds = [
@@ -43,12 +50,14 @@ export class DepracatedCmdletinfo implements vscode.CodeActionProvider {
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();
 	targetCmdlets: Map<string, any> = new Map();
-	constructor(aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
-		this.aliasMapping = aliasMapping;
+
+	constructor(){}
+
+	updateMapping(sourceCmdlets: Map<string, string>,targetCmdlets: Map<string, string>,aliasMapping: Map<string, string>){
 		this.sourceCmdlets = sourceCmdlets;
 		this.targetCmdlets = targetCmdlets;
+		this.aliasMapping = aliasMapping;
 	}
-
 	public static readonly providedCodeActionKinds = [
 		vscode.CodeActionKind.QuickFix
 	];
