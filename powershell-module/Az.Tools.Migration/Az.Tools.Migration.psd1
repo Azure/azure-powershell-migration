@@ -3,10 +3,10 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.0'
+    ModuleVersion = '0.0.1'
 
     # Supported PSEditions
-    # CompatiblePSEditions = @()
+    CompatiblePSEditions = 'Core', 'Desktop'
 
     # ID used to uniquely identify this module
     GUID = 'cb471070-37cc-4484-9665-adf1502b4e3a'
@@ -15,16 +15,16 @@
     Author = 'Microsoft Corporation'
 
     # Company or vendor of this module
-    CompanyName = ''
+    CompanyName = 'Microsoft Corporation'
 
     # Copyright statement for this module
     Copyright = 'Microsoft Corporation. All rights reserved.'
 
     # Description of the functionality provided by this module
-    Description = 'Contains functionality to upgrade PowerShell scripts or modules from AzureRM to Az.'
+    Description = 'Contains functionality to upgrade PowerShell scripts and modules from AzureRM to Az.'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    # PowerShellVersion = ''
+    PowerShellVersion = '5.1'
 
     # Name of the Windows PowerShell host required by this module
     # PowerShellHostName = ''
@@ -33,7 +33,7 @@
     # PowerShellHostVersion = ''
 
     # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    # DotNetFrameworkVersion = ''
+    DotNetFrameworkVersion = '4.7.2'
 
     # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
     # CLRVersion = ''
@@ -92,13 +92,13 @@
     PrivateData = @{
         PSData = @{
             # Tags applied to this module. These help with module discovery in online galleries.
-            # Tags = @()
+            Tags = 'Azure', 'AzureRM', 'Az', 'PowerShell'
 
             # A URL to the license for this module.
-            # LicenseUri = ''
+            LicenseUri = 'https://github.com/Azure/azure-powershell-migration/blob/main/LICENSE'
 
             # A URL to the main website for this project.
-            # ProjectUri = ''
+            ProjectUri = 'https://github.com/Azure/azure-powershell-migration'
 
             # A URL to an icon representing this module.
             # IconUri = ''
