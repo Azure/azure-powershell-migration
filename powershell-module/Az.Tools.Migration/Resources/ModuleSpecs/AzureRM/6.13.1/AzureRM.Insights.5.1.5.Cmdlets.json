@@ -1,0 +1,1530 @@
+[
+    {
+        "Command":  "Get-AzureRmMetricDefinition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmMetric",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeGrain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AggregationType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Top",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OrderBy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResultType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricFilter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricName",
+                               "Aliases":  [
+                                               "MetricNames"
+                                           ]
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmLogProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmLogProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmLogProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusRuleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RetentionInDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Category",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmLog",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Caller",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CorrelationId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceProvider",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxRecord",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDiagnosticSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusRuleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EventHubName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EventHubAuthorizationRuleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Enabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Categories",
+                               "Aliases":  [
+                                               "Category"
+                                           ]
+                           },
+                           {
+                               "Name":  "MetricCategory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Timegrains",
+                               "Aliases":  [
+                                               "Timegrain"
+                                           ]
+                           },
+                           {
+                               "Name":  "RetentionEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WorkspaceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RetentionInDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDiagnosticSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDiagnosticSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutoscaleNotification",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Webhook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomEmail",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SendEmailToSubscriptionAdministrator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SendEmailToSubscriptionCoAdministrator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutoscaleProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaximumCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MinimumCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTimeWindow",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTimeWindow",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeWindowTimeZone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceFrequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScheduleDay",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScheduleHour",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScheduleMinute",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScheduleTimeZone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Rule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutoscaleRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "MetricName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Operator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricStatistic",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Threshold",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeAggregationOperator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeGrain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeWindow",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScaleActionCooldown",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScaleActionDirection",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScaleActionScaleType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScaleActionValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmAutoscaleSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "SettingSpec"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "DisableSetting",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoscaleProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Notification",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutoscaleHistory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Caller",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutoscaleSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutoscaleWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Property",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutoscaleSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmMetricAlertRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "WindowSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Operator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Threshold",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeAggregationOperator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Action",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmWebtestAlertRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "MetricName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WindowSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FailedLocationCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableRule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Action",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAlertHistory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Caller",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAlertRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DetailedOutput",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAlertRuleEmail",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "CustomEmail",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SendToServiceOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAlertRuleWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Property",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAlertRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmActivityLogAlert",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Scope",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Condition",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Action",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableAlert",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmActivityLogAlert",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmActionGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ActionGroupId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebhookProperty",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmActivityLogAlertCondition",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Field",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Equal",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmActivityLogAlert",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmActivityLogAlert",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmActivityLogAlert",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmActionGroupReceiver",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailReceiver",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EmailAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SmsReceiver",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CountryCode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PhoneNumber",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WebhookReceiver",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmActionGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ShortName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Receiver",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DisableGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmActionGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmActionGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmMetricFilter",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Insights",
+        "Version":  "5.1.5",
+        "Parameters":  [
+                           {
+                               "Name":  "Dimension",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Operator",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]
