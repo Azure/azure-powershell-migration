@@ -20,9 +20,13 @@ upgrade your PowerShell scripts and script modules from AzureRM to the Az PowerS
 > features might not be supported or might have constrained capabilities. For more information, see
 > [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
+Report feedback and issues about the Az.Tools.Migration PowerShell module via
+[a GitHub issue](https://github.com/Azure/azure-powershell-migration/issues) in the
+`azure-powershell-migration` repository.
+
 ## Requirements
 
-* Update your existing PowerShell scripts to the latest version of the AzureRM PowerShell module.
+* Update your existing PowerShell scripts to the latest version of the [AzureRM PowerShell module (6.13.1)](https://github.com/Azure/azure-powershell/releases/tag/v6.13.1-November2018).
 * Install the Az.Tools.Migration PowerShell module.
 
   ```powershell
@@ -105,6 +109,7 @@ $Results | Format-Table -Property Success, Reason, Step
   during upgrade plan generation, a warning is returned.
 * File I/O operations use default encoding. Unusual file encoding situations may cause problems.
 * AzureRM cmdlets passed as arguments to Pester unit test mock statements aren't detected.
+* Currently, only Az PowerShell module version 4.4.0 is supported as a target.
 
 ## Next steps
 
