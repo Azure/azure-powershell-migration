@@ -1,5 +1,5 @@
 # Original source code: https://github.com/Azure/azure-docs-powershell-samples/blob/5513f8ea73e2b9630311d7ea27372cddc4e65cae/sql-database/import-from-bacpac/import-from-bacpac.ps1
-# Login-AzureRmAccount
+
 # Set the resource group name and location for your server
 $resourcegroupname = "myResourceGroup-$(Get-Random)"
 $location = "westeurope"
@@ -61,7 +61,7 @@ $importRequest = New-AzureRmSqlDatabaseImport -ResourceGroupName $resourcegroupn
     -DatabaseMaxSizeBytes "262144000" `
     -StorageKeyType "StorageAccessKey" `
     -StorageKey $(Get-AzureRmStorageAccountKey -ResourceGroupName $resourcegroupname -StorageAccountName $storageaccountname).Value[0] `
-    -StorageUri "http://$storageaccountname.blob.core.windows.net/$storagecontainername/$bacpacfilename" `
+    -StorageUri "https://$storageaccountname.blob.core.windows.net/$storagecontainername/$bacpacfilename" `
     -Edition "Standard" `
     -ServiceObjectiveName "S3" `
     -AdministratorLogin "$adminlogin" `
@@ -85,6 +85,3 @@ Set-AzureRmSqlDatabase -ResourceGroupName $resourcegroupname `
     -DatabaseName $databasename  `
     -Edition "Standard" `
     -RequestedServiceObjectiveName "S0"
-
-# Clean up deployment 
-# Remove-AzureRmResourceGroup -ResourceGroupName $resourcegroupname
