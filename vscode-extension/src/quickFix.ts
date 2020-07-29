@@ -144,9 +144,15 @@ export class ParameterChangeInfo implements vscode.CodeActionProvider {
 	];
 
 	provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext, token: vscode.CancellationToken): vscode.CodeAction[] {
-		return context.diagnostics
+		var changeCmdlet = context.diagnostics
 			.filter(diagnostic => diagnostic.code === PARAMETER_CHANGE)
 			.map(diagnostic => this.createCommandCodeAction(diagnostic));
+		var getDeprecatedInfo = context.diagnostics
+			.filter(diagnostic => diagnostic.code === PARAMETER_CHANGE)
+			.map(diagnostic => this.getDeprecatedInfo());
+		const actions = changeCmdlet.concat(getDeprecatedInfo);
+		return actions;
+
 	}
 
 	private createCommandCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
@@ -174,5 +180,12 @@ export class ParameterChangeInfo implements vscode.CodeActionProvider {
 			fix.edit.replace(document.uri, range, newCmdlet);
 		}
 		return fix;
+	}
+
+	private getDeprecatedInfo(): vscode.CodeAction {
+		const action = new vscode.CodeAction('Learn more...', vscode.CodeActionKind.QuickFix);
+		action.command = { command: GET_DEPRE_INFO_COMMAND, title: 'Learn more ...' };
+
+		return action;
 	}
 }
