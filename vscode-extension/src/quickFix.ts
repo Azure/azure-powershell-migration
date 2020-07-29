@@ -5,7 +5,7 @@ export const DEPRECATED_CMDLET = 'depracated cmdlet';
 export const CMDLET_RENAME = 'cmdlet rename';
 export const CORRECT_CMDLET = 'correct cmdlet';
 
-export class CmdletRenameinfo implements vscode.CodeActionProvider {
+export class CmdletRenameInfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();
@@ -45,7 +45,7 @@ export class CmdletRenameinfo implements vscode.CodeActionProvider {
 	}
 }
 
-export class DepracatedCmdletinfo implements vscode.CodeActionProvider {
+export class DepracatedCmdletInfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
 	sourceCmdlets: Map<string, any> = new Map();

@@ -1,14 +1,14 @@
 import * as vscode from 'vscode';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { BREAKING_CHANGE, DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameinfo, DepracatedCmdletinfo } from './quickFix';
+import { DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DepracatedCmdletInfo } from './quickFix';
 
 export class DiagnosticsManagement {
 	sourceCmdlets: Map<string, string> = new Map();
 	targetCmdlets: Map<string, string> = new Map();
 	aliasMapping: Map<string, string> = new Map();
 	breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
-	cmdletRenameinfo = new CmdletRenameinfo()
-	depracatedCmdletinfo=new DepracatedCmdletinfo();
+	cmdletRenameInfo = new CmdletRenameInfo();
+	depracatedCmdletInfo=new DepracatedCmdletInfo();
 
 	constructor(context: vscode.ExtensionContext) {
 		// Register new action
@@ -31,13 +31,14 @@ export class DiagnosticsManagement {
 		);
 
 		context.subscriptions.push(
-			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.cmdletRenameinfo , {
-				providedCodeActionKinds: CmdletRenameinfo.providedCodeActionKinds
+			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.cmdletRenameInfo , {
+				providedCodeActionKinds: CmdletRenameInfo.providedCodeActionKinds
 			})
 		);
+
 		context.subscriptions.push(
-			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.depracatedCmdletinfo, {
-				providedCodeActionKinds: DepracatedCmdletinfo.providedCodeActionKinds
+			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.depracatedCmdletInfo, {
+				providedCodeActionKinds: DepracatedCmdletInfo.providedCodeActionKinds
 			})
 		);
 	}
@@ -53,8 +54,8 @@ export class DiagnosticsManagement {
 
 	refreshTextEditor(context: vscode.ExtensionContext): void {
 		
-		this.cmdletRenameinfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
-		this.depracatedCmdletinfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
+		this.cmdletRenameInfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
+		this.depracatedCmdletInfo.updateMapping(this.sourceCmdlets,this.targetCmdlets,this.aliasMapping);
 
 		if (vscode.window.activeTextEditor) {
 			this.refreshTextEditorHelper(vscode.window.activeTextEditor.document);
@@ -72,12 +73,12 @@ export class DiagnosticsManagement {
 			let match=null;
 			while ((match = re.exec(text))) {
 				var cmdletName = match[0].toString().toLowerCase();
-				var breakingCHangeType = this.getBreakingChangeType(cmdletName);
+				var breakingChangeType = this.getBreakingChangeType(cmdletName);
 				const startPos = activeEditor.document.positionAt(match.index);
 				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				const range = new vscode.Range(startPos, endPos);
 
-				switch (breakingCHangeType) {
+				switch (breakingChangeType) {
 					case CMDLET_RENAME: {
 						const diagnostic = new vscode.Diagnostic(range, "This cmdlet change its name.",
 							vscode.DiagnosticSeverity.Information);
@@ -106,14 +107,12 @@ export class DiagnosticsManagement {
 	getBreakingChangeType(cmdletName: string) {
 		cmdletName = cmdletName.toLowerCase();
 		if (this.sourceCmdlets.has(cmdletName)) {
-		// if find cmlet in sourceComlet
-			if (this.aliasMapping.has(cmdletName)) {
-				var resolvedName = this.aliasMapping.get(cmdletName)!;
-				if (this.targetCmdlets.has(resolvedName.toLowerCase())) {
-					return CMDLET_RENAME;
-				} else {
-					return DEPRECATED_CMDLET;
-				}
+		// if find cmlet in sourceCmdlet
+			if (this.aliasMapping.has(cmdletName) && 
+					this.targetCmdlets.has(this.aliasMapping.get(cmdletName)!.toLowerCase())) {
+				return CMDLET_RENAME;
+			} else {
+				return DEPRECATED_CMDLET;
 			}
 		}
 		return CORRECT_CMDLET;
