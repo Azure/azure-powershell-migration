@@ -2,9 +2,8 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
-import { displayUnderline } from './displayUnderline';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { COMMAND, QuickFixer, QuickFixinfo } from './quickFix';
+import { QuickFixinfo, DepracatedCmdletinfo } from './quickFix';
 import { subscribeToDocumentChanges } from './diagnostics';
 
 // this method is called when your extension is activated
@@ -20,35 +19,33 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
 			
 			// Get Mapping according to srcVersion
-			var targetCmdlets = loadLatestVersionCmdletSpec();
 			var sourceCmdlets = loadSrcVersionCmdletSpec(sourceVersion);
+			var targetCmdlets = loadLatestVersionCmdletSpec();
 			var aliasMapping = loadAliasMapping();
 
-			// update editor
-			// displayUnderline(context, sourceCmdlets, targetCmdlets, aliasMapping);
+			quickFix(context, aliasMapping, sourceCmdlets, targetCmdlets);
 		}
 	});
 
-	var quickFixer = new QuickFixer();
-	let codeActionProvider = vscode.languages.registerCodeActionsProvider({language: 'powershell'}, quickFixer, {
-		providedCodeActionKinds: QuickFixer.providedCodeActionKinds
-	});
-	context.subscriptions.push(disposable, codeActionProvider);
+	context.subscriptions.push(disposable);
 
+	console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
+}
+
+function quickFix(context: vscode.ExtensionContext, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
 	const breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
 	context.subscriptions.push(breakingChangeDiagnostics);
-	subscribeToDocumentChanges(context, breakingChangeDiagnostics);
+	subscribeToDocumentChanges(context, breakingChangeDiagnostics, aliasMapping, sourceCmdlets, targetCmdlets);
 	context.subscriptions.push(
-		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new QuickFixinfo(), {
+		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new QuickFixinfo(aliasMapping, sourceCmdlets, targetCmdlets), {
 			providedCodeActionKinds: QuickFixinfo.providedCodeActionKinds
 		})
 	);
-
 	context.subscriptions.push(
-		vscode.commands.registerCommand(COMMAND, () => vscode.env.openExternal(vscode.Uri.parse('https://docs.microsoft.com/en-us/powershell/azure/migrate-from-azurerm-to-az?view=azps-4.4.0')))
+		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new DepracatedCmdletinfo(aliasMapping, sourceCmdlets, targetCmdlets), {
+			providedCodeActionKinds: DepracatedCmdletinfo.providedCodeActionKinds
+		})
 	);
-
-	console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
 }
 
 // this method is called when your extension is deactivated

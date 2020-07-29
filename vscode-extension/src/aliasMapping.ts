@@ -11,10 +11,10 @@ export function loadLatestVersionCmdletSpec() {
         if(fs.statSync(file_path).isFile()){
             const map = loadCmdletSpecFromFile(file_path);
             for (let key of map.keys()) {
-                cmdlets.set(key, map.get(key));
+                cmdlets.set(key.toLowerCase(), map.get(key));
             }
         }
-    })
+    });
 
     return cmdlets;
 }
@@ -29,10 +29,10 @@ export function loadSrcVersionCmdletSpec(srcVersion: string) {
         if(fs.statSync(file_path).isFile()){
             const map = loadCmdletSpecFromFile(file_path);
             for (let key of map.keys()) {
-                cmdlets.set(key, map.get(key));
+                cmdlets.set(key.toLowerCase(), map.get(key));
             }
         }
-    })
+    });
 
     return cmdlets;
 }
