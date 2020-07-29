@@ -11,6 +11,9 @@ import { subscribeToDocumentChanges } from './diagnostics';
 export function activate(context: vscode.ExtensionContext) {
 	console.log('"azure-powershell-migration" is now activating ...');
 
+	const breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
+	context.subscriptions.push(breakingChangeDiagnostics);
+
 	let disposable = vscode.commands.registerCommand('azure-powershell-migration.selectVersion', async () => {
 		// Get source version
 		var sourceVersion =await getSrcVersion();
@@ -23,7 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 			var targetCmdlets = loadLatestVersionCmdletSpec();
 			var aliasMapping = loadAliasMapping();
 
-			quickFix(context, aliasMapping, sourceCmdlets, targetCmdlets);
+			quickFix(context, breakingChangeDiagnostics, aliasMapping, sourceCmdlets, targetCmdlets);
 		}
 	});
 
@@ -32,9 +35,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
 }
 
-function quickFix(context: vscode.ExtensionContext, aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
-	const breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
-	context.subscriptions.push(breakingChangeDiagnostics);
+function quickFix(context: vscode.ExtensionContext, breakingChangeDiagnostics: vscode.DiagnosticCollection ,aliasMapping: Map<string, string>, sourceCmdlets: Map<string, any>, targetCmdlets: Map<string, any>) {
 	subscribeToDocumentChanges(context, breakingChangeDiagnostics, aliasMapping, sourceCmdlets, targetCmdlets);
 	context.subscriptions.push(
 		vscode.languages.registerCodeActionsProvider({language: 'powershell'}, new CmdletRenameinfo(aliasMapping, sourceCmdlets, targetCmdlets), {
