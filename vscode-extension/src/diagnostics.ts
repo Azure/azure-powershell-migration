@@ -101,29 +101,27 @@ export class DiagnosticsManagement {
 					case CMDLET_RENAME: {
 						var targetCmdletName=this.aliasMapping.get(lowerCaseSrcCmdletName)!.toString();
 						var sourceCmdletModule:string=this.sourceCmdlets.get(lowerCaseSrcCmdletName).SourceModule.toLowerCase();
-						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
-						diagnostic.source=
+						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();					
+						diagnostic.message = sourceCmdletName+" changes to "+targetCmdletName+"."+
 							"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
 							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
 						diagnostic.severity = 1;
-						diagnostic.message = sourceCmdletName+" changes to "+targetCmdletName+".";
 						break;
 					}
 					case PARAMETER_CHANGE: {
 						var targetCmdletName=this.aliasMapping.get(lowerCaseSrcCmdletName)!.toString();
 						var sourceCmdletModule:string=this.sourceCmdlets.get(lowerCaseSrcCmdletName).SourceModule.toLowerCase();
 						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
-						diagnostic.source=
+						diagnostic.message = sourceCmdletName+" changes its parameters."+
 							"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
 							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
 						
-						diagnostic.message = sourceCmdletName+" changes its parameters.";
 						diagnostic.severity = 1;
 						break;
 					}
 					case DEPRECATED_CMDLET: {				
-						diagnostic.source="\nSee more inforamtion: https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0\n";					
-						diagnostic.message = sourceCmdletName+" is a deprecated cmdlet.";
+						diagnostic.message = sourceCmdletName+" is a deprecated cmdlet."+
+							"\nSee more inforamtion: https://docs.microsoft.com/en-us/powershell/azure/migrate-az-1.0.0\n";		
 						diagnostic.severity = 0;
 						break;
 					}
