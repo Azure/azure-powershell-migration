@@ -1,0 +1,343 @@
+[
+    {
+        "Command":  "Sync-AzureRmMediaServiceStorageKeys",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmMediaServiceKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmMediaServiceKeys",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmMediaServiceNameAvailability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmMediaServiceStorageConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsPrimary",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmMediaService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmMediaService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "StorageAccounts",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmMediaService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmMediaService",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Media",
+        "Version":  "0.10.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccountName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccounts",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

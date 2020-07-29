@@ -1,0 +1,34 @@
+{
+    //-------- Files configuration --------
+
+    // always insert spaces instead of tabs, regardless of the current file's detected indentation.
+    //
+    // NOTE: on file save, VSCode will not automatically convert existing tab characters into spaces.
+    // there is however a built-in VSCode command to accomplish this task on a file. Steps to correct the tabs on a single file:
+    //
+    // 1. Open a file in VSCode.
+    // 2. Use Ctrl+Shift+P to bring up the command palette.
+    // 3. Search for the command "Convert Indentation To Spaces" and select the result.
+    // 4. This will run the action to convert tabs to spaces for the currently open file.
+    //
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    // trim trailing whitespace automatically when you save a file.
+    "files.trimTrailingWhitespace": true,
+
+    // trim trailing newlines at the end of a file automatically when you save a file.
+    "files.trimFinalNewlines": true,
+
+    //-------- PowerShell Configuration --------
+
+    // Use a custom PowerShell Script Analyzer settings file for this workspace.
+    // Relative paths for this setting are always relative to the workspace root dir.
+    "powershell.scriptAnalysis.settingsPath": "PSScriptAnalyzerSettings.psd1",
+
+    // update the default word separators to remove the $ character.
+    // this means you can double click on a PowerShell variable name (ex: $myVariable) and it
+    // will correctly select the entire variable (including $) instead of just selecting the word.
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+}

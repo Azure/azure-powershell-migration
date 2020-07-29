@@ -1,0 +1,1101 @@
+[
+    {
+        "Command":  "Get-AzureRmCdnProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnProfileSsoUrl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmCdnProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmCdnProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmCdnProfile",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnOrigin",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "OriginName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmCdnOrigin",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CdnOrigin",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnEndpointNameAvailability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Publish-AzureRmCdnEndpointContent",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoadContent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OriginHostHeader",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OriginPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentTypesToCompress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsCompressionEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsHttpAllowed",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsHttpsAllowed",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryStringCachingBehavior",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OriginName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OriginHostName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpPort",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpsPort",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OptimizationType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProbePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GeoFilters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeliveryPolicy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Unpublish-AzureRmCdnEndpointContent",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PurgeContent",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmCdnEndpoint",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomDomainHostName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "HostName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnCustomDomain",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "CustomDomainName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnProfileResourceUsage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Confirm-AzureRmCdnEndpointProbeUrl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProbeUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnEndpointResourceUsage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnProfileSupportedOptimizationType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnProfile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnSubscriptionResourceUsage",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmCdnEdgeNodes",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Validate-AzureRmCdnCustomDomain",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Cdn",
+        "Version":  "5.0.6",
+        "Parameters":  [
+                           {
+                               "Name":  "EndpointName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ProfileName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CdnEndpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CustomDomainHostName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

@@ -1,0 +1,1218 @@
+[
+    {
+        "Command":  "New-AzureRmEventHubNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableAutoInflate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaximumThroughputUnits",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableKafka",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHubNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHubNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableAutoInflate",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaximumThroughputUnits",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventHubNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventHubAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Rights",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHubAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Eventhub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHubAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "AuthRuleObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "Rights",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventHubAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHubKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventHubKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "RegenerateKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "EventHubObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "MessageRetentionInDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PartitionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "EventHubObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "messageRetentionInDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "partitionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventHub",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventHubConsumerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConsumerGroupName"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserMetadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHubConsumerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConsumerGroupName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHubConsumerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConsumerGroupName"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserMetadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventHubConsumerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EventHub",
+                               "Aliases":  [
+                                               "EventHubName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConsumerGroupName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventHubGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PartnerNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AlternateName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventHubGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventHubGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHubGeoDRConfigurationBreakPair",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventHubGeoDRConfigurationFailOver",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmEventHubName",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventHub",
+        "Version":  "0.7.0",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]
