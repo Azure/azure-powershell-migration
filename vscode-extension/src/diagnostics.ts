@@ -112,9 +112,14 @@ export class DiagnosticsManagement {
 						var targetCmdletName=this.aliasMapping.get(lowerCaseSrcCmdletName)!.toString();
 						var sourceCmdletModule:string=this.sourceCmdlets.get(lowerCaseSrcCmdletName).SourceModule.toLowerCase();
 						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
-						diagnostic.message = sourceCmdletName+" changes its parameters."+
-							"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
+
+						var detailsInfo=sourceCmdletName+"'s parameters changed during migration.";
+						if(lowerCaseSrcCmdletName==='new-azurermkeyvault')
+							detailsInfo+="\nDisableSoftDelete is true by default for "+sourceCmdletName+" but EnableSoftDelete is true by default for "+targetCmdletName+".";
+						var cmdletInfo="\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
 							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
+							
+						diagnostic.message = detailsInfo+cmdletInfo;
 						
 						diagnostic.severity = 1;
 						break;
