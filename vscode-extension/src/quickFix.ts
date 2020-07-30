@@ -83,7 +83,7 @@ export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 	provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext, token: vscode.CancellationToken): vscode.CodeAction[] {
 		var deleteCmdlet = context.diagnostics
 			.filter(diagnostic => diagnostic.code === DEPRECATED_CMDLET)
-			.map(diagnostic => this.createCommandCodeAction(diagnostic))
+			.map(diagnostic => this.createCommandCodeAction(diagnostic));
 
 		// Add action to get more info
 		const getDeprecatedInfo = context.diagnostics
@@ -95,13 +95,13 @@ export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 	}
 
 	private createCommandCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
-		const fix = new vscode.CodeAction(`Delete this line`, vscode.CodeActionKind.QuickFix);
+		const fix = new vscode.CodeAction(`Comment out this line`, vscode.CodeActionKind.QuickFix);
 		fix.edit = new vscode.WorkspaceEdit();
 		var editor = vscode.window.activeTextEditor;
 		if (editor) {
 			var lineNumber = diagnostic.range.start.line;
 			var line = editor.document.lineAt(lineNumber);
-			var range;
+			/*var range;
 			if (lineNumber === 0) {
 				if (editor.document.lineCount === 1) {
 					range = new vscode.Range(line.range.start, line.range.end);
@@ -114,7 +114,11 @@ export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 				range = new vscode.Range(preLine.range.end, line.range.end);
 			}
 			var document = editor.document;
-			fix.edit.replace(document.uri, range, "");
+			fix.edit.replace(document.uri, range, "");*/
+			var newCmdlet = "#" + line.text;
+			var range = new vscode.Range(line.range.start, line.range.end);
+			var document = editor.document;
+			fix.edit.replace(document.uri, range, newCmdlet);
 		}
 		return fix;
 	}
@@ -175,6 +179,7 @@ export class ParameterChangeInfo implements vscode.CodeActionProvider {
 			} else {
 				newCmdlet = newCmdlet + " -DisableSoftDelete";
 			}
+			newCmdlet = newCmdlet.replace("-VaultName", "-Name");
 			var range = new vscode.Range(line.range.start, line.range.end);
 			var document = editor.document;
 			fix.edit.replace(document.uri, range, newCmdlet);
