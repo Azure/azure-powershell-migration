@@ -85,15 +85,25 @@ export class DiagnosticsManagement {
 		let activeEditor = vscode.window.activeTextEditor;
 		if (activeEditor) {
 			const text = activeEditor.document.getText();
-			let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
-			let match = null;
+			var re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
+			var match = null;
 			while ((match = re.exec(text))) {
 				var sourceCmdletName = match[0].toString();
-				var lowerCaseSrcCmdletName=sourceCmdletName.toLowerCase();
+				var lowerCaseSrcCmdletName = sourceCmdletName.toLowerCase();
 				var breakingChangeType = this.getBreakingChangeType(lowerCaseSrcCmdletName);
 				const startPos = activeEditor.document.positionAt(match.index);
 				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				const range = new vscode.Range(startPos, endPos);
+
+				var editor = vscode.window.activeTextEditor;
+				if (editor) {
+					var lineNumber = range.start.line;
+					var line = editor.document.lineAt(lineNumber);
+					var lineText = line.text;
+					if (lineText.toString().trim().startsWith('#')) {
+						continue;
+					}
+				}
 
 				const diagnostic = new vscode.Diagnostic(range, "", vscode.DiagnosticSeverity.Information);
 

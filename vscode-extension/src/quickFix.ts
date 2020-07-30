@@ -115,7 +115,7 @@ export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 			}
 			var document = editor.document;
 			fix.edit.replace(document.uri, range, "");*/
-			var newCmdlet = "#" + line.text;
+			var newCmdlet = "# " + line.text;
 			var range = new vscode.Range(line.range.start, line.range.end);
 			var document = editor.document;
 			fix.edit.replace(document.uri, range, newCmdlet);
