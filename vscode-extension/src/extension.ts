@@ -1,11 +1,7 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { getSrcVersion } from './selectVersion';
 import { DiagnosticsManagement } from './diagnostics';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 	console.log('"azure-powershell-migration" is now activating ...');
 	var diagnosticsManagement=new DiagnosticsManagement(context);
@@ -14,11 +10,10 @@ export function activate(context: vscode.ExtensionContext) {
 		// Get source version
 		var sourceVersion =await getSrcVersion();
 		
+		// Refresh mapping every time change source version
 		if (sourceVersion != undefined) {
 			vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
-			
 			diagnosticsManagement.refreshMapping(context,sourceVersion);
-
 		}
 	});
 
