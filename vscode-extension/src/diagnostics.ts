@@ -1,15 +1,17 @@
 import * as vscode from 'vscode';
 import { loadSrcVersionCmdletSpec, loadLatestVersionCmdletSpec, loadAliasMapping } from './aliasMapping';
-import { GET_INFO_COMMAND,GET_DEPRE_INFO_COMMAND,DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DeprecatedCmdletInfo,PARAMETER_CHANGE,ParameterChangeInfo } from './quickFix';
+//import { GET_INFO_COMMAND,GET_DEPRE_INFO_COMMAND,DEPRECATED_CMDLET, CMDLET_RENAME, CORRECT_CMDLET, CmdletRenameInfo, DeprecatedCmdletInfo,PARAMETER_CHANGE,ParameterChangeInfo, BreakingChangeInfo } from './quickFix';
+import { GET_INFO_COMMAND, GET_DEPRE_INFO_COMMAND,DEPRECATED_CMDLET, CMDLET_RENAME, DO_NOTHING, PARAMETER_CHANGE, BreakingChangeInfo } from './quickFix';
 
 export class DiagnosticsManagement {
 	sourceCmdlets: Map<string, any> = new Map();
 	targetCmdlets: Map<string, any> = new Map();
 	aliasMapping: Map<string, string> = new Map();
 	breakingChangeDiagnostics = vscode.languages.createDiagnosticCollection("breaking change");
-	cmdletRenameInfo = new CmdletRenameInfo();
+	/*cmdletRenameInfo = new CmdletRenameInfo();
 	deprecatedCmdletInfo=new DeprecatedCmdletInfo();
-	parameterChangeInfo = new ParameterChangeInfo();
+	parameterChangeInfo = new ParameterChangeInfo();*/
+	breakingChangeInfo = new BreakingChangeInfo();
 
 	constructor(context: vscode.ExtensionContext) {
 		// Register new action
@@ -32,20 +34,17 @@ export class DiagnosticsManagement {
 		);
 
 		context.subscriptions.push(
-			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.cmdletRenameInfo , {
+			/*vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.cmdletRenameInfo , {
 				providedCodeActionKinds: CmdletRenameInfo.providedCodeActionKinds
-			})
-		);
-
-		context.subscriptions.push(
+			}),
 			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.deprecatedCmdletInfo, {
 				providedCodeActionKinds: DeprecatedCmdletInfo.providedCodeActionKinds
-			})
-		);
-
-		context.subscriptions.push(
+			}),
 			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.parameterChangeInfo , {
 				providedCodeActionKinds: ParameterChangeInfo.providedCodeActionKinds
+			})*/
+			vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, this.breakingChangeInfo , {
+				providedCodeActionKinds: BreakingChangeInfo.providedCodeActionKinds
 			})
 		);
 
@@ -68,10 +67,10 @@ export class DiagnosticsManagement {
 	}
 
 	refreshTextEditor(context: vscode.ExtensionContext): void {
-		
-		this.cmdletRenameInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);
+		/*this.cmdletRenameInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);
 		this.deprecatedCmdletInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);
-		this.parameterChangeInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);
+		this.parameterChangeInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);*/
+		this.breakingChangeInfo.updateMapping(this.sourceCmdlets, this.targetCmdlets, this.aliasMapping);
 
 		if (vscode.window.activeTextEditor) {
 			this.refreshTextEditorHelper(vscode.window.activeTextEditor.document);
@@ -80,32 +79,31 @@ export class DiagnosticsManagement {
 
 
 	refreshTextEditorHelper(doc: vscode.TextDocument): void {
-		const diagnostics: vscode.Diagnostic[] = [];
+		let diagnostics: vscode.Diagnostic[] = [];
 
 		let activeEditor = vscode.window.activeTextEditor;
 		if (activeEditor) {
-			const text = activeEditor.document.getText();
-			var re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
-			var match = null;
+			let text = activeEditor.document.getText();
+			let re = new RegExp(/[a-zA-z]+-[a-zA-z]+/g);
+			let match = null;
 			while ((match = re.exec(text))) {
-				var sourceCmdletName = match[0].toString();
-				var lowerCaseSrcCmdletName = sourceCmdletName.toLowerCase();
-				var breakingChangeType = this.getBreakingChangeType(lowerCaseSrcCmdletName);
-				const startPos = activeEditor.document.positionAt(match.index);
-				const endPos = activeEditor.document.positionAt(match.index + match[0].length);
-				const range = new vscode.Range(startPos, endPos);
+				let sourceCmdletName = match[0].toString();
+				let lowerCaseSrcCmdletName = sourceCmdletName.toLowerCase();
+				let breakingChangeType = this.getBreakingChangeType(lowerCaseSrcCmdletName);
 
-				var editor = vscode.window.activeTextEditor;
-				if (editor) {
-					var lineNumber = range.start.line;
-					var line = editor.document.lineAt(lineNumber);
-					var lineText = line.text;
-					if (lineText.toString().trim().startsWith('#')) {
-						continue;
-					}
+				let startPos = activeEditor.document.positionAt(match.index);
+				let endPos = activeEditor.document.positionAt(match.index + match[0].length);
+				let range = new vscode.Range(startPos, endPos);
+
+				// skip comments
+				let lineNumber = range.start.line;
+				let line = activeEditor.document.lineAt(lineNumber);
+				let lineText = line.text;
+				if (lineText.toString().trim().startsWith('#')) {
+					continue;
 				}
 
-				const diagnostic = new vscode.Diagnostic(range, "", vscode.DiagnosticSeverity.Information);
+				let diagnostic = new vscode.Diagnostic(range, "", vscode.DiagnosticSeverity.Information);
 
 				switch (breakingChangeType) {
 					case CMDLET_RENAME: {
@@ -124,8 +122,9 @@ export class DiagnosticsManagement {
 						var targeCmdletModule:string=this.targetCmdlets.get(targetCmdletName.toLowerCase()).SourceModule.toLowerCase();
 
 						var detailsInfo=sourceCmdletName+"'s parameters changed during migration.";
-						if(lowerCaseSrcCmdletName==='new-azurermkeyvault')
+						if (lowerCaseSrcCmdletName==='new-azurermkeyvault') {
 							detailsInfo+="\nDisableSoftDelete is true by default for "+sourceCmdletName+" but EnableSoftDelete is true by default for "+targetCmdletName+".";
+						}
 						var cmdletInfo="\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+sourceCmdletModule+"/"+sourceCmdletName+
 							"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/"+targeCmdletModule.toLowerCase()+"/"+targetCmdletName+"\n";
 							
@@ -140,7 +139,7 @@ export class DiagnosticsManagement {
 						diagnostic.severity = 0;
 						break;
 					}
-					case CORRECT_CMDLET: {
+					case DO_NOTHING: {
 						continue;
 					}
 				}
@@ -166,7 +165,7 @@ export class DiagnosticsManagement {
 				return DEPRECATED_CMDLET;
 			}
 		}
-		return CORRECT_CMDLET;
+		return DO_NOTHING;
 	}
 	
 	getInfoUrl():string{

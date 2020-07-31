@@ -4,11 +4,114 @@ export const BREAKING_CHANGE = 'breaking change';
 export const DEPRECATED_CMDLET = 'deprecated cmdlet';
 export const CMDLET_RENAME = 'cmdlet rename';
 export const PARAMETER_CHANGE = 'parameter change';
-export const CORRECT_CMDLET = 'correct cmdlet';
+export const DO_NOTHING = 'do nothing';
 
 export const GET_INFO_COMMAND = 'getInfo';
 export const GET_DEPRE_INFO_COMMAND = 'getdepreInfo';
 
+export class BreakingChangeInfo implements vscode.CodeActionProvider {
+	aliasMapping: Map<string, string> = new Map();
+	sourceCmdlets: Map<string, any> = new Map();
+	targetCmdlets: Map<string, any> = new Map();
+
+	constructor() { }
+
+	updateMapping(sourceCmdlets: Map<string, string>, targetCmdlets: Map<string, string>, aliasMapping: Map<string, string>) {
+		this.sourceCmdlets = sourceCmdlets;
+		this.targetCmdlets = targetCmdlets;
+		this.aliasMapping = aliasMapping;
+	}
+
+	public static readonly providedCodeActionKinds = [
+		vscode.CodeActionKind.QuickFix
+	];
+
+	provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext, token: vscode.CancellationToken): vscode.CodeAction[] {
+		let autoFixCodeAction = context.diagnostics
+			.map(diagnostic => this.getAutoFixCodeAction(diagnostic));
+
+		// Add action to get more info
+		let infoCodeAction = context.diagnostics
+			.map(diagnostic => this.getInfoCodeAction(diagnostic));
+
+		let actions = autoFixCodeAction.concat(infoCodeAction);
+
+		return actions;
+	}
+
+	private getAutoFixCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
+		let fix = new vscode.CodeAction("", vscode.CodeActionKind.QuickFix);
+		fix.edit = new vscode.WorkspaceEdit();
+		let editor = vscode.window.activeTextEditor;
+		
+		if (!editor) {
+			return fix;
+		}
+
+		let document = editor.document;
+		let range = diagnostic.range;
+		let lineNumber = range.start.line;
+		let line = editor.document.lineAt(lineNumber);
+		let rangeLine = new vscode.Range(line.range.start, line.range.end);
+		let sourceCmdletName = document.getText(range);
+		let targetCmdletName = this.aliasMapping.get(sourceCmdletName.toLowerCase())!;
+
+		switch (diagnostic.code) {
+			case CMDLET_RENAME: {
+				fix.title = "Auto fix to " + targetCmdletName;
+				fix.edit.replace(document.uri, range, targetCmdletName);
+				break;
+			}
+			case DEPRECATED_CMDLET: {
+				fix.title = "Comment out this line";
+				let newLine = "# " + line.text;
+				fix.edit.replace(document.uri, rangeLine, newLine);
+				break;
+			}
+			case PARAMETER_CHANGE: {
+				fix.title = "Auto fix to " + targetCmdletName;
+				fix.edit.replace(document.uri, range, targetCmdletName);
+		
+				let newLine = line.text;
+				if (newLine.match(".*-EnableSoftDelete.*")) {
+					newLine = newLine.replace(" -EnableSoftDelete", "");
+				} else {
+					newLine = newLine + " -DisableSoftDelete";
+				}
+				newLine = newLine.replace("-VaultName", "-Name");
+				fix.edit.replace(document.uri, rangeLine, newLine);
+				break;
+			}
+		}
+
+		return fix;
+	}
+
+	private getInfoCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
+		let action = new vscode.CodeAction('Learn more...', vscode.CodeActionKind.QuickFix);
+		switch (diagnostic.code) {
+			case CMDLET_RENAME: {
+				action.command = { command: GET_INFO_COMMAND, title: 'Learn more ...'};
+				break;
+			}
+			case DEPRECATED_CMDLET: {
+				action.command = { command: GET_DEPRE_INFO_COMMAND, title: 'Learn more ...' };
+				break;
+			}
+			case PARAMETER_CHANGE: {
+				action.command = { command: GET_DEPRE_INFO_COMMAND, title: 'Learn more ...' };
+				break;
+			}
+		}
+		return action;
+	}
+
+	getInfo() {
+		
+	}
+}
+
+/*
 export class CmdletRenameInfo implements vscode.CodeActionProvider {
 
 	aliasMapping: Map<string, string> = new Map();
@@ -101,20 +204,6 @@ export class DeprecatedCmdletInfo implements vscode.CodeActionProvider {
 		if (editor) {
 			var lineNumber = diagnostic.range.start.line;
 			var line = editor.document.lineAt(lineNumber);
-			/*var range;
-			if (lineNumber === 0) {
-				if (editor.document.lineCount === 1) {
-					range = new vscode.Range(line.range.start, line.range.end);
-				} else {
-					var nextLine = editor.document.lineAt(diagnostic.range.start.line + 1);
-					range = new vscode.Range(line.range.start, nextLine.range.start);
-				}
-			} else {
-				var preLine = editor.document.lineAt(diagnostic.range.start.line - 1);
-				range = new vscode.Range(preLine.range.end, line.range.end);
-			}
-			var document = editor.document;
-			fix.edit.replace(document.uri, range, "");*/
 			var newCmdlet = "# " + line.text;
 			var range = new vscode.Range(line.range.start, line.range.end);
 			var document = editor.document;
@@ -194,3 +283,4 @@ export class ParameterChangeInfo implements vscode.CodeActionProvider {
 		return action;
 	}
 }
+*/
