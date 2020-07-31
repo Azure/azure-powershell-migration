@@ -72,6 +72,7 @@ export class BreakingChangeInfo implements vscode.CodeActionProvider {
 				fix.title = "Auto fix to " + targetCmdletName;
 				fix.edit.replace(document.uri, range, targetCmdletName);
 		
+				// hard code
 				let newLine = line.text;
 				if (newLine.match(".*-EnableSoftDelete.*")) {
 					newLine = newLine.replace(" -EnableSoftDelete", "");

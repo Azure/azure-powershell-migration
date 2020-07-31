@@ -72,7 +72,7 @@ export class DiagnosticsManagement {
 			let match = null;
 			while ((match = re.exec(text))) {
 				let sourceCmdletName = match[0].toString();
-				let breakingChangeType = this.getBreakingChangeType(sourceCmdletName.toLowerCase());
+				let breakingChangeType = this.getBreakingChangeType(sourceCmdletName);
 				let startPos = activeEditor.document.positionAt(match.index);
 				let endPos = activeEditor.document.positionAt(match.index + match[0].length);
 				let range = new vscode.Range(startPos, endPos);
@@ -104,15 +104,16 @@ export class DiagnosticsManagement {
 		return false;
 	}
 
-	getBreakingChangeType(cmdletName: string) {
-		cmdletName = cmdletName.toLowerCase();
-		if (cmdletName === "new-azurermkeyvault") {
+	getBreakingChangeType(sourceCmdletName: string) {
+		let sourceCmdletNameLowerCase = sourceCmdletName.toLowerCase();
+		// hardcode
+		if (sourceCmdletNameLowerCase === "new-azurermkeyvault") {
 			return PARAMETER_CHANGE;
 		}
 		// if find cmlet in sourceCmdlet
-		if (this.sourceCmdlets.has(cmdletName)) {
-			if (this.aliasMapping.has(cmdletName) && 
-					this.targetCmdlets.has(this.aliasMapping.get(cmdletName)!.toLowerCase())) {
+		if (this.sourceCmdlets.has(sourceCmdletNameLowerCase)) {
+			let targetCmdletNameLowerCase = this.aliasMapping.get(sourceCmdletNameLowerCase)!.toLowerCase();
+			if (this.aliasMapping.has(sourceCmdletNameLowerCase) && this.targetCmdlets.has(targetCmdletNameLowerCase)) {
 				return CMDLET_RENAME;
 			} else {
 				return DEPRECATED_CMDLET;
@@ -122,35 +123,36 @@ export class DiagnosticsManagement {
 	}
 
 	getDiagnosticMessage(breakingChangeType: string, sourceCmdletName: string) {
-		let lowerCaseSourceCmdletName = sourceCmdletName.toLowerCase();
-		let targetCmdletName = this.aliasMapping.get(lowerCaseSourceCmdletName)!;
-		let lowerCaseTargetCmdletName = targetCmdletName.toLowerCase();
+		let sourceCmdletNameLowerCase = sourceCmdletName.toLowerCase();
+		let targetCmdletName = this.aliasMapping.get(sourceCmdletNameLowerCase)!;
+		let targetCmdletNameLowerCase = targetCmdletName.toLowerCase();
 		let message = "";
 
 		switch (breakingChangeType) {
 			case CMDLET_RENAME: {
-				let sourceCmdletModule:string = this.sourceCmdlets.get(lowerCaseSourceCmdletName).SourceModule.toLowerCase();
-				let targeCmdletModule:string = this.targetCmdlets.get(lowerCaseTargetCmdletName).SourceModule.toLowerCase();
+				let sourceCmdletModule:string = this.sourceCmdlets.get(sourceCmdletNameLowerCase).SourceModule.toLowerCase();
+				let targeCmdletModule:string = this.targetCmdlets.get(targetCmdletNameLowerCase).SourceModule.toLowerCase();
 
 				message =
-					sourceCmdletName + " changes to "+targetCmdletName+"."+
-					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletName+
-					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule.toLowerCase() + "/" + targetCmdletName + "\n";
+					sourceCmdletName + " changes to " + targetCmdletName + "." +
+					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletName +
+					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletName + "\n";
 				break;
 			}
 			case PARAMETER_CHANGE: {
-				let sourceCmdletModule:string = this.sourceCmdlets.get(lowerCaseSourceCmdletName).SourceModule.toLowerCase();
-				let targeCmdletModule:string = this.targetCmdlets.get(lowerCaseTargetCmdletName).SourceModule.toLowerCase();
+				let sourceCmdletModule:string = this.sourceCmdlets.get(sourceCmdletNameLowerCase).SourceModule.toLowerCase();
+				let targeCmdletModule:string = this.targetCmdlets.get(targetCmdletNameLowerCase).SourceModule.toLowerCase();
 
 				let detailsInfo = sourceCmdletName + "'s parameters changed during migration.";
-				if (lowerCaseSourceCmdletName === 'new-azurermkeyvault') {
+				// hard code
+				if (sourceCmdletNameLowerCase === 'new-azurermkeyvault') {
 					detailsInfo +=
 						"\nDisableSoftDelete is true by default for " + sourceCmdletName + 
 						" but EnableSoftDelete is true by default for " + targetCmdletName + ".";
 				}
 				let cmdletInfo =
 					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletName +
-					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule.toLowerCase() + "/" + targetCmdletName + "\n";
+					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletName + "\n";
 
 				message = detailsInfo + cmdletInfo;
 				
