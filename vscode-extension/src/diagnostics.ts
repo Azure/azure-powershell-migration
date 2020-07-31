@@ -135,8 +135,8 @@ export class DiagnosticsManagement {
 
 				message =
 					sourceCmdletName + " changes to " + targetCmdletName + "." +
-					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletName +
-					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletName + "\n";
+					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletNameLowerCase +
+					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletNameLowerCase + "\n";
 				break;
 			}
 			case PARAMETER_CHANGE: {
@@ -151,8 +151,8 @@ export class DiagnosticsManagement {
 						" but EnableSoftDelete is true by default for " + targetCmdletName + ".";
 				}
 				let cmdletInfo =
-					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletName +
-					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletName + "\n";
+					"\nSourceCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + sourceCmdletModule + "/" + sourceCmdletNameLowerCase +
+					"\nTargetCmdlet info: https://docs.microsoft.com/en-us/powershell/module/" + targeCmdletModule + "/" + targetCmdletNameLowerCase + "\n";
 
 				message = detailsInfo + cmdletInfo;
 				
