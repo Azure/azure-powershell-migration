@@ -15,9 +15,15 @@ function Invoke-AzUpgradeModulePlan
         Specifies the upgrade plan steps to execute. This is usually passed via pipeline input.
 
     .EXAMPLE
-        The following example invokes the upgrade plan for a PowerShell module named "myModule".
+        The following example invokes the upgrade plan for a PowerShell module named "myModule". Generate a plan, review the upgrade steps, warnings, and errors, and then perform the upgrade.
 
-        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Source\myModule' -AzureRmVersion 6.13.1 | New-AzUpgradeModulePlan -ToAzVersion 4.4.0 | Invoke-AzUpgradeModulePlan
+        $Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts\myModule'
+
+        $Plan.UpgradeSteps | Format-List
+        $Plan.Warnings | Format-List
+        $Plan.Errors | Format-List
+
+        Invoke-AzUpgradeModulePlan -Plan $Plan
     #>
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = "High")]
     Param

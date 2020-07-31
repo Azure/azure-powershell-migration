@@ -59,4 +59,3 @@ $PublicSettings = '{"docker": {"port": "2375"},"compose": {"web": {"image": "ngi
 Set-AzureRmVMExtension -ExtensionName "Docker" -ResourceGroupName $resourceGroup -VMName $vmName `
   -Publisher "Microsoft.Azure.Extensions" -ExtensionType "DockerExtension" -TypeHandlerVersion 1.0 `
   -SettingString $PublicSettings -Location $location
-  
