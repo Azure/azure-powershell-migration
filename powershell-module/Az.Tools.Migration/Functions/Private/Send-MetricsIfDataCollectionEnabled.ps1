@@ -12,6 +12,9 @@ function Send-MetricsIfDataCollectionEnabled
     .PARAMETER Operation
         Specifies the operation or context for the metrics.
 
+    .PARAMETER Duration
+        Specifies the duration (time elapsed) that the operation took.
+
     .PARAMETER Properties
         Specifies the metric properties.
 
@@ -31,22 +34,22 @@ function Send-MetricsIfDataCollectionEnabled
 
         [Parameter(
             Mandatory=$true,
+            HelpMessage='Specify the duration (time elapsed) that operation took.')]
+        [System.TimeSpan]
+        [ValidateNotNull()]
+        $Duration,
+
+        [Parameter(
+            Mandatory=$true,
             ValueFromPipeline=$true,
             HelpMessage='Specify the metric properties.')]
         [PSCustomObject]
         [ValidateNotNull()]
         $Properties
     )
-    Begin
-    {
-        $dataCollectionSettings = Get-ModulePreferences
-        if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
-        {
-            $telemetryClient = New-TelemetryClient
-        }
-    }
     Process
     {
+        $dataCollectionSettings = Get-ModulePreferences
         if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
         {
             Write-Verbose -Message "Data collection option is enabled. Sending '$Operation' operation metrics."
@@ -55,36 +58,33 @@ function Send-MetricsIfDataCollectionEnabled
             {
                 "Find"
                 {
-                    $eventProps = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.String]'
-                    $eventProps.Add("AzureModuleName", $Properties.AzureModuleName)
-                    $eventProps.Add("AzureModuleVersion", $Properties.AzureModuleVersion)
+                    $operationProps = @{
+                        # common props
+                        "powershellversion" = ""
+                        "command" = "Find-AzUpgradeCommandReference"
+                        "moduleversion" = ""
+                        "modulename" = "Az.Tools.Migration"
+                        "issuccess" = "True"
 
-                    $eventMetrics = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Double]'
-                    $eventMetrics.Add("Find.AzureCmdletCount", [System.Double]($Properties.AzureCmdletCount))
-                    $eventMetrics.Add("Find.FileCount", [System.Double]($Properties.FileCount))
+                        # custom operation props
+                        "find-azure-module-name" = $Properties.AzureModuleName
+                        "find-azure-module-version" = $Properties.AzureModuleVersion
+                        "find-azure-cmdlet-count" = $Properties.AzureCmdletCount
+                        "find-azure-file-count" = $Properties.FileCount
+                    }
 
-                    $telemetryClient.TrackEvent("FindAzUpgradeCommandReference", $eventProps, $eventMetrics)
+                    Send-PageViewTelemetry -PageName 'FindAzUpgradeCommandReference' -Duration $Duration -CustomProperties $operationProps
                 }
                 "Plan"
                 {
-                    $eventProps = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.String]'
-                    $eventProps.Add("ToAzureModuleName", $Properties.ToAzureModuleName)
-                    $eventProps.Add("ToAzureModuleVersion", $Properties.ToAzureModuleVersion)
-
-                    $eventMetrics = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Double]'
-                    $eventMetrics.Add("Plan.UpgradeStepsCount", [System.Double]($Properties.UpgradeStepsCount))
-                    $eventMetrics.Add("Plan.WarningsCount", [System.Double]($Properties.PlanWarnings.Count))
-                    $eventMetrics.Add("Plan.ErrorsCount", [System.Double]($Properties.PlanErrors.Count))
-
-                    $telemetryClient.TrackEvent("NewAzUpgradeModulePlan", $eventProps, $eventMetrics)
+                    $warningsBuilder = New-Object -TypeName System.Text.StringBuilder
+                    $errorsBuilder = New-Object -TypeName System.Text.StringBuilder
 
                     if ($Properties.PlanWarnings -ne $null)
                     {
-                        foreach ($planError in $Properties.PlanWarnings)
+                        foreach ($planWarning in $Properties.PlanWarnings)
                         {
-                            $eventProps["Command"] = $planError.Command.CommandName
-                            $eventProps["ReasonCode"] = $planError.ReasonCode.ToString()
-                            $telemetryClient.TrackEvent("NewAzUpgradeModulePlanWarning", $eventProps)
+                            $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
                         }
                     }
 
@@ -92,34 +92,54 @@ function Send-MetricsIfDataCollectionEnabled
                     {
                         foreach ($planError in $Properties.PlanErrors)
                         {
-                            $eventProps["Command"] = $planError.Command.CommandName
-                            $eventProps["ReasonCode"] = $planError.ReasonCode.ToString()
-                            $telemetryClient.TrackEvent("NewAzUpgradeModulePlanError", $eventProps)
+                            $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
                         }
                     }
+
+                    $operationProps = @{
+                        # common props
+                        "powershellversion" = ""
+                        "command" = "New-AzUpgradeModulePlan"
+                        "moduleversion" = ""
+                        "modulename" = "Az.Tools.Migration"
+                        "issuccess" = "True"
+
+                        # custom operation props
+                        "plan-to-azure-modulename" = $Properties.ToAzureModuleName
+                        "plan-to-azure-moduleversion" = $Properties.ToAzureModuleVersion
+                        "plan-upgrade-steps-count" = $Properties.UpgradeStepsCount
+                        "plan-warning-steps-count" = $Properties.PlanWarnings.Count
+                        "plan-warning-steps" = $warningsBuilder.ToString()
+                        "plan-error-steps-count" = $Properties.PlanErrors.Count
+                        "plan-error-steps" = $errorsBuilder.ToString()
+                    }
+
+                    Send-PageViewTelemetry -PageName 'NewAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
                 }
                 "Upgrade"
                 {
-                    $eventMetrics = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Double]'
-                    $eventMetrics.Add("Upgrade.SuccessFileUpdateCount", [System.Double]($Properties.SuccessFileUpdateCount))
-                    $eventMetrics.Add("Upgrade.SuccessCommandUpdateCount", [System.Double]($Properties.SuccessCommandUpdateCount))
-                    $eventMetrics.Add("Upgrade.FailedFileUpdateCount", [System.Double]($Properties.FailedFileUpdateCount))
-                    $eventMetrics.Add("Upgrade.FailedCommandUpdateCount", [System.Double]($Properties.FailedCommandUpdateCount))
+                    $operationProps = @{
+                        # common props
+                        "powershellversion" = ""
+                        "command" = "Invoke-AzUpgradeModulePlan"
+                        "moduleversion" = ""
+                        "modulename" = "Az.Tools.Migration"
+                        "issuccess" = "True"
 
-                    $telemetryClient.TrackEvent("InvokeAzUpgradeModulePlan", $null, $eventMetrics)
+                        # custom operation props
+                        "upgrade-success-file-count" = $Properties.SuccessFileUpdateCount
+                        "upgrade-success-command-count" = $Properties.SuccessCommandUpdateCount
+                        "upgrade-failed-file-count" = $Properties.FailedFileUpdateCount
+                        "upgrade-failed-command-count" = $Properties.FailedCommandUpdateCount
+                    }
+
+                    Send-PageViewTelemetry -PageName 'InvokeAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
                 }
             }
         }
         else
         {
             Write-Verbose -Message "Data collection option is disabled. Metrics will not be sent."
-        }
-    }
-    End
-    {
-        if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
-        {
-            $telemetryClient.Flush()
         }
     }
 }

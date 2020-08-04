@@ -46,7 +46,6 @@
 
     # Assemblies that must be loaded prior to importing this module
     RequiredAssemblies = @(
-        '.\Resources\Assembly\Microsoft.ApplicationInsights.2.14.0\Microsoft.ApplicationInsights.dll',
         '.\Resources\Assembly\Newtonsoft.Json.12.0.3\Newtonsoft.Json.dll'
     )
 
