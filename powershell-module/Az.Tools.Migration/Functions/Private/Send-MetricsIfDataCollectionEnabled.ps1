@@ -76,7 +76,7 @@ function Send-MetricsIfDataCollectionEnabled
                             "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Find-AzUpgradeCommandReference"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
                             "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
@@ -98,7 +98,7 @@ function Send-MetricsIfDataCollectionEnabled
                         {
                             foreach ($planWarning in $Properties.PlanWarnings)
                             {
-                                $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
+                                $null = $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
                             }
                         }
 
@@ -106,7 +106,7 @@ function Send-MetricsIfDataCollectionEnabled
                         {
                             foreach ($planError in $Properties.PlanErrors)
                             {
-                                $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
+                                $null = $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
                             }
                         }
 
@@ -115,7 +115,7 @@ function Send-MetricsIfDataCollectionEnabled
                             "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "New-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
                             "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
@@ -138,7 +138,7 @@ function Send-MetricsIfDataCollectionEnabled
                             "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Invoke-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
                             "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 

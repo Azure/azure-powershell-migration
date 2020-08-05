@@ -65,7 +65,7 @@ function Send-PageViewTelemetry
             'time' = ([System.DateTime]::UtcNow.ToString('o'))
             'iKey' = $InstrumentationKey
             'tags' = [PSCustomObject]@{
-                'ai.internal.sdkVersion' = ('Az.Tools.Migration.' + $MyInvocation.MyCommand.Module.ModuleVersion)
+                'ai.internal.sdkVersion' = ('Az.Tools.Migration.' + $MyInvocation.MyCommand.Module.Version.ToString())
             }
             'data' = [PSCustomObject]@{
                 'baseType' = 'PageViewData'
@@ -87,6 +87,6 @@ function Send-PageViewTelemetry
             'Content-Type' = 'application/x-json-stream';
         }
 
-        Invoke-RestMethod -Uri $AppInsightsIngestionEndpoint -Method Post -Headers $headers -Body $bodyAsCompressedJson
+        $null = Invoke-RestMethod -Uri $AppInsightsIngestionEndpoint -Method Post -Headers $headers -Body $bodyAsCompressedJson
     }
 }
