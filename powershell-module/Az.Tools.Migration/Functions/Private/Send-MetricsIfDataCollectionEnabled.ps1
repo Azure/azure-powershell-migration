@@ -12,6 +12,9 @@ function Send-MetricsIfDataCollectionEnabled
     .PARAMETER Operation
         Specifies the operation or context for the metrics.
 
+    .PARAMETER ParameterSetName
+        Specifies the command parameter set name.
+
     .PARAMETER Duration
         Specifies the duration (time elapsed) that the operation took.
 
@@ -31,6 +34,12 @@ function Send-MetricsIfDataCollectionEnabled
         [System.String]
         [ValidateSet('Find', 'Plan', 'Upgrade')]
         $Operation,
+
+        [Parameter(
+            Mandatory=$true,
+            HelpMessage='Specify the command parameter set used.')]
+        [System.String]
+        $ParameterSetName,
 
         [Parameter(
             Mandatory=$true,
@@ -54,87 +63,99 @@ function Send-MetricsIfDataCollectionEnabled
         {
             Write-Verbose -Message "Data collection option is enabled. Sending '$Operation' operation metrics."
 
-            switch ($Operation)
+            try
             {
-                "Find"
+                # telemetry send errors are not surfaced to the end user (verbose only).
+
+                switch ($Operation)
                 {
-                    $operationProps = @{
-                        # common props
-                        "powershellversion" = ""
-                        "command" = "Find-AzUpgradeCommandReference"
-                        "moduleversion" = ""
-                        "modulename" = "Az.Tools.Migration"
-                        "issuccess" = "True"
-
-                        # custom operation props
-                        "find-azure-module-name" = $Properties.AzureModuleName
-                        "find-azure-module-version" = $Properties.AzureModuleVersion
-                        "find-azure-cmdlet-count" = $Properties.AzureCmdletCount
-                        "find-azure-file-count" = $Properties.FileCount
-                    }
-
-                    Send-PageViewTelemetry -PageName 'FindAzUpgradeCommandReference' -Duration $Duration -CustomProperties $operationProps
-                }
-                "Plan"
-                {
-                    $warningsBuilder = New-Object -TypeName System.Text.StringBuilder
-                    $errorsBuilder = New-Object -TypeName System.Text.StringBuilder
-
-                    if ($Properties.PlanWarnings -ne $null)
+                    "Find"
                     {
-                        foreach ($planWarning in $Properties.PlanWarnings)
-                        {
-                            $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
-                        }
-                    }
+                        $operationProps = @{
+                            # common props
+                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
+                            "command" = "Find-AzUpgradeCommandReference"
+                            "commandparametersetname" = $ParameterSetName
+                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "modulename" = "Az.Tools.Migration"
+                            "issuccess" = "True"
 
-                    if ($Properties.PlanErrors -ne $null)
+                            # custom operation props
+                            "find-azure-module-name" = $Properties.AzureModuleName
+                            "find-azure-module-version" = $Properties.AzureModuleVersion
+                            "find-azure-cmdlet-count" = $Properties.AzureCmdletCount
+                            "find-azure-file-count" = $Properties.FileCount
+                        }
+
+                        Send-PageViewTelemetry -PageName 'FindAzUpgradeCommandReference' -Duration $Duration -CustomProperties $operationProps
+                    }
+                    "Plan"
                     {
-                        foreach ($planError in $Properties.PlanErrors)
+                        $warningsBuilder = New-Object -TypeName System.Text.StringBuilder
+                        $errorsBuilder = New-Object -TypeName System.Text.StringBuilder
+
+                        if ($Properties.PlanWarnings -ne $null)
                         {
-                            $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
+                            foreach ($planWarning in $Properties.PlanWarnings)
+                            {
+                                $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
+                            }
                         }
+
+                        if ($Properties.PlanErrors -ne $null)
+                        {
+                            foreach ($planError in $Properties.PlanErrors)
+                            {
+                                $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
+                            }
+                        }
+
+                        $operationProps = @{
+                            # common props
+                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
+                            "command" = "New-AzUpgradeModulePlan"
+                            "commandparametersetname" = $ParameterSetName
+                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "modulename" = "Az.Tools.Migration"
+                            "issuccess" = "True"
+
+                            # custom operation props
+                            "plan-to-azure-modulename" = $Properties.ToAzureModuleName
+                            "plan-to-azure-moduleversion" = $Properties.ToAzureModuleVersion
+                            "plan-upgrade-steps-count" = $Properties.UpgradeStepsCount
+                            "plan-warning-steps-count" = $Properties.PlanWarnings.Count
+                            "plan-warning-steps" = $warningsBuilder.ToString()
+                            "plan-error-steps-count" = $Properties.PlanErrors.Count
+                            "plan-error-steps" = $errorsBuilder.ToString()
+                        }
+
+                        Send-PageViewTelemetry -PageName 'NewAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
                     }
+                    "Upgrade"
+                    {
+                        $operationProps = @{
+                            # common props
+                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
+                            "command" = "Invoke-AzUpgradeModulePlan"
+                            "commandparametersetname" = $ParameterSetName
+                            "moduleversion" = $MyInvocation.MyCommand.Module.ModuleVersion
+                            "modulename" = "Az.Tools.Migration"
+                            "issuccess" = "True"
 
-                    $operationProps = @{
-                        # common props
-                        "powershellversion" = ""
-                        "command" = "New-AzUpgradeModulePlan"
-                        "moduleversion" = ""
-                        "modulename" = "Az.Tools.Migration"
-                        "issuccess" = "True"
+                            # custom operation props
+                            "upgrade-success-file-count" = $Properties.SuccessFileUpdateCount
+                            "upgrade-success-command-count" = $Properties.SuccessCommandUpdateCount
+                            "upgrade-failed-file-count" = $Properties.FailedFileUpdateCount
+                            "upgrade-failed-command-count" = $Properties.FailedCommandUpdateCount
+                        }
 
-                        # custom operation props
-                        "plan-to-azure-modulename" = $Properties.ToAzureModuleName
-                        "plan-to-azure-moduleversion" = $Properties.ToAzureModuleVersion
-                        "plan-upgrade-steps-count" = $Properties.UpgradeStepsCount
-                        "plan-warning-steps-count" = $Properties.PlanWarnings.Count
-                        "plan-warning-steps" = $warningsBuilder.ToString()
-                        "plan-error-steps-count" = $Properties.PlanErrors.Count
-                        "plan-error-steps" = $errorsBuilder.ToString()
+                        Send-PageViewTelemetry -PageName 'InvokeAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
                     }
-
-                    Send-PageViewTelemetry -PageName 'NewAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
                 }
-                "Upgrade"
-                {
-                    $operationProps = @{
-                        # common props
-                        "powershellversion" = ""
-                        "command" = "Invoke-AzUpgradeModulePlan"
-                        "moduleversion" = ""
-                        "modulename" = "Az.Tools.Migration"
-                        "issuccess" = "True"
-
-                        # custom operation props
-                        "upgrade-success-file-count" = $Properties.SuccessFileUpdateCount
-                        "upgrade-success-command-count" = $Properties.SuccessCommandUpdateCount
-                        "upgrade-failed-file-count" = $Properties.FailedFileUpdateCount
-                        "upgrade-failed-command-count" = $Properties.FailedCommandUpdateCount
-                    }
-
-                    Send-PageViewTelemetry -PageName 'InvokeAzUpgradeModulePlan' -Duration $Duration -CustomProperties $operationProps
-                }
+            }
+            catch
+            {
+                Write-Verbose -Message "Telemetry send failure: $_"
             }
         }
         else

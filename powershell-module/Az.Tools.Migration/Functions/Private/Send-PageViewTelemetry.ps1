@@ -65,7 +65,7 @@ function Send-PageViewTelemetry
             'time' = ([System.DateTime]::UtcNow.ToString('o'))
             'iKey' = $InstrumentationKey
             'tags' = [PSCustomObject]@{
-                'ai.internal.sdkVersion' = 'Az.Tools.Migration'
+                'ai.internal.sdkVersion' = ('Az.Tools.Migration.' + $MyInvocation.MyCommand.Module.ModuleVersion)
             }
             'data' = [PSCustomObject]@{
                 'baseType' = 'PageViewData'

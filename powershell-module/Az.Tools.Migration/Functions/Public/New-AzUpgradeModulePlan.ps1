@@ -85,6 +85,8 @@ function New-AzUpgradeModulePlan
     )
     Process
     {
+        $cmdStarted = Get-Date
+
         # if an existing set of command references was not provided
         # then call the Find cmdlet to search for those references.
 
@@ -242,14 +244,6 @@ function New-AzUpgradeModulePlan
             }
         }
 
-        Send-MetricsIfDataCollectionEnabled -Operation Plan -Properties ([PSCustomObject]@{
-                ToAzureModuleName = "Az"
-                ToAzureModuleVersion = $ToAzVersion
-                UpgradeStepsCount = $upgradePlan.UpgradeSteps.Count
-                PlanWarnings = $upgradePlan.Warnings
-                PlanErrors = $upgradePlan.Errors
-            })
-
         # sort the upgrade steps to by file, then offset descending.
         # the reason for this is updates must be made in descending offset order
         # otherwise file positions will change for subsequent swaps.
@@ -266,6 +260,17 @@ function New-AzUpgradeModulePlan
         {
             $upgradePlan.UpgradeSteps[$i].StepNumber = ($i + 1)
         }
+
+        Send-MetricsIfDataCollectionEnabled -Operation Plan `
+            -ParameterSetName $PSCmdlet.ParameterSetName `
+            -Duration ((Get-Date) - $cmdStarted) `
+            -Properties ([PSCustomObject]@{
+                ToAzureModuleName = "Az"
+                ToAzureModuleVersion = $ToAzVersion
+                UpgradeStepsCount = $upgradePlan.UpgradeSteps.Count
+                PlanWarnings = $upgradePlan.Warnings
+                PlanErrors = $upgradePlan.Errors
+            })
 
         Write-Output -InputObject $upgradePlan
     }

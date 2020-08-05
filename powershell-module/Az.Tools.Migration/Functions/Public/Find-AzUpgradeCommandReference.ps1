@@ -57,6 +57,8 @@ function Find-AzUpgradeCommandReference
     )
     Process
     {
+        $cmdStarted = Get-Date
+
         # load the command specs
         Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmVersion"
         $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
@@ -80,7 +82,10 @@ function Find-AzUpgradeCommandReference
                 $azureRmReferenceResults.Items.Add($foundCmdlet)
             }
 
-            Send-MetricsIfDataCollectionEnabled -Operation Find -Properties ([PSCustomObject]@{
+            Send-MetricsIfDataCollectionEnabled -Operation Find `
+                -ParameterSetName $PSCmdlet.ParameterSetName `
+                -Duration ((Get-Date) - $cmdStarted) `
+                -Properties ([PSCustomObject]@{
                     AzureCmdletCount = $azureRmReferenceResults.Items.Count
                     AzureModuleName = "AzureRM"
                     AzureModuleVersion = $AzureRmVersion
@@ -107,7 +112,10 @@ function Find-AzUpgradeCommandReference
                 }
             }
 
-            Send-MetricsIfDataCollectionEnabled -Operation Find -Properties ([PSCustomObject]@{
+            Send-MetricsIfDataCollectionEnabled -Operation Find `
+                -ParameterSetName $PSCmdlet.ParameterSetName `
+                -Duration ((Get-Date) - $cmdStarted) `
+                -Properties ([PSCustomObject]@{
                     AzureCmdletCount = $azureRmReferenceResults.Items.Count
                     AzureModuleName = "AzureRM"
                     AzureModuleVersion = $AzureRmVersion

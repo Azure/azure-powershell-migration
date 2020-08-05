@@ -37,6 +37,8 @@ function Invoke-AzUpgradeModulePlan
     )
     Process
     {
+        $cmdStarted = Get-Date
+
         if ($Plan -eq $null -or $Plan.UpgradeSteps.Count -eq 0)
         {
             Write-Verbose -Message "No module upgrade plan steps were provided. No upgrade will be executed."
@@ -110,7 +112,10 @@ function Invoke-AzUpgradeModulePlan
                 }
             }
 
-            Send-MetricsIfDataCollectionEnabled -Operation Upgrade -Properties ([PSCustomObject]@{
+            Send-MetricsIfDataCollectionEnabled -Operation Upgrade `
+                -ParameterSetName $PSCmdlet.ParameterSetName `
+                -Duration ((Get-Date) - $cmdStarted) `
+                -Properties ([PSCustomObject]@{
                     SuccessFileUpdateCount = $successFileUpdateCount
                     SuccessCommandUpdateCount = $successCommandUpdateCount
                     FailedFileUpdateCount = $failedFileUpdateCount
