@@ -37,6 +37,8 @@ function Invoke-AzUpgradeModulePlan
     )
     Process
     {
+        $cmdStarted = Get-Date
+
         if ($Plan -eq $null -or $Plan.UpgradeSteps.Count -eq 0)
         {
             Write-Verbose -Message "No module upgrade plan steps were provided. No upgrade will be executed."
@@ -47,6 +49,11 @@ function Invoke-AzUpgradeModulePlan
         {
             $currentFile = $null
             $currentFileContents = $null
+
+            $successFileUpdateCount = 0
+            $successCommandUpdateCount = 0
+            $failedFileUpdateCount = 0
+            $failedCommandUpdateCount = 0
 
             $fileBatchResults = New-Object -TypeName 'System.Collections.Generic.List[UpgradeResult]'
 
@@ -83,12 +90,16 @@ function Invoke-AzUpgradeModulePlan
 
                         Out-FileBatchResult -ResultBatch $fileBatchResults -Success $true -Reason "Completed successfully."
                         $resetFileBuilder = $true
+                        $successFileUpdateCount++
+                        $successCommandUpdateCount += $fileBatchResults.Count
                     }
                 }
                 catch
                 {
                     Out-FileBatchResult -ResultBatch $fileBatchResults -Success $false -Reason "A general error has occurred: $_"
                     $resetFileBuilder = $true
+                    $failedFileUpdateCount++
+                    $failedCommandUpdateCount += $fileBatchResults.Count
                 }
                 finally
                 {
@@ -100,6 +111,16 @@ function Invoke-AzUpgradeModulePlan
                     }
                 }
             }
+
+            Send-MetricsIfDataCollectionEnabled -Operation Upgrade `
+                -ParameterSetName $PSCmdlet.ParameterSetName `
+                -Duration ((Get-Date) - $cmdStarted) `
+                -Properties ([PSCustomObject]@{
+                    SuccessFileUpdateCount = $successFileUpdateCount
+                    SuccessCommandUpdateCount = $successCommandUpdateCount
+                    FailedFileUpdateCount = $failedFileUpdateCount
+                    FailedCommandUpdateCount = $failedCommandUpdateCount
+                })
         }
     }
 }

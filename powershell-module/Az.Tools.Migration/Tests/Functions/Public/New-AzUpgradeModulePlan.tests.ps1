@@ -13,6 +13,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets = New-Object -TypeName CommandReferenceCollection
             $foundCmdlets.Items.Add($cmdlet1)
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             # act
             $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 4.4.0
 
@@ -45,6 +48,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $foundCmdlets = New-Object -TypeName CommandReferenceCollection
             $foundCmdlets.Items.Add($cmdlet1)
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
             $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 4.4.0
@@ -133,6 +139,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets.Items.Add($cmdlet8)
             $foundCmdlets.Items.Add($cmdlet9)
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             # act
             $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 4.4.0
 
@@ -210,6 +219,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $foundCmdlets = New-Object -TypeName CommandReferenceCollection
             $foundCmdlets.Items.Add($cmdlet1)
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             # act
             # should generate a warning, and an upgrade step
             $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 4.4.0
@@ -233,6 +245,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $foundCmdlets = New-Object -TypeName CommandReferenceCollection
             $foundCmdlets.Items.Add($cmdlet1)
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
             # should generate a warning, and an upgrade step
@@ -258,6 +273,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $foundCmdlets = New-Object -TypeName CommandReferenceCollection
             $foundCmdlets.Items.Add($cmdlet1)
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             Mock -CommandName Import-AliasSpec `
                 -ModuleName Az.Tools.Migration `

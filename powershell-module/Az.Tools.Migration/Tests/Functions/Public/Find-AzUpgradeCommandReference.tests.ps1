@@ -6,6 +6,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             Mock -CommandName Find-CmdletsInFile `
                 -ModuleName Az.Tools.Migration `
                 -Verifiable `
@@ -28,6 +31,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         It 'Should correctly detect AzureRM cmdlets found in files by filename' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             Mock -CommandName Find-CmdletsInFile `
                 -ModuleName Az.Tools.Migration `
@@ -57,6 +63,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 -ParameterFilter { $Path -eq "C:\test" } `
                 -MockWith { Write-Output -InputObject ([PSCustomObject]@{ FullName = 'test.ps1' }) }
 
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
             Mock -CommandName Find-CmdletsInFile `
                 -ModuleName Az.Tools.Migration `
                 -Verifiable `
@@ -81,6 +90,9 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         It 'Should correctly detect case-insensitive AzureRM cmdlets found in files' {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             Mock -CommandName Find-CmdletsInFile `
                 -ModuleName Az.Tools.Migration `
