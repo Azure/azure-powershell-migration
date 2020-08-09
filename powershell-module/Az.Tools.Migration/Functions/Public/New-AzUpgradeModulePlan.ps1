@@ -85,6 +85,8 @@ function New-AzUpgradeModulePlan
     )
     Process
     {
+        $cmdStarted = Get-Date
+
         # if an existing set of command references was not provided
         # then call the Find cmdlet to search for those references.
 
@@ -132,6 +134,7 @@ function New-AzUpgradeModulePlan
                 $warningMsg = New-Object -TypeName UpgradePlanResult
                 $warningMsg.Command = $rmCmdlet
                 $warningMsg.Reason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
+                $warningMsg.ReasonCode = [UpgradePlanResultReasonCode]::WarningSplattedParameters
 
                 $upgradePlan.Warnings.Add($warningMsg)
             }
@@ -141,6 +144,7 @@ function New-AzUpgradeModulePlan
                 $errorMsg = New-Object -TypeName UpgradePlanResult
                 $errorMsg.Command = $rmCmdlet
                 $errorMsg.Reason = "No matching upgrade alias found. Command cannot be automatically upgraded."
+                $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorNoUpgradeAlias
 
                 $upgradePlan.Errors.Add($errorMsg)
 
@@ -154,6 +158,7 @@ function New-AzUpgradeModulePlan
                 $errorMsg = New-Object -TypeName UpgradePlanResult
                 $errorMsg.Command = $rmCmdlet
                 $errorMsg.Reason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
+                $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorNoModuleSpecMatch
 
                 $upgradePlan.Errors.Add($errorMsg)
 
@@ -232,6 +237,7 @@ function New-AzUpgradeModulePlan
                     $errorMsg = New-Object -TypeName UpgradePlanResult
                     $errorMsg.Command = $rmCmdlet
                     $errorMsg.Reason = "Parameter [$($rmParam.Name)] was not found in $resolvedCommandName or it's aliases."
+                    $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorParameterNotFound
 
                     $upgradePlan.Errors.Add($errorMsg)
                 }
@@ -254,6 +260,17 @@ function New-AzUpgradeModulePlan
         {
             $upgradePlan.UpgradeSteps[$i].StepNumber = ($i + 1)
         }
+
+        Send-MetricsIfDataCollectionEnabled -Operation Plan `
+            -ParameterSetName $PSCmdlet.ParameterSetName `
+            -Duration ((Get-Date) - $cmdStarted) `
+            -Properties ([PSCustomObject]@{
+                ToAzureModuleName = "Az"
+                ToAzureModuleVersion = $ToAzVersion
+                UpgradeStepsCount = $upgradePlan.UpgradeSteps.Count
+                PlanWarnings = $upgradePlan.Warnings
+                PlanErrors = $upgradePlan.Errors
+            })
 
         Write-Output -InputObject $upgradePlan
     }

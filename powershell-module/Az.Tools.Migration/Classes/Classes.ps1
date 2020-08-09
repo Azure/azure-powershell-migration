@@ -1,3 +1,16 @@
+class Constants
+{
+    static [System.String] $ConfigurationDirectoryName = ".aztoolsmigration"
+    static [System.String] $ConfigurationFileName = "module-preferences.json"
+    static [System.String] $PublicTelemetryInstrumentationKey = "f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71"
+    static [System.String] $PublicTelemetryIngestionEndpointUri = "https://dc.services.visualstudio.com/v2/track"
+}
+
+class ModulePreferences
+{
+    [System.Boolean] $DataCollectionEnabled
+}
+
 class AliasMapping
 {
     [System.String] $Name
@@ -123,10 +136,19 @@ class CmdletParameterUpgradeStep : UpgradeStep
     }
 }
 
+Enum UpgradePlanResultReasonCode
+{
+    WarningSplattedParameters = 1
+    ErrorNoUpgradeAlias = 2
+    ErrorNoModuleSpecMatch = 3
+    ErrorParameterNotFound = 4
+}
+
 class UpgradePlanResult
 {
     [CommandReference] $Command
     [System.String] $Reason
+    [UpgradePlanResultReasonCode] $ReasonCode
 
     [String] ToString()
     {
