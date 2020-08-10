@@ -1,0 +1,3856 @@
+[
+    {
+        "Command":  "Get-AzureStorageTable",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Table"
+                                           ]
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageTableSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Table"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartPartitionKey",
+                               "Aliases":  [
+                                               "startpk"
+                                           ]
+                           },
+                           {
+                               "Name":  "StartRowKey",
+                               "Aliases":  [
+                                               "startrk"
+                                           ]
+                           },
+                           {
+                               "Name":  "EndPartitionKey",
+                               "Aliases":  [
+                                               "endpk"
+                                           ]
+                           },
+                           {
+                               "Name":  "EndRowKey",
+                               "Aliases":  [
+                                               "endrk"
+                                           ]
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageTableStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Table",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageTable",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Table"
+                                           ]
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageTableStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Table",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageTable",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Table"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageTableStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Table",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageTableStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Table",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoStartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageQueue",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Queue"
+                                           ]
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageQueue",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Queue"
+                                           ]
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageQueue",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Queue"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageQueueStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageQueueSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Queue"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageQueueStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageQueueStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageQueueStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoStartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageFile",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageFileContent",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Destination",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CheckMd5",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageFileCopyState",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WaitForComplete",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageShare",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SnapshotTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageShareStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageDirectory",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageFileSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageShare",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageShareSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageShareStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageDirectory",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageFile",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageShare",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeAllSnapshot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageShareStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageFileContent",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Directory",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Source",
+                               "Aliases":  [
+                                               "FullName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageShareQuota",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Share",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Quota",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageShareStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoStartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureStorageFileCopy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "SrcBlobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcContainerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcShare",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SrcFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AbsoluteUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestFilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DestFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  [
+                                               "SrcContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContext",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureStorageFileCopy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ShareName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FilePath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "File",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CopyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageAccountSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Service",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageCORSRule",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CorsRules",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageCORSRule",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageServiceLoggingProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageServiceMetricsProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricsType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageCORSRule",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageServiceLoggingProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RetentionDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LoggingOperations",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageServiceMetricsProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricsType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RetentionDays",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MetricsLevel",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageContext",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "StorageAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageAccountKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SasToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionString",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Local",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Anonymous",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UseConnectedAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Endpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Environment",
+                               "Aliases":  [
+                                               "Name",
+                                               "EnvironmentName"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageContainerAcl",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  [
+                                               "PublicAccess"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageBlob",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeleteSnapshot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageBlobContent",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "File",
+                               "Aliases":  [
+                                               "FullName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "BlobType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Properties",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PremiumPageBlobTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageBlob",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncludeDeleted",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContinuationToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageBlobContent",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Destination",
+                               "Aliases":  [
+                                               "Path"
+                                           ]
+                           },
+                           {
+                               "Name":  "CheckMd5",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageBlobCopyState",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WaitForComplete",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContinuationToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageContainerStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Container",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageBlobSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  [
+                                               "PublicAccess"
+                                           ]
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageContainerSASToken",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Protocol",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IPAddressOrRange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FullUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureStorageContainerStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Container",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageContainer",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureStorageContainerStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Container",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureStorageContainerStoredAccessPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Container",
+                               "Aliases":  [
+                                               "N",
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Policy",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permission",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoStartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NoExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureStorageBlobCopy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "SrcICloudBlob",
+                                               "SrcCloudBlob",
+                                               "ICloudBlob",
+                                               "SourceICloudBlob",
+                                               "SourceCloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  [
+                                               "SourceCloudBlobContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcBlob",
+                               "Aliases":  [
+                                               "SourceBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcContainer",
+                               "Aliases":  [
+                                               "SourceContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcShareName",
+                               "Aliases":  [
+                                               "SourceShareName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcShare",
+                               "Aliases":  [
+                                               "SourceShare"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcDir",
+                               "Aliases":  [
+                                               "SourceDir"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcFilePath",
+                               "Aliases":  [
+                                               "SourceFilePath"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcFile",
+                               "Aliases":  [
+                                               "SourceFile"
+                                           ]
+                           },
+                           {
+                               "Name":  "AbsoluteUri",
+                               "Aliases":  [
+                                               "SrcUri",
+                                               "SourceUri"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContainer",
+                               "Aliases":  [
+                                               "DestinationContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestBlob",
+                               "Aliases":  [
+                                               "DestinationBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestCloudBlob",
+                               "Aliases":  [
+                                               "DestICloudBlob",
+                                               "DestinationCloudBlob",
+                                               "DestinationICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "PremiumPageBlobTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  [
+                                               "SrcContext",
+                                               "SourceContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContext",
+                               "Aliases":  [
+                                               "DestinationContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureStorageBlobIncrementalCopy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "SrcICloudBlob",
+                                               "SrcCloudBlob",
+                                               "ICloudBlob",
+                                               "SourceICloudBlob",
+                                               "SourceCloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  [
+                                               "SourceCloudBlobContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcBlob",
+                               "Aliases":  [
+                                               "SourceBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcContainer",
+                               "Aliases":  [
+                                               "SourceContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcBlobSnapshotTime",
+                               "Aliases":  [
+                                               "SourceBlobSnapshotTime"
+                                           ]
+                           },
+                           {
+                               "Name":  "AbsoluteUri",
+                               "Aliases":  [
+                                               "SrcUri",
+                                               "SourceUri"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContainer",
+                               "Aliases":  [
+                                               "DestinationContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestBlob",
+                               "Aliases":  [
+                                               "DestinationBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestCloudBlob",
+                               "Aliases":  [
+                                               "DestICloudBlob",
+                                               "DestinationCloudBlob",
+                                               "DestinationICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  [
+                                               "SrcContext",
+                                               "SourceContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContext",
+                               "Aliases":  [
+                                               "DestinationContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureStorageBlobCopy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CopyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureStorageServiceProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultServiceVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageServiceProperty",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ServiceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureStorageDeleteRetentionPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "RetentionDays",
+                               "Aliases":  [
+                                               "Days"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureStorageDeleteRetentionPolicy",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureStorageContainerAcl",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "N",
+                                               "Container"
+                                           ]
+                           },
+                           {
+                               "Name":  "Prefix",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContinuationToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-CopyAzureStorageBlob",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "SrcICloudBlob",
+                                               "SrcCloudBlob",
+                                               "ICloudBlob",
+                                               "SourceICloudBlob",
+                                               "SourceCloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  [
+                                               "SourceCloudBlobContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcBlob",
+                               "Aliases":  [
+                                               "SourceBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcContainer",
+                               "Aliases":  [
+                                               "SourceContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcShareName",
+                               "Aliases":  [
+                                               "SourceShareName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcShare",
+                               "Aliases":  [
+                                               "SourceShare"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcDir",
+                               "Aliases":  [
+                                               "SourceDir"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcFilePath",
+                               "Aliases":  [
+                                               "SourceFilePath"
+                                           ]
+                           },
+                           {
+                               "Name":  "SrcFile",
+                               "Aliases":  [
+                                               "SourceFile"
+                                           ]
+                           },
+                           {
+                               "Name":  "AbsoluteUri",
+                               "Aliases":  [
+                                               "SrcUri",
+                                               "SourceUri"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContainer",
+                               "Aliases":  [
+                                               "DestinationContainer"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestBlob",
+                               "Aliases":  [
+                                               "DestinationBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestCloudBlob",
+                               "Aliases":  [
+                                               "DestICloudBlob",
+                                               "DestinationCloudBlob",
+                                               "DestinationICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "PremiumPageBlobTier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  [
+                                               "SrcContext",
+                                               "SourceContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "DestContext",
+                               "Aliases":  [
+                                               "DestinationContext"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-CopyAzureStorageBlob",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "CloudBlob",
+                               "Aliases":  [
+                                               "ICloudBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "CloudBlobContainer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Container",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CopyId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServerTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientTimeoutPerRequest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConcurrentTaskCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureStorageSoftDelete",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "RetentionDays",
+                               "Aliases":  [
+                                               "Days"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Disable-AzureStorageSoftDelete",
+        "IsAlias":  false,
+        "SourceModule":  "Azure.Storage",
+        "Version":  "4.6.1",
+        "Parameters":  [
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Context",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]
