@@ -1,0 +1,541 @@
+[
+    {
+        "Command":  "New-AzureRmEventGridTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventGridTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmEventGridTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventGridTopicKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "TopicName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventGridTopicKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventGridTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmEventGridSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EventSubscriptionName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Endpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "TopicName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectBeginsWith",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectEndsWith",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectCaseSensitive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedEventType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Label",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmEventGridSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EventSubscriptionName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "TopicName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndpointType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Endpoint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectBeginsWith",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubjectEndsWith",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedEventType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Label",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmEventGridSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EventSubscriptionName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "TopicName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventGridSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "EventSubscriptionName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TopicName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TopicTypeName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeFullEndpointUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmEventGridTopicType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.EventGrid",
+        "Version":  "0.3.7",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludeEventTypeData",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

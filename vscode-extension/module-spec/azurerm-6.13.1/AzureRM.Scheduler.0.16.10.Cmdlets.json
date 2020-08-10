@@ -1,0 +1,1112 @@
+[
+    {
+        "Command":  "Disable-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Enable-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmSchedulerJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmSchedulerJobHistory",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobExecutionStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Plan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmSchedulerHttpJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Method",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequestBody",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Headers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpAuthenticationType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmSchedulerServiceBusQueueJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusQueueName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTransportType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmSchedulerServiceBusTopicJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTopicPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTransportType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmSchedulerStorageQueueJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageSASToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmSchedulerJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmSchedulerHttpJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Method",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequestBody",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Headers",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HttpAuthenticationType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmSchedulerJobCollection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Plan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmSchedulerServiceBusQueueJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusQueueName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTransportType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmSchedulerServiceBusTopicJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTopicPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusTransportType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ServiceBusSasKeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmSchedulerStorageQueueJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Scheduler",
+        "Version":  "0.16.10",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobCollectionName",
+                               "Aliases":  [
+                                               "Name",
+                                               "ResourceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueAccount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageSASToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StorageQueueMessage",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Interval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Frequency",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExecutionCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "JobState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ErrorActionType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

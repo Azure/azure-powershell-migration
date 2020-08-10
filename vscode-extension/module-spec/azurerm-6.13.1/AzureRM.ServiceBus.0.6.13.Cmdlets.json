@@ -1,0 +1,2060 @@
+[
+    {
+        "Command":  "New-AzureRmServiceBusNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "SkuName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SkuCapacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusNamespace",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusQueue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnablePartitioning",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LockDuration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoDeleteOnIdle",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultMessageTimeToLive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DuplicateDetectionHistoryTimeWindow",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeadLetteringOnMessageExpiration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableBatchedOperations",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableExpress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxDeliveryCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxSizeInMegabytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MessageCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequiresDuplicateDetection",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequiresSession",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SizeInBytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForwardTo",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForwardDeadLetteredMessagesTo",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusQueue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusQueue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "QueueObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusQueue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "EnablePartitioning",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoDeleteOnIdle",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultMessageTimeToLive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DuplicateDetectionHistoryTimeWindow",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableBatchedOperations",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableExpress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxSizeInMegabytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequiresDuplicateDetection",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SupportOrdering",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SizeInBytes",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "TopicObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusTopic",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AutoDeleteOnIdle",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultMessageTimeToLive",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeadLetteringOnMessageExpiration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DeadLetteringOnFilterEvaluationExceptions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableBatchedOperations",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LockDuration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxDeliveryCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequiresSession",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForwardTo",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForwardDeadLetteredMessagesTo",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "SubscriptionObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusSubscription",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Rights",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "AuthRuleObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "Rights",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusAuthorizationRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  [
+                                               "AuthRuleObj"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "RegenerateKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Queue",
+                               "Aliases":  [
+                                               "QueueName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AuthorizationRuleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusOperation",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Subscription",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SqlExpression",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ActionSqlExpression",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RequiresPreprocessing",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Subscription",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Subscription",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Topic",
+                               "Aliases":  [
+                                               "TopicName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Subscription",
+                               "Aliases":  [
+                                               "SubscriptionName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceBusGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PartnerNamespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AlternateName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusGeoDRConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusGeoDRConfigurationBreakPair",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceBusGeoDRConfigurationFailOver",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmServiceBusName",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Namespace",
+                               "Aliases":  [
+                                               "NamespaceName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AliasName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceBusMigration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmServiceBusMigration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  [
+                                               "ResourceGroup"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmServiceBusMigration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetNameSpace",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PostMigrationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Complete-AzureRmServiceBusMigration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceBusMigration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceBus",
+        "Version":  "0.6.13",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AsJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

@@ -1,0 +1,3114 @@
+[
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataLakeAnalyticsCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CredentialName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Recurse",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CredentialName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NewPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  [
+                                               "Host"
+                                           ]
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataLakeAnalyticsCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  [
+                                               "Host"
+                                           ]
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmDataLakeAnalyticsCatalogItem",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsCatalogItem",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "User",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Group",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Other",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  [
+                                               "Id",
+                                               "UserId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permissions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "User",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Group",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  [
+                                               "Id",
+                                               "UserId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccessKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Wait-AzureRmDataLakeAnalyticsJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WaitIntervalInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeoutInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AzureRmDataLakeAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmDataLakeAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccessKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmDataLakeAnalyticsJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Include",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Submitter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Result",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Top",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Submit-AzureRmDataLakeAnalyticsJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Script",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Runtime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CompileMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CompileOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AnalyticsUnits",
+                               "Aliases":  [
+                                               "DegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptParameter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataLakeAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultDataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnits",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryStoreRetention",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnits",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryStoreRetention",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FirewallState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowAzureIpState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmDataLakeAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDataLakeAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDataLakeAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnitsPerJob",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelismPerJob"
+                                           ]
+                           },
+                           {
+                               "Name":  "MinPriorityPerJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmDataLakeAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnitsPerJob",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelismPerJob"
+                                           ]
+                           },
+                           {
+                               "Name":  "MinPriorityPerJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDataLakeAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsJobPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDataLakeAnalyticsJobRecurrence",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AdlCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CredentialName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Recurse",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlCatalogCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CredentialName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Credential",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NewPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  [
+                                               "Host"
+                                           ]
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AdlCatalogSecret",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DatabaseName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Secret",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Uri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DatabaseHost",
+                               "Aliases":  [
+                                               "Host"
+                                           ]
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AdlCatalogItem",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlCatalogItem",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "UserOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "User",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Group",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Other",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "UserOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "GroupOwner",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  [
+                                               "Id",
+                                               "UserId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Permissions",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlCatalogItemAclEntry",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "User",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Group",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  [
+                                               "Id",
+                                               "UserId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ItemType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccessKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Wait-AdlJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WaitIntervalInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeoutInSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Test-AdlAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AdlAnalyticsDataSource",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Blob",
+                               "Aliases":  [
+                                               "AzureBlob"
+                                           ]
+                           },
+                           {
+                               "Name":  "AccessKey",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AdlJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Include",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Submitter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "State",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Result",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Top",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Submit-AdlJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Script",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Runtime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CompileMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CompileOnly",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AnalyticsUnits",
+                               "Aliases":  [
+                                               "DegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ScriptParameter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecurrenceName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PipelineUri",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AdlAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultDataLakeStore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnits",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryStoreRetention",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlAnalyticsAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnits",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelism"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxJobCount",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "QueryStoreRetention",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FirewallState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowAzureIpState",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AdlAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AdlAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndIpAddress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlAnalyticsFirewallRule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AdlAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ObjectId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ObjectType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnitsPerJob",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelismPerJob"
+                                           ]
+                           },
+                           {
+                               "Name":  "MinPriorityPerJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AdlAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "MaxAnalyticsUnitsPerJob",
+                               "Aliases":  [
+                                               "MaxDegreeOfParallelismPerJob"
+                                           ]
+                           },
+                           {
+                               "Name":  "MinPriorityPerJob",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AdlAnalyticsComputePolicy",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ComputePolicyName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlJobPipeline",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "PipelineId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AdlJobRecurrence",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.DataLakeAnalytics",
+        "Version":  "5.1.4",
+        "Parameters":  [
+                           {
+                               "Name":  "Account",
+                               "Aliases":  [
+                                               "AccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "RecurrenceId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "SubmittedAfter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SubmittedBefore",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]
