@@ -13,10 +13,3 @@ steps:
   inputs:
     toolMajorVersion: "V2"
     suppressionsFile: .azure-pipelines\credscan-suppressions.json
-
-- task: ComponentGovernanceComponentDetection@0
-  displayName: 'Component Detection'
-  inputs:
-    scanType: 'Register'
-    verbosity: 'Normal'
-    alertWarningLevel: 'High'

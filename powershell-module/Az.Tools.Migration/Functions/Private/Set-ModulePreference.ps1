@@ -38,7 +38,7 @@ function Set-ModulePreference
             {
                 Write-Verbose -Message "Setting module preference DataCollectionEnabled to $DataCollectionEnabled"
                 $existingModulePreferences.DataCollectionEnabled = $DataCollectionEnabled
-                $null = $existingModulePreferences | ConvertTo-Json | Out-File -FilePath $configurationFileFullPath -Force -Encoding Default
+                $null = $existingModulePreferences | ConvertTo-Json | Out-File -FilePath $configurationFileFullPath -Force
             }
             else
             {

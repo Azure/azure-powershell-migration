@@ -152,7 +152,7 @@ function New-ModuleCommandDefinitionsFile
         }
 
         $outputFile = Join-Path -Path $OutputDirectory -ChildPath "$ModuleName.$ModuleVersion.Cmdlets.json"
-        $exportedCommandResults | ConvertTo-Json -Depth 5 -AsArray | Out-File -FilePath $outputFile -Force -Encoding Default
+        $exportedCommandResults | ConvertTo-Json -Depth 5 -AsArray | Out-File -FilePath $outputFile -Force
     }
 }
 
@@ -227,6 +227,6 @@ foreach ($alias in (Get-Alias))
 
 # save the output
 $aliasOutputFile = Join-Path -Path $AliasOutputDirectory -ChildPath "Aliases.json"
-$azureRmMappings | ConvertTo-Json -Depth 5 | Out-File -FilePath $aliasOutputFile -Force -Encoding Default
+$azureRmMappings | ConvertTo-Json -Depth 5 | Out-File -FilePath $aliasOutputFile -Force
 
 Write-Host "Script completed."

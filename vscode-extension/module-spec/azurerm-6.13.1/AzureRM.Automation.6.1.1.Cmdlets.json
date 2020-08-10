@@ -1,0 +1,3708 @@
+[
+    {
+        "Command":  "Get-AzureRMAutomationHybridWorkerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "Group"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationHybridWorkerGroup",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "Group"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationJobOutputRecord",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "StreamRecordId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmAutomationDscNodeConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncrementNodeConfigurationBuild",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Export-AzureRmAutomationDscConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConfigurationName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OutputFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Export-AzureRmAutomationDscNodeReportContent",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "NodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReportId",
+                               "Aliases":  [
+                                               "Id"
+                                           ]
+                           },
+                           {
+                               "Name":  "OutputFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationConnection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionTypeName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscCompilationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConfigurationName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscCompilationJobOutput",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "Stream",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscNodeConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NodeConfigurationName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RollupStatus",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscNodeReport",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "NodeId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Latest",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "ReportId"
+                                           ]
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationJobOutput",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "Stream",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationModule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Export-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Slot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OutputFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ScheduleName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationScheduledRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobScheduleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ScheduleName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationVariable",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "WebhookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Exportable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationConnection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionTypeName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionFieldValues",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationModule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentLinkUri",
+                               "Aliases":  [
+                                               "ContentLink"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tags",
+                               "Aliases":  [
+                                               "Tag"
+                                           ]
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogProgress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogVerbose",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DaysOfWeek",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DaysOfMonth",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DayOfWeek",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DayOfWeekOccurrence",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OneTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DayInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "HourInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WeekInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MonthInterval",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TimeZone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ForUpdateConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationVariable",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Encrypted",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExpiryTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunOn",
+                               "Aliases":  [
+                                               "HybridWorker"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Publish-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Register-AzureRmAutomationDscNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "AzureVMName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NodeConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConfigurationMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConfigurationModeFrequencyMins",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RefreshFrequencyMins",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RebootNodeIfNeeded",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ActionAfterReboot",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AllowModuleOverwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureVMResourceGroup",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureVMLocation",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Register-AzureRmAutomationScheduledRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ScheduleName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunOn",
+                               "Aliases":  [
+                                               "HybridWorker"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationConnectionType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationConnection",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationDscNodeConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NodeConfigurationName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IgnoreNodeMappings",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationModule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationVariable",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationDscConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConfigurationName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Resume-AzureRmAutomationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Password",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Path",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Exportable",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationConnectionFieldValue",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConnectionFieldName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationCredential",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationModule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentLinkUri",
+                               "Aliases":  [
+                                               "ContentLink"
+                                           ]
+                           },
+                           {
+                               "Name":  "ContentLinkVersion",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogProgress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogVerbose",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Path",
+                               "Aliases":  [
+                                               "SourcePath"
+                                           ]
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tags",
+                               "Aliases":  [
+                                               "Tag"
+                                           ]
+                           },
+                           {
+                               "Name":  "Type",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogProgress",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogVerbose",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Published",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationVariable",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Encrypted",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationWebhook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IsEnabled",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmAutomationDscCompilationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ConfigurationName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConfigurationData",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "IncrementNodeConfigurationBuild",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationRegistrationInfo",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ConfigurationName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "NodeId"
+                                           ]
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "NodeName"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscOnboardingMetaconfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "OutputFolder",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ComputerName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmAutomationDscConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "SourcePath",
+                               "Aliases":  [
+                                               "Path"
+                                           ]
+                           },
+                           {
+                               "Name":  "Tags",
+                               "Aliases":  [
+                                               "Tag"
+                                           ]
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Published",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "LogVerbose",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationKey",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "KeyType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmAutomationRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "RunbookName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Parameters",
+                               "Aliases":  [
+                                               "JobParameters"
+                                           ]
+                           },
+                           {
+                               "Name":  "RunOn",
+                               "Aliases":  [
+                                               "HybridWorker"
+                                           ]
+                           },
+                           {
+                               "Name":  "Wait",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "MaxWaitSeconds",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmAutomationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Suspend-AzureRmAutomationJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "JobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Unregister-AzureRmAutomationDscNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "NodeId"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AutomationAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Plan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tags",
+                               "Aliases":  [
+                                               "Tag"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AutomationAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AutomationAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Plan",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tags",
+                               "Aliases":  [
+                                               "Tag"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationAccount",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "AutomationAccountName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmAutomationDscNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  [
+                                               "NodeId"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Unregister-AzureRmAutomationScheduledRunbook",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobScheduleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RunbookName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "ScheduleName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmAutomationDscNodeConfigurationDeployment",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "NodeConfigurationName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Schedule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Stop-AzureRmAutomationDscNodeConfigurationDeployment",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Force",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "InputObject",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscNodeConfigurationDeploymentSchedule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobScheduleId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationDscNodeConfigurationDeployment",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EndTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationSoftwareUpdateConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Schedule",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Windows",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Linux",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureVMResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NonAzureComputer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Duration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedUpdateClassification",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExcludedKbNumber",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedKbNumber",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedPackageClassification",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ExcludedPackageNameMask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IncludedPackageNameMask",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSoftwareUpdateConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AzureVMResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationSoftwareUpdateConfiguration",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SoftwareUpdateConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSoftwareUpdateRun",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SoftwareUpdateConfigurationName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SoftwareUpdateConfiguration",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OperatingSystem",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StartTime",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSoftwareUpdateMachineRun",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Id",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SoftwareUpdateRunId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SoftwareUpdateRun",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Status",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetComputer",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmAutomationSourceControl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RepoUrl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccessToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FolderPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Branch",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "EnableAutoSync",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DoNotPublishRunbook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSourceControl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SourceType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmAutomationSourceControl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmAutomationSourceControl",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AccessToken",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "FolderPath",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Branch",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Description",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutoSync",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PublishRunbook",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Start-AzureRmAutomationSourceControlSyncJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "SourceControlName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  [
+                                               "SourceControlSyncJobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSourceControlSyncJob",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "SourceControlName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  [
+                                               "SourceControlSyncJobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmAutomationSourceControlSyncJobOutput",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "SourceControlName",
+                               "Aliases":  [
+                                               "Name"
+                                           ]
+                           },
+                           {
+                               "Name":  "JobId",
+                               "Aliases":  [
+                                               "SourceControlSyncJobId"
+                                           ]
+                           },
+                           {
+                               "Name":  "Stream",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "StreamId",
+                               "Aliases":  [
+                                               "SourceControlSyncJobStreamId"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Import-AzureRmAutomationModule",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Automation",
+        "Version":  "6.1.1",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ContentLinkUri",
+                               "Aliases":  [
+                                               "ContentLink"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "AutomationAccountName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    }
+]

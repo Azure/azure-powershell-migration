@@ -1,0 +1,918 @@
+[
+    {
+        "Command":  "Add-AzureRmServiceFabricApplicationCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyVaultResouceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecretIdentifier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFile",
+                               "Aliases":  [
+                                               "Source"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificateOutputFolder",
+                               "Aliases":  [
+                                               "Destination"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  [
+                                               "CertPassword"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificateSubjectName",
+                               "Aliases":  [
+                                               "Subject"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmServiceFabricClientCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "Admin",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AdminClientThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReadonlyClientThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientCertificateCommonName",
+                               "Aliases":  [
+                                               "CertCommonName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  [
+                                               "ClientCertificateThumbprint"
+                                           ]
+                           },
+                           {
+                               "Name":  "CommonName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IssuerThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmServiceFabricClusterCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyVaultResouceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SecretIdentifier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFile",
+                               "Aliases":  [
+                                               "Source"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificateOutputFolder",
+                               "Aliases":  [
+                                               "Destination"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  [
+                                               "CertPassword"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificateSubjectName",
+                               "Aliases":  [
+                                               "Subject"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmServiceFabricNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "NumberOfNodesToAdd",
+                               "Aliases":  [
+                                               "Number"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmServiceFabricNodeType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Capacity",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VmUserName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VmPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "VmSku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DurabilityLevel",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmServiceFabricCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmServiceFabricCluster",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TemplateFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ParameterFile",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateFile",
+                               "Aliases":  [
+                                               "Source"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificateOutputFolder",
+                               "Aliases":  [
+                                               "Destination"
+                                           ]
+                           },
+                           {
+                               "Name":  "CertificatePassword",
+                               "Aliases":  [
+                                               "CertPassword"
+                                           ]
+                           },
+                           {
+                               "Name":  "SecondaryCertificateFile",
+                               "Aliases":  [
+                                               "SecSource"
+                                           ]
+                           },
+                           {
+                               "Name":  "SecondaryCertificatePassword",
+                               "Aliases":  [
+                                               "SecCertPassword"
+                                           ]
+                           },
+                           {
+                               "Name":  "KeyVaultResouceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "KeyVaultName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Location",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "VmUserName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClusterSize",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CertificateSubjectName",
+                               "Aliases":  [
+                                               "Subject"
+                                           ]
+                           },
+                           {
+                               "Name":  "VmPassword",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "OS",
+                               "Aliases":  [
+                                               "VmImage"
+                                           ]
+                           },
+                           {
+                               "Name":  "VmSku",
+                               "Aliases":  [
+                                               "Sku"
+                                           ]
+                           },
+                           {
+                               "Name":  "SecretIdentifier",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceFabricClientCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "AdminClientThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ReadonlyClientThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ClientCertificateCommonName",
+                               "Aliases":  [
+                                               "CertCommonName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  [
+                                               "ClientCertificateThumbprint"
+                                           ]
+                           },
+                           {
+                               "Name":  "CommonName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "IssuerThumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceFabricClusterCertificate",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "Thumbprint",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceFabricNode",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "NumberOfNodesToRemove",
+                               "Aliases":  [
+                                               "Number"
+                                           ]
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceFabricNodeType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmServiceFabricSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Section",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SettingsSectionDescription",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceFabricSetting",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "Section",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Parameter",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "SettingsSectionDescription",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmServiceFabricUpgradeType",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "UpgradeMode",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Version",
+                               "Aliases":  [
+                                               "ClusterCodeVersion"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmServiceFabricDurability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "NodeType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DurabilityLevel",
+                               "Aliases":  [
+                                               "Level"
+                                           ]
+                           },
+                           {
+                               "Name":  "Sku",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Update-AzureRmServiceFabricReliability",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.ServiceFabric",
+        "Version":  "0.3.15",
+        "Parameters":  [
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Name",
+                               "Aliases":  [
+                                               "ClusterName"
+                                           ]
+                           },
+                           {
+                               "Name":  "ReliabilityLevel",
+                               "Aliases":  [
+                                               "Level"
+                                           ]
+                           },
+                           {
+                               "Name":  "AutoAddNode",
+                               "Aliases":  [
+                                               "Auto"
+                                           ]
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

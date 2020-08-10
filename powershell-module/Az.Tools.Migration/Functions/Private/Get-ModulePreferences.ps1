@@ -33,7 +33,7 @@ function Get-ModulePreferences
                 $newConfig = New-Object -TypeName ModulePreferences
                 $newConfig.DataCollectionEnabled = $true
 
-                $null = $newConfig | ConvertTo-Json | Out-File -FilePath $configurationFileFullPath -Force -Encoding Default
+                $null = $newConfig | ConvertTo-Json | Out-File -FilePath $configurationFileFullPath -Force
 
                 Write-Output -InputObject $newConfig
             }
