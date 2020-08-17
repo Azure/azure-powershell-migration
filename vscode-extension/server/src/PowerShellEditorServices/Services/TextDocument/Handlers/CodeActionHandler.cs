@@ -80,7 +80,7 @@ namespace Microsoft.PowerShell.EditorServices.Handlers
             // If there are any code fixes, send these commands first so they appear at top of "Code Fix" menu in the client UI.
             foreach (Diagnostic diagnostic in request.Context.Diagnostics)
             {
-                if (string.IsNullOrEmpty(diagnostic.Code?.String) && !string.Equals(diagnostic.Source, "Migrate", StringComparison.OrdinalIgnoreCase))
+                if (string.IsNullOrEmpty(diagnostic.Code?.String))
                 {
                     _logger.LogWarning(
                         $"textDocument/codeAction skipping diagnostic with empty Code field: {diagnostic.Source} {diagnostic.Message}");

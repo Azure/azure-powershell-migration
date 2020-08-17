@@ -260,19 +260,20 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 command.AddParameter("IncludeRule", _rulesToInclude);
             }*/
 
+            string path = "analysis" + new Random().Next().ToString() + ".ps1";
+
             var command = new PSCommand()
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
                 .AddScript(@"Import-Module Az.Tools.Migration.psd1")
-                .AddScript(@"$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath analysis.ps1")
+                .AddScript(@"$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path)
                 .AddScript(@"$plan.UpgradeSteps");
 
-            string path = "analysis.ps1";
             using (StreamWriter sw = File.CreateText(path))
             {
                 sw.Write(scriptContent);
             }
 
-            return GetSemanticMarkersFromCommandAsync(command);
+            return GetSemanticMarkersFromCommandAsync(command, path);
         }
 
         public PssaCmdletAnalysisEngine RecreateWithNewSettings(string settingsPath)
@@ -315,7 +316,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
 
         #endregion
 
-        private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(PSCommand command)
+        private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(PSCommand command, string path)
         {
             
             /* PowerShellResult result = await InvokePowerShellAsync(command).ConfigureAwait(false);
@@ -343,15 +344,30 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             foreach (var upgradeStep in upgradeSteps)
             {
                 var info = upgradeStep.ImmediateBaseObject;
+                string upgradeType = info.GetType().GetProperty("UpgradeType").GetValue(info, null).ToString();
                 string file = info.GetType().GetProperty("FileName").GetValue(info, null).ToString();
-                string message = info.GetType().GetProperty("OriginalCmdletName").GetValue(info, null).ToString();
-                string replacementCmdletName = info.GetType().GetProperty("ReplacementCmdletName").GetValue(info, null).ToString();
+                string message; // = info.GetType().GetProperty("OriginalCmdletName").GetValue(info, null).ToString();
+                string replacementName; // = info.GetType().GetProperty("ReplacementCmdletName").GetValue(info, null).ToString();
                 int startLine = (int)info.GetType().GetProperty("StartLine").GetValue(info, null);
                 int startColumn = (int)info.GetType().GetProperty("StartColumn").GetValue(info, null);
                 int startOffset = (int)info.GetType().GetProperty("StartOffset").GetValue(info, null);
                 int endLine = (int)info.GetType().GetProperty("EndLine").GetValue(info, null);
                 int endColumn = (int)info.GetType().GetProperty("EndPosition").GetValue(info, null);
                 int endOffset = (int)info.GetType().GetProperty("EndOffset").GetValue(info, null);
+                string ruleName;
+
+                if (upgradeType == "Cmdlet")
+                {
+                    message = info.GetType().GetProperty("OriginalCmdletName").GetValue(info, null).ToString();
+                    replacementName = info.GetType().GetProperty("ReplacementCmdletName").GetValue(info, null).ToString();
+                    ruleName = "CMDLET_RENAME";
+                }
+                else
+                {
+                    message = info.GetType().GetProperty("OriginalParameterName").GetValue(info, null).ToString();
+                    replacementName = "-" + info.GetType().GetProperty("ReplacementParameterName").GetValue(info, null).ToString();
+                    ruleName = "PARAMETER_CHANGE";
+                }
 
                 scriptMarkers[i] = new ScriptFileMarker
                 {
@@ -359,16 +375,18 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                     Level = ScriptFileMarkerLevel.Warning,
                     ScriptRegion = new ScriptRegion(file, "Migrate", startLine, startColumn, startOffset, endLine, endColumn, endOffset),
                     Source = "Az.Tools.Migration",
-                    RuleName = "CMDLET_RENAME",
+                    RuleName = ruleName,
                     Correction = new MarkerCorrection {
                         Name = "Auto Fix",
                         Edits = new ScriptRegion[] {
-                            new ScriptRegion(file, replacementCmdletName, startLine, startColumn, startOffset, endLine, endColumn, endOffset)
+                            new ScriptRegion(file, replacementName, startLine, startColumn, startOffset, endLine, endColumn, endOffset)
                         }
                     }
                 };
                 i++;
             }
+
+            File.Delete(path);
 
             return scriptMarkers;
         }
