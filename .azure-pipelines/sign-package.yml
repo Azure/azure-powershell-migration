@@ -1,7 +1,3 @@
-variables:
-  SignServiceConnection: $(signServiceConnection)
-  NuGetKey: $(nuGetKey)
-
 trigger: none
 pr: none
 
@@ -31,7 +27,7 @@ steps:
 - task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@1
   displayName: 'Signing'
   inputs:
-    ConnectedServiceName: $(SignServiceConnection)
+    ConnectedServiceName: $(signServiceConnection)
     FolderPath: artifacts
     Pattern: |
      Az.Tools.Migration/**/*.ps1
@@ -69,7 +65,7 @@ steps:
   inputs:
     command: custom
     custom: msbuild
-    arguments: 'build.proj /t:Package /p:NuGetKey=$(NuGetKey)'
+    arguments: 'build.proj /t:Package /p:NuGetKey=$(nuGetKey)'
 
 - task: PublishPipelineArtifact@0
   displayName: 'Save artifacts'
