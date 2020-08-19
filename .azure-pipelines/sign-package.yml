@@ -9,13 +9,17 @@ pool:
   vmImage: 'windows-2019'
 
 steps:
-- powershell: 'Install-Module platyPS -Force -Confirm:$false -Scope CurrentUser'
-  pwsh: true
+- task: PowerShell@2
   displayName: 'Install platyPS'
+  inputs:
+    targetType: inline
+    script: 'Install-Module platyPS -Force -Confirm:$false -Scope CurrentUser'
 
-- powershell: 'Install-Module PowerShellGet -Force -Confirm:$false -Scope CurrentUser -SkipPublisherCheck'
-  pwsh: true
+- task: PowerShell@2
   displayName: 'Install PowerShellGet [v2.1.3 has a Publish-Module bug]'
+  inputs:
+    targetType: inline
+    script: 'Install-Module PowerShellGet -Force -Confirm:$false -Scope CurrentUser -SkipPublisherCheck'
 
 - task: DotNetCoreCLI@2
   displayName: 'Build'
