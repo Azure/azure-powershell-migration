@@ -1,3 +1,7 @@
+variables:
+  SignServiceConnection: $(signServiceConnection)
+  NuGetKey: $(nuGetKey)
+
 trigger: none
 pr: none
 
@@ -5,9 +9,73 @@ pool:
   vmImage: 'windows-2019'
 
 steps:
+
+steps:
+- powershell: 'Install-Module platyPS -Force -Confirm:$false -Scope CurrentUser'
+  pwsh: true
+  displayName: 'Install platyPS'
+
+steps:
+- powershell: 'Install-Module PowerShellGet -Force -Confirm:$false -Scope CurrentUser -SkipPublisherCheck'
+  pwsh: true
+  displayName: 'Install PowerShellGet [v2.1.3 has a Publish-Module bug]'
+
 - task: DotNetCoreCLI@2
   displayName: 'Build'
   inputs:
     command: custom
     custom: msbuild
     arguments: 'build.proj /t:Build'
+
+steps:
+- task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@1
+  displayName: 'Signing'
+  inputs:
+    ConnectedServiceName: $(SignServiceConnection)
+    FolderPath: artifacts
+    Pattern: |
+     Az.Tools.Migration/**/*.ps1
+     Az.Tools.Migration/**/*.psm1
+     Az.Tools.Migration/**/*.ps1xml
+     Az.Tools.Migration/**/*.js
+    UseMinimatch: true
+    signConfigType: inlineSignParams
+    inlineOperation: |
+     [
+       {
+         "KeyCode": "CP-230012",
+         "OperationCode": "SigntoolSign",
+         "Parameters": {
+           "OpusName": "Microsoft",
+           "OpusInfo": "http://www.microsoft.com",
+           "FileDigest": "/fd \"SHA256\"",
+           "PageHash": "/NPH",
+           "TimeStamp": "/tr \"http://rfc3161.gtm.corp.microsoft.com/TSS/HttpTspServer\" /td sha256"
+         },
+         "ToolName": "sign",
+         "ToolVersion": "1.0"
+       },
+       {
+         "KeyCode": "CP-230012",
+         "OperationCode": "SigntoolVerify",
+         "Parameters": {},
+         "ToolName": "sign",
+         "ToolVersion": "1.0"
+       }
+     ]
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Package
+  inputs:
+    command: custom
+    custom: msbuild
+    arguments: 'build.proj /t:Package /p:NuGetKey=$(NuGetKey)'
+
+steps:
+- task: PublishPipelineArtifact@0
+  displayName: 'Save artifacts'
+  inputs:
+    artifactName: artifacts
+    targetPath: artifacts
+  condition: succeededOrFailed()
