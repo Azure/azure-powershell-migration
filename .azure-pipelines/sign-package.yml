@@ -1,0 +1,13 @@
+trigger: none
+pr: none
+
+pool:
+  vmImage: 'windows-2019'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'Build'
+  inputs:
+    command: custom
+    custom: msbuild
+    arguments: 'build.proj /t:Build'
