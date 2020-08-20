@@ -2,7 +2,7 @@ class Constants
 {
     static [System.String] $ConfigurationDirectoryName = ".aztoolsmigration"
     static [System.String] $ConfigurationFileName = "module-preferences.json"
-    static [System.String] $PublicTelemetryInstrumentationKey = "f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71"
+    static [System.String] $PublicTelemetryInstrumentationKey = "7df6ff70-8353-4672-80d6-568517fed090"
     static [System.String] $PublicTelemetryIngestionEndpointUri = "https://dc.services.visualstudio.com/v2/track"
 }
 
