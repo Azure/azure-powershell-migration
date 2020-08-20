@@ -60,8 +60,10 @@ function Send-PageViewTelemetry
 
         # prepare the REST request body schema (version 2.x).
 
+        $InstrumentationKeyNoDashes = $InstrumentationKey.Replace('-','')
+
         $bodyObject = [PSCustomObject]@{
-            'name' = "Microsoft.ApplicationInsights.$InstrumentationKey.PageView"
+            'name' = "Microsoft.ApplicationInsights.$InstrumentationKeyNoDashes.PageView"
             'time' = ([System.DateTime]::UtcNow.ToString('o'))
             'iKey' = $InstrumentationKey
             'tags' = [PSCustomObject]@{
@@ -70,7 +72,7 @@ function Send-PageViewTelemetry
             'data' = [PSCustomObject]@{
                 'baseType' = 'PageViewData'
                 'baseData' = [PSCustomObject]@{
-                    'ver' = '2'
+                    'ver' = 2
                     'name' = $PageName
                     'duration' = $Duration.ToString()
                     'properties' = $customPropertiesObj
