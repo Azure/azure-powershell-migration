@@ -61,7 +61,7 @@ function Send-PageViewTelemetry
         # prepare the REST request body schema (version 2.x).
 
         $bodyObject = [PSCustomObject]@{
-            'name' = "AppPageViews"
+            'name' = "Microsoft.ApplicationInsights.$InstrumentationKey.PageView"
             'time' = ([System.DateTime]::UtcNow.ToString('o'))
             'iKey' = $InstrumentationKey
             'tags' = [PSCustomObject]@{
