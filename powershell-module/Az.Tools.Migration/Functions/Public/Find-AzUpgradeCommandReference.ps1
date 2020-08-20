@@ -63,10 +63,6 @@ function Find-AzUpgradeCommandReference
         Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmVersion"
         $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
 
-        # synchronous results output instead of async. the reason for this is that
-        # downstream commands will need the entire results object to process at once.
-        $azureRmReferenceResults = New-Object -TypeName CommandReferenceCollection
-
         if ($PSCmdlet.ParameterSetName -eq 'ByFile')
         {
             if ((Test-Path -Path $FilePath) -eq $false)
@@ -77,16 +73,13 @@ function Find-AzUpgradeCommandReference
             Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
             $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
 
-            foreach ($foundCmdlet in $foundCmdlets)
-            {
-                $azureRmReferenceResults.Items.Add($foundCmdlet)
-            }
+            Write-Output -InputObject $foundCmdlets
 
             Send-MetricsIfDataCollectionEnabled -Operation Find `
                 -ParameterSetName $PSCmdlet.ParameterSetName `
                 -Duration ((Get-Date) - $cmdStarted) `
                 -Properties ([PSCustomObject]@{
-                    AzureCmdletCount = $azureRmReferenceResults.Items.Count
+                    AzureCmdletCount = $foundCmdlets.Count
                     AzureModuleName = "AzureRM"
                     AzureModuleVersion = $AzureRmVersion
                     FileCount = 1
@@ -100,29 +93,26 @@ function Find-AzUpgradeCommandReference
             }
 
             $filesToSearch = Get-ChildItem -Path $DirectoryPath -Recurse -Include *.ps1, *.psm1
+            $commandCounter = 0
 
             foreach ($file in $filesToSearch)
             {
                 Write-Verbose -Message "Searching for AzureRM references in file: $($file.FullName)"
                 $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
+                Write-Output -InputObject $foundCmdlets
 
-                foreach ($foundCmdlet in $foundCmdlets)
-                {
-                    $azureRmReferenceResults.Items.Add($foundCmdlet)
-                }
+                $commandCounter += $foundCmdlets.Count
             }
 
             Send-MetricsIfDataCollectionEnabled -Operation Find `
                 -ParameterSetName $PSCmdlet.ParameterSetName `
                 -Duration ((Get-Date) - $cmdStarted) `
                 -Properties ([PSCustomObject]@{
-                    AzureCmdletCount = $azureRmReferenceResults.Items.Count
+                    AzureCmdletCount = $commandCounter
                     AzureModuleName = "AzureRM"
                     AzureModuleVersion = $AzureRmVersion
                     FileCount = $filesToSearch.Count
                 })
         }
-
-        Write-Output -InputObject $azureRmReferenceResults
     }
 }

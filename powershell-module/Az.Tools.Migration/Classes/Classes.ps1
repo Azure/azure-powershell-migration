@@ -74,16 +74,6 @@ class CommandReference
     }
 }
 
-class CommandReferenceCollection
-{
-    [System.Collections.Generic.List[CommandReference]] $Items
-
-    CommandReferenceCollection()
-    {
-        $this.Items = New-Object -TypeName 'System.Collections.Generic.List[CommandReference]'
-    }
-}
-
 Enum UpgradeStepType
 {
     Cmdlet
