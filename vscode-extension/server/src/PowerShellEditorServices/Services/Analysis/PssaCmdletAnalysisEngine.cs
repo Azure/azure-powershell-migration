@@ -226,7 +226,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// </summary>
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(string scriptContent) => AnalyzeScriptAsync(scriptContent, settings: null);
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent) => AnalyzeScriptAsync(runspace, scriptContent, settings: null);
 
 
         /// <summary>
@@ -235,7 +235,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <param name="settings">The settings file to use in this instance of analysis.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(string scriptContent, Hashtable settings)
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent, Hashtable settings)
         {
             // When a new, empty file is created there are by definition no issues.
             // Furthermore, if you call Invoke-ScriptAnalyzer with an empty ScriptDefinition
@@ -260,12 +260,10 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 command.AddParameter("IncludeRule", _rulesToInclude);
             }*/
 
-            string path = "analysis" + new Random().Next().ToString() + ".ps1";
+            string path = "analysis.ps1";
 
             var command = new PSCommand()
-                .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
-                .AddScript(@"Import-Module Az.Tools.Migration.psd1")
-                .AddScript(@"$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path)
+                .AddScript(@"$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath analysis.ps1 -AzCmdlets $azCmdlets -AzureRMCmdlets $azureRMCmdlets")
                 .AddScript(@"$plan.UpgradeSteps");
 
             using (StreamWriter sw = File.CreateText(path))
@@ -273,7 +271,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 sw.Write(scriptContent);
             }
 
-            return GetSemanticMarkersFromCommandAsync(command, path);
+            return GetSemanticMarkersFromCommandAsync(runspace, command, path);
         }
 
         public PssaCmdletAnalysisEngine RecreateWithNewSettings(string settingsPath)
@@ -316,7 +314,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
 
         #endregion
 
-        private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(PSCommand command, string path)
+        private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(Runspace runspace, PSCommand command, string path)
         {
             
             /* PowerShellResult result = await InvokePowerShellAsync(command).ConfigureAwait(false);
@@ -336,7 +334,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             
             // var scriptMarkers = new ScriptFileMarker[1];
             
-            PowerShellResult result = await InvokePowerShellAsync(command).ConfigureAwait(false);
+            PowerShellResult result = await InvokePowerShellAsync(runspace, command).ConfigureAwait(false);
             IReadOnlyCollection<PSObject> upgradeSteps = result?.Output ?? s_emptyDiagnosticResult;
             _logger.LogDebug(String.Format("Found {0} violations", upgradeSteps.Count));
             var scriptMarkers = new ScriptFileMarker[upgradeSteps.Count()];
@@ -386,7 +384,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 i++;
             }
 
-            File.Delete(path);
+            // File.Delete(path);
 
             return scriptMarkers;
         }
@@ -396,11 +394,48 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             return Task.Run(() => InvokePowerShell(command));
         }
 
+        private Task<PowerShellResult> InvokePowerShellAsync(Runspace runspace, PSCommand command)
+        {
+            return Task.Run(() => InvokePowerShell(runspace, command));
+        }
+
         private PowerShellResult InvokePowerShell(PSCommand command)
         {
             using (var powerShell = System.Management.Automation.PowerShell.Create())
             {
                 powerShell.RunspacePool = _analysisRunspacePool;
+                powerShell.Commands = command;
+                PowerShellResult result = null;
+                try
+                {
+                    Collection<PSObject> output = InvokePowerShellWithModulePathPreservation(powerShell);
+                    PSDataCollection<ErrorRecord> errors = powerShell.Streams.Error;
+                    result = new PowerShellResult(output, errors, powerShell.HadErrors);
+                }
+                catch (CommandNotFoundException ex)
+                {
+                    // This exception is possible if the module path loaded
+                    // is wrong even though PSScriptAnalyzer is available as a module
+                    _logger.LogError(ex.Message);
+                }
+                catch (CmdletInvocationException ex)
+                {
+                    // We do not want to crash EditorServices for exceptions caused by cmdlet invocation.
+                    // Two main reasons that cause the exception are:
+                    // * PSCmdlet.WriteOutput being called from another thread than Begin/Process
+                    // * CompositionContainer.ComposeParts complaining that "...Only one batch can be composed at a time"
+                    _logger.LogError(ex.Message);
+                }
+
+                return result;
+            }
+        }
+
+        private PowerShellResult InvokePowerShell(Runspace runspace, PSCommand command)
+        {
+            using (var powerShell = System.Management.Automation.PowerShell.Create())
+            {
+                powerShell.Runspace = runspace;
                 powerShell.Commands = command;
                 PowerShellResult result = null;
                 try

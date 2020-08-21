@@ -29,6 +29,8 @@ namespace Microsoft.PowerShell.EditorServices.Services
     /// </summary>
     internal class AnalysisService : IDisposable
     {
+        System.Management.Automation.PowerShell powerShell = System.Management.Automation.PowerShell.Create();
+
         /// <summary>
         /// Reliably generate an ID for a diagnostic record to track it.
         /// </summary>
@@ -122,6 +124,11 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _mostRecentCorrectionsByFile = new ConcurrentDictionary<ScriptFile, CorrectionTableEntry>();
             _analysisEngineLazy = new Lazy<PssaCmdletAnalysisEngine>(InstantiateAnalysisEngine);
             _pssaSettingsFilePath = null;
+            powerShell.AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process");
+            powerShell.AddScript(@"Import-Module Az.Tools.Migration.psd1");
+            powerShell.AddScript("$azCmdlets = Import-CmdletSpec -ModuleName \"Az\" -ModuleVersion \"4.4.0\"");
+            powerShell.AddScript("$azureRMCmdlets = Import-CmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"6.13.1\"");
+            powerShell.Invoke();
         }
 
         /// <summary>
@@ -208,7 +215,7 @@ namespace Microsoft.PowerShell.EditorServices.Services
 
             Hashtable commentHelpSettings = AnalysisService.GetCommentHelpRuleSettings(helpLocation, forBlockComment);
 
-            ScriptFileMarker[] analysisResults = await AnalysisEngine.AnalyzeScriptAsync(functionText, commentHelpSettings).ConfigureAwait(false);
+            ScriptFileMarker[] analysisResults = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, functionText, commentHelpSettings).ConfigureAwait(false);
 
             if (analysisResults.Length == 0
                 || analysisResults[0]?.Correction?.Edits == null
@@ -382,7 +389,7 @@ namespace Microsoft.PowerShell.EditorServices.Services
 
             foreach (ScriptFile scriptFile in filesToAnalyze)
             {
-                ScriptFileMarker[] semanticMarkers = await AnalysisEngine.AnalyzeScriptAsync(scriptFile.Contents).ConfigureAwait(false);
+                ScriptFileMarker[] semanticMarkers = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, scriptFile.Contents).ConfigureAwait(false);
 
                 scriptFile.DiagnosticMarkers.AddRange(semanticMarkers);
 
