@@ -35,7 +35,7 @@ function New-AzUpgradeModulePlan
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script and module files under C:\Scripts.
 
-        $references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1' 
+        $references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1'
         New-AzUpgradeModulePlan -ToAzVersion 4.4.0 -AzureRmCmdReference $references
     #>
     [CmdletBinding()]
@@ -123,30 +123,30 @@ function New-AzUpgradeModulePlan
 
         # synchronous results output instead of async. the reason for this is that
         # downstream commands will need the entire results object to process at once.
-        $upgradePlan = New-Object -TypeName UpgradePlan
+        $upgradePlan = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
+
+        $upgradeStepsCounter = 0
+        $warningStepsCounter = 0
+        $errorStepsCounter = 0
 
         foreach ($rmCmdlet in $AzureRmCmdReference)
         {
             Write-Verbose -Message "Checking upgrade potential for instance of $($rmCmdlet.CommandName)"
 
-            if ($rmCmdlet.HasSplattedArguments -eq $true)
-            {
-                $warningMsg = New-Object -TypeName UpgradePlanResult
-                $warningMsg.Command = $rmCmdlet
-                $warningMsg.Reason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
-                $warningMsg.ReasonCode = [UpgradePlanResultReasonCode]::WarningSplattedParameters
-
-                $upgradePlan.Warnings.Add($warningMsg)
-            }
-
             if ($upgradeAliases.ContainsKey($rmCmdlet.CommandName) -eq $false)
             {
-                $errorMsg = New-Object -TypeName UpgradePlanResult
-                $errorMsg.Command = $rmCmdlet
-                $errorMsg.Reason = "No matching upgrade alias found. Command cannot be automatically upgraded."
-                $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorNoUpgradeAlias
+                $errorResult = New-Object -TypeName UpgradePlanResult
+                $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
+                $errorResult.SourceCommand = $rmCmdlet
+                $errorResult.FullPath = $rmCmdlet.FullPath
+                $errorResult.StartOffset = $rmCmdlet.StartOffset
+                $errorResult.Location = $rmCmdlet.ToLocation()
+                $errorResult.Original = $rmCmdlet.CommandName
+                $errorResult.PlanResultReason = "No matching upgrade alias found. Command cannot be automatically upgraded."
+                $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoUpgradeAlias
 
-                $upgradePlan.Errors.Add($errorMsg)
+                $upgradePlan.Add($errorResult)
+                $errorStepsCounter++
 
                 continue
             }
@@ -155,29 +155,45 @@ function New-AzUpgradeModulePlan
 
             if ($azCmdlets.ContainsKey($resolvedCommandName) -eq $false)
             {
-                $errorMsg = New-Object -TypeName UpgradePlanResult
-                $errorMsg.Command = $rmCmdlet
-                $errorMsg.Reason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
-                $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorNoModuleSpecMatch
+                $errorResult = New-Object -TypeName UpgradePlanResult
+                $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
+                $errorResult.SourceCommand = $rmCmdlet
+                $errorResult.FullPath = $rmCmdlet.FullPath
+                $errorResult.StartOffset = $rmCmdlet.StartOffset
+                $errorResult.Location = $rmCmdlet.ToLocation()
+                $errorResult.Original = $rmCmdlet.CommandName
+                $errorResult.PlanResultReason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
+                $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoModuleSpecMatch
 
-                $upgradePlan.Errors.Add($errorMsg)
+                $upgradePlan.Add($errorResult)
+                $errorStepsCounter++
 
                 continue
             }
 
-            $cmdletUpgrade = New-Object -TypeName CmdletUpgradeStep
-            $cmdletUpgrade.OriginalCmdletName = $rmCmdlet.CommandName
-            $cmdletUpgrade.ReplacementCmdletName = $resolvedCommandName
+            $cmdletUpgrade = New-Object -TypeName UpgradePlanResult
+            $cmdletUpgrade.Original = $rmCmdlet.CommandName
+            $cmdletUpgrade.Replacement = $resolvedCommandName
+            $cmdletUpgrade.UpgradeType = [UpgradeStepType]::Cmdlet
+            $cmdletUpgrade.SourceCommand = $rmCmdlet
             $cmdletUpgrade.FullPath = $rmCmdlet.FullPath
-            $cmdletUpgrade.FileName = $rmCmdlet.FileName
-            $cmdletUpgrade.StartLine = $rmCmdlet.StartLine
-            $cmdletUpgrade.StartColumn = $rmCmdlet.StartColumn
-            $cmdletUpgrade.EndLine = $rmCmdlet.EndLine
-            $cmdletUpgrade.EndPosition = $rmCmdlet.EndPosition
             $cmdletUpgrade.StartOffset = $rmCmdlet.StartOffset
-            $cmdletUpgrade.EndOffset = $rmCmdlet.EndOffset
+            $cmdletUpgrade.Location = $rmCmdlet.ToLocation()
 
-            $upgradePlan.UpgradeSteps.Add($cmdletUpgrade)
+            if ($rmCmdlet.HasSplattedArguments -eq $false)
+            {
+                $cmdletUpgrade.PlanResultReason = "Command can be automatically upgraded."
+                $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+                $upgradeStepsCounter++
+            }
+            else
+            {
+                $cmdletUpgrade.PlanResultReason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
+                $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
+                $warningStepsCounter++
+            }
+
+            $upgradePlan.Add($cmdletUpgrade)
 
             # check if parameters need to be updated
 
@@ -210,23 +226,20 @@ function New-AzUpgradeModulePlan
                         # alias match to the upgraded cmdlet's parameter name.
                         # we should add an upgrade step to swap to use the non-aliased name.
 
-                        $paramUpgrade = New-Object -TypeName CmdletParameterUpgradeStep
-                        $paramUpgrade.OriginalParameterName = $rmParam.Name
-                        $paramUpgrade.ReplacementParameterName = $matchedAliasName.Name
-
-                        # properties from the parent cmdlet
+                        $paramUpgrade = New-Object -TypeName UpgradePlanResult
+                        $paramUpgrade.Original = $rmParam.Name
+                        $paramUpgrade.Replacement = $matchedAliasName.Name
+                        $paramUpgrade.UpgradeType = [UpgradeStepType]::CmdletParameter
+                        $paramUpgrade.SourceCommand = $rmCmdlet
                         $paramUpgrade.FullPath = $rmCmdlet.FullPath
-                        $paramUpgrade.FileName = $rmCmdlet.FileName
-
-                        # properties from the parameter itself
-                        $paramUpgrade.StartLine = $rmParam.StartLine
-                        $paramUpgrade.StartColumn = $rmParam.StartColumn
-                        $paramUpgrade.EndLine = $rmParam.EndLine
-                        $paramUpgrade.EndPosition = $rmParam.EndPosition
                         $paramUpgrade.StartOffset = $rmParam.StartOffset
-                        $paramUpgrade.EndOffset = $rmParam.EndOffset
+                        $paramUpgrade.SourceCommandParameter = $rmParam
+                        $paramUpgrade.Location = $rmParam.ToLocation()
+                        $paramUpgrade.PlanResultReason = "Command parameter can be automatically upgraded."
+                        $paramUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
 
-                        $upgradePlan.UpgradeSteps.Add($paramUpgrade)
+                        $upgradePlan.Add($paramUpgrade)
+                        $upgradeStepsCounter++
 
                         continue
                     }
@@ -234,12 +247,19 @@ function New-AzUpgradeModulePlan
                     # no direct match and no alias match?
                     # this could mean a breaking change that requires manual adjustments
 
-                    $errorMsg = New-Object -TypeName UpgradePlanResult
-                    $errorMsg.Command = $rmCmdlet
-                    $errorMsg.Reason = "Parameter [$($rmParam.Name)] was not found in $resolvedCommandName or it's aliases."
-                    $errorMsg.ReasonCode = [UpgradePlanResultReasonCode]::ErrorParameterNotFound
+                    $paramError = New-Object -TypeName UpgradePlanResult
+                    $paramError.Original = $rmParam.Name
+                    $paramError.UpgradeType = [UpgradeStepType]::CmdletParameter
+                    $paramError.SourceCommand = $rmCmdlet
+                    $paramError.FullPath = $rmCmdlet.FullPath
+                    $paramError.StartOffset = $rmParam.StartOffset
+                    $paramError.SourceCommandParameter = $rmParam
+                    $paramError.Location = $rmParam.ToLocation()
+                    $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or it's aliases."
+                    $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
 
-                    $upgradePlan.Errors.Add($errorMsg)
+                    $upgradePlan.Add($paramError)
+                    $errorStepsCounter++
                 }
             }
         }
@@ -251,14 +271,14 @@ function New-AzUpgradeModulePlan
         $filter1 = @{ Expression = 'FullPath'; Ascending = $true }
         $filter2 = @{ Expression = 'StartOffset'; Descending = $true }
 
-        $upgradePlan.UpgradeSteps = $upgradePlan.UpgradeSteps | Sort-Object -Property $filter1, $filter2
+        $upgradePlan = $upgradePlan | Sort-Object -Property $filter1, $filter2
 
         # now that we have a sorted collection, add in the step order number
         # for extra clarity in the upgrade plan.
 
-        for ([int]$i = 0; $i -lt $upgradePlan.UpgradeSteps.Count; $i++)
+        for ([int]$i = 0; $i -lt $upgradePlan.Count; $i++)
         {
-            $upgradePlan.UpgradeSteps[$i].StepNumber = ($i + 1)
+            $upgradePlan[$i].Order = ($i + 1)
         }
 
         Send-MetricsIfDataCollectionEnabled -Operation Plan `
@@ -267,9 +287,9 @@ function New-AzUpgradeModulePlan
             -Properties ([PSCustomObject]@{
                 ToAzureModuleName = "Az"
                 ToAzureModuleVersion = $ToAzVersion
-                UpgradeStepsCount = $upgradePlan.UpgradeSteps.Count
-                PlanWarnings = $upgradePlan.Warnings
-                PlanErrors = $upgradePlan.Errors
+                UpgradeStepsCount = $upgradeStepsCounter
+                PlanWarnings = $warningStepsCounter
+                PlanErrors = $errorStepsCounter
             })
 
         Write-Output -InputObject $upgradePlan

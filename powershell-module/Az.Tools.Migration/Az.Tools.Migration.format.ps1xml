@@ -52,5 +52,63 @@
         </TableRowEntries>
       </TableControl>
     </View>
+    <View>
+      <Name>CommandReferenceView</Name>
+      <ViewSelectedBy>
+        <TypeName>UpgradePlanResult</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Order</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UpgradeType</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>PlanResult</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+		  <TableColumnHeader>
+            <Label>Original</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+		  <TableColumnHeader>
+            <Label>Replacement</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Location</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Order</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UpgradeType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PlanResult</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Original</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Replacement</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Location</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
   </ViewDefinitions>
 </Configuration>

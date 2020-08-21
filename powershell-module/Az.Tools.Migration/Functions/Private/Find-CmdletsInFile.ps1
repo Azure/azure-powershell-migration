@@ -104,6 +104,8 @@ function Find-CmdletsInFile
                                 $paramRef.Value = $currentAstNode.CommandElements[($j + 1)].Extent.Text
                             }
 
+                            $paramRef.FullPath = $cmdletRef.FullPath
+                            $paramRef.FileName = $cmdletRef.FileName
                             $paramRef.StartLine = $currentAstNodeCmdElement.Extent.StartLineNumber
                             $paramRef.StartColumn = $currentAstNodeCmdElement.Extent.StartColumnNumber
                             $paramRef.EndLine = $currentAstNodeCmdElement.Extent.EndLineNumber

@@ -39,6 +39,8 @@ class CommandDefinition
 
 class CommandReferenceParameter
 {
+    [System.String] $FileName
+    [System.String] $FullPath
     [System.String] $Name
     [System.String] $Value
     [System.Int32] $StartLine
@@ -47,6 +49,11 @@ class CommandReferenceParameter
     [System.Int32] $EndPosition
     [System.Int32] $StartOffset
     [System.Int32] $EndOffset
+
+    [String] ToLocation()
+    {
+        return ("{0}:{1}:{2}" -f $this.FileName, $this.StartLine, $this.StartColumn)
+    }
 }
 
 class CommandReference
@@ -68,9 +75,9 @@ class CommandReference
         $this.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandReferenceParameter]'
     }
 
-    [String] ToString()
+    [String] ToLocation()
     {
-        return ("{0} [{1}:{2}:{3}]" -f $this.CommandName, $this.FileName, $this.StartLine, $this.StartColumn)
+        return ("{0}:{1}:{2}" -f $this.FileName, $this.StartLine, $this.StartColumn)
     }
 }
 
@@ -80,89 +87,41 @@ Enum UpgradeStepType
     CmdletParameter
 }
 
-class UpgradeStep
+Enum PlanResultReasonCode
 {
-    [System.Int32] $StepNumber
-    [UpgradeStepType] $UpgradeType
-    [System.String] $FileName
-    [System.String] $FullPath
-    [System.Int32] $StartLine
-    [System.Int32] $StartColumn
-    [System.Int32] $EndLine
-    [System.Int32] $EndPosition
-    [System.Int32] $StartOffset
-    [System.Int32] $EndOffset
-}
-
-class CmdletUpgradeStep : UpgradeStep
-{
-    [System.String] $OriginalCmdletName
-    [System.String] $ReplacementCmdletName
-
-    CmdletUpgradeStep()
-    {
-        $this.UpgradeType = [UpgradeStepType]::Cmdlet
-    }
-
-    [String] ToString()
-    {
-        return ("Cmdlet {0} to {1} [{2}:{3}:{4}]" -f $this.OriginalCmdletName, $this.ReplacementCmdletName, $this.FileName, $this.StartLine, $this.StartColumn)
-    }
-}
-
-class CmdletParameterUpgradeStep : UpgradeStep
-{
-    [System.String] $OriginalParameterName
-    [System.String] $ReplacementParameterName
-
-    CmdletParameterUpgradeStep()
-    {
-        $this.UpgradeType = [UpgradeStepType]::CmdletParameter
-    }
-
-    [String] ToString()
-    {
-        return ("Parameter -{0} to -{1} [{2}:{3}:{4}]" -f $this.OriginalParameterName, $this.ReplacementParameterName, $this.FileName, $this.StartLine, $this.StartColumn)
-    }
-}
-
-Enum UpgradePlanResultReasonCode
-{
+    ReadyToUpgrade = 0
     WarningSplattedParameters = 1
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
 }
 
-class UpgradePlanResult
+Enum UpgradeResultReasonCode
 {
-    [CommandReference] $Command
-    [System.String] $Reason
-    [UpgradePlanResultReasonCode] $ReasonCode
-
-    [String] ToString()
-    {
-        return ("[{0}:{1}:{2}] {3}" -f $this.Command.FileName, $this.Command.StartLine, $this.Command.StartColumn, $this.Reason)
-    }
+    UpgradeCompleted = 0
+    UpgradedWithWarnings = 1
+    UnableToUpgrade = 2
+    UpgradeActionFailed = 3
 }
 
-class UpgradePlan
+class UpgradePlanResult
 {
-    [System.Collections.Generic.List[UpgradeStep]] $UpgradeSteps
-    [System.Collections.Generic.List[UpgradePlanResult]] $Warnings
-    [System.Collections.Generic.List[UpgradePlanResult]] $Errors
-
-    UpgradePlan()
-    {
-        $this.UpgradeSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradeStep]'
-        $this.Warnings = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-        $this.Errors = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-    }
+    [System.Int32] $Order
+    [UpgradeStepType] $UpgradeType
+    [PlanResultReasonCode] $PlanResult
+    [System.String] $PlanResultReason
+    [CommandReference] $SourceCommand
+    [CommandReferenceParameter] $SourceCommandParameter
+    [System.String] $Location
+    [System.String] $FullPath
+    [System.Int32] $StartOffset
+    [System.String] $Original
+    [System.String] $Replacement
 }
 
 class UpgradeResult
 {
-    [UpgradeStep] $Step
+    # [UpgradeStep] $Step
     [System.Boolean] $Success
     [System.String] $Reason
 
