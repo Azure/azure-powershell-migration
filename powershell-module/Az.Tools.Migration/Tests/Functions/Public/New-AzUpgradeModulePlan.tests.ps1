@@ -10,8 +10,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $cmdlet1.CommandName = "Login-AzureRmAccount"
             $cmdlet1.StartOffset = 10
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -46,8 +46,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $cmdlet1.Parameters.Add($cmdlet1Param)
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -128,16 +128,16 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $cmdlet9.CommandName = "Get-AzureRmWebAppCertificate"
             $cmdlet9.StartOffset = 200
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
-            $foundCmdlets.Items.Add($cmdlet2)
-            $foundCmdlets.Items.Add($cmdlet3)
-            $foundCmdlets.Items.Add($cmdlet4)
-            $foundCmdlets.Items.Add($cmdlet5)
-            $foundCmdlets.Items.Add($cmdlet6)
-            $foundCmdlets.Items.Add($cmdlet7)
-            $foundCmdlets.Items.Add($cmdlet8)
-            $foundCmdlets.Items.Add($cmdlet9)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
+            $foundCmdlets += $cmdlet2
+            $foundCmdlets += $cmdlet3
+            $foundCmdlets += $cmdlet4
+            $foundCmdlets += $cmdlet5
+            $foundCmdlets += $cmdlet6
+            $foundCmdlets += $cmdlet7
+            $foundCmdlets += $cmdlet8
+            $foundCmdlets += $cmdlet9
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -216,8 +216,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $cmdlet1.StartOffset = 10
             $cmdlet1.HasSplattedArguments = $true
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -243,8 +243,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $cmdlet1.CommandName = "Invoke-AzureRmFakeCommandNotFoundInAliases"
             $cmdlet1.StartOffset = 10
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -271,8 +271,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $cmdlet1.CommandName = "Invoke-AzureRmFakeCommandFoundInAliasesButNotInSpec"
             $cmdlet1.StartOffset = 10
 
-            $foundCmdlets = New-Object -TypeName CommandReferenceCollection
-            $foundCmdlets.Items.Add($cmdlet1)
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }

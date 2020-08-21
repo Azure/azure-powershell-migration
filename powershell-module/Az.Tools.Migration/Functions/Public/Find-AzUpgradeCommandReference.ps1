@@ -8,8 +8,6 @@ function Find-AzUpgradeCommandReference
         Searches for AzureRM PowerShell command references in the specified file or folder. When reviewing the specified file or folder, all of the cmdlets used in the files will be analyzed and compared against known AzureRM PowerShell commands. If commands match a known
         AzureRM cmdlet, then output will be returned that shows the position/offset for each usage.
 
-        The output of this command can be pipelined into the New-AzUpgradeModulePlan cmdlet to generate a detailed list of required upgrade changes.
-
     .PARAMETER FilePath
         Specifies the path to a single PowerShell file.
 

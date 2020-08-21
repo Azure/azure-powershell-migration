@@ -35,7 +35,8 @@ function New-AzUpgradeModulePlan
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script and module files under C:\Scripts.
 
-        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1' | New-AzUpgradeModulePlan -ToAzVersion 4.4.0
+        $references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1' 
+        New-AzUpgradeModulePlan -ToAzVersion 4.4.0 -AzureRmCmdReference $references
     #>
     [CmdletBinding()]
     Param
@@ -43,9 +44,8 @@ function New-AzUpgradeModulePlan
         [Parameter(
             Mandatory=$true,
             ParameterSetName="FromReferences",
-            ValueFromPipeline=$true,
             HelpMessage='Specify the AzureRM command references collection output from the Find-AzUpgradeCommandReference cmdlet.')]
-        [CommandReferenceCollection]
+        [CommandReference[]]
         $AzureRmCmdReference,
 
         [Parameter(
@@ -103,14 +103,14 @@ function New-AzUpgradeModulePlan
 
         # we can't generate an upgrade plan without some cmdlet references, so quit early here if required.
 
-        if ($AzureRmCmdReference -eq $null -or $AzureRmCmdReference.Items.Count -eq 0)
+        if ($AzureRmCmdReference -eq $null -or $AzureRmCmdReference.Count -eq 0)
         {
             Write-Verbose -Message "No AzureRm command references were found. No upgrade plan will be generated."
             return
         }
         else
         {
-            Write-Verbose -Message "$($AzureRmCmdReference.Items.Count) AzureRm command reference(s) were found. Upgrade plan will be generated."
+            Write-Verbose -Message "$($AzureRmCmdReference.Count) AzureRm command reference(s) were found. Upgrade plan will be generated."
         }
 
         Write-Verbose -Message "Importing cmdlet spec for Az $ToAzVersion"
@@ -125,7 +125,7 @@ function New-AzUpgradeModulePlan
         # downstream commands will need the entire results object to process at once.
         $upgradePlan = New-Object -TypeName UpgradePlan
 
-        foreach ($rmCmdlet in $AzureRmCmdReference.Items)
+        foreach ($rmCmdlet in $AzureRmCmdReference)
         {
             Write-Verbose -Message "Checking upgrade potential for instance of $($rmCmdlet.CommandName)"
 
