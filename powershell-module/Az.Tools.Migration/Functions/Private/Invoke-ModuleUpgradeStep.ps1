@@ -24,7 +24,7 @@ function Invoke-ModuleUpgradeStep
         [Parameter(
             Mandatory=$true,
             HelpMessage='Specify the upgrade step.')]
-        [UpgradeStep]
+        [UpgradePlan]
         [ValidateNotNull()]
         $Step,
 
@@ -41,33 +41,31 @@ function Invoke-ModuleUpgradeStep
         {
             "Cmdlet"
             {
-                Write-Verbose -Message ("[{0}:{1}:{2}] Updating cmdlet {3} to {4}." `
-                        -f $Step.FileName, $Step.StartLine, $Step.StartColumn, `
-                        $Step.OriginalCmdletName, $Step.ReplacementCmdletName)
+                Write-Verbose -Message ("[{0}] Updating Cmdlet {1} to {2}." `
+                        -f $Step.Location, $Step.Original, $Step.Replacement)
 
                 # safety check
                 # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.OriginalCmdletName `
-                    -StartOffset $Step.StartOffset -EndOffset $Step.EndOffset
+                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.Original `
+                    -StartOffset $Step.SourceCommand.StartOffset -EndOffset $Step.SourceCommand.EndOffset
 
                 # replacement code
-                $null = $FileContent.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
-                $null = $FileContent.Insert($Step.StartOffset, $Step.ReplacementCmdletName);
+                $null = $FileContent.Remove($Step.SourceCommand.StartOffset, ($Step.SourceCommand.EndOffset - $Step.SourceCommand.StartOffset));
+                $null = $FileContent.Insert($Step.SourceCommand.StartOffset, $Step.Replacement);
             }
             "CmdletParameter"
             {
-                Write-Verbose -Message ("[{0}:{1}:{2}] Updating cmdlet parameter {3} to {4}." `
-                        -f $Step.FileName, $Step.StartLine, $Step.StartColumn, `
-                        $Step.OriginalParameterName, $Step.ReplacementParameterName)
+                Write-Verbose -Message ("[{0}] Updating CmdletParameter {1} to {2}." `
+                        -f $Step.Location, $Step.Original, $Step.Replacement)
 
                 # safety check
                 # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring ("-{0}" -f $Step.OriginalParameterName) `
-                    -StartOffset $Step.StartOffset -EndOffset $Step.EndOffset
+                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring ("-{0}" -f $Step.Original) `
+                    -StartOffset $Step.SourceCommandParameter.StartOffset -EndOffset $Step.SourceCommandParameter.EndOffset
 
                 # replacement code
-                $null = $FileContent.Remove($Step.StartOffset, ($Step.EndOffset - $Step.StartOffset));
-                $null = $FileContent.Insert($Step.StartOffset, ("-{0}" -f $Step.ReplacementParameterName));
+                $null = $FileContent.Remove($Step.SourceCommandParameter.StartOffset, ($Step.SourceCommandParameter.EndOffset - $Step.SourceCommandParameter.StartOffset));
+                $null = $FileContent.Insert($Step.SourceCommandParameter.StartOffset, ("-{0}" -f $Step.Replacement));
             }
             default
             {

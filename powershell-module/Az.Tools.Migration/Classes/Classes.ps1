@@ -96,7 +96,7 @@ Enum UpgradeResultReasonCode
     UpgradeActionFailed = 3
 }
 
-class UpgradePlanResult
+class UpgradePlan
 {
     [System.Int32] $Order
     [UpgradeStepType] $UpgradeType
@@ -113,12 +113,46 @@ class UpgradePlanResult
 
 class UpgradeResult
 {
-    # [UpgradeStep] $Step
-    [System.Boolean] $Success
-    [System.String] $Reason
+    [System.Int32] $Order
+    [UpgradeStepType] $UpgradeType
+    [UpgradeResultReasonCode] $UpgradeResult
+    [System.String] $UpgradeResultReason
+    [CommandReference] $SourceCommand
+    [CommandReferenceParameter] $SourceCommandParameter
+    [System.String] $Location
+    [System.String] $FullPath
+    [System.Int32] $StartOffset
+    [System.String] $Original
+    [System.String] $Replacement
 
-    [String] ToString()
+    UpgradeResult ([UpgradePlan] $Plan)
     {
-        return ("[{0}:{1}:{2}] {3}" -f $this.Step.FileName, $this.Step.StartLine, $this.Step.StartColumn, $this.Reason)
+        $this.Order = $Plan.Order
+        $this.UpgradeType = $Plan.UpgradeType
+        $this.SourceCommand = $Plan.SourceCommand
+        $this.SourceCommandParameter = $Plan.SourceCommandParameter
+        $this.Location = $Plan.Location
+        $this.FullPath = $Plan.FullPath
+        $this.StartOffset = $Plan.StartOffset
+        $this.Original = $Plan.Original
+        $this.Replacement = $Plan.Replacement
+
+        # pre-stage the default results.
+        # these will be used automatically unless the file fails to write.
+
+        if ($Plan.PlanResult.ToString().StartsWith("Warning"))
+        {
+            $this.UpgradeResult = [UpgradeResultReasonCode]::UpgradedWithWarnings
+            $this.UpgradeResultReason = $Plan.PlanResultReason
+        }
+        elseif ($Plan.PlanResult.ToString().StartsWith("Error"))
+        {
+            $this.UpgradeResult = [UpgradeResultReasonCode]::UnableToUpgrade
+            $this.UpgradeResultReason = $Plan.PlanResultReason
+        }
+        else
+        {
+            $this.UpgradeResultReason = "Automatic upgrade completed successfully."
+        }
     }
 }

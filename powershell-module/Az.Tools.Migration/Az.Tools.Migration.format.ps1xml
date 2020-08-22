@@ -39,9 +39,9 @@
       </TableControl>
     </View>
     <View>
-      <Name>CommandReferenceView</Name>
+      <Name>UpgradePlanView</Name>
       <ViewSelectedBy>
-        <TypeName>UpgradePlanResult</TypeName>
+        <TypeName>UpgradePlan</TypeName>
       </ViewSelectedBy>
       <TableControl>
         <TableHeaders>
@@ -90,6 +90,57 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Replacement</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+    <View>
+      <Name>UpgradeResultView</Name>
+      <ViewSelectedBy>
+        <TypeName>UpgradeResult</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Order</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Location</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UpgradeType</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>UpgradeResult</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+		  <TableColumnHeader>
+            <Label>UpgradeResultReason</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Order</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Location</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UpgradeType</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UpgradeResult</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>UpgradeResultReason</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>

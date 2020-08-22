@@ -124,9 +124,9 @@ function New-AzUpgradeModulePlan
         # synchronous results output instead of async. the reason for this is that
         # we need to sort the object results before returning them to the caller.
 
-        $planSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-        $planWarningSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-        $planErrorSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
+        $planSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
+        $planWarningSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
+        $planErrorSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
 
         foreach ($rmCmdlet in $AzureRmCmdReference)
         {
@@ -134,7 +134,7 @@ function New-AzUpgradeModulePlan
 
             if ($upgradeAliases.ContainsKey($rmCmdlet.CommandName) -eq $false)
             {
-                $errorResult = New-Object -TypeName UpgradePlanResult
+                $errorResult = New-Object -TypeName UpgradePlan
                 $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
                 $errorResult.SourceCommand = $rmCmdlet
                 $errorResult.FullPath = $rmCmdlet.FullPath
@@ -153,7 +153,7 @@ function New-AzUpgradeModulePlan
 
             if ($azCmdlets.ContainsKey($resolvedCommandName) -eq $false)
             {
-                $errorResult = New-Object -TypeName UpgradePlanResult
+                $errorResult = New-Object -TypeName UpgradePlan
                 $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
                 $errorResult.SourceCommand = $rmCmdlet
                 $errorResult.FullPath = $rmCmdlet.FullPath
@@ -168,7 +168,7 @@ function New-AzUpgradeModulePlan
                 continue
             }
 
-            $cmdletUpgrade = New-Object -TypeName UpgradePlanResult
+            $cmdletUpgrade = New-Object -TypeName UpgradePlan
             $cmdletUpgrade.Original = $rmCmdlet.CommandName
             $cmdletUpgrade.Replacement = $resolvedCommandName
             $cmdletUpgrade.UpgradeType = [UpgradeStepType]::Cmdlet
@@ -221,7 +221,7 @@ function New-AzUpgradeModulePlan
                         # alias match to the upgraded cmdlet's parameter name.
                         # we should add an upgrade step to swap to use the non-aliased name.
 
-                        $paramUpgrade = New-Object -TypeName UpgradePlanResult
+                        $paramUpgrade = New-Object -TypeName UpgradePlan
                         $paramUpgrade.Original = $rmParam.Name
                         $paramUpgrade.Replacement = $matchedAliasName.Name
                         $paramUpgrade.UpgradeType = [UpgradeStepType]::CmdletParameter
@@ -241,7 +241,7 @@ function New-AzUpgradeModulePlan
                     # no direct match and no alias match?
                     # this could mean a breaking change that requires manual adjustments
 
-                    $paramError = New-Object -TypeName UpgradePlanResult
+                    $paramError = New-Object -TypeName UpgradePlan
                     $paramError.Original = $rmParam.Name
                     $paramError.UpgradeType = [UpgradeStepType]::CmdletParameter
                     $paramError.SourceCommand = $rmCmdlet

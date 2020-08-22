@@ -48,9 +48,21 @@ function Out-FileBatchResult
     {
         foreach ($result in $ResultBatch)
         {
-            # set the reason and success flag
-            $result.Success = $Success
-            $result.Reason = $Reason
+            if ($result.UpgradeResult -ne [UpgradeResultReasonCode]::UnableToUpgrade)
+            {
+                if ($Success)
+                {
+                    if ($result.UpgradeResultReason -ne $null)
+                    {
+                        $result.UpgradeResultReason = $Reason
+                    }
+                }
+                else
+                {
+                    $result.UpgradeResult = [UpgradeResultReasonCode]::UpgradeActionFailed
+                    $result.UpgradeResultReason = $Reason
+                }
+            }
 
             # write the output object
             Write-Output -InputObject $result
