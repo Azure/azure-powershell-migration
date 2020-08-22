@@ -21,15 +21,14 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.GetType().FullName | Should Be 'UpgradePlan'
-            $results.UpgradeSteps.Count | Should Be 1
-            $results.Warnings.Count | Should Be 0
-            $results.Errors.Count | Should Be 0
+            $results.Count | Should Be 1
 
-            $results.UpgradeSteps[0].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[0].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[0].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[0].StartOffset | Should Be 10
+            $results.GetType().FullName | Should Be 'UpgradePlanResult'
+            $results.UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results.PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results.Original | Should Be 'Login-AzureRmAccount'
+            $results.Replacement | Should Be 'Login-AzAccount'
+            $results.StartOffset | Should Be 10
         }
         It 'Should be able to generate cmdlet parameter upgrade plan steps' {
             # arrange
@@ -57,20 +56,21 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.GetType().FullName | Should Be 'UpgradePlan'
-            $results.UpgradeSteps.Count | Should Be 2
-            $results.Warnings.Count | Should Be 0
-            $results.Errors.Count | Should Be 0
+            $results.Count | Should Be 2
 
-            $results.UpgradeSteps[0].GetType().FullName | Should Be 'CmdletParameterUpgradeStep'
-            $results.UpgradeSteps[0].OriginalParameterName | Should Be 'EnvironmentName'
-            $results.UpgradeSteps[0].ReplacementParameterName | Should Be 'Environment'
-            $results.UpgradeSteps[0].StartOffset | Should Be 27
+            $results[0].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[0].UpgradeType.ToString() | Should Be 'CmdletParameter'
+            $results[0].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[0].Original | Should Be 'EnvironmentName'
+            $results[0].Replacement | Should Be 'Environment'
+            $results[0].StartOffset | Should Be 27
 
-            $results.UpgradeSteps[1].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[1].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[1].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[1].StartOffset | Should Be 5
+            $results[1].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[1].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[1].Original | Should Be 'Login-AzureRmAccount'
+            $results[1].Replacement | Should Be 'Login-AzAccount'
+            $results[1].StartOffset | Should Be 5
         }
         It 'Should be able to generate upgrade plan steps in the correct offset order' {
             # arrange
@@ -147,65 +147,80 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.GetType().FullName | Should Be 'UpgradePlan'
-            $results.UpgradeSteps.Count | Should Be 9
-            $results.Warnings.Count | Should Be 0
-            $results.Errors.Count | Should Be 0
+            $results.Count | Should Be 9
 
             # upgrade steps should be returned in order by file path (ascending), then offset (descending).
 
             # file A results, by descending offset
 
-            $results.UpgradeSteps[0].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[0].OriginalCmdletName | Should Be 'Get-AzureRmWebAppCertificate'
-            $results.UpgradeSteps[0].ReplacementCmdletName | Should Be 'Get-AzWebAppCertificate'
-            $results.UpgradeSteps[0].StartOffset | Should Be 200
+            $results[0].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[0].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[0].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[0].Original | Should Be 'Get-AzureRmWebAppCertificate'
+            $results[0].Replacement | Should Be 'Get-AzWebAppCertificate'
+            $results[0].StartOffset | Should Be 200
 
-            $results.UpgradeSteps[1].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[1].OriginalCmdletName | Should Be 'Set-AzureRmWebApp'
-            $results.UpgradeSteps[1].ReplacementCmdletName | Should Be 'Set-AzWebApp'
-            $results.UpgradeSteps[1].StartOffset | Should Be 100
+            $results[1].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[1].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[1].Original | Should Be 'Set-AzureRmWebApp'
+            $results[1].Replacement | Should Be 'Set-AzWebApp'
+            $results[1].StartOffset | Should Be 100
 
-            $results.UpgradeSteps[2].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[2].OriginalCmdletName | Should Be 'Stop-AzureRmWebAppSlot'
-            $results.UpgradeSteps[2].ReplacementCmdletName | Should Be 'Stop-AzWebAppSlot'
-            $results.UpgradeSteps[2].StartOffset | Should Be 50
+            $results[2].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[2].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[2].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[2].Original | Should Be 'Stop-AzureRmWebAppSlot'
+            $results[2].Replacement | Should Be 'Stop-AzWebAppSlot'
+            $results[2].StartOffset | Should Be 50
 
-            $results.UpgradeSteps[3].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[3].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[3].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[3].StartOffset | Should Be 10
+            $results[3].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[3].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[3].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[3].Original | Should Be 'Login-AzureRmAccount'
+            $results[3].Replacement | Should Be 'Login-AzAccount'
+            $results[3].StartOffset | Should Be 10
 
             # file B results, by descending offset
 
-            $results.UpgradeSteps[4].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[4].OriginalCmdletName | Should Be 'Get-AzureRmSubscription'
-            $results.UpgradeSteps[4].ReplacementCmdletName | Should Be 'Get-AzSubscription'
-            $results.UpgradeSteps[4].StartOffset | Should Be 80
+            $results[4].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[4].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[4].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[4].Original | Should Be 'Get-AzureRmSubscription'
+            $results[4].Replacement | Should Be 'Get-AzSubscription'
+            $results[4].StartOffset | Should Be 80
 
-            $results.UpgradeSteps[5].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[5].OriginalCmdletName | Should Be 'Set-AzureRmWebAppSlot'
-            $results.UpgradeSteps[5].ReplacementCmdletName | Should Be 'Set-AzWebAppSlot'
-            $results.UpgradeSteps[5].StartOffset | Should Be 35
+            $results[5].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[5].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[5].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[5].Original | Should Be 'Set-AzureRmWebAppSlot'
+            $results[5].Replacement | Should Be 'Set-AzWebAppSlot'
+            $results[5].StartOffset | Should Be 35
 
-            $results.UpgradeSteps[6].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[6].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[6].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[6].StartOffset | Should Be 5
+            $results[6].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[6].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[6].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[6].Original | Should Be 'Login-AzureRmAccount'
+            $results[6].Replacement | Should Be 'Login-AzAccount'
+            $results[6].StartOffset | Should Be 5
 
             # file C results, by descending offset
 
-            $results.UpgradeSteps[7].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[7].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[7].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[7].StartOffset | Should Be 28
+            $results[7].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[7].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[7].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[7].Original | Should Be 'Login-AzureRmAccount'
+            $results[7].Replacement | Should Be 'Login-AzAccount'
+            $results[7].StartOffset | Should Be 28
 
             # file D results, by descending offset
 
-            $results.UpgradeSteps[8].GetType().FullName | Should Be 'CmdletUpgradeStep'
-            $results.UpgradeSteps[8].OriginalCmdletName | Should Be 'Login-AzureRmAccount'
-            $results.UpgradeSteps[8].ReplacementCmdletName | Should Be 'Login-AzAccount'
-            $results.UpgradeSteps[8].StartOffset | Should Be 33
+            $results[8].GetType().FullName | Should Be 'UpgradePlanResult'
+            $results[8].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[8].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[8].Original | Should Be 'Login-AzureRmAccount'
+            $results[8].Replacement | Should Be 'Login-AzAccount'
+            $results[8].StartOffset | Should Be 33
         }
         It 'Should be able to generate warnings for splatted parameter scenarios' {
             # arrange
@@ -228,12 +243,11 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.GetType().FullName | Should Be 'UpgradePlan'
-            $results.UpgradeSteps.Count | Should Be 1
-            $results.Warnings.Count | Should Be 1
-            $results.Errors.Count | Should Be 0
+            $results.Count | Should Be 1
 
-            $results.Warnings[0].Reason.Contains("splatted parameters") | Should Be $true
+            $results.UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results.PlanResult.ToString() | Should Be "WarningSplattedParameters"
+            $results.PlanResultReason.Contains("splatted parameters") | Should Be $true
         }
         It 'Should be able to generate errors for source cmdlets missing upgrade aliases' {
             # arrange
@@ -255,11 +269,11 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.UpgradeSteps.Count | Should Be 0
-            $results.Warnings.Count | Should Be 0
-            $results.Errors.Count | Should Be 1
+            $results.Count | Should Be 1
 
-            $results.Errors[0].Reason.Contains("No matching upgrade alias found") | Should Be $true
+            $results.UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results.PlanResult.ToString() | Should Be "ErrorNoUpgradeAlias"
+            $results.PlanResultReason.Contains("No matching upgrade alias found") | Should Be $true
 
             Assert-VerifiableMock
         }
@@ -293,11 +307,11 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $null
-            $results.UpgradeSteps.Count | Should Be 0
-            $results.Warnings.Count | Should Be 0
-            $results.Errors.Count | Should Be 1
+            $results.Count | Should Be 1
 
-            $results.Errors[0].Reason.Contains("No Az cmdlet spec found for") | Should Be $true
+            $results.UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results.PlanResult.ToString() | Should Be "ErrorNoModuleSpecMatch"
+            $results.PlanResultReason.Contains("No Az cmdlet spec found for") | Should Be $true
 
             Assert-VerifiableMock
         }
