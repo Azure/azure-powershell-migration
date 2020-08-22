@@ -71,7 +71,11 @@ function Find-AzUpgradeCommandReference
             Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
             $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
 
-            Write-Output -InputObject $foundCmdlets
+            if ($foundCmdlets -ne $null -and $foundCmdlets.Count -gt 0)
+            {
+                # dont want to write null to the pipeline output
+                Write-Output -InputObject $foundCmdlets
+            }
 
             Send-MetricsIfDataCollectionEnabled -Operation Find `
                 -ParameterSetName $PSCmdlet.ParameterSetName `
@@ -97,7 +101,12 @@ function Find-AzUpgradeCommandReference
             {
                 Write-Verbose -Message "Searching for AzureRM references in file: $($file.FullName)"
                 $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
-                Write-Output -InputObject $foundCmdlets
+
+                if ($foundCmdlets -ne $null -and $foundCmdlets.Count -gt 0)
+                {
+                    # dont want to write null to the pipeline output
+                    Write-Output -InputObject $foundCmdlets
+                }
 
                 $commandCounter += $foundCmdlets.Count
             }
