@@ -9,19 +9,11 @@
       <TableControl>
         <TableHeaders>
           <TableColumnHeader>
-            <Label>FileName</Label>
+            <Label>Location</Label>
             <Alignment>Left</Alignment>
           </TableColumnHeader>
           <TableColumnHeader>
             <Label>CommandName</Label>
-            <Alignment>Left</Alignment>
-          </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>StartLine</Label>
-            <Alignment>Left</Alignment>
-          </TableColumnHeader>
-		  <TableColumnHeader>
-            <Label>StartColumn</Label>
             <Alignment>Left</Alignment>
           </TableColumnHeader>
 		  <TableColumnHeader>
@@ -33,16 +25,10 @@
           <TableRowEntry>
             <TableColumnItems>
               <TableColumnItem>
-                <PropertyName>FileName</PropertyName>
+                <PropertyName>Location</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>CommandName</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>StartLine</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>StartColumn</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Parameters</PropertyName>
@@ -64,6 +50,10 @@
             <Alignment>Left</Alignment>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>Location</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
             <Label>UpgradeType</Label>
             <Alignment>Left</Alignment>
           </TableColumnHeader>
@@ -79,16 +69,15 @@
             <Label>Replacement</Label>
             <Alignment>Left</Alignment>
           </TableColumnHeader>
-          <TableColumnHeader>
-            <Label>Location</Label>
-            <Alignment>Left</Alignment>
-          </TableColumnHeader>
         </TableHeaders>
         <TableRowEntries>
           <TableRowEntry>
             <TableColumnItems>
               <TableColumnItem>
                 <PropertyName>Order</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Location</PropertyName>
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>UpgradeType</PropertyName>
@@ -101,9 +90,6 @@
               </TableColumnItem>
               <TableColumnItem>
                 <PropertyName>Replacement</PropertyName>
-              </TableColumnItem>
-              <TableColumnItem>
-                <PropertyName>Location</PropertyName>
               </TableColumnItem>
             </TableColumnItems>
           </TableRowEntry>

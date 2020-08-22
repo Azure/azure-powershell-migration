@@ -122,12 +122,11 @@ function New-AzUpgradeModulePlan
         $defaultParamNames = @("Debug", "ErrorAction", "ErrorVariable", "InformationAction", "InformationVariable", "OutVariable", "OutBuffer", "PipelineVariable", "Verbose", "WarningAction", "WarningVariable", "WhatIf", "Confirm")
 
         # synchronous results output instead of async. the reason for this is that
-        # downstream commands will need the entire results object to process at once.
-        $upgradePlan = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
+        # we need to sort the object results before returning them to the caller.
 
-        $upgradeStepsCounter = 0
-        $warningStepsCounter = 0
-        $errorStepsCounter = 0
+        $planSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
+        $planWarningSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
+        $planErrorSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
 
         foreach ($rmCmdlet in $AzureRmCmdReference)
         {
@@ -140,13 +139,12 @@ function New-AzUpgradeModulePlan
                 $errorResult.SourceCommand = $rmCmdlet
                 $errorResult.FullPath = $rmCmdlet.FullPath
                 $errorResult.StartOffset = $rmCmdlet.StartOffset
-                $errorResult.Location = $rmCmdlet.ToLocation()
+                $errorResult.Location = $rmCmdlet.Location
                 $errorResult.Original = $rmCmdlet.CommandName
                 $errorResult.PlanResultReason = "No matching upgrade alias found. Command cannot be automatically upgraded."
                 $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoUpgradeAlias
 
-                $upgradePlan.Add($errorResult)
-                $errorStepsCounter++
+                $planErrorSteps.Add($errorResult)
 
                 continue
             }
@@ -160,13 +158,12 @@ function New-AzUpgradeModulePlan
                 $errorResult.SourceCommand = $rmCmdlet
                 $errorResult.FullPath = $rmCmdlet.FullPath
                 $errorResult.StartOffset = $rmCmdlet.StartOffset
-                $errorResult.Location = $rmCmdlet.ToLocation()
+                $errorResult.Location = $rmCmdlet.Location
                 $errorResult.Original = $rmCmdlet.CommandName
                 $errorResult.PlanResultReason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
                 $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoModuleSpecMatch
 
-                $upgradePlan.Add($errorResult)
-                $errorStepsCounter++
+                $planErrorSteps.Add($errorResult)
 
                 continue
             }
@@ -178,22 +175,20 @@ function New-AzUpgradeModulePlan
             $cmdletUpgrade.SourceCommand = $rmCmdlet
             $cmdletUpgrade.FullPath = $rmCmdlet.FullPath
             $cmdletUpgrade.StartOffset = $rmCmdlet.StartOffset
-            $cmdletUpgrade.Location = $rmCmdlet.ToLocation()
+            $cmdletUpgrade.Location = $rmCmdlet.Location
 
             if ($rmCmdlet.HasSplattedArguments -eq $false)
             {
                 $cmdletUpgrade.PlanResultReason = "Command can be automatically upgraded."
                 $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
-                $upgradeStepsCounter++
+                $planSteps.Add($cmdletUpgrade)
             }
             else
             {
                 $cmdletUpgrade.PlanResultReason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
                 $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
-                $warningStepsCounter++
+                $planWarningSteps.Add($cmdletUpgrade)
             }
-
-            $upgradePlan.Add($cmdletUpgrade)
 
             # check if parameters need to be updated
 
@@ -234,12 +229,11 @@ function New-AzUpgradeModulePlan
                         $paramUpgrade.FullPath = $rmCmdlet.FullPath
                         $paramUpgrade.StartOffset = $rmParam.StartOffset
                         $paramUpgrade.SourceCommandParameter = $rmParam
-                        $paramUpgrade.Location = $rmParam.ToLocation()
+                        $paramUpgrade.Location = $rmParam.Location
                         $paramUpgrade.PlanResultReason = "Command parameter can be automatically upgraded."
                         $paramUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
 
-                        $upgradePlan.Add($paramUpgrade)
-                        $upgradeStepsCounter++
+                        $planSteps.Add($paramUpgrade)
 
                         continue
                     }
@@ -254,15 +248,32 @@ function New-AzUpgradeModulePlan
                     $paramError.FullPath = $rmCmdlet.FullPath
                     $paramError.StartOffset = $rmParam.StartOffset
                     $paramError.SourceCommandParameter = $rmParam
-                    $paramError.Location = $rmParam.ToLocation()
+                    $paramError.Location = $rmParam.Location
                     $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or it's aliases."
                     $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
 
-                    $upgradePlan.Add($paramError)
-                    $errorStepsCounter++
+                    $planErrorSteps.Add($paramError)
                 }
             }
         }
+
+        # send metrics, if enabled (and while the collections are still seperated)
+
+        Send-MetricsIfDataCollectionEnabled -Operation Plan `
+            -ParameterSetName $PSCmdlet.ParameterSetName `
+            -Duration ((Get-Date) - $cmdStarted) `
+            -Properties ([PSCustomObject]@{
+                ToAzureModuleName = "Az"
+                ToAzureModuleVersion = $ToAzVersion
+                UpgradeStepsCount = $planSteps.Count
+                PlanWarnings = $planWarningSteps
+                PlanErrors = $planErrorSteps
+            })
+
+        # join the collections into one output result.
+
+        $planSteps.AddRange($planWarningSteps)
+        $planSteps.AddRange($planErrorSteps)
 
         # sort the upgrade steps to by file, then offset descending.
         # the reason for this is updates must be made in descending offset order
@@ -271,27 +282,16 @@ function New-AzUpgradeModulePlan
         $filter1 = @{ Expression = 'FullPath'; Ascending = $true }
         $filter2 = @{ Expression = 'StartOffset'; Descending = $true }
 
-        $upgradePlan = $upgradePlan | Sort-Object -Property $filter1, $filter2
+        $planSteps = $planSteps | Sort-Object -Property $filter1, $filter2
 
         # now that we have a sorted collection, add in the step order number
         # for extra clarity in the upgrade plan.
 
-        for ([int]$i = 0; $i -lt $upgradePlan.Count; $i++)
+        for ([int]$i = 0; $i -lt $planSteps.Count; $i++)
         {
-            $upgradePlan[$i].Order = ($i + 1)
+            $planSteps[$i].Order = ($i + 1)
         }
 
-        Send-MetricsIfDataCollectionEnabled -Operation Plan `
-            -ParameterSetName $PSCmdlet.ParameterSetName `
-            -Duration ((Get-Date) - $cmdStarted) `
-            -Properties ([PSCustomObject]@{
-                ToAzureModuleName = "Az"
-                ToAzureModuleVersion = $ToAzVersion
-                UpgradeStepsCount = $upgradeStepsCounter
-                PlanWarnings = $warningStepsCounter
-                PlanErrors = $errorStepsCounter
-            })
-
-        Write-Output -InputObject $upgradePlan
+        Write-Output -InputObject $planSteps
     }
 }

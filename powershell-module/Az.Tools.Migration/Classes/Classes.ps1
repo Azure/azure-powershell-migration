@@ -49,11 +49,7 @@ class CommandReferenceParameter
     [System.Int32] $EndPosition
     [System.Int32] $StartOffset
     [System.Int32] $EndOffset
-
-    [String] ToLocation()
-    {
-        return ("{0}:{1}:{2}" -f $this.FileName, $this.StartLine, $this.StartColumn)
-    }
+    [System.String] $Location
 }
 
 class CommandReference
@@ -66,6 +62,7 @@ class CommandReference
     [System.Int32] $EndPosition
     [System.Int32] $StartOffset
     [System.Int32] $EndOffset
+    [System.String] $Location
     [System.Boolean] $HasSplattedArguments
     [System.String] $CommandName
     [System.Collections.Generic.List[CommandReferenceParameter]] $Parameters
@@ -73,11 +70,6 @@ class CommandReference
     CommandReference()
     {
         $this.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandReferenceParameter]'
-    }
-
-    [String] ToLocation()
-    {
-        return ("{0}:{1}:{2}" -f $this.FileName, $this.StartLine, $this.StartColumn)
     }
 }
 

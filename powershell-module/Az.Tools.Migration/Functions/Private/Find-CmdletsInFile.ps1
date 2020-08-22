@@ -72,6 +72,7 @@ function Find-CmdletsInFile
                 $cmdletRef.CommandName = $currentAstNode.CommandElements[0].Extent.Text
                 $cmdletRef.StartOffset = $currentAstNode.CommandElements[0].Extent.StartOffset
                 $cmdletRef.EndOffset = $currentAstNode.CommandElements[0].Extent.EndOffset
+                $cmdletRef.Location = "{0}:{1}:{2}" -f $cmdletRef.FileName, $cmdletRef.StartLine, $cmdletRef.StartColumn
 
                 if ($currentAstNode.CommandElements.Count -gt 1)
                 {
@@ -112,6 +113,7 @@ function Find-CmdletsInFile
                             $paramRef.EndPosition = $currentAstNodeCmdElement.Extent.EndColumnNumber
                             $paramRef.StartOffset = $currentAstNodeCmdElement.Extent.StartOffset
                             $paramRef.EndOffset = $currentAstNodeCmdElement.Extent.EndOffset
+                            $paramRef.Location = "{0}:{1}:{2}" -f $paramRef.FileName, $paramRef.StartLine, $paramRef.StartColumn
 
                             $cmdletRef.Parameters.Add($paramRef)
                         }
