@@ -42,28 +42,30 @@ This step can optionally be run for a single file by specifying the `FilePath` p
 `DirectoryPath` parameter.
 
 ```powershell
-# Generate the upgrade plan.
+# Generate an upgrade plan for the script and module files in the specified folder and save it to a variable.
 $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts'
 
-# Review the list of upgrade steps.
-$plan.UpgradeSteps | Format-List
+# shows the entire upgrade plan
+$plan
 
-# Review the plan to determine if any errors or warnings exist.
-$plan.Warnings | Format-Table
-$plan.Errors | Format-Table
+# filter plan result to only show warnings and errors
+$plan | where PlanResult -ne ReadyToUpgrade | format-list
 ```
 
 ### Step 3: Execute the upgrade plan
 
 Execute the upgrade plan. This step performs an in-place upgrade of the specified codebase with the
-exception of the warning and errors from the previous step.
+exception of the errors from the previous step.
 
 ```powershell
-# Execute the upgrade plan. This step prompts for confirmation.
-$result = Invoke-AzUpgradeModulePlan -Plan $plan -Verbose
+# Execute the automatic upgrade plan and save the results to a variable.
+$result = Invoke-AzUpgradeModulePlan -Plan $plan
 
-# Review the results.
-$result | Format-Table -Property Success, Reason, Step
+# shows the entire upgrade operation result
+$result
+
+# filter results to show errors
+$results | where UpgradeResult -ne UpgradeCompleted | format-list
 ```
 
 ## Limitations
