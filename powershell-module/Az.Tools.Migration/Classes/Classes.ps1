@@ -96,11 +96,20 @@ Enum UpgradeResultReasonCode
     UpgradeActionFailed = 3
 }
 
+Enum DiagnosticSeverity
+{
+    Error = 1
+    Warning = 2
+    Information = 3
+    Hint = 4
+}
+
 class UpgradePlan
 {
     [System.Int32] $Order
     [UpgradeStepType] $UpgradeType
     [PlanResultReasonCode] $PlanResult
+    [DiagnosticSeverity] $PlanSeverity
     [System.String] $PlanResultReason
     [CommandReference] $SourceCommand
     [CommandReferenceParameter] $SourceCommandParameter
@@ -116,6 +125,7 @@ class UpgradeResult
     [System.Int32] $Order
     [UpgradeStepType] $UpgradeType
     [UpgradeResultReasonCode] $UpgradeResult
+    [DiagnosticSeverity] $UpgradeSeverity
     [System.String] $UpgradeResultReason
     [CommandReference] $SourceCommand
     [CommandReferenceParameter] $SourceCommandParameter
@@ -140,19 +150,22 @@ class UpgradeResult
         # pre-stage the default results.
         # these will be used automatically unless the file fails to write.
 
-        if ($Plan.PlanResult.ToString().StartsWith("Warning"))
+        if ($Plan.PlanSeverity -eq [DiagnosticSeverity]::Warning)
         {
             $this.UpgradeResult = [UpgradeResultReasonCode]::UpgradedWithWarnings
             $this.UpgradeResultReason = $Plan.PlanResultReason
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Warning
         }
-        elseif ($Plan.PlanResult.ToString().StartsWith("Error"))
+        elseif ($Plan.PlanSeverity -eq [DiagnosticSeverity]::Error)
         {
             $this.UpgradeResult = [UpgradeResultReasonCode]::UnableToUpgrade
             $this.UpgradeResultReason = $Plan.PlanResultReason
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Error
         }
         else
         {
             $this.UpgradeResultReason = "Automatic upgrade completed successfully."
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Information
         }
     }
 }

@@ -26,6 +26,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results.GetType().FullName | Should Be 'UpgradePlan'
             $results.UpgradeType.ToString() | Should Be 'Cmdlet'
             $results.PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results.PlanSeverity.ToString() | Should Be 'Information'
             $results.Original | Should Be 'Login-AzureRmAccount'
             $results.Replacement | Should Be 'Login-AzAccount'
             $results.StartOffset | Should Be 10
@@ -61,6 +62,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[0].GetType().FullName | Should Be 'UpgradePlan'
             $results[0].UpgradeType.ToString() | Should Be 'CmdletParameter'
             $results[0].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[0].PlanSeverity.ToString() | Should Be 'Information'
             $results[0].Original | Should Be 'EnvironmentName'
             $results[0].Replacement | Should Be 'Environment'
             $results[0].StartOffset | Should Be 27
@@ -68,6 +70,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[1].GetType().FullName | Should Be 'UpgradePlan'
             $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[1].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[1].PlanSeverity.ToString() | Should Be 'Information'
             $results[1].Original | Should Be 'Login-AzureRmAccount'
             $results[1].Replacement | Should Be 'Login-AzAccount'
             $results[1].StartOffset | Should Be 5
@@ -156,6 +159,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[0].GetType().FullName | Should Be 'UpgradePlan'
             $results[0].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[0].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[0].PlanSeverity.ToString() | Should Be 'Information'
             $results[0].Original | Should Be 'Get-AzureRmWebAppCertificate'
             $results[0].Replacement | Should Be 'Get-AzWebAppCertificate'
             $results[0].StartOffset | Should Be 200
@@ -163,6 +167,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[1].GetType().FullName | Should Be 'UpgradePlan'
             $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[1].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[1].PlanSeverity.ToString() | Should Be 'Information'
             $results[1].Original | Should Be 'Set-AzureRmWebApp'
             $results[1].Replacement | Should Be 'Set-AzWebApp'
             $results[1].StartOffset | Should Be 100
@@ -170,6 +175,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[2].GetType().FullName | Should Be 'UpgradePlan'
             $results[2].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[2].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[2].PlanSeverity.ToString() | Should Be 'Information'
             $results[2].Original | Should Be 'Stop-AzureRmWebAppSlot'
             $results[2].Replacement | Should Be 'Stop-AzWebAppSlot'
             $results[2].StartOffset | Should Be 50
@@ -177,6 +183,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[3].GetType().FullName | Should Be 'UpgradePlan'
             $results[3].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[3].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[3].PlanSeverity.ToString() | Should Be 'Information'
             $results[3].Original | Should Be 'Login-AzureRmAccount'
             $results[3].Replacement | Should Be 'Login-AzAccount'
             $results[3].StartOffset | Should Be 10
@@ -186,6 +193,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[4].GetType().FullName | Should Be 'UpgradePlan'
             $results[4].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[4].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[4].PlanSeverity.ToString() | Should Be 'Information'
             $results[4].Original | Should Be 'Get-AzureRmSubscription'
             $results[4].Replacement | Should Be 'Get-AzSubscription'
             $results[4].StartOffset | Should Be 80
@@ -193,6 +201,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[5].GetType().FullName | Should Be 'UpgradePlan'
             $results[5].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[5].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[5].PlanSeverity.ToString() | Should Be 'Information'
             $results[5].Original | Should Be 'Set-AzureRmWebAppSlot'
             $results[5].Replacement | Should Be 'Set-AzWebAppSlot'
             $results[5].StartOffset | Should Be 35
@@ -200,6 +209,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[6].GetType().FullName | Should Be 'UpgradePlan'
             $results[6].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[6].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[6].PlanSeverity.ToString() | Should Be 'Information'
             $results[6].Original | Should Be 'Login-AzureRmAccount'
             $results[6].Replacement | Should Be 'Login-AzAccount'
             $results[6].StartOffset | Should Be 5
@@ -209,6 +219,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[7].GetType().FullName | Should Be 'UpgradePlan'
             $results[7].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[7].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[7].PlanSeverity.ToString() | Should Be 'Information'
             $results[7].Original | Should Be 'Login-AzureRmAccount'
             $results[7].Replacement | Should Be 'Login-AzAccount'
             $results[7].StartOffset | Should Be 28
@@ -218,6 +229,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[8].GetType().FullName | Should Be 'UpgradePlan'
             $results[8].UpgradeType.ToString() | Should Be 'Cmdlet'
             $results[8].PlanResult.ToString() | Should Be 'ReadyToUpgrade'
+            $results[8].PlanSeverity.ToString() | Should Be 'Information'
             $results[8].Original | Should Be 'Login-AzureRmAccount'
             $results[8].Replacement | Should Be 'Login-AzAccount'
             $results[8].StartOffset | Should Be 33
@@ -247,6 +259,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $results.UpgradeType.ToString() | Should Be 'Cmdlet'
             $results.PlanResult.ToString() | Should Be "WarningSplattedParameters"
+            $results.PlanSeverity.ToString() | Should Be 'Warning'
             $results.PlanResultReason.Contains("splatted parameters") | Should Be $true
         }
         It 'Should be able to generate errors for source cmdlets missing upgrade aliases' {
@@ -273,6 +286,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $results.UpgradeType.ToString() | Should Be 'Cmdlet'
             $results.PlanResult.ToString() | Should Be "ErrorNoUpgradeAlias"
+            $results.PlanSeverity.ToString() | Should Be 'Error'
             $results.PlanResultReason.Contains("No matching upgrade alias found") | Should Be $true
 
             Assert-VerifiableMock
@@ -311,6 +325,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $results.UpgradeType.ToString() | Should Be 'Cmdlet'
             $results.PlanResult.ToString() | Should Be "ErrorNoModuleSpecMatch"
+            $results.PlanSeverity.ToString() | Should Be 'Error'
             $results.PlanResultReason.Contains("No Az cmdlet spec found for") | Should Be $true
 
             Assert-VerifiableMock

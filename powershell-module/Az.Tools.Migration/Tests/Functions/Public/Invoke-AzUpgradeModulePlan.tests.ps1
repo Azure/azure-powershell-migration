@@ -8,6 +8,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step.FullPath = "C:\mock-file.ps1"
             $step.UpgradeType = [UpgradeStepType]::Cmdlet
             $step.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step.PlanSeverity = [DiagnosticSeverity]::Information
             $step.Location = "mocked-file.ps1:10:5"
             $step.Original = "Login-AzureRmAccount"
             $step.Replacement = "Login-AzAccount"
@@ -27,6 +28,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $result.Count | Should Be 1
             $result.GetType().FullName | Should Be 'UpgradeResult'
             $result.UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
+            $result.UpgradeSeverity.ToString() | Should Be 'Information'
 
             Assert-VerifiableMock
         }
@@ -36,6 +38,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step1.FullPath = "C:\mock-file.ps1"
             $step1.UpgradeType = [UpgradeStepType]::Cmdlet
             $step1.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step1.PlanSeverity = [DiagnosticSeverity]::Information
             $step1.Location = "mocked-file.ps1:10:5"
             $step1.Original = "Login-AzureRmAccount"
             $step1.Replacement = "Login-AzAccount"
@@ -44,6 +47,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step2.FullPath = "C:\mock-file.ps1"
             $step2.UpgradeType = [UpgradeStepType]::Cmdlet
             $step2.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step2.PlanSeverity = [DiagnosticSeverity]::Information
             $step2.Location = "mocked-file.ps1:20:1"
             $step2.Original = "Get-AzureRmWebApp"
             $step2.Replacement = "Get-AzWebApp"
@@ -52,6 +56,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step3.FullPath = "C:\mock-file2.ps1"
             $step3.UpgradeType = [UpgradeStepType]::Cmdlet
             $step3.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step3.PlanSeverity = [DiagnosticSeverity]::Information
             $step3.Location = "mocked-file2.ps1:20:1"
             $step3.Original = "Set-AzureRmWebApp"
             $step3.Replacement = "Set-AzWebApp"
@@ -60,6 +65,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step4.FullPath = "C:\mock-file2.ps1"
             $step4.UpgradeType = [UpgradeStepType]::CmdletParameter
             $step4.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step4.PlanSeverity = [DiagnosticSeverity]::Information
             $step4.Location = "mocked-file2.ps1:25:12"
             $step4.Original = "SiteName"
             $step4.Replacement = "Name"
@@ -84,6 +90,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             {
                 $result.GetType().FullName | Should Be 'UpgradeResult'
                 $result.UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
+                $result.UpgradeSeverity.ToString() | Should Be 'Information'
             }
 
             Assert-VerifiableMock
@@ -94,6 +101,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step1.FullPath = "C:\mock-file.ps1"
             $step1.UpgradeType = [UpgradeStepType]::Cmdlet
             $step1.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step1.PlanSeverity = [DiagnosticSeverity]::Information
             $step1.Location = "mocked-file.ps1:10:5"
             $step1.Original = "Login-AzureRmAccount"
             $step1.Replacement = "Login-AzAccount"
@@ -102,6 +110,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step2.FullPath = "C:\mock-file.ps1"
             $step2.UpgradeType = [UpgradeStepType]::Cmdlet
             $step2.PlanResult = [PlanResultReasonCode]::ErrorNoUpgradeAlias
+            $step2.PlanSeverity = [DiagnosticSeverity]::Error
             $step2.Location = "mocked-file.ps1:20:1"
             $step2.Original = "Get-AzureRmCommandThatDoesntHaveAnUpgradeAlias"
             $step2.Replacement = "" # no replacement, since it can't be upgraded
@@ -125,10 +134,12 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # first plan step should have upgraded fine.
             $results[0].GetType().FullName | Should Be 'UpgradeResult'
             $results[0].UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
+            $results[0].UpgradeSeverity.ToString() | Should Be 'Information'
 
             # second plan step should be skipped, since it cannot be auto-upgraded.
             $results[1].GetType().FullName | Should Be 'UpgradeResult'
             $results[1].UpgradeResult.ToString() | Should Be 'UnableToUpgrade'
+            $results[1].UpgradeSeverity.ToString() | Should Be 'Error'
 
             Assert-VerifiableMock
         }
@@ -138,6 +149,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step1.FullPath = "C:\mock-file.ps1"
             $step1.UpgradeType = [UpgradeStepType]::Cmdlet
             $step1.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step1.PlanSeverity = [DiagnosticSeverity]::Information
             $step1.Location = "mocked-file.ps1:10:5"
             $step1.Original = "Login-AzureRmAccount"
             $step1.Replacement = "Login-AzAccount"
@@ -146,6 +158,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step2.FullPath = "C:\mock-file.ps1"
             $step2.UpgradeType = [UpgradeStepType]::Cmdlet
             $step2.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
+            $step2.PlanSeverity = [DiagnosticSeverity]::Warning
             $step2.Location = "mocked-file.ps1:20:1"
             $step2.Original = "Get-AzureRmCommandThatIsUsingSplattedParameters"
             $step2.Replacement = "Get-AzCommandThatIsUsingSplattedParameters" # has a replacement, but is in warning state.
@@ -169,10 +182,12 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # first plan step should have upgraded fine.
             $results[0].GetType().FullName | Should Be 'UpgradeResult'
             $results[0].UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
+            $results[0].UpgradeSeverity.ToString() | Should Be 'Information'
 
             # second plan step should be executed, but return a Completed w/ warnings state.
             $results[1].GetType().FullName | Should Be 'UpgradeResult'
             $results[1].UpgradeResult.ToString() | Should Be 'UpgradedWithWarnings'
+            $results[1].UpgradeSeverity.ToString() | Should Be 'Warning'
 
             Assert-VerifiableMock
         }
@@ -182,6 +197,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step1.FullPath = "C:\mock-file.ps1"
             $step1.UpgradeType = [UpgradeStepType]::Cmdlet
             $step1.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step1.PlanSeverity = [DiagnosticSeverity]::Information
             $step1.Location = "mocked-file.ps1:10:5"
             $step1.Original = "Login-AzureRmAccount"
             $step1.Replacement = "Login-AzAccount"
@@ -190,6 +206,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $step2.FullPath = "C:\mock-file.ps1"
             $step2.UpgradeType = [UpgradeStepType]::Cmdlet
             $step2.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step2.PlanSeverity = [DiagnosticSeverity]::Information
             $step2.Location = "mocked-file.ps1:20:1"
             $step2.Original = "Get-AzureRmWebApp"
             $step2.Replacement = "Get-AzWebApp"
@@ -214,6 +231,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             {
                 $result.GetType().FullName | Should Be 'UpgradeResult'
                 $result.UpgradeResult.ToString() | Should Be 'UpgradeActionFailed'
+                $result.UpgradeSeverity.ToString() | Should Be 'Error'
             }
 
             Assert-VerifiableMock

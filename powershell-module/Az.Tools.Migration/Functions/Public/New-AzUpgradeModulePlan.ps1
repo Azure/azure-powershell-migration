@@ -143,6 +143,7 @@ function New-AzUpgradeModulePlan
                 $errorResult.Original = $rmCmdlet.CommandName
                 $errorResult.PlanResultReason = "No matching upgrade alias found. Command cannot be automatically upgraded."
                 $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoUpgradeAlias
+                $errorResult.PlanSeverity = [DiagnosticSeverity]::Error
 
                 $planErrorSteps.Add($errorResult)
 
@@ -162,6 +163,7 @@ function New-AzUpgradeModulePlan
                 $errorResult.Original = $rmCmdlet.CommandName
                 $errorResult.PlanResultReason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
                 $errorResult.PlanResult = [PlanResultReasonCode]::ErrorNoModuleSpecMatch
+                $errorResult.PlanSeverity = [DiagnosticSeverity]::Error
 
                 $planErrorSteps.Add($errorResult)
 
@@ -181,12 +183,14 @@ function New-AzUpgradeModulePlan
             {
                 $cmdletUpgrade.PlanResultReason = "Command can be automatically upgraded."
                 $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+                $cmdletUpgrade.PlanSeverity = [DiagnosticSeverity]::Information
                 $planSteps.Add($cmdletUpgrade)
             }
             else
             {
                 $cmdletUpgrade.PlanResultReason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
                 $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
+                $cmdletUpgrade.PlanSeverity = [DiagnosticSeverity]::Warning
                 $planWarningSteps.Add($cmdletUpgrade)
             }
 
@@ -232,6 +236,7 @@ function New-AzUpgradeModulePlan
                         $paramUpgrade.Location = $rmParam.Location
                         $paramUpgrade.PlanResultReason = "Command parameter can be automatically upgraded."
                         $paramUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+                        $paramUpgrade.PlanSeverity = [DiagnosticSeverity]::Information
 
                         $planSteps.Add($paramUpgrade)
 
@@ -251,6 +256,7 @@ function New-AzUpgradeModulePlan
                     $paramError.Location = $rmParam.Location
                     $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or it's aliases."
                     $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
+                    $paramError.PlanSeverity = [DiagnosticSeverity]::Error
 
                     $planErrorSteps.Add($paramError)
                 }

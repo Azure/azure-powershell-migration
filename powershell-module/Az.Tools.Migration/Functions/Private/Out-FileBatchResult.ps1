@@ -60,6 +60,7 @@ function Out-FileBatchResult
                 else
                 {
                     $result.UpgradeResult = [UpgradeResultReasonCode]::UpgradeActionFailed
+                    $result.UpgradeSeverity = [DiagnosticSeverity]::Error
                     $result.UpgradeResultReason = $Reason
                 }
             }

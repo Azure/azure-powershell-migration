@@ -79,7 +79,7 @@ function Invoke-AzUpgradeModulePlan
                         $currentFileContents = New-Object -TypeName System.Text.StringBuilder -ArgumentList $fileContents
                     }
 
-                    if ($upgradeStep.PlanResult.ToString().StartsWith("Error") -eq $false)
+                    if ($upgradeStep.PlanSeverity -ne [DiagnosticSeverity]::Error)
                     {
                         Invoke-ModuleUpgradeStep -Step $upgradeStep -FileContent $currentFileContents
                     }
@@ -90,6 +90,7 @@ function Invoke-AzUpgradeModulePlan
                                 $upgradeStep.Original, $upgradeStep.PlanResult)
 
                         $result.UpgradeResult = [UpgradeResultReasonCode]::UnableToUpgrade
+                        $result.UpgradeSeverity = [DiagnosticSeverity]::Error
                         $result.UpgradeResultReason = $upgradeStep.PlanResultReason
                     }
 
