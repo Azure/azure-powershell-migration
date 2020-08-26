@@ -245,10 +245,21 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 return Task.FromResult(Array.Empty<ScriptFileMarker>());
             }
 
+            // var command = new PSCommand()
+            //     .AddCommand("Invoke-ScriptAnalyzer")
+            //     .AddParameter("ScriptDefinition", scriptContent)
+            //     .AddParameter("Severity", s_scriptMarkerLevels);
+
+            var path = "analysis.ps1";
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                sw.Write(scriptContent);
+            }
+
             var command = new PSCommand()
-                .AddCommand("Invoke-ScriptAnalyzer")
-                .AddParameter("ScriptDefinition", scriptContent)
-                .AddParameter("Severity", s_scriptMarkerLevels);
+            .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
+            .AddScript(@"Import-Module Az.Tools.Migration.psd1")
+            .AddScript(@"New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path);
 
             object settingsValue = settings ?? _settingsParameter;
             if (settingsValue != null)
@@ -314,7 +325,8 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             int i = 0;
             foreach (PSObject diagnostic in diagnosticResults)
             {
-                scriptMarkers[i] = ScriptFileMarker.FromDiagnosticRecord(diagnostic);
+                // scriptMarkers[i] = ScriptFileMarker.FromDiagnosticRecord(diagnostic);
+                scriptMarkers[i] = ScriptFileMarker.FromUpgradePlan(diagnostic);
                 i++;
             }
 
