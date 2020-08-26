@@ -60,7 +60,7 @@ function Send-PageViewTelemetry
 
         # prepare the REST request body schema (version 2.x).
 
-        $InstrumentationKeyNoDashes = $InstrumentationKey.Replace('-','')
+        $InstrumentationKeyNoDashes = $InstrumentationKey.Replace('-', '')
 
         $bodyObject = [PSCustomObject]@{
             'name' = "Microsoft.ApplicationInsights.$InstrumentationKeyNoDashes.PageView"
