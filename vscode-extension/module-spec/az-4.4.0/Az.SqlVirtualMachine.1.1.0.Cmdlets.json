@@ -1,0 +1,848 @@
+[
+  {
+    "Command": "New-AzSqlVM",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "SqlVM",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSqlVM",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzSqlVM",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "SqlVM"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSqlVM",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "SqlVM"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVMConfig",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzSqlVMConfigGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "SqlVM",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterOperatorAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServiceAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterBootstrapAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVMGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterOperatorAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServiceAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountPrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainFqdn",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "OuPath",
+        "Aliases": null
+      },
+      {
+        "Name": "FileShareWitnessPath",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterBootstrapAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSqlVMGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMGroupId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzSqlVMGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "SqlVMGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMGroupId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterOperatorAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServiceAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountPrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainFqdn",
+        "Aliases": null
+      },
+      {
+        "Name": "OuPath",
+        "Aliases": null
+      },
+      {
+        "Name": "FileShareWitnessPath",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterBootstrapAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSqlVMGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "SqlVMGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "SqlVMGroupId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "AvailabilityGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProbePort",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SqlVMGroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SqlVMGroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "AvailabilityGroupListenerId"
+        ]
+      },
+      {
+        "Name": "SqlVirtualMachineId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SqlVMGroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SqlVMGroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

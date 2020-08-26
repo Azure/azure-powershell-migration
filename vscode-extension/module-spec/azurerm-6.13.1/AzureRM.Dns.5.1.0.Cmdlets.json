@@ -1,0 +1,627 @@
+[
+    {
+        "Command":  "Get-AzureRmDnsRecordSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZoneName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Zone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecordType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDnsRecordConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Ipv4Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ipv6Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Nsdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Exchange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Preference",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ptrdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Target",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Weight",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Cname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaFlags",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaTag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDnsRecordSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecordType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZoneName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Zone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecordSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDnsRecordSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "RecordSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDnsRecordConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "RecordSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ipv4Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ipv6Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Nsdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Exchange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Preference",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ptrdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Target",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Weight",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Cname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaFlags",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaTag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Add-AzureRmDnsRecordConfig",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "RecordSet",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ipv4Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ipv6Address",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Nsdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Exchange",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Preference",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ptrdname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Value",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Priority",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Target",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Port",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Weight",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Cname",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaFlags",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaTag",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "CaaValue",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDnsRecordSet",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZoneName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Zone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Ttl",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RecordType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "TargetResourceId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Metadata",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DnsRecords",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Get-AzureRmDnsZone",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Remove-AzureRmDnsZone",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Zone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "PassThru",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "Set-AzureRmDnsZone",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "RegistrationVirtualNetworkId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResolutionVirtualNetworkId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistrationVirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResolutionVirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Zone",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Overwrite",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    },
+    {
+        "Command":  "New-AzureRmDnsZone",
+        "IsAlias":  false,
+        "SourceModule":  "AzureRM.Dns",
+        "Version":  "5.1.0",
+        "Parameters":  [
+                           {
+                               "Name":  "Name",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResourceGroupName",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ZoneType",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "Tag",
+                               "Aliases":  [
+                                               "Tags"
+                                           ]
+                           },
+                           {
+                               "Name":  "RegistrationVirtualNetworkId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResolutionVirtualNetworkId",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "RegistrationVirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "ResolutionVirtualNetwork",
+                               "Aliases":  null
+                           },
+                           {
+                               "Name":  "DefaultProfile",
+                               "Aliases":  [
+                                               "AzureRmContext",
+                                               "AzureCredential"
+                                           ]
+                           },
+                           {
+                               "Name":  "WhatIf",
+                               "Aliases":  [
+                                               "wi"
+                                           ]
+                           },
+                           {
+                               "Name":  "Confirm",
+                               "Aliases":  [
+                                               "cf"
+                                           ]
+                           }
+                       ]
+    }
+]

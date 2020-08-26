@@ -22,9 +22,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results = Find-AzUpgradeCommandReference -FilePath "testfile.ps1" -AzureRmVersion "6.13.1"
 
             # assert
-            $results | Should Not Be $Null
-            $results.GetType().FullName | Should Be "CommandReferenceCollection"
-            $results.Items.Count | Should Be 0
+            $results | Should Be $null
 
             Assert-VerifiableMock
         }
@@ -50,9 +48,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $Null
-            $results.GetType().FullName | Should Be "CommandReferenceCollection"
-            $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Count | Should Be 1
+            $results[0].CommandName | Should Be "Login-AzureRmAccount"
 
             Assert-VerifiableMock
         }
@@ -81,9 +78,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $Null
-            $results.GetType().FullName | Should Be "CommandReferenceCollection"
-            $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Count | Should Be 1
+            $results[0].CommandName | Should Be "Login-AzureRmAccount"
 
             Assert-VerifiableMock
         }
@@ -109,9 +105,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # assert
             $results | Should Not Be $Null
-            $results.GetType().FullName | Should Be "CommandReferenceCollection"
-            $results.Items.Count | Should Be 1
-            $results.Items[0].CommandName | Should Be "Login-AzureRmAccount"
+            $results.Count | Should Be 1
+            $results[0].CommandName | Should Be "Login-AzureRmAccount"
 
             Assert-VerifiableMock
         }

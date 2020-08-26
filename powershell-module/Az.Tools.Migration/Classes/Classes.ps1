@@ -2,7 +2,7 @@ class Constants
 {
     static [System.String] $ConfigurationDirectoryName = ".aztoolsmigration"
     static [System.String] $ConfigurationFileName = "module-preferences.json"
-    static [System.String] $PublicTelemetryInstrumentationKey = "f1e252c1-5cb5-4ddb-8a2a-66e6a16d1c71"
+    static [System.String] $PublicTelemetryInstrumentationKey = "7df6ff70-8353-4672-80d6-568517fed090"
     static [System.String] $PublicTelemetryIngestionEndpointUri = "https://dc.services.visualstudio.com/v2/track"
 }
 
@@ -39,6 +39,8 @@ class CommandDefinition
 
 class CommandReferenceParameter
 {
+    [System.String] $FileName
+    [System.String] $FullPath
     [System.String] $Name
     [System.String] $Value
     [System.Int32] $StartLine
@@ -47,6 +49,7 @@ class CommandReferenceParameter
     [System.Int32] $EndPosition
     [System.Int32] $StartOffset
     [System.Int32] $EndOffset
+    [System.String] $Location
 }
 
 class CommandReference
@@ -59,6 +62,7 @@ class CommandReference
     [System.Int32] $EndPosition
     [System.Int32] $StartOffset
     [System.Int32] $EndOffset
+    [System.String] $Location
     [System.Boolean] $HasSplattedArguments
     [System.String] $CommandName
     [System.Collections.Generic.List[CommandReferenceParameter]] $Parameters
@@ -66,21 +70,6 @@ class CommandReference
     CommandReference()
     {
         $this.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandReferenceParameter]'
-    }
-
-    [String] ToString()
-    {
-        return ("{0} [{1}:{2}:{3}]" -f $this.CommandName, $this.FileName, $this.StartLine, $this.StartColumn)
-    }
-}
-
-class CommandReferenceCollection
-{
-    [System.Collections.Generic.List[CommandReference]] $Items
-
-    CommandReferenceCollection()
-    {
-        $this.Items = New-Object -TypeName 'System.Collections.Generic.List[CommandReference]'
     }
 }
 
@@ -90,94 +79,93 @@ Enum UpgradeStepType
     CmdletParameter
 }
 
-class UpgradeStep
+Enum PlanResultReasonCode
 {
-    [System.Int32] $StepNumber
-    [UpgradeStepType] $UpgradeType
-    [System.String] $FileName
-    [System.String] $FullPath
-    [System.Int32] $StartLine
-    [System.Int32] $StartColumn
-    [System.Int32] $EndLine
-    [System.Int32] $EndPosition
-    [System.Int32] $StartOffset
-    [System.Int32] $EndOffset
-}
-
-class CmdletUpgradeStep : UpgradeStep
-{
-    [System.String] $OriginalCmdletName
-    [System.String] $ReplacementCmdletName
-
-    CmdletUpgradeStep()
-    {
-        $this.UpgradeType = [UpgradeStepType]::Cmdlet
-    }
-
-    [String] ToString()
-    {
-        return ("Cmdlet {0} to {1} [{2}:{3}:{4}]" -f $this.OriginalCmdletName, $this.ReplacementCmdletName, $this.FileName, $this.StartLine, $this.StartColumn)
-    }
-}
-
-class CmdletParameterUpgradeStep : UpgradeStep
-{
-    [System.String] $OriginalParameterName
-    [System.String] $ReplacementParameterName
-
-    CmdletParameterUpgradeStep()
-    {
-        $this.UpgradeType = [UpgradeStepType]::CmdletParameter
-    }
-
-    [String] ToString()
-    {
-        return ("Parameter -{0} to -{1} [{2}:{3}:{4}]" -f $this.OriginalParameterName, $this.ReplacementParameterName, $this.FileName, $this.StartLine, $this.StartColumn)
-    }
-}
-
-Enum UpgradePlanResultReasonCode
-{
+    ReadyToUpgrade = 0
     WarningSplattedParameters = 1
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
 }
 
-class UpgradePlanResult
+Enum UpgradeResultReasonCode
 {
-    [CommandReference] $Command
-    [System.String] $Reason
-    [UpgradePlanResultReasonCode] $ReasonCode
+    UpgradeCompleted = 0
+    UpgradedWithWarnings = 1
+    UnableToUpgrade = 2
+    UpgradeActionFailed = 3
+}
 
-    [String] ToString()
-    {
-        return ("[{0}:{1}:{2}] {3}" -f $this.Command.FileName, $this.Command.StartLine, $this.Command.StartColumn, $this.Reason)
-    }
+Enum DiagnosticSeverity
+{
+    Error = 1
+    Warning = 2
+    Information = 3
+    Hint = 4
 }
 
 class UpgradePlan
 {
-    [System.Collections.Generic.List[UpgradeStep]] $UpgradeSteps
-    [System.Collections.Generic.List[UpgradePlanResult]] $Warnings
-    [System.Collections.Generic.List[UpgradePlanResult]] $Errors
-
-    UpgradePlan()
-    {
-        $this.UpgradeSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradeStep]'
-        $this.Warnings = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-        $this.Errors = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlanResult]'
-    }
+    [System.Int32] $Order
+    [UpgradeStepType] $UpgradeType
+    [PlanResultReasonCode] $PlanResult
+    [DiagnosticSeverity] $PlanSeverity
+    [System.String] $PlanResultReason
+    [CommandReference] $SourceCommand
+    [CommandReferenceParameter] $SourceCommandParameter
+    [System.String] $Location
+    [System.String] $FullPath
+    [System.Int32] $StartOffset
+    [System.String] $Original
+    [System.String] $Replacement
 }
 
 class UpgradeResult
 {
-    [UpgradeStep] $Step
-    [System.Boolean] $Success
-    [System.String] $Reason
+    [System.Int32] $Order
+    [UpgradeStepType] $UpgradeType
+    [UpgradeResultReasonCode] $UpgradeResult
+    [DiagnosticSeverity] $UpgradeSeverity
+    [System.String] $UpgradeResultReason
+    [CommandReference] $SourceCommand
+    [CommandReferenceParameter] $SourceCommandParameter
+    [System.String] $Location
+    [System.String] $FullPath
+    [System.Int32] $StartOffset
+    [System.String] $Original
+    [System.String] $Replacement
 
-    [String] ToString()
+    UpgradeResult ([UpgradePlan] $Plan)
     {
-        return ("[{0}:{1}:{2}] {3}" -f $this.Step.FileName, $this.Step.StartLine, $this.Step.StartColumn, $this.Reason)
+        $this.Order = $Plan.Order
+        $this.UpgradeType = $Plan.UpgradeType
+        $this.SourceCommand = $Plan.SourceCommand
+        $this.SourceCommandParameter = $Plan.SourceCommandParameter
+        $this.Location = $Plan.Location
+        $this.FullPath = $Plan.FullPath
+        $this.StartOffset = $Plan.StartOffset
+        $this.Original = $Plan.Original
+        $this.Replacement = $Plan.Replacement
+
+        # pre-stage the default results.
+        # these will be used automatically unless the file fails to write.
+
+        if ($Plan.PlanSeverity -eq [DiagnosticSeverity]::Warning)
+        {
+            $this.UpgradeResult = [UpgradeResultReasonCode]::UpgradedWithWarnings
+            $this.UpgradeResultReason = $Plan.PlanResultReason
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Warning
+        }
+        elseif ($Plan.PlanSeverity -eq [DiagnosticSeverity]::Error)
+        {
+            $this.UpgradeResult = [UpgradeResultReasonCode]::UnableToUpgrade
+            $this.UpgradeResultReason = $Plan.PlanResultReason
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Error
+        }
+        else
+        {
+            $this.UpgradeResultReason = "Automatic upgrade completed successfully."
+            $this.UpgradeSeverity = [DiagnosticSeverity]::Information
+        }
     }
 }

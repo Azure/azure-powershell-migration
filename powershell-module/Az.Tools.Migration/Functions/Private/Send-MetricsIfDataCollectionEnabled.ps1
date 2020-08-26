@@ -98,7 +98,25 @@ function Send-MetricsIfDataCollectionEnabled
                         {
                             foreach ($planWarning in $Properties.PlanWarnings)
                             {
-                                $null = $warningsBuilder.AppendLine(("{0}={1}" -f $planWarning.Command.CommandName, $planWarning.ReasonCode.ToString()))
+                                if ($planWarning.UpgradeType -eq [UpgradeStepType]::Cmdlet)
+                                {
+                                    # cmdlet. log just the cmdlet name and the warning reason
+                                    $null = $warningsBuilder.AppendLine(("{0}={1}" -f `
+                                                $planWarning.Original, `
+                                                $planWarning.PlanResult.ToString()))
+                                }
+                                elseif ($planWarning.UpgradeType -eq [UpgradeStepType]::CmdletParameter)
+                                {
+                                    # cmdlet parameter. log the cmdlet name and the parameter name, with the warning reason
+                                    $null = $warningsBuilder.AppendLine(("{0}.{1}={2}" -f `
+                                                $planWarning.SourceCommand.CommandName, `
+                                                $planWarning.Original, `
+                                                $planWarning.PlanResult.ToString()))
+                                }
+                                else
+                                {
+                                    throw "Unexpected plan upgrade step type: $($planWarning.UpgradeType)"
+                                }
                             }
                         }
 
@@ -106,7 +124,25 @@ function Send-MetricsIfDataCollectionEnabled
                         {
                             foreach ($planError in $Properties.PlanErrors)
                             {
-                                $null = $warningsBuilder.AppendLine(("{0}={1}" -f $planError.Command.CommandName, $planError.ReasonCode.ToString()))
+                                if ($planError.UpgradeType -eq [UpgradeStepType]::Cmdlet)
+                                {
+                                    # cmdlet. log just the cmdlet name and the error reason
+                                    $null = $errorsBuilder.AppendLine(("{0}={1}" -f `
+                                                $planError.Original, `
+                                                $planError.PlanResult.ToString()))
+                                }
+                                elseif ($planError.UpgradeType -eq [UpgradeStepType]::CmdletParameter)
+                                {
+                                    # cmdlet parameter. log the cmdlet name and the parameter name, with the error reason
+                                    $null = $errorsBuilder.AppendLine(("{0}.{1}={2}" -f `
+                                                $planError.SourceCommand.CommandName, `
+                                                $planError.Original, `
+                                                $planError.PlanResult.ToString()))
+                                }
+                                else
+                                {
+                                    throw "Unexpected plan upgrade step type: $($planError.UpgradeType)"
+                                }
                             }
                         }
 

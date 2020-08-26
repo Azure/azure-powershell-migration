@@ -1,0 +1,834 @@
+[
+  {
+    "Command": "Get-AzAks",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAks",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVmSetType",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVnetSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxPodCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsType",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeSetPriority",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "AcrNameToAttach",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbac",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowsProfileAdminUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowsProfileAdminUserPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "NetworkPlugin",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerSku",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientIdAndSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LinuxProfileAdminUserName",
+        "Aliases": [
+          "AdminUserName"
+        ]
+      },
+      {
+        "Name": "DnsNamePrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodeAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "SshKeyValue",
+        "Aliases": [
+          "SshKeyPath"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAks",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzAksCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Admin",
+        "Aliases": null
+      },
+      {
+        "Name": "ConfigPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzAksDashboard",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableBrowser",
+        "Aliases": null
+      },
+      {
+        "Name": "ListenPort",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzAksDashboard",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzAks",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientIdAndSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LinuxProfileAdminUserName",
+        "Aliases": [
+          "AdminUserName"
+        ]
+      },
+      {
+        "Name": "DnsNamePrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodeAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "SshKeyValue",
+        "Aliases": [
+          "SshKeyPath"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksNodePool",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Count",
+        "Aliases": null
+      },
+      {
+        "Name": "OsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "VnetSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxPodCount",
+        "Aliases": null
+      },
+      {
+        "Name": "OsType",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleSetPriority",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSetType",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "MinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzAksNodePool",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "MinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAksNodePool",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksNodePool",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Install-AzAksKubectl",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "Destination",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "DownloadFromMirror",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksVersion",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.1.3",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
