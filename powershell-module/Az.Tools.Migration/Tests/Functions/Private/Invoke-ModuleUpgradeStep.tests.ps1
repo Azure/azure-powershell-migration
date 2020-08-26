@@ -16,14 +16,14 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $expectedBuilder.AppendLine("     -Name 'ContosoWebApp' ``")
             $null = $expectedBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
-            $step = New-Object -TypeName CmdletUpgradeStep
-            $step.FileName = "test.ps1"
-            $step.StartLine = "2"
-            $step.StartColumn = "0"
-            $step.StartOffset = "19"
-            $step.EndOffset = "36"
-            $step.OriginalCmdletName = "Set-AzureRmWebApp"
-            $step.ReplacementCmdletName = "Set-AzWebApp"
+            $step = New-Object -TypeName UpgradePlan
+            $step.UpgradeType = [UpgradeStepType]::Cmdlet
+            $step.Original = "Set-AzureRmWebApp"
+            $step.Replacement = "Set-AzWebApp"
+            $step.Location = "test.ps1:2:0"
+            $step.SourceCommand = New-Object -TypeName CommandReference
+            $step.SourceCommand.StartOffset = 19
+            $step.SourceCommand.EndOffset = 36
 
             # act
             Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
@@ -45,17 +45,18 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $expectedBuilder.AppendLine("     -AppName 'ContosoWebApp' ``")
             $null = $expectedBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
-            $step = New-Object -TypeName CmdletParameterUpgradeStep
-            $step.FileName = "test.ps1"
-            $step.StartLine = "3"
-            $step.StartColumn = "5"
-            $step.StartOffset = "80"
-            $step.EndOffset = "85"
+            $step = New-Object -TypeName UpgradePlan
+            $step.UpgradeType = [UpgradeStepType]::CmdletParameter
 
             # Set-AzWebApp doesn't use the 'AppName' parameter...
             # so provide a fake/test replacement to exercise the code.
-            $step.OriginalParameterName = "Name"
-            $step.ReplacementParameterName = "AppName"
+            $step.Original = "Name"
+            $step.Replacement = "AppName"
+
+            $step.Location = "test.ps1:3:5"
+            $step.SourceCommandParameter = New-Object -TypeName CommandReferenceParameter
+            $step.SourceCommandParameter.StartOffset = 80
+            $step.SourceCommandParameter.EndOffset = 85
 
             # act
             Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
@@ -71,14 +72,14 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $scriptBuilder.AppendLine("     -Name 'ContosoWebApp' ``")
             $null = $scriptBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
-            $step = New-Object -TypeName CmdletUpgradeStep
-            $step.FileName = "test.ps1"
-            $step.StartLine = "2"
-            $step.StartColumn = "0"
-            $step.StartOffset = "19"
-            $step.EndOffset = "36"
-            $step.OriginalCmdletName = "Set-AzureRmWebApp"
-            $step.ReplacementCmdletName = "Set-AzWebApp"
+            $step = New-Object -TypeName UpgradePlan
+            $step.UpgradeType = [UpgradeStepType]::Cmdlet
+            $step.Original = "Set-AzureRmWebApp"
+            $step.Replacement = "Set-AzWebApp"
+            $step.Location = "test.ps1:2:0"
+            $step.SourceCommand = New-Object -TypeName CommandReference
+            $step.SourceCommand.StartOffset = 19
+            $step.SourceCommand.EndOffset = 36
 
             # act
             Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
@@ -94,17 +95,18 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $null = $scriptBuilder.AppendLine("     -Name 'ContosoWebApp' ``")
             $null = $scriptBuilder.AppendLine("     -HttpLoggingEnabled `$true")
 
-            $step = New-Object -TypeName CmdletParameterUpgradeStep
-            $step.FileName = "test.ps1"
-            $step.StartLine = "3"
-            $step.StartColumn = "5"
-            $step.StartOffset = "80"
-            $step.EndOffset = "85"
+            $step = New-Object -TypeName UpgradePlan
+            $step.UpgradeType = [UpgradeStepType]::CmdletParameter
 
             # Set-AzWebApp doesn't use the 'AppName' parameter...
             # so provide a fake/test replacement to exercise the code.
-            $step.OriginalParameterName = "Name"
-            $step.ReplacementParameterName = "AppName"
+            $step.Original = "Name"
+            $step.Replacement = "AppName"
+
+            $step.Location = "test.ps1:3:5"
+            $step.SourceCommandParameter = New-Object -TypeName CommandReferenceParameter
+            $step.SourceCommandParameter.StartOffset = 80
+            $step.SourceCommandParameter.EndOffset = 85
 
             # act
             Invoke-ModuleUpgradeStep -Step $step -FileContent $scriptBuilder
