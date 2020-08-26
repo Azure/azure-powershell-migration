@@ -25,6 +25,6 @@
 
   <Target Name="Package">
     <Message Text="Package Az.Tools.Migration" />
-    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;Scripts\Publish-Module.ps1 -ApiKey $(NuGetKey) -RepositoryLocation $(MSBuildProjectDirectory)\..\artifacts&quot;" />
+    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;Scripts\Publish-Module.ps1 -RepositoryLocation $(MSBuildProjectDirectory)\..\artifacts&quot;" />
   </Target>
 </Project>

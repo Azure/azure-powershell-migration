@@ -65,7 +65,7 @@ steps:
   inputs:
     command: custom
     custom: msbuild
-    arguments: 'build.proj /t:Package /p:NuGetKey=$(nuGetKey)'
+    arguments: 'build.proj /t:Package'
 
 - task: PublishPipelineArtifact@0
   displayName: 'Save artifacts'
