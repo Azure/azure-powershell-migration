@@ -226,7 +226,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// </summary>
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(string scriptContent) => AnalyzeScriptAsync(scriptContent, settings: null);
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent) => AnalyzeScriptAsync(runspace, scriptContent, settings: null);
 
 
         /// <summary>
@@ -235,7 +235,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <param name="settings">The settings file to use in this instance of analysis.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(string scriptContent, Hashtable settings)
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent, Hashtable settings)
         {
             // When a new, empty file is created there are by definition no issues.
             // Furthermore, if you call Invoke-ScriptAnalyzer with an empty ScriptDefinition
@@ -256,22 +256,27 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                 sw.Write(scriptContent);
             }
 
+            // var command = new PSCommand()
+            // .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
+            // .AddScript(@"Import-Module Az.Tools.Migration.psd1")
+            // .AddScript(@"New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path);
+
             var command = new PSCommand()
-            .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
-            .AddScript(@"Import-Module Az.Tools.Migration.psd1")
-            .AddScript(@"New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path);
+                .AddScript("New-AzUpgradeModulePlan -FilePath " + path + 
+                " -FromAzureRmVersion \"6.13.1\" -ToAzVersion \"4.4.0\" " +
+                "-AzureRmModuleSpec $azureRMSpec -AzModuleSpec $azSpec");
 
-            object settingsValue = settings ?? _settingsParameter;
-            if (settingsValue != null)
-            {
-                command.AddParameter("Settings", settingsValue);
-            }
-            else
-            {
-                command.AddParameter("IncludeRule", _rulesToInclude);
-            }
+            // object settingsValue = settings ?? _settingsParameter;
+            // if (settingsValue != null)
+            // {
+            //     command.AddParameter("Settings", settingsValue);
+            // }
+            // else
+            // {
+            //     command.AddParameter("IncludeRule", _rulesToInclude);
+            // }
 
-            return GetSemanticMarkersFromCommandAsync(command);
+            return GetSemanticMarkersFromCommandAsync(command, runspace);
         }
 
         public PssaCmdletAnalysisEngine RecreateWithNewSettings(string settingsPath)
@@ -313,6 +318,62 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         }
 
         #endregion
+
+        private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(PSCommand command, Runspace runspace)
+        {
+            PowerShellResult result = await InvokePowerShellAsync(command, runspace).ConfigureAwait(false);
+
+            IReadOnlyCollection<PSObject> diagnosticResults = result?.Output ?? s_emptyDiagnosticResult;
+            _logger.LogDebug(String.Format("Found {0} violations", diagnosticResults.Count));
+
+            var scriptMarkers = new ScriptFileMarker[diagnosticResults.Count];
+            int i = 0;
+            foreach (PSObject diagnostic in diagnosticResults)
+            {
+                // scriptMarkers[i] = ScriptFileMarker.FromDiagnosticRecord(diagnostic);
+                scriptMarkers[i] = ScriptFileMarker.FromUpgradePlan(diagnostic);
+                i++;
+            }
+
+            return scriptMarkers;
+        }
+
+        private Task<PowerShellResult> InvokePowerShellAsync(PSCommand command, Runspace runspace)
+        {
+            return Task.Run(() => InvokePowerShell(command, runspace));
+        }
+
+        private PowerShellResult InvokePowerShell(PSCommand command, Runspace runspace)
+        {
+            using (var powerShell = System.Management.Automation.PowerShell.Create())
+            {
+                powerShell.Runspace = runspace;
+                powerShell.Commands = command;
+                PowerShellResult result = null;
+                try
+                {
+                    Collection<PSObject> output = InvokePowerShellWithModulePathPreservation(powerShell);
+                    PSDataCollection<ErrorRecord> errors = powerShell.Streams.Error;
+                    result = new PowerShellResult(output, errors, powerShell.HadErrors);
+                }
+                catch (CommandNotFoundException ex)
+                {
+                    // This exception is possible if the module path loaded
+                    // is wrong even though PSScriptAnalyzer is available as a module
+                    _logger.LogError(ex.Message);
+                }
+                catch (CmdletInvocationException ex)
+                {
+                    // We do not want to crash EditorServices for exceptions caused by cmdlet invocation.
+                    // Two main reasons that cause the exception are:
+                    // * PSCmdlet.WriteOutput being called from another thread than Begin/Process
+                    // * CompositionContainer.ComposeParts complaining that "...Only one batch can be composed at a time"
+                    _logger.LogError(ex.Message);
+                }
+
+                return result;
+            }
+        }
 
         private async Task<ScriptFileMarker[]> GetSemanticMarkersFromCommandAsync(PSCommand command)
         {
