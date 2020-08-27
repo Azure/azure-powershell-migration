@@ -59,7 +59,7 @@ function Find-AzUpgradeCommandReference
 
         # load the command specs
         Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmVersion"
-        $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
+        $azureRmSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
 
         if ($PSCmdlet.ParameterSetName -eq 'ByFile')
         {

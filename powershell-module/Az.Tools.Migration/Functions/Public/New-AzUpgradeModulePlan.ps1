@@ -114,7 +114,7 @@ function New-AzUpgradeModulePlan
         }
 
         Write-Verbose -Message "Importing cmdlet spec for Az $ToAzVersion"
-        $azCmdlets = Import-CmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
+        $azCmdlets = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
 
         Write-Verbose -Message "Importing upgrade alias spec for Az $ToAzVersion"
         $upgradeAliases = Import-AliasSpec -ModuleVersion $ToAzVersion
