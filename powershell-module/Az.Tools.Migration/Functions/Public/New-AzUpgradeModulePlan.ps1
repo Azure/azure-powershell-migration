@@ -22,6 +22,15 @@ function New-AzUpgradeModulePlan
     .PARAMETER AzureRmCmdReference
         Specifies the AzureRM command references output from the Find-AzUpgradeCommandReference cmdlet.
 
+    .PARAMETER AzureRmModuleSpec
+        Specifies an optional parameter to provide a pre-loaded AzureRM module spec, returned from Get-AzUpgradeCmdletSpec.
+
+    .PARAMETER AzModuleSpec
+        Specifies an optional parameter to provide a pre-loaded Az module spec, returned from Get-AzUpgradeCmdletSpec.
+
+    .PARAMETER AzAliasMappingSpec
+        Specifies an optional parameter to provide a pre-loaded Az cmdlet alias mapping table, returned from Get-AzUpgradeAliasSpec.
+
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script file 'C:\Scripts\my-azure-script.ps1'.
 
@@ -37,6 +46,20 @@ function New-AzUpgradeModulePlan
 
         $references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1'
         New-AzUpgradeModulePlan -ToAzVersion 4.4.0 -AzureRmCmdReference $references
+
+    .EXAMPLE
+        The following example generates a new Az module upgrade plan for the script and module files under several directories.
+        Module specs are pre-loaded here to avoid re-loading the spec each time a plan is generated.
+
+        # pre-load specifications
+        $armSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+        $azSpec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "4.4.0"
+        $azAliases = Get-AzUpgradeAliasSpec -ModuleVersion "4.4.0"
+
+        # execute a batch of module upgrades
+        $plan1 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts1' -FromAzureRmVersion '6.13.1' -ToAzVersion 4.4.0 -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
+        $plan2 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts2' -FromAzureRmVersion '6.13.1' -ToAzVersion 4.4.0 -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
+        $plan3 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts3' -FromAzureRmVersion '6.13.1' -ToAzVersion 4.4.0 -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
     #>
     [CmdletBinding()]
     Param
@@ -81,7 +104,19 @@ function New-AzUpgradeModulePlan
             HelpMessage='Specify the Az module version to upgrade to.')]
         [System.String]
         [ValidateSet('4.4.0')]
-        $ToAzVersion
+        $ToAzVersion,
+
+        [Parameter(Mandatory=$false)]
+        [System.Collections.Generic.Dictionary[System.String, CommandDefinition]]
+        $AzureRmModuleSpec,
+
+        [Parameter(Mandatory=$false)]
+        [System.Collections.Generic.Dictionary[System.String, CommandDefinition]]
+        $AzModuleSpec,
+
+        [Parameter(Mandatory=$false)]
+        [System.Collections.Generic.Dictionary[System.String, System.String]]
+        $AzAliasMappingSpec
     )
     Process
     {
@@ -92,13 +127,29 @@ function New-AzUpgradeModulePlan
 
         if ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByFile')
         {
-            Write-Verbose -Message "Searching for commands to upgrade, by file."
-            $AzureRmCmdReference = Find-AzUpgradeCommandReference -FilePath $FilePath -AzureRmVersion $FromAzureRmVersion
+            if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec'))
+            {
+                Write-Verbose -Message "Searching for commands to upgrade, by file, with pre-loaded module spec."
+                $AzureRmCmdReference = Find-AzUpgradeCommandReference -FilePath $FilePath -AzureRmModuleSpec $AzureRmModuleSpec
+            }
+            else
+            {
+                Write-Verbose -Message "Searching for commands to upgrade, by file."
+                $AzureRmCmdReference = Find-AzUpgradeCommandReference -FilePath $FilePath -AzureRmVersion $FromAzureRmVersion
+            }
         }
         elseif ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByDirectory')
         {
-            Write-Verbose -Message "Searching for commands to upgrade, by directory."
-            $AzureRmCmdReference = Find-AzUpgradeCommandReference -DirectoryPath $DirectoryPath -AzureRmVersion $FromAzureRmVersion
+            if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec'))
+            {
+                Write-Verbose -Message "Searching for commands to upgrade, by directory, with pre-loaded module spec."
+                $AzureRmCmdReference = Find-AzUpgradeCommandReference -DirectoryPath $DirectoryPath -AzureRmModuleSpec $AzureRmModuleSpec
+            }
+            else
+            {
+                Write-Verbose -Message "Searching for commands to upgrade, by directory."
+                $AzureRmCmdReference = Find-AzUpgradeCommandReference -DirectoryPath $DirectoryPath -AzureRmVersion $FromAzureRmVersion
+            }
         }
 
         # we can't generate an upgrade plan without some cmdlet references, so quit early here if required.
@@ -113,11 +164,25 @@ function New-AzUpgradeModulePlan
             Write-Verbose -Message "$($AzureRmCmdReference.Count) AzureRm command reference(s) were found. Upgrade plan will be generated."
         }
 
-        Write-Verbose -Message "Importing cmdlet spec for Az $ToAzVersion"
-        $azCmdlets = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
+        if ($PSBoundParameters.ContainsKey('AzModuleSpec') -eq $false)
+        {
+            Write-Verbose -Message "Importing cmdlet spec for Az $ToAzVersion"
+            $AzModuleSpec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
+        }
+        else
+        {
+            Write-Verbose -Message "Az module spec was provided at runtime, skipping module spec import."
+        }
 
-        Write-Verbose -Message "Importing upgrade alias spec for Az $ToAzVersion"
-        $upgradeAliases = Import-AliasSpec -ModuleVersion $ToAzVersion
+        if ($PSBoundParameters.ContainsKey('AzAliasMappingSpec') -eq $false)
+        {
+            Write-Verbose -Message "Importing alias mapping spec for Az $ToAzVersion"
+            $AzAliasMappingSpec = Get-AzUpgradeAliasSpec -ModuleVersion $ToAzVersion
+        }
+        else
+        {
+            Write-Verbose -Message "Az alias mapping spec was provided at runtime, skipping alias spec import."
+        }
 
         $defaultParamNames = @("Debug", "ErrorAction", "ErrorVariable", "InformationAction", "InformationVariable", "OutVariable", "OutBuffer", "PipelineVariable", "Verbose", "WarningAction", "WarningVariable", "WhatIf", "Confirm")
 
@@ -132,7 +197,7 @@ function New-AzUpgradeModulePlan
         {
             Write-Verbose -Message "Checking upgrade potential for instance of $($rmCmdlet.CommandName)"
 
-            if ($upgradeAliases.ContainsKey($rmCmdlet.CommandName) -eq $false)
+            if ($AzAliasMappingSpec.ContainsKey($rmCmdlet.CommandName) -eq $false)
             {
                 $errorResult = New-Object -TypeName UpgradePlan
                 $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
@@ -150,9 +215,9 @@ function New-AzUpgradeModulePlan
                 continue
             }
 
-            $resolvedCommandName = $upgradeAliases[$rmCmdlet.CommandName]
+            $resolvedCommandName = $AzAliasMappingSpec[$rmCmdlet.CommandName]
 
-            if ($azCmdlets.ContainsKey($resolvedCommandName) -eq $false)
+            if ($AzModuleSpec.ContainsKey($resolvedCommandName) -eq $false)
             {
                 $errorResult = New-Object -TypeName UpgradePlan
                 $errorResult.UpgradeType = [UpgradeStepType]::Cmdlet
@@ -198,7 +263,7 @@ function New-AzUpgradeModulePlan
 
             if ($rmCmdlet.Parameters.Count -gt 0)
             {
-                $resolvedAzCommand = $azCmdlets[$resolvedCommandName]
+                $resolvedAzCommand = $AzModuleSpec[$resolvedCommandName]
 
                 foreach ($rmParam in $rmCmdlet.Parameters)
                 {
