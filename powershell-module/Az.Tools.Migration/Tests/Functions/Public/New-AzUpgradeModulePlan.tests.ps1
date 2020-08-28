@@ -305,7 +305,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
-            Mock -CommandName Import-AliasSpec `
+            Mock -CommandName Get-AzUpgradeAliasSpec `
                 -ModuleName Az.Tools.Migration `
                 -Verifiable `
                 -MockWith `
