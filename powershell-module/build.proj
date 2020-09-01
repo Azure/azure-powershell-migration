@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0"
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Target="Build">
+  
+  <PropertyGroup>
+    <PowerShellCoreCommandPrefix>pwsh -NonInteractive -NoLogo -NoProfile -Command</PowerShellCoreCommandPrefix>
+  </PropertyGroup>
+    
+  <Target Name="Clean">
+    <Message Text="Clean artifacts folder" />
+    <RemoveDir Directories="..\artifacts" />
+  </Target>
+
+  <Target Name="Build">
+    <Message Text="Build Az.Tools.Migration" />
+    <ItemGroup>
+        <PublishFiles Include="Az.Tools.Migration\**" Exclude="Az.Tools.Migration\Tests\**;Az.Tools.Migration\Resources\TestFiles\**"/>
+    </ItemGroup>
+    <Copy SourceFiles="@(PublishFiles)" DestinationFolder="..\artifacts\Az.Tools.Migration\%(RecursiveDir)" />
+  </Target>
+
+  <Target Name="Test" DependsOnTargets="Build">
+
+  </Target>
+
+  <Target Name="Package">
+    <Message Text="Package Az.Tools.Migration" />
+    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;Scripts\Publish-Module.ps1 -RepositoryLocation $(MSBuildProjectDirectory)\..\artifacts&quot;" />
+  </Target>
+</Project>
