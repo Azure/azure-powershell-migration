@@ -1,18 +1,18 @@
-function Import-AliasSpec
+function Get-AzUpgradeAliasSpec
 {
     <#
     .SYNOPSIS
-        Imports the upgrade alias objects from the specified module specs.
+        Returns a dictionary containing cmdlet alias mappings for the specified Az module version.
 
     .DESCRIPTION
-        Imports the upgrade alias objects from the specified module specs.
+        Returns a dictionary containing cmdlet alias mappings for the specified Az module version.
 
     .PARAMETER ModuleVersion
         Specify the version of the module to import command aliases from.
 
     .EXAMPLE
-        PS C:\> Import-AliasSpec -ModuleVersion "4.2.0"
-        Imports the upgrade alias objects for Az 4.2.0.
+        PS C:\> Get-AzUpgradeAliasSpec -ModuleVersion "4.4.0"
+        Returns the cmdlet alias mappings table for Az 4.4.0.
     #>
     [CmdletBinding()]
     Param

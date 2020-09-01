@@ -17,6 +17,9 @@ function Find-AzUpgradeCommandReference
     .PARAMETER AzureRmVersion
         Specifies the AzureRM module version used in your existing PowerShell file(s) or modules.
 
+    .PARAMETER AzureRmModuleSpec
+        Specifies a dictionary containing cmdlet specification objects, returned from Get-AzUpgradeCmdletSpec.
+
     .EXAMPLE
         The following example finds AzureRM PowerShell command references in the specified file.
 
@@ -26,13 +29,26 @@ function Find-AzUpgradeCommandReference
         The following example finds AzureRM PowerShell command references in the specified directory and subfolders.
 
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1'
+
+    .EXAMPLE
+        The following example finds AzureRM PowerShell command references in the specified directory and subfolders but with a pre-loaded module specification.
+        This is helpful to avoid reloading the module specification if the Find-AzUpgradeCommandReference command needs to be executed several times.
+
+        $moduleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts1' -AzureRmModuleSpec $moduleSpec
+        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts2' -AzureRmModuleSpec $moduleSpec
+        Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts3' -AzureRmModuleSpec $moduleSpec
     #>
     [CmdletBinding()]
     Param
     (
         [Parameter(
             Mandatory=$true,
-            ParameterSetName="ByFile",
+            ParameterSetName="ByFileAndModuleVersion",
+            HelpMessage="Specify the path to a single PowerShell file.")]
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="ByFileAndModuleSpec",
             HelpMessage="Specify the path to a single PowerShell file.")]
         [System.String]
         [ValidateNotNullOrEmpty()]
@@ -40,7 +56,11 @@ function Find-AzUpgradeCommandReference
 
         [Parameter(
             Mandatory=$true,
-            ParameterSetName="ByDirectory",
+            ParameterSetName="ByDirectoryAndModuleVersion",
+            HelpMessage="Specify the path to the folder where PowerShell scripts or modules reside.")]
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="ByDirectoryAndModuleSpec",
             HelpMessage="Specify the path to the folder where PowerShell scripts or modules reside.")]
         [System.String]
         [ValidateNotNullOrEmpty()]
@@ -48,20 +68,43 @@ function Find-AzUpgradeCommandReference
 
         [Parameter(
             Mandatory=$true,
+            ParameterSetName="ByFileAndModuleVersion",
+            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules.")]
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="ByDirectoryAndModuleVersion",
             HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules.")]
         [System.String]
         [ValidateSet("6.13.1")]
-        $AzureRmVersion
+        $AzureRmVersion,
+
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="ByFileAndModuleSpec",
+            HelpMessage="Specify a dictionary containing cmdlet specification objects, returned from Get-AzUpgradeCmdletSpec.")]
+        [Parameter(
+            Mandatory=$true,
+            ParameterSetName="ByDirectoryAndModuleSpec",
+            HelpMessage="Specify a dictionary containing cmdlet specification objects, returned from Get-AzUpgradeCmdletSpec.")]
+        [System.Collections.Generic.Dictionary[System.String, CommandDefinition]]
+        $AzureRmModuleSpec
     )
     Process
     {
         $cmdStarted = Get-Date
 
-        # load the command specs
-        Write-Verbose -Message "Importing cmdlet spec for AzureRM $AzureRmVersion"
-        $azureRmSpec = Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
+        if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec') -eq $false)
+        {
+            # load the command specs
+            Write-Verbose -Message "Loading cmdlet spec for AzureRM $AzureRmVersion"
+            $AzureRmModuleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
+        }
+        else
+        {
+            Write-Verbose -Message "Module specification was provided at runtime. Skipping spec load operation."
+        }
 
-        if ($PSCmdlet.ParameterSetName -eq 'ByFile')
+        if ($PSCmdlet.ParameterSetName.StartsWith('ByFile'))
         {
             if ((Test-Path -Path $FilePath) -eq $false)
             {
@@ -69,7 +112,7 @@ function Find-AzUpgradeCommandReference
             }
 
             Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
-            $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
+            $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $AzureRmModuleSpec.ContainsKey($_.CommandName) -eq $true }
 
             if ($foundCmdlets -ne $null -and $foundCmdlets.Count -gt 0)
             {
@@ -87,7 +130,7 @@ function Find-AzUpgradeCommandReference
                     FileCount = 1
                 })
         }
-        elseif ($PSCmdlet.ParameterSetName -eq 'ByDirectory')
+        elseif ($PSCmdlet.ParameterSetName.StartsWith('ByDirectory'))
         {
             if ((Test-Path -Path $DirectoryPath) -eq $false)
             {
@@ -100,7 +143,7 @@ function Find-AzUpgradeCommandReference
             foreach ($file in $filesToSearch)
             {
                 Write-Verbose -Message "Searching for AzureRM references in file: $($file.FullName)"
-                $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $azureRmSpec.ContainsKey($_.CommandName) -eq $true }
+                $foundCmdlets = Find-CmdletsInFile -FilePath $file.FullName | Where-object -FilterScript { $AzureRmModuleSpec.ContainsKey($_.CommandName) -eq $true }
 
                 if ($foundCmdlets -ne $null -and $foundCmdlets.Count -gt 0)
                 {

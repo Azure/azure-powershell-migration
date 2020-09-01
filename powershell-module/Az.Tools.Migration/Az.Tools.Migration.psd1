@@ -68,6 +68,8 @@
         'Disable-AzUpgradeDataCollection',
         'Enable-AzUpgradeDataCollection',
         'Find-AzUpgradeCommandReference',
+        'Get-AzUpgradeAliasSpec',
+        'Get-AzUpgradeCmdletSpec',
         'Invoke-AzUpgradeModulePlan',
         'New-AzUpgradeModulePlan'
     )
