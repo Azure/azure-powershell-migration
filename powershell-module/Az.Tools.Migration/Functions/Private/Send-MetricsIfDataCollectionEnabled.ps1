@@ -62,6 +62,7 @@ function Send-MetricsIfDataCollectionEnabled
         if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
         {
             Write-Verbose -Message "Data collection option is enabled. Sending '$Operation' operation metrics."
+            Write-Verbose -Message "Operation duration: $($Duration.ToString())"
 
             try
             {
