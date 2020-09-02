@@ -124,11 +124,12 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _mostRecentCorrectionsByFile = new ConcurrentDictionary<ScriptFile, CorrectionTableEntry>();
             _analysisEngineLazy = new Lazy<PssaCmdletAnalysisEngine>(InstantiateAnalysisEngine);
             _pssaSettingsFilePath = null;
-            powerShell = System.Management.Automation.PowerShell.Create();
-            powerShell.AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process");
-            powerShell.AddScript(@"Import-Module C:\Users\Radium\Documents\Github\azure-powershell-migration\powershell-module\Az.Tools.Migration\Az.Tools.Migration.psd1");
-            powerShell.AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"4.4.0\"");
-            powerShell.AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"6.13.1\"");
+            powerShell = System.Management.Automation.PowerShell.Create()
+                .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
+                .AddScript(@"Import-Module Az.Tools.Migration.psd1")
+                .AddScript("Disable-AzUpgradeDataCollection")
+                .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"4.4.0\"")
+                .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"6.13.1\"");
             powerShell.Invoke();
         }
 
