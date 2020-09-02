@@ -94,7 +94,7 @@ function Send-PageViewTelemetry
         }
         catch 
         {
-            Write-Verbose -Message "Encountered exception while trying to flush telemetry events. Exception is: $_"
+            Write-Warning -Message "Encountered exception while trying to flush telemetry events: $_"
         }
     }
 }
