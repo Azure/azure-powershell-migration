@@ -7,7 +7,7 @@ function Send-MetricsIfDataCollectionEnabled
     .DESCRIPTION
         Sends Az Upgrade Module metrics to Microsoft.
 
-        Data collection can be enabled or disabled with the Enable-AzUpgradeDataCollection and Disabled-AzUpgradeDataCollection commands.
+        Data collection can be enabled or disabled with the Enable-AzUpgradeDataCollection and Disable-AzUpgradeDataCollection commands.
 
     .PARAMETER Operation
         Specifies the operation or context for the metrics.
