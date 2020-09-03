@@ -173,6 +173,68 @@ namespace Microsoft.PowerShell.EditorServices.Services.TextDocument
             };
         }
 
+        internal static ScriptFileMarker FromUpgradePlan(PSObject psObject)
+        {
+            var diagnostic = psObject as dynamic;
+            var sourceCommand = diagnostic.SourceCommand as dynamic;
+
+            string severity = diagnostic.PlanSeverity.ToString();
+            if (!Enum.TryParse(severity, out ScriptFileMarkerLevel level))
+            {
+                throw new ArgumentException(
+                    $"The provided DiagnosticSeverity value '{severity}' is unknown.",
+                    "diagnosticSeverity");
+            }
+
+            var message = diagnostic.PlanResultReason;
+            var ruleName = diagnostic.PlanResult.ToString();
+            var upgradeType = diagnostic.UpgradeType.ToString();
+            var fullPath = diagnostic.FullPath;
+            var replacement = diagnostic.Replacement;
+            var startLine = sourceCommand.StartLine;
+            var startColumn = sourceCommand.StartColumn;
+            var startOffset = sourceCommand.StartOffset;
+            var endLine = sourceCommand.EndLine;
+            var endColumn = sourceCommand.EndPosition;
+            var endOffset = sourceCommand.EndOffset;
+
+            if (ruleName == "ReadyToUpgrade")
+            {
+                ruleName += upgradeType;
+                level = ScriptFileMarkerLevel.Warning;
+            }
+
+            if (ruleName == "ErrorParameterNotFound")
+            {
+                var sourceCommandParameter = diagnostic.SourceCommandParameter as dynamic;
+                startLine = sourceCommandParameter.StartLine;
+                startColumn = sourceCommandParameter.StartColumn;
+                startOffset = sourceCommandParameter.StartOffset;
+                endLine = sourceCommandParameter.EndLine;
+                endColumn = sourceCommandParameter.EndPosition;
+                endOffset = sourceCommandParameter.EndOffset;
+            }
+
+            var scriptFileMarker = new ScriptFileMarker
+            {
+                Message = message,
+                Level = level,
+                ScriptRegion = new ScriptRegion(fullPath, "Migrate", startLine, startColumn, startOffset, endLine, endColumn, endOffset),
+                Source = "Az.Tools.Migration",
+                RuleName = ruleName,
+                Correction = new MarkerCorrection
+                {
+                    Name = "Auto Fix",
+                    Edits = new ScriptRegion[]
+                    {
+                        new ScriptRegion(fullPath, replacement, startLine, startColumn, startOffset, endLine, endColumn, endOffset)
+                    }
+                }
+            };
+
+            return scriptFileMarker;
+        }
+
         #endregion
     }
 }
