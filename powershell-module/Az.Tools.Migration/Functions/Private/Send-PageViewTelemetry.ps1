@@ -43,52 +43,58 @@ function Send-PageViewTelemetry
     )
     Process
     {
-        $AppInsightsIngestionEndpoint = [Constants]::PublicTelemetryIngestionEndpointUri
-        $InstrumentationKey = [Constants]::PublicTelemetryInstrumentationKey
+        if($null -eq [Constants]::TelemetryClient) 
+        {
+            $TelemetryClient = New-Object Microsoft.ApplicationInsights.TelemetryClient
+            $TelemetryClient.InstrumentationKey = [Constants]::PublicTelemetryInstrumentationKey
+            $TelemetryClient.Context.Session.Id = $CurrentSessionId
+            $TelemetryClient.Context.Device.OperatingSystem = [System.Environment]::OSVersion.ToString()
+            [Constants]::TelemetryClient = $TelemetryClient
+        }
 
+        $client = [Constants]::TelemetryClient
+
+        $page = New-Object Microsoft.ApplicationInsights.DataContracts.PageViewTelemetry
+        $page.Name = "cmdletInvocation"
+        $page.Duration = $Duration
+
+        $page.Properties["IsSuccess"] = $True.ToString()
+        $page.Properties["OS"] = [System.Environment]::OSVersion.ToString()
+
+        $page.Properties["x-ms-client-request-id"]= [Constants]::CurrentSessionId
+        $page.Properties["PowerShellVersion"]= $PSVersionTable.PSVersion.ToString();
+        
+        if($null -ne $MyInvocation.MyCommand)
+        {
+            $page.Properties["ModuleName"] = $MyInvocation.MyCommand.ModuleName
+            if($null -ne $MyInvocation.MyCommand.Module -and $null -ne $MyInvocation.MyCommand.Module.Version)
+            {
+                $page.Properties["ModuleVersion"] = $MyInvocation.MyCommand.Module.Version.ToString()
+            }
+        }
+        $page.Properties["end-time"]= (Get-Date).ToUniversalTime().ToString("o")
+        $page.Properties["duration"]= $Duration.ToString("c");
+        
         # prepare custom properties
         # convert the hashtable to a custom object, if properties were supplied.
 
-        if ($PSBoundParameters.ContainsKey('CustomProperties') -and $CustomProperties.Count -gt 0)
+        if ($PSBoundParameters.ContainsKey('CustomProperties') -and $CustomProperties.Count -gt 0) 
         {
-            $customPropertiesObj = [PSCustomObject]$CustomProperties
-        }
-        else
-        {
-            $customPropertiesObj = [PSCustomObject]@{}
-        }
-
-        # prepare the REST request body schema (version 2.x).
-
-        $InstrumentationKeyNoDashes = $InstrumentationKey.Replace('-', '')
-
-        $bodyObject = [PSCustomObject]@{
-            'name' = "Microsoft.ApplicationInsights.$InstrumentationKeyNoDashes.PageView"
-            'time' = ([System.DateTime]::UtcNow.ToString('o'))
-            'iKey' = $InstrumentationKey
-            'tags' = [PSCustomObject]@{
-                'ai.internal.sdkVersion' = ('Az.Tools.Migration.' + $MyInvocation.MyCommand.Module.Version.ToString())
-            }
-            'data' = [PSCustomObject]@{
-                'baseType' = 'PageViewData'
-                'baseData' = [PSCustomObject]@{
-                    'ver' = 2
-                    'name' = $PageName
-                    'duration' = $Duration.ToString()
-                    'properties' = $customPropertiesObj
-                }
+            foreach ($Key in $CustomProperties.Keys) 
+            {
+                $page.Properties[$Key] = $CustomProperties[$Key]
             }
         }
 
-        # convert the body object into a json blob.
-        # prepare the headers
-        # send the request
+        $client.TrackPageView($page)
 
-        $bodyAsCompressedJson = $bodyObject | ConvertTo-JSON -Depth 5 -Compress
-        $headers = @{
-            'Content-Type' = 'application/x-json-stream';
+        try
+        {
+            $client.Flush()
         }
-
-        $null = Invoke-RestMethod -Uri $AppInsightsIngestionEndpoint -Method Post -Headers $headers -Body $bodyAsCompressedJson
+        catch 
+        {
+            Write-Warning -Message "Encountered exception while trying to flush telemetry events: $_"
+        }
     }
 }

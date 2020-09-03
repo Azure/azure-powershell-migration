@@ -74,11 +74,8 @@ function Send-MetricsIfDataCollectionEnabled
                     {
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Find-AzUpgradeCommandReference"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props
@@ -149,11 +146,8 @@ function Send-MetricsIfDataCollectionEnabled
 
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "New-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props
@@ -172,11 +166,8 @@ function Send-MetricsIfDataCollectionEnabled
                     {
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Invoke-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props
