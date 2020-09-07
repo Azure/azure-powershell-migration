@@ -16,8 +16,8 @@
     Specify the output folder for where the files will be generated.
 
 .EXAMPLE
-    PS C:\ .\New-AzCmdletSpec.ps1 -AzVersion "4.4.0" -OutputDirectory "$home\desktop\AzCmdletSpec"
-    Generates a new Az module 4.4.0 cmdlet spec in the user's desktop folder.
+    PS C:\ .\New-AzCmdletSpec.ps1 -AzVersion "4.6.1" -OutputDirectory "$home\desktop\AzCmdletSpec"
+    Generates a new Az module 4.6.1 cmdlet spec in the user's desktop folder.
 #>
 [CmdletBinding()]
 Param
@@ -176,7 +176,7 @@ if (!(Test-Path $AliasOutputDirectory))
 Write-Host "Importing Az module version $AzVersion"
 Import-Module -Name Az -RequiredVersion $AzVersion -ErrorAction Stop
 
-$moduleEntrypoint = "$Home\Documents\WindowsPowerShell\Modules\Az\$AzVersion\Az.psm1"
+$moduleEntrypoint = "$Home\Documents\PowerShell\Modules\Az\$AzVersion\Az.psm1"
 $moduleImportStatements = Get-Content $moduleEntrypoint | Select-String -Pattern "Import-Module Az." | ForEach-Object -Process { $_.Line.Trim() }
 
 foreach ($importStatement in $moduleImportStatements)
