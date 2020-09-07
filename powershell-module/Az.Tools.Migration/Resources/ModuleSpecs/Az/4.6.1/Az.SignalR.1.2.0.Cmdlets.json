@@ -3,7 +3,7 @@
     "Command": "New-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -67,7 +67,7 @@
     "Command": "Get-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -95,7 +95,7 @@
     "Command": "Get-AzSignalRKey",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -127,7 +127,7 @@
     "Command": "New-AzSignalRKey",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -179,7 +179,7 @@
     "Command": "Remove-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -231,7 +231,7 @@
     "Command": "Update-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -299,7 +299,7 @@
     "Command": "Test-AzSignalRName",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -323,7 +323,7 @@
     "Command": "Restart-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -375,7 +375,7 @@
     "Command": "Get-AzSignalRUsage",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "Location",
@@ -392,10 +392,134 @@
     ]
   },
   {
+    "Command": "Update-AzSignalRNetworkAcl",
+    "IsAlias": false,
+    "SourceModule": "Az.SignalR",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateEndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "Allow",
+        "Aliases": null
+      },
+      {
+        "Name": "Deny",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzSignalRUpstream",
+    "IsAlias": false,
+    "SourceModule": "Az.SignalR",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Template",
+        "Aliases": null
+      },
+      {
+        "Name": "Clear",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Test-AzSignalR",
     "IsAlias": false,
     "SourceModule": "Az.SignalR",
-    "Version": "1.1.1",
+    "Version": "1.2.0",
     "Parameters": [
       {
         "Name": "Name",
