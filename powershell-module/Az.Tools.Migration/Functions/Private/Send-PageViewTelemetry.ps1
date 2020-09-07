@@ -60,7 +60,7 @@ function Send-PageViewTelemetry
 
         if([string]::IsNullOrWhiteSpace([Constants]::HashMacAddress))
         {
-            Write-Verbose -Message 'hash mac address'
+            Write-Verbose -Message 'Hash mac address'
             $macAddress = ''
             $nics = [System.Net.NetworkInformation.NetworkInterface]::GetAllNetworkInterfaces()
             foreach ($nic in $nics)
