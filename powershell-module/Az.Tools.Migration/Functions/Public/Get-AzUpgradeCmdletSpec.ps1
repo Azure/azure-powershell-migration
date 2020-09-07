@@ -1,21 +1,21 @@
-function Import-CmdletSpec
+function Get-AzUpgradeCmdletSpec
 {
     <#
     .SYNOPSIS
-        Imports the CommandDefinition objects from the specified module specs.
+        Returns a dictionary containing cmdlet specification objects for the specified module.
 
     .DESCRIPTION
-        Imports the CommandDefinition objects from the specified module specs.
+        Returns a dictionary containing cmdlet specification objects for the specified module.
 
     .PARAMETER ModuleName
-        Specify the name of the module to import command definitions from.
+        Specify the name of the module to load command definitions from.
 
     .PARAMETER ModuleVersion
-        Specify the version of the module to import command definitions from.
+        Specify the version of the module to load command definitions from.
 
     .EXAMPLE
-        PS C:\> Import-CmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
-        Imports the CommandDefinition objects for AzureRM 6.13.1.
+        PS C:\> Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+        Returns the dictionary containing cmdlet specification objects for AzureRM 6.13.1.
     #>
     [CmdletBinding()]
     Param

@@ -7,7 +7,7 @@ function Send-MetricsIfDataCollectionEnabled
     .DESCRIPTION
         Sends Az Upgrade Module metrics to Microsoft.
 
-        Data collection can be enabled or disabled with the Enable-AzUpgradeDataCollection and Disabled-AzUpgradeDataCollection commands.
+        Data collection can be enabled or disabled with the Enable-AzUpgradeDataCollection and Disable-AzUpgradeDataCollection commands.
 
     .PARAMETER Operation
         Specifies the operation or context for the metrics.
@@ -62,6 +62,7 @@ function Send-MetricsIfDataCollectionEnabled
         if ($dataCollectionSettings.DataCollectionEnabled -eq $true)
         {
             Write-Verbose -Message "Data collection option is enabled. Sending '$Operation' operation metrics."
+            Write-Verbose -Message "Operation duration: $($Duration.ToString())"
 
             try
             {
@@ -73,11 +74,8 @@ function Send-MetricsIfDataCollectionEnabled
                     {
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Find-AzUpgradeCommandReference"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props
@@ -148,11 +146,8 @@ function Send-MetricsIfDataCollectionEnabled
 
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "New-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props
@@ -171,11 +166,8 @@ function Send-MetricsIfDataCollectionEnabled
                     {
                         $operationProps = @{
                             # common props
-                            "powershellversion" = $PSVersionTable.PSVersion.ToString()
                             "command" = "Invoke-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "moduleversion" = $MyInvocation.MyCommand.Module.Version.ToString()
-                            "modulename" = "Az.Tools.Migration"
                             "issuccess" = "True"
 
                             # custom operation props

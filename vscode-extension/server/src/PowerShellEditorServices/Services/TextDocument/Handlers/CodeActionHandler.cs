@@ -88,6 +88,11 @@ namespace Microsoft.PowerShell.EditorServices.Handlers
                     continue;
                 }
 
+                if (diagnostic.Code != "ReadyToUpgradeCmdlet")
+                {
+                    continue;
+                }
+
                 string diagnosticId = AnalysisService.GetUniqueIdFromDiagnostic(diagnostic);
                 if (corrections.TryGetValue(diagnosticId, out MarkerCorrection correction))
                 {
