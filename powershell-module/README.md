@@ -43,7 +43,7 @@ This step can optionally be run for a single file by specifying the `FilePath` p
 
 ```powershell
 # Generate an upgrade plan for the script and module files in the specified folder and save it to a variable.
-$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts'
+$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts'
 
 # shows the entire upgrade plan
 $plan

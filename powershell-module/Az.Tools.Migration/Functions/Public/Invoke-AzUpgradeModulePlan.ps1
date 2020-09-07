@@ -18,7 +18,7 @@ function Invoke-AzUpgradeModulePlan
         The following example invokes the upgrade plan for a PowerShell module named "myModule". Generate a plan, review the upgrade steps, warnings, and errors, and then perform the upgrade.
 
         # generate a plan and save it to a variable.
-        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -DirectoryPath 'C:\Scripts\myModule'
+        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts\myModule'
 
         # write the plan to the console to review the upgrade steps, warnings, and errors.
         $plan

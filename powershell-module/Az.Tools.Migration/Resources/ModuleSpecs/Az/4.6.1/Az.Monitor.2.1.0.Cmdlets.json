@@ -3,7 +3,7 @@
     "Command": "Get-AzMetricDefinition",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -35,7 +35,7 @@
     "Command": "Get-AzMetric",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -101,7 +101,7 @@
     "Command": "Remove-AzLogProfile",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -137,7 +137,7 @@
     "Command": "Get-AzLogProfile",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -157,7 +157,7 @@
     "Command": "Add-AzLogProfile",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -209,7 +209,7 @@
     "Command": "Get-AzActivityLog",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "StartTime",
@@ -267,7 +267,7 @@
     "Command": "Set-AzDiagnosticSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -330,6 +330,14 @@
         "Aliases": null
       },
       {
+        "Name": "EnableLog",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableMetrics",
+        "Aliases": null
+      },
+      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -355,7 +363,7 @@
     "Command": "Get-AzDiagnosticSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -379,7 +387,7 @@
     "Command": "Remove-AzDiagnosticSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -415,7 +423,7 @@
     "Command": "New-AzAutoscaleNotification",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Webhook",
@@ -447,7 +455,7 @@
     "Command": "New-AzAutoscaleProfile",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -515,7 +523,7 @@
     "Command": "New-AzAutoscaleRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "MetricName",
@@ -579,7 +587,7 @@
     "Command": "Add-AzAutoscaleSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -643,7 +651,7 @@
     "Command": "Get-AzAutoscaleHistory",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -683,7 +691,7 @@
     "Command": "Get-AzAutoscaleSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -713,7 +721,7 @@
     "Command": "New-AzAutoscaleWebhook",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ServiceUri",
@@ -737,7 +745,7 @@
     "Command": "Remove-AzAutoscaleSetting",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -775,7 +783,7 @@
     "Command": "Add-AzMetricAlertRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "WindowSize",
@@ -853,7 +861,7 @@
     "Command": "Add-AzWebtestAlertRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "MetricName",
@@ -927,7 +935,7 @@
     "Command": "Get-AzAlertHistory",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -967,7 +975,7 @@
     "Command": "Get-AzAlertRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1001,7 +1009,7 @@
     "Command": "New-AzAlertRuleEmail",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "CustomEmail",
@@ -1025,7 +1033,7 @@
     "Command": "New-AzAlertRuleWebhook",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ServiceUri",
@@ -1049,7 +1057,7 @@
     "Command": "Remove-AzAlertRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1087,7 +1095,7 @@
     "Command": "Set-AzActivityLogAlert",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Location",
@@ -1159,7 +1167,7 @@
     "Command": "Get-AzActivityLogAlert",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1183,7 +1191,7 @@
     "Command": "New-AzActionGroup",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ActionGroupId",
@@ -1207,7 +1215,7 @@
     "Command": "New-AzActivityLogAlertCondition",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Field",
@@ -1231,7 +1239,7 @@
     "Command": "Enable-AzActivityLogAlert",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -1275,7 +1283,7 @@
     "Command": "Disable-AzActivityLogAlert",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -1319,7 +1327,7 @@
     "Command": "Remove-AzActivityLogAlert",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1363,7 +1371,7 @@
     "Command": "New-AzActionGroupReceiver",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -1531,7 +1539,7 @@
     "Command": "Set-AzActionGroup",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1591,7 +1599,7 @@
     "Command": "Get-AzActionGroup",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1615,7 +1623,7 @@
     "Command": "Remove-AzActionGroup",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1659,7 +1667,7 @@
     "Command": "New-AzMetricFilter",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Dimension",
@@ -1687,7 +1695,7 @@
     "Command": "Add-AzMetricAlertRuleV2",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -1781,7 +1789,7 @@
     "Command": "Get-AzMetricAlertRuleV2",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1811,7 +1819,7 @@
     "Command": "New-AzMetricAlertRuleV2DimensionSelection",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "DimensionName",
@@ -1839,7 +1847,7 @@
     "Command": "New-AzMetricAlertRuleV2Criteria",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "DynamicThreshold",
@@ -1927,7 +1935,7 @@
     "Command": "Remove-AzMetricAlertRuleV2",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Name",
@@ -1983,7 +1991,7 @@
     "Command": "New-AzScheduledQueryRuleSource",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Query",
@@ -2015,7 +2023,7 @@
     "Command": "New-AzScheduledQueryRuleSchedule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "FrequencyInMinutes",
@@ -2039,7 +2047,7 @@
     "Command": "New-AzScheduledQueryRuleTriggerCondition",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ThresholdOperator",
@@ -2067,7 +2075,7 @@
     "Command": "New-AzScheduledQueryRuleLogMetricTrigger",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ThresholdOperator",
@@ -2099,7 +2107,7 @@
     "Command": "New-AzScheduledQueryRuleAznsActionGroup",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ActionGroup",
@@ -2127,7 +2135,7 @@
     "Command": "New-AzScheduledQueryRuleAlertingAction",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "AznsAction",
@@ -2159,7 +2167,7 @@
     "Command": "New-AzScheduledQueryRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Source",
@@ -2227,7 +2235,7 @@
     "Command": "Get-AzScheduledQueryRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2255,7 +2263,7 @@
     "Command": "Set-AzScheduledQueryRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -2331,7 +2339,7 @@
     "Command": "Update-AzScheduledQueryRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -2379,7 +2387,7 @@
     "Command": "Remove-AzScheduledQueryRule",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -2427,7 +2435,7 @@
     "Command": "New-AzInsightsPrivateLinkScope",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Location",
@@ -2471,7 +2479,7 @@
     "Command": "Get-AzInsightsPrivateLinkScope",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2499,7 +2507,7 @@
     "Command": "Update-AzInsightsPrivateLinkScope",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceId",
@@ -2547,7 +2555,7 @@
     "Command": "Remove-AzInsightsPrivateLinkScope",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2591,7 +2599,7 @@
     "Command": "New-AzInsightsPrivateLinkScopedResource",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "LinkedResourceId",
@@ -2639,7 +2647,7 @@
     "Command": "Get-AzInsightsPrivateLinkScopedResource",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2675,7 +2683,7 @@
     "Command": "Remove-AzInsightsPrivateLinkScopedResource",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2723,7 +2731,7 @@
     "Command": "Get-AzLog",
     "IsAlias": false,
     "SourceModule": "Az.Monitor",
-    "Version": "2.0.2",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "StartTime",
