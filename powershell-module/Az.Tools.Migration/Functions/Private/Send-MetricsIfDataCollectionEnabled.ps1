@@ -76,7 +76,6 @@ function Send-MetricsIfDataCollectionEnabled
                             # common props
                             "command" = "Find-AzUpgradeCommandReference"
                             "commandparametersetname" = $ParameterSetName
-                            "issuccess" = "True"
 
                             # custom operation props
                             "find-azure-module-name" = $Properties.AzureModuleName
@@ -148,7 +147,6 @@ function Send-MetricsIfDataCollectionEnabled
                             # common props
                             "command" = "New-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "issuccess" = "True"
 
                             # custom operation props
                             "plan-to-azure-modulename" = $Properties.ToAzureModuleName
@@ -168,7 +166,6 @@ function Send-MetricsIfDataCollectionEnabled
                             # common props
                             "command" = "Invoke-AzUpgradeModulePlan"
                             "commandparametersetname" = $ParameterSetName
-                            "issuccess" = "True"
 
                             # custom operation props
                             "upgrade-success-file-count" = $Properties.SuccessFileUpdateCount

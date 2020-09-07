@@ -43,7 +43,7 @@ function Send-PageViewTelemetry
     )
     Process
     {
-        if($null -eq [Constants]::TelemetryClient) 
+        if ($null -eq [Constants]::TelemetryClient)
         {
             $TelemetryClient = New-Object Microsoft.ApplicationInsights.TelemetryClient
             $TelemetryClient.InstrumentationKey = [Constants]::PublicTelemetryInstrumentationKey
@@ -61,26 +61,26 @@ function Send-PageViewTelemetry
         $page.Properties["IsSuccess"] = $True.ToString()
         $page.Properties["OS"] = [System.Environment]::OSVersion.ToString()
 
-        $page.Properties["x-ms-client-request-id"]= [Constants]::CurrentSessionId
-        $page.Properties["PowerShellVersion"]= $PSVersionTable.PSVersion.ToString();
-        
-        if($null -ne $MyInvocation.MyCommand)
+        $page.Properties["x-ms-client-request-id"] = [Constants]::CurrentSessionId
+        $page.Properties["PowerShellVersion"] = $PSVersionTable.PSVersion.ToString();
+
+        if ($null -ne $MyInvocation.MyCommand)
         {
             $page.Properties["ModuleName"] = $MyInvocation.MyCommand.ModuleName
-            if($null -ne $MyInvocation.MyCommand.Module -and $null -ne $MyInvocation.MyCommand.Module.Version)
+            if ($null -ne $MyInvocation.MyCommand.Module -and $null -ne $MyInvocation.MyCommand.Module.Version)
             {
                 $page.Properties["ModuleVersion"] = $MyInvocation.MyCommand.Module.Version.ToString()
             }
         }
         $page.Properties["end-time"]= (Get-Date).ToUniversalTime().ToString("o")
         $page.Properties["duration"]= $Duration.ToString("c");
-        
+
         # prepare custom properties
         # convert the hashtable to a custom object, if properties were supplied.
 
-        if ($PSBoundParameters.ContainsKey('CustomProperties') -and $CustomProperties.Count -gt 0) 
+        if ($PSBoundParameters.ContainsKey('CustomProperties') -and $CustomProperties.Count -gt 0)
         {
-            foreach ($Key in $CustomProperties.Keys) 
+            foreach ($Key in $CustomProperties.Keys)
             {
                 $page.Properties[$Key] = $CustomProperties[$Key]
             }
@@ -92,7 +92,7 @@ function Send-PageViewTelemetry
         {
             $client.Flush()
         }
-        catch 
+        catch
         {
             Write-Warning -Message "Encountered exception while trying to flush telemetry events: $_"
         }
