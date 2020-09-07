@@ -103,7 +103,7 @@ function New-AzUpgradeModulePlan
             Mandatory=$true,
             HelpMessage='Specify the Az module version to upgrade to.')]
         [System.String]
-        [ValidateSet('4.4.0')]
+        [ValidateSet('4.6.1')]
         $ToAzVersion,
 
         [Parameter(Mandatory=$false)]
