@@ -45,7 +45,8 @@ function Send-PageViewTelemetry
     {
         if ('false' -eq $env:Azure_PS_Data_Collection)
         {
-            Write-Verbose -Message 'Skip telemtry because it is disabled'
+            Write-Verbose -Message 'Skip telemtry because of environment setting'
+            return
         }
 
         if ($null -eq [Constants]::TelemetryClient)
@@ -58,7 +59,7 @@ function Send-PageViewTelemetry
             [Constants]::TelemetryClient = $TelemetryClient
         }
 
-        if([string]::IsNullOrWhiteSpace([Constants]::HashMacAddress))
+        if ([string]::IsNullOrWhiteSpace([Constants]::HashMacAddress))
         {
             Write-Verbose -Message 'Hash mac address'
             $macAddress = ''
@@ -68,10 +69,11 @@ function Send-PageViewTelemetry
                 if($nic.OperationalStatus -eq 'Up' -and -not [string]::IsNullOrWhiteSpace($nic.GetPhysicalAddress()))
                 {
                     $macAddress = $nic.GetPhysicalAddress().ToString()
+                    break
                 }
             }
 
-            if($macAddress -ne '')
+            if ($macAddress -ne '')
             {
                 $bytes = [System.Text.Encoding]::UTF8.GetBytes($macAddress)
                 $sha256 = New-Object -TypeName System.Security.Cryptography.SHA256CryptoServiceProvider
