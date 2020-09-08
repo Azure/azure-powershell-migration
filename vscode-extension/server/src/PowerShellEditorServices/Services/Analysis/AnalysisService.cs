@@ -100,6 +100,10 @@ namespace Microsoft.PowerShell.EditorServices.Services
 
         private string _pssaSettingsFilePath;
 
+        private string _azureRmVersion;
+
+        private string _azVersion;
+
         private System.Management.Automation.PowerShell powerShell;
 
         /// <summary>
@@ -124,12 +128,14 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _mostRecentCorrectionsByFile = new ConcurrentDictionary<ScriptFile, CorrectionTableEntry>();
             _analysisEngineLazy = new Lazy<PssaCmdletAnalysisEngine>(InstantiateAnalysisEngine);
             _pssaSettingsFilePath = null;
+            _azureRmVersion = "6.13.1";
+            _azVersion = "4.6.1";
             powerShell = System.Management.Automation.PowerShell.Create()
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
                 .AddScript(@"Import-Module Az.Tools.Migration.psd1")
                 .AddScript("Disable-AzUpgradeDataCollection")
-                .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"4.4.0\"")
-                .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"6.13.1\"");
+                .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"" + _azVersion + "\"")
+                .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"" + _azureRmVersion + "\"");
             powerShell.Invoke();
         }
 
@@ -217,7 +223,7 @@ namespace Microsoft.PowerShell.EditorServices.Services
 
             Hashtable commentHelpSettings = AnalysisService.GetCommentHelpRuleSettings(helpLocation, forBlockComment);
 
-            ScriptFileMarker[] analysisResults = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, functionText, commentHelpSettings).ConfigureAwait(false);
+            ScriptFileMarker[] analysisResults = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, _azureRmVersion, _azVersion, functionText, commentHelpSettings).ConfigureAwait(false);
 
             if (analysisResults.Length == 0
                 || analysisResults[0]?.Correction?.Edits == null
@@ -391,7 +397,7 @@ namespace Microsoft.PowerShell.EditorServices.Services
 
             foreach (ScriptFile scriptFile in filesToAnalyze)
             {
-                ScriptFileMarker[] semanticMarkers = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, scriptFile.Contents).ConfigureAwait(false);
+                ScriptFileMarker[] semanticMarkers = await AnalysisEngine.AnalyzeScriptAsync(powerShell.Runspace, _azureRmVersion, _azVersion, scriptFile.Contents).ConfigureAwait(false);
 
                 scriptFile.DiagnosticMarkers.AddRange(semanticMarkers);
 
