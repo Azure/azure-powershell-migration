@@ -3,7 +3,7 @@
     "Command": "Get-AzApplyUpdate",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -47,7 +47,7 @@
     "Command": "Get-AzConfigurationAssignment",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -87,7 +87,7 @@
     "Command": "Get-AzMaintenanceConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -111,7 +111,7 @@
     "Command": "Get-AzMaintenanceUpdate",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -151,7 +151,7 @@
     "Command": "New-AzApplyUpdate",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -207,7 +207,7 @@
     "Command": "New-AzConfigurationAssignment",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -279,7 +279,7 @@
     "Command": "New-AzMaintenanceConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -303,6 +303,30 @@
       },
       {
         "Name": "MaintenanceScope",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Timezone",
+        "Aliases": null
+      },
+      {
+        "Name": "Duration",
+        "Aliases": null
+      },
+      {
+        "Name": "Visibility",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurEvery",
         "Aliases": null
       },
       {
@@ -335,7 +359,7 @@
     "Command": "Remove-AzConfigurationAssignment",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -403,7 +427,7 @@
     "Command": "Remove-AzMaintenanceConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -451,7 +475,7 @@
     "Command": "Update-AzMaintenanceConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.Maintenance",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -487,6 +511,30 @@
         "Name": "Confirm",
         "Aliases": [
           "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMaintenancePublicConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.Maintenance",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
         ]
       }
     ]

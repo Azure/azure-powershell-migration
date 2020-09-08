@@ -1,9 +1,57 @@
 [
   {
+    "Command": "Add-AzApiManagementApiToGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProvisioningState",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Add-AzApiManagementApiToProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -35,7 +83,7 @@
     "Command": "Add-AzApiManagementProductToGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -67,7 +115,7 @@
     "Command": "Add-AzApiManagementRegion",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ApiManagement",
@@ -103,7 +151,7 @@
     "Command": "Add-AzApiManagementUserToGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -135,7 +183,7 @@
     "Command": "Backup-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -175,7 +223,7 @@
     "Command": "Export-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -231,7 +279,7 @@
     "Command": "Get-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -259,7 +307,7 @@
     "Command": "Get-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -282,6 +330,10 @@
         "Aliases": null
       },
       {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -295,7 +347,7 @@
     "Command": "Get-AzApiManagementApiRelease",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -327,7 +379,7 @@
     "Command": "Get-AzApiManagementApiRevision",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -355,7 +407,7 @@
     "Command": "Get-AzApiManagementApiSchema",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -387,7 +439,7 @@
     "Command": "Get-AzApiManagementApiVersionSet",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -415,7 +467,7 @@
     "Command": "Get-AzApiManagementAuthorizationServer",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -443,7 +495,7 @@
     "Command": "Get-AzApiManagementAuthorizationServerClientSecret",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -471,7 +523,7 @@
     "Command": "Get-AzApiManagementBackend",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -499,7 +551,7 @@
     "Command": "Get-AzApiManagementCache",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -527,7 +579,7 @@
     "Command": "Get-AzApiManagementCertificate",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -567,7 +619,7 @@
     "Command": "Get-AzApiManagementDiagnostic",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -596,10 +648,86 @@
     ]
   },
   {
+    "Command": "Get-AzApiManagementGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGatewayKey",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Get-AzApiManagementGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -635,7 +763,7 @@
     "Command": "Get-AzApiManagementIdentityProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -659,7 +787,7 @@
     "Command": "Get-AzApiManagementIdentityProviderClientSecret",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -683,7 +811,7 @@
     "Command": "Get-AzApiManagementLogger",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -707,7 +835,7 @@
     "Command": "Get-AzApiManagementNetworkStatus",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ApiManagementObject",
@@ -739,7 +867,7 @@
     "Command": "Get-AzApiManagementOpenIdConnectProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -767,7 +895,7 @@
     "Command": "Get-AzApiManagementOpenIdConnectProviderClientSecret",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -791,7 +919,7 @@
     "Command": "Get-AzApiManagementOperation",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -823,7 +951,7 @@
     "Command": "Get-AzApiManagementPolicy",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -883,7 +1011,7 @@
     "Command": "Get-AzApiManagementProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -915,7 +1043,7 @@
     "Command": "Get-AzApiManagementNamedValue",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -947,7 +1075,7 @@
     "Command": "Get-AzApiManagementNamedValueSecretValue",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -971,7 +1099,7 @@
     "Command": "Get-AzApiManagementSsoToken",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -999,7 +1127,7 @@
     "Command": "Get-AzApiManagementSubscription",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1035,7 +1163,7 @@
     "Command": "Get-AzApiManagementSubscriptionKey",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1059,7 +1187,7 @@
     "Command": "Get-AzApiManagementTenantAccess",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1079,7 +1207,7 @@
     "Command": "Get-AzApiManagementTenantAccessSecret",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1099,7 +1227,7 @@
     "Command": "Get-AzApiManagementTenantGitAccess",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1119,7 +1247,7 @@
     "Command": "Get-AzApiManagementTenantGitAccessSecret",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1139,7 +1267,7 @@
     "Command": "Get-AzApiManagementTenantSyncState",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1159,7 +1287,7 @@
     "Command": "Get-AzApiManagementUser",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1203,7 +1331,7 @@
     "Command": "Get-AzApiManagementUserSsoUrl",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1227,7 +1355,7 @@
     "Command": "Import-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1299,7 +1427,7 @@
     "Command": "New-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -1383,7 +1511,7 @@
     "Command": "New-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1479,7 +1607,7 @@
     "Command": "New-AzApiManagementApiRelease",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1527,7 +1655,7 @@
     "Command": "New-AzApiManagementApiRevision",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1579,7 +1707,7 @@
     "Command": "New-AzApiManagementApiSchema",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1631,7 +1759,7 @@
     "Command": "New-AzApiManagementApiVersionSet",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1687,7 +1815,7 @@
     "Command": "New-AzApiManagementAuthorizationServer",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1775,7 +1903,7 @@
     "Command": "New-AzApiManagementBackend",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1851,7 +1979,7 @@
     "Command": "New-AzApiManagementBackendCredential",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "CertificateThumbprint",
@@ -1887,7 +2015,7 @@
     "Command": "New-AzApiManagementBackendProxy",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Url",
@@ -1911,7 +2039,7 @@
     "Command": "New-AzApiManagementBackendServiceFabric",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ManagementEndpoint",
@@ -1947,7 +2075,7 @@
     "Command": "New-AzApiManagementCache",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -1995,7 +2123,7 @@
     "Command": "New-AzApiManagementCertificate",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2031,7 +2159,7 @@
     "Command": "New-AzApiManagementContext",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2059,7 +2187,7 @@
     "Command": "New-AzApiManagementCustomHostnameConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Hostname",
@@ -2107,7 +2235,7 @@
     "Command": "New-AzApiManagementDiagnostic",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2164,10 +2292,106 @@
     ]
   },
   {
+    "Command": "New-AzApiManagementGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LocationData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Hostname",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "NegotiateClientCertificate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "New-AzApiManagementGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2207,7 +2431,7 @@
     "Command": "New-AzApiManagementHttpMessageDiagnostic",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "HeadersToLog",
@@ -2231,7 +2455,7 @@
     "Command": "New-AzApiManagementIdentityProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2303,7 +2527,7 @@
     "Command": "New-AzApiManagementLogger",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2347,7 +2571,7 @@
     "Command": "New-AzApiManagementOpenIdConnectProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2391,7 +2615,7 @@
     "Command": "New-AzApiManagementOperation",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2451,7 +2675,7 @@
     "Command": "New-AzApiManagementPipelineDiagnosticSetting",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Request",
@@ -2475,7 +2699,7 @@
     "Command": "New-AzApiManagementProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2524,10 +2748,42 @@
     ]
   },
   {
+    "Command": "New-AzApiManagementResourceLocationObject",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "City",
+        "Aliases": null
+      },
+      {
+        "Name": "District",
+        "Aliases": null
+      },
+      {
+        "Name": "CountryOrRegion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "New-AzApiManagementNamedValue",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2579,7 +2835,7 @@
     "Command": "New-AzApiManagementRegion",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Location",
@@ -2607,7 +2863,7 @@
     "Command": "New-AzApiManagementSamplingSetting",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "SamplingType",
@@ -2631,7 +2887,7 @@
     "Command": "New-AzApiManagementSslSetting",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "FrontendProtocol",
@@ -2663,7 +2919,7 @@
     "Command": "New-AzApiManagementSubscription",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2719,7 +2975,7 @@
     "Command": "New-AzApiManagementSystemCertificate",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "StoreName",
@@ -2747,7 +3003,7 @@
     "Command": "New-AzApiManagementUser",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2795,7 +3051,7 @@
     "Command": "New-AzApiManagementUserToken",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2827,7 +3083,7 @@
     "Command": "New-AzApiManagementVirtualNetwork",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "SubnetResourceId",
@@ -2847,7 +3103,7 @@
     "Command": "Publish-AzApiManagementTenantGitConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2895,7 +3151,7 @@
     "Command": "Remove-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -2935,7 +3191,7 @@
     "Command": "Remove-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -2972,10 +3228,54 @@
     ]
   },
   {
+    "Command": "Remove-AzApiManagementApiFromGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Remove-AzApiManagementApiFromProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3007,7 +3307,7 @@
     "Command": "Remove-AzApiManagementApiRelease",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3055,7 +3355,7 @@
     "Command": "Remove-AzApiManagementApiRevision",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3103,7 +3403,7 @@
     "Command": "Remove-AzApiManagementApiSchema",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3155,7 +3455,7 @@
     "Command": "Remove-AzApiManagementApiVersionSet",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3203,7 +3503,7 @@
     "Command": "Remove-AzApiManagementAuthorizationServer",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3243,7 +3543,7 @@
     "Command": "Remove-AzApiManagementBackend",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3283,7 +3583,7 @@
     "Command": "Remove-AzApiManagementCache",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3331,7 +3631,7 @@
     "Command": "Remove-AzApiManagementCertificate",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3371,7 +3671,7 @@
     "Command": "Remove-AzApiManagementDiagnostic",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3420,10 +3720,110 @@
     ]
   },
   {
+    "Command": "Remove-AzApiManagementGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Remove-AzApiManagementGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3463,7 +3863,7 @@
     "Command": "Remove-AzApiManagementIdentityProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3503,7 +3903,7 @@
     "Command": "Remove-AzApiManagementLogger",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3543,7 +3943,7 @@
     "Command": "Remove-AzApiManagementOpenIdConnectProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3583,7 +3983,7 @@
     "Command": "Remove-AzApiManagementOperation",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3631,7 +4031,7 @@
     "Command": "Remove-AzApiManagementPolicy",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3679,7 +4079,7 @@
     "Command": "Remove-AzApiManagementProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3723,7 +4123,7 @@
     "Command": "Remove-AzApiManagementProductFromGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3755,7 +4155,7 @@
     "Command": "Remove-AzApiManagementNamedValue",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3795,7 +4195,7 @@
     "Command": "Remove-AzApiManagementRegion",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ApiManagement",
@@ -3819,7 +4219,7 @@
     "Command": "Remove-AzApiManagementSubscription",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3867,7 +4267,7 @@
     "Command": "Remove-AzApiManagementUser",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3911,7 +4311,7 @@
     "Command": "Remove-AzApiManagementUserFromGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -3943,7 +4343,7 @@
     "Command": "Restore-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -3983,7 +4383,7 @@
     "Command": "Save-AzApiManagementTenantGitConfiguration",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4027,7 +4427,7 @@
     "Command": "Set-AzApiManagement",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -4075,7 +4475,7 @@
     "Command": "Set-AzApiManagementApi",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4155,7 +4555,7 @@
     "Command": "Set-AzApiManagementApiRevision",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ApiRevision",
@@ -4251,7 +4651,7 @@
     "Command": "Set-AzApiManagementApiSchema",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4315,7 +4715,7 @@
     "Command": "Set-AzApiManagementApiVersionSet",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4379,7 +4779,7 @@
     "Command": "Set-AzApiManagementAuthorizationServer",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4471,7 +4871,7 @@
     "Command": "Set-AzApiManagementBackend",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4555,7 +4955,7 @@
     "Command": "Set-AzApiManagementCertificate",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4595,7 +4995,7 @@
     "Command": "Set-AzApiManagementDiagnostic",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4664,10 +5064,66 @@
     ]
   },
   {
+    "Command": "Update-AzApiManagementGateway",
+    "IsAlias": false,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LocationData",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Set-AzApiManagementGroup",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4715,7 +5171,7 @@
     "Command": "Set-AzApiManagementIdentityProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4795,7 +5251,7 @@
     "Command": "Set-AzApiManagementLogger",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4855,7 +5311,7 @@
     "Command": "Set-AzApiManagementOpenIdConnectProvider",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4915,7 +5371,7 @@
     "Command": "Set-AzApiManagementOperation",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -4991,7 +5447,7 @@
     "Command": "Set-AzApiManagementPolicy",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5047,7 +5503,7 @@
     "Command": "Set-AzApiManagementProduct",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5115,7 +5571,7 @@
     "Command": "Set-AzApiManagementNamedValue",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5171,7 +5627,7 @@
     "Command": "Set-AzApiManagementSubscription",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5247,7 +5703,7 @@
     "Command": "Set-AzApiManagementTenantAccess",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5275,7 +5731,7 @@
     "Command": "Set-AzApiManagementUser",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5339,7 +5795,7 @@
     "Command": "Update-AzApiManagementApiRelease",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5391,7 +5847,7 @@
     "Command": "Update-AzApiManagementCache",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "Context",
@@ -5451,7 +5907,7 @@
     "Command": "Update-AzApiManagementRegion",
     "IsAlias": false,
     "SourceModule": "Az.ApiManagement",
-    "Version": "2.0.1",
+    "Version": "2.1.0",
     "Parameters": [
       {
         "Name": "ApiManagement",
