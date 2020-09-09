@@ -43,13 +43,44 @@ function Send-PageViewTelemetry
     )
     Process
     {
+        if ('false' -eq $env:Azure_PS_Data_Collection)
+        {
+            Write-Verbose -Message 'Skip telemtry because of environment setting'
+            return
+        }
+
         if ($null -eq [Constants]::TelemetryClient)
         {
+            Write-Verbose -Message 'Initialize telemetry client'
             $TelemetryClient = New-Object Microsoft.ApplicationInsights.TelemetryClient
             $TelemetryClient.InstrumentationKey = [Constants]::PublicTelemetryInstrumentationKey
             $TelemetryClient.Context.Session.Id = $CurrentSessionId
             $TelemetryClient.Context.Device.OperatingSystem = [System.Environment]::OSVersion.ToString()
             [Constants]::TelemetryClient = $TelemetryClient
+        }
+
+        if ([string]::IsNullOrWhiteSpace([Constants]::HashMacAddress))
+        {
+            Write-Verbose -Message 'Hash mac address'
+            $macAddress = ''
+            $nics = [System.Net.NetworkInformation.NetworkInterface]::GetAllNetworkInterfaces()
+            foreach ($nic in $nics)
+            {
+                if($nic.OperationalStatus -eq 'Up' -and -not [string]::IsNullOrWhiteSpace($nic.GetPhysicalAddress()))
+                {
+                    $macAddress = $nic.GetPhysicalAddress().ToString()
+                    break
+                }
+            }
+
+            if ($macAddress -ne '')
+            {
+                $bytes = [System.Text.Encoding]::UTF8.GetBytes($macAddress)
+                $sha256 = New-Object -TypeName System.Security.Cryptography.SHA256CryptoServiceProvider
+                $macAddress = [System.BitConverter]::ToString($sha256.ComputeHash($bytes))
+                $macAddress = $macAddress.Replace('-', '').ToLowerInvariant()
+            }
+            [Constants]::HashMacAddress = $macAddress
         }
 
         $client = [Constants]::TelemetryClient
@@ -59,10 +90,12 @@ function Send-PageViewTelemetry
         $page.Duration = $Duration
 
         $page.Properties["IsSuccess"] = $True.ToString()
-        $page.Properties["OS"] = [System.Environment]::OSVersion.ToString()
-
-        $page.Properties["x-ms-client-request-id"] = [Constants]::CurrentSessionId
         $page.Properties["PowerShellVersion"] = $PSVersionTable.PSVersion.ToString();
+        $page.Properties["OS"] = [System.Environment]::OSVersion.ToString()
+        $page.Properties['HostVersion'] = $PSCmdlet.Host.Version
+        $page.Properties['HashMacAddress'] = [Constants]::HashMacAddress
+        $page.Properties['PowerShellVersion'] = $PSVersionTable.PSVersion.ToString()
+        $page.Properties["x-ms-client-request-id"] = [Constants]::CurrentSessionId
 
         if ($null -ne $MyInvocation.MyCommand)
         {
