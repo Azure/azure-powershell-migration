@@ -1,7 +1,31 @@
-# Az.Tools.Migration
+# AzureRM to Az Migration
 
-Az.Tools.Migration is a PowerShell module for automatically upgrading your PowerShell scripts and
-script modules from AzureRM to the Az PowerShell module.
+Effortlessly migrate your PowerShell scripts from AzureRM to the [Az PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps).
+
+This repository includes a PowerShell module and a VSCode extension to automate the migration of
+your PowerShell scripts and modules from AzureRM to the Az PowerShell module.
+
+## Repository Structure
+
+* common
+  * Resources shared by the PowerShell module and the VSCode extension.
+  * Script samples used for testing purposes.
+
+* docs
+  * Quick starts and additional documentation.
+
+* powershell-module
+  * Code for the Az.Tools.Migration PowerShell module.
+
+* vscode-extension
+  * Code for the VSCode extension.
+
+The current version of the migration toolkit is aimed at AzureRM to Az migration. We are
+considering adding the additional capability to migrate between Az versions.
+
+## Feedback
+
+We welcome issues and PRs. Feel free to open issues for suggestions of new features.
 
 ## Contributing
 
