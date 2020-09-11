@@ -1,9 +1,12 @@
-# AzureRM to Az Migration
+# AzureRM to Az Migration Toolkit
 
 Effortlessly migrate your PowerShell scripts from AzureRM to the [Az PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps).
 
 This repository includes a PowerShell module and a VSCode extension to automate the migration of
 your PowerShell scripts and modules from AzureRM to the Az PowerShell module.
+
+The current version of the migration toolkit is aimed at AzureRM to Az migration. We are
+considering adding the additional capability to migrate between Az versions.
 
 ## Repository Structure
 
@@ -19,9 +22,6 @@ your PowerShell scripts and modules from AzureRM to the Az PowerShell module.
 
 * vscode-extension
   * Code for the VSCode extension.
-
-The current version of the migration toolkit is aimed at AzureRM to Az migration. We are
-considering adding the additional capability to migrate between Az versions.
 
 ## Feedback
 
