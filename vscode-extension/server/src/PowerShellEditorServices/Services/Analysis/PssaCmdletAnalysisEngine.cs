@@ -227,15 +227,21 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// <returns>A string which is the full path of temp file.</returns>
         private string GetTempFilePath()
         {
+            string tempFilePath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
+            Directory.CreateDirectory(tempFilePath);
+
+            string tempFileName = "";
             Random rand = new Random();
             string alph = "abcdefghijklmnopqrstuvwxyz";
             int len = 6;
-            string tempFileName = "azure-powershell-migration-";
+
             for(int i =0; i<len; ++i)
             {
                 tempFileName = tempFileName + alph.ElementAt(rand.Next(26));
             }
-            return Path.GetTempPath() + tempFileName + ".ps1";
+            tempFileName += ".ps1";
+
+            return Path.Combine(tempFilePath, tempFileName);
         }
 
         /// <summary>
@@ -243,10 +249,8 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// </summary>
         public void CleanTempFile()
         {
-            new List<string>(Directory.GetFiles(Path.GetTempPath())).ForEach(file => {
-                if (file.IndexOf("azure-powershell-migration-", StringComparison.OrdinalIgnoreCase) >= 0)
-                File.Delete(file);
-            });
+            string tempFilePath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
+            Directory.Delete(tempFilePath, true);
         }
 
         /// <summary>
@@ -279,6 +283,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             //     .AddParameter("Severity", s_scriptMarkerLevels);
 
             var tempFilePath = GetTempFilePath();
+
             using (StreamWriter sw = File.CreateText(tempFilePath))
             {
                 sw.Write(scriptContent);
