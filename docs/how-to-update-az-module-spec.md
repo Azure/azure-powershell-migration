@@ -1,50 +1,60 @@
 # How to Update Az Module Spec
 
-The Az module command and alias specifications are stored in `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{version}`.
+The Az PowerShell module command and alias specifications are stored in
+`powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{version}`.
 
-Occasionally these should be updated to latest. This document describes how to update the spec to latest.
+Occasionally, these should be updated to latest. This document describes how to update the spec to latest.
 
 ## Requirements
 
-* You have PowerShell Core 7.x or later installed on your system.
-* You have installed the `Az.Tools.Migration` module and it is available in your PSModulePath.
-* You have cloned this Git repository to your local computer.
+Have the following installed on your system:
+
+* PowerShell 7.x or later.
+* `Az.Tools.Migration` module. This module must exist in a file system path specified in
+  `$env:PSModulePath`.
+* Cloned the [azure-powershell-migration](https://github.com/Azure/azure-powershell-migration)
+  GitHub repository to your local computer.
 
 ## Update Instructions
 
-1. Open a PowerShell Core (7.x or later) prompt.
+1. Open a PowerShell 7.x or later prompt.
 
-2. Install the desired target version of Az to your local user scope. For example, this would install it for v4.6.1.
+1. Install the desired target version of the Az PowerShell module to your local computer, specifying
+   the `CurrentUser` scope. For example, the following installs v4.6.1 in the current user's scope.
 
-    ```powershell
-    Install-Module -Name Az -RequiredVersion 4.6.1 -Scope CurrentUser -AllowClobber -SkipPublisherCheck -Force
-    ```
+   ```powershell
+   Install-Module -Name Az -RequiredVersion 4.6.1 -Scope CurrentUser -AllowClobber -Force
+   ```
 
-3. Import the Az.Tools.Migration module.
+1. Import the Az.Tools.Migration PowerShell module.
 
-    ```powershell
-    Import-Module Az.Tools.Migration
-    ```
+   ```powershell
+   Import-Module -Name Az.Tools.Migration
+   ```
 
-4. Run the module spec generation script for the desired version.
+1. Run the module spec generation script for the desired version.
 
-    * Update the module repo path to where you have cloned the repository.
-    * Ensure the Az module version variable is also set correctly to the desired version.
+   * Update the module repo path to the file system location where you cloned the repository.
+   * Ensure the Az PowerShell module version variable is set to the desired version.
 
-    ```powershell
-    # setup
-    $moduleRepo = "C:\source\azure-powershell-migration"
-    $azModuleVersion = "4.6.1"
-    $outputDirectory = Join-Path -Path $moduleRepo -ChildPath "powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\$azModuleVersion"
+   ```powershell
+   # setup
+   $moduleRepo = 'C:\source\azure-powershell-migration'
+   $azModuleVersion = '4.6.1'
+   $outputDirectory = Join-Path -Path $moduleRepo -ChildPath "powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\$azModuleVersion"
 
-    # execute
-    . $moduleRepo\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory $outputDirectory
-    ```
+   # execute
+   . $moduleRepo\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory $outputDirectory
+   ```
 
-5. Update the Az version listed in documentation, function help, function parameter validation, and unit tests. The easiest way to do this is to do a search and replace on the old version. For example search for '4.4.0' and replace with '4.6.1'.
+1. Update the Az PowerShell module version listed in documentation, function help, function
+   parameter validation, and unit tests. The easiest way to do this is to perform a search to find
+   and replace the old version. For example, search for '4.4.0' and replace with '4.6.1'.
 
-6. Remove the old module spec files from module resources: `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`
+1. Remove the old module spec files from module resources:
+   `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`.
 
-7. Run the unit tests to make sure all of the unit tests still pass. Usually a couple of tests will fail because the expected number of aliases or cmdlets from the specs has changed.
+1. Run the unit tests to make sure all unit tests pass. It's not uncommon for some tests to fail
+   because the expected number of aliases or cmdlets from the specs has changed.
 
-8. Submit a pull request to commit the new changes.
+1. Submit a pull request to commit the new changes.
