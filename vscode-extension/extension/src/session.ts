@@ -38,7 +38,7 @@ export class SessionManager implements Middleware {
     public HostName: string;
     public HostVersion: string;
     public PowerShellExeDetails: IPowerShellExeDetails;
-    private ShowSessionMenuCommandName = "PowerShell.ShowSessionMenu";
+    private ShowSessionMenuCommandName = "AzurePowerShell.ShowSessionMenu";
     private editorServicesArgs: string;
     private sessionStatus: SessionStatus = SessionStatus.NeverStarted;
     private suppressRestartPrompt: boolean;
@@ -417,11 +417,11 @@ export class SessionManager implements Middleware {
 
     private registerCommands(): void {
         this.registeredCommands = [
-            vscode.commands.registerCommand("PowerShell.RestartSession", () => { this.restartSession(); }),
+            vscode.commands.registerCommand("AzurePowerShell.RestartSession", () => { this.restartSession(); }),
             vscode.commands.registerCommand(this.ShowSessionMenuCommandName, () => { this.showSessionMenu(); }),
             vscode.workspace.onDidChangeConfiguration(() => this.onConfigurationUpdated()),
             vscode.commands.registerCommand(
-                "PowerShell.ShowSessionConsole", (isExecute?: boolean) => { this.showSessionConsole(isExecute); }),
+                "AzurePowerShell.ShowSessionConsole", (isExecute?: boolean) => { this.showSessionConsole(isExecute); }),
         ];
     }
 
@@ -731,7 +731,7 @@ export class SessionManager implements Middleware {
         const menuItems: SessionMenuItem[] = [
             new SessionMenuItem(
                 sessionText,
-                () => { vscode.commands.executeCommand("PowerShell.ShowLogs"); }),
+                () => { vscode.commands.executeCommand("AzurePowerShell.ShowLogs"); }),
 
             // Add all of the different PowerShell options
             ...powerShellItems,
@@ -746,7 +746,7 @@ export class SessionManager implements Middleware {
 
             new SessionMenuItem(
                 "Open Session Logs Folder",
-                () => { vscode.commands.executeCommand("PowerShell.OpenLogFolder"); }),
+                () => { vscode.commands.executeCommand("AzurePowerShell.OpenLogFolder"); }),
 
             new SessionMenuItem(
                 "Modify 'powerShell.powerShellAdditionalExePaths' in Settings",
