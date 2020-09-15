@@ -222,6 +222,38 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         }
 
         /// <summary>
+        /// get temp file path
+        /// </summary>
+        /// <returns>A string which is the full path of temp file.</returns>
+        private string GetTempFilePath()
+        {
+            string tempFilePath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
+            Directory.CreateDirectory(tempFilePath);
+
+            string tempFileName = "";
+            Random rand = new Random();
+            string alph = "abcdefghijklmnopqrstuvwxyz";
+            int len = 6;
+
+            for(int i =0; i<len; ++i)
+            {
+                tempFileName = tempFileName + alph.ElementAt(rand.Next(26));
+            }
+            tempFileName += ".ps1";
+
+            return Path.Combine(tempFilePath, tempFileName);
+        }
+
+        /// <summary>
+        /// delete all temp file
+        /// </summary>
+        public void CleanTempFile()
+        {
+            string tempFilePath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
+            Directory.Delete(tempFilePath, true);
+        }
+
+        /// <summary>
         /// Analyze a given script using PSScriptAnalyzer.
         /// </summary>
         /// <param name="scriptContent">The contents of the script to analyze.</param>
@@ -250,8 +282,9 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             //     .AddParameter("ScriptDefinition", scriptContent)
             //     .AddParameter("Severity", s_scriptMarkerLevels);
 
-            var path = "analysis.ps1";
-            using (StreamWriter sw = File.CreateText(path))
+            var tempFilePath = GetTempFilePath();
+
+            using (StreamWriter sw = File.CreateText(tempFilePath))
             {
                 sw.Write(scriptContent);
             }
@@ -261,10 +294,9 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             // .AddScript(@"Import-Module Az.Tools.Migration.psd1")
             // .AddScript(@"New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.4.0 -FilePath " + path);
 
+            string upgradeModulePlanCommand = string.Format("New-AzUpgradeModulePlan -FilePath {0} -FromAzureRmVersion '{1}' -ToAzVersion '{2}' -AzureRmModuleSpec $azureRMSpec -AzModuleSpec $azSpec", tempFilePath, azureRmVersion, azVersion);
             var command = new PSCommand()
-                .AddScript("New-AzUpgradeModulePlan -FilePath " + path + 
-                " -FromAzureRmVersion \"" + azureRmVersion + "\" -ToAzVersion \"" + azVersion + "\"" + 
-                "-AzureRmModuleSpec $azureRMSpec -AzModuleSpec $azSpec");
+                .AddScript(upgradeModulePlanCommand);
 
             // object settingsValue = settings ?? _settingsParameter;
             // if (settingsValue != null)
@@ -370,6 +402,8 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
                     // * CompositionContainer.ComposeParts complaining that "...Only one batch can be composed at a time"
                     _logger.LogError(ex.Message);
                 }
+
+                CleanTempFile();
 
                 return result;
             }
