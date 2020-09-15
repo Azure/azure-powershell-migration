@@ -157,7 +157,7 @@ export function load(): ISettings {
 
     const defaultDeveloperSettings: IDeveloperSettings = {
         featureFlags: [],
-        bundledModulesPath: "../../server/module",
+        bundledModulesPath: "../server/module",
         editorServicesLogLevel: "Normal",
         editorServicesWaitForDebugger: false,
         waitForSessionFileTimeoutSeconds: 240,
@@ -233,7 +233,7 @@ export function load(): ISettings {
         promptToUpdatePackageManagement:
             configuration.get<boolean>("promptToUpdatePackageManagement", true),
         bundledModulesPath:
-            "../../PowerShellEditorServices/module",
+            "../server/module",
         useX86Host:
             configuration.get<boolean>("useX86Host", false),
         enableProfileLoading:
