@@ -15,7 +15,10 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { } -Verifiable
+
+            # in 'ModifyExistingFiles' mode, we must specify a same path as the original file.
+            # mock verification below will validate that we indeed passed the correct path for this mode.
+            Mock -CommandName Set-Content -MockWith { } -ParameterFilter { $Path -eq "C:\mock-file.ps1" } -Verifiable
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -45,7 +48,10 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { } -Verifiable
+
+            # in 'SaveChangesToNewFiles' mode, we must specify a new path (it doesn't match the original file)
+            # mock verification below will validate that we indeed passed the correct path for this mode.
+            Mock -CommandName Set-Content -MockWith { } -ParameterFilter { $Path -eq "C:\mock-file_az_upgraded.ps1" } -Verifiable
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -104,7 +110,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { } -Verifiable
+            Mock -CommandName Set-Content -MockWith { }
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -149,7 +155,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { } -Verifiable
+            Mock -CommandName Set-Content -MockWith { }
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
@@ -197,7 +203,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
             Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { } -Verifiable
+            Mock -CommandName Set-Content -MockWith { }
 
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
