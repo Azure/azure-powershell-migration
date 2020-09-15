@@ -35,8 +35,7 @@ const documentSelector: DocumentSelector = [
 ];
 
 export function activate(context: vscode.ExtensionContext): void {
-    console.debug('===========================================');
-    console.log('Congratulations, your extension "azure-powershell-migration" is now active!');
+    console.debug('"azps-tools" is activating ...');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -72,12 +71,14 @@ export function activate(context: vscode.ExtensionContext): void {
         sessionManager.start();
     }
 
-    let disposable = vscode.commands.registerCommand('azure-powershell-migration.selectVersion', async () => {
+    let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
         var sourceVersion = await getSrcVersion();
         vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
     });
     
     context.subscriptions.push(disposable);
+
+    console.log('Congratulations, your extension "azps-tools" is now active!');
 }
 
 export function deactivate(): void {

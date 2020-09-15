@@ -307,7 +307,7 @@ export async function multiStepInput(context: ExtensionContext) {
 }
 
 export async function getSrcVersion(){
-	return window.showQuickPick(['AzureRM', 'Az1.0', 'Az2.0','Az3.0'],{
+	return window.showQuickPick(['AzureRM'],{
 		placeHolder: 'Select source scripts version'
 	});
 }
