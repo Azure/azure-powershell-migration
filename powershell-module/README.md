@@ -26,8 +26,8 @@ Az.Tools.Migration module detects commands based on AzureRM 6.13.1.
 
 ### Step 1: Backup your code
 
-**IMPORTANT**: This module performs an in-place upgrade of the codebase you specify. Be certain that
-your target code is backed-up or checked-in to source control before proceeding.
+**IMPORTANT**: There is no undo operation. Always ensure that you have a backup copy of your PowerShell scripts
+and modules that you're attempting to upgrade.
 
 ### Step 2: Generate an upgrade plan
 
@@ -54,12 +54,16 @@ $plan | where PlanResult -ne ReadyToUpgrade | format-list
 
 ### Step 3: Execute the upgrade plan
 
-Execute the upgrade plan. This step performs an in-place upgrade of the specified codebase with the
-exception of the errors from the previous step.
+The upgrade plan is executed when you run the `Invoke-AzUpgradeModulePlan` cmdlet. This command performs 
+an upgrade of the specified file or folders except for any errors that were identified by the `New-AzUpgradeModulePlan` cmdlet.
+
+This command requires you to specify if the files should be modified in place or if new files should be saved 
+alongside your original files (leaving originals unmodified).
 
 ```powershell
 # Execute the automatic upgrade plan and save the results to a variable.
-$result = Invoke-AzUpgradeModulePlan -Plan $plan
+# Specify 'ModifyExistingFiles' to the -FileEditMode parameter if you would like the files to be modified in place instead of having new files created.
+$result = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode SaveChangesToNewFiles
 
 # shows the entire upgrade operation result
 $result
