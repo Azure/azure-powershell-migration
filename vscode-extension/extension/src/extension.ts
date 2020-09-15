@@ -59,34 +59,11 @@ export function activate(context: vscode.ExtensionContext): void {
 
     // Register commands that do not require Language client
     commandRegistrations = [
-        // new ExamplesFeature(),
-        // new GenerateBugReportFeature(sessionManager),
-        // new ISECompatibilityFeature(),
-        // new OpenInISEFeature(),
-        // new PesterTestsFeature(sessionManager),
-        // new RunCodeFeature(sessionManager),
         new CodeActionsFeature(logger),
-        // new SpecifyScriptArgsFeature(context),
     ]
 
     // Features and command registrations that require language client
     languageClientConsumers = [
-        // new GetDiagnosticFeature(logger, context)
-        // new GetAstFeature(logger, context),
-        // new ConsoleFeature(logger),
-        // new ExpandAliasFeature(logger),
-        // new GetCommandsFeature(logger),
-        // new ShowHelpFeature(logger),
-        // new FindModuleFeature(),
-        // new ExtensionCommandsFeature(logger),
-        // new NewFileOrProjectFeature(),
-        // new RemoteFilesFeature(),
-        // new DebugSessionFeature(context, sessionManager, logger),
-        // new PickPSHostProcessFeature(),
-        // new HelpCompletionFeature(logger),
-        // new CustomViewsFeature(),
-        // new PickRunspaceFeature(),
-        // new ExternalApiFeature(sessionManager, logger)
     ];
 
     sessionManager.setLanguageClientConsumers(languageClientConsumers);

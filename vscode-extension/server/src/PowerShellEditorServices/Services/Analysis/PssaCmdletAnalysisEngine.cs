@@ -226,7 +226,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// </summary>
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent) => AnalyzeScriptAsync(runspace, scriptContent, settings: null);
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string azureRmVersion, string azVersion, string scriptContent) => AnalyzeScriptAsync(runspace, azureRmVersion, azVersion, scriptContent, settings: null);
 
 
         /// <summary>
@@ -235,7 +235,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// <param name="scriptContent">The contents of the script to analyze.</param>
         /// <param name="settings">The settings file to use in this instance of analysis.</param>
         /// <returns>An array of markers indicating script analysis diagnostics.</returns>
-        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string scriptContent, Hashtable settings)
+        public Task<ScriptFileMarker[]> AnalyzeScriptAsync(Runspace runspace, string azureRmVersion, string azVersion, string scriptContent, Hashtable settings)
         {
             // When a new, empty file is created there are by definition no issues.
             // Furthermore, if you call Invoke-ScriptAnalyzer with an empty ScriptDefinition
@@ -263,7 +263,7 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
 
             var command = new PSCommand()
                 .AddScript("New-AzUpgradeModulePlan -FilePath " + path + 
-                " -FromAzureRmVersion \"6.13.1\" -ToAzVersion \"4.4.0\" " +
+                " -FromAzureRmVersion \"" + azureRmVersion + "\" -ToAzVersion \"" + azVersion + "\"" + 
                 "-AzureRmModuleSpec $azureRMSpec -AzModuleSpec $azSpec");
 
             // object settingsValue = settings ?? _settingsParameter;
