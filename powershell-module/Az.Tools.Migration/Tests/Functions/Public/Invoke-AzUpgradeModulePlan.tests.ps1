@@ -2,7 +2,7 @@ Import-Module Az.Tools.Migration -Force
 
 InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
     Describe 'Invoke-AzUpgradeModulePlan tests' {
-        It 'Should be able to execute an update plan (single-file)' {
+        It 'Should be able to execute an update plan (single-file) to modify files in place' {
             # arrange
             $step = New-Object -TypeName UpgradePlan
             $step.FullPath = "C:\mock-file.ps1"
@@ -21,7 +21,37 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $result = Invoke-AzUpgradeModulePlan -Plan $step -Confirm:$false
+            $result = Invoke-AzUpgradeModulePlan -Plan $step -FileEditMode ModifyExistingFiles -Confirm:$false
+
+            # assert
+            $result | Should Not Be $null
+            $result.Count | Should Be 1
+            $result.GetType().FullName | Should Be 'UpgradeResult'
+            $result.UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
+            $result.UpgradeSeverity.ToString() | Should Be 'Information'
+
+            Assert-VerifiableMock
+        }
+        It 'Should be able to execute an update plan (single-file) to save new files' {
+            # arrange
+            $step = New-Object -TypeName UpgradePlan
+            $step.FullPath = "C:\mock-file.ps1"
+            $step.UpgradeType = [UpgradeStepType]::Cmdlet
+            $step.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $step.PlanSeverity = [DiagnosticSeverity]::Information
+            $step.Location = "mocked-file.ps1:10:5"
+            $step.Original = "Login-AzureRmAccount"
+            $step.Replacement = "Login-AzAccount"
+
+            Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
+            Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
+            Mock -CommandName Set-Content -MockWith { } -Verifiable
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
+            # act
+            $result = Invoke-AzUpgradeModulePlan -Plan $step -FileEditMode SaveChangesToNewFiles -Confirm:$false
 
             # assert
             $result | Should Not Be $null
@@ -80,7 +110,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode ModifyExistingFiles -Confirm:$false
 
             # assert
             $results | Should Not Be $null
@@ -125,7 +155,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode ModifyExistingFiles -Confirm:$false
 
             # assert
             $results | Should Not Be $null
@@ -173,7 +203,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode ModifyExistingFiles -Confirm:$false
 
             # assert
             $results | Should Not Be $null
@@ -221,7 +251,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = Invoke-AzUpgradeModulePlan -Plan $plan -Confirm:$false
+            $results = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode ModifyExistingFiles -Confirm:$false
 
             # assert
             $results | Should Not Be $null
