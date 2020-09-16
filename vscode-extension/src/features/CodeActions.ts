@@ -11,7 +11,7 @@ export class CodeActionsFeature implements vscode.Disposable {
     private showDocumentationCommand: vscode.Disposable;
 
     constructor(private log: ILogger) {
-        this.applyEditsCommand = vscode.commands.registerCommand("PowerShell.ApplyCodeActionEdits", (edit: any) => {
+        this.applyEditsCommand = vscode.commands.registerCommand("AzurePowerShell.ApplyCodeActionEdits", (edit: any) => {
             Window.activeTextEditor.edit((editBuilder) => {
                 editBuilder.replace(
                     new vscode.Range(

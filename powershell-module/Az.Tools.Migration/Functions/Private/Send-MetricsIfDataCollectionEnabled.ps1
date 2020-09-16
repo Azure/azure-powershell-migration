@@ -168,6 +168,7 @@ function Send-MetricsIfDataCollectionEnabled
                             "CommandParameterSetName" = $ParameterSetName
 
                             # custom operation props
+                            "file-edit-mode" = $Properties.FileEditMode
                             "upgrade-success-file-count" = $Properties.SuccessFileUpdateCount
                             "upgrade-success-command-count" = $Properties.SuccessCommandUpdateCount
                             "upgrade-failed-file-count" = $Properties.FailedFileUpdateCount

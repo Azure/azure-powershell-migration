@@ -1,9 +1,14 @@
 {
-	"name": "azure-powershell-migration",
-	"displayName": "Azure PowerShell Migration",
+	"name": "azps-tools",
+	"displayName": "Azure PowerShell Tools",
 	"description": "TBD",
 	"version": "0.0.1",
 	"publisher": "azure-powershell",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Azure/azure-powershell-migration.git"
+	},
 	"engines": {
 		"vscode": "^1.47.0"
 	},
@@ -12,14 +17,14 @@
 	],
 	"activationEvents": [
 		"onCommand:extension.helloWorld",
-		"onCommand:azure-powershell-migration.selectVersion"
+		"onCommand:azps-tools.selectVersion"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"title": "Migrate Azure PowerShell Script",
-				"command": "azure-powershell-migration.selectVersion"
+				"command": "azps-tools.selectVersion"
 			}
 		]
 	},

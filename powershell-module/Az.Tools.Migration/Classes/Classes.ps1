@@ -2,6 +2,7 @@ class Constants
 {
     static [System.String] $ConfigurationDirectoryName = ".aztoolsmigration"
     static [System.String] $ConfigurationFileName = "module-preferences.json"
+    static [System.String] $NewFileBaseNameSuffix = "_az_upgraded"
     static [System.String] $PublicTelemetryInstrumentationKey = "7df6ff70-8353-4672-80d6-568517fed090"
     static [System.String] $CurrentSessionId = [System.GUID]::NewGuid().ToString()
     static [Microsoft.ApplicationInsights.TelemetryClient] $TelemetryClient = $null
@@ -73,6 +74,12 @@ class CommandReference
     {
         $this.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandReferenceParameter]'
     }
+}
+
+Enum EditMode
+{
+    ModifyExistingFiles
+    SaveChangesToNewFiles
 }
 
 Enum UpgradeStepType

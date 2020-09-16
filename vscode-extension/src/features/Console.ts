@@ -204,7 +204,7 @@ export class ConsoleFeature extends LanguageClientConsumer {
     constructor(private log: Logger) {
         super();
         this.commands = [
-            vscode.commands.registerCommand("PowerShell.RunSelection", async () => {
+            vscode.commands.registerCommand("AzurePowerShell.RunSelection", async () => {
 
                 if (vscode.window.activeTerminal &&
                     vscode.window.activeTerminal.name !== "PowerShell Integrated Console") {
@@ -238,7 +238,7 @@ export class ConsoleFeature extends LanguageClientConsumer {
 
                 // Show the integrated console if it isn't already visible and
                 // scroll terminal to bottom so new output is visible
-                await vscode.commands.executeCommand("PowerShell.ShowSessionConsole", true);
+                await vscode.commands.executeCommand("AzurePowerShell.ShowSessionConsole", true);
                 await vscode.commands.executeCommand("workbench.action.terminal.scrollToBottom");
             }),
         ];

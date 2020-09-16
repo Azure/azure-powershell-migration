@@ -39,18 +39,18 @@ export class Logger implements ILogger {
     private logFilePath: string;
 
     constructor() {
-        this.logChannel = vscode.window.createOutputChannel("PowerShell Extension Logs");
+        this.logChannel = vscode.window.createOutputChannel("Azure PowerShell Extension Logs");
 
         this.logBasePath = path.resolve(__dirname, "../../logs");
         utils.ensurePathExists(this.logBasePath);
 
         this.commands = [
             vscode.commands.registerCommand(
-                "PowerShell.ShowLogs",
+                "AzurePowerShell.ShowLogs",
                 () => { this.showLogPanel(); }),
 
             vscode.commands.registerCommand(
-                "PowerShell.OpenLogFolder",
+                "AzurePowerShell.OpenLogFolder",
                 () => { this.openLogFolder(); }),
         ];
     }

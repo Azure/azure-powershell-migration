@@ -16,7 +16,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 $AzFilePath = Join-Path -Path $TestFileDirectory -ChildPath "az\$($TestFile.Name)"
 
                 $Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -FilePath $AzureRMFilePath
-                Invoke-AzUpgradeModulePlan -Plan $Plan -Confirm:$false
+                Invoke-AzUpgradeModulePlan -Plan $Plan -FileEditMode ModifyExistingFiles -Confirm:$false
 
                 # act
                 $Results = Get-Content -Path $AzureRMFilePath
