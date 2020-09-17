@@ -132,7 +132,8 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _azVersion = "4.6.1";
             powerShell = System.Management.Automation.PowerShell.Create()
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
-                .AddScript(@"Import-Module Az.Tools.Migration.psd1")
+                .AddScript("Register-PSRepository -Name PSGallery -SourceLocation https://www.powershellgallery.com/api/v2/ -InstallationPolicy Trusted")
+                .AddScript(@"Install-Module -Name Az.Tools.Migration -Repository PSGallery")
                 .AddScript("Disable-AzUpgradeDataCollection")
                 .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"" + _azVersion + "\"")
                 .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"" + _azureRmVersion + "\"");

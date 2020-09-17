@@ -1,9 +1,9 @@
 {
 	"name": "azps-tools",
-	"displayName": "Azure PowerShell Tools",
-	"description": "TBD",
-	"version": "0.0.1",
-	"publisher": "azure-powershell",
+	"displayName": "Azure PowerShell",
+	"description": "(preview) Automate the migration of PowerShell scripts and modules from AzureRM to the Az PowerShell module.",
+	"version": "0.1.0",
+	"publisher": "Microsoft",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -13,10 +13,9 @@
 		"vscode": "^1.47.0"
 	},
 	"categories": [
-		"Other"
+		"Azure"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld",
 		"onCommand:azps-tools.selectVersion"
 	],
 	"main": "./out/extension.js",
