@@ -134,7 +134,6 @@ namespace Microsoft.PowerShell.EditorServices.Services
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
                 .AddScript("Register-PSRepository -Name PSGallery -SourceLocation https://www.powershellgallery.com/api/v2/ -InstallationPolicy Trusted")
                 .AddScript(@"Install-Module -Name Az.Tools.Migration -Repository PSGallery")
-                .AddScript("Disable-AzUpgradeDataCollection")
                 .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"" + _azVersion + "\"")
                 .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"" + _azureRmVersion + "\"");
             powerShell.Invoke();
