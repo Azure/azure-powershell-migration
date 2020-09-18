@@ -2,7 +2,6 @@
 
 ## 0.1.0
 
-Initial release with the following features:
-
+First preview release with the following features:
 - AzureRM commands highlighting
-- Quick Fix for some AzureRM commands
+- Quick Fix for compatible AzureRM cmdlets
