@@ -1,11 +1,14 @@
 # Azure Powershell
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/ms-vscode.azps-tools.svg)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azps-tools)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ms-vscode.azps-tools.svg)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azps-tools)
+
 Effortlessly migrate your PowerShell scripts from AzureRM to the Az PowerShell module.
 
 ## Features
 
-- AzureRM commands highlighting
-- Quick Fix for some AzureRM commands
+- AzureRM commands highlighting.
+- Quick Fix for some AzureRM commands.
 
 ## Installing the Extension
 
