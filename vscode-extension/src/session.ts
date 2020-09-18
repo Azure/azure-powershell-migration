@@ -329,12 +329,12 @@ export class SessionManager implements Middleware {
     // Move old setting codeFormatting.whitespaceAroundPipe to new setting codeFormatting.addWhitespaceAroundPipe
     private async migrateWhitespaceAroundPipeSetting() {
         const configuration = vscode.workspace.getConfiguration(utils.PowerShellLanguageId);
-        const deprecatedSetting = 'codeFormatting.whitespaceAroundPipe'
-        const newSetting = 'codeFormatting.addWhitespaceAroundPipe'
+        const deprecatedSetting = 'codeFormatting.whitespaceAroundPipe';
+        const newSetting = 'codeFormatting.addWhitespaceAroundPipe';
         const configurationTargetOfNewSetting = await Settings.getEffectiveConfigurationTarget(newSetting);
         if (configuration.has(deprecatedSetting) && configurationTargetOfNewSetting === null) {
             const configurationTarget = await Settings.getEffectiveConfigurationTarget(deprecatedSetting);
-            const value = configuration.get(deprecatedSetting, configurationTarget)
+            const value = configuration.get(deprecatedSetting, configurationTarget);
             await Settings.change(newSetting, value, configurationTarget);
             await Settings.change(deprecatedSetting, undefined, configurationTarget);
         }
