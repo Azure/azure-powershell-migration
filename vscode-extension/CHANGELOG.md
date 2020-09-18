@@ -1,9 +1,7 @@
-# Change Log
+# Azure PowerShell Extension Release History
 
-All notable changes to the Azure PowerShell Migration extension will be documented in this file.
+## 0.1.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+First preview release with the following features:
+- AzureRM commands highlighting
+- Quick Fix for compatible AzureRM cmdlets
