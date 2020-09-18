@@ -143,7 +143,7 @@ export function load(): ISettings {
             utils.PowerShellLanguageId);
 
     const defaultBugReportingSettings: IBugReportingSettings = {
-        project: "https://github.com/PowerShell/vscode-powershell",
+        project: "https://github.com/Azure/azure-powershell-migration",
     };
 
     const defaultScriptAnalysisSettings: IScriptAnalysisSettings = {

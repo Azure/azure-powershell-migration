@@ -145,7 +145,7 @@ export class Logger implements ILogger {
                 this.logBasePath,
                 `${Math.floor(Date.now() / 1000)}-${vscode.env.sessionId}`);
 
-        this.logFilePath = this.getLogFilePath("vscode-powershell");
+        this.logFilePath = this.getLogFilePath("azps-tools");
 
         utils.ensurePathExists(this.logSessionPath);
     }
@@ -189,7 +189,7 @@ export class Logger implements ILogger {
                 (err) => {
                     if (err) {
                         // tslint:disable-next-line:no-console
-                        console.log(`Error writing to vscode-powershell log file: ${err}`);
+                        console.log(`Error writing to azps-tools log file: ${err}`);
                     }
                 });
         }
