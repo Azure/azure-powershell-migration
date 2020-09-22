@@ -364,8 +364,13 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
             {
                 // scriptMarkers[i] = ScriptFileMarker.FromDiagnosticRecord(diagnostic);
                 scriptMarkers[i] = ScriptFileMarker.FromUpgradePlan(diagnostic);
-                i++;
+                if (scriptMarkers[i].RuleName != "ReadyToUpgradeCmdletParameter")
+                {
+                    i++;
+                }
             }
+
+            Array.Resize(ref scriptMarkers, i);
 
             return scriptMarkers;
         }
