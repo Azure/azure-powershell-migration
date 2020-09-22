@@ -3,7 +3,7 @@
     "Command": "Get-AzAksCluster",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Id",
@@ -33,10 +33,14 @@
     "Command": "New-AzAksCluster",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "GenerateSshKey",
         "Aliases": null
       },
       {
@@ -60,7 +64,23 @@
         "Aliases": null
       },
       {
+        "Name": "NodePoolMode",
+        "Aliases": null
+      },
+      {
         "Name": "NodeScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "AddOnNameToBeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
         "Aliases": null
       },
       {
@@ -187,7 +207,7 @@
     "Command": "Remove-AzAksCluster",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -245,7 +265,7 @@
     "Command": "Import-AzAksCredential",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -307,7 +327,7 @@
     "Command": "Start-AzAksDashboard",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -353,7 +373,7 @@
     "Command": "Stop-AzAksDashboard",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "PassThru",
@@ -373,10 +393,14 @@
     "Command": "Set-AzAksCluster",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolMode",
         "Aliases": null
       },
       {
@@ -485,7 +509,7 @@
     "Command": "New-AzAksNodePool",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -585,7 +609,7 @@
     "Command": "Update-AzAksNodePool",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "ResourceGroupName",
@@ -663,7 +687,7 @@
     "Command": "Remove-AzAksNodePool",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -729,7 +753,7 @@
     "Command": "Get-AzAksNodePool",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Id",
@@ -767,7 +791,7 @@
     "Command": "Install-AzAksKubectl",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Destination",
@@ -819,7 +843,7 @@
     "Command": "Get-AzAksVersion",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Location",
@@ -836,10 +860,106 @@
     ]
   },
   {
+    "Command": "Enable-AzAksAddOn",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.3.0",
+    "Parameters": [
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzAksAddOn",
+    "IsAlias": false,
+    "SourceModule": "Az.Aks",
+    "Version": "1.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
     "Command": "Get-AzAks",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Id",
@@ -869,10 +989,14 @@
     "Command": "New-AzAks",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "GenerateSshKey",
         "Aliases": null
       },
       {
@@ -896,7 +1020,23 @@
         "Aliases": null
       },
       {
+        "Name": "NodePoolMode",
+        "Aliases": null
+      },
+      {
         "Name": "NodeScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "AddOnNameToBeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
         "Aliases": null
       },
       {
@@ -1023,7 +1163,7 @@
     "Command": "Remove-AzAks",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
@@ -1081,10 +1221,14 @@
     "Command": "Set-AzAks",
     "IsAlias": false,
     "SourceModule": "Az.Aks",
-    "Version": "1.2.0",
+    "Version": "1.3.0",
     "Parameters": [
       {
         "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolMode",
         "Aliases": null
       },
       {

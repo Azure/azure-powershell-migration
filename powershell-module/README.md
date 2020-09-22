@@ -34,7 +34,7 @@ and modules that you're attempting to upgrade.
 Generate an upgrade plan for moving the AzureRM references in your codebase to the Az PowerShell
 module. This step doesn't execute the plan, it only generates the upgrade steps.
 
-**IMPORTANT**: Review the warnings and errors in the plan results. The `Errors` collection may
+**IMPORTANT**: Review the warnings and errors in the plan results. The output may
 contain commands or parameters that couldn't be upgraded automatically. These items require manual
 intervention during the upgrade.
 
@@ -43,7 +43,7 @@ This step can optionally be run for a single file by specifying the `FilePath` p
 
 ```powershell
 # Generate an upgrade plan for the script and module files in the specified folder and save it to a variable.
-$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts'
+$plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.7.0 -DirectoryPath 'C:\Scripts'
 
 # shows the entire upgrade plan
 $plan

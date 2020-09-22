@@ -23,7 +23,7 @@ function Invoke-AzUpgradeModulePlan
         The following example invokes the upgrade plan for a PowerShell module named "myModule" and saves the updated file contents into new files (leaving original files unmodified).
 
         # step 1: generate a plan and save it to a variable.
-        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts\myModule'
+        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.7.0 -DirectoryPath 'C:\Scripts\myModule'
 
         # step 2: write the plan to the console to review the upgrade steps, warnings, and errors.
         $plan
@@ -38,7 +38,7 @@ function Invoke-AzUpgradeModulePlan
         The following example invokes the upgrade plan for a PowerShell module named "myModule" and modifies the existing files in place.
 
         # step 1: generate a plan and save it to a variable.
-        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts\myModule'
+        $plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.7.0 -DirectoryPath 'C:\Scripts\myModule'
 
         # step 2: write the plan to the console to review the upgrade steps, warnings, and errors.
         $plan

@@ -44,12 +44,12 @@ points that require changes when moving from AzureRM to the Az PowerShell cmdlet
 
 ```powershell
 #  Generate an upgrade plan for the specified PowerShell script and save it to a variable.
-$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -FilePath 'C:\Scripts\my-azure-script.ps1'
+$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.7.0 -FilePath 'C:\Scripts\my-azure-script.ps1'
 ```
 
 ```powershell
 # Generate an upgrade plan for all the scripts and module files in the specified folder and save it to a variable.
-$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.6.1 -DirectoryPath 'C:\Scripts'
+$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 4.7.0 -DirectoryPath 'C:\Scripts'
 ```
 
 Review the results of the upgrade plan.
@@ -108,7 +108,7 @@ $Results | Where-Object UpgradeResult -ne UpgradeCompleted | Format-List
   during upgrade plan generation, a warning is returned.
 * File I/O operations use default encoding. Unusual file encoding situations may cause problems.
 * AzureRM cmdlets passed as arguments to Pester unit test mock statements aren't detected.
-* Currently, only Az PowerShell module version 4.6.1 is supported as a target.
+* Currently, only Az PowerShell module version 4.7.0 is supported as a target.
 
 ## Next steps
 

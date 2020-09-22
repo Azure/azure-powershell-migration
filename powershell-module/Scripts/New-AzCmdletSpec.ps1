@@ -16,8 +16,8 @@
     Specify the output folder for where the files will be generated.
 
 .EXAMPLE
-    PS C:\ .\New-AzCmdletSpec.ps1 -AzVersion "4.6.1" -OutputDirectory "$home\desktop\AzCmdletSpec"
-    Generates a new Az module 4.6.1 cmdlet spec in the user's desktop folder.
+    PS C:\ .\New-AzCmdletSpec.ps1 -AzVersion "4.7.0" -OutputDirectory "$home\desktop\AzCmdletSpec"
+    Generates a new Az module 4.7.0 cmdlet spec in the user's desktop folder.
 #>
 [CmdletBinding()]
 Param
@@ -56,7 +56,7 @@ function New-ModuleCommandDefinitionsFile
         Specify the folder location to save the new definitions file.
 
     .EXAMPLE
-        PS C:\> New-ModuleCommandDefinitionsFile -ModuleName "Azure.Storage" -ModuleVersion "4.6.1" -OutputDirectory "C:\users\user\desktop"
+        PS C:\> New-ModuleCommandDefinitionsFile -ModuleName "Azure.Storage" -ModuleVersion "4.7.0" -OutputDirectory "C:\users\user\desktop"
         Creates a new module definition json file for the given module.
     #>
     [CmdletBinding()]
