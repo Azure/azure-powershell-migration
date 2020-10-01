@@ -227,21 +227,23 @@ namespace Microsoft.PowerShell.EditorServices.Services.Analysis
         /// <returns>A string which is the full path of temp file.</returns>
         private string GetTempFilePath()
         {
-            string tempFilePath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
-            Directory.CreateDirectory(tempFilePath);
+            string tempFolderPath = Path.Combine(Path.GetTempPath(), "azure-powershell-migration");
+            if (!Directory.Exists(tempFolderPath)) {
+                Directory.CreateDirectory(tempFolderPath);
+            }
 
             string tempFileName = "";
             Random rand = new Random();
-            string alph = "abcdefghijklmnopqrstuvwxyz";
+            string alphabet = string.Join("", Enumerable.Range('a', 'z' - 'a' + 1).Select(i => ((Char)i).ToString()).ToArray());
             int len = 6;
 
-            for(int i =0; i<len; ++i)
+            for (int i = 0; i < len; ++i)
             {
-                tempFileName = tempFileName + alph.ElementAt(rand.Next(26));
+                tempFileName = tempFileName + alphabet.ElementAt(rand.Next(26));
             }
             tempFileName += ".ps1";
 
-            return Path.Combine(tempFilePath, tempFileName);
+            return Path.Combine(tempFolderPath, tempFileName);
         }
 
         /// <summary>
