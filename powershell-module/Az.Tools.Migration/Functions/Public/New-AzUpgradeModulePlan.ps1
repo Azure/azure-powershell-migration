@@ -319,7 +319,7 @@ function New-AzUpgradeModulePlan
                     $paramError.StartOffset = $rmParam.StartOffset
                     $paramError.SourceCommandParameter = $rmParam
                     $paramError.Location = $rmParam.Location
-                    $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or it's aliases."
+                    $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases."
                     $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
                     $paramError.PlanSeverity = [DiagnosticSeverity]::Error
 
