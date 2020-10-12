@@ -362,9 +362,9 @@ export class SessionManager implements Middleware {
             }
 
             // Show the session menu at the end if they don't have a PowerShellDefaultVersion.
-            // if (!this.sessionSettings.powerShellDefaultVersion) {
-            //     await vscode.commands.executeCommand(this.ShowSessionMenuCommandName);
-            // }
+            if (!this.sessionSettings.powerShellDefaultVersion) {
+                await vscode.commands.executeCommand(this.ShowSessionMenuCommandName);
+            }
         }
     }
 
@@ -418,7 +418,7 @@ export class SessionManager implements Middleware {
     private registerCommands(): void {
         this.registeredCommands = [
             vscode.commands.registerCommand("AzurePowerShell.RestartSession", () => { this.restartSession(); }),
-            // vscode.commands.registerCommand(this.ShowSessionMenuCommandName, () => { this.showSessionMenu(); }),
+            vscode.commands.registerCommand(this.ShowSessionMenuCommandName, () => { this.showSessionMenu(); }),
             vscode.workspace.onDidChangeConfiguration(() => this.onConfigurationUpdated()),
             vscode.commands.registerCommand(
                 "AzurePowerShell.ShowSessionConsole", (isExecute?: boolean) => { this.showSessionConsole(isExecute); }),
@@ -427,13 +427,10 @@ export class SessionManager implements Middleware {
 
     private startPowerShell() {
 
-        // this.setSessionStatus(
-        //     "Starting PowerShell...",
-        //     SessionStatus.Initializing);
-        // TODO Fix the issue: https://github.com/Azure/azure-powershell-migration/issues/62
         this.setSessionStatus(
-            "Azure Powershell",
-            SessionStatus.Running);
+            "Starting PowerShell...",
+            SessionStatus.Initializing);
+
         const sessionFilePath =
             utils.getSessionFilePath(
                 Math.floor(100000 + Math.random() * 900000));
@@ -632,7 +629,7 @@ export class SessionManager implements Middleware {
                     vscode.StatusBarAlignment.Right,
                     1);
 
-            // this.statusBarItem.command = this.ShowSessionMenuCommandName;
+            this.statusBarItem.command = this.ShowSessionMenuCommandName;
             this.statusBarItem.tooltip = "Show Azure PowerShell Tools Session Menu";
             this.statusBarItem.show();
             vscode.window.onDidChangeActiveTextEditor((textEditor) => {
