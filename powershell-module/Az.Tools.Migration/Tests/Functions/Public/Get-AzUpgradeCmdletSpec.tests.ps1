@@ -13,7 +13,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         }
         It 'Should be able to import the Az 4.8.0 spec' {
             # arrange/act
-            $expectedCommandCount = 3335
+            $expectedCommandCount = 3350
             $spec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "4.8.0"
 
             # assert

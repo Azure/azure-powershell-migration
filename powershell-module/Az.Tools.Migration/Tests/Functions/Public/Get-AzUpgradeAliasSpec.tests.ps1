@@ -4,7 +4,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
     Describe 'Get-AzUpgradeAliasSpec tests' {
         It 'Should be able to import the Az 4.8.0 alias mapping spec' {
             # arrange/act
-            $expectedAliasCount = 2580
+            $expectedAliasCount = 2581
             $spec = Get-AzUpgradeAliasSpec -ModuleVersion "4.8.0"
 
             # assert
