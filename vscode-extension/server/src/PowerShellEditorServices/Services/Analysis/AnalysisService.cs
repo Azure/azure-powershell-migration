@@ -129,7 +129,7 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _analysisEngineLazy = new Lazy<PssaCmdletAnalysisEngine>(InstantiateAnalysisEngine);
             _pssaSettingsFilePath = null;
             _azureRmVersion = "6.13.1";
-            _azVersion = "4.7.0";
+            _azVersion = "4.8.0";
             powerShell = System.Management.Automation.PowerShell.Create()
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
                 .AddScript("Register-PSRepository -Name PSGallery -SourceLocation https://www.powershellgallery.com/api/v2/ -InstallationPolicy Trusted")
