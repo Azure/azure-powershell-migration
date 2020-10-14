@@ -1,0 +1,7791 @@
+[
+  {
+    "Command": "Get-AzProviderOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "OperationSearchString",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRoleAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResource",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRoleAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResource",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandPrincipalGroups",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeClassicAdministrators",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRoleAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResource",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "ConditionVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowDelegation",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRoleAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRoleDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Custom",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRoleDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRoleDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRoleDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADAppCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayNameStartWith",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzADGroupMember",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "MemberObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "MemberUserPrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetGroupObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetGroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetGroupDisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADGroupMember",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "GroupObjectId",
+        "Aliases": [
+          "Id",
+          "ObjectId"
+        ]
+      },
+      {
+        "Name": "GroupDisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADGroupMember",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "MemberObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "MemberUserPrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupDisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DisplayNameStartsWith",
+        "Aliases": [
+          "SearchString"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "MailNickname",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADServicePrincipal",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DisplayNameBeginsWith",
+        "Aliases": [
+          "SearchString"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADSpCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADUser",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "StartsWith",
+        "Aliases": [
+          "SearchString"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "Mail",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADAppCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "CertValue",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADSpCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "ServicePrincipalObjectId"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "CertValue",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADUser",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "ImmutableId",
+        "Aliases": null
+      },
+      {
+        "Name": "MailNickname",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceChangePasswordNextLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADAppCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUris",
+        "Aliases": null
+      },
+      {
+        "Name": "HomePage",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplyUrls",
+        "Aliases": null
+      },
+      {
+        "Name": "AvailableToOtherTenants",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "CertValue",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADServicePrincipal",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "PrincipalId",
+          "Id"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADServicePrincipal",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordCredential",
+        "Aliases": [
+          "PasswordCredentials"
+        ]
+      },
+      {
+        "Name": "KeyCredential",
+        "Aliases": [
+          "KeyCredentials"
+        ]
+      },
+      {
+        "Name": "CertValue",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipAssignment",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADSpCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADUser",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "UPNOrObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzADApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "HomePage",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": [
+          "IdentifierUris"
+        ]
+      },
+      {
+        "Name": "ReplyUrl",
+        "Aliases": [
+          "ReplyUrls"
+        ]
+      },
+      {
+        "Name": "AvailableToOtherTenants",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzADServicePrincipal",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "ServicePrincipalObjectId"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Homepage",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzADUser",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "UPNOrObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceChangePasswordNextLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzResourceGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceGroupName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceGroupId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzProviderFeature",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "FeatureName",
+        "Aliases": null
+      },
+      {
+        "Name": "ListAvailable",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzProviderFeature",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "FeatureName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Unregister-AzProviderFeature",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "FeatureName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLocation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Export-AzResourceGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeParameterDefaultValue",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeComments",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipResourceNameParameterization",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipAllParameterization",
+        "Aliases": null
+      },
+      {
+        "Name": "Resource",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ListAvailable",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzResourceProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Unregister-AzResourceProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ProviderNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzResourceGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentDebugLogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "RollbackToLastDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "RollBackDeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzResourceGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzResourceGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzResourceGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "RollbackToLastDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "RollBackDeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzResourceGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceGroupName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceGroupId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzResourceGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceGroupName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceGroupName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceGroupId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzResourceGroupDeploymentTemplate",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceGroupDeploymentOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceLock",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "LockName",
+        "Aliases": [
+          "ExtensionResourceName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "AtScope",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "LockId",
+        "Aliases": [
+          "Id",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzResourceAction",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Parameters",
+        "Aliases": [
+          "Object"
+        ]
+      },
+      {
+        "Name": "Action",
+        "Aliases": [
+          "ActionName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Move-AzResource",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DestinationResourceGroupName",
+        "Aliases": [
+          "TargetResourceGroup"
+        ]
+      },
+      {
+        "Name": "DestinationSubscriptionId",
+        "Aliases": [
+          "Id",
+          "SubscriptionId"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzResourceLock",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "LockName",
+        "Aliases": [
+          "ExtensionResourceName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "LockLevel",
+        "Aliases": [
+          "Level"
+        ]
+      },
+      {
+        "Name": "LockNotes",
+        "Aliases": [
+          "Notes"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "LockId",
+        "Aliases": [
+          "Id",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPolicyAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "PolicyDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeDescendent",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPolicyDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Builtin",
+        "Aliases": null
+      },
+      {
+        "Name": "Custom",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPolicySetDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Builtin",
+        "Aliases": null
+      },
+      {
+        "Name": "Custom",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPolicyAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "NotScope",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicySetDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "EnforcementMode",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPolicyDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPolicySetDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPolicyAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPolicyDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPolicySetDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPolicyAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "NotScope",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "EnforcementMode",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPolicyDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPolicySetDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagementGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzResource",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzResourceLock",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "LockName",
+        "Aliases": [
+          "ExtensionResourceName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "LockId",
+        "Aliases": [
+          "Id",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzResource",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "Properties",
+        "Aliases": [
+          "PropertyObject"
+        ]
+      },
+      {
+        "Name": "Plan",
+        "Aliases": [
+          "PlanObject"
+        ]
+      },
+      {
+        "Name": "Sku",
+        "Aliases": [
+          "SkuObject"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "UsePatchSemantics",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzResource",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "Properties",
+        "Aliases": [
+          "PropertyObject"
+        ]
+      },
+      {
+        "Name": "Plan",
+        "Aliases": [
+          "PlanObject"
+        ]
+      },
+      {
+        "Name": "Sku",
+        "Aliases": [
+          "SkuObject"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "IsFullObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzResourceLock",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "LockName",
+        "Aliases": [
+          "ExtensionResourceName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "LockLevel",
+        "Aliases": [
+          "Level"
+        ]
+      },
+      {
+        "Name": "LockNotes",
+        "Aliases": [
+          "Notes"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "LockId",
+        "Aliases": [
+          "Id",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResource",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TagName",
+        "Aliases": null
+      },
+      {
+        "Name": "TagValue",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandProperties",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagedApplicationDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId",
+          "ManagedApplicationDefinitionId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzManagedApplicationDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LockLevel",
+        "Aliases": [
+          "Level"
+        ]
+      },
+      {
+        "Name": "PackageFileUri",
+        "Aliases": null
+      },
+      {
+        "Name": "CreateUiDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "MainTemplate",
+        "Aliases": null
+      },
+      {
+        "Name": "Authorization",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzManagedApplicationDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PackageFileUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Authorization",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzManagedApplicationDefinition",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagedApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId",
+          "ManagedApplicationId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzManagedApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedApplicationDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "Plan",
+        "Aliases": [
+          "PlanObject"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzManagedApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ManagedResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedApplicationDefinitionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "Plan",
+        "Aliases": [
+          "PlanObject"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzManagedApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagementGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "Recurse",
+        "Aliases": null
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzManagementGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzManagementGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzManagementGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzManagementGroupSubscription",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzManagementGroupSubscription",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "GroupId"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentDebugLogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzDeploymentTemplate",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDeploymentOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagementGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzManagementGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzManagementGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentDebugLogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagementGroupDeploymentOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzManagementGroupDeploymentTemplate",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzManagementGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzManagementGroupDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzTenantDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzTenantDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzTenantDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentDebugLogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzTenantDeploymentOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzTenantDeploymentTemplate",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzTenantDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzTenantDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPolicyAlias",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "NamespaceMatch",
+        "Aliases": [
+          "Name",
+          "Namespace"
+        ]
+      },
+      {
+        "Name": "ResourceTypeMatch",
+        "Aliases": [
+          "ResourceType",
+          "Resource"
+        ]
+      },
+      {
+        "Name": "AliasMatch",
+        "Aliases": [
+          "Alias"
+        ]
+      },
+      {
+        "Name": "PathMatch",
+        "Aliases": [
+          "Path"
+        ]
+      },
+      {
+        "Name": "ApiVersionMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "LocationMatch",
+        "Aliases": [
+          "Location"
+        ]
+      },
+      {
+        "Name": "ListAvailable",
+        "Aliases": [
+          "ShowAll"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzTag",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzTag",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Detailed",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzTag",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDenyAssignment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResource",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "DenyAssignmentName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandPrincipalGroups",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzTag",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Operation",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDeploymentScript",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDeploymentScriptLog",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentScriptResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentScriptObject",
+        "Aliases": [
+          "DeploymentScriptInputObject"
+        ]
+      },
+      {
+        "Name": "Tail",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzDeploymentScriptLog",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentScriptResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentScriptObject",
+        "Aliases": [
+          "DeploymentScriptInputObject"
+        ]
+      },
+      {
+        "Name": "OutputPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Tail",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDeploymentScript",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDeploymentWhatIfResult",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceGroupDeploymentWhatIfResult",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzManagementGroupDeploymentWhatIfResult",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "ManagementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzTenantDeploymentWhatIfResult",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzResourceProviderAction",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "OperationSearchString",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzADServicePrincipalCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzADServicePrincipalCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "ServicePrincipalObjectId"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "CertValue",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzADServicePrincipalCredential",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalObject",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzADApplication",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "HomePage",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": [
+          "IdentifierUris"
+        ]
+      },
+      {
+        "Name": "ReplyUrl",
+        "Aliases": [
+          "ReplyUrls"
+        ]
+      },
+      {
+        "Name": "AvailableToOtherTenants",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzADServicePrincipal",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "ServicePrincipalObjectId"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Homepage",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzADUser",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "UPNOrObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceChangePasswordNextLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSubscriptionDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentDebugLogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIfExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscriptionDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzSubscriptionDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSubscriptionDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzSubscriptionDeployment",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "DeploymentId",
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzSubscriptionDeploymentTemplate",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscriptionDeploymentOperation",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "DeploymentName",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeploymentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscriptionDeploymentWhatIfResult",
+    "IsAlias": false,
+    "SourceModule": "Az.Resources",
+    "Version": "2.5.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DeploymentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeChangeType",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameterUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipTemplateParameterPrompt",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Pre",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1878 @@
+[
+  {
+    "Command": "New-AzEventHubNamespace",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoInflate",
+        "Aliases": null
+      },
+      {
+        "Name": "MaximumThroughputUnits",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableKafka",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneRedundant",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterARMId",
+        "Aliases": null
+      },
+      {
+        "Name": "Identity",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubNamespace",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubNamespace",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoInflate",
+        "Aliases": null
+      },
+      {
+        "Name": "MaximumThroughputUnits",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableKafka",
+        "Aliases": null
+      },
+      {
+        "Name": "Identity",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityUserDefined",
+        "Aliases": null
+      },
+      {
+        "Name": "KeySource",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubNamespace",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubAuthorizationRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "Rights",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubAuthorizationRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Eventhub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "AliasName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubAuthorizationRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "AuthRuleObj"
+        ]
+      },
+      {
+        "Name": "Rights",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubAuthorizationRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubKey",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "AliasName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubKey",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "RegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyValue",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHub",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "EventHubObj"
+        ]
+      },
+      {
+        "Name": "MessageRetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHub",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHub",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "EventHubObj"
+        ]
+      },
+      {
+        "Name": "messageRetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "partitionCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHub",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubConsumerGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ConsumerGroupName"
+        ]
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubConsumerGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ConsumerGroupName"
+        ]
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubConsumerGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ConsumerGroupName"
+        ]
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubConsumerGroup",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "EventHub",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ConsumerGroupName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubGeoDRConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AlternateName",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubGeoDRConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubGeoDRConfiguration",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubGeoDRConfigurationBreakPair",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubGeoDRConfigurationFailOver",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzEventHubName",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AliasName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubIPRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "IpMask",
+        "Aliases": null
+      },
+      {
+        "Name": "IpRuleObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzEventHubIPRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "IpMask",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "IpRuleObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubVirtualNetworkRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkRuleObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzEventHubVirtualNetworkRule",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "IgnoreMissingVnetServiceEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkRuleObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubNetworkRuleSet",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubNetworkRuleSet",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubNetworkRuleSet",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "TrustedServiceAccessEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "IPRule",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkRule",
+        "Aliases": [
+          "VirtualNteworkRule"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubAuthorizationRuleSASToken",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "AuthorizationRuleId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiryTime",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubCluster",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventHubCluster",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubCluster",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventHubName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventHubCluster",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventHubClustersAvailableRegion",
+    "IsAlias": false,
+    "SourceModule": "Az.EventHub",
+    "Version": "1.7.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
