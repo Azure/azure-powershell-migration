@@ -41,7 +41,7 @@ We recommend that you use [Visual Studio Code](https://docs.microsoft.com/dotnet
 
 ### Writing code
 
-> **IMPORTANT:** If you are writting code to submit a feature request, ensure that you have submited a feature request before and it has been accepted.
+> **IMPORTANT:** If you are writing code to submit a feature request, ensure that you have submitted a feature request before and it has been accepted.
 
 - Launch VSCode and open the `powershell-module` folder instead of each individual file.
   Alternatively, from a prompt, navigate to `<your_path>\azure-powershell-migration\powershell-module` directory and type `code .`
@@ -56,7 +56,7 @@ We recommend that you use [Visual Studio Code](https://docs.microsoft.com/dotnet
 
 Further reading:
 
-- [Writting tests with Pester](https://pester.dev/docs/quick-start#creating-a-pester-test)
+- [Writing tests with Pester](https://pester.dev/docs/quick-start#creating-a-pester-test)
 - [Introduction to Pester](https://dev.to/omiossec/unit-testing-in-powershell-introduction-to-pester-1de7)
 - [Pester source code](https://github.com/pester/Pester/tree/4.10.1)
 
