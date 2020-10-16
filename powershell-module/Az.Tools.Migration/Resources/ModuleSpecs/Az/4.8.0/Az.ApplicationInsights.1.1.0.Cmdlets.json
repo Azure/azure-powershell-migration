@@ -1,0 +1,879 @@
+[
+  {
+    "Command": "Get-AzApplicationInsights",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Full",
+        "Aliases": [
+          "IncludeDailyCap",
+          "IncludeDailyCapStatus",
+          "IncludePricingPlan"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsights",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": [
+          "ApplicationKind"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForIngestion",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsights",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsights",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForIngestion",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsPricingPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "PricingPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "DailyCapGB",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotificationWhenHitCap",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsDailyCap",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "DailyCapGB",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotificationWhenHitCap",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "DocumentType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSASUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "DocumentType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSASUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ApiKeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "Permissions",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ApplicationInsightsComponent",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ApiKeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AZApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AZApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedStorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AZApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedStorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AZApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "1.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      }
+    ]
+  }
+]
