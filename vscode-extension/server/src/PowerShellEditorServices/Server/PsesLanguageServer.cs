@@ -70,6 +70,7 @@ namespace Microsoft.PowerShell.EditorServices.Server
                         .AddLanguageProtocolLogging(_minimumLogLevel)
                         .SetMinimumLevel(_minimumLogLevel))
                     .WithHandler<PsesTextDocumentHandler>()
+                    .WithHandler<GetVersionHandler>()
                     .WithHandler<PsesCodeActionHandler>()
                     .OnInitialize(
                         async (languageServer, request, cancellationToken) =>
