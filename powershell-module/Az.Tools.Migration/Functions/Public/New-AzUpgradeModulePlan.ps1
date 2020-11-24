@@ -189,12 +189,43 @@ function New-AzUpgradeModulePlan
         # synchronous results output instead of async. the reason for this is that
         # we need to sort the object results before returning them to the caller.
 
+        $migrateSpec = Get-MigrateSpec
+        $commonSuggestions = $migrateSpec.CommonSuggestions
+        $cmdletSpec = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, Cmdlet]' -ArgumentList (, [System.StringComparer]::OrdinalIgnoreCase)
+        foreach ($cmdlet in $migrateSpec.Cmdlets)
+        {
+            $cmdletSpec.Add($cmdlet.CmdletName, $cmdlet)
+        }
+
         $planSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
         $planWarningSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
         $planErrorSteps = New-Object -TypeName 'System.Collections.Generic.List[UpgradePlan]'
 
         foreach ($rmCmdlet in $AzureRmCmdReference)
         {
+            if ($cmdletSpec.ContainsKey($rmCmdlet.CommandName) -eq $true)
+            {
+                foreach ($suggestion in $commonSuggestions)
+                {
+                    $upgradePlan = New-UpgradePlan -Suggestion $suggestion -UpgradeCmdlet $rmCmdlet
+                    if ($upgradePlan -ne $null)
+                    {
+                        $planSteps.Add($upgradePlan)
+                    }
+                }
+
+                $cmdlet = $cmdletSpec[$rmCmdlet.CommandName]
+                foreach ($suggestion in $cmdlet.Suggestions)
+                {
+                    $upgradePlan = New-UpgradePlan -Suggestion $suggestion -UpgradeCmdlet $rmCmdlet
+                    if ($upgradePlan -ne $null)
+                    {
+                        $planSteps.Add($upgradePlan)
+                    }
+                }
+                continue
+            }
+
             Write-Verbose -Message "Checking upgrade potential for instance of $($rmCmdlet.CommandName)"
 
             if ($AzAliasMappingSpec.ContainsKey($rmCmdlet.CommandName) -eq $false)
@@ -365,4 +396,117 @@ function New-AzUpgradeModulePlan
 
         Write-Output -InputObject $planSteps
     }
+}
+
+function New-UpgradePlan
+{
+    Param
+    (
+        [Parameter(
+            Mandatory=$true)]
+        [Suggestion]
+        $Suggestion,
+
+        [Parameter(
+            Mandatory=$true)]
+        [CommandReference]
+        $UpgradeCmdlet
+    )
+
+    $upgradePlan = New-Object -TypeName UpgradePlan
+
+    switch ($Suggestion.Type)
+    {
+        "CmdletRename"
+        {
+            $upgradePlan.Original = $UpgradeCmdlet.CommandName
+            $upgradePlan.Replacement = $Suggestion.ResolvedName
+            $upgradePlan.UpgradeType = [UpgradeStepType]::Cmdlet
+            $upgradePlan.SourceCommand = $UpgradeCmdlet
+            $upgradePlan.FullPath = $UpgradeCmdlet.FullPath
+            $upgradePlan.StartOffset = $UpgradeCmdlet.StartOffset
+            $upgradePlan.Location = $UpgradeCmdlet.Location
+            $upgradePlan.PlanResultReason = "Command can be automatically upgraded."
+            $upgradePlan.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Information
+            return $upgradePlan
+        }
+        "CmdletNotFound"
+        {
+            $upgradePlan.Original = $UpgradeCmdlet.CommandName
+            $upgradePlan.UpgradeType = [UpgradeStepType]::Cmdlet
+            $upgradePlan.SourceCommand = $UpgradeCmdlet
+            $upgradePlan.FullPath = $UpgradeCmdlet.FullPath
+            $upgradePlan.StartOffset = $UpgradeCmdlet.StartOffset
+            $upgradePlan.Location = $UpgradeCmdlet.Location
+            $upgradePlan.PlanResultReason = "No Az cmdlet spec found for $resolvedCommandName. Command cannot be automatically upgraded."
+            $upgradePlan.PlanResult = [PlanResultReasonCode]::ErrorNoModuleSpecMatch
+            $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Error
+            return $upgradePlan
+        }
+        "ParameterRequired"
+        {
+            return $null
+            $upgradePlan.UpgradeType = [UpgradeStepType]::CmdletParameter
+            $upgradePlan.SourceCommand = $UpgradeCmdlet
+            $upgradePlan.FullPath = $UpgradeCmdlet.FullPath
+            $upgradePlan.StartOffset = $UpgradeCmdlet.StartOffset
+            $upgradePlan.Location = $UpgradeCmdlet.Location
+            $upgradePlan.PlanResultReason = "Additional parameter is required in the new version."
+            $upgradePlan.PlanResult = [PlanResultReasonCode]::ErrorParameterRequired
+            $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Error
+            return $upgradePlan
+        }
+        "CmdletAlias"
+        {
+            if ($Suggestion.CmdletAliases -contains $UpgradeCmdlet.CommandName)
+            {
+                $upgradePlan.UpgradeType = [UpgradeStepType]::Cmdlet
+                $upgradePlan.SourceCommand = $UpgradeCmdlet
+                $upgradePlan.FullPath = $UpgradeCmdlet.FullPath
+                $upgradePlan.StartOffset = $UpgradeCmdlet.StartOffset
+                $upgradePlan.Location = $UpgradeCmdlet.Location
+                $upgradePlan.PlanResultReason = "This cmdlet is an alias."
+                $upgradePlan.PlanResult = [PlanResultReasonCode]::WarningAlias
+                $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Warning
+                return $upgradePlan
+            }
+        }
+        "ParameterAlias"
+        {
+            foreach ($upgradeParam in $UpgradeCmdlet.Parameters)
+            {
+                if ($Suggestion.ParameterAliases -contains $upgradeParam.Name)
+                {
+                    $upgradePlan.Original = $upgradeParam.Name
+                    $upgradePlan.Replacement = $Suggestion.ParameterName
+                    $upgradePlan.UpgradeType = [UpgradeStepType]::CmdletParameter
+                    $upgradePlan.SourceCommand = $UpgradeCmdlet
+                    $upgradePlan.FullPath = $upgradeParam.FullPath
+                    $upgradePlan.StartOffset = $upgradeParam.StartOffset
+                    $upgradePlan.Location = $upgradeParam.Location
+                    $upgradePlan.PlanResultReason = "This parameter is an alias."
+                    $upgradePlan.PlanResult = [PlanResultReasonCode]::WarningAlias
+                    $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Warning
+                    return $upgradePlan
+                }
+            }
+        }
+        "BreakingChangeAlert"
+        {
+            $upgradePlan.UpgradeType = [UpgradeStepType]::Cmdlet
+            $upgradePlan.SourceCommand = $UpgradeCmdlet
+            $upgradePlan.FullPath = $UpgradeCmdlet.FullPath
+            $upgradePlan.StartOffset = $UpgradeCmdlet.StartOffset
+            $upgradePlan.Location = $UpgradeCmdlet.Location
+            $upgradePlan.PlanResultReason = "Breaking change alert."
+            $upgradePlan.PlanResult = [PlanResultReasonCode]::WarningBreakingChangeAlert
+            $upgradePlan.PlanSeverity = [DiagnosticSeverity]::Warning
+            return $upgradePlan
+        }
+        Default
+        {
+        }
+    }
+    return $null
 }

@@ -20,6 +20,32 @@ class AliasMapping
     [System.String] $ResolvedCommand
 }
 
+class Suggestion
+{
+    [System.String] $Type
+    [System.String] $ResolvedName
+    [System.String] $ParameterName
+    [System.Collections.Generic.List[System.String]] $ParameterAliases
+    [System.Collections.Generic.List[System.String]] $CmdletAliases
+}
+
+class Cmdlet
+{
+    [System.String] $CmdletName
+    [System.Collections.Generic.List[Suggestion]] $Suggestions
+}
+
+class MigrateSpec
+{
+    [System.String] $Version
+    [System.String] $SourceModuleName
+    [System.String] $SourceVersion
+    [System.String] $TargetModuleName
+    [System.String] $TargetVersion
+    [System.Collections.Generic.List[Suggestion]] $CommonSuggestions
+    [System.Collections.Generic.List[Cmdlet]] $Cmdlets
+}
+
 class CommandDefinitionParameter
 {
     [System.String] $Name
@@ -95,6 +121,9 @@ Enum PlanResultReasonCode
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
+    ErrorParameterRequired = 5
+    WarningAlias = 6
+    WarningBreakingChangeAlert = 7
 }
 
 Enum UpgradeResultReasonCode
