@@ -223,6 +223,8 @@ function New-AzUpgradeModulePlan
                         $planSteps.Add($upgradePlan)
                     }
                 }
+
+                # skip analysis based on old spec
                 continue
             }
 
@@ -446,6 +448,8 @@ function New-UpgradePlan
         }
         "ParameterRequired"
         {
+            # TODO
+            # now all the parameter added in new version will be treat as ParameterRequired
             return $null
             $upgradePlan.UpgradeType = [UpgradeStepType]::CmdletParameter
             $upgradePlan.SourceCommand = $UpgradeCmdlet
