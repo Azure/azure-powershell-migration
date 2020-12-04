@@ -47,10 +47,41 @@ function Find-CmdletsInFile
             }
         }
 
-        $predicate = { param($astObject) $astObject -is [System.Management.Automation.Language.CommandAst] }
+        # search for variable assignment statements
+        # the goal here is to build a table with the hastable variable sets (if any are present), to support splatted parameter names.
         $recurse = $true
+        $assignmentPredicate = { param($astObject) $astObject -is [System.Management.Automation.Language.AssignmentStatementAst] }
+        $assignmentAstNodes = $rootAstNode.FindAll($assignmentPredicate, $recurse)
+        $hashtableVariables = New-Object -TypeName 'System.Collections.Generic.Dictionary[System.String, System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]]'
 
-        $commandAstNodes = $rootAstNode.FindAll($predicate, $recurse)
+        for ([int]$i = 0; $i -lt $assignmentAstNodes.Count; $i++)
+        {
+            $currentVarAstNode = $assignmentAstNodes[$i]
+
+            # is the right hand side of the expression statement a hashtable node?
+            if ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.HashtableAst])
+            {
+                # capture the hashtable variable name
+                $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
+                $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
+
+                # capture the hashtable key name extents. 
+                # -- the tuple's .Item1 contains the key name AST (which may represent a splatted parameter name).
+                # -- the tuple's .Item2 contains the key value AST (we dont need to capture this)
+                # -- also make sure to only grab hashtable key names that come from ConstantExpressionAst (to avoid unsupported subexpression keyname scenarios).
+                foreach ($expressionAst in $currentVarAstNode.Right.Expression.KeyValuePairs)
+                {
+                    if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                    {
+                        $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                    }
+                }
+            }
+        }
+
+        # search for command statements
+        $commandPredicate = { param($astObject) $astObject -is [System.Management.Automation.Language.CommandAst] }
+        $commandAstNodes = $rootAstNode.FindAll($commandPredicate, $recurse)
 
         for ([int]$i = 0; $i -lt $commandAstNodes.Count; $i++)
         {
@@ -86,25 +117,9 @@ function Find-CmdletsInFile
                         {
                             $paramRef = New-Object -TypeName CommandReferenceParameter
 
-                            # substring to cut off the dash (-) character we dont need
-                            $paramRef.Name = $currentAstNodeCmdElement.Extent.Text.Substring(1)
-
-                            # check for the parameter value.
-                            # if this is the last element in the list, or the next item is also a
-                            # parameter, then this parameter has no value (switch parameter)
-
-                            if ($j -eq ($currentAstNode.CommandElements.Count -1) `
-                                    -or $currentAstNode.CommandElements[($j + 1)] -is [System.Management.Automation.Language.CommandParameterAst])
-                            {
-                                # switch param (no value)
-                                $paramRef.Value = $null
-                            }
-                            else
-                            {
-                                # regular param (has value)
-                                $paramRef.Value = $currentAstNode.CommandElements[($j + 1)].Extent.Text
-                            }
-
+                            # grab the parameter name with no dash value
+                            # construct the parameter object with location details
+                            $paramRef.Name = $currentAstNodeCmdElement.ParameterName
                             $paramRef.FullPath = $cmdletRef.FullPath
                             $paramRef.FileName = $cmdletRef.FileName
                             $paramRef.StartLine = $currentAstNodeCmdElement.Extent.StartLineNumber
@@ -121,6 +136,33 @@ function Find-CmdletsInFile
                                 -and $currentAstNodeCmdElement.Splatted -eq $true)
                         {
                             $cmdletRef.HasSplattedArguments = $true
+
+                            # grab the splatted parameter name without the '@' character prefix.
+                            # we can then look this up in our known hashtable variables table.
+                            $hashtableVariableName = $currentAstNodeCmdElement.VariablePath.UserPath
+
+                            if ($hashtableVariables.ContainsKey($hashtableVariableName))
+                            {
+                                foreach ($splattedParameter in $hashtableVariables[$hashtableVariableName])
+                                {
+                                    $paramRef = New-Object -TypeName CommandReferenceParameter
+
+                                    # add new parameter (similar to above)
+                                    # only difference is the location refers to the original hashtable where the key is defined.
+                                    $paramRef.Name = $splattedParameter.Value
+                                    $paramRef.FullPath = $cmdletRef.FullPath
+                                    $paramRef.FileName = $cmdletRef.FileName
+                                    $paramRef.StartLine = $splattedParameter.Extent.StartLineNumber
+                                    $paramRef.StartColumn = $splattedParameter.Extent.StartColumnNumber
+                                    $paramRef.EndLine = $splattedParameter.Extent.EndLineNumber
+                                    $paramRef.EndPosition = $splattedParameter.Extent.EndColumnNumber
+                                    $paramRef.StartOffset = $splattedParameter.Extent.StartOffset
+                                    $paramRef.EndOffset = $splattedParameter.Extent.EndOffset
+                                    $paramRef.Location = "{0}:{1}:{2}" -f $paramRef.FileName, $paramRef.StartLine, $paramRef.StartColumn
+
+                                    $cmdletRef.Parameters.Add($paramRef)
+                                }
+                            }
                         }
                     }
                 }

@@ -45,7 +45,6 @@ class CommandReferenceParameter
     [System.String] $FileName
     [System.String] $FullPath
     [System.String] $Name
-    [System.String] $Value
     [System.Int32] $StartLine
     [System.Int32] $StartColumn
     [System.Int32] $EndLine
