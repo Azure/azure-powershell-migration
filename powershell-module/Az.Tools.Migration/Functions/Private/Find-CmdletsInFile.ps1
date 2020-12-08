@@ -26,10 +26,11 @@ function Find-CmdletsInFile
     )
     Process
     {
+        # constants
         $matchPattern = "(\b[a-zA-z]+-[a-zA-z]+\b)"
         $doubleQuoteCharacter = '"'
         $singleQuoteCharacter = ''''
-        $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
+        $orderedTypeName = 'ordered'
 
         # ref output vars
         $parserErrors = $null
@@ -79,11 +80,30 @@ function Find-CmdletsInFile
                     }
                 }
             }
+            elseif ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.ConvertExpressionAst] `
+                -and $currentVarAstNode.Right.Expression.Type.TypeName.FullName -eq $orderedTypeName `
+                -and $currentVarAstNode.Right.Expression.Child -is [System.Management.Automation.Language.HashtableAst])
+            {
+                # same as the above 'if' condition case, but special handling for [ordered] hashtable objects.
+                # we have to check the .Child [HashtableAst] of the ConvertExpressionAst.
+
+                $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
+                $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
+                
+                foreach ($expressionAst in $currentVarAstNode.Right.Expression.Child.KeyValuePairs)
+                {
+                    if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                    {
+                        $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                    }
+                }
+            }
         }
 
         # search for command statements
         $commandPredicate = { param($astObject) $astObject -is [System.Management.Automation.Language.CommandAst] }
         $commandAstNodes = $rootAstNode.FindAll($commandPredicate, $recurse)
+        $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
 
         for ([int]$i = 0; $i -lt $commandAstNodes.Count; $i++)
         {

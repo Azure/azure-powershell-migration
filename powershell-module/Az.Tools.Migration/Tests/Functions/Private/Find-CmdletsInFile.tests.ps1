@@ -423,6 +423,80 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
                 $paramSearch.EndOffset | Should Be $expectedParam.EndOffset
             }
         }
+        It 'Should be able to find splatted parameters from ordered hashtables' {
+            # arrange
+            $testFile = Resolve-Path -Path ".\Resources\TestFiles\ScriptExample-ParameterSplatting6.ps1"
+
+            # act
+            $results = Find-CmdletsInFile -FilePath $testFile.Path
+
+            # assert
+            $results | Should Not Be Null
+            $results.Count | Should Be 1
+            $results[0].StartLine | Should Be 7
+            $results[0].StartColumn | Should Be 1
+            $results[0].EndLine | Should Be 7
+            $results[0].EndPosition | Should Be 16
+            $results[0].CommandName | Should Be "Test-Connection"
+            $results[0].HasSplattedArguments | Should Be $true
+            
+            # we should have 4 valid parameters here, but order is not guaranteed due to enumeration
+            # over an unsorted dictionary. avoid using an ordered index check for the tests.
+
+            $expectedParameters = @(
+                [PSCustomObject]@{
+                    Name = "TargetName"
+                    StartLine = 3
+                    StartColumn = 5
+                    EndLine = 3
+                    EndPosition = 15
+                    StartOffset = 116
+                    EndOffset = 126
+                },
+                [PSCustomObject]@{
+                    Name = "Count"
+                    StartLine = 4
+                    StartColumn = 5
+                    EndLine = 4
+                    EndPosition = 10
+                    StartOffset = 146
+                    EndOffset = 151
+                },
+                [PSCustomObject]@{
+                    Name = "IPv4"
+                    StartLine = 5
+                    StartColumn = 5
+                    EndLine = 5
+                    EndPosition = 9
+                    StartOffset = 161
+                    EndOffset = 165
+                },
+                [PSCustomObject]@{
+                    Name = "Delay"
+                    StartLine = 7
+                    StartColumn = 34
+                    EndLine = 7
+                    EndPosition = 39
+                    StartOffset = 211
+                    EndOffset = 216
+                }
+            )
+
+            $results[0].Parameters.Count | Should Be $expectedParameters.Count
+
+            foreach ($expectedParam in $expectedParameters)
+            {
+                $paramSearch = $results[0].Parameters | Where-Object -FilterScript { $_.Name -eq $expectedParam.Name }
+
+                $paramSearch | Should Not Be Null
+                $paramSearch.StartLine | Should Be $expectedParam.StartLine
+                $paramSearch.StartColumn | Should Be $expectedParam.StartColumn
+                $paramSearch.EndLine | Should Be $expectedParam.EndLine
+                $paramSearch.EndPosition | Should Be $expectedParam.EndPosition
+                $paramSearch.StartOffset | Should Be $expectedParam.StartOffset
+                $paramSearch.EndOffset | Should Be $expectedParam.EndOffset
+            }
+        }
         It 'Should be able to find splatted parameters wrapped with quote characters' {
             # arrange
             $testFile = Resolve-Path -Path ".\Resources\TestFiles\ScriptExample-ParameterSplatting2.ps1"
