@@ -55,7 +55,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $step.Location = "test.ps1:3:5"
             $step.SourceCommandParameter = New-Object -TypeName CommandReferenceParameter
-            $step.SourceCommandParameter.StartOffset = 80
+            $step.SourceCommandParameter.StartOffset = 81
             $step.SourceCommandParameter.EndOffset = 85
 
             # act
@@ -105,7 +105,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $step.Location = "test.ps1:3:5"
             $step.SourceCommandParameter = New-Object -TypeName CommandReferenceParameter
-            $step.SourceCommandParameter.StartOffset = 80
+            $step.SourceCommandParameter.StartOffset = 81
             $step.SourceCommandParameter.EndOffset = 85
 
             # act

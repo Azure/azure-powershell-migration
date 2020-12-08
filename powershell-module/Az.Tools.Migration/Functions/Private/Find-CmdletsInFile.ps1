@@ -120,15 +120,16 @@ function Find-CmdletsInFile
                             $paramRef = New-Object -TypeName CommandReferenceParameter
 
                             # grab the parameter name with no dash value
+                            # the extent offsets here include the dash, so add +1 to the starting values
                             # construct the parameter object with location details
                             $paramRef.Name = $currentAstNodeCmdElement.ParameterName
                             $paramRef.FullPath = $cmdletRef.FullPath
                             $paramRef.FileName = $cmdletRef.FileName
                             $paramRef.StartLine = $currentAstNodeCmdElement.Extent.StartLineNumber
-                            $paramRef.StartColumn = $currentAstNodeCmdElement.Extent.StartColumnNumber
+                            $paramRef.StartColumn = ($currentAstNodeCmdElement.Extent.StartColumnNumber + 1)
                             $paramRef.EndLine = $currentAstNodeCmdElement.Extent.EndLineNumber
                             $paramRef.EndPosition = $currentAstNodeCmdElement.Extent.EndColumnNumber
-                            $paramRef.StartOffset = $currentAstNodeCmdElement.Extent.StartOffset
+                            $paramRef.StartOffset = ($currentAstNodeCmdElement.Extent.StartOffset + 1)
                             $paramRef.EndOffset = $currentAstNodeCmdElement.Extent.EndOffset
                             $paramRef.Location = "{0}:{1}:{2}" -f $paramRef.FileName, $paramRef.StartLine, $paramRef.StartColumn
 
@@ -149,8 +150,7 @@ function Find-CmdletsInFile
                                 {
                                     $paramRef = New-Object -TypeName CommandReferenceParameter
 
-                                    # add new parameter (similar to above)
-                                    # only difference is the location refers to the original hashtable where the key is defined.
+                                    # add new parameter, similar to above, however a hashtable key name is the parameter name.
                                     $paramRef.Name = $splattedParameter.Value
                                     $paramRef.FullPath = $cmdletRef.FullPath
                                     $paramRef.FileName = $cmdletRef.FileName

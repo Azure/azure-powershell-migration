@@ -60,12 +60,12 @@ function Invoke-ModuleUpgradeStep
 
                 # safety check
                 # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring ("-{0}" -f $Step.Original) `
+                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.Original `
                     -StartOffset $Step.SourceCommandParameter.StartOffset -EndOffset $Step.SourceCommandParameter.EndOffset
 
                 # replacement code
                 $null = $FileContent.Remove($Step.SourceCommandParameter.StartOffset, ($Step.SourceCommandParameter.EndOffset - $Step.SourceCommandParameter.StartOffset));
-                $null = $FileContent.Insert($Step.SourceCommandParameter.StartOffset, ("-{0}" -f $Step.Replacement));
+                $null = $FileContent.Insert($Step.SourceCommandParameter.StartOffset, $Step.Replacement);
             }
             default
             {
