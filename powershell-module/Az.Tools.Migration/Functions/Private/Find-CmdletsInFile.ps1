@@ -27,6 +27,8 @@ function Find-CmdletsInFile
     Process
     {
         $matchPattern = "(\b[a-zA-z]+-[a-zA-z]+\b)"
+        $doubleQuoteCharacter = '"'
+        $singleQuoteCharacter = ''''
         $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
 
         # ref output vars
@@ -152,12 +154,29 @@ function Find-CmdletsInFile
                                     $paramRef.Name = $splattedParameter.Value
                                     $paramRef.FullPath = $cmdletRef.FullPath
                                     $paramRef.FileName = $cmdletRef.FileName
-                                    $paramRef.StartLine = $splattedParameter.Extent.StartLineNumber
-                                    $paramRef.StartColumn = $splattedParameter.Extent.StartColumnNumber
-                                    $paramRef.EndLine = $splattedParameter.Extent.EndLineNumber
-                                    $paramRef.EndPosition = $splattedParameter.Extent.EndColumnNumber
-                                    $paramRef.StartOffset = $splattedParameter.Extent.StartOffset
-                                    $paramRef.EndOffset = $splattedParameter.Extent.EndOffset
+
+                                    if ($splattedParameter.Extent.Text[0] -ne $doubleQuoteCharacter -and $splattedParameter.Extent.Text[0] -ne $singleQuoteCharacter)
+                                    {
+                                        # normal hash table key (not wrapped in quote characters)
+                                        $paramRef.StartLine = $splattedParameter.Extent.StartLineNumber
+                                        $paramRef.StartColumn = $splattedParameter.Extent.StartColumnNumber
+                                        $paramRef.EndLine = $splattedParameter.Extent.EndLineNumber
+                                        $paramRef.EndPosition = $splattedParameter.Extent.EndColumnNumber
+                                        $paramRef.StartOffset = $splattedParameter.Extent.StartOffset
+                                        $paramRef.EndOffset = $splattedParameter.Extent.EndOffset
+                                    }
+                                    else
+                                    {
+                                        # hash table key wrapped in quotes
+                                        # use special offset handling to account for quote wrapper characters.
+                                        $paramRef.StartLine = $splattedParameter.Extent.StartLineNumber
+                                        $paramRef.StartColumn = ($splattedParameter.Extent.StartColumnNumber + 1)
+                                        $paramRef.EndLine = $splattedParameter.Extent.EndLineNumber
+                                        $paramRef.EndPosition = ($splattedParameter.Extent.EndColumnNumber - 1)
+                                        $paramRef.StartOffset = ($splattedParameter.Extent.StartOffset + 1)
+                                        $paramRef.EndOffset = ($splattedParameter.Extent.EndOffset - 1)
+                                    }
+
                                     $paramRef.Location = "{0}:{1}:{2}" -f $paramRef.FileName, $paramRef.StartLine, $paramRef.StartColumn
 
                                     $cmdletRef.Parameters.Add($paramRef)
