@@ -244,20 +244,10 @@ function New-AzUpgradeModulePlan
             $cmdletUpgrade.StartOffset = $rmCmdlet.StartOffset
             $cmdletUpgrade.Location = $rmCmdlet.Location
 
-            if ($rmCmdlet.HasSplattedArguments -eq $false)
-            {
-                $cmdletUpgrade.PlanResultReason = "Command can be automatically upgraded."
-                $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
-                $cmdletUpgrade.PlanSeverity = [DiagnosticSeverity]::Information
-                $planSteps.Add($cmdletUpgrade)
-            }
-            else
-            {
-                $cmdletUpgrade.PlanResultReason = "Cmdlet invocation uses splatted parameters. Consider unrolling to allow automated parameter upgrade checks."
-                $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
-                $cmdletUpgrade.PlanSeverity = [DiagnosticSeverity]::Warning
-                $planWarningSteps.Add($cmdletUpgrade)
-            }
+            $cmdletUpgrade.PlanResultReason = "Command can be automatically upgraded."
+            $cmdletUpgrade.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
+            $cmdletUpgrade.PlanSeverity = [DiagnosticSeverity]::Information
+            $planSteps.Add($cmdletUpgrade)
 
             # check if parameters need to be updated
 

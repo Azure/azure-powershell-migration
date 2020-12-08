@@ -179,54 +179,6 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Assert-VerifiableMock
         }
-        It 'Should be able to execute plan steps with warning state' {
-            # arrange
-            $step1 = New-Object -TypeName UpgradePlan
-            $step1.FullPath = "C:\mock-file.ps1"
-            $step1.UpgradeType = [UpgradeStepType]::Cmdlet
-            $step1.PlanResult = [PlanResultReasonCode]::ReadyToUpgrade
-            $step1.PlanSeverity = [DiagnosticSeverity]::Information
-            $step1.Location = "mocked-file.ps1:10:5"
-            $step1.Original = "Login-AzureRmAccount"
-            $step1.Replacement = "Login-AzAccount"
-
-            $step2 = New-Object -TypeName UpgradePlan
-            $step2.FullPath = "C:\mock-file.ps1"
-            $step2.UpgradeType = [UpgradeStepType]::Cmdlet
-            $step2.PlanResult = [PlanResultReasonCode]::WarningSplattedParameters
-            $step2.PlanSeverity = [DiagnosticSeverity]::Warning
-            $step2.Location = "mocked-file.ps1:20:1"
-            $step2.Original = "Get-AzureRmCommandThatIsUsingSplattedParameters"
-            $step2.Replacement = "Get-AzCommandThatIsUsingSplattedParameters" # has a replacement, but is in warning state.
-
-            $plan = @( $step1, $step2 )
-
-            Mock -CommandName Invoke-ModuleUpgradeStep -ModuleName Az.Tools.Migration -MockWith { } -Verifiable
-            Mock -CommandName Get-Content -MockWith { return "mock-file-contents" } -Verifiable
-            Mock -CommandName Set-Content -MockWith { }
-
-            # ensure we don't send telemetry during tests.
-            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
-
-            # act
-            $results = Invoke-AzUpgradeModulePlan -Plan $plan -FileEditMode ModifyExistingFiles -Confirm:$false
-
-            # assert
-            $results | Should Not Be $null
-            $results.Count | Should Be 2
-
-            # first plan step should have upgraded fine.
-            $results[0].GetType().FullName | Should Be 'UpgradeResult'
-            $results[0].UpgradeResult.ToString() | Should Be 'UpgradeCompleted'
-            $results[0].UpgradeSeverity.ToString() | Should Be 'Information'
-
-            # second plan step should be executed, but return a Completed w/ warnings state.
-            $results[1].GetType().FullName | Should Be 'UpgradeResult'
-            $results[1].UpgradeResult.ToString() | Should Be 'UpgradedWithWarnings'
-            $results[1].UpgradeSeverity.ToString() | Should Be 'Warning'
-
-            Assert-VerifiableMock
-        }
         It 'Should be able to handle file upgrade errors' {
             # arrange
             $step1 = New-Object -TypeName UpgradePlan

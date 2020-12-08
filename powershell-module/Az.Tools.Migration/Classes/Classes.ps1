@@ -90,7 +90,7 @@ Enum UpgradeStepType
 Enum PlanResultReasonCode
 {
     ReadyToUpgrade = 0
-    WarningSplattedParameters = 1
+    WarningSplattedParameters = 1 # deprecated
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
