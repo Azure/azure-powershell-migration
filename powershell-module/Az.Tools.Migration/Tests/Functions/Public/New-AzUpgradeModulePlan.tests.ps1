@@ -41,7 +41,6 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $cmdlet1Param = New-Object -TypeName CommandReferenceParameter
             $cmdlet1Param.Name = "EnvironmentName"
-            $cmdlet1Param.Value = "mock-value"
             $cmdlet1Param.StartOffset = 27
 
             $cmdlet1.Parameters.Add($cmdlet1Param)
