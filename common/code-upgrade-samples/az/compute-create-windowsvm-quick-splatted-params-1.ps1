@@ -8,18 +8,18 @@ $vmName = "myVM"
 $cred = Get-Credential -Message "Enter a username and password for the virtual machine."
 
 # Create a resource group
-New-AzureRmResourceGroup -Name $resourceGroup -Location $location
+New-AzResourceGroup -Name $resourceGroup -Location $location
 
 # Create a virtual machine
-# use splatted params (keys are wrapped with quotes)
+# use splatted params
 $virtualMachineParams = @{
-  "Location" = $location
-  "ImageName" = "Win2016Datacenter"
-  "VirtualNetworkName" = "myVnet"
-  "SubnetName" = "mySubnet"
-  "SecurityGroupName" = "myNetworkSecurityGroup"
-  "PublicIpAddressName" = "myPublicIp"
-  "Credential" = $cred
-  "OpenPorts" = 3389
+  Location = $location
+  Image = "Win2016Datacenter"
+  VirtualNetworkName = "myVnet"
+  SubnetName = "mySubnet"
+  SecurityGroupName = "myNetworkSecurityGroup"
+  PublicIpAddressName = "myPublicIp"
+  Credential = $cred
+  OpenPorts = 3389
 }
-New-AzureRmVM @virtualMachineParams -ResourceGroupName $resourceGroup -Name $vmName
+New-AzVM @virtualMachineParams -ResourceGroupName $resourceGroup -Name $vmName
