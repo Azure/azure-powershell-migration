@@ -41,7 +41,6 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $cmdlet1Param = New-Object -TypeName CommandReferenceParameter
             $cmdlet1Param.Name = "EnvironmentName"
-            $cmdlet1Param.Value = "mock-value"
             $cmdlet1Param.StartOffset = 27
 
             $cmdlet1.Parameters.Add($cmdlet1Param)
@@ -233,34 +232,6 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[8].Original | Should Be 'Login-AzureRmAccount'
             $results[8].Replacement | Should Be 'Login-AzAccount'
             $results[8].StartOffset | Should Be 33
-        }
-        It 'Should be able to generate warnings for splatted parameter scenarios' {
-            # arrange
-            $cmdlet1 = New-Object -TypeName CommandReference
-            $cmdlet1.FileName = "mock-file.ps1"
-            $cmdlet1.FullPath = "C:\mock-file.ps1"
-            $cmdlet1.CommandName = "Login-AzureRmAccount"
-            $cmdlet1.StartOffset = 10
-            $cmdlet1.HasSplattedArguments = $true
-
-            $foundCmdlets = @()
-            $foundCmdlets += $cmdlet1
-
-            # ensure we don't send telemetry during tests.
-            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
-
-            # act
-            # should generate a warning, and an upgrade step
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 4.8.0
-
-            # assert
-            $results | Should Not Be $null
-            $results.Count | Should Be 1
-
-            $results.UpgradeType.ToString() | Should Be 'Cmdlet'
-            $results.PlanResult.ToString() | Should Be "WarningSplattedParameters"
-            $results.PlanSeverity.ToString() | Should Be 'Warning'
-            $results.PlanResultReason.Contains("splatted parameters") | Should Be $true
         }
         It 'Should be able to generate errors for source cmdlets missing upgrade aliases' {
             # arrange

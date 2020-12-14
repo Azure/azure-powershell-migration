@@ -45,7 +45,6 @@ class CommandReferenceParameter
     [System.String] $FileName
     [System.String] $FullPath
     [System.String] $Name
-    [System.String] $Value
     [System.Int32] $StartLine
     [System.Int32] $StartColumn
     [System.Int32] $EndLine
@@ -91,7 +90,7 @@ Enum UpgradeStepType
 Enum PlanResultReasonCode
 {
     ReadyToUpgrade = 0
-    WarningSplattedParameters = 1
+    WarningSplattedParameters = 1 # deprecated
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
