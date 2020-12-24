@@ -1,0 +1,324 @@
+[
+  {
+    "Command": "New-AzHealthcareApisService",
+    "IsAlias": false,
+    "SourceModule": "Az.HealthcareApis",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessPolicyObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowCorsCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "Audience",
+        "Aliases": null
+      },
+      {
+        "Name": "Authority",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsMaxAge",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsOrigin",
+        "Aliases": null
+      },
+      {
+        "Name": "CosmosKeyVaultKeyUri",
+        "Aliases": null
+      },
+      {
+        "Name": "CosmosOfferThroughput",
+        "Aliases": null
+      },
+      {
+        "Name": "ExportStorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableSmartProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "FhirVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzHealthcareApisService",
+    "IsAlias": false,
+    "SourceModule": "Az.HealthcareApis",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HealthcareApisName",
+          "FhirServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHealthcareApisService",
+    "IsAlias": false,
+    "SourceModule": "Az.HealthcareApis",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "CosmosOfferThroughput",
+        "Aliases": null
+      },
+      {
+        "Name": "CosmosKeyVaultKeyUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Authority",
+        "Aliases": null
+      },
+      {
+        "Name": "Audience",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableSmartProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableSmartProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsOrigin",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "CorsMaxAge",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowCorsCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableCorsCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ExportStorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessPolicyObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHealthcareApisService",
+    "IsAlias": false,
+    "SourceModule": "Az.HealthcareApis",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HealthcareApisName",
+          "FhirServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

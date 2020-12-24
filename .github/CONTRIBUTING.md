@@ -48,9 +48,19 @@ We recommend that you use [Visual Studio Code](https://docs.microsoft.com/dotnet
 
 - New features must have unit tests and supporting documentation in order to be accepted.
   
-- To run your tests locally you need to add the path to the module directory `<your_path>\azure-powershell-migration\powershell-module` to the environment variable `$env:PSModulePath`. 
+- Execute tests 
+  ```
+  # add the path to the module directory to the environment variable
+  $env:PSModulePath += ";<your_path>\azure-powershell-migration\powershell-module"
 
-  Run your test with `Invoke-Pester -TestName "Name_of_your_test"`
+  # Pester 5.x has breaking change. 4.10.1 is required.
+  Install-Module -Name Pester -RequiredVersion 4.10.1
+
+  cd <your_path>\azure-powershell-migration\powershell-module\Az.Tools.Migration
+
+  # Execute all test cases
+  Invoke-Pester -TestName "*tests"
+  ```
 
 - Any resources or code that may also be used for the VSCode extension should be placed in the `common` folder at the root of this repository.
 
