@@ -1,0 +1,8566 @@
+[
+  {
+    "Command": "Get-AzRecoveryServicesBackupProperty",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesVault",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "TagName",
+        "Aliases": null
+      },
+      {
+        "Name": "TagValue",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesVaultSettingsFile",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "SiteIdentifier",
+        "Aliases": null
+      },
+      {
+        "Name": "Certificate",
+        "Aliases": null
+      },
+      {
+        "Name": "SiteFriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SiteRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "Backup",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesVault",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesVault",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzRecoveryServicesAsrReplicationProtectedItemDisk",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Edit-AzRecoveryServicesAsrRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "AppendGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "RemoveGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "AddProtectedItem",
+        "Aliases": [
+          "AddProtectedItems"
+        ]
+      },
+      {
+        "Name": "RemoveProtectedItem",
+        "Aliases": [
+          "RemoveProtectedItems"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrAlertSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrEvent",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "AffectedObjectFriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EventType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrNetwork",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Network",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrProtectionContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrRecoveryPoint",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrStorageClassification",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrVaultContext",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzRecoveryServicesAsrVaultSettingsFile",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Azure",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrInMageAzureV2DiskInput",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationFrequencyInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "NumberOfRecoveryPointsToRetain",
+        "Aliases": [
+          "RecoveryPoints"
+        ]
+      },
+      {
+        "Name": "RecoveryPointRetentionInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationConsistentSnapshotFrequencyInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "Compression",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Authentication",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaDeletion",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiVmSyncStatus",
+        "Aliases": null
+      },
+      {
+        "Name": "RPOWarningThresholdInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "IPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "OSType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrProtectionContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Fabric"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Azure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureZoneToZone",
+        "Aliases": null
+      },
+      {
+        "Name": "FailoverDeploymentModel",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableItem",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureVmId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVmName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "OSDiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "OS",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeDiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "InMageAzureV2DiskInput",
+        "Aliases": null
+      },
+      {
+        "Name": "ProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySetId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryStorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryStorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "IpOrHostName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrAzureToAzureDiskReplicationConfig",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ManagedDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "VhdUri",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryReplicaDiskAccountType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTargetDiskAccountType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryDiskEncryptionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "FailoverDiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoDiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesAsrVMNicConfig",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "NicId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseExistingNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVMSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoReuseExistingNic",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoVMSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnTfo",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Fabric"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "NetworkMapping"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Policy"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrProtectionContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ProtectionContainer"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ProtectionContainerMapping"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrReplicationProtectedItemDisk",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "VhdUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ServicesProvider"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "StorageClassificationMapping"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesAsrvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "vCenter"
+        ]
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restart-AzRecoveryServicesAsrJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Resume-AzRecoveryServicesAsrJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "Comment",
+        "Aliases": [
+          "Comments"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesAsrAlertSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "EnableEmailSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableEmailToSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "LocaleID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesAsrReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Size",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "NicSelectionType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySet",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureUpdateReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseManagedDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskIdToDiskEncryptionSetMap",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoAzureVMName",
+        "Aliases": null
+      },
+      {
+        "Name": "ASRVMNicConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesAsrVaultContext",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrApplyRecoveryPoint",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrCommitFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrPlannedFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "Optimize",
+        "Aliases": null
+      },
+      {
+        "Name": "CreateVmIfNotFound",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicesProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrResynchronizeReplicationJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrSwitchProcessServerJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": [
+          "ConfigServer"
+        ]
+      },
+      {
+        "Name": "SourceProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": [
+          "ReplicatedItem"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrTestFailoverCleanupJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Comment",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrTestFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "VMNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudServiceCreationOption",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzRecoveryServicesAsrUnplannedFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "PerformSourceSideAction",
+        "Aliases": [
+          "PerformSourceSideActions"
+        ]
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzRecoveryServicesAsrJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrMobilityService",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "NetworkMapping"
+        ]
+      },
+      {
+        "Name": "RecoveryNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Policy"
+        ]
+      },
+      {
+        "Name": "ReplicationMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationFrequencyInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "NumberOfRecoveryPointsToRetain",
+        "Aliases": [
+          "RecoveryPoints"
+        ]
+      },
+      {
+        "Name": "RecoveryPointRetentionInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationConsistentSnapshotFrequencyInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "Compression",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Authentication",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaDeletion",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiVmSyncStatus",
+        "Aliases": null
+      },
+      {
+        "Name": "RPOWarningThresholdInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ProtectionContainerMapping"
+        ]
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableAutoUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrProtectionDirection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "DataStore",
+        "Aliases": null
+      },
+      {
+        "Name": "MasterTarget",
+        "Aliases": null
+      },
+      {
+        "Name": "ProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySetId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionVolume",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ServicesProvider"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRecoveryServicesAsrvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "vCenter"
+        ]
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesBackupProperty",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupStorageRedundancy",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesVaultContext",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzRecoveryServicesBackupItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiryDateTimeUTC",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupType",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableCompression",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupManagementServer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ContainerType",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzRecoveryServicesBackupContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Container",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Unregister-AzRecoveryServicesBackupContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Container",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzRecoveryServicesBackupProtection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "RemoveRecoveryPoints",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzRecoveryServicesBackupProtection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableItem",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "InclusionDisksList",
+        "Aliases": null
+      },
+      {
+        "Name": "ExclusionDisksList",
+        "Aliases": null
+      },
+      {
+        "Name": "ResetExclusionSettings",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeAllDataDisks",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzRecoveryServicesBackupAutoProtection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputItem",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzRecoveryServicesBackupAutoProtection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputItem",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Container",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionStatus",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionState",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "DeleteState",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Container",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentID",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerName",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Initialize-AzRecoveryServicesBackupProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Container",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Operation",
+        "Aliases": null
+      },
+      {
+        "Name": "From",
+        "Aliases": null
+      },
+      {
+        "Name": "To",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupJobDetail",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzRecoveryServicesBackupJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Wait-AzRecoveryServicesBackupJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "Timeout",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupProtectionPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupRetentionPolicyObject",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupSchedulePolicyObject",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRecoveryServicesBackupProtectionPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "SchedulePolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRecoveryServicesBackupProtectionPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesBackupProtectionPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "SchedulePolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "FixForInconsistentItems",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupRecoveryPoint",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPointId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyFileDownloadLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupRecoveryLogChain",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzRecoveryServicesBackupItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VaultLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "WLRecoveryConfig",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResolveConflict",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceFileType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetStorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetFileShareName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "MultipleSourceFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "UseOriginalStorageAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "RestoreOnlyOSDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "RestoreDiskList",
+        "Aliases": null
+      },
+      {
+        "Name": "RestoreAsUnmanagedDisks",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupWorkloadRecoveryConfig",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "PointInTime",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "OriginalWorkloadRestore",
+        "Aliases": null
+      },
+      {
+        "Name": "AlternateWorkloadRestore",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "RestoreAsFiles",
+        "Aliases": null
+      },
+      {
+        "Name": "FromFull",
+        "Aliases": null
+      },
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Unregister-AzRecoveryServicesBackupManagementServer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "AzureRmBackupManagementServer",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupRPMountScript",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzRecoveryServicesBackupRPMountScript",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupStatus",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableObjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzRecoveryServicesBackupItemDeletion",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Item",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesVaultProperty",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "SoftDeleteFeatureState",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesVaultProperty",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Copy-AzRecoveryServicesVault",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SourceVault",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetVault",
+        "Aliases": null
+      },
+      {
+        "Name": "RetryOnlyFailed",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupProperties",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-ASRReplicationProtectedItemDisk",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Edit-ASRRP",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "AppendGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "RemoveGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "AddProtectedItem",
+        "Aliases": [
+          "AddProtectedItems"
+        ]
+      },
+      {
+        "Name": "RemoveProtectedItem",
+        "Aliases": [
+          "RemoveProtectedItems"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Edit-ASRRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "AppendGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "RemoveGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "AddProtectedItem",
+        "Aliases": [
+          "AddProtectedItems"
+        ]
+      },
+      {
+        "Name": "RemoveProtectedItem",
+        "Aliases": [
+          "RemoveProtectedItems"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRAlertSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASREvent",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "AffectedObjectFriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EventType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRNetwork",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Network",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRNotificationSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRProtectionContainer",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRRP",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRRecoveryPoint",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRStorageClassification",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-ASRVaultContext",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-ASRVaultSettings",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-ASRvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrNotificationSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesAsrVaultSettings",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Azure",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AsrInMageAzureV2DiskInput",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "DiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationFrequencyInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "NumberOfRecoveryPointsToRetain",
+        "Aliases": [
+          "RecoveryPoints"
+        ]
+      },
+      {
+        "Name": "RecoveryPointRetentionInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationConsistentSnapshotFrequencyInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "Compression",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Authentication",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaDeletion",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiVmSyncStatus",
+        "Aliases": null
+      },
+      {
+        "Name": "RPOWarningThresholdInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRProtectableItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "FriendlyName",
+        "Aliases": null
+      },
+      {
+        "Name": "IPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "OSType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProtectionContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRRP",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Azure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureZoneToZone",
+        "Aliases": null
+      },
+      {
+        "Name": "FailoverDeploymentModel",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryFabric",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Azure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureZoneToZone",
+        "Aliases": null
+      },
+      {
+        "Name": "FailoverDeploymentModel",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectableItem",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureVmId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVmName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "OSDiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "OS",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeDiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "InMageAzureV2DiskInput",
+        "Aliases": null
+      },
+      {
+        "Name": "ProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySetId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryStorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryStorageClassification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "IpOrHostName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-ASRVMNicConfig",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "NicId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseExistingNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryVMSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoReuseExistingNic",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoVMSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnTfo",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRFabric",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Fabric"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRNetworkMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "NetworkMapping"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Policy"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ProtectionContainerMapping"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRRP",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "WaitForCompletion",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ServicesProvider"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRReplicationProtectedItemDisk",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "VhdUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRStorageClassificationMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "StorageClassificationMapping"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-ASRvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "vCenter"
+        ]
+      },
+      {
+        "Name": "Fabric",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restart-ASRJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Resume-ASRJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "Comment",
+        "Aliases": [
+          "Comments"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-ASRAlertSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "EnableEmailSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableEmailToSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "LocaleID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-ASRNotificationSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "EnableEmailSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableEmailToSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "LocaleID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-ASRReplicationProtectedItem",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ReplicationProtectedItem"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Size",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryNic",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNicStaticIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "NicSelectionType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySet",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAcceleratedNetworkingOnRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureUpdateReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseManagedDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskIdToDiskEncryptionSetMap",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPublicIPAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryNetworkSecurityGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryLBBackendAddressPoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "TfoAzureVMName",
+        "Aliases": null
+      },
+      {
+        "Name": "ASRVMNicConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesAsrNotificationSetting",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "EnableEmailSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableEmailToSubscriptionOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "LocaleID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesAsrVaultSettings",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRApplyRecoveryPoint",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRCommitFailover",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRCommitFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRFO",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "PerformSourceSideAction",
+        "Aliases": [
+          "PerformSourceSideActions"
+        ]
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRPFO",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "Optimize",
+        "Aliases": null
+      },
+      {
+        "Name": "CreateVmIfNotFound",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicesProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRPlannedFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "Optimize",
+        "Aliases": null
+      },
+      {
+        "Name": "CreateVmIfNotFound",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicesProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRResyncJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRResynchronizeReplicationJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRSwitchProcessServerJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Fabric",
+        "Aliases": [
+          "ConfigServer"
+        ]
+      },
+      {
+        "Name": "SourceProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": [
+          "ReplicatedItem"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRTFO",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "VMNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudServiceCreationOption",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRTestFailoverCleanupJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Comment",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRTestFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "VMNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureVMNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudServiceCreationOption",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-ASRUnplannedFailoverJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "PerformSourceSideAction",
+        "Aliases": [
+          "PerformSourceSideActions"
+        ]
+      },
+      {
+        "Name": "DataEncryptionPrimaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataEncryptionSecondaryCertFile",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPoint",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-ASRJob",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Job"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRMobilityService",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRPolicy",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Policy"
+        ]
+      },
+      {
+        "Name": "ReplicationMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationFrequencyInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "NumberOfRecoveryPointsToRetain",
+        "Aliases": [
+          "RecoveryPoints"
+        ]
+      },
+      {
+        "Name": "RecoveryPointRetentionInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationConsistentSnapshotFrequencyInHours",
+        "Aliases": null
+      },
+      {
+        "Name": "Compression",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Authentication",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaDeletion",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiVmSyncStatus",
+        "Aliases": null
+      },
+      {
+        "Name": "RPOWarningThresholdInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRProtectionContainerMapping",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ProtectionContainerMapping"
+        ]
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableAutoUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRProtectionDirection",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "AzureToVMware",
+        "Aliases": null
+      },
+      {
+        "Name": "VMwareToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "HyperVToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "VmmToVmm",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzure",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "DataStore",
+        "Aliases": null
+      },
+      {
+        "Name": "MasterTarget",
+        "Aliases": null
+      },
+      {
+        "Name": "ProcessServer",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "LogStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAzureStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureToAzureDiskReplicationConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationProtectedItem",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryCloudServiceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryAvailabilitySetId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryProximityPlacementGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecoveryBootDiagStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionVolume",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSecretUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionKeyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyEncryptionVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRRecoveryPlan",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "RecoveryPlan"
+        ]
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRServicesProvider",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ServicesProvider"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-ASRvCenter",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "vCenter"
+        ]
+      },
+      {
+        "Name": "Account",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRecoveryServicesBackupProperties",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "BackupStorageRedundancy",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRecoveryServicesBackupJobDetails",
+    "IsAlias": false,
+    "SourceModule": "Az.RecoveryServices",
+    "Version": "3.1.0",
+    "Parameters": [
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
