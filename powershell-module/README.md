@@ -74,7 +74,5 @@ $results | where UpgradeResult -ne UpgradeCompleted | format-list
 
 ## Limitations
 
-* Automated parameter name updates to splatted parameter sets aren't supported. If any are found
-  during upgrade plan generation, a warning is returned.
 * File I/O operations use default encoding. Unusual file encoding situations may cause problems.
 * AzureRM cmdlets passed as arguments to Pester unit test mock statements aren't detected.

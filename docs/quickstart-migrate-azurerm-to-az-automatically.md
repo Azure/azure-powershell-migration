@@ -104,8 +104,6 @@ $Results | Where-Object UpgradeResult -ne UpgradeCompleted | Format-List
 
 ## Limitations
 
-* Automated parameter name updates to splatted parameter sets aren't supported. If any are found
-  during upgrade plan generation, a warning is returned.
 * File I/O operations use default encoding. Unusual file encoding situations may cause problems.
 * AzureRM cmdlets passed as arguments to Pester unit test mock statements aren't detected.
 * Currently, only Az PowerShell module version 5.2.0 is supported as a target.
