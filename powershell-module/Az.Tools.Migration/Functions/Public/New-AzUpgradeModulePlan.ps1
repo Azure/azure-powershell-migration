@@ -299,21 +299,40 @@ function New-AzUpgradeModulePlan
                     }
 
                     # no direct match and no alias match?
-                    # this could mean a breaking change that requires manual adjustments
+                    # this could mean a breaking change that requires manual adjustments, or it could be a dynamic parameter.
 
-                    $paramError = New-Object -TypeName UpgradePlan
-                    $paramError.Original = $rmParam.Name
-                    $paramError.UpgradeType = [UpgradeStepType]::CmdletParameter
-                    $paramError.SourceCommand = $rmCmdlet
-                    $paramError.FullPath = $rmCmdlet.FullPath
-                    $paramError.StartOffset = $rmParam.StartOffset
-                    $paramError.SourceCommandParameter = $rmParam
-                    $paramError.Location = $rmParam.Location
-                    $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases."
-                    $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
-                    $paramError.PlanSeverity = [DiagnosticSeverity]::Error
+                    if ($resolvedAzCommand.SupportsDynamicParameters)
+                    {
+                        $paramWarning = New-Object -TypeName UpgradePlan
+                        $paramWarning.Original = $rmParam.Name
+                        $paramWarning.UpgradeType = [UpgradeStepType]::CmdletParameter
+                        $paramWarning.SourceCommand = $rmCmdlet
+                        $paramWarning.FullPath = $rmCmdlet.FullPath
+                        $paramWarning.StartOffset = $rmParam.StartOffset
+                        $paramWarning.SourceCommandParameter = $rmParam
+                        $paramWarning.Location = $rmParam.Location
+                        $paramWarning.PlanResultReason = "Parameter is dynamic, or was not found in $resolvedCommandName or its aliases, requires review."
+                        $paramWarning.PlanResult = [PlanResultReasonCode]::WarningDynamicParameter
+                        $paramWarning.PlanSeverity = [DiagnosticSeverity]::Warning
 
-                    $planErrorSteps.Add($paramError)
+                        $planErrorSteps.Add($paramWarning)
+                    }
+                    else
+                    {
+                        $paramError = New-Object -TypeName UpgradePlan
+                        $paramError.Original = $rmParam.Name
+                        $paramError.UpgradeType = [UpgradeStepType]::CmdletParameter
+                        $paramError.SourceCommand = $rmCmdlet
+                        $paramError.FullPath = $rmCmdlet.FullPath
+                        $paramError.StartOffset = $rmParam.StartOffset
+                        $paramError.SourceCommandParameter = $rmParam
+                        $paramError.Location = $rmParam.Location
+                        $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases."
+                        $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
+                        $paramError.PlanSeverity = [DiagnosticSeverity]::Error
+    
+                        $planErrorSteps.Add($paramError)
+                    }
                 }
             }
         }

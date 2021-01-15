@@ -90,7 +90,7 @@ Enum PlanResultReasonCode
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
-    WarningDynamicParameters = 5
+    WarningDynamicParameter = 5
 }
 
 Enum UpgradeResultReasonCode

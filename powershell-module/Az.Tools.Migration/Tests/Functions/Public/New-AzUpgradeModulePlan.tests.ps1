@@ -262,6 +262,97 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             Assert-VerifiableMock
         }
+        It 'Should generate warnings for dynamic parameters on cmdlets that support IDynamicParameters' {
+            # arrange
+            $cmdlet1 = New-Object -TypeName CommandReference
+            $cmdlet1.FileName = "mock-file.ps1"
+            $cmdlet1.FullPath = "C:\mock-file.ps1"
+            $cmdlet1.CommandName = "New-AzureRmResourceGroupDeployment" # a real cmdlet that supports IDynamicParameters
+            $cmdlet1.StartOffset = 10
+
+            # add a known static parameter
+            $cmdlet1Param1 = New-Object -TypeName CommandReferenceParameter
+            $cmdlet1Param1.Name = "TemplateFile"
+            $cmdlet1Param1.StartOffset = 27
+
+            # add a dynamic parameter
+            $cmdlet1Param2 = New-Object -TypeName CommandReferenceParameter
+            $cmdlet1Param2.Name = "DynamicUserParam1"
+            $cmdlet1Param2.StartOffset = 50
+
+            $cmdlet1.Parameters.Add($cmdlet1Param1)
+            $cmdlet1.Parameters.Add($cmdlet1Param2)
+
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
+            # act
+            # should generate a warning, and an upgrade step
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.2.0
+
+            # assert
+            $results | Should Not Be $null
+            $results.Count | Should Be 2
+
+            $results[0].UpgradeType.ToString() | Should Be 'CmdletParameter'
+            $results[0].PlanResult.ToString() | Should Be "WarningDynamicParameter"
+            $results[0].PlanResultReason.Contains("Parameter is dynamic") | Should Be $true
+            $results[0].PlanSeverity.ToString() | Should Be 'Warning'
+
+            $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[1].PlanResult.ToString() | Should Be "ReadyToUpgrade"
+            $results[1].PlanSeverity.ToString() | Should Be 'Information'
+
+            Assert-VerifiableMock
+        }
+        It 'Should generate errors for unknown parameters on cmdlets that dont support IDynamicParameters' {
+            # arrange
+            $cmdlet1 = New-Object -TypeName CommandReference
+            $cmdlet1.FileName = "mock-file.ps1"
+            $cmdlet1.FullPath = "C:\mock-file.ps1"
+            $cmdlet1.CommandName = "Connect-AzureRmAccount" # a real cmdlet that does not support IDynamicParameters
+            $cmdlet1.StartOffset = 10
+
+            # add a known static parameter
+            $cmdlet1Param1 = New-Object -TypeName CommandReferenceParameter
+            $cmdlet1Param1.Name = "Credential"
+            $cmdlet1Param1.StartOffset = 27
+
+            # add a parameter that certainly doesn't exist
+            $cmdlet1Param2 = New-Object -TypeName CommandReferenceParameter
+            $cmdlet1Param2.Name = "FakeParameterShouldError"
+            $cmdlet1Param2.StartOffset = 50
+
+            $cmdlet1.Parameters.Add($cmdlet1Param1)
+            $cmdlet1.Parameters.Add($cmdlet1Param2)
+
+            $foundCmdlets = @()
+            $foundCmdlets += $cmdlet1
+
+            # ensure we don't send telemetry during tests.
+            Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
+
+            # act
+            # should generate a warning, and an upgrade step
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.2.0
+
+            # assert
+            $results | Should Not Be $null
+            $results.Count | Should Be 2
+
+            $results[0].UpgradeType.ToString() | Should Be 'CmdletParameter'
+            $results[0].PlanResult.ToString() | Should Be "ErrorParameterNotFound"
+            $results[0].PlanSeverity.ToString() | Should Be 'Error'
+
+            $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'
+            $results[1].PlanResult.ToString() | Should Be "ReadyToUpgrade"
+            $results[1].PlanSeverity.ToString() | Should Be 'Information'
+
+            Assert-VerifiableMock
+        }
         It 'Should be able to generate errors for source cmdlets that have no target spec' {
             # arrange
             $cmdlet1 = New-Object -TypeName CommandReference
