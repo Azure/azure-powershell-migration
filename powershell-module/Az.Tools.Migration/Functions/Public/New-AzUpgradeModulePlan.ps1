@@ -311,7 +311,7 @@ function New-AzUpgradeModulePlan
                         $paramWarning.StartOffset = $rmParam.StartOffset
                         $paramWarning.SourceCommandParameter = $rmParam
                         $paramWarning.Location = $rmParam.Location
-                        $paramWarning.PlanResultReason = "Parameter is dynamic, or was not found in $resolvedCommandName or its aliases, requires review."
+                        $paramWarning.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases, but this may not be a problem because this cmdlet also supports dynamic parameters."
                         $paramWarning.PlanResult = [PlanResultReasonCode]::WarningDynamicParameter
                         $paramWarning.PlanSeverity = [DiagnosticSeverity]::Warning
 
@@ -327,7 +327,7 @@ function New-AzUpgradeModulePlan
                         $paramError.StartOffset = $rmParam.StartOffset
                         $paramError.SourceCommandParameter = $rmParam
                         $paramError.Location = $rmParam.Location
-                        $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases."
+                        $paramError.PlanResultReason = "Parameter was not found in $resolvedCommandName or its aliases. This may indicate a breaking change that requires attention."
                         $paramError.PlanResult = [PlanResultReasonCode]::ErrorParameterNotFound
                         $paramError.PlanSeverity = [DiagnosticSeverity]::Error
     

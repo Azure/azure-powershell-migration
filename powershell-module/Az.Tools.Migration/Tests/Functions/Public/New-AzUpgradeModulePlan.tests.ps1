@@ -299,7 +299,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             $results[0].UpgradeType.ToString() | Should Be 'CmdletParameter'
             $results[0].PlanResult.ToString() | Should Be "WarningDynamicParameter"
-            $results[0].PlanResultReason.Contains("Parameter is dynamic") | Should Be $true
+            $results[0].PlanResultReason.Contains("supports dynamic parameters") | Should Be $true
             $results[0].PlanSeverity.ToString() | Should Be 'Warning'
 
             $results[1].UpgradeType.ToString() | Should Be 'Cmdlet'

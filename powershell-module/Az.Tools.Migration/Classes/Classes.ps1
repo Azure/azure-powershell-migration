@@ -157,7 +157,7 @@ class UpgradeResult
 
         if ($Plan.PlanSeverity -eq [DiagnosticSeverity]::Warning)
         {
-            $this.UpgradeResult = [UpgradeResultReasonCode]::UpgradedWithWarnings
+            $this.UpgradeResult = [UpgradeResultReasonCode]::UnableToUpgrade
             $this.UpgradeResultReason = $Plan.PlanResultReason
             $this.UpgradeSeverity = [DiagnosticSeverity]::Warning
         }
