@@ -106,6 +106,7 @@ function New-ModuleCommandDefinitionsFile
             $definition.Command = $exportedCommandValue.Name
             $definition.SourceModule = $exportedCommandValue.ModuleName
             $definition.Version = $exportedCommandValue.Version
+            $definition.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandDefinitionParameter]'
 
             if ($exportedCommandValue.Value.CommandType -eq "Cmdlet")
             {
@@ -141,6 +142,13 @@ function New-ModuleCommandDefinitionsFile
 
                         $definition.Parameters.Add($moduleCommandParamDefinition)
                     }
+                }
+
+                # does this command support dynamic parameters?
+                $dynamicImplemented = $moduleCommand.ImplementingType.ImplementedInterfaces | Where-Object -FilterScript { $_.Name -eq 'IDynamicParameters' }
+                if ($dynamicImplemented -ne $null)
+                {
+                    $definition.SupportsDynamicParameters = $true
                 }
 
                 $exportedCommandResults.Add($definition)

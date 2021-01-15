@@ -30,14 +30,10 @@ class CommandDefinition
 {
     [System.String] $Command
     [System.Boolean] $IsAlias
+    [System.Boolean] $SupportsDynamicParameters
     [System.String] $SourceModule
     [System.String] $Version
     [System.Collections.Generic.List[CommandDefinitionParameter]] $Parameters
-
-    CommandDefinition()
-    {
-        $this.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandDefinitionParameter]'
-    }
 }
 
 class CommandReferenceParameter
@@ -94,6 +90,7 @@ Enum PlanResultReasonCode
     ErrorNoUpgradeAlias = 2
     ErrorNoModuleSpecMatch = 3
     ErrorParameterNotFound = 4
+    WarningDynamicParameters = 5
 }
 
 Enum UpgradeResultReasonCode
