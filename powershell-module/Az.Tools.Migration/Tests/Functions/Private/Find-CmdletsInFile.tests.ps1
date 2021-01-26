@@ -664,5 +664,31 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $results[0].Parameters[0].StartOffset | Should Be 194
             $results[0].Parameters[0].EndOffset | Should Be 199
         }
+        It 'Should safely skip hashtable assignments to object members' {
+            # arrange
+            $testFile = Resolve-Path -Path ".\Resources\TestFiles\ScriptExample-ParameterSplatting7.ps1"
+
+            # act
+            # this should not throw an exception.
+            $results = Find-CmdletsInFile -FilePath $testFile.Path
+
+            # assert
+            $results | Should Not Be Null
+            $results.Count | Should Be 1
+            $results[0].CommandName | Should Be "Test-Connection"
+        }
+        It 'Should safely skip nested hashtable assignments to object members' {
+            # arrange
+            $testFile = Resolve-Path -Path ".\Resources\TestFiles\ScriptExample-ParameterSplatting8.ps1"
+
+            # act
+            # this should not throw an exception.
+            $results = Find-CmdletsInFile -FilePath $testFile.Path
+
+            # assert
+            $results | Should Not Be Null
+            $results.Count | Should Be 1
+            $results[0].CommandName | Should Be "Test-Connection"
+        }
     }
 }
