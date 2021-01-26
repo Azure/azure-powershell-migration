@@ -61,40 +61,47 @@ function Find-CmdletsInFile
         {
             $currentVarAstNode = $assignmentAstNodes[$i]
 
-            # is the right hand side of the expression statement a hashtable node?
-            if ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.HashtableAst])
-            {
-                # capture the hashtable variable name
-                $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
-                $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
+            # is the left hand side of the expression a variable expression? (ex: $var = 1)
+            # or is it a member expression? (ex: $var.Property = 1)
+            # only variable expressions are supported at this time.
 
-                # capture the hashtable key name extents. 
-                # -- the tuple's .Item1 contains the key name AST (which may represent a splatted parameter name).
-                # -- the tuple's .Item2 contains the key value AST (we dont need to capture this)
-                # -- also make sure to only grab hashtable key names that come from ConstantExpressionAst (to avoid unsupported subexpression keyname scenarios).
-                foreach ($expressionAst in $currentVarAstNode.Right.Expression.KeyValuePairs)
+            if ($currentVarAstNode.Left -is [System.Management.Automation.Language.VariableExpressionAst])
+            {
+                # is the right hand side of the expression statement a hashtable node?
+                if ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.HashtableAst])
                 {
-                    if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                    # capture the hashtable variable name
+                    $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
+                    $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
+
+                    # capture the hashtable key name extents. 
+                    # -- the tuple's .Item1 contains the key name AST (which may represent a splatted parameter name).
+                    # -- the tuple's .Item2 contains the key value AST (we dont need to capture this)
+                    # -- also make sure to only grab hashtable key names that come from ConstantExpressionAst (to avoid unsupported subexpression keyname scenarios).
+                    foreach ($expressionAst in $currentVarAstNode.Right.Expression.KeyValuePairs)
                     {
-                        $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                        if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                        {
+                            $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                        }
                     }
                 }
-            }
-            elseif ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.ConvertExpressionAst] `
-                -and $currentVarAstNode.Right.Expression.Type.TypeName.FullName -eq $orderedTypeName `
-                -and $currentVarAstNode.Right.Expression.Child -is [System.Management.Automation.Language.HashtableAst])
-            {
-                # same as the above 'if' condition case, but special handling for [ordered] hashtable objects.
-                # we have to check the .Child [HashtableAst] of the ConvertExpressionAst.
-
-                $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
-                $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
-                
-                foreach ($expressionAst in $currentVarAstNode.Right.Expression.Child.KeyValuePairs)
+                elseif ($currentVarAstNode.Right.Expression -is [System.Management.Automation.Language.ConvertExpressionAst] `
+                    -and $currentVarAstNode.Right.Expression.Type.TypeName.FullName -eq $orderedTypeName `
+                    -and $currentVarAstNode.Right.Expression.Child -is [System.Management.Automation.Language.HashtableAst])
                 {
-                    if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                    # same as the above 'if' condition case, but special handling for [ordered] hashtable objects.
+                    # we have to check the .Child [HashtableAst] of the ConvertExpressionAst.
+
+                    $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
+                    $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
+                    
+                    foreach ($expressionAst in $currentVarAstNode.Right.Expression.Child.KeyValuePairs)
                     {
-                        $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                        if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst])
+                        {
+                            $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
+                        }
                     }
                 }
             }
