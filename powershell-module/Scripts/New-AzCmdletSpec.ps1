@@ -55,6 +55,9 @@ function New-ModuleCommandDefinitionsFile
     .PARAMETER OutputDirectory
         Specify the folder location to save the new definitions file.
 
+    .PARAMETER MinimumVersion
+        Specify to use a 'minimumversion' flag when searching, instead of required version.
+
     .EXAMPLE
         PS C:\> New-ModuleCommandDefinitionsFile -ModuleName "Azure.Storage" -ModuleVersion "5.2.0" -OutputDirectory "C:\users\user\desktop"
         Creates a new module definition json file for the given module.
@@ -81,17 +84,30 @@ function New-ModuleCommandDefinitionsFile
             HelpMessage="Specify the folder location to save the new definitions file.")]
         [System.String]
         [ValidateNotNullOrEmpty()]
-        $OutputDirectory
+        $OutputDirectory,
+
+        [Parameter(
+            Mandatory=$false,
+            HelpMessage="Use the -MinimumVersion flag when searching for the module.")]
+        [Switch]
+        $MinimumVersion
     )
     Process
     {
         $defaultParamNames = @("Debug", "ErrorAction", "ErrorVariable", "InformationAction", "InformationVariable", "OutVariable", "OutBuffer", "PipelineVariable", "Verbose", "WarningAction", "WarningVariable")
 
-        $module = Get-Module -ListAvailable | Where-Object { $_.Name -eq $ModuleName -and $_.Version -eq $ModuleVersion } | Select-Object -First 1
+        if ($PSBoundParameters.ContainsKey('MinimumVersion'))
+        {
+            $module = Get-Module -ListAvailable | Where-Object { $_.Name -eq $ModuleName -and $_.Version -ge $ModuleVersion } | Select-Object -First 1
+        }
+        else
+        {
+            $module = Get-Module -ListAvailable | Where-Object { $_.Name -eq $ModuleName -and $_.Version -eq $ModuleVersion } | Select-Object -First 1
+        }
 
         if ($module -eq $null)
         {
-            throw "No module was found that matches the specified name and version."
+            throw "No module was found that matches the specified name [$ModuleName] and version number [$ModuleVersion]."
         }
 
         $exportedCommandResults = New-Object -TypeName 'System.collections.Generic.List[CommandDefinition]'
@@ -106,6 +122,7 @@ function New-ModuleCommandDefinitionsFile
             $definition.Command = $exportedCommandValue.Name
             $definition.SourceModule = $exportedCommandValue.ModuleName
             $definition.Version = $exportedCommandValue.Version
+            $definition.Parameters = New-Object -TypeName 'System.Collections.Generic.List[CommandDefinitionParameter]'
 
             if ($exportedCommandValue.Value.CommandType -eq "Cmdlet")
             {
@@ -141,6 +158,13 @@ function New-ModuleCommandDefinitionsFile
 
                         $definition.Parameters.Add($moduleCommandParamDefinition)
                     }
+                }
+
+                # does this command support dynamic parameters?
+                $dynamicImplemented = $moduleCommand.ImplementingType.ImplementedInterfaces | Where-Object -FilterScript { $_.Name -eq 'IDynamicParameters' }
+                if ($dynamicImplemented -ne $null)
+                {
+                    $definition.SupportsDynamicParameters = $true
                 }
 
                 $exportedCommandResults.Add($definition)
@@ -189,7 +213,14 @@ foreach ($importStatement in $moduleImportStatements)
 
         Write-Host "Building module spec for $SubModuleName $SubModuleVersion"
 
-        New-ModuleCommandDefinitionsFile -ModuleName $SubModuleName -ModuleVersion $SubModuleVersion -OutputDirectory $OutputDirectory
+        if ($importStatement -match "MinimumVersion")
+        {
+            New-ModuleCommandDefinitionsFile -ModuleName $SubModuleName -ModuleVersion $SubModuleVersion -OutputDirectory $OutputDirectory -MinimumVersion
+        }
+        else
+        {
+            New-ModuleCommandDefinitionsFile -ModuleName $SubModuleName -ModuleVersion $SubModuleVersion -OutputDirectory $OutputDirectory
+        }
     }
 }
 
