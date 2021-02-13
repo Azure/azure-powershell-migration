@@ -5,6 +5,7 @@ script modules from AzureRM to the Az PowerShell module.
 
 ## Contents
 
+* [Getting started](#getting-started)
 * [Description](#description)
 * [Usage Instructions](#usage-instructions)
 * [Limitations](#limitations)
@@ -16,6 +17,24 @@ The Az.Tools.Migration PowerShell module contains cmdlets that perform the follo
 1. Detect AzureRM cmdlet references in PowerShell scripts and script modules.
 1. Generate an upgrade plan to convert AzureRM module references to Az module commands.
 1. Execute the upgrade plan to modify your PowerShell codebase.
+
+## Getting started
+
+You can use either method to use this module:
+
+1. Install this module from the [PowerShell gallery](https://www.powershellgallery.com/packages/Az.Tools.Migration).
+
+```
+Install-Module -Name Az.Tools.Migration
+```
+
+1. Clone this repository and import the module locally.
+Use this option if you want to make changes to the module and test it out.
+
+```
+git clone https://github.com/Azure/azure-powershell-migration.git
+import-module './azure-powershell-migration/powershell-module/Az.Tools.Migration/Az.Tools.Migration.psd1'
+```
 
 ## Usage Instructions
 
