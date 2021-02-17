@@ -28,7 +28,7 @@ You can use either method to use this module:
 Install-Module -Name Az.Tools.Migration
 ```
 
-1. Clone this repository and import the module locally.
+2. Clone this repository and import the module locally.
 Use this option if you want to make changes to the module and test it out.
 
 ```
