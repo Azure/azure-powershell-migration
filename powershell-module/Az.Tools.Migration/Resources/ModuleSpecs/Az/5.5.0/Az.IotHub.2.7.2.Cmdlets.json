@@ -1,17 +1,14 @@
 [
   {
-    "Command": "Set-AzDataFactoryV2",
+    "Command": "Add-AzIotHubKey",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id",
-          "DataFactoryId"
-        ]
+        "Name": "HubId",
+        "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
@@ -19,1753 +16,22 @@
       },
       {
         "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Location",
-        "Aliases": null
-      },
-      {
-        "Name": "Tag",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "GlobalParameterDefinition",
-        "Aliases": null
-      },
-      {
-        "Name": "AccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "RepositoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "CollaborationBranch",
-        "Aliases": null
-      },
-      {
-        "Name": "RootFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "LastCommitId",
-        "Aliases": null
-      },
-      {
-        "Name": "ProjectName",
-        "Aliases": null
-      },
-      {
-        "Name": "TenantId",
-        "Aliases": null
-      },
-      {
-        "Name": "HostName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Update-AzDataFactoryV2",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "Tag",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryV2LinkedService",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "LinkedServiceName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactoryV2LinkedServiceEncryptedCredential",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "IntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2LinkedService",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "LinkedServiceName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2LinkedService",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "LinkedServiceName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryV2DataFlow",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFlowName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2DataFlow",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFlowName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2DataFlow",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFlowName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "PassThru",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Start-AzDataFactoryV2DataFlowDebugSession",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "IntegrationRuntimeFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "AsJob",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Add-AzDataFactoryV2DataFlowDebugSessionPackage",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "PackageFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "SessionId",
-        "Aliases": null
-      },
-      {
-        "Name": "PassThru",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Invoke-AzDataFactoryV2DataFlowDebugSessionCommand",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "SessionId",
-        "Aliases": null
-      },
-      {
-        "Name": "Command",
-        "Aliases": null
-      },
-      {
-        "Name": "StreamName",
-        "Aliases": null
-      },
-      {
-        "Name": "RowLimit",
-        "Aliases": null
-      },
-      {
-        "Name": "Expression",
-        "Aliases": null
-      },
-      {
-        "Name": "Column",
-        "Aliases": null
-      },
-      {
-        "Name": "AsJob",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Stop-AzDataFactoryV2DataFlowDebugSession",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "SessionId",
-        "Aliases": null
-      },
-      {
-        "Name": "PassThru",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2DataFlowDebugSession",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryV2Dataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DatasetName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2Dataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DatasetName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2Dataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DatasetName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryV2Trigger",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2Trigger",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2Trigger",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Start-AzDataFactoryV2Trigger",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Stop-AzDataFactoryV2Trigger",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryV2Pipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2Pipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2Pipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Invoke-AzDataFactoryV2Pipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "PipelineName",
-        "Aliases": null
-      },
-      {
-        "Name": "Parameter",
-        "Aliases": null
-      },
-      {
-        "Name": "ParameterFile",
-        "Aliases": null
-      },
-      {
-        "Name": "ReferencePipelineRunId",
-        "Aliases": null
-      },
-      {
-        "Name": "IsRecovery",
-        "Aliases": null
-      },
-      {
-        "Name": "StartActivityName",
-        "Aliases": null
-      },
-      {
-        "Name": "StartFromFailure",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2PipelineRun",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "PipelineRunId",
-        "Aliases": null
-      },
-      {
-        "Name": "LastUpdatedAfter",
-        "Aliases": null
-      },
-      {
-        "Name": "LastUpdatedBefore",
-        "Aliases": null
-      },
-      {
-        "Name": "PipelineName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Stop-AzDataFactoryV2PipelineRun",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "PipelineRunId",
-        "Aliases": null
-      },
-      {
-        "Name": "PassThru",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2ActivityRun",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "PipelineRunId",
-        "Aliases": null
-      },
-      {
-        "Name": "RunStartedAfter",
-        "Aliases": null
-      },
-      {
-        "Name": "RunStartedBefore",
-        "Aliases": null
-      },
-      {
-        "Name": "ActivityName",
-        "Aliases": null
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2IntegrationRuntimeKey",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryV2IntegrationRuntime",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
         "Aliases": null
       },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactoryV2IntegrationRuntimeKey",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
       {
         "Name": "KeyName",
         "Aliases": null
       },
       {
-        "Name": "Force",
+        "Name": "PrimaryKey",
         "Aliases": null
       },
       {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
+        "Name": "SecondaryKey",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
+        "Name": "Rights",
         "Aliases": null
       },
       {
@@ -1791,42 +57,238 @@
     ]
   },
   {
-    "Command": "Remove-AzDataFactoryV2IntegrationRuntime",
+    "Command": "Get-AzIotHubEventHubConsumerGroup",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "LinkedDataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
         "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
+        "Aliases": null
       },
       {
-        "Name": "ResourceId",
+        "Name": "DefaultProfile",
         "Aliases": [
-          "Id"
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
         ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubConnectionString",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "HubId",
+        "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
         "Aliases": null
       },
       {
-        "Name": "InputObject",
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubQuotaMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubRegistryStatistic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubValidSku",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubEventHubConsumerGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
         "Aliases": null
       },
       {
@@ -1852,42 +314,26 @@
     ]
   },
   {
-    "Command": "Set-AzDataFactoryV2IntegrationRuntime",
+    "Command": "New-AzIotHub",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
         "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "Type",
         "Aliases": null
       },
       {
-        "Name": "Description",
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Units",
         "Aliases": null
       },
       {
@@ -1895,93 +341,11 @@
         "Aliases": null
       },
       {
-        "Name": "NodeSize",
+        "Name": "Properties",
         "Aliases": null
       },
       {
-        "Name": "NodeCount",
-        "Aliases": null
-      },
-      {
-        "Name": "CatalogServerEndpoint",
-        "Aliases": null
-      },
-      {
-        "Name": "CatalogAdminCredential",
-        "Aliases": null
-      },
-      {
-        "Name": "CatalogPricingTier",
-        "Aliases": null
-      },
-      {
-        "Name": "VNetId",
-        "Aliases": null
-      },
-      {
-        "Name": "Subnet",
-        "Aliases": [
-          "SubnetName"
-        ]
-      },
-      {
-        "Name": "PublicIPs",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFlowComputeType",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFlowCoreCount",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFlowTimeToLive",
-        "Aliases": null
-      },
-      {
-        "Name": "SetupScriptContainerSasUri",
-        "Aliases": null
-      },
-      {
-        "Name": "Edition",
-        "Aliases": null
-      },
-      {
-        "Name": "ExpressCustomSetup",
-        "Aliases": null
-      },
-      {
-        "Name": "DataProxyIntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataProxyStagingLinkedServiceName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataProxyStagingPath",
-        "Aliases": null
-      },
-      {
-        "Name": "MaxParallelExecutionsPerNode",
-        "Aliases": null
-      },
-      {
-        "Name": "LicenseType",
-        "Aliases": null
-      },
-      {
-        "Name": "AuthKey",
-        "Aliases": null
-      },
-      {
-        "Name": "SharedIntegrationRuntimeResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
+        "Name": "Tag",
         "Aliases": null
       },
       {
@@ -2007,38 +371,26 @@
     ]
   },
   {
-    "Command": "Start-AzDataFactoryV2IntegrationRuntime",
+    "Command": "New-AzIotHubExportDevice",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
         "Aliases": null
       },
       {
-        "Name": "InputObject",
+        "Name": "ExportBlobContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeKeys",
         "Aliases": null
       },
       {
@@ -2064,38 +416,26 @@
     ]
   },
   {
-    "Command": "Stop-AzDataFactoryV2IntegrationRuntime",
+    "Command": "New-AzIotHubImportDevice",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
         "Aliases": null
       },
       {
-        "Name": "InputObject",
+        "Name": "InputBlobContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputBlobContainerUri",
         "Aliases": null
       },
       {
@@ -2121,81 +461,18 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryV2IntegrationRuntimeMetric",
+    "Command": "Remove-AzIotHub",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
       {
         "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryV2IntegrationRuntimeNode",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "NodeName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "IntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -2221,40 +498,22 @@
     ]
   },
   {
-    "Command": "Update-AzDataFactoryV2IntegrationRuntimeNode",
+    "Command": "Remove-AzIotHubEventHubConsumerGroup",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ConcurrentJobsLimit",
-        "Aliases": null
-      },
-      {
-        "Name": "IntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
         "Aliases": null
       },
       {
-        "Name": "InputObject",
+        "Name": "EventHubConsumerGroupName",
         "Aliases": null
       },
       {
@@ -2280,81 +539,26 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryV2IntegrationRuntimeNode",
+    "Command": "Remove-AzIotHubKey",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
+        "Name": "HubId",
         "Aliases": null
-      },
-      {
-        "Name": "IpAddress",
-        "Aliases": null
-      },
-      {
-        "Name": "IntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
       },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
         "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "InputObject",
+        "Name": "KeyName",
         "Aliases": null
       },
       {
@@ -2380,39 +584,175 @@
     ]
   },
   {
-    "Command": "Sync-AzDataFactoryV2IntegrationRuntimeCredential",
+    "Command": "Set-AzIotHub",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "IntegrationRuntimeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
         "Aliases": null
       },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Units",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubRetentionTimeInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadStorageConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadSasUriTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadNotificationTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadNotificationMaxDeliveryCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableFileUploadNotifications",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudToDevice",
+        "Aliases": null
+      },
+      {
+        "Name": "RoutingProperties",
+        "Aliases": null
+      },
+      {
+        "Name": "Routes",
+        "Aliases": null
+      },
+      {
+        "Name": "FallbackRoute",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Reset",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -2435,45 +775,119 @@
     ]
   },
   {
-    "Command": "Update-AzDataFactoryV2IntegrationRuntime",
+    "Command": "Get-AzIotHubCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "AutoUpdate",
-        "Aliases": null
-      },
-      {
-        "Name": "AutoUpdateDelayOffset",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "IntegrationRuntimeName"
-        ]
-      },
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubCertificateVerificationCode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubVerifiedCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -2496,28 +910,14 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryV2TriggerRun",
+    "Command": "Remove-AzIotHubCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
-      {
-        "Name": "TriggerRunStartedAfter",
-        "Aliases": null
-      },
-      {
-        "Name": "TriggerRunStartedBefore",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -2525,42 +925,23 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceId",
         "Aliases": null
       },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactory",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
       {
         "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
-      {
-        "Name": "DataFactory",
         "Aliases": null
       },
       {
-        "Name": "Force",
+        "Name": "CertificateName",
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -2586,30 +967,34 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryRun",
+    "Command": "Get-AzIotHubRoutingEndpoint",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DatasetName",
-        "Aliases": null
-      },
-      {
-        "Name": "StartDateTime",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
         "Aliases": null
       },
       {
@@ -2623,34 +1008,152 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactorySlice",
+    "Command": "Add-AzIotHubRoutingEndpoint",
     "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "EndDateTime",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DatasetName",
-        "Aliases": null
-      },
-      {
-        "Name": "StartDateTime",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointSubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubRoutingEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
         "Aliases": null
       },
       {
@@ -2664,34 +1167,233 @@
     ]
   },
   {
-    "Command": "Save-AzDataFactoryLog",
+    "Command": "Add-AzIotHubRoute",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Id",
-        "Aliases": null
-      },
-      {
-        "Name": "DownloadLogs",
-        "Aliases": null
-      },
-      {
-        "Name": "Output",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "Body",
+        "Aliases": null
+      },
+      {
+        "Name": "AppProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "ShowError",
         "Aliases": null
       },
       {
@@ -2705,42 +1407,30 @@
     ]
   },
   {
-    "Command": "Set-AzDataFactorySliceStatus",
+    "Command": "New-AzIotHubKey",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "EndDateTime",
-        "Aliases": null
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "UpdateType",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "DatasetName",
-        "Aliases": null
-      },
-      {
-        "Name": "StartDateTime",
+        "Name": "HubId",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewKey",
         "Aliases": null
       },
       {
@@ -2750,22 +1440,99 @@
           "AzureRmContext",
           "AzureCredential"
         ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
       }
     ]
   },
   {
-    "Command": "New-AzDataFactoryEncryptValue",
+    "Command": "Invoke-AzIotHubManualFailover",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubMessageEnrichment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
         "Aliases": null
       },
       {
@@ -2773,35 +1540,7 @@
         "Aliases": null
       },
       {
-        "Name": "GatewayName",
-        "Aliases": null
-      },
-      {
-        "Name": "Credential",
-        "Aliases": null
-      },
-      {
-        "Name": "Type",
-        "Aliases": null
-      },
-      {
-        "Name": "NonCredentialValue",
-        "Aliases": null
-      },
-      {
-        "Name": "AuthenticationType",
-        "Aliases": null
-      },
-      {
-        "Name": "Server",
-        "Aliases": null
-      },
-      {
-        "Name": "Database",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
+        "Name": "Endpoint",
         "Aliases": null
       },
       {
@@ -2811,102 +1550,46 @@
           "AzureRmContext",
           "AzureCredential"
         ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryGateway",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
+        "Name": "WhatIf",
         "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
         ]
       }
     ]
   },
   {
-    "Command": "New-AzDataFactoryGateway",
+    "Command": "Get-AzIotHubMessageEnrichment",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryGatewayAuthkey",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
         "Name": "InputObject",
-        "Aliases": [
-          "DataFactory"
-        ]
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "GatewayName",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
         "Aliases": null
       },
       {
@@ -2920,32 +1603,34 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryGatewayAuthkey",
+    "Command": "Remove-AzIotHubMessageEnrichment",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
         "Name": "InputObject",
-        "Aliases": [
-          "DataFactory"
-        ]
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "GatewayName",
-        "Aliases": null
-      },
-      {
-        "Name": "KeyName",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -2971,22 +1656,111 @@
     ]
   },
   {
-    "Command": "Remove-AzDataFactoryGateway",
+    "Command": "Set-AzIotHubMessageEnrichment",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
         "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusReason",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentDeviceId",
         "Aliases": null
       },
       {
@@ -2994,7 +1768,93 @@
         "Aliases": null
       },
       {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -3020,30 +1880,156 @@
     ]
   },
   {
-    "Command": "Set-AzDataFactoryGateway",
+    "Command": "Set-AzIotHubDevice",
     "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusReason",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
         "Aliases": null
       },
       {
@@ -3057,26 +2043,148 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryHub",
+    "Command": "Remove-AzIotHubModule",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceConnectionString",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
         "Aliases": null
       },
       {
@@ -3090,18 +2198,116 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryHub",
+    "Command": "Get-AzIotHubModuleConnectionString",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "File",
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceParent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDeviceParent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentDeviceId",
         "Aliases": null
       },
       {
@@ -3109,18 +2315,6 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -3143,32 +2337,95 @@
     ]
   },
   {
-    "Command": "Remove-AzDataFactoryHub",
+    "Command": "Add-AzIotHubDeviceChildren",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "HubName"
-        ]
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
       },
       {
         "Name": "Force",
         "Aliases": null
       },
       {
-        "Name": "DataFactory",
-        "Aliases": null
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDeviceChildren",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -3194,26 +2451,30 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryLinkedService",
+    "Command": "Get-AzIotHubDeviceChildren",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
         "Aliases": null
       },
       {
@@ -3227,62 +2488,694 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryActivityWindow",
+    "Command": "Get-AzIotHubDistributedTracing",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "DataFactory",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DatasetName",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "PipelineName",
+        "Name": "IotHubName",
         "Aliases": null
       },
       {
-        "Name": "ActivityName",
+        "Name": "DeviceId",
         "Aliases": null
       },
       {
-        "Name": "WindowState",
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDistributedTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "WindowSubstate",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "Filter",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "OrderBy",
+        "Name": "IotHubName",
         "Aliases": null
       },
       {
-        "Name": "WindowStart",
+        "Name": "DeviceId",
         "Aliases": null
       },
       {
-        "Name": "WindowEnd",
+        "Name": "SamplingMode",
+        "Aliases": [
+          "Mode"
+        ]
+      },
+      {
+        "Name": "SamplingRate",
+        "Aliases": [
+          "Rate"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "RunStart",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "RunEnd",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHubDeviceTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Desired",
+        "Aliases": null
+      },
+      {
+        "Name": "Partial",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubDeviceMethod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "ResponseTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubModuleTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHubModuleTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Desired",
+        "Aliases": null
+      },
+      {
+        "Name": "Partial",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceContent",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubModuleMethod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "ResponseTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubQuery",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
         "Aliases": null
       },
       {
@@ -3290,51 +3183,6 @@
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactoryLinkedService",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "File",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -3357,584 +3205,18 @@
     ]
   },
   {
-    "Command": "Remove-AzDataFactoryLinkedService",
+    "Command": "New-AzIotHubSasToken",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "LinkedServiceName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactory",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactory",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Location",
-        "Aliases": null
-      },
-      {
-        "Name": "Tag",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryPipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactoryPipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "File",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryPipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Resume-AzDataFactoryPipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzDataFactoryPipelineActivePeriod",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "PipelineName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "StartDateTime",
-        "Aliases": null
-      },
-      {
-        "Name": "EndDateTime",
-        "Aliases": null
-      },
-      {
-        "Name": "AutoResolve",
-        "Aliases": null
-      },
-      {
-        "Name": "ForceRecalculate",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Suspend-AzDataFactoryPipeline",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzDataFactoryDataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzDataFactoryDataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "File",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzDataFactoryDataset",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DatasetName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Add-AzDataFactoryV2TriggerSubscription",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
-      },
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
         "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
         "Aliases": null
       },
       {
@@ -3942,6 +3224,30 @@
         "Aliases": null
       },
       {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "Duration",
+        "Aliases": null
+      },
+      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -3964,20 +3270,193 @@
     ]
   },
   {
-    "Command": "Remove-AzDataFactoryV2TriggerSubscription",
+    "Command": "Invoke-AzIotHubConfigurationMetricsQuery",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
         "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
         "Aliases": [
-          "TriggerName"
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
         ]
       },
       {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
         "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ModulesContent",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
         "Aliases": null
       },
       {
@@ -3985,7 +3464,40 @@
         "Aliases": null
       },
       {
-        "Name": "Force",
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
@@ -3993,11 +3505,31 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "IotHubName",
         "Aliases": null
       },
       {
-        "Name": "ResourceId",
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
         "Aliases": null
       },
       {
@@ -4023,20 +3555,18 @@
     ]
   },
   {
-    "Command": "Get-AzDataFactoryV2TriggerSubscriptionStatus",
+    "Command": "Invoke-AzIotHubDeploymentMetricsQuery",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
+        "Name": "InputObject",
+        "Aliases": null
       },
       {
-        "Name": "InputObject",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
@@ -4044,11 +3574,19 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "IotHubName",
         "Aliases": null
       },
       {
-        "Name": "ResourceId",
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
         "Aliases": null
       },
       {
@@ -4058,26 +3596,107 @@
           "AzureRmContext",
           "AzureCredential"
         ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
       }
     ]
   },
   {
-    "Command": "Stop-AzDataFactoryV2TriggerRun",
+    "Command": "Set-AzIotHubEdgeModule",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "TriggerName",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "TriggerRunId",
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModulesContent",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Send-AzIotHubDevice2CloudMessage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Message",
+        "Aliases": null
+      },
+      {
+        "Name": "TransportType",
         "Aliases": null
       },
       {
@@ -4085,15 +3704,69 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactory",
-        "Aliases": null
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
       },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubEHCG",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubEHCG",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
         "Aliases": null
       },
       {
@@ -4119,22 +3792,263 @@
     ]
   },
   {
-    "Command": "Invoke-AzDataFactoryV2TriggerRun",
+    "Command": "Remove-AzIotHubEHCG",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubVC",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "TriggerName",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "TriggerRunId",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubCVC",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
         "Aliases": null
       },
       {
@@ -4142,18 +4056,6 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactory",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "DataFactoryName",
-        "Aliases": null
-      },
-      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -4176,79 +4078,38 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryV2",
+    "Command": "Set-AzIotHubMsgEnrich",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
-      {
-        "Name": "ResourceId",
-        "Aliases": [
-          "Id",
-          "DataFactoryId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "DataFactoryName"
-        ]
-      },
       {
         "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "Location",
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "Tag",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "Force",
+        "Name": "Name",
         "Aliases": null
       },
       {
-        "Name": "GlobalParameterDefinition",
+        "Name": "Key",
         "Aliases": null
       },
       {
-        "Name": "AccountName",
+        "Name": "Value",
         "Aliases": null
       },
       {
-        "Name": "RepositoryName",
-        "Aliases": null
-      },
-      {
-        "Name": "CollaborationBranch",
-        "Aliases": null
-      },
-      {
-        "Name": "RootFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "LastCommitId",
-        "Aliases": null
-      },
-      {
-        "Name": "ProjectName",
-        "Aliases": null
-      },
-      {
-        "Name": "TenantId",
-        "Aliases": null
-      },
-      {
-        "Name": "HostName",
+        "Name": "Endpoint",
         "Aliases": null
       },
       {
@@ -4274,26 +4135,14 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryV2Dataset",
+    "Command": "Get-AzIotHubDCS",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "DatasetName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -4301,11 +4150,109 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubMCS",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
         "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDCL",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
         "Aliases": null
       },
       {
@@ -4331,26 +4278,14 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryV2LinkedService",
+    "Command": "Remove-AzIotHubDCL",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "LinkedServiceName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -4358,11 +4293,23 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "ResourceId",
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -4388,26 +4335,14 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryV2Pipeline",
+    "Command": "Get-AzIotHubDCL",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "PipelineName"
-        ]
-      },
-      {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -4415,11 +4350,158 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
         "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingMode",
+        "Aliases": [
+          "Mode"
+        ]
+      },
+      {
+        "Name": "SamplingRate",
+        "Aliases": [
+          "Rate"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubConfigMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
         "Aliases": null
       },
       {
@@ -4445,26 +4527,18 @@
     ]
   },
   {
-    "Command": "New-AzDataFactoryV2Trigger",
+    "Command": "Invoke-AzIotHubDeployMetric",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.DataFactory",
-    "Version": "1.11.2",
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
     "Parameters": [
       {
-        "Name": "Name",
-        "Aliases": [
-          "TriggerName"
-        ]
+        "Name": "InputObject",
+        "Aliases": null
       },
       {
-        "Name": "DefinitionFile",
-        "Aliases": [
-          "File"
-        ]
-      },
-      {
-        "Name": "Force",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
@@ -4472,11 +4546,80 @@
         "Aliases": null
       },
       {
-        "Name": "DataFactoryName",
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Send-AzIotHubD2CMessage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
         "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Message",
+        "Aliases": null
+      },
+      {
+        "Name": "TransportType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
         "Aliases": null
       },
       {

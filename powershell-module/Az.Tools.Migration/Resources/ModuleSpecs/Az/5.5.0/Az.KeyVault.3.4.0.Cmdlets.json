@@ -1,55 +1,30 @@
 [
   {
-    "Command": "Get-AzAutomationHybridWorkerGroup",
+    "Command": "Add-AzKeyVaultCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
       {
         "Name": "Name",
         "Aliases": [
-          "Group"
+          "CertificateName"
         ]
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "CertificatePolicy",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
+        "Name": "Tag",
         "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
+          "Tags"
         ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationHybridWorkerGroup",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "Group"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
       },
       {
         "Name": "DefaultProfile",
@@ -74,2043 +49,34 @@
     ]
   },
   {
-    "Command": "Get-AzAutomationJobOutputRecord",
+    "Command": "Update-AzKeyVaultCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "JobId",
+        "Name": "VaultName",
         "Aliases": null
       },
-      {
-        "Name": "Id",
-        "Aliases": [
-          "StreamRecordId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Import-AzAutomationDscNodeConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Path",
-        "Aliases": null
-      },
-      {
-        "Name": "ConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "IncrementNodeConfigurationBuild",
-        "Aliases": null
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Export-AzAutomationDscConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
       {
         "Name": "Name",
         "Aliases": [
-          "ConfigurationName"
+          "CertificateName"
         ]
       },
       {
-        "Name": "Slot",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "OutputFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Export-AzAutomationDscNodeReportContent",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "NodeId",
-        "Aliases": null
-      },
-      {
-        "Name": "ReportId",
-        "Aliases": [
-          "Id"
-        ]
-      },
-      {
-        "Name": "OutputFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationCertificate",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationConnection",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ConnectionTypeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationCredential",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscCompilationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "ConfigurationName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "EndTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscCompilationJobOutput",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "Stream",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscNodeConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "NodeConfigurationName"
-        ]
-      },
-      {
-        "Name": "ConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "RollupStatus",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscNodeReport",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "NodeId",
-        "Aliases": null
-      },
-      {
-        "Name": "Latest",
-        "Aliases": null
-      },
-      {
-        "Name": "Id",
-        "Aliases": [
-          "ReportId"
-        ]
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "EndTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "RunbookName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "EndTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationJobOutput",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "Stream",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationModule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Export-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "Slot",
-        "Aliases": null
-      },
-      {
-        "Name": "OutputFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationSchedule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "ScheduleName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationScheduledRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "JobScheduleId",
-        "Aliases": null
-      },
-      {
-        "Name": "RunbookName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "ScheduleName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationVariable",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationWebhook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "WebhookName"
-        ]
-      },
-      {
-        "Name": "RunbookName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationCertificate",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Password",
-        "Aliases": null
-      },
-      {
-        "Name": "Path",
-        "Aliases": null
-      },
-      {
-        "Name": "Exportable",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationConnection",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ConnectionTypeName",
-        "Aliases": null
-      },
-      {
-        "Name": "ConnectionFieldValues",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationCredential",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Value",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationModule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ContentLinkUri",
-        "Aliases": [
-          "ContentLink"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Tags",
-        "Aliases": [
-          "Tag"
-        ]
-      },
-      {
-        "Name": "Type",
-        "Aliases": null
-      },
-      {
-        "Name": "LogProgress",
-        "Aliases": null
-      },
-      {
-        "Name": "LogVerbose",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationSchedule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "DaysOfWeek",
-        "Aliases": null
-      },
-      {
-        "Name": "DaysOfMonth",
-        "Aliases": null
-      },
-      {
-        "Name": "DayOfWeek",
-        "Aliases": null
-      },
-      {
-        "Name": "DayOfWeekOccurrence",
-        "Aliases": null
-      },
-      {
-        "Name": "OneTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ExpiryTime",
-        "Aliases": null
-      },
-      {
-        "Name": "DayInterval",
-        "Aliases": null
-      },
-      {
-        "Name": "HourInterval",
-        "Aliases": null
-      },
-      {
-        "Name": "WeekInterval",
-        "Aliases": null
-      },
-      {
-        "Name": "MonthInterval",
-        "Aliases": null
-      },
-      {
-        "Name": "TimeZone",
-        "Aliases": null
-      },
-      {
-        "Name": "ForUpdateConfiguration",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationVariable",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Encrypted",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Value",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationWebhook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "RunbookName",
-        "Aliases": null
-      },
-      {
-        "Name": "IsEnabled",
-        "Aliases": null
-      },
-      {
-        "Name": "ExpiryTime",
-        "Aliases": null
-      },
-      {
-        "Name": "Parameters",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "RunOn",
-        "Aliases": [
-          "HybridWorker"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Publish-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Register-AzAutomationDscNode",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "AzureVMName",
-        "Aliases": null
-      },
-      {
-        "Name": "NodeConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "ConfigurationMode",
-        "Aliases": null
-      },
-      {
-        "Name": "ConfigurationModeFrequencyMins",
-        "Aliases": null
-      },
-      {
-        "Name": "RefreshFrequencyMins",
-        "Aliases": null
-      },
-      {
-        "Name": "RebootNodeIfNeeded",
-        "Aliases": null
-      },
-      {
-        "Name": "ActionAfterReboot",
-        "Aliases": null
-      },
-      {
-        "Name": "AllowModuleOverwrite",
-        "Aliases": null
-      },
-      {
-        "Name": "AzureVMResourceGroup",
-        "Aliases": null
-      },
-      {
-        "Name": "AzureVMLocation",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Register-AzAutomationScheduledRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "RunbookName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "ScheduleName",
-        "Aliases": null
-      },
-      {
-        "Name": "Parameters",
-        "Aliases": null
-      },
-      {
-        "Name": "RunOn",
-        "Aliases": [
-          "HybridWorker"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationCertificate",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationConnectionType",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationConnection",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationCredential",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationDscNodeConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "NodeConfigurationName"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "IgnoreNodeMappings",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationModule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationSchedule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationVariable",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationDscConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "ConfigurationName"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationWebhook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Resume-AzAutomationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationCertificate",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Password",
-        "Aliases": null
-      },
-      {
-        "Name": "Path",
-        "Aliases": null
-      },
-      {
-        "Name": "Exportable",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationConnectionFieldValue",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ConnectionFieldName",
-        "Aliases": null
-      },
-      {
-        "Name": "Value",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationCredential",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Value",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationModule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ContentLinkUri",
-        "Aliases": [
-          "ContentLink"
-        ]
-      },
-      {
-        "Name": "ContentLinkVersion",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
+        "Name": "Version",
         "Aliases": [
-          "RunbookName"
+          "CertificateVersion"
         ]
       },
       {
-        "Name": "Description",
+        "Name": "Enable",
         "Aliases": null
       },
       {
@@ -2118,19 +84,7 @@
         "Aliases": null
       },
       {
-        "Name": "LogProgress",
-        "Aliases": null
-      },
-      {
-        "Name": "LogVerbose",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -2140,52 +94,40 @@
           "AzureRmContext",
           "AzureCredential"
         ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
       }
     ]
   },
   {
-    "Command": "Import-AzAutomationRunbook",
+    "Command": "Stop-AzKeyVaultCertificateOperation",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "Path",
-        "Aliases": [
-          "SourcePath"
-        ]
-      },
-      {
-        "Name": "Description",
+        "Name": "VaultName",
         "Aliases": null
       },
       {
         "Name": "Name",
         "Aliases": [
-          "RunbookName"
+          "CertificateName"
         ]
       },
       {
-        "Name": "Tags",
-        "Aliases": [
-          "Tag"
-        ]
-      },
-      {
-        "Name": "Type",
-        "Aliases": null
-      },
-      {
-        "Name": "LogProgress",
-        "Aliases": null
-      },
-      {
-        "Name": "LogVerbose",
-        "Aliases": null
-      },
-      {
-        "Name": "Published",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
@@ -2193,11 +135,93 @@
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificateOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateString",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateCollection",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
         "Aliases": null
       },
       {
@@ -2223,311 +247,30 @@
     ]
   },
   {
-    "Command": "Set-AzAutomationSchedule",
+    "Command": "Add-AzKeyVaultCertificateContact",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "Name",
+        "Name": "VaultName",
         "Aliases": null
       },
       {
-        "Name": "IsEnabled",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "Description",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "EmailAddress",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationVariable",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "Encrypted",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "Value",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationWebhook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "IsEnabled",
-        "Aliases": null
-      },
-      {
-        "Name": "Parameters",
-        "Aliases": null
-      },
-      {
-        "Name": "RunOn",
-        "Aliases": [
-          "HybridWorker"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Start-AzAutomationDscCompilationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "ConfigurationName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "Parameters",
-        "Aliases": null
-      },
-      {
-        "Name": "ConfigurationData",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "IncrementNodeConfigurationBuild",
-        "Aliases": null
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationRegistrationInfo",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "ConfigurationName"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscNode",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "NodeId"
-        ]
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "NodeName"
-        ]
-      },
-      {
-        "Name": "NodeConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "ConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscOnboardingMetaconfig",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "OutputFolder",
-        "Aliases": null
-      },
-      {
-        "Name": "ComputerName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -2553,46 +296,46 @@
     ]
   },
   {
-    "Command": "Import-AzAutomationDscConfiguration",
+    "Command": "Get-AzKeyVaultCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "SourcePath",
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
         "Aliases": [
-          "Path"
+          "CertificateName"
         ]
       },
       {
-        "Name": "Tags",
+        "Name": "Version",
         "Aliases": [
-          "Tag"
+          "CertificateVersion"
         ]
       },
       {
-        "Name": "Description",
+        "Name": "IncludeVersions",
         "Aliases": null
       },
       {
-        "Name": "Published",
+        "Name": "InRemovedState",
         "Aliases": null
       },
       {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "LogVerbose",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "IncludePending",
         "Aliases": null
       },
       {
@@ -2602,186 +345,156 @@
           "AzureRmContext",
           "AzureCredential"
         ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificateContact",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
       },
       {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
+        "Name": "InputObject",
+        "Aliases": null
       },
       {
-        "Name": "Confirm",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
         "Aliases": [
-          "cf"
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
         ]
       }
     ]
   },
   {
-    "Command": "New-AzAutomationKey",
+    "Command": "Get-AzKeyVaultCertificateIssuer",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IssuerName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "IssuerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": [
+          "DnsNames"
+        ]
+      },
+      {
+        "Name": "RenewAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseKeyOnRenewal",
+        "Aliases": null
+      },
+      {
+        "Name": "Disabled",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyUsage",
+        "Aliases": null
+      },
+      {
+        "Name": "Ekus",
+        "Aliases": null
+      },
+      {
+        "Name": "ValidityInMonths",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateType",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtPercentageLifetime",
+        "Aliases": null
+      },
       {
         "Name": "KeyType",
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "KeySize",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "KeyNotExportable",
         "Aliases": null
       },
       {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Start-AzAutomationRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": [
-          "RunbookName"
-        ]
-      },
-      {
-        "Name": "Parameters",
-        "Aliases": [
-          "JobParameters"
-        ]
-      },
-      {
-        "Name": "RunOn",
-        "Aliases": [
-          "HybridWorker"
-        ]
-      },
-      {
-        "Name": "Wait",
+        "Name": "CertificateTransparency",
         "Aliases": null
       },
       {
-        "Name": "MaxWaitSeconds",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Stop-AzAutomationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Suspend-AzAutomationJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "JobId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Unregister-AzAutomationDscNode",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "NodeId"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "Curve",
         "Aliases": null
       },
       {
@@ -2807,282 +520,18 @@
     ]
   },
   {
-    "Command": "Set-AzAutomationAccount",
+    "Command": "Remove-AzKeyVaultCertificate",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "ResourceGroupName",
+        "Name": "VaultName",
         "Aliases": null
       },
       {
         "Name": "Name",
-        "Aliases": [
-          "AutomationAccountName"
-        ]
-      },
-      {
-        "Name": "Plan",
-        "Aliases": null
-      },
-      {
-        "Name": "Tags",
-        "Aliases": [
-          "Tag"
-        ]
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationAccount",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "AutomationAccountName"
-        ]
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationAccount",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "AutomationAccountName"
-        ]
-      },
-      {
-        "Name": "Location",
-        "Aliases": null
-      },
-      {
-        "Name": "Plan",
-        "Aliases": null
-      },
-      {
-        "Name": "Tags",
-        "Aliases": [
-          "Tag"
-        ]
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationAccount",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "Name",
-        "Aliases": [
-          "AutomationAccountName"
-        ]
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Set-AzAutomationDscNode",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Aliases": [
-          "NodeId"
-        ]
-      },
-      {
-        "Name": "NodeConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Unregister-AzAutomationScheduledRunbook",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "JobScheduleId",
-        "Aliases": null
-      },
-      {
-        "Name": "RunbookName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "ScheduleName",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Start-AzAutomationDscNodeConfigurationDeployment",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "NodeConfigurationName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "NodeName",
-        "Aliases": null
-      },
-      {
-        "Name": "Schedule",
-        "Aliases": null
-      },
-      {
-        "Name": "Force",
         "Aliases": null
       },
       {
@@ -3090,44 +539,7 @@
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Stop-AzAutomationDscNodeConfigurationDeployment",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "JobId",
+        "Name": "InRemovedState",
         "Aliases": null
       },
       {
@@ -3139,202 +551,52 @@
         "Aliases": null
       },
       {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificateContact",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
         "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "EmailAddress",
         "Aliases": null
       },
       {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscNodeConfigurationDeploymentSchedule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "JobScheduleId",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationDscNodeConfigurationDeployment",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "JobId",
-        "Aliases": null
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
-        "Aliases": null
-      },
-      {
-        "Name": "EndTime",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationSoftwareUpdateConfiguration",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Schedule",
-        "Aliases": null
-      },
-      {
-        "Name": "Windows",
-        "Aliases": null
-      },
-      {
-        "Name": "Linux",
-        "Aliases": null
-      },
-      {
-        "Name": "RebootOnly",
-        "Aliases": null
-      },
-      {
-        "Name": "AzureVMResourceId",
-        "Aliases": null
-      },
-      {
-        "Name": "PreTaskRunbookName",
-        "Aliases": null
-      },
-      {
-        "Name": "PostTaskRunbookName",
-        "Aliases": null
-      },
-      {
-        "Name": "PreTaskRunbookParameter",
-        "Aliases": null
-      },
-      {
-        "Name": "PostTaskRunbookParameter",
-        "Aliases": null
-      },
-      {
-        "Name": "NonAzureComputer",
-        "Aliases": null
-      },
-      {
-        "Name": "AzureQuery",
-        "Aliases": null
-      },
-      {
-        "Name": "NonAzureQuery",
-        "Aliases": null
-      },
-      {
-        "Name": "Duration",
-        "Aliases": null
-      },
-      {
-        "Name": "RebootSetting",
-        "Aliases": null
-      },
-      {
-        "Name": "IncludedUpdateClassification",
-        "Aliases": null
-      },
-      {
-        "Name": "ExcludedKbNumber",
-        "Aliases": null
-      },
-      {
-        "Name": "IncludedKbNumber",
-        "Aliases": null
-      },
-      {
-        "Name": "IncludedPackageClassification",
-        "Aliases": null
-      },
-      {
-        "Name": "ExcludedPackageNameMask",
-        "Aliases": null
-      },
-      {
-        "Name": "IncludedPackageNameMask",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "PassThru",
         "Aliases": null
       },
       {
@@ -3360,39 +622,321 @@
     ]
   },
   {
-    "Command": "New-AzAutomationUpdateManagementAzureQuery",
+    "Command": "Remove-AzKeyVaultCertificateIssuer",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "Scope",
+        "Name": "VaultName",
         "Aliases": null
       },
       {
-        "Name": "Location",
+        "Name": "Name",
         "Aliases": [
-          "Locaton"
+          "IssuerName"
         ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificateOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificateIssuer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IssuerName"
+        ]
+      },
+      {
+        "Name": "IssuerProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiKey",
+        "Aliases": null
+      },
+      {
+        "Name": "OrganizationDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Issuer"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "CertificatePolicy"
+        ]
+      },
+      {
+        "Name": "RenewAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseKeyOnRenewal",
+        "Aliases": null
+      },
+      {
+        "Name": "Disabled",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": [
+          "DnsNames"
+        ]
+      },
+      {
+        "Name": "KeyUsage",
+        "Aliases": null
+      },
+      {
+        "Name": "Ekus",
+        "Aliases": null
+      },
+      {
+        "Name": "ValidityInMonths",
+        "Aliases": null
+      },
+      {
+        "Name": "IssuerName",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateType",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "KeySize",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyNotExportable",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateTransparency",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Curve",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
       },
       {
         "Name": "Tag",
         "Aliases": null
       },
       {
-        "Name": "FilterOperator",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
         "Name": "DefaultProfile",
         "Aliases": [
           "AzContext",
@@ -3403,26 +947,42 @@
     ]
   },
   {
-    "Command": "Get-AzAutomationSoftwareUpdateConfiguration",
+    "Command": "New-AzKeyVaultManagedHsm",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
         "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "AzureVMResourceId",
-        "Aliases": null
+        "Aliases": [
+          "HsmName"
+        ]
       },
       {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Administrator",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "AsJob",
         "Aliases": null
       },
       {
@@ -3432,22 +992,52 @@
           "AzureRmContext",
           "AzureCredential"
         ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
       }
     ]
   },
   {
-    "Command": "Remove-AzAutomationSoftwareUpdateConfiguration",
+    "Command": "Remove-AzKeyVaultManagedHsm",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
         "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "SoftwareUpdateConfiguration",
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
         "Aliases": null
       },
       {
@@ -3455,11 +1045,176 @@
         "Aliases": null
       },
       {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "VaultName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbacAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "SoftDeleteRetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "NetworkRuleSet",
         "Aliases": null
       },
       {
@@ -3485,34 +1240,24 @@
     ]
   },
   {
-    "Command": "Get-AzAutomationSoftwareUpdateRun",
+    "Command": "Remove-AzKeyVault",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "SoftwareUpdateConfigurationName",
-        "Aliases": null
-      },
-      {
-        "Name": "SoftwareUpdateConfiguration",
-        "Aliases": null
-      },
-      {
-        "Name": "OperatingSystem",
-        "Aliases": null
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "StartTime",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
@@ -3520,179 +1265,19 @@
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "Location",
         "Aliases": null
       },
       {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationSoftwareUpdateMachineRun",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Id",
+        "Name": "InRemovedState",
         "Aliases": null
       },
       {
-        "Name": "SoftwareUpdateRunId",
+        "Name": "Force",
         "Aliases": null
       },
       {
-        "Name": "SoftwareUpdateRun",
-        "Aliases": null
-      },
-      {
-        "Name": "Status",
-        "Aliases": null
-      },
-      {
-        "Name": "TargetComputer",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "New-AzAutomationSourceControl",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "RepoUrl",
-        "Aliases": null
-      },
-      {
-        "Name": "SourceType",
-        "Aliases": null
-      },
-      {
-        "Name": "AccessToken",
-        "Aliases": null
-      },
-      {
-        "Name": "FolderPath",
-        "Aliases": null
-      },
-      {
-        "Name": "Branch",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "EnableAutoSync",
-        "Aliases": null
-      },
-      {
-        "Name": "DoNotPublishRunbook",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationSourceControl",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "SourceType",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Remove-AzAutomationSourceControl",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "Name",
+        "Name": "AsJob",
         "Aliases": null
       },
       {
@@ -3700,11 +1285,52 @@
         "Aliases": null
       },
       {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
         "Name": "ResourceGroupName",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
         "Aliases": null
       },
       {
@@ -3730,46 +1356,591 @@
     ]
   },
   {
-    "Command": "Update-AzAutomationSourceControl",
+    "Command": "Backup-AzKeyVault",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SasToken",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "BackupFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SasToken",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultRoleDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "RoleAssignmentName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleAssignmentName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultAccessPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultAccessPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToKeys",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToSecrets",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToCertificates",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToStorage",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "BypassObjectIdValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
       {
         "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "OutputFile",
         "Aliases": null
       },
       {
-        "Name": "AccessToken",
-        "Aliases": null
-      },
-      {
-        "Name": "FolderPath",
-        "Aliases": null
-      },
-      {
-        "Name": "Branch",
-        "Aliases": null
-      },
-      {
-        "Name": "Description",
-        "Aliases": null
-      },
-      {
-        "Name": "AutoSync",
-        "Aliases": null
-      },
-      {
-        "Name": "PublishRunbook",
-        "Aliases": null
-      },
-      {
-        "Name": "ResourceGroupName",
-        "Aliases": null
-      },
-      {
-        "Name": "AutomationAccountName",
+        "Name": "Force",
         "Aliases": null
       },
       {
@@ -3795,161 +1966,58 @@
     ]
   },
   {
-    "Command": "Start-AzAutomationSourceControlSyncJob",
+    "Command": "Get-AzKeyVaultKey",
     "IsAlias": false,
     "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
     "Parameters": [
       {
-        "Name": "SourceControlName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "JobId",
-        "Aliases": [
-          "SourceControlSyncJobId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
+        "Name": "VaultName",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "HsmName",
         "Aliases": null
       },
       {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      },
-      {
-        "Name": "WhatIf",
-        "Aliases": [
-          "wi"
-        ]
-      },
-      {
-        "Name": "Confirm",
-        "Aliases": [
-          "cf"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationSourceControlSyncJob",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "SourceControlName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "JobId",
-        "Aliases": [
-          "SourceControlSyncJobId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
+        "Name": "InputObject",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "HsmObject",
         "Aliases": null
       },
       {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Get-AzAutomationSourceControlSyncJobOutput",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
-      {
-        "Name": "SourceControlName",
-        "Aliases": [
-          "Name"
-        ]
-      },
-      {
-        "Name": "JobId",
-        "Aliases": [
-          "SourceControlSyncJobId"
-        ]
-      },
-      {
-        "Name": "Stream",
+        "Name": "ResourceId",
         "Aliases": null
       },
       {
-        "Name": "StreamId",
-        "Aliases": [
-          "SourceControlSyncJobStreamId"
-        ]
-      },
-      {
-        "Name": "ResourceGroupName",
+        "Name": "HsmResourceId",
         "Aliases": null
       },
-      {
-        "Name": "AutomationAccountName",
-        "Aliases": null
-      },
-      {
-        "Name": "DefaultProfile",
-        "Aliases": [
-          "AzContext",
-          "AzureRmContext",
-          "AzureCredential"
-        ]
-      }
-    ]
-  },
-  {
-    "Command": "Import-AzAutomationModule",
-    "IsAlias": false,
-    "SupportsDynamicParameters": false,
-    "SourceModule": "Az.Automation",
-    "Version": "1.4.0",
-    "Parameters": [
       {
         "Name": "Name",
-        "Aliases": null
-      },
-      {
-        "Name": "ContentLinkUri",
         "Aliases": [
-          "ContentLink"
+          "KeyName"
         ]
       },
       {
-        "Name": "ResourceGroupName",
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "IncludeVersions",
         "Aliases": null
       },
       {
-        "Name": "AutomationAccountName",
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "OutFile",
         "Aliases": null
       },
       {
@@ -3958,6 +2026,2328 @@
           "AzContext",
           "AzureRmContext",
           "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "IncludeVersions",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "AsPlainText",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultKeyRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultSecretRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "KeyFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyFilePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "Destination",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "Size",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "CurveName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbacAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultNetworkRuleSetObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "Bypass",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretValue",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificateAdministratorDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificateOrganizationDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "AdministratorDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Secret"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "AccountResourceId",
+        "Aliases": [
+          "StorageAccountResourceId"
+        ]
+      },
+      {
+        "Name": "ActiveKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableAutoRegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "RegenerationPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ActiveKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoRegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "RegenerationPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedStorageAccountKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SasType",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ValidityPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultCertificateRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Certificate"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "StorageAccount"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultManagedStorageSasDefinitionRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultManagedStorageAccountRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultNetworkRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultNetworkRuleSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "Bypass",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultNetworkRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Export-AzKeyVaultSecurityDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Certificates",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Quorum",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzKeyVaultSecurityDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "Keys",
+        "Aliases": null
+      },
+      {
+        "Name": "SecurityDomainPath",
+        "Aliases": [
+          "Path"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultSecretAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultKeyAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificateAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "3.4.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "CertificateVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
         ]
       }
     ]
