@@ -26,5 +26,7 @@ steps:
   displayName: 'Test'
   inputs:
     targetType: 'inline'
-    script: 'Install-Module -Name Pester'
+    script: |
+      $folder = Join-Path -Path (Get-Location) -ChildPath 'powershell-module\Az.Tools.Migration\Tests\Functions\Public\'
+      Invoke-Pester -Path $folder
     pwsh: true
