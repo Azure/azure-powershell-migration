@@ -13,3 +13,17 @@ steps:
     command: custom
     custom: msbuild
     arguments: 'build.proj /t:Build'
+
+- task: PowerShell@2
+  displayName: 'Install Pester'
+  inputs:
+    targetType: 'inline'
+    script: 'Install-Module -Name Pester'
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: 'Test'
+  inputs:
+    targetType: 'inline'
+    script: 'Install-Module -Name Pester'
+    pwsh: true
