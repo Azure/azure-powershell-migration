@@ -10,8 +10,6 @@ Occasionally, these should be updated to latest. This document describes how to 
 Have the following installed on your system:
 
 * PowerShell 7.x or later.
-* `Az.Tools.Migration` module. This module must exist in a file system path specified in
-  `$env:PSModulePath`.
 * Cloned the [azure-powershell-migration](https://github.com/Azure/azure-powershell-migration)
   GitHub repository to your local computer.
 
@@ -23,7 +21,14 @@ Have the following installed on your system:
    the `CurrentUser` scope. For example, the following installs v4.6.1 in the current user's scope.
 
    ```powershell
-   Install-Module -Name Az -RequiredVersion 4.6.1 -Scope CurrentUser -AllowClobber -Force
+   Install-Module -Name Az -RequiredVersion 4.6.1 -Repository PSGallery -Scope CurrentUser -AllowClobber -Force
+   ```
+
+1. Go the root folder of cloned Github repository
+
+1. Add module path into `$env:PSModulePath`
+   ```powershell
+   $env:PSModulePath += ';'+ (Join-Path -Path (Get-Location) -ChildPath 'powershell-module')
    ```
 
 1. Import the Az.Tools.Migration PowerShell module.
@@ -39,22 +44,33 @@ Have the following installed on your system:
 
    ```powershell
    # setup
-   $moduleRepo = 'C:\source\azure-powershell-migration'
-   $azModuleVersion = '4.6.1'
-   $outputDirectory = Join-Path -Path $moduleRepo -ChildPath "powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\$azModuleVersion"
+   $azModuleVersion = '5.5.0'
 
    # execute
-   . $moduleRepo\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory $outputDirectory
+   .\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory (Join-Path -Path (Get-Location) -ChildPath 'powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\'$azModuleVersion)
    ```
 
 1. Update the Az PowerShell module version listed in documentation, function help, function
    parameter validation, and unit tests. The easiest way to do this is to perform a search to find
-   and replace the old version. For example, search for '4.4.0' and replace with '4.6.1'.
+   and replace the old version. For example, search for '5.2.0' and replace with '5.5.0'.
 
 1. Remove the old module spec files from module resources:
    `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`.
 
 1. Run the unit tests to make sure all unit tests pass. It's not uncommon for some tests to fail
    because the expected number of aliases or cmdlets from the specs has changed.
+
+   Restart PowerShell Process and navigate to the root folder of cloned Github repository
+   ```powershell
+   <# Add the path of parent folder of module to environment variable #>
+   $env:PSModulePath += ';'+ (Join-Path -Path (Get-Location) -ChildPath 'powershell-module')
+
+   <# Go to the root folder of module #>
+   cd powershell-module\Az.Tools.Migration
+
+   Invoke-Pester
+   ```
+
+   Restart PowerShell if test is changed and module needs to be imported again.
 
 1. Submit a pull request to commit the new changes.

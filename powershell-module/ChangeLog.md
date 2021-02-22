@@ -18,7 +18,7 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
-
+* Upgrade Az version to 5.5.0
 ## 1.0.0
 * General availability of 'Az.Tools.Migration' module
 * Upgraded Az version to 5.2
