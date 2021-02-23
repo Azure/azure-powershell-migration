@@ -19,6 +19,11 @@
 -->
 ## Upcoming Release
 * Upgrade Az version to 5.5.0
+* Fixed a bug where New-AzUpgradeModulePlan throws errors when analyzing hashtable code (issue #73).
+* Updated scanning results for Az cmdlets that implement dynamic parameters to use clearer warnings.
+* Updated Get-AzUpgradeCmdletSpec to improve performance.
+* Updated quickstart guide to remove outdated guidance on splatted parameter detection.
+
 ## 1.0.0
 * General availability of 'Az.Tools.Migration' module
 * Upgraded Az version to 5.2
