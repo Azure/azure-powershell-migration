@@ -17,7 +17,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -52,7 +52,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -145,7 +145,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 
             # act
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -249,7 +249,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -291,7 +291,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -337,7 +337,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null
@@ -379,7 +379,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
 
             # act
             # should generate a warning, and an upgrade step
-            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.5.0
+            $results = New-AzUpgradeModulePlan -AzureRmCmdReference $foundCmdlets -ToAzVersion 5.6.0
 
             # assert
             $results | Should Not Be $null

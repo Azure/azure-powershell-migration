@@ -11,8 +11,8 @@ function Get-AzUpgradeAliasSpec
         Specify the version of the module to import command aliases from.
 
     .EXAMPLE
-        PS C:\> Get-AzUpgradeAliasSpec -ModuleVersion "5.5.0"
-        Returns the cmdlet alias mappings table for Az 5.5.0.
+        PS C:\> Get-AzUpgradeAliasSpec -ModuleVersion "5.6.0"
+        Returns the cmdlet alias mappings table for Az 5.6.0.
     #>
     [CmdletBinding()]
     Param

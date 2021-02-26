@@ -3,7 +3,7 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.0.0'
+    ModuleVersion = '1.1.0'
 
     # Supported PSEditions
     CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,8 +108,11 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* General availability of ''Az.Tools.Migration'' module
-            * Upgraded Az version to 5.2'
+            ReleaseNotes = '* Upgrade Az version to 5.6.0
+            * Fixed a bug where New-AzUpgradeModulePlan throws errors when analyzing hashtable code (issue #73).
+            * Updated scanning results for Az cmdlets that implement dynamic parameters to use clearer warnings.
+            * Updated Get-AzUpgradeCmdletSpec to improve performance.
+            * Updated quickstart guide to remove outdated guidance on splatted parameter detection.'
         }
     }
 

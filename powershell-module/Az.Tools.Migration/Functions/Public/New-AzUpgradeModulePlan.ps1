@@ -11,7 +11,7 @@ function New-AzUpgradeModulePlan
         Specifies the AzureRM module version used in your existing PowerShell scripts(s) or modules.
 
     .PARAMETER ToAzVersion
-        Specifies the Az module version to upgrade to. Currently, only Az version 5.5.0 is supported.
+        Specifies the Az module version to upgrade to. Currently, only Az version 5.6.0 is supported.
 
     .PARAMETER FilePath
         Specifies the path to a single PowerShell file.
@@ -34,18 +34,18 @@ function New-AzUpgradeModulePlan
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script file 'C:\Scripts\my-azure-script.ps1'.
 
-        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.5.0 -FilePath 'C:\Scripts\my-azure-script.ps1'
+        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.6.0 -FilePath 'C:\Scripts\my-azure-script.ps1'
 
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script and module files located under C:\Scripts.
 
-        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.5.0 -DirectoryPath 'C:\Scripts'
+        New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 5.6.0 -DirectoryPath 'C:\Scripts'
 
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script and module files under C:\Scripts.
 
         $references = Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts' -AzureRmVersion '6.13.1'
-        New-AzUpgradeModulePlan -ToAzVersion 5.5.0 -AzureRmCmdReference $references
+        New-AzUpgradeModulePlan -ToAzVersion 5.6.0 -AzureRmCmdReference $references
 
     .EXAMPLE
         The following example generates a new Az module upgrade plan for the script and module files under several directories.
@@ -53,13 +53,13 @@ function New-AzUpgradeModulePlan
 
         # pre-load specifications
         $armSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
-        $azSpec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "5.5.0"
-        $azAliases = Get-AzUpgradeAliasSpec -ModuleVersion "5.5.0"
+        $azSpec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "5.6.0"
+        $azAliases = Get-AzUpgradeAliasSpec -ModuleVersion "5.6.0"
 
         # execute a batch of module upgrades
-        $plan1 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts1' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.5.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
-        $plan2 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts2' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.5.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
-        $plan3 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts3' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.5.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
+        $plan1 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts1' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.6.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
+        $plan2 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts2' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.6.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
+        $plan3 = New-AzUpgradeModulePlan -DirectoryPath 'C:\Scripts3' -FromAzureRmVersion '6.13.1' -ToAzVersion '5.6.0' -AzureRmModuleSpec $armSpec -AzModuleSpec $azSpec -AzAliasMappingSpec $azAliases
     #>
     [CmdletBinding()]
     Param
@@ -103,7 +103,7 @@ function New-AzUpgradeModulePlan
             Mandatory=$true,
             HelpMessage='Specify the Az module version to upgrade to.')]
         [System.String]
-        [ValidateSet('5.5.0')]
+        [ValidateSet('5.6.0')]
         $ToAzVersion,
 
         [Parameter(Mandatory=$false)]

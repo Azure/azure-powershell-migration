@@ -18,7 +18,9 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
-* Upgrade Az version to 5.5.0
+
+## 1.1.0
+* Upgrade Az version to 5.6.0
 * Fixed a bug where New-AzUpgradeModulePlan throws errors when analyzing hashtable code (issue #73).
 * Updated scanning results for Az cmdlets that implement dynamic parameters to use clearer warnings.
 * Updated Get-AzUpgradeCmdletSpec to improve performance.
