@@ -50,22 +50,30 @@ function Invoke-ModuleUpgradeStep
                     -StartOffset $Step.SourceCommand.StartOffset -EndOffset $Step.SourceCommand.EndOffset
 
                 # replacement code
-                $null = $FileContent.Remove($Step.SourceCommand.StartOffset, ($Step.SourceCommand.EndOffset - $Step.SourceCommand.StartOffset));
-                $null = $FileContent.Insert($Step.SourceCommand.StartOffset, $Step.Replacement);
+                $null = $FileContent.Remove($Step.SourceCommand.StartOffset, ($Step.SourceCommand.EndOffset - $Step.SourceCommand.StartOffset))
+                $null = $FileContent.Insert($Step.SourceCommand.StartOffset, $Step.Replacement)
             }
             "CmdletParameter"
             {
-                Write-Verbose -Message ("[{0}] Updating CmdletParameter {1} to {2}." `
-                        -f $Step.Location, $Step.Original, $Step.Replacement)
+                if ([System.String]::IsNullOrWhiteSpace($Step.Replacement) -eq $false)
+                {
+                    Write-Verbose -Message ("[{0}] Updating CmdletParameter {1} to {2}." `
+                            -f $Step.Location, $Step.Original, $Step.Replacement)
 
-                # safety check
-                # ensure that the file offsets are an exact match.
-                Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.Original `
-                    -StartOffset $Step.SourceCommandParameter.StartOffset -EndOffset $Step.SourceCommandParameter.EndOffset
+                    # safety check
+                    # ensure that the file offsets are an exact match.
+                    Confirm-StringBuilderSubstring -FileContent $FileContent -Substring $Step.Original `
+                        -StartOffset $Step.SourceCommandParameter.StartOffset -EndOffset $Step.SourceCommandParameter.EndOffset
 
-                # replacement code
-                $null = $FileContent.Remove($Step.SourceCommandParameter.StartOffset, ($Step.SourceCommandParameter.EndOffset - $Step.SourceCommandParameter.StartOffset));
-                $null = $FileContent.Insert($Step.SourceCommandParameter.StartOffset, $Step.Replacement);
+                    # replacement code
+                    $null = $FileContent.Remove($Step.SourceCommandParameter.StartOffset, ($Step.SourceCommandParameter.EndOffset - $Step.SourceCommandParameter.StartOffset))
+                    $null = $FileContent.Insert($Step.SourceCommandParameter.StartOffset, $Step.Replacement)
+                }
+                else
+                {
+                    Write-Verbose -Message ("[{0}] Skipping CmdletParameter {1}, it has no automated replacement." `
+                        -f $Step.Location, $Step.Original)
+                }
             }
             default
             {
