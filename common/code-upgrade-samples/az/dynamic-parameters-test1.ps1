@@ -3,5 +3,5 @@
 New-AzResourceGroupDeployment -ResourceGroupName "ContosoEngineering" `
     -TemplateFile "D:\Azure\Templates\EngineeringSite.json" `
     -TemplateParameterFile "D:\Azure\Templates\EngSiteParms.json" `
-    - "test1" `
-    - "test2"
+    -DynamicUserParam1 "test1" `
+    -DynamicUserParam2 "test2"

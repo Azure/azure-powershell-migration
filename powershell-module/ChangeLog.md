@@ -19,6 +19,9 @@
 -->
 ## Upcoming Release
 
+## 1.1.1
+* Fixed a bug in Invoke-AzUpgradeModulePlan where dynamic parameters are incorrectly updated (issue #81).
+
 ## 1.1.0
 * Upgrade Az version to 5.6.0
 * Fixed a bug where New-AzUpgradeModulePlan throws errors when analyzing hashtable code (issue #73).
