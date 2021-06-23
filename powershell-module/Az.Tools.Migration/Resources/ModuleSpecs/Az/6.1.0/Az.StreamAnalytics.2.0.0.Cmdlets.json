@@ -1,0 +1,2450 @@
+[
+  {
+    "Command": "Get-AzStreamAnalyticsCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsClusterStreamingJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsDefaultFunctionDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "BindingType",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "UdfType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsFunction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "FunctionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsInput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "InputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "OutputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsQuota",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStreamAnalyticsTransformation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TransformationName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsFunction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "FunctionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsInput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "InputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "CompatibilityLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "DataLocale",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsLateArrivalMaxDelayInSecond",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsOutOfOrderMaxDelayInSecond",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsOutOfOrderPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputErrorPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "OutputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStreamAnalyticsTransformation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TransformationName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "StreamingUnit",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStreamAnalyticsCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStreamAnalyticsFunction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "FunctionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStreamAnalyticsInput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "InputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStreamAnalyticsOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "OutputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputStartMode",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzStreamAnalyticsFunction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "FunctionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzStreamAnalyticsInput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "InputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzStreamAnalyticsOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "OutputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsFunction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "FunctionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsInput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "InputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DataLocale",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsLateArrivalMaxDelayInSecond",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsOutOfOrderMaxDelayInSecond",
+        "Aliases": null
+      },
+      {
+        "Name": "EventsOutOfOrderPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputErrorPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "OutputName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzStreamAnalyticsTransformation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StreamAnalytics",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TransformationName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "StreamingUnit",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

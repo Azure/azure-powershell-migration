@@ -10,6 +10,7 @@ Occasionally, these should be updated to latest. This document describes how to 
 Have the following installed on your system:
 
 * PowerShell 7.x or later.
+* Pester 4.10.1 (5.* cannot work due to breaking change)
 * Cloned the [azure-powershell-migration](https://github.com/Azure/azure-powershell-migration)
   GitHub repository to your local computer.
 

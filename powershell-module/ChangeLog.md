@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+## 1.1.2
+* Upgrade Az version to 6.1.0
 
 ## 1.1.1
 * Fixed a bug in Invoke-AzUpgradeModulePlan where dynamic parameters are incorrectly updated (issue #81).
