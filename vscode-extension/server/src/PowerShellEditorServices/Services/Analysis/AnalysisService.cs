@@ -129,11 +129,11 @@ namespace Microsoft.PowerShell.EditorServices.Services
             _analysisEngineLazy = new Lazy<PssaCmdletAnalysisEngine>(InstantiateAnalysisEngine);
             _pssaSettingsFilePath = null;
             _azureRmVersion = "6.13.1";
-            _azVersion = "4.8.0";
+            _azVersion = "6.1.0";
             powerShell = System.Management.Automation.PowerShell.Create()
                 .AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process")
                 .AddScript("Register-PSRepository -Name PSGallery -SourceLocation https://www.powershellgallery.com/api/v2/ -InstallationPolicy Trusted")
-                .AddScript(@"Install-Module -Name Az.Tools.Migration -Repository PSGallery")
+                .AddScript(@"Install-Module -Name Az.Tools.Migration -RequiredVersion 1.1.2 -Repository PSGallery")
                 .AddScript("$azSpec = Get-AzUpgradeCmdletSpec -ModuleName \"Az\" -ModuleVersion \"" + _azVersion + "\"")
                 .AddScript("$azureRMSpec = Get-AzUpgradeCmdletSpec -ModuleName \"AzureRM\" -ModuleVersion \"" + _azureRmVersion + "\"");
             powerShell.Invoke();
