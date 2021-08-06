@@ -1,99 +1,145 @@
 /*---------------------------------------------------------
  * Copyright (C) Microsoft Corporation. All rights reserved.
  *--------------------------------------------------------*/
-// import * as vscode from 'vscode';
-"use strict";
 
-import path = require("path");
-import vscode = require("vscode");
-import TelemetryReporter from "vscode-extension-telemetry";
-import { DocumentSelector } from "vscode-languageclient";
-import { CodeActionsFeature } from "./features/CodeActions";
-import { Logger, LogLevel } from "./logging";
-import { SessionManager } from "./session";
-import Settings = require("./settings");
-import { PowerShellLanguageId } from "./utils";
-import { LanguageClientConsumer } from "./languageClientConsumer";
-import { getSrcVersion } from "./selectVersion";
+// The module 'vscode' contains the VS Code extensibility API
+// Import the module and reference it with the alias vscode in your code below
+import * as vscode from 'vscode';
+import {BreakingChangeInfo} from './quickFix';
+import {updateDiagnostics} from './diagnostic'
+import {
+    getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
+    OperatingSystem, PowerShellExeFinder } from "./platform";
+import { Logger } from "./logging";
+import { PowershellProcess } from './powershell';
 
-// The most reliable way to get the name and version of the current extension.
-// tslint:disable-next-line: no-var-requires
 const PackageJSON: any = require("../package.json");
+let powershell = new PowershellProcess();
 
-// the application insights key (also known as instrumentation key) used for telemetry.
-
-let logger: Logger;
-let sessionManager: SessionManager;
-let languageClientConsumers: LanguageClientConsumer[] = [];
-let commandRegistrations: vscode.Disposable[] = [];
-let telemetryReporter: TelemetryReporter;
-
-const documentSelector: DocumentSelector = [
-    { language: "powershell", scheme: "file" },
-    { language: "Powershell", scheme: "file" },
-    { language: "powershell", scheme: "untitled" },
-];
-
-export function activate(context: vscode.ExtensionContext): void {
-    console.debug('"azps-tools" is activating ...');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-
-    // Create the logger
-    logger = new Logger();
-
-    // Set the log level
-    const extensionSettings = Settings.load();
-    logger.MinimumLogLevel = LogLevel[extensionSettings.developer.editorServicesLogLevel];
-
-    sessionManager =
-        new SessionManager(
-            logger,
-            documentSelector,
-            PackageJSON.displayName,
-            PackageJSON.version,
-            telemetryReporter);
-
-    // Register commands that do not require Language client
-    commandRegistrations = [
-        new CodeActionsFeature(logger),
-    ]
-
-    // Features and command registrations that require language client
-    languageClientConsumers = [
-    ];
-
-    sessionManager.setLanguageClientConsumers(languageClientConsumers);
-
-    if (extensionSettings.startAutomatically) {
-        sessionManager.start();
-    }
-
-    let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
-        var sourceVersion = await getSrcVersion();
-        vscode.window.showInformationMessage(`Updating powershell scripts from '${sourceVersion}' to latest`);
+// this method is called when your extension is activated
+// your extension is activated the very first time the command is executed
+export async function activate(context: vscode.ExtensionContext) {
+	
+	// Use the console to output diagnostic information (console.log) and errors (console.error)
+	// This line of code will only be executed once when your extension is activated
+	console.log('Congratulations, your extension "demo-client" is now active!');
+	let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
+		//TODO: build one selection quickbox
     });
-    
-    context.subscriptions.push(disposable);
 
-    console.log('Congratulations, your extension "azps-tools" is now active!');
+	//start the logger
+	let log;
+	log = new Logger();
+	let platformDetails = getPlatformDetails();
+	const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
+    const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";
+	log.write(
+		`Visual Studio Code v${vscode.version} ${procBitness}`,
+		`${PackageJSON.displayName} Extension v${PackageJSON.version}`,
+		`Operating System: ${OperatingSystem[platformDetails.operatingSystem]} ${osBitness}`);
+	log.startNewLog('normal');
+
+	//check whether the powershell exists
+	var powershellExeFinder = new PowerShellExeFinder();
+	let powerShellExeDetails;
+	try {
+		powerShellExeDetails = powershellExeFinder.getFirstAvailablePowerShellInstallation();
+	} catch (e) {
+		log.writeError(`Error occurred while searching for a PowerShell executable:\n${e}`);
+	}
+	if (!powerShellExeDetails) {
+		const message = "Unable to find PowerShell."
+			+ " Do you have PowerShell installed?"
+			+ " You can also configure custom PowerShell installations"
+			+ " with the 'powershell.powerShellAdditionalExePaths' setting.";
+
+		log.writeAndShowErrorWithActions(message, [
+			{
+				prompt: "Get PowerShell",
+				action: async () => {
+					const getPSUri = vscode.Uri.parse("https://aka.ms/get-powershell-vscode");
+					vscode.env.openExternal(getPSUri);
+				},
+			},
+		]);
+		return;
+	}
+	else
+	{
+		log.write("Have found powershell!");
+	}
+
+	//select azureRmVersion and azVersion(hard code)
+	const azureRmVersion = "6.13.1";
+	const azVersion = "6.1.0";
+
+	//start a powershell process
+	try {
+		powershell.start();
+		log.write("Start powershell successed!");
+	}
+	catch(e) {
+		log.writeError("Can't start the powershell : " + e.message);
+	}
+	
+	//check for existence of module
+	let moduleExistence = await checkModule(powershell, log);
+	if (moduleExistence)
+		log.write('The module exist!');
+
+	//build the diagnastic
+	const collection = vscode.languages.createDiagnosticCollection('test');
+	if (vscode.window.activeTextEditor) {
+		updateDiagnostics(vscode.window.activeTextEditor.document.uri, collection, powershell, azureRmVersion, azVersion, log);
+	}
+
+	//do the analysis when the file is opened
+	context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(editor => {
+		if (editor && editor.languageId == "powershell") {
+			updateDiagnostics(editor.uri, collection, powershell, azureRmVersion, azVersion, log);
+		}
+	}))
+
+	//do the analysis when the file is saved
+	context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(editor => {
+		if (editor && editor.languageId == "powershell") {
+			updateDiagnostics(editor.uri, collection, powershell, azureRmVersion, azVersion, log);
+		}
+	}))
+
+	//quick fix action
+	let breakingChangeInfo = new BreakingChangeInfo();
+	context.subscriptions.push(
+		vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, breakingChangeInfo , {
+			providedCodeActionKinds: BreakingChangeInfo.providedCodeActionKinds
+		})
+	);
 }
 
-export function deactivate(): void {
-    // Clean up all extension features
-    languageClientConsumers.forEach((languageClientConsumer) => {
-        languageClientConsumer.dispose();
-    });
+// this method is called when your extension is deactivated
+export function deactivate() {
+	try {
+		powershell.stop();
+	}
+	catch{}
+}
 
-    commandRegistrations.forEach((commandRegistration) => {
-        commandRegistration.dispose();
-    });
-
-    // Dispose of the current session
-    sessionManager.dispose();
-
-    // Dispose of the logger
-    logger.dispose();
+async function checkModule(powershell : PowershellProcess, log : Logger){
+	//check whether the module exists
+	//if not exist : suggest installing the module
+	const moduleName = "Az.Tools.Migration";
+	powershell.getSystemModulePath();
+	if (!powershell.checkModuleExist(moduleName)){
+		log.writeAndShowErrorWithActions("You have to install Az.Tools.Migration firstly!", [
+			{
+				prompt: "Get Az.Tools.Migration",
+				action: async () => {
+					const getPSUri = vscode.Uri.parse("https://docs.microsoft.com/en-us/powershell/azure/quickstart-migrate-azurerm-to-az-automatically");
+					vscode.env.openExternal(getPSUri);
+				},
+			},
+		]);
+		return false;
+	}
+	return true;
 }

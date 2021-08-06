@@ -5,7 +5,7 @@
 
 Effortlessly migrate your PowerShell scripts from AzureRM to the Az PowerShell module.
 
-![Azure Powershell Tools overview](resources/readme/overview.gif)
+![Azure Powershell Tools overview](resources/readme/overview-0.2.0.gif)
 
 ## Features
 
@@ -21,11 +21,7 @@ get notified automatically about any future extension updates!
 
 ## Usage
 
-- Open Command Palette(<kbd>Ctrl+Shift+P</kbd>) to start migration.
-![command-palette](resources/readme/command-palette.png)
-
-- Select source version.
-![select-version](resources/readme/select-version.png)
+- Open or save a powershell file to activate the extension and start migration.
 
 - Quick Fix
 ![quick-fix](resources/readme/quick-fix.png)
