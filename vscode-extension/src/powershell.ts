@@ -13,6 +13,9 @@ import fs = require("fs");
 
 
 export class PowershellProcess {
+    /**
+     * Manage the powershell process.
+     */
     private powershell: shell;
     private systemModulePath: string[];
     private log: Logger;

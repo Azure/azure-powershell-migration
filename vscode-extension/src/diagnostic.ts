@@ -13,6 +13,9 @@ export async function updateDiagnostics(
     azureRmVersion: string,
     azVersion: string,
     log: Logger): Promise<void> {
+    /**
+     * Updates all the diagnostics items in document.
+     */
     if (documentUri) {
         let diagnostics: vscode.Diagnostic[] = [];
         //exec the migration powershell command
@@ -28,6 +31,9 @@ export async function updateDiagnostics(
 }
 
 function updateDiagnosticsMessage(plansStr: string, diagnostics: vscode.Diagnostic[], log: Logger) {
+    /**
+     * Updates the information in diagnostics.
+     */
     try {
         var plans = JSON.parse(plansStr).forEach((plan: any, index: any) => {
             let range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),

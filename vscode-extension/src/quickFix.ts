@@ -14,6 +14,9 @@ export const GET_INFO_COMMAND = 'getInfo';
 export const GET_DEPRE_INFO_COMMAND = 'getdepreInfo';
 
 export class BreakingChangeInfo implements vscode.CodeActionProvider {
+    /**
+     * Run CodeAction when click the "Quick Fix"
+     */
 
     constructor() { }
 
