@@ -21,7 +21,7 @@ get notified automatically about any future extension updates!
 
 ## Usage
 
-- Open or save a powershell file to activate the extension and start migration.
+PowerShell scripts are analyzed automatically whenever they are opened or saved. AzureRM cmdlets will be identified and marked with suggestions of how to migrate.
 
 - Quick Fix
 ![quick-fix](resources/readme/quick-fix.png)
