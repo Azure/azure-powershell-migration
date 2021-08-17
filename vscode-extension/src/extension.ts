@@ -29,44 +29,12 @@ export async function activate(context: vscode.ExtensionContext) {
     });
 
     //start the logger
-    let log;
-    log = new Logger();
-    let platformDetails = getPlatformDetails();
-    const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
-    const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";
-    log.write(
-        `Visual Studio Code v${vscode.version} ${procBitness}`,
-        `${PackageJSON.displayName} Extension v${PackageJSON.version}`,
-        `Operating System: ${OperatingSystem[platformDetails.operatingSystem]} ${osBitness}`);
-    log.startNewLog('normal');
+    let log = new Logger();
 
-    //check whether the powershell exists
-    var powershellExeFinder = new PowerShellExeFinder();
-    let powerShellExeDetails;
-    try {
-        powerShellExeDetails = powershellExeFinder.getFirstAvailablePowerShellInstallation();
-    } catch (e) {
-        log.writeError(`Error occurred while searching for a PowerShell executable:\n${e}`);
-    }
-    if (!powerShellExeDetails) {
-        const message = "Unable to find PowerShell."
-            + " Do you have PowerShell installed?"
-            + " You can also configure custom PowerShell installations"
-            + " with the 'powershell.powerShellAdditionalExePaths' setting.";
-
-        log.writeAndShowErrorWithActions(message, [
-            {
-                prompt: "Get PowerShell",
-                action: async () => {
-                    const getPSUri = vscode.Uri.parse("https://aka.ms/get-powershell-vscode");
-                    vscode.env.openExternal(getPSUri);
-                },
-            },
-        ]);
+    //check for existence of powershell
+    let powershellExistence = checkPowershell(log);
+    if (!powershellExistence) {
         return;
-    }
-    else {
-        log.write("Have found powershell!");
     }
 
     //select azureRmVersion and azVersion(hard code)
@@ -124,8 +92,10 @@ export function deactivate() {
 }
 
 async function checkModule(powershell: PowershellProcess, log: Logger) {
-    //check whether the module exists
-    //if not exist : suggest installing the module
+    /** 
+     * check whether the module exists
+     * if not exist : suggest installing the module
+    */
     const moduleName = "Az.Tools.Migration";
     powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
@@ -141,4 +111,49 @@ async function checkModule(powershell: PowershellProcess, log: Logger) {
         return false;
     }
     return true;
+}
+
+function checkPowershell(log: Logger) {
+    /**
+     * Check whether the powershell exists in your machine
+     * if not exist : suggest installing Powershell for yourself
+     */
+    let platformDetails = getPlatformDetails();
+    const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
+    const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";
+    log.write(
+        `Visual Studio Code v${vscode.version} ${procBitness}`,
+        `${PackageJSON.displayName} Extension v${PackageJSON.version}`,
+        `Operating System: ${OperatingSystem[platformDetails.operatingSystem]} ${osBitness}`);
+    log.startNewLog('normal');
+
+    //check whether the powershell exists
+    var powershellExeFinder = new PowerShellExeFinder();
+    let powerShellExeDetails;
+    try {
+        powerShellExeDetails = powershellExeFinder.getFirstAvailablePowerShellInstallation();
+    } catch (e) {
+        log.writeError(`Error occurred while searching for a PowerShell executable:\n${e}`);
+    }
+    if (!powerShellExeDetails) {
+        const message = "Unable to find PowerShell."
+            + " Do you have PowerShell installed?"
+            + " You can also configure custom PowerShell installations"
+            + " with the 'powershell.powerShellAdditionalExePaths' setting.";
+
+        log.writeAndShowErrorWithActions(message, [
+            {
+                prompt: "Get PowerShell",
+                action: async () => {
+                    const getPSUri = vscode.Uri.parse("https://aka.ms/get-powershell-vscode");
+                    vscode.env.openExternal(getPSUri);
+                },
+            },
+        ]);
+        return false;
+    }
+    else {
+        log.write("Have found powershell!");
+        return true;
+    }
 }
