@@ -12,13 +12,13 @@ import { IPowerShellAdditionalExePathSettings } from "./settings";
 const WindowsPowerShell64BitLabel = "Windows PowerShell (x64)";
 const WindowsPowerShell32BitLabel = "Windows PowerShell (x86)";
 
-const LinuxExePath        = "/usr/bin/pwsh";
+const LinuxExePath = "/usr/bin/pwsh";
 const LinuxPreviewExePath = "/usr/bin/pwsh-preview";
 
-const SnapExePath         = "/snap/bin/pwsh";
-const SnapPreviewExePath  = "/snap/bin/pwsh-preview";
+const SnapExePath = "/snap/bin/pwsh";
+const SnapPreviewExePath = "/snap/bin/pwsh-preview";
 
-const MacOSExePath        = "/usr/local/bin/pwsh";
+const MacOSExePath = "/usr/local/bin/pwsh";
 const MacOSPreviewExePath = "/usr/local/bin/pwsh-preview";
 
 export enum OperatingSystem {
@@ -312,8 +312,7 @@ export class PowerShellExeFinder {
         // Ensure the base directory exists
         try {
             const powerShellInstallBaseDirLStat = fs.lstatSync(powerShellInstallBaseDir);
-            if (!powerShellInstallBaseDirLStat.isDirectory())
-            {
+            if (!powerShellInstallBaseDirLStat.isDirectory()) {
                 return null;
             }
         } catch {
