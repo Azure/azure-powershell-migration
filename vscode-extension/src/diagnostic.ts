@@ -15,14 +15,14 @@ export async function updateDiagnostics(
 	log : Logger): Promise<void> {
 	if (documentUri) {
 		let diagnostics : vscode.Diagnostic[] = [];
-			//exec the migration powershell command
-			const planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
-			log.write(`Node-Powershell Success! -- ${documentUri.fsPath}`);
-			//update the content of diagnostic
-			if (planResult)
-				updateDiagnosticsMessage(planResult, diagnostics, log);
-			log.write(`Diagnostics Number : ${diagnostics.length}  `);
-			collection.set(documentUri, diagnostics);	
+		//exec the migration powershell command
+		const planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
+		log.write(`Node-Powershell Success! -- ${documentUri.fsPath}`);
+		//update the content of diagnostic
+		if (planResult)
+			updateDiagnosticsMessage(planResult, diagnostics, log);
+		log.write(`Diagnostics Number : ${diagnostics.length}  `);
+		collection.set(documentUri, diagnostics);	
 	} else {
 		collection.clear();
 	}

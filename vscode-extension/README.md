@@ -5,7 +5,7 @@
 
 Effortlessly migrate your PowerShell scripts from AzureRM to the Az PowerShell module.
 
-![Azure Powershell Tools overview](resources/readme/overview-0.2.0.gif)
+![Azure Powershell Tools overview](resources/readme/overview.gif)
 
 ## Features
 
