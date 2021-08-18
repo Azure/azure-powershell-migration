@@ -5,37 +5,70 @@
 import * as vscode from 'vscode';
 import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
-
+/**
+ * Updates all the diagnostics items in document.
+ * @param documentUri : file path
+ * @param diagcCollection : manage the diagnostics
+ * @param powershell : powershell process manager
+ * @param azureRmVersion : version of azureRM
+ * @param azVersion : version of az
+ * @param log : Logger
+ */
 export async function updateDiagnostics(
     documentUri: vscode.Uri,
-    collection: vscode.DiagnosticCollection,
+    diagcCollection: vscode.DiagnosticCollection,
     powershell: PowershellProcess,
     azureRmVersion: string,
     azVersion: string,
     log: Logger): Promise<void> {
-    /**
-     * Updates all the diagnostics items in document.
-     */
     if (documentUri) {
-        let diagnostics: vscode.Diagnostic[] = [];
         //exec the migration powershell command
-        const planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
-        log.write(`Node-Powershell Success! -- ${documentUri.fsPath}`);
+        let planResult: string;
+        try {
+            log.write(`Start analyzing ${documentUri.fsPath}`);
+            planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
+            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+        }
+        catch (e) {
+            log.writeError(`Error: Node-Powershell failed.`);
+        }
+
         //update the content of diagnostic
-        if (planResult) { updateDiagnosticsMessage(planResult, diagnostics, log); }
-        log.write(`Diagnostics Number : ${diagnostics.length}  `);
-        collection.set(documentUri, diagnostics);
+        if (planResult) {
+            let diagnostics: vscode.Diagnostic[] = formatPlanstToDiag(planResult, log);
+            diagcCollection.set(documentUri, diagnostics);
+            log.write(`Diagnostics Number : ${diagnostics.length}  `);
+        }
+        else {
+            log.write(`This file is not need to be migrated.`);
+        }
+
+
     } else {
-        collection.clear();
+        diagcCollection.clear();
     }
+
 }
 
-function updateDiagnosticsMessage(plansStr: string, diagnostics: vscode.Diagnostic[], log: Logger) {
-    /**
-     * Updates the information in diagnostics.
-     */
+/**
+ * Format the palnStr to diganostic.
+ * @param plansStr : The result(string) of migration.
+ * @param log : Logger
+ * @returns : diagnostics
+ */
+function formatPlanstToDiag(plansStr: string, log: Logger): vscode.Diagnostic[] {
+    let plans: object[];
     try {
-        var plans = JSON.parse(plansStr).forEach((plan: any, index: any) => {
+        plans = JSON.parse(plansStr);
+    }
+    catch {
+        log.writeError("The result of Migration is wrong!");
+        return [];
+    }
+
+    let diagnostics: vscode.Diagnostic[] = [];
+    plans.forEach(
+        (plan: any) => {
             let range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
                 new vscode.Position(plan.SourceCommand.EndLine - 1, plan.SourceCommand.EndPosition - 1));
             let message = plan.PlanResultReason;
@@ -56,11 +89,9 @@ function updateDiagnosticsMessage(plansStr: string, diagnostics: vscode.Diagnost
                 diagnostic.source = plan.Replacement;
             }
             diagnostics.push(diagnostic);
-        });
-    }
-    catch {
-        log.writeError("The result of Migration is wrong!");
-    }
+        }
+    );
 
+    return diagnostics;
 }
 

@@ -5,7 +5,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { BreakingChangeInfo } from './quickFix';
+import { QuickFixProvider } from './quickFix';
 import { updateDiagnostics } from './diagnostic';
 import {
     getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
@@ -21,18 +21,15 @@ let powershell = new PowershellProcess();
 // your extension is activated the very first time the command is executed
 export async function activate(context: vscode.ExtensionContext) {
 
-    // Use the console to output diagnostic information (console.log) and errors (console.error)
-    // This line of code will only be executed once when your extension is activated
-    console.log('Congratulations, your extension "demo-client" is now active!');
-    let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
-        //TODO: build one selection quickbox
-    });
+    // let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
+    //     //TODO: build one selection quickbox
+    // });
 
     //start the logger
     let log = new Logger();
 
     //check for existence of powershell
-    let powershellExistence = checkPowershell(log);
+    const powershellExistence = checkPowershell(log);
     if (!powershellExistence) {
         return;
     }
@@ -51,34 +48,22 @@ export async function activate(context: vscode.ExtensionContext) {
     }
 
     //check for existence of module
-    let moduleExistence = await checkModule(powershell, log);
+    const moduleExistence = await checkModule(powershell, log);
     if (moduleExistence) { log.write('The module exist!'); }
-
-    //build the diagnastic
-    const collection = vscode.languages.createDiagnosticCollection('test');
-    if (vscode.window.activeTextEditor) {
-        updateDiagnostics(vscode.window.activeTextEditor.document.uri, collection, powershell, azureRmVersion, azVersion, log);
+    else {
+        return;
     }
 
-    //do the analysis when the file is opened
-    context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(editor => {
-        if (editor && editor.languageId == "powershell") {
-            updateDiagnostics(editor.uri, collection, powershell, azureRmVersion, azVersion, log);
-        }
-    }));
+    //build the diagnastic
+    const diagcCollection = vscode.languages.createDiagnosticCollection('azps-tools');
 
-    //do the analysis when the file is saved
-    context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(editor => {
-        if (editor && editor.languageId == "powershell") {
-            updateDiagnostics(editor.uri, collection, powershell, azureRmVersion, azVersion, log);
-        }
-    }));
+    registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
 
     //quick fix action
-    let breakingChangeInfo = new BreakingChangeInfo();
+    const quickFixProvider = new QuickFixProvider();
     context.subscriptions.push(
-        vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, breakingChangeInfo, {
-            providedCodeActionKinds: BreakingChangeInfo.providedCodeActionKinds
+        vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, quickFixProvider, {
+            providedCodeActionKinds: QuickFixProvider.providedCodeActionKinds
         })
     );
 }
@@ -91,11 +76,47 @@ export function deactivate() {
     catch { }
 }
 
-async function checkModule(powershell: PowershellProcess, log: Logger) {
-    /** 
-     * check whether the module exists
-     * if not exist : suggest installing the module
-    */
+/**
+ * register handlers
+ * @param context : context of extension
+ * @param diagcCollection : manage the diagnostics
+ * @param azureRmVersion : version of azureRM
+ * @param azVersion : version of az
+ * @param log : Logger
+ */
+function registerHandlers(
+    context: vscode.ExtensionContext,
+    diagcCollection: vscode.DiagnosticCollection,
+    azureRmVersion: string,
+    azVersion: string,
+    log: Logger): void {
+    if (vscode.window.activeTextEditor) {
+        updateDiagnostics(vscode.window.activeTextEditor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+    }
+
+    //do the analysis when the file is opened
+    context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(editor => {
+        if (editor && editor.languageId == "powershell") {
+            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+        }
+    }));
+
+    //do the analysis when the file is saved
+    context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(editor => {
+        if (editor && editor.languageId == "powershell") {
+            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+        }
+    }));
+}
+
+/**
+ * check whether the module exists
+ * if not exist : suggest installing the module
+ * @param powershell : powershell process manager
+ * @param log : Logger
+ * @returns : if the module exists
+ */
+function checkModule(powershell: PowershellProcess, log: Logger): boolean {
     const moduleName = "Az.Tools.Migration";
     powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
@@ -113,11 +134,13 @@ async function checkModule(powershell: PowershellProcess, log: Logger) {
     return true;
 }
 
-function checkPowershell(log: Logger) {
-    /**
-     * Check whether the powershell exists in your machine
-     * if not exist : suggest installing Powershell for yourself
-     */
+/**
+ * Check whether the powershell exists in your machine
+ * if not exist : suggest installing Powershell for yourself
+ * @param log : Logger
+ * @returns : if the powershell exists
+ */
+function checkPowershell(log: Logger): boolean {
     let platformDetails = getPlatformDetails();
     const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
     const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";

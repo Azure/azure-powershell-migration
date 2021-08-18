@@ -7,7 +7,6 @@ import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
 import * as process from "process";
-import { IPowerShellAdditionalExePathSettings } from "./settings";
 
 const WindowsPowerShell64BitLabel = "Windows PowerShell (x64)";
 const WindowsPowerShell32BitLabel = "Windows PowerShell (x86)";
@@ -20,6 +19,11 @@ const SnapPreviewExePath = "/snap/bin/pwsh-preview";
 
 const MacOSExePath = "/usr/local/bin/pwsh";
 const MacOSPreviewExePath = "/usr/local/bin/pwsh-preview";
+
+export interface IPowerShellAdditionalExePathSettings {
+    versionName: string;
+    exePath: string;
+}
 
 export enum OperatingSystem {
     Unknown,

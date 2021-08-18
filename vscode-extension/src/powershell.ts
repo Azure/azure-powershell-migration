@@ -9,15 +9,14 @@ import * as process from "process";
 import { homedir } from 'os';
 import path = require("path");
 import fs = require("fs");
+import { promises } from 'dns';
 
-
-
+/**
+ * Manage the powershell process.
+ */
 export class PowershellProcess {
-    /**
-     * Manage the powershell process.
-     */
+
     private powershell: shell;
-    private systemModulePath: string[];
     private log: Logger;
 
     //start a powershell process
@@ -29,7 +28,7 @@ export class PowershellProcess {
     }
 
     //exec the migration command and get the result
-    public async getUpgradePlan(filePath: string, azureRmVersion: string, azVersion: string) {
+    public async getUpgradePlan(filePath: string, azureRmVersion: string, azVersion: string): Promise<string> {
         //const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json -depth 10`;
         if (this.powershell.invocationStateInfo == "Running") {
             //the latter cancels the former powershell process
@@ -46,17 +45,16 @@ export class PowershellProcess {
 
     //check whether the module exists
     public checkModuleExist(moduleName: string) {
-        this.getSystemModulePath();
+        const systemModulePath = this.getSystemModulePath();
 
-        for (const moduleFolder of this.systemModulePath) {
-            const modulePath = path.resolve(moduleFolder, moduleName);
-            if (fs.existsSync(modulePath)) { return true; }
-        }
-        return false;
+        return systemModulePath.some(
+            moduleFolder => fs.existsSync(path.resolve(moduleFolder, moduleName))
+        );
+
     }
 
     //install the module automatically
-    public async installModule(moduleName: string) {
+    public async installModule(moduleName: string): Promise<void> {
         const command = `Install-Module "${moduleName}" -Repository PSGallery -Force`;
         this.powershell.addCommand(command);
         await this.powershell.invoke().then(
@@ -65,18 +63,19 @@ export class PowershellProcess {
     }
 
     //get the env path of ps-modules
-    public getSystemModulePath() {
+    public getSystemModulePath(): string[] {
         if (process.platform === "win32") { //windows
             //this.systemModulePath = homedir() + "\\Documents\\PowerShell\\Modules\\";
             const PsModulePathes = process.env.PSMODULEPATH.split(";");
-            this.systemModulePath = PsModulePathes;
+            return PsModulePathes;
         } else if (process.platform === "darwin" || process.platform === "linux") { //Linux or MacOS
             //this.systemModulePath.push(homedir() + "/.local/share/powershell/Modules: usr/local/share/powershell/Modules");
             const PsModulePathes = process.env.PSMODULEPATH.split(":");
-            this.systemModulePath = PsModulePathes;
+            return PsModulePathes;
         }
         else {
             console.log("Unsupported operating system!");
+            return [];
         }
     }
 
