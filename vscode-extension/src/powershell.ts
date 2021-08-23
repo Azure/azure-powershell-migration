@@ -43,6 +43,17 @@ export class PowershellProcess {
         return planResult;
     }
 
+    //exec the avoidCustomAlias command from PSA and get the result
+    public async getCustomAlias(filePath: string, settingsFile: string) {
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings ${settingsFile} | ConvertTo-Json`;
+
+        let aliasResult;
+        this.powershell.addCommand(command);
+        aliasResult = await this.powershell.invoke();
+
+        return aliasResult;
+    }
+
     //check whether the module exists
     public checkModuleExist(moduleName: string) {
         const systemModulePath = this.getSystemModulePath();

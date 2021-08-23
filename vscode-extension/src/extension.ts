@@ -6,7 +6,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { QuickFixProvider } from './quickFix';
-import { updateDiagnostics } from './diagnostic';
+import { updateDiagnostics, updateAliasDiagnostics } from './diagnostic';
 import {
     getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
     OperatingSystem, PowerShellExeFinder
@@ -60,7 +60,7 @@ export async function activate(context: vscode.ExtensionContext) {
     registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
 
     //quick fix action
-    const quickFixProvider = new QuickFixProvider();
+    const quickFixProvider = new QuickFixProvider(diagcCollection);
     context.subscriptions.push(
         vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, quickFixProvider, {
             providedCodeActionKinds: QuickFixProvider.providedCodeActionKinds

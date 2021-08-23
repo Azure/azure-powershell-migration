@@ -17,8 +17,10 @@ export const GET_DEPRE_INFO_COMMAND = 'getdepreInfo';
  * Run CodeAction when click the "Quick Fix"
  */
 export class QuickFixProvider implements vscode.CodeActionProvider {
-
-    constructor() { }
+    private Collection: vscode.DiagnosticCollection;
+    constructor(diagcCollection: vscode.DiagnosticCollection) {
+        this.Collection = diagcCollection;
+    }
 
     public static readonly providedCodeActionKinds = [
         vscode.CodeActionKind.QuickFix
@@ -47,6 +49,11 @@ export class QuickFixProvider implements vscode.CodeActionProvider {
 
         switch (diagnostic.code) {
             case "RENAME": {
+                fix.title = "Auto fix to " + targetCmdletName;
+                fix.edit.replace(document.uri, range, targetCmdletName);
+                break;
+            }
+            case "Alias": {
                 fix.title = "Auto fix to " + targetCmdletName;
                 fix.edit.replace(document.uri, range, targetCmdletName);
                 break;
