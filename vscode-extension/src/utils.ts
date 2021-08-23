@@ -100,6 +100,11 @@ export function sleep(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+export function readAliasFile(aliasFilePath: string): string {
+    const fileContents = fs.readFileSync(aliasFilePath, "utf-8");
+    return fileContents;
+}
+
 export const isMacOS: boolean = process.platform === "darwin";
 export const isWindows: boolean = process.platform === "win32";
 export const isLinux: boolean = !isMacOS && !isWindows;

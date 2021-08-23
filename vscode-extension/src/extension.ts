@@ -13,6 +13,7 @@ import {
 } from "./platform";
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
+import * as utils from "./utils";
 
 const PackageJSON: any = require("../package.json");
 let powershell = new PowershellProcess();
@@ -56,6 +57,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
     //build the diagnastic
     const diagcCollection = vscode.languages.createDiagnosticCollection('azps-tools');
+    const aliasStr = utils.readAliasFile("./aliasTocmdlet.json");
 
     registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
 
