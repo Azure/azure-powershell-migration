@@ -6,7 +6,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { QuickFixProvider } from './quickFix';
-import { updateDiagnostics, updateAliasDiagnostics } from './diagnostic';
+import { updateDiagnostics } from './diagnostic';
 import {
     getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
     OperatingSystem, PowerShellExeFinder
@@ -57,7 +57,6 @@ export async function activate(context: vscode.ExtensionContext) {
 
     //build the diagnastic
     const diagcCollection = vscode.languages.createDiagnosticCollection('azps-tools');
-    const aliasStr = utils.readAliasFile("./aliasTocmdlet.json");
 
     registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
 

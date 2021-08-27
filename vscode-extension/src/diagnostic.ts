@@ -31,7 +31,7 @@ export async function updateDiagnostics(
             planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
             log.write(`Start analyzing ${documentUri.fsPath}`);
-            const settingFile = path.resolve(__dirname, "../src/AvoidAliasSettings.psd1");
+            const settingFile = path.resolve(__dirname, "../PSA/avoidAlias.psm1");
             aliasResult = await powershell.getCustomAlias(documentUri.fsPath, settingFile);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
         }
@@ -116,11 +116,17 @@ function formatPlanstToDiag(plansStr: string, log: Logger, diagnostics: vscode.D
 function formatAliasSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vscode.Diagnostic[]): vscode.Diagnostic[] {
     let plans: object[];
     try {
-        plans = JSON.parse(plansStr).SuggestedCorrections;
+        plans = JSON.parse(plansStr)[0].SuggestedCorrections;
     }
     catch {
-        log.writeError("The result of Migration is wrong!");
-        return diagnostics;
+        try {
+            plans = JSON.parse(plansStr).SuggestedCorrections;
+        }
+        catch {
+            log.writeError("The result of Migration is wrong!");
+            return diagnostics;
+        }
+
     }
 
     plans.forEach(

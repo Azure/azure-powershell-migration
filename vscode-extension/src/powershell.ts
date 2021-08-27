@@ -44,12 +44,23 @@ export class PowershellProcess {
     }
 
     //exec the avoidCustomAlias command from PSA and get the result
-    public async getCustomAlias(filePath: string, settingsFile: string) {
-        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings ${settingsFile} | ConvertTo-Json`;
+    public async getCustomAlias(filePath: string, customFuleFile: string) {
 
+        // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA\\avoidAlias.psm1 | ConvertTo-Json -depth 10`;
+        //const command = `Invoke-ScriptAnalyzer -Path ${filePath} | ConvertTo-Json`;
         let aliasResult;
         this.powershell.addCommand(command);
         aliasResult = await this.powershell.invoke();
+        //aliasResult = JSON.parse(aliasResult);
+        // try {
+        //     console.log(aliasResult[0].SuggestedCorrections[0].Text);
+        // }
+        // catch {
+        //     console.log(aliasResult.SuggestedCorrections[0].Text);
+        // }
+
+
 
         return aliasResult;
     }
