@@ -5,6 +5,18 @@ class getBreakingchangeResult{
     [System.String] $TypeBreakingChange
 }
 
+class getBreakingchangeResult_paraFunc{
+    [System.String] $Name
+    [System.String] $TypeBreakingChange
+    [System.String] $FuncName
+}
+
+class getBreakingchangeResult_paraCmdlet{
+    [System.String] $Name
+    [System.String] $TypeBreakingChange
+    [System.String] $CmdletName
+}
+
 $results = @{
 }
 
@@ -35,8 +47,8 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
             if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute"  -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
                 #$Attribute.TypeId.Name
                 $result = New-Object -TypeName getBreakingchangeResult
-                    $result.Name = $func.name
-                    $result.TypeBreakingChange = $Attribute.TypeId.FullName
+                $result.Name = $func.name
+                $result.TypeBreakingChange = $Attribute.TypeId.FullName
                 $results["func"] += $result
             }
         }
@@ -48,9 +60,10 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
                 $Attribute = $parameter.Attributes[$k]
                 if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
                     #$Attribute.TypeId.Name
-                    $result = New-Object -TypeName getBreakingchangeResult
+                    $result = New-Object -TypeName getBreakingchangeResult_paraFunc
                     $result.Name = $parameter_key
                     $result.TypeBreakingChange = $Attribute.TypeId.FullName
+                    $result.FuncName = $func.name
                     $results["para_func"] += $result
                 }
             }
@@ -78,9 +91,10 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
                 $Attribute = $parameter.Attributes[$k]
                 if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
                     # $Attribute.TypeId.Name
-                    $result = New-Object -TypeName getBreakingchangeResult
+                    $result = New-Object -TypeName getBreakingchangeResult_paraCmdlet
                     $result.Name = $parameter_key
                     $result.TypeBreakingChange = $Attribute.TypeId.FullName
+                    $result.CmdletName = $Cmdlet.Name
                     $results["para_cmdlet"] += $result
                 }
             }
