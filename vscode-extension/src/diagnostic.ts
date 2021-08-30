@@ -5,6 +5,7 @@
 import * as vscode from 'vscode';
 import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
+import { UpgradePlan } from "./classes";
 /**
  * Updates all the diagnostics items in document.
  * @param documentUri : file path
@@ -68,7 +69,7 @@ function formatPlanstToDiag(plansStr: string, log: Logger): vscode.Diagnostic[] 
 
     let diagnostics: vscode.Diagnostic[] = [];
     plans.forEach(
-        (plan: any) => {
+        (plan: UpgradePlan) => {
             let range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
                 new vscode.Position(plan.SourceCommand.EndLine - 1, plan.SourceCommand.EndPosition - 1));
             let message = plan.PlanResultReason;
