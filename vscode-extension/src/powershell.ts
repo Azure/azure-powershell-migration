@@ -44,7 +44,7 @@ export class PowershellProcess {
     }
 
     //exec the avoidCustomAlias command from PSA and get the result
-    public async getCustomAlias(filePath: string, customFuleFile: string) {
+    public async getCustomAlias(filePath: string) {
 
         // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
         const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\Alias\\avoidAlias.psm1 | ConvertTo-Json -depth 10`;
@@ -63,6 +63,26 @@ export class PowershellProcess {
 
 
         return aliasResult;
+    }
+
+    public async getBreakingChange(filePath: string) {
+
+        // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\BreakingChange\\upcomingBreakingChange.psm1 | ConvertTo-Json -depth 10`;
+        //const command = `Invoke-ScriptAnalyzer -Path ${filePath} | ConvertTo-Json`;
+        let breakingChangeResult;
+        this.powershell.addCommand(command);
+        breakingChangeResult = await this.powershell.invoke();
+        //aliasResult = JSON.parse(aliasResult);
+        // try {
+        //     console.log(aliasResult[0].SuggestedCorrections[0].Text);
+        // }
+        // catch {
+        //     console.log(aliasResult.SuggestedCorrections[0].Text);
+        // }
+
+
+        return breakingChangeResult;
     }
 
     //check whether the module exists

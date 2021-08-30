@@ -36,17 +36,24 @@ function Measure-UpcomingBreakingChange {
         $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
         #$findCmdFunctionFile = "C:\Users\t-zenli\workspace\released_version\azure-powershell-migration\powershell-module\Az.Tools.Migration\Functions\Private\Find-CmdletsInFile.ps1"
         . $findCmdFunctionFile
+        $getBreakingchangeSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\BreakingChange\Get-BreakingChangeSpec.ps1"
+        . $getBreakingchangeSpecFunctionFile
 
         #get the alias mapping data
-        $aliasSpecFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\src\aliasTocmdlet.json"
-        $aliasTocmdlets = Get-AliasSpec -AliasPath $aliasSpecFile
+        $breakingChangePath = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\BreakingChange\breakingchange.json"
+        $breakingchanges = Get-BreakingChangeSpec -BreakingChangePath $breakingChangePath
 
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
         #$foundCmdlets = Find-CmdletsInFile -FilePath "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\dynamic-parameters-test1.ps1"
 
         #$foundCmdlets > foundCmdlets.txt
-    
+        $typesToMessages = @{
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute" = "The breaking change is expected to take effect from the next version.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute" = "The cmdlet is being deprecated. There will be no replacement for it.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute" = "The output type is being deprecated without a replacement.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute" = "The parameter is changing."
+        }
 
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
@@ -59,20 +66,63 @@ function Measure-UpcomingBreakingChange {
         # $count = 1
 
         foreach ($cmdletReference in $foundCmdlets) {
-            if ($aliasTocmdlets.psobject.properties.match($cmdletReference.CommandName).Count){
+            if ($breakingchanges.cmdlet.Keys -contains $cmdletReference.CommandName){
+                $type = $breakingchanges.cmdlet[$cmdletReference.CommandName]
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
                 [int]$endColumnNumber = $cmdletReference.EndPosition
-                [string]$correction = $aliasTocmdlets.($cmdletReference.CommandName)
+                [string]$correction = ""
                 [string]$filePath = $cmdletReference.FullPath
-                [string]$optionalDescription = 'The alias can be changed to be formal name.'
-                
-                
+                [string]$optionalDescription = $typesToMessages[$type]
 
                 $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $l.Add($c)
-                
+            }
+
+            if ($breakingchanges.paraCmdlets.Keys -contains $cmdletReference.CommandName){
+                if ($cmdletReference.parameters.Count -eq 0){
+                    $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                        [int]$startLineNumber = $cmdletReference.StartLine
+                        [int]$endLineNumber = $cmdletReference.EndLine
+                        [int]$startColumnNumber = $cmdletReference.StartColumn
+                        [int]$endColumnNumber = $cmdletReference.EndPosition
+                        [string]$correction = ""
+                        [string]$filePath = $cmdletReference.FullPath
+                        [string]$optionalDescription = $typesToMessages[$type]
+
+                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                        $l.Add($c)
+                }
+                foreach ($para in $cmdletReference.parameters){
+                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para){
+                        $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                        [int]$startLineNumber = $para.StartLine
+                        [int]$endLineNumber = $para.EndLine
+                        [int]$startColumnNumber = $para.StartColumn
+                        [int]$endColumnNumber = $para.EndPosition
+                        [string]$correction = ""
+                        [string]$filePath = $para.FullPath
+                        [string]$optionalDescription = $typesToMessages[$type]
+
+                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                        $l.Add($c)
+                    }
+                    else{
+                        $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                        [int]$startLineNumber = $cmdletReference.StartLine
+                        [int]$endLineNumber = $cmdletReference.EndLine
+                        [int]$startColumnNumber = $cmdletReference.StartColumn
+                        [int]$endColumnNumber = $cmdletReference.EndPosition
+                        [string]$correction = ""
+                        [string]$filePath = $cmdletReference.FullPath
+                        [string]$optionalDescription = $typesToMessages[$type]
+
+                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                        $l.Add($c)
+                        break
+                    }
+                }
             }
         }
         #$l.Count > count.txt

@@ -58,6 +58,11 @@ export class QuickFixProvider implements vscode.CodeActionProvider {
                 fix.edit.replace(document.uri, range, targetCmdletName);
                 break;
             }
+            case "BreakingChange": {
+                fix.title = "Auto fix to " + targetCmdletName;
+                fix.edit.replace(document.uri, range, targetCmdletName);
+                break;
+            }
             case "DO_NOTHING": {
                 return null;
             }

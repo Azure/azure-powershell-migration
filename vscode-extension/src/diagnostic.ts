@@ -5,7 +5,6 @@
 import * as vscode from 'vscode';
 import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
-import path = require('path');
 import { UpgradePlan } from "./types/migraion";
 /**
  * Updates all the diagnostics items in document.
@@ -27,13 +26,16 @@ export async function updateDiagnostics(
         //exec the migration powershell command
         let planResult: string;
         let aliasResult: string;
+        let breakingChangeResult: string;
         try {
             log.write(`Start analyzing ${documentUri.fsPath}`);
             planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
             log.write(`Start analyzing ${documentUri.fsPath}`);
-            const settingFile = path.resolve(__dirname, "../PSA/avoidAlias.psm1");
-            aliasResult = await powershell.getCustomAlias(documentUri.fsPath, settingFile);
+            aliasResult = await powershell.getCustomAlias(documentUri.fsPath);
+            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            log.write(`Start analyzing ${documentUri.fsPath}`);
+            breakingChangeResult = await powershell.getBreakingChange(documentUri.fsPath);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
         }
         catch (e) {
@@ -52,6 +54,10 @@ export async function updateDiagnostics(
 
         if (aliasResult) {
             diagnostics = formatAliasSuggestsToDiag(aliasResult, log, diagnostics);
+        }
+
+        if (breakingChangeResult) {
+            diagnostics = formatBreakingchangeSuggestsToDiag(breakingChangeResult, log, diagnostics);
         }
 
         diagcCollection.set(documentUri, diagnostics);
@@ -138,6 +144,44 @@ function formatAliasSuggestsToDiag(plansStr: string, log: Logger, diagnostics: v
             let diagnostic = new vscode.Diagnostic(range, message);
             diagnostic.severity = vscode.DiagnosticSeverity.Warning;
             diagnostic.code = "Alias";
+            diagnostic.source = plan.Text;
+            diagnostics.push(diagnostic);
+        }
+    );
+
+    return diagnostics;
+}
+
+/**
+ * Format the palnStr to diganostic.
+ * @param plansStr : The result(string) of migration.
+ * @param log : Logger
+ * @returns : diagnostics
+ */
+function formatBreakingchangeSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vscode.Diagnostic[]): vscode.Diagnostic[] {
+    let plans: object[];
+    try {
+        plans = JSON.parse(plansStr)[0].SuggestedCorrections;
+    }
+    catch {
+        try {
+            plans = JSON.parse(plansStr).SuggestedCorrections;
+        }
+        catch {
+            log.writeError("The result of Migration is wrong!");
+            return diagnostics;
+        }
+
+    }
+
+    plans.forEach(
+        (plan: any) => {
+            let range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
+                new vscode.Position(plan.EndLineNumber - 1, plan.EndColumnNumber - 1));
+            let message = plan.Description;
+            let diagnostic = new vscode.Diagnostic(range, message);
+            diagnostic.severity = vscode.DiagnosticSeverity.Warning;
+            diagnostic.code = "BreakingChange";
             diagnostic.source = plan.Text;
             diagnostics.push(diagnostic);
         }
