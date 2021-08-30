@@ -20,5 +20,8 @@ steps:
     npm install
     npm run lint
     npm run compile
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
     popd
   displayName: 'Lint and build'
