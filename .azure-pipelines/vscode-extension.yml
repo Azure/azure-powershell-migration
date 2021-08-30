@@ -10,18 +10,19 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
+- displayName: 'Install Node.js 14'
+  task: NodeTool@0
   inputs:
     versionSpec: '14.x'
-  displayName: 'Install Node.js 14'
 
-- script: |
+- displayName: 'Lint and compile'
+  script: |
     pushd vscode-extension
     npm install
     npm run lint
     npm run compile
+    # https://stackoverflow.com/a/55194471
     if [ $? -ne 0 ]; then
         exit 1
     fi
     popd
-  displayName: 'Lint and build'
