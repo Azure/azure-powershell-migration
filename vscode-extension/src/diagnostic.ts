@@ -5,7 +5,7 @@
 import * as vscode from 'vscode';
 import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
-import { UpgradePlan } from "./classes";
+import { UpgradePlan } from "./migraion";
 /**
  * Updates all the diagnostics items in document.
  * @param documentUri : file path
