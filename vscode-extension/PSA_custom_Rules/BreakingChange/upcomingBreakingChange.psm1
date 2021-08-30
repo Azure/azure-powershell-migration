@@ -31,13 +31,11 @@ function Measure-UpcomingBreakingChange {
     Process {
         $results = @()
         # import functions
-        $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\Classes.ps1"
+        $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Classes.ps1"
         . $classFile
-        $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\Find-CmdletsInFile.ps1"
+        $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
         #$findCmdFunctionFile = "C:\Users\t-zenli\workspace\released_version\azure-powershell-migration\powershell-module\Az.Tools.Migration\Functions\Private\Find-CmdletsInFile.ps1"
         . $findCmdFunctionFile
-        $getAliasSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\Get-AliasSpec.ps1"
-        . $getAliasSpecFunctionFile
 
         #get the alias mapping data
         $aliasSpecFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\src\aliasTocmdlet.json"
