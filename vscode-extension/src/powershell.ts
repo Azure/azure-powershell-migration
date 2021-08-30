@@ -47,7 +47,7 @@ export class PowershellProcess {
     public async getCustomAlias(filePath: string, customFuleFile: string) {
 
         // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
-        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA\\avoidAlias.psm1 | ConvertTo-Json -depth 10`;
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\Alias\\avoidAlias.psm1 | ConvertTo-Json -depth 10`;
         //const command = `Invoke-ScriptAnalyzer -Path ${filePath} | ConvertTo-Json`;
         let aliasResult;
         this.powershell.addCommand(command);

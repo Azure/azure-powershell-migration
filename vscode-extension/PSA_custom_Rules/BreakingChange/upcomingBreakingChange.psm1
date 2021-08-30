@@ -17,7 +17,7 @@
 .NOTES
     None
 #>
-function Measure-RequiresRunAsAdministrator {
+function Measure-UpcomingBreakingChange {
     [CmdletBinding()]
     [OutputType([Microsoft.Windows.Powershell.ScriptAnalyzer.Generic.DiagnosticRecord[]])]
     Param
