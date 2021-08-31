@@ -8,14 +8,14 @@ import * as vscode from 'vscode';
 import { QuickFixProvider } from './quickFix';
 import { updateDiagnostics } from './diagnostic';
 import {
-    getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
-    OperatingSystem, PowerShellExeFinder
+    getPlatformDetails, OperatingSystem, PowerShellExeFinder
 } from "./platform";
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
 
-const PackageJSON: any = require("../package.json");
-let powershell = new PowershellProcess();
+
+import PackageJSON = require("../package.json");
+const powershell = new PowershellProcess();
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -26,7 +26,7 @@ export async function activate(context: vscode.ExtensionContext) {
     // });
 
     //start the logger
-    let log = new Logger();
+    const log = new Logger();
 
     //check for existence of powershell
     const powershellExistence = checkPowershell(log);
@@ -141,7 +141,7 @@ function checkModule(powershell: PowershellProcess, log: Logger): boolean {
  * @returns : if the powershell exists
  */
 function checkPowershell(log: Logger): boolean {
-    let platformDetails = getPlatformDetails();
+    const platformDetails = getPlatformDetails();
     const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
     const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";
     log.write(
@@ -151,7 +151,7 @@ function checkPowershell(log: Logger): boolean {
     log.startNewLog('normal');
 
     //check whether the powershell exists
-    var powershellExeFinder = new PowerShellExeFinder();
+    const powershellExeFinder = new PowerShellExeFinder();
     let powerShellExeDetails;
     try {
         powerShellExeDetails = powershellExeFinder.getFirstAvailablePowerShellInstallation();

@@ -36,7 +36,7 @@ export async function updateDiagnostics(
 
         //update the content of diagnostic
         if (planResult) {
-            let diagnostics: vscode.Diagnostic[] = formatPlanstToDiag(planResult, log);
+            const diagnostics: vscode.Diagnostic[] = formatPlanstToDiag(planResult, log);
             diagcCollection.set(documentUri, diagnostics);
             log.write(`Diagnostics Number : ${diagnostics.length}  `);
         }
@@ -67,13 +67,13 @@ function formatPlanstToDiag(plansStr: string, log: Logger): vscode.Diagnostic[] 
         return [];
     }
 
-    let diagnostics: vscode.Diagnostic[] = [];
+    const diagnostics: vscode.Diagnostic[] = [];
     plans.forEach(
         plan => {
-            let range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
+            const range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
                 new vscode.Position(plan.SourceCommand.EndLine - 1, plan.SourceCommand.EndPosition - 1));
-            let message = plan.PlanResultReason;
-            let diagnostic = new vscode.Diagnostic(range, message);
+            const message = plan.PlanResultReason;
+            const diagnostic = new vscode.Diagnostic(range, message);
             if (plan.PlanSeverity == 1) {
                 diagnostic.severity = vscode.DiagnosticSeverity.Error;
                 diagnostic.code = "DO_NOTHING";

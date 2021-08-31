@@ -10,7 +10,7 @@ import path = require("path");
 
 export const PowerShellLanguageId = "powershell";
 
-export function ensurePathExists(targetPath: string) {
+export function ensurePathExists(targetPath: string): void {
     // Ensure that the path exists
     try {
         fs.mkdirSync(targetPath);
@@ -22,7 +22,7 @@ export function ensurePathExists(targetPath: string) {
     }
 }
 
-export function getPipePath(pipeName: string) {
+export function getPipePath(pipeName: string): string {
     if (os.platform() === "win32") {
         return "\\\\.\\pipe\\" + pipeName;
     } else {
@@ -52,15 +52,15 @@ const sessionFilePathPrefix = path.resolve(sessionsFolder, "PSES-VSCode-" + proc
 // Create the sessions path if it doesn't exist already
 ensurePathExists(sessionsFolder);
 
-export function getSessionFilePath(uniqueId: number) {
+export function getSessionFilePath(uniqueId: number): string {
     return `${sessionFilePathPrefix}-${uniqueId}`;
 }
 
-export function getDebugSessionFilePath() {
+export function getDebugSessionFilePath(): string {
     return `${sessionFilePathPrefix}-Debug`;
 }
 
-export function writeSessionFile(sessionFilePath: string, sessionDetails: IEditorServicesSessionDetails) {
+export function writeSessionFile(sessionFilePath: string, sessionDetails: IEditorServicesSessionDetails): void {
     ensurePathExists(sessionsFolder);
 
     const writeStream = fs.createWriteStream(sessionFilePath);
@@ -74,7 +74,7 @@ export function readSessionFile(sessionFilePath: string): IEditorServicesSession
     return JSON.parse(fileContents);
 }
 
-export function deleteSessionFile(sessionFilePath: string) {
+export function deleteSessionFile(sessionFilePath: string): void {
     try {
         fs.unlinkSync(sessionFilePath);
     } catch (e) {
@@ -91,7 +91,7 @@ export function checkIfFileExists(filePath: string): boolean {
     }
 }
 
-export function getTimestampString() {
+export function getTimestampString(): string {
     const time = new Date();
     return `[${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}]`;
 }
