@@ -9,10 +9,13 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/class-name-casing": "warn",
         "@typescript-eslint/semi": "warn",
         "curly": "warn",
         "no-throw-literal": "warn",
         "semi": "off"
-    }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ]
 }
