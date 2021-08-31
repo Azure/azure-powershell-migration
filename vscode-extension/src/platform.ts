@@ -57,6 +57,7 @@ export function getPlatformDetails(): IPlatformDetails {
 
     return {
         operatingSystem,
+        // eslint-disable-next-line no-prototype-builtins
         isOS64Bit: isProcess64Bit || process.env.hasOwnProperty("PROCESSOR_ARCHITEW6432"),
         isProcess64Bit,
     };

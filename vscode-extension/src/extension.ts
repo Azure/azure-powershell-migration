@@ -13,13 +13,14 @@ import {
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const PackageJSON = require('../package.json');
 
-import PackageJSON = require("../package.json");
 const powershell = new PowershellProcess();
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
-export async function activate(context: vscode.ExtensionContext) {
+export async function activate(context: vscode.ExtensionContext): Promise<void> {
 
     // let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
     //     //TODO: build one selection quickbox
@@ -69,11 +70,13 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {
+export function deactivate(): void {
     try {
         powershell.stop();
     }
-    catch { }
+    catch {
+        // deactivating extension, exceptions should be swallowed
+    }
 }
 
 /**
