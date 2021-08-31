@@ -64,10 +64,9 @@ function Measure-UpcomingBreakingChange {
         # $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
 
         # $count = 1
-
         foreach ($cmdletReference in $foundCmdlets) {
-            if ($breakingchanges.cmdlet.Keys -contains $cmdletReference.CommandName){
-                $type = $breakingchanges.cmdlet[$cmdletReference.CommandName]
+            if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName){
+                $type = $breakingchanges.cmdlets[$cmdletReference.CommandName]
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
@@ -95,7 +94,7 @@ function Measure-UpcomingBreakingChange {
                         $l.Add($c)
                 }
                 foreach ($para in $cmdletReference.parameters){
-                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para){
+                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name){
                         $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
                         [int]$startLineNumber = $para.StartLine
                         [int]$endLineNumber = $para.EndLine
