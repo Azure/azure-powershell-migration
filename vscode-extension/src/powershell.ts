@@ -43,11 +43,12 @@ export class PowershellProcess {
     public async getCustomAlias(filePath: string) {
 
         // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
-        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\Alias\\avoidAlias.psm1 | ConvertTo-Json -depth 10`;
+        // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\Alias\\avoidAlias.psm1,C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\BreakingChange\\upcomingBreakingChange.psm1 | ConvertTo-Json -depth 10`;
+        //Ignore the abnormal through "-ErrorAction SilentlyContinue"
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\CustomRules.psm1 -ErrorAction SilentlyContinue| ConvertTo-Json -depth 10`;
         //const command = `Invoke-ScriptAnalyzer -Path ${filePath} | ConvertTo-Json`;
-        let aliasResult;
         this.powershell.addCommand(command);
-        aliasResult = await this.powershell.invoke();
+        const aliasResult = await this.powershell.invoke();
         //aliasResult = JSON.parse(aliasResult);
         // try {
         //     console.log(aliasResult[0].SuggestedCorrections[0].Text);
@@ -66,9 +67,8 @@ export class PowershellProcess {
         // const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath  ${customFuleFile} | ConvertTo-Json`;
         const command = `Invoke-ScriptAnalyzer -Path ${filePath} -CustomRulePath C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\BreakingChange\\upcomingBreakingChange.psm1 | ConvertTo-Json -depth 10`;
         //const command = `Invoke-ScriptAnalyzer -Path ${filePath} | ConvertTo-Json`;
-        let breakingChangeResult;
         this.powershell.addCommand(command);
-        breakingChangeResult = await this.powershell.invoke();
+        const breakingChangeResult = await this.powershell.invoke();
         //aliasResult = JSON.parse(aliasResult);
         // try {
         //     console.log(aliasResult[0].SuggestedCorrections[0].Text);

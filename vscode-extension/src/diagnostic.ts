@@ -6,6 +6,7 @@ import * as vscode from 'vscode';
 import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
 import { UpgradePlan } from "./types/migraion";
+import { SuggestedCorrection } from './types/PSScriptAnalyzer';
 /**
  * Updates all the diagnostics items in document.
  * @param documentUri : file path
@@ -34,9 +35,9 @@ export async function updateDiagnostics(
             log.write(`Start analyzing ${documentUri.fsPath}`);
             aliasResult = await powershell.getCustomAlias(documentUri.fsPath);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
-            log.write(`Start analyzing ${documentUri.fsPath}`);
-            breakingChangeResult = await powershell.getBreakingChange(documentUri.fsPath);
-            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            // log.write(`Start analyzing ${documentUri.fsPath}`);
+            // breakingChangeResult = await powershell.getBreakingChange(documentUri.fsPath);
+            // log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
         }
         catch (e) {
             log.writeError(`Error: Node-Powershell failed.`);
@@ -56,9 +57,9 @@ export async function updateDiagnostics(
             diagnostics = formatAliasSuggestsToDiag(aliasResult, log, diagnostics);
         }
 
-        if (breakingChangeResult) {
-            diagnostics = formatBreakingchangeSuggestsToDiag(breakingChangeResult, log, diagnostics);
-        }
+        // if (breakingChangeResult) {
+        //     diagnostics = formatBreakingchangeSuggestsToDiag(breakingChangeResult, log, diagnostics);
+        // }
 
         diagcCollection.set(documentUri, diagnostics);
 
@@ -121,11 +122,18 @@ function formatPlanstToDiag(plansStr: string, log: Logger, diagnostics: vscode.D
  * @returns : diagnostics
  */
 function formatAliasSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vscode.Diagnostic[]): vscode.Diagnostic[] {
-    let plans: object[];
+    let plans: SuggestedCorrection[] = [];
+    const NumOfRules = 2;
     try {
-        plans = JSON.parse(plansStr)[0].SuggestedCorrections;
+        const plansStr_json = JSON.parse(plansStr);
+        for (let i = 0; i < NumOfRules; i++) {
+            const suggestions = plansStr_json[i].SuggestedCorrections;
+            plans = [...plans, ...suggestions];
+        }
+
     }
-    catch {
+    catch (e) {
+        log.write(e.message);
         try {
             plans = JSON.parse(plansStr).SuggestedCorrections;
         }
@@ -137,13 +145,18 @@ function formatAliasSuggestsToDiag(plansStr: string, log: Logger, diagnostics: v
     }
 
     plans.forEach(
-        (plan: any) => {
+        plan => {
             const range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
                 new vscode.Position(plan.EndLineNumber - 1, plan.EndColumnNumber - 1));
             const message = plan.Description;
             const diagnostic = new vscode.Diagnostic(range, message);
             diagnostic.severity = vscode.DiagnosticSeverity.Warning;
-            diagnostic.code = "Alias";
+            if (plan.Description === "Alias") {
+                diagnostic.code = "Alias";
+            }
+            else if (plan.Description === "Breakingchange") {
+                diagnostic.code = "BreakingChange";
+            }
             diagnostic.source = plan.Text;
             diagnostics.push(diagnostic);
         }
