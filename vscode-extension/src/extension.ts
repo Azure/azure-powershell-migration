@@ -8,26 +8,27 @@ import * as vscode from 'vscode';
 import { QuickFixProvider } from './quickFix';
 import { updateDiagnostics } from './diagnostic';
 import {
-    getPlatformDetails, IPlatformDetails, IPowerShellExeDetails,
-    OperatingSystem, PowerShellExeFinder
+    getPlatformDetails, OperatingSystem, PowerShellExeFinder
 } from "./platform";
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
 import * as utils from "./utils";
 
-const PackageJSON: any = require("../package.json");
-let powershell = new PowershellProcess();
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const PackageJSON = require('../package.json');
+
+const powershell = new PowershellProcess();
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
-export async function activate(context: vscode.ExtensionContext) {
+export async function activate(context: vscode.ExtensionContext): Promise<void> {
 
     // let disposable = vscode.commands.registerCommand('azps-tools.selectVersion', async () => {
     //     //TODO: build one selection quickbox
     // });
 
     //start the logger
-    let log = new Logger();
+    const log = new Logger();
 
     //check for existence of powershell
     const powershellExistence = checkPowershell(log);
@@ -70,11 +71,13 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 // this method is called when your extension is deactivated
-export function deactivate() {
+export function deactivate(): void {
     try {
         powershell.stop();
     }
-    catch { }
+    catch {
+        // deactivating extension, exceptions should be swallowed
+    }
 }
 
 /**
@@ -142,7 +145,7 @@ function checkModule(powershell: PowershellProcess, log: Logger): boolean {
  * @returns : if the powershell exists
  */
 function checkPowershell(log: Logger): boolean {
-    let platformDetails = getPlatformDetails();
+    const platformDetails = getPlatformDetails();
     const osBitness = platformDetails.isOS64Bit ? "64-bit" : "32-bit";
     const procBitness = platformDetails.isProcess64Bit ? "64-bit" : "32-bit";
     log.write(
@@ -152,7 +155,7 @@ function checkPowershell(log: Logger): boolean {
     log.startNewLog('normal');
 
     //check whether the powershell exists
-    var powershellExeFinder = new PowerShellExeFinder();
+    const powershellExeFinder = new PowerShellExeFinder();
     let powerShellExeDetails;
     try {
         powerShellExeDetails = powershellExeFinder.getFirstAvailablePowerShellInstallation();

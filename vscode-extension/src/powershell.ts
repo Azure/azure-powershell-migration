@@ -2,14 +2,11 @@
  * Copyright (C) Microsoft Corporation. All rights reserved.
  *--------------------------------------------------------*/
 
-import * as vscode from 'vscode';
 import shell = require("node-powershell");
 import { Logger } from "./logging";
 import * as process from "process";
-import { homedir } from 'os';
 import path = require("path");
 import fs = require("fs");
-import { promises } from 'dns';
 
 /**
  * Manage the powershell process.
@@ -36,9 +33,8 @@ export class PowershellProcess {
         }
 
         const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json`;
-        let planResult;
         this.powershell.addCommand(command);
-        planResult = await this.powershell.invoke();
+        const planResult = await this.powershell.invoke();
 
         return planResult;
     }
@@ -86,7 +82,7 @@ export class PowershellProcess {
     }
 
     //check whether the module exists
-    public checkModuleExist(moduleName: string) {
+    public checkModuleExist(moduleName: string): boolean {
         const systemModulePath = this.getSystemModulePath();
 
         return systemModulePath.some(

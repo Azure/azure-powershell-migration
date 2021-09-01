@@ -87,10 +87,10 @@ function formatPlanstToDiag(plansStr: string, log: Logger, diagnostics: vscode.D
 
     plans.forEach(
         plan => {
-            let range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
+            const range = new vscode.Range(new vscode.Position(plan.SourceCommand.StartLine - 1, plan.SourceCommand.StartColumn - 1),
                 new vscode.Position(plan.SourceCommand.EndLine - 1, plan.SourceCommand.EndPosition - 1));
-            let message = plan.PlanResultReason;
-            let diagnostic = new vscode.Diagnostic(range, message);
+            const message = plan.PlanResultReason;
+            const diagnostic = new vscode.Diagnostic(range, message);
             if (plan.PlanSeverity == 1) {
                 diagnostic.severity = vscode.DiagnosticSeverity.Error;
                 diagnostic.code = "DO_NOTHING";
@@ -138,10 +138,10 @@ function formatAliasSuggestsToDiag(plansStr: string, log: Logger, diagnostics: v
 
     plans.forEach(
         (plan: any) => {
-            let range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
+            const range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
                 new vscode.Position(plan.EndLineNumber - 1, plan.EndColumnNumber - 1));
-            let message = plan.Description;
-            let diagnostic = new vscode.Diagnostic(range, message);
+            const message = plan.Description;
+            const diagnostic = new vscode.Diagnostic(range, message);
             diagnostic.severity = vscode.DiagnosticSeverity.Warning;
             diagnostic.code = "Alias";
             diagnostic.source = plan.Text;
@@ -176,10 +176,10 @@ function formatBreakingchangeSuggestsToDiag(plansStr: string, log: Logger, diagn
 
     plans.forEach(
         (plan: any) => {
-            let range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
+            const range = new vscode.Range(new vscode.Position(plan.StartLineNumber - 1, plan.StartColumnNumber - 1),
                 new vscode.Position(plan.EndLineNumber - 1, plan.EndColumnNumber - 1));
-            let message = plan.Description;
-            let diagnostic = new vscode.Diagnostic(range, message);
+            const message = plan.Description;
+            const diagnostic = new vscode.Diagnostic(range, message);
             diagnostic.severity = vscode.DiagnosticSeverity.Warning;
             diagnostic.code = "BreakingChange";
             diagnostic.source = plan.Text;

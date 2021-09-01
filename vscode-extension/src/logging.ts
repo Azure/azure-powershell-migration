@@ -55,7 +55,7 @@ export class Logger implements ILogger {
         ];
     }
 
-    public dispose() {
+    public dispose(): void {
         this.commands.forEach((command) => { command.dispose(); });
         this.logChannel.dispose();
     }
@@ -64,7 +64,7 @@ export class Logger implements ILogger {
         return path.resolve(this.logSessionPath, `${baseName}.log`);
     }
 
-    public writeAtLevel(logLevel: LogLevel, message: string, ...additionalMessages: string[]) {
+    public writeAtLevel(logLevel: LogLevel, message: string, ...additionalMessages: string[]): void {
         if (logLevel >= this.MinimumLogLevel) {
             this.writeLine(message, logLevel);
 
@@ -74,23 +74,23 @@ export class Logger implements ILogger {
         }
     }
 
-    public write(message: string, ...additionalMessages: string[]) {
+    public write(message: string, ...additionalMessages: string[]): void {
         this.writeAtLevel(LogLevel.Normal, message, ...additionalMessages);
     }
 
-    public writeDiagnostic(message: string, ...additionalMessages: string[]) {
+    public writeDiagnostic(message: string, ...additionalMessages: string[]): void {
         this.writeAtLevel(LogLevel.Diagnostic, message, ...additionalMessages);
     }
 
-    public writeVerbose(message: string, ...additionalMessages: string[]) {
+    public writeVerbose(message: string, ...additionalMessages: string[]): void {
         this.writeAtLevel(LogLevel.Verbose, message, ...additionalMessages);
     }
 
-    public writeWarning(message: string, ...additionalMessages: string[]) {
+    public writeWarning(message: string, ...additionalMessages: string[]): void {
         this.writeAtLevel(LogLevel.Warning, message, ...additionalMessages);
     }
 
-    public writeAndShowWarning(message: string, ...additionalMessages: string[]) {
+    public writeAndShowWarning(message: string, ...additionalMessages: string[]): void {
         this.writeWarning(message, ...additionalMessages);
 
         vscode.window.showWarningMessage(message, "Show Logs").then((selection) => {
@@ -100,11 +100,11 @@ export class Logger implements ILogger {
         });
     }
 
-    public writeError(message: string, ...additionalMessages: string[]) {
+    public writeError(message: string, ...additionalMessages: string[]): void {
         this.writeAtLevel(LogLevel.Error, message, ...additionalMessages);
     }
 
-    public writeAndShowError(message: string, ...additionalMessages: string[]) {
+    public writeAndShowError(message: string, ...additionalMessages: string[]): void {
         this.writeError(message, ...additionalMessages);
 
         vscode.window.showErrorMessage(message, "Show Logs").then((selection) => {
@@ -116,7 +116,7 @@ export class Logger implements ILogger {
 
     public async writeAndShowErrorWithActions(
         message: string,
-        actions: { prompt: string; action: () => Promise<void> }[]) {
+        actions: { prompt: string; action: () => Promise<void> }[]): Promise<void> {
         this.writeError(message);
 
         const fullActions = [
@@ -137,7 +137,7 @@ export class Logger implements ILogger {
         }
     }
 
-    public startNewLog(minimumLogLevel: string = "Normal") {
+    public startNewLog(minimumLogLevel = "Normal"): void {
         this.MinimumLogLevel = this.logLevelNameToValue(minimumLogLevel.trim());
 
         this.logSessionPath =

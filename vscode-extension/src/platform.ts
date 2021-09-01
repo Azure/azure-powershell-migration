@@ -2,7 +2,6 @@
  * Copyright (C) Microsoft Corporation. All rights reserved.
  *--------------------------------------------------------*/
 
-import * as child_process from "child_process";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
@@ -58,6 +57,7 @@ export function getPlatformDetails(): IPlatformDetails {
 
     return {
         operatingSystem,
+        // eslint-disable-next-line no-prototype-builtins
         isOS64Bit: isProcess64Bit || process.env.hasOwnProperty("PROCESSOR_ARCHITEW6432"),
         isProcess64Bit,
     };
@@ -70,11 +70,11 @@ export function getPlatformDetails(): IPlatformDetails {
  */
 export class PowerShellExeFinder {
     // This is required, since parseInt("7-preview") will return 7.
-    private static IntRegex: RegExp = /^\d+$/;
+    private static IntRegex = /^\d+$/;
 
-    private static PwshMsixRegex: RegExp = /^Microsoft.PowerShell_.*/;
+    private static PwshMsixRegex = /^Microsoft.PowerShell_.*/;
 
-    private static PwshPreviewMsixRegex: RegExp = /^Microsoft.PowerShellPreview_.*/;
+    private static PwshPreviewMsixRegex = /^Microsoft.PowerShellPreview_.*/;
 
     // The platform details descriptor for the platform we're on
     private readonly platformDetails: IPlatformDetails;
@@ -323,11 +323,11 @@ export class PowerShellExeFinder {
             return null;
         }
 
-        let highestSeenVersion: number = -1;
+        let highestSeenVersion = -1;
         let pwshExePath: string = null;
         for (const item of fs.readdirSync(powerShellInstallBaseDir)) {
 
-            let currentVersion: number = -1;
+            let currentVersion = -1;
             if (findPreview) {
                 // We are looking for something like "7-preview"
 
@@ -469,7 +469,7 @@ export class PowerShellExeFinder {
     }
 }
 
-export function getWindowsSystemPowerShellPath(systemFolderName: string) {
+export function getWindowsSystemPowerShellPath(systemFolderName: string): string {
     return path.join(
         process.env.windir,
         systemFolderName,
