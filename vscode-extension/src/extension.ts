@@ -12,6 +12,7 @@ import {
 } from "./platform";
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
+import * as utils from "./utils";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const PackageJSON = require('../package.json');
@@ -61,7 +62,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
 
     //quick fix action
-    const quickFixProvider = new QuickFixProvider();
+    const quickFixProvider = new QuickFixProvider(diagcCollection);
     context.subscriptions.push(
         vscode.languages.registerCodeActionsProvider({ language: 'powershell' }, quickFixProvider, {
             providedCodeActionKinds: QuickFixProvider.providedCodeActionKinds

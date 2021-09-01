@@ -1,0 +1,641 @@
+{
+  "cmdlet": [
+    {
+      "Name": "Resolve-AzError",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzAksCluster",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "New-AzAksCluster",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Remove-AzAksCluster",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Set-AzAksCluster",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Add-AzAnalysisServicesAccount",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzBatchAccountKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchJobStatistic",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchLocationQuota",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchPoolNodeCount",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchPoolStatistic",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchPoolUsageMetric",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchRemoteLoginSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBatchTaskCount",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzBillingPeriod",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Disable-AzCdnCustomDomain",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Enable-AzCdnCustomDomain",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzCdnEdgeNode",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzCognitiveServicesAccountSku",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzVhd",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Export-AzDataLakeStoreChildItemProperty",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Export-AzDataLakeStoreItem",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Import-AzDataLakeStoreItem",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzDataShareSubscription",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzEventHubNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzEventHubNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzEventHubNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzMlWebServiceKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzMediaServiceKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Sync-AzMediaServiceStorageKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzNetAppFilesVault",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzApplicationGatewayBackendHttpSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzExpressRouteCircuitAuthorization",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzExpressRouteCircuitConnectionConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzExpressRouteCircuitPeeringConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Add-AzVirtualHubRoute",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Add-AzVirtualHubRouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Add-AzVirtualRouterPeer",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzApplicationGatewayAvailableSslOption",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzApplicationGatewayAvailableWafRuleSet",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzApplicationGatewayBackendHttpSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzExpressRouteCircuit",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzExpressRouteCircuitAuthorization",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzExpressRouteCircuitPeeringConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzExpressRouteCircuitStat",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzVirtualHubRouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzVirtualRouter",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzVirtualRouterPeer",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzVirtualRouterPeerAdvertisedRoute",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzVirtualRouterPeerLearnedRoute",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Move-AzExpressRouteCircuit",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzApplicationGatewayBackendHttpSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzExpressRouteCircuit",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzLoadBalancerFrontendIpConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzPrivateLinkServiceIpConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzPublicIpAddress",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzPublicIpPrefix",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzVirtualHubRoute",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "New-AzVirtualHubRouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "New-AzVirtualRouter",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Remove-AzApplicationGatewayBackendHttpSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzExpressRouteCircuitAuthorization",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzExpressRouteCircuitConnectionConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzExpressRouteCircuitPeeringConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzVirtualHubRouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Remove-AzVirtualRouter",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Remove-AzVirtualRouterPeer",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Set-AzApplicationGatewayBackendHttpSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzExpressRouteCircuit",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzExpressRouteCircuitConnectionConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzExpressRouteCircuitPeeringConfig",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Update-AzVirtualRouter",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Update-AzVirtualRouterPeer",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"
+    },
+    {
+      "Name": "Get-AzNotificationHubAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzNotificationHubListKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzNotificationHubPNSCredential",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzNotificationHubsNamespaceAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzNotificationHubsNamespaceListKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzNotificationHubAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzNotificationHubsNamespaceAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzNotificationHubAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzNotificationHubsNamespaceAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzNotificationHubAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzNotificationHubsNamespaceAuthorizationRule",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzOperationalInsightsIntelligencePack",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzOperationalInsightsWorkspaceManagementGroup",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzOperationalInsightsWorkspaceSharedKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzPowerBIWorkspaceCollectionAccessKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Reset-AzPowerBIWorkspaceCollectionAccessKey",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzRedisCacheDiagnostic",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzRedisCacheDiagnostic",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSecurityAlert",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzServiceBusNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzServiceBusNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzServiceBusNamespace",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSignalR",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzSignalR",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Update-AzSignalR",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Clear-AzSqlDatabaseAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Clear-AzSqlServerAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSqlDatabase",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSqlDatabaseAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSqlDatabaseReplicationLink",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Get-AzSqlServerAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzSqlDatabase",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzSqlDatabaseCopy",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "New-AzSqlDatabaseSecondary",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzSqlDatabase",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Remove-AzSqlDatabaseSecondary",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzSqlDatabase",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Set-AzSqlDatabaseSecondary",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"
+    },
+    {
+      "Name": "Update-AzSqlDatabaseAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    },
+    {
+      "Name": "Update-AzSqlServerAdvancedThreatProtectionSetting",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"
+    }
+  ],
+  "para_cmdlet": [
+    {
+      "Name": "State",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Set-AzEventHubNamespace"
+    },
+    {
+      "Name": "RdpCredential",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzHDInsightCluster"
+    },
+    {
+      "Name": "RdpAccessExpiry",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzHDInsightCluster"
+    },
+    {
+      "Name": "ContentType",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzIntegrationAccountMap"
+    },
+    {
+      "Name": "ContentType",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Set-AzIntegrationAccountMap"
+    },
+    {
+      "Name": "Snapshot",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzNetAppFilesVolume"
+    },
+    {
+      "Name": "ResourceId",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "Add-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "InputObject",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "Add-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "Description",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Get-AzPrivateEndpointConnection"
+    },
+    {
+      "Name": "UserAssignedIdentityId",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzApplicationGateway"
+    },
+    {
+      "Name": "VirtualNetworkName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzFirewall"
+    },
+    {
+      "Name": "PublicIpName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzFirewall"
+    },
+    {
+      "Name": "SourceAddress",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzFirewallPolicyApplicationRule"
+    },
+    {
+      "Name": "SourceAddress",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzFirewallPolicyNetworkRule"
+    },
+    {
+      "Name": "PublicIpAddress",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzPrivateLinkServiceIpConfig"
+    },
+    {
+      "Name": "HubVnetConnection",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzVirtualHub"
+    },
+    {
+      "Name": "RouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzVirtualHub"
+    },
+    {
+      "Name": "EnableInternetSecurity",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzVirtualHubVnetConnection"
+    },
+    {
+      "Name": "ResourceId",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "New-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "InputObject",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "New-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "Description",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Remove-AzPrivateEndpointConnection"
+    },
+    {
+      "Name": "RouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Set-AzVirtualHub"
+    },
+    {
+      "Name": "ResourceId",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "Set-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "InputObject",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
+      "CmdletName": "Set-AzVirtualNetworkSubnetConfig"
+    },
+    {
+      "Name": "HubVnetConnection",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Update-AzVirtualHub"
+    },
+    {
+      "Name": "RouteTable",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Update-AzVirtualHub"
+    },
+    {
+      "Name": "ApiVersion",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Export-AzResourceGroup"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Get-AzManagementGroup"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzManagementGroup"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "New-AzManagementGroupSubscription"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Remove-AzManagementGroup"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Remove-AzManagementGroupSubscription"
+    },
+    {
+      "Name": "GroupName",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Update-AzManagementGroup"
+    },
+    {
+      "Name": "InputObject",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Set-AzSecurityAlert"
+    },
+    {
+      "Name": "ResourceId",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Get-AzRmStorageShare"
+    },
+    {
+      "Name": "InputObject",
+      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
+      "CmdletName": "Set-AzStorageSyncServerEndpoint"
+    }
+  ],
+  "updateTime": "8/30/2021 4:11:26 PM",
+  "func": [],
+  "para_func": []
+}
