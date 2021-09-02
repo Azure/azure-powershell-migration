@@ -34,7 +34,6 @@ function Measure-UpcomingBreakingChange {
         $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Classes.ps1"
         . $classFile
         $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
-        #$findCmdFunctionFile = "C:\Users\t-zenli\workspace\released_version\azure-powershell-migration\powershell-module\Az.Tools.Migration\Functions\Private\Find-CmdletsInFile.ps1"
         . $findCmdFunctionFile
         $getBreakingchangeSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\BreakingChange\Get-BreakingChangeSpec.ps1"
         . $getBreakingchangeSpecFunctionFile
@@ -45,9 +44,6 @@ function Measure-UpcomingBreakingChange {
 
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
-        #$foundCmdlets = Find-CmdletsInFile -FilePath "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\dynamic-parameters-test1.ps1"
-
-        #$foundCmdlets > foundCmdlets.txt
         $typesToMessages = @{
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute" = "The breaking change is expected to take effect from the next version.";
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute" = "The cmdlet is being deprecated. There will be no replacement for it.";
@@ -57,13 +53,7 @@ function Measure-UpcomingBreakingChange {
 
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
-        # $matchPattern = "(\b[a-zA-z]+-[a-zA-z]+\b)"
-        # $recurse = $true
-        # $commandPredicate = { param($astObject) $astObject -is [System.Management.Automation.Language.CommandAst] }
-        # $commandAstNodes = $testAst.FindAll($commandPredicate, $recurse)
-        # $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
 
-        # $count = 1
         foreach ($cmdletReference in $foundCmdlets) {
             if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName){
                 $type = $breakingchanges.cmdlets[$cmdletReference.CommandName]
@@ -124,45 +114,7 @@ function Measure-UpcomingBreakingChange {
                 }
             }
         }
-        #$l.Count > count.txt
-
-
-        <#
-        for ([int]$i = 0; $i -lt $commandAstNodes.Count; $i++) {
-        $currentVarAstNode = $commandAstNodes[$i]
-        for ([int]$j = 0; $j -lt $currentVarAstNode.CommandElements.Count; $j++) {
-            $currentCommandElement = $currentVarAstNode.CommandElements[$j]
-
-            if ($currentCommandElement.Extent.Text -eq "import-module") {
-                # Write-Error $currentCommandElement.Extent
-                #$currentCommandElement.Extent > currentVarAstNode$i.json
-
-                [int]$startLineNumber = $currentCommandElement.Extent.StartLineNumber
-                [int]$endLineNumber = $currentCommandElement.Extent.EndLineNumber
-                [int]$startColumnNumber = $currentCommandElement.Extent.StartColumnNumber
-                [int]$endColumnNumber = $currentCommandElement.Extent.EndColumnNumber
-                [string]$correction = "Alias_Formal_name"
-                [string]$filePath = $currentCommandElement.Extent.File
-                [string]$optionalDescription = 'Useful but optional description text'
-
-
-                $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                $l.Add($c)
-            }
-        }
-    #>
-
-
-
-
-        # if ($currentAstNode.CommandElements[0] -is [System.Management.Automation.Language.StringConstantExpressionAst] `
-        #         -and $cmdletRegex.IsMatch($currentAstNode.CommandElements[0].Extent.Text))
-        # {
-        #     $currentVarAstNode.CommandElements[0].Extent.EndLineNumber > assignmentAstNodes+$i.json
-        # }
-
-
-        # The implementation is mocked out for testing purposes only and many properties are deliberately set to null to test if PSSA can cope with it
+        
 
 
         $extent = $null
@@ -170,12 +122,8 @@ function Measure-UpcomingBreakingChange {
         $dr = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
-        # $dr.RuleSuppressionID = "MyRuleSuppressionID"
         $dr.SuggestedCorrections = $l
         $results += $dr
-        #$dr.SuggestedCorrections > SuggestedCorrections.json
-        #$results > results.json
-        #write-Error $dr.SuggestedCorrections[0].Text
         return $results
     }
 }

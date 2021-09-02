@@ -34,7 +34,6 @@ function Measure-AvoidAlias {
         $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Classes.ps1"
         . $classFile
         $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
-        #$findCmdFunctionFile = "C:\Users\t-zenli\workspace\released_version\azure-powershell-migration\powershell-module\Az.Tools.Migration\Functions\Private\Find-CmdletsInFile.ps1"
         . $findCmdFunctionFile
         $getAliasSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Alias\Get-AliasSpec.ps1"
         . $getAliasSpecFunctionFile
@@ -45,9 +44,6 @@ function Measure-AvoidAlias {
 
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
-        #$foundCmdlets = Find-CmdletsInFile -FilePath "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA\dynamic-parameters-test1.ps1"
-
-        #$foundCmdlets > foundCmdlets.txt
     
 
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
@@ -61,8 +57,6 @@ function Measure-AvoidAlias {
                 [string]$correction = $aliasTocmdlets.($cmdletReference.CommandName)
                 [string]$filePath = $cmdletReference.FullPath
                 [string]$optionalDescription = 'The alias can be changed to be formal name.'
-                
-                
 
                 $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $l.Add($c)
@@ -77,12 +71,8 @@ function Measure-AvoidAlias {
         $dr = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
-        # $dr.RuleSuppressionID = "MyRuleSuppressionID"
         $dr.SuggestedCorrections = $l
         $results += $dr
-        #$dr.SuggestedCorrections > SuggestedCorrections.json
-        #$results > results.json
-        #write-Error $dr.SuggestedCorrections[0].Text
         return $results
     }
 }

@@ -12,7 +12,6 @@ import {
 } from "./platform";
 import { Logger } from "./logging";
 import { PowershellProcess } from './powershell';
-import * as utils from "./utils";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const PackageJSON = require('../package.json');
