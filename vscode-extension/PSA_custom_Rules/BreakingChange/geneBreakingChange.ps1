@@ -108,9 +108,6 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
 
 
 }
-# foreach ($key in $results.Keys){
-#     $results[$key].Count
-# }
 $json = $results | ConvertTo-Json
 $json > breakingchange.json
 
