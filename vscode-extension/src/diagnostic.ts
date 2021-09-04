@@ -7,6 +7,7 @@ import { PowershellProcess } from './powershell';
 import { Logger } from "./logging";
 import { UpgradePlan } from "./types/migraion";
 import { SuggestedCorrection } from './types/PSScriptAnalyzer';
+import path = require('path');
 /**
  * Updates all the diagnostics items in document.
  * @param documentUri : file path
@@ -31,8 +32,9 @@ export async function updateDiagnostics(
             log.write(`Start analyzing ${documentUri.fsPath}`);
             planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
             log.write(`Start analyzing ${documentUri.fsPath}`);
-            PSAResult = await powershell.getCustomAlias(documentUri.fsPath);
+            PSAResult = await powershell.getCustomAlias(documentUri.fsPath, settingPSA);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
         }
         catch (e) {

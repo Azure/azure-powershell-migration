@@ -31,23 +31,21 @@ function Measure-UpcomingBreakingChange {
     Process {
         $results = @()
         # import functions
-        $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Classes.ps1"
-        . $classFile
-        $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
-        . $findCmdFunctionFile
-        $getBreakingchangeSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\BreakingChange\Get-BreakingChangeSpec.ps1"
-        . $getBreakingchangeSpecFunctionFile
+        $findCmdFunctionFile = ".\PSA_custom_Rules\Find-CmdletsInFile.psm1"
+        Import-Module $findCmdFunctionFile
+        $getBreakingchangeSpecFunctionFile = ".\PSA_custom_Rules\BreakingChange\Get-BreakingChangeSpec.psm1"
+        Import-Module $getBreakingchangeSpecFunctionFile
 
         #get the alias mapping data
-        $breakingChangePath = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\BreakingChange\breakingchange.json"
+        $breakingChangePath = ".\PSA_custom_Rules\BreakingChange\breakingchange.json"
         $breakingchanges = Get-BreakingChangeSpec -BreakingChangePath $breakingChangePath
 
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
         $typesToMessages = @{
-            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute" = "The breaking change is expected to take effect from the next version.";
-            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute" = "The cmdlet is being deprecated. There will be no replacement for it.";
-            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute" = "The output type is being deprecated without a replacement.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"         = "The breaking change is expected to take effect from the next version.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"             = "The cmdlet is being deprecated. There will be no replacement for it.";
+            "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute"    = "The output type is being deprecated without a replacement.";
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute" = "The parameter is changing."
         }
 
@@ -55,7 +53,7 @@ function Measure-UpcomingBreakingChange {
 
 
         foreach ($cmdletReference in $foundCmdlets) {
-            if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName){
+            if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName) {
                 $type = $breakingchanges.cmdlets[$cmdletReference.CommandName]
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
@@ -69,22 +67,22 @@ function Measure-UpcomingBreakingChange {
                 $l.Add($c)
             }
 
-            if ($breakingchanges.paraCmdlets.Keys -contains $cmdletReference.CommandName){
-                if ($cmdletReference.parameters.Count -eq 0){
+            if ($breakingchanges.paraCmdlets.Keys -contains $cmdletReference.CommandName) {
+                if ($cmdletReference.parameters.Count -eq 0) {
                     $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
-                        [int]$startLineNumber = $cmdletReference.StartLine
-                        [int]$endLineNumber = $cmdletReference.EndLine
-                        [int]$startColumnNumber = $cmdletReference.StartColumn
-                        [int]$endColumnNumber = $cmdletReference.EndPosition
-                        [string]$correction = ""
-                        [string]$filePath = $cmdletReference.FullPath
-                        [string]$optionalDescription = $typesToMessages[$type]
+                    [int]$startLineNumber = $cmdletReference.StartLine
+                    [int]$endLineNumber = $cmdletReference.EndLine
+                    [int]$startColumnNumber = $cmdletReference.StartColumn
+                    [int]$endColumnNumber = $cmdletReference.EndPosition
+                    [string]$correction = ""
+                    [string]$filePath = $cmdletReference.FullPath
+                    [string]$optionalDescription = $typesToMessages[$type]
 
-                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                        $l.Add($c)
+                    $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                    $l.Add($c)
                 }
-                foreach ($para in $cmdletReference.parameters){
-                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name){
+                foreach ($para in $cmdletReference.parameters) {
+                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name) {
                         $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
                         [int]$startLineNumber = $para.StartLine
                         [int]$endLineNumber = $para.EndLine
@@ -97,7 +95,7 @@ function Measure-UpcomingBreakingChange {
                         $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                         $l.Add($c)
                     }
-                    else{
+                    else {
                         $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
                         [int]$startLineNumber = $cmdletReference.StartLine
                         [int]$endLineNumber = $cmdletReference.EndLine

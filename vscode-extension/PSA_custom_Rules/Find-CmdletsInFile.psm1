@@ -24,7 +24,7 @@ function Find-CmdletsInFile {
         $rootAstNode
     )
     Process {
-        $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_rules\Classes.ps1"
+        $classFile = ".\PSA_custom_rules\Classes.ps1"
         . $classFile
         # constants
         $matchPattern = "(\b[a-zA-z]+-?[a-zA-z]+\b)"

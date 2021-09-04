@@ -41,7 +41,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
     //start a powershell process
     try {
-        powershell.start();
+        await powershell.start();
         log.write("Start powershell successed!");
     }
     catch (e) {

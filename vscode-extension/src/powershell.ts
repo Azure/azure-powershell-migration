@@ -17,16 +17,27 @@ export class PowershellProcess {
     private log: Logger;
 
     //start a powershell process
-    public start(): void {
+    public async start(): Promise<void> {
         this.powershell = new shell({
             executionPolicy: 'Bypass',
             noProfile: true
         });
+
+
+        const PSASourcePath = path.resolve(__dirname, "../PSA_custom_Rules");
+        this.powershell.addCommand(`get-location | ConvertTo-Json`);
+        const res = JSON.parse(await this.powershell.invoke());
+        const PSAExecPath = res['Path'];
+        if (!fs.existsSync(path.resolve(PSAExecPath, "PSA_custom_Rules"))) {
+            //copy the custom rule files to powershell execution path
+            const mklinkCommand = `Copy-Item ${PSASourcePath} -Recurse "${PSAExecPath}"`;
+            this.powershell.addCommand(mklinkCommand);
+            await this.powershell.invoke();
+        }
     }
 
     //exec the migration command and get the result
     public async getUpgradePlan(filePath: string, azureRmVersion: string, azVersion: string): Promise<string> {
-        //const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json -depth 10`;
         if (this.powershell.invocationStateInfo == "Running") {
             //the latter cancels the former powershell process
             await this.restart();
@@ -39,8 +50,9 @@ export class PowershellProcess {
         return planResult;
     }
 
-    public async getCustomAlias(filePath: string): Promise<string> {
-        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings C:\\Users\\t-zenli\\workspace\\dev\\azure-powershell-migration\\vscode-extension\\PSA_custom_Rules\\CustomRules.psm1 -ErrorAction SilentlyContinue| ConvertTo-Json -depth 10`;
+    public async getCustomAlias(filePath: string, settingPath: string): Promise<string> {
+        //ignore errors through "-ErrorAction SilentlyContinue"
+        const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings ${settingPath} -ErrorAction SilentlyContinue| ConvertTo-Json -depth 10`;
         this.powershell.addCommand(command);
         const aliasResult = await this.powershell.invoke();
 

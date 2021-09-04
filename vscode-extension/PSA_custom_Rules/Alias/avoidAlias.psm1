@@ -31,15 +31,13 @@ function Measure-AvoidAlias {
     Process {
         $results = @()
         # import functions
-        $classFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Classes.ps1"
-        . $classFile
-        $findCmdFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Find-CmdletsInFile.ps1"
-        . $findCmdFunctionFile
-        $getAliasSpecFunctionFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Alias\Get-AliasSpec.ps1"
-        . $getAliasSpecFunctionFile
+        $findCmdFunctionFile = ".\PSA_custom_Rules\Find-CmdletsInFile.psm1"
+        Import-Module $findCmdFunctionFile
+        $getAliasSpecFunctionFile = ".\PSA_custom_Rules\Alias\Get-AliasSpec.psm1"
+        Import-Module $getAliasSpecFunctionFile
 
         #get the alias mapping data
-        $aliasSpecFile = "C:\Users\t-zenli\workspace\dev\azure-powershell-migration\vscode-extension\PSA_custom_Rules\Alias\aliasTocmdlet.json"
+        $aliasSpecFile = ".\PSA_custom_Rules\Alias\aliasTocmdlet.json"
         $aliasTocmdlets = Get-AliasSpec -AliasPath $aliasSpecFile
 
         # get the commandAst in the file
@@ -49,7 +47,7 @@ function Measure-AvoidAlias {
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
         foreach ($cmdletReference in $foundCmdlets) {
-            if ($aliasTocmdlets.psobject.properties.match($cmdletReference.CommandName).Count){
+            if ($aliasTocmdlets.psobject.properties.match($cmdletReference.CommandName).Count) {
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
