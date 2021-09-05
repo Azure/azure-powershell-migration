@@ -120,10 +120,10 @@ function registerHandlers(
  * @returns : if the module exists
  */
 function checkModule(powershell: PowershellProcess, log: Logger): boolean {
-    const moduleName = "Az.Tools.Migration";
+    let moduleName = "Az.Tools.Migration";
     powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
-        log.writeAndShowErrorWithActions("You have to install Az.Tools.Migration firstly!", [
+        log.writeAndShowErrorWithActions("Please install Az.Tools.Migration firstly by yourself.", [
             {
                 prompt: "Get Az.Tools.Migration",
                 action: async () => {
@@ -134,6 +134,22 @@ function checkModule(powershell: PowershellProcess, log: Logger): boolean {
         ]);
         return false;
     }
+
+    moduleName = "PSScriptAnalyzer";
+    powershell.getSystemModulePath();
+    if (!powershell.checkModuleExist(moduleName)) {
+        log.writeAndShowErrorWithActions("Please install PSScriptAnalyzer firstly by yourself.", [
+            {
+                prompt: "Get PSScriptAnalyzer",
+                action: async () => {
+                    const getPSUri = vscode.Uri.parse("https://github.com/PowerShell/PSScriptAnalyzer#installation");
+                    vscode.env.openExternal(getPSUri);
+                },
+            },
+        ]);
+        return false;
+    }
+
     return true;
 }
 
