@@ -6,7 +6,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { QuickFixProvider } from './quickFix';
-import { updateDiagnostics } from './diagnostic';
+import { updateDiagnostics, refreshDiagnosticsChange } from './diagnostic';
 import {
     getPlatformDetails, OperatingSystem, PowerShellExeFinder
 } from "./platform";
@@ -108,6 +108,13 @@ function registerHandlers(
     context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(editor => {
         if (editor && editor.languageId == "powershell") {
             updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+        }
+    }));
+
+    //do the analysis when the file is saved
+    context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(editor => {
+        if (editor && editor.document.languageId == "powershell") {
+            refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
         }
     }));
 }

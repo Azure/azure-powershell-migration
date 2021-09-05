@@ -43,7 +43,7 @@ export class PowershellProcess {
             await this.restart();
         }
 
-        const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json`;
+        const command = `New-AzUpgradeModulePlan -FilePath ${filePath} -FromAzureRmVersion ${azureRmVersion} -ToAzVersion ${azVersion} | ConvertTo-Json -depth 10`;
         this.powershell.addCommand(command);
         const planResult = await this.powershell.invoke();
 

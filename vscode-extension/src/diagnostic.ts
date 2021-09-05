@@ -8,6 +8,8 @@ import { Logger } from "./logging";
 import { UpgradePlan } from "./types/migraion";
 import { SuggestedCorrection } from './types/PSScriptAnalyzer';
 import path = require('path');
+import fs = require("fs");
+import { sleep } from './utils';
 /**
  * Updates all the diagnostics items in document.
  * @param documentUri : file path
@@ -45,7 +47,6 @@ export async function updateDiagnostics(
         let diagnostics: vscode.Diagnostic[] = [];
         if (planResult) {
             diagnostics = formatPlanstToDiag(planResult, log, diagnostics);
-            log.write(`Diagnostics Number : ${diagnostics.length}  `);
         }
         else {
             log.write(`This file is not need to be migrated.`);
@@ -55,7 +56,7 @@ export async function updateDiagnostics(
             diagnostics = formatPsaSuggestsToDiag(PSAResult, log, diagnostics);
         }
 
-
+        log.write(`Diagnostics Number : ${diagnostics.length}  `);
         diagcCollection.set(documentUri, diagnostics);
 
 
@@ -158,4 +159,67 @@ function formatPsaSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vsc
     );
 
     return diagnostics;
+}
+
+
+/**
+ * Updates all the diagnostics items in document.
+ * @param content : content of changed file
+ * @param documentUri : file path
+ * @param diagcCollection : manage the diagnostics
+ * @param powershell : powershell process manager
+ * @param azureRmVersion : version of azureRM
+ * @param azVersion : version of az
+ * @param log : Logger
+ */
+export async function refreshDiagnosticsChange(
+    content: string,
+    documentUri: vscode.Uri,
+    diagcCollection: vscode.DiagnosticCollection,
+    powershell: PowershellProcess,
+    azureRmVersion: string,
+    azVersion: string,
+    log: Logger): Promise<void> {
+    if (content) {
+        //write the content of changed file into tempfile
+        const tempFilePath = path.resolve(__dirname, "../src/migTempFile.ps1");
+        const writeStream = fs.createWriteStream(tempFilePath);
+        writeStream.write(content);
+        writeStream.close();
+        await sleep(500);   //avoid the conflict of write and read
+
+        //exec the migration powershell command
+        let planResult: string;
+        let PSAResult: string;
+        try {
+            log.write(`Start analyzing ${documentUri.fsPath}`);
+            planResult = await powershell.getUpgradePlan(tempFilePath, azureRmVersion, azVersion);
+            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
+            log.write(`Start analyzing ${documentUri.fsPath}`);
+            PSAResult = await powershell.getCustomAlias(tempFilePath, settingPSA);
+            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+        }
+        catch (e) {
+            log.writeError(`Error: Node-Powershell failed.`);
+        }
+
+        //update the content of diagnostic
+        let diagnostics: vscode.Diagnostic[] = [];
+        if (planResult) {
+            diagnostics = formatPlanstToDiag(planResult, log, diagnostics);
+
+        }
+        else {
+            log.write(`This file is not need to be migrated.`);
+        }
+
+        if (PSAResult) {
+            diagnostics = formatPsaSuggestsToDiag(PSAResult, log, diagnostics);
+        }
+
+        log.write(`Diagnostics Number : ${diagnostics.length}  `);
+        diagcCollection.set(documentUri, diagnostics);
+    }
+
 }
