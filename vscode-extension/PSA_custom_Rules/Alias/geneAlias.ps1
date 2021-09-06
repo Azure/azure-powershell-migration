@@ -1,3 +1,5 @@
+#generate the json file includes alias information
+
 $aliasResults = @{}
 
 $matchPattern = "(\b[a-zA-z]+-?[a-zA-z]+\b)"

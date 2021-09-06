@@ -1,4 +1,4 @@
-
+#load the alias from the json file
 
 function Get-AliasSpec {
     param (

@@ -111,7 +111,7 @@ function registerHandlers(
         }
     }));
 
-    //do the analysis when the file is saved
+    //do the analysis when the file is changed
     context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(editor => {
         if (editor && editor.document.languageId == "powershell") {
             refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);

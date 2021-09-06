@@ -1,4 +1,4 @@
-
+#load the breaking change from the json file
 
 function Get-BreakingChangeSpec {
     param (

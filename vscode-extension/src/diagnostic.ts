@@ -31,13 +31,13 @@ export async function updateDiagnostics(
         let planResult: string;
         let PSAResult: string;
         try {
-            log.write(`Start analyzing ${documentUri.fsPath}`);
+            log.write(`Start analyzing ${documentUri.fsPath} by Az.Tools.Migration.`);
             planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
-            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            log.write(`Migrate Success. -- ${documentUri.fsPath} .`);
             const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
-            log.write(`Start analyzing ${documentUri.fsPath}`);
+            log.write(`Start analyzing ${documentUri.fsPath} by PowershellScriptAnalyzer custom rules.`);
             PSAResult = await powershell.getCustomAlias(documentUri.fsPath, settingPSA);
-            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            log.write(`PSA analyse Success. -- ${documentUri.fsPath} .`);
         }
         catch (e) {
             log.writeError(`Error: Node-Powershell failed.`);
@@ -55,6 +55,9 @@ export async function updateDiagnostics(
         if (PSAResult) {
             diagnostics = formatPsaSuggestsToDiag(PSAResult, log, diagnostics);
         }
+        else {
+            log.write(`This file has no alias or breakingchange.`);
+        }
 
         log.write(`Diagnostics Number : ${diagnostics.length}  `);
         diagcCollection.set(documentUri, diagnostics);
@@ -67,7 +70,7 @@ export async function updateDiagnostics(
 }
 
 /**
- * Format the palnStr to diganostic.
+ * Format the palnStr of migration to diganostic.
  * @param plansStr : The result(string) of migration.
  * @param log : Logger
  * @returns : diagnostics
@@ -112,9 +115,10 @@ function formatPlanstToDiag(plansStr: string, log: Logger, diagnostics: vscode.D
 
 
 /**
- * Format the palnStr to diganostic.
- * @param plansStr : The result(string) of migration.
+ * Format the palnStr of PSA to diganostic.
+ * @param plansStr : The result(string) of PSA.
  * @param log : Logger
+ * @param diagnostics: original diagnostics list
  * @returns : diagnostics
  */
 function formatPsaSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vscode.Diagnostic[]): vscode.Diagnostic[] {
@@ -150,7 +154,7 @@ function formatPsaSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vsc
             if (plan.Description === "The alias can be changed to be formal name.") {
                 diagnostic.code = "Alias";
             }
-            else if (plan.Description === "Breakingchange") {
+            else {
                 diagnostic.code = "BreakingChange";
             }
             diagnostic.source = plan.Text;
@@ -163,7 +167,7 @@ function formatPsaSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vsc
 
 
 /**
- * Updates all the diagnostics items in document.
+ * Refresh the diagnostics when the file is changed.
  * @param content : content of changed file
  * @param documentUri : file path
  * @param diagcCollection : manage the diagnostics
@@ -192,13 +196,13 @@ export async function refreshDiagnosticsChange(
         let planResult: string;
         let PSAResult: string;
         try {
-            log.write(`Start analyzing ${documentUri.fsPath}`);
+            log.write(`Start analyzing ${documentUri.fsPath} by Az.Tools.Migration.`);
             planResult = await powershell.getUpgradePlan(tempFilePath, azureRmVersion, azVersion);
-            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            log.write(`Migrate Success. -- ${documentUri.fsPath} .`);
             const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
-            log.write(`Start analyzing ${documentUri.fsPath}`);
+            log.write(`Start analyzing ${documentUri.fsPath} by PowershellScriptAnalyzer custom rules.`);
             PSAResult = await powershell.getCustomAlias(tempFilePath, settingPSA);
-            log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
+            log.write(`PSA analyse Success. -- ${documentUri.fsPath} .`);
         }
         catch (e) {
             log.writeError(`Error: Node-Powershell failed.`);
@@ -216,6 +220,9 @@ export async function refreshDiagnosticsChange(
 
         if (PSAResult) {
             diagnostics = formatPsaSuggestsToDiag(PSAResult, log, diagnostics);
+        }
+        else {
+            log.write(`This file has no alias or breakingchange.`);
         }
 
         log.write(`Diagnostics Number : ${diagnostics.length}  `);

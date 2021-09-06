@@ -2,18 +2,15 @@
 
 <#
 .SYNOPSI
-    Uses #Requires -RunAsAdministrator instead of your own methods.
+    Avoid alias in powershell script.
 .DESCRIPTION
-    The #Requires statement prevents a script from running unless the Windows PowerShell version, modules, snap-ins, and module and snap-in version prerequisites are met.
-    From Windows PowerShell 4.0, the #Requires statement let script developers require that sessions be run with elevated user rights (run as Administrator).
-    Script developers does not need to write their own methods any more.
-    To fix a violation of this rule, please consider to use #Requires -RunAsAdministrator instead of your own methods.
+    Find all aliases that appear in the powershell script. And give the suggestion to change them to formal name.
 .EXAMPLE
-    Measure-RequiresRunAsAdministrator -ScriptBlockAst $ScriptBlockAst
+    Measure-AvoidAlias -ScriptBlockAst $ScriptBlockAst
 .INPUTS
     [System.Management.Automation.Language.ScriptBlockAst]
 .OUTPUTS
-    [OutputType([PSCustomObject[])]
+    [OutputType([Microsoft.Windows.Powershell.ScriptAnalyzer.Generic.DiagnosticRecord[]])]
 .NOTES
     None
 #>
@@ -43,7 +40,7 @@ function Measure-AvoidAlias {
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
     
-
+        #list of CorrectionExtents
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
         foreach ($cmdletReference in $foundCmdlets) {
@@ -66,10 +63,10 @@ function Measure-AvoidAlias {
 
         $extent = $null
         
+        #returned anaylse results
         $dr = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
-        $dr.SuggestedCorrections = $l
         $results += $dr
         return $results
     }

@@ -1,3 +1,5 @@
+#generate the json includes breaking change information
+
 #install-module azpreview
 
 class getBreakingchangeResult{
