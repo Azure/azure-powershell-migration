@@ -187,7 +187,7 @@ export async function refreshDiagnosticsChange(
     log: Logger): Promise<void> {
     if (content) {
         //write the content of changed file into tempfile
-        const tempFilePath = path.resolve(__dirname, "../src/migTempFile.ps1");
+        const tempFilePath = path.resolve(__dirname, "../migTempFile.ps1");
         const writeStream = fs.createWriteStream(tempFilePath);
         writeStream.write(content);
         writeStream.close();
