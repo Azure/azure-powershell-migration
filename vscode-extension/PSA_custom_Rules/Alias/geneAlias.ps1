@@ -1,10 +1,17 @@
 #generate the json file includes alias information
 
+$az_modules = gmo az.* -ListAvailable | Where-object {$_.Name -ne "Az.Tools.Migration"}
+for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
+    import-module $az_modules[$i].name
+}
+
 $aliasResults = @{}
 
 $matchPattern = "(\b[a-zA-z]+-?[a-zA-z]+\b)"
+$matchPatternFormalName = "(\b[a-zA-z]+-?[Az][a-zA-z]+\b)"
 $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
-$aliasCmdlets = get-alias | where-object {$cmdletRegex.IsMatch($_.Name)}
+$cmdletRegexFormal = New-Object System.Text.RegularExpressions.Regex($matchPatternFormalName)
+$aliasCmdlets = get-alias | where-object {$cmdletRegex.IsMatch($_.Name) -and $cmdletRegexFormal.IsMatch($_.ReferencedCommand.Name)}
 
 for ([int]$i = 0; $i -lt $aliasCmdlets.Count; $i++){
     $aliasCmdlet = $aliasCmdlets[$i]
@@ -30,11 +37,11 @@ $results["para_cmdlet"] = @{}
 
  $results["updateTime"] = $results["updateTime"].ToString()
 
-$az_modules = gmo az.* -ListAvailable | Where-object {$_.Name -ne "Az.Tools.Migration"}
+
 
 for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
 
-    import-module $az_modules[$i].name
+    # import-module $az_modules[$i].name
     $module = get-module $az_modules[$i].name
 
     $exportedCmdlets = $module.ExportedCmdlets
@@ -43,7 +50,6 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
         $Cmdlet = $exportedCmdlets[$key]
 
         #attributes of parameters in cmdlet
-        
         $results["para_cmdlet"][$Cmdlet.Name] = @{}
         
         foreach ($parameter_key in $Cmdlet.Parameters.keys){
