@@ -111,6 +111,6 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
 
 }
 $json = $results | ConvertTo-Json
-$json > breakingchange.json
+$json > BreakingchangeSpec.json
 
 

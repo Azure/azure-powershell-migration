@@ -36,11 +36,12 @@ export async function updateDiagnostics(
             log.write(`Migrate Success. -- ${documentUri.fsPath} .`);
             const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
             log.write(`Start analyzing ${documentUri.fsPath} by PowershellScriptAnalyzer custom rules.`);
-            PSAResult = await powershell.getCustomAlias(documentUri.fsPath, settingPSA);
+            PSAResult = await powershell.getCustomSuggestions(documentUri.fsPath, settingPSA);
             log.write(`PSA analyse Success. -- ${documentUri.fsPath} .`);
         }
         catch (e) {
             log.writeError(`Error: Node-Powershell failed.`);
+            log.writeError(e.message);
         }
 
         //update the content of diagnostic
@@ -201,11 +202,12 @@ export async function refreshDiagnosticsChange(
             log.write(`Migrate Success. -- ${documentUri.fsPath} .`);
             const settingPSA = path.resolve(__dirname, "../PSA_custom_Rules/CustomRules.psm1");
             log.write(`Start analyzing ${documentUri.fsPath} by PowershellScriptAnalyzer custom rules.`);
-            PSAResult = await powershell.getCustomAlias(tempFilePath, settingPSA);
+            PSAResult = await powershell.getCustomSuggestions(tempFilePath, settingPSA);
             log.write(`PSA analyse Success. -- ${documentUri.fsPath} .`);
         }
         catch (e) {
             log.writeError(`Error: Node-Powershell failed.`);
+            log.writeError(e.message);
         }
 
         //update the content of diagnostic

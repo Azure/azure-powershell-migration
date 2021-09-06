@@ -34,8 +34,8 @@ function Measure-AvoidAlias {
         Import-Module $getAliasSpecFunctionFile
 
         #get the alias mapping data
-        $aliasSpecFile = ".\PSA_custom_Rules\Alias\aliasTocmdlet.json"
-        $aliasTocmdlets = Get-AliasSpec -AliasPath $aliasSpecFile
+        $aliasSpecFile = ".\PSA_custom_Rules\Alias\AliasSpec.json"
+        $AliasSpec = Get-AliasSpec -AliasPath $aliasSpecFile
 
         # get the commandAst in the file
         $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
@@ -44,18 +44,35 @@ function Measure-AvoidAlias {
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
         foreach ($cmdletReference in $foundCmdlets) {
-            if ($aliasTocmdlets.psobject.properties.match($cmdletReference.CommandName).Count) {
+            if ($AliasSpec.cmdlet.psobject.properties.match($cmdletReference.CommandName).Count) {
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
                 [int]$endColumnNumber = $cmdletReference.EndPosition
-                [string]$correction = $aliasTocmdlets.($cmdletReference.CommandName)
+                [string]$correction = $AliasSpec.cmdlet.($cmdletReference.CommandName)
                 [string]$filePath = $cmdletReference.FullPath
                 [string]$optionalDescription = 'The alias can be changed to be formal name.'
 
                 $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $l.Add($c)
                 
+            }
+
+            if ($AliasSpec.para_cmdlet.psobject.properties.match($cmdletReference.CommandName).Count){
+                foreach ($para in $cmdletReference.parameters){
+                    if ($AliasSpec.para_cmdlet.($cmdletReference.CommandName).psobject.properties.match($para.Name).Count){
+                        [int]$startLineNumber = $para.StartLine
+                        [int]$endLineNumber = $para.EndLine
+                        [int]$startColumnNumber = $para.StartColumn
+                        [int]$endColumnNumber = $para.EndPosition
+                        [string]$correction = $AliasSpec.para_cmdlet.($cmdletReference.CommandName).($para.Name)
+                        [string]$filePath = $para.FullPath
+                        [string]$optionalDescription = 'The alias can be changed to be formal name.'
+
+                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                        $l.Add($c)
+                    }
+                }
             }
         }
         
@@ -67,6 +84,7 @@ function Measure-AvoidAlias {
         $dr = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
+        $dr.SuggestedCorrections = $l
         $results += $dr
         return $results
     }

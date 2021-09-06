@@ -50,7 +50,7 @@ export class PowershellProcess {
         return planResult;
     }
 
-    public async getCustomAlias(filePath: string, settingPath: string): Promise<string> {
+    public async getCustomSuggestions(filePath: string, settingPath: string): Promise<string> {
         //ignore errors through "-ErrorAction SilentlyContinue"
         const command = `Invoke-ScriptAnalyzer -Path ${filePath} -Settings ${settingPath} -ErrorAction SilentlyContinue| ConvertTo-Json -depth 10`;
         this.powershell.addCommand(command);

@@ -35,7 +35,7 @@ function Measure-UpcomingBreakingChange {
         Import-Module $getBreakingchangeSpecFunctionFile
 
         #get the alias mapping data
-        $breakingChangePath = ".\PSA_custom_Rules\BreakingChange\breakingchange.json"
+        $breakingChangePath = ".\PSA_custom_Rules\BreakingChange\BreakingchangeSpec.json"
         $breakingchanges = Get-BreakingChangeSpec -BreakingChangePath $breakingChangePath
 
         # get the commandAst in the file
@@ -118,6 +118,7 @@ function Measure-UpcomingBreakingChange {
         $dr = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
+        $dr.SuggestedCorrections = $l
         $results += $dr
         return $results
     }
