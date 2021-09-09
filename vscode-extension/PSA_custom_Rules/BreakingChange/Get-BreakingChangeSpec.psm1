@@ -39,3 +39,4 @@ function Get-BreakingChangeSpec {
     
     return $breakingchanges
 }
+Export-ModuleMember -Function Get-BreakingChangeSpec

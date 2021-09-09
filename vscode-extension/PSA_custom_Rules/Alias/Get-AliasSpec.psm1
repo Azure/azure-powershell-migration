@@ -14,3 +14,4 @@ function Get-AliasSpec {
     
     return $aliasTocmdlets
 }
+Export-ModuleMember -Function Get-AliasSpec

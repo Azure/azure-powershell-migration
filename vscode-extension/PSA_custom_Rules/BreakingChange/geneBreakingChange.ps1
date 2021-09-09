@@ -30,7 +30,7 @@ $results["para_cmdlet"] = @()
 
  $results["updateTime"] = $results["updateTime"].ToString()
 
-$az_modules = gmo az.* -ListAvailable | Where-object {$_.Name -ne "Az.Tools.Migration"}
+$az_modules = Get-Module az.* -ListAvailable | Where-object {$_.Name -ne "Az.Tools.Migration"}
 
 for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
 

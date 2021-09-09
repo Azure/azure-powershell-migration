@@ -47,7 +47,7 @@ function Measure-UpcomingBreakingChange {
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute" = "The parameter is changing."
         }
 
-        $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
+        $corrections = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
 
         foreach ($cmdletReference in $cmdletBreakingchange) {
@@ -62,7 +62,7 @@ function Measure-UpcomingBreakingChange {
                 [string]$optionalDescription = $typesToMessages[$type]
 
                 $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                $l.Add($c)
+                $corrections.Add($c)
             }
 
             if ($breakingchanges.paraCmdlets.Keys -contains $cmdletReference.CommandName) {
@@ -77,7 +77,7 @@ function Measure-UpcomingBreakingChange {
                     [string]$optionalDescription = $typesToMessages[$type]
 
                     $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                    $l.Add($c)
+                    $corrections.Add($c)
                 }
                 foreach ($para in $cmdletReference.parameters) {
                     if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name) {
@@ -91,7 +91,7 @@ function Measure-UpcomingBreakingChange {
                         [string]$optionalDescription = $typesToMessages[$type]
 
                         $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                        $l.Add($c)
+                        $corrections.Add($c)
                     }
                     else {
                         $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
@@ -104,7 +104,7 @@ function Measure-UpcomingBreakingChange {
                         [string]$optionalDescription = $typesToMessages[$type]
 
                         $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                        $l.Add($c)
+                        $corrections.Add($c)
                         break
                     }
                 }
@@ -115,11 +115,11 @@ function Measure-UpcomingBreakingChange {
 
         $extent = $null
         
-        $dr = New-Object `
+        $diagRecord = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
-            -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
-        $dr.SuggestedCorrections = $l
-        $results += $dr
+            -ArgumentList "This arugment is not used.", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections
+        $diagRecord.SuggestedCorrections = $corrections
+        $results += $diagRecord
         return $results
     }
 }

@@ -44,30 +44,38 @@ function Measure-AvoidAlias {
         $corrections = (New-Object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
         foreach ($cmdletReference in $cmdletUsingAlias) {
+            # If the cmdlet is in the cmdlets alias list
             if ($AliasSpec.cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count) {
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
                 [int]$endColumnNumber = $cmdletReference.EndPosition
-                [string]$correction = $AliasSpec.cmdlet.($cmdletReference.CommandName)
+                [string]$CommandName = $cmdletReference.CommandName
+                [string]$correction = $AliasSpec.cmdlet.($CommandName)
                 [string]$filePath = $cmdletReference.FullPath
-                [string]$optionalDescription = 'The alias can be changed to be formal name.'
+                [string]$optionalDescription = 
+                "'$CommandName' is an alias of '$correction'. Alias can introduce possible problems and make scripts hard to maintain. Please consider changing alias to its full content."
 
                 $c = (New-Object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $corrections.Add($c)
                 
             }
 
+            # If the cmdlet has one or more parameters having alias
             if ($AliasSpec.para_cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count){
                 foreach ($para in $cmdletReference.parameters){
+                    # If the cmdlet parameters list in alias spec contains the parameter
                     if ($AliasSpec.para_cmdlet.($cmdletReference.CommandName).psobject.properties.match($para.Name).Count){
                         [int]$startLineNumber = $para.StartLine
                         [int]$endLineNumber = $para.EndLine
                         [int]$startColumnNumber = $para.StartColumn
                         [int]$endColumnNumber = $para.EndPosition
-                        [string]$correction = $AliasSpec.para_cmdlet.($cmdletReference.CommandName).($para.Name)
+                        [string]$CommandName = $cmdletReference.CommandName
+                        [string]$ParameterName = $para.Name
+                        [string]$correction = $AliasSpec.para_cmdlet.($CommandName).($ParameterName)
                         [string]$filePath = $para.FullPath
-                        [string]$optionalDescription = 'The alias can be changed to be formal name.'
+                        [string]$optionalDescription = 
+                        "'$ParameterName' is an alias of '$correction' in the cmdlet '$CommandName'. Alias can introduce possible problems and make scripts hard to maintain. Please consider changing alias to its full content."
 
                         $c = (New-Object  Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                         $corrections.Add($c)
@@ -81,11 +89,11 @@ function Measure-AvoidAlias {
         $extent = $null
         
         #returned anaylse results
-        $dr = New-Object  `
+        $diagRecord  = New-Object  `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
-            -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections
-        $dr.SuggestedCorrections = $corrections
-        $results += $dr
+            -ArgumentList "This arugment is not used.", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections
+        $diagRecord.SuggestedCorrections = $corrections
+        $results += $diagRecord
         return $results
     }
 }
