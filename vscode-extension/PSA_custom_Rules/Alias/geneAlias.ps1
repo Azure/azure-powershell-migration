@@ -7,8 +7,8 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
 
 $aliasResults = @{}
 
-$matchPattern = "(\b[a-zA-z]+-?[a-zA-z]+\b)"
-$matchPatternFormalName = "(\b[a-zA-z]+-?[Az][a-zA-z]+\b)"
+$matchPattern = "(\b[a-zA-z]+-?[a-zA-z]+\b)"    # matches any alias
+$matchPatternFormalName = "(\b[a-zA-z]+-?[Az][a-zA-z]+\b)"  # matches formal names of Az cmdlets
 $cmdletRegex = New-Object System.Text.RegularExpressions.Regex($matchPattern)
 $cmdletRegexFormal = New-Object System.Text.RegularExpressions.Regex($matchPatternFormalName)
 $aliasCmdlets = get-alias | where-object {$cmdletRegex.IsMatch($_.Name) -and $cmdletRegexFormal.IsMatch($_.ReferencedCommand.Name)}
@@ -17,11 +17,6 @@ for ([int]$i = 0; $i -lt $aliasCmdlets.Count; $i++){
     $aliasCmdlet = $aliasCmdlets[$i]
     $aliasResults[$aliasCmdlet.Name] = $aliasCmdlet.ReferencedCommand.Name
 }
-
-# $json = $aliasResults | ConvertTo-Json
-# $json > aliasTocmdlet.json
-
-
 
 class getBreakingchangeResult_paraCmdlet{
     [System.String] $Name
@@ -35,7 +30,7 @@ $results["updateTime"] = Get-Date
 $results["cmdlet"] = $aliasResults
 $results["para_cmdlet"] = @{}
 
- $results["updateTime"] = $results["updateTime"].ToString()
+$results["updateTime"] = $results["updateTime"].ToString()
 
 
 
@@ -60,19 +55,8 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
                 $paraFormal = $parameter_key
                 $results["para_cmdlet"][$Cmdlet.Name][$paraAlias] = $paraFormal
             }
-            
-
-            
-            
         }
-
-        
-
-
     }
-    
-
-
 }
 $json = $results | ConvertTo-Json -depth 10
 $json > AliasSpec.json

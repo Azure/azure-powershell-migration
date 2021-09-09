@@ -22,7 +22,7 @@ function Measure-AvoidAlias {
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.Management.Automation.Language.ScriptBlockAst]
-        $testAst
+        $scriptAst
     )
     
     Process {
@@ -38,13 +38,13 @@ function Measure-AvoidAlias {
         $AliasSpec = Get-AliasSpec -AliasPath $aliasSpecFile
 
         # get the commandAst in the file
-        $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
+        $cmdletUsingAlias = Find-CmdletsInFile -RootAstNode $scriptAst
     
         #list of CorrectionExtents
-        $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
+        $corrections = (New-Object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
-        foreach ($cmdletReference in $foundCmdlets) {
-            if ($AliasSpec.cmdlet.psobject.properties.match($cmdletReference.CommandName).Count) {
+        foreach ($cmdletReference in $cmdletUsingAlias) {
+            if ($AliasSpec.cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count) {
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
@@ -53,12 +53,12 @@ function Measure-AvoidAlias {
                 [string]$filePath = $cmdletReference.FullPath
                 [string]$optionalDescription = 'The alias can be changed to be formal name.'
 
-                $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                $l.Add($c)
+                $c = (New-Object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                $corrections.Add($c)
                 
             }
 
-            if ($AliasSpec.para_cmdlet.psobject.properties.match($cmdletReference.CommandName).Count){
+            if ($AliasSpec.para_cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count){
                 foreach ($para in $cmdletReference.parameters){
                     if ($AliasSpec.para_cmdlet.($cmdletReference.CommandName).psobject.properties.match($para.Name).Count){
                         [int]$startLineNumber = $para.StartLine
@@ -69,8 +69,8 @@ function Measure-AvoidAlias {
                         [string]$filePath = $para.FullPath
                         [string]$optionalDescription = 'The alias can be changed to be formal name.'
 
-                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                        $l.Add($c)
+                        $c = (New-Object  Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                        $corrections.Add($c)
                     }
                 }
             }
@@ -81,10 +81,10 @@ function Measure-AvoidAlias {
         $extent = $null
         
         #returned anaylse results
-        $dr = New-Object `
+        $dr = New-Object  `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
-            -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $l
-        $dr.SuggestedCorrections = $l
+            -ArgumentList "This is help", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections
+        $dr.SuggestedCorrections = $corrections
         $results += $dr
         return $results
     }

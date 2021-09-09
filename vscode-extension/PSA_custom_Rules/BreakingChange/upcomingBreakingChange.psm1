@@ -23,7 +23,7 @@ function Measure-UpcomingBreakingChange {
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.Management.Automation.Language.ScriptBlockAst]
-        $testAst
+        $scriptAst
     )
     
     Process {
@@ -39,7 +39,7 @@ function Measure-UpcomingBreakingChange {
         $breakingchanges = Get-BreakingChangeSpec -BreakingChangePath $breakingChangePath
 
         # get the commandAst in the file
-        $foundCmdlets = Find-CmdletsInFile -rootAstNode $testAst
+        $cmdletBreakingchange = Find-CmdletsInFile -RootAstNode $scriptAst
         $typesToMessages = @{
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute"         = "The breaking change is expected to take effect from the next version.";
             "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"             = "The cmdlet is being deprecated. There will be no replacement for it.";
@@ -50,7 +50,7 @@ function Measure-UpcomingBreakingChange {
         $l = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
 
-        foreach ($cmdletReference in $foundCmdlets) {
+        foreach ($cmdletReference in $cmdletBreakingchange) {
             if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName) {
                 $type = $breakingchanges.cmdlets[$cmdletReference.CommandName]
                 [int]$startLineNumber = $cmdletReference.StartLine
