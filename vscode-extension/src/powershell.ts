@@ -7,6 +7,7 @@ import { Logger } from "./logging";
 import * as process from "process";
 import path = require("path");
 import fs = require("fs");
+import { Z_FIXED } from "zlib";
 
 /**
  * Manage the powershell process.
@@ -23,15 +24,18 @@ export class PowershellProcess {
             noProfile: true
         });
 
-
-        const PSASourcePath = path.resolve(__dirname, "../PSA_custom_Rules");
-        this.powershell.addCommand(`(get-location).Path`);
-        const PSAExecPath = await this.powershell.invoke();
-        if (!fs.existsSync(path.resolve(PSAExecPath, "PSA_custom_Rules"))) {
+        const flagFilePath = path.resolve(__dirname, "../PSAExecPath.txt");    //if flagFile already exists, we've copied the CustomRules files to powershell execution path before
+        if (!fs.existsSync(flagFilePath)) {
+            const PSASourcePath = path.resolve(__dirname, "../PSA_custom_Rules");
+            this.powershell.addCommand(`$pwd.Path`);
+            const PSAExecPath = await this.powershell.invoke();
             //copy the custom rule files to powershell execution path
             const mklinkCommand = `Copy-Item ${PSASourcePath} -Recurse "${PSAExecPath}"`;
             this.powershell.addCommand(mklinkCommand);
             await this.powershell.invoke();
+            const writeStream = fs.createWriteStream(flagFilePath);
+            writeStream.write(PSAExecPath);
+            writeStream.close();
         }
     }
 
