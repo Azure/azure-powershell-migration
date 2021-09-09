@@ -152,7 +152,7 @@ function formatPsaSuggestsToDiag(plansStr: string, log: Logger, diagnostics: vsc
             const message = plan.Description;
             const diagnostic = new vscode.Diagnostic(range, message);
             diagnostic.severity = vscode.DiagnosticSeverity.Warning;
-            if (plan.Description === "The alias can be changed to be formal name.") {
+            if (plan.Description.includes("alias")) {
                 diagnostic.code = "Alias";
             }
             else {
