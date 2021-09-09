@@ -7,7 +7,6 @@ import { Logger } from "./logging";
 import * as process from "process";
 import path = require("path");
 import fs = require("fs");
-import { Z_FIXED } from "zlib";
 
 /**
  * Manage the powershell process.
