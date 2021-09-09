@@ -118,7 +118,6 @@ function registerHandlers(
     context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(editor => {
         if (editor && editor.document.languageId == "powershell") {
             if (!immediate) {
-                console.log(timer);
                 clearTimeout(timer);
                 timer = setTimeout(() => {
                     refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
