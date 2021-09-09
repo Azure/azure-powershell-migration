@@ -112,9 +112,21 @@ function registerHandlers(
     }));
 
     //do the analysis when the file is changed
+    let immediate = false;  //control immediate or debounce
+    let timer: NodeJS.Timeout;
+    let delay = 1000;
     context.subscriptions.push(vscode.workspace.onDidChangeTextDocument(editor => {
         if (editor && editor.document.languageId == "powershell") {
-            refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+            if (!immediate) {
+                console.log(timer);
+                clearTimeout(timer);
+                timer = setTimeout(() => {
+                    refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log)
+                }, delay);
+            }
+            else {
+                refreshDiagnosticsChange(editor.document.getText(), editor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+            }
         }
     }));
 }

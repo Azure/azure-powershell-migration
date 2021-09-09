@@ -25,9 +25,8 @@ export class PowershellProcess {
 
 
         const PSASourcePath = path.resolve(__dirname, "../PSA_custom_Rules");
-        this.powershell.addCommand(`get-location | ConvertTo-Json`);
-        const res = JSON.parse(await this.powershell.invoke());
-        const PSAExecPath = res['Path'];
+        this.powershell.addCommand(`(get-location).Path`);
+        const PSAExecPath = await this.powershell.invoke();
         if (!fs.existsSync(path.resolve(PSAExecPath, "PSA_custom_Rules"))) {
             //copy the custom rule files to powershell execution path
             const mklinkCommand = `Copy-Item ${PSASourcePath} -Recurse "${PSAExecPath}"`;
