@@ -4,7 +4,7 @@
 .SYNOPSI
     Give the tips in the upcoming breaking change places that there will be changes in the upcoming feature.
 .DESCRIPTION
-    Find all breaking change cmdlets or parameters that appear in the powershell script. 
+    Find all breaking change cmdlets or parameters that appear in the powershell script.
     And give the tips that there will be changes in the feature and which breaking change there will be.
 .EXAMPLE
     Measure-UpcomingBreakingChange -ScriptBlockAst $ScriptBlockAst
@@ -25,7 +25,7 @@ function Measure-UpcomingBreakingChange {
         [System.Management.Automation.Language.ScriptBlockAst]
         $scriptAst
     )
-    
+
     Process {
         $results = @()
         # import functions
@@ -48,7 +48,6 @@ function Measure-UpcomingBreakingChange {
         }
 
         $corrections = (new-object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
-
 
         foreach ($cmdletReference in $cmdletBreakingchange) {
             if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName) {
@@ -110,11 +109,9 @@ function Measure-UpcomingBreakingChange {
                 }
             }
         }
-        
-
 
         $extent = $null
-        
+
         $diagRecord = New-Object `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This arugment is not used.", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections

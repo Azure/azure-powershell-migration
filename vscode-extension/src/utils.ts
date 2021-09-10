@@ -2,13 +2,13 @@
  * Copyright (C) Microsoft Corporation. All rights reserved.
  *--------------------------------------------------------*/
 
-"use strict";
+'use strict';
 
-import fs = require("fs");
-import os = require("os");
-import path = require("path");
+import fs = require('fs');
+import os = require('os');
+import path = require('path');
 
-export const PowerShellLanguageId = "powershell";
+export const PowerShellLanguageId = 'powershell';
 
 export function ensurePathExists(targetPath: string): void {
     // Ensure that the path exists
@@ -16,15 +16,15 @@ export function ensurePathExists(targetPath: string): void {
         fs.mkdirSync(targetPath);
     } catch (e) {
         // If the exception isn't to indicate that the folder exists already, rethrow it.
-        if (e.code !== "EEXIST") {
+        if (e.code !== 'EEXIST') {
             throw e;
         }
     }
 }
 
 export function getPipePath(pipeName: string): string {
-    if (os.platform() === "win32") {
-        return "\\\\.\\pipe\\" + pipeName;
+    if (os.platform() === 'win32') {
+        return '\\\\.\\pipe\\' + pipeName;
     } else {
         // Windows uses NamedPipes where non-Windows platforms use Unix Domain Sockets.
         // This requires connecting to the pipe file in different locations on Windows vs non-Windows.
@@ -44,10 +44,15 @@ export interface IEditorServicesSessionDetails {
     debugServicePipeName: string;
 }
 
-export type IReadSessionFileCallback = (details: IEditorServicesSessionDetails) => void;
+export type IReadSessionFileCallback = (
+    details: IEditorServicesSessionDetails
+) => void;
 
-const sessionsFolder = path.resolve(__dirname, "..", "..", "sessions/");
-const sessionFilePathPrefix = path.resolve(sessionsFolder, "PSES-VSCode-" + process.env.VSCODE_PID);
+const sessionsFolder = path.resolve(__dirname, '..', '..', 'sessions/');
+const sessionFilePathPrefix = path.resolve(
+    sessionsFolder,
+    'PSES-VSCode-' + process.env.VSCODE_PID
+);
 
 // Create the sessions path if it doesn't exist already
 ensurePathExists(sessionsFolder);
@@ -60,7 +65,10 @@ export function getDebugSessionFilePath(): string {
     return `${sessionFilePathPrefix}-Debug`;
 }
 
-export function writeSessionFile(sessionFilePath: string, sessionDetails: IEditorServicesSessionDetails): void {
+export function writeSessionFile(
+    sessionFilePath: string,
+    sessionDetails: IEditorServicesSessionDetails
+): void {
     ensurePathExists(sessionsFolder);
 
     const writeStream = fs.createWriteStream(sessionFilePath);
@@ -68,9 +76,10 @@ export function writeSessionFile(sessionFilePath: string, sessionDetails: IEdito
     writeStream.close();
 }
 
-
-export function readSessionFile(sessionFilePath: string): IEditorServicesSessionDetails {
-    const fileContents = fs.readFileSync(sessionFilePath, "utf-8");
+export function readSessionFile(
+    sessionFilePath: string
+): IEditorServicesSessionDetails {
+    const fileContents = fs.readFileSync(sessionFilePath, 'utf-8');
     return JSON.parse(fileContents);
 }
 
@@ -97,14 +106,14 @@ export function getTimestampString(): string {
 }
 
 export function sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export function readAliasFile(aliasFilePath: string): string {
-    const fileContents = fs.readFileSync(aliasFilePath, "utf-8");
+    const fileContents = fs.readFileSync(aliasFilePath, 'utf-8');
     return fileContents;
 }
 
-export const isMacOS: boolean = process.platform === "darwin";
-export const isWindows: boolean = process.platform === "win32";
+export const isMacOS: boolean = process.platform === 'darwin';
+export const isWindows: boolean = process.platform === 'win32';
 export const isLinux: boolean = !isMacOS && !isWindows;

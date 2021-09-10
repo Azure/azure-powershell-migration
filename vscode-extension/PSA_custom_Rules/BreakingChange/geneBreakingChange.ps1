@@ -1,26 +1,23 @@
 #generate the json includes breaking change information
 
-#install-module azpreview
-
-class breakingchangeResult{
+class breakingchangeResult {
     [System.String] $Name
     [System.String] $TypeBreakingChange
 }
 
-class breakingchangeParaFunc{
+class breakingchangeParaFunc {
     [System.String] $Name
     [System.String] $TypeBreakingChange
     [System.String] $FuncName
 }
 
-class breakingchangeParaCmdlet{
+class breakingchangeParaCmdlet {
     [System.String] $Name
     [System.String] $TypeBreakingChange
     [System.String] $CmdletName
 }
 
-$results = @{
-}
+$results = @{}
 
 $results["updateTime"] = Get-Date
 $results["func"] = @()
@@ -28,27 +25,25 @@ $results["cmdlet"] = @()
 $results["para_func"] = @()
 $results["para_cmdlet"] = @()
 
- $results["updateTime"] = $results["updateTime"].ToString()
+$results["updateTime"] = $results["updateTime"].ToString()
 
-$az_modules = Get-Module az.* -ListAvailable | Where-object {$_.Name -ne "Az.Tools.Migration"}
+$az_modules = Get-Module az.* -ListAvailable | Where-object { $_.Name -ne "Az.Tools.Migration" }
 
-for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
+for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
 
-    
     import-module $az_modules[$i].name
     $module = get-module $az_modules[$i].name
 
     $exportedFunctions = $module.ExportedFunctions
     $exportedCmdlets = $module.ExportedCmdlets
 
-
-    foreach ($key in $exportedFunctions.Keys){
+    foreach ($key in $exportedFunctions.Keys) {
         $func = $exportedFunctions[$key]
-        
+
         #attributes of functions
-        foreach ($Attribute in $func.ScriptBlock.Attributes){
-            
-            if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute"  -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
+        foreach ($Attribute in $func.ScriptBlock.Attributes) {
+
+            if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute") {
                 #$Attribute.TypeId.Name
                 $result = New-Object -TypeName breakingchangeResult
                 $result.Name = $func.name
@@ -58,11 +53,11 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
         }
 
         #attributes of parameters in function
-        foreach ($parameter_key in $func.Parameters.keys){
+        foreach ($parameter_key in $func.Parameters.keys) {
             $parameter = $func.Parameters[$parameter_key]
-            for ([int]$k = 0; $k -lt $parameter.Attributes.Count; $k++){
+            for ([int]$k = 0; $k -lt $parameter.Attributes.Count; $k++) {
                 $Attribute = $parameter.Attributes[$k]
-                if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
+                if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute") {
                     #$Attribute.TypeId.Name
                     $result = New-Object -TypeName breakingchangeParaFunc
                     $result.Name = $parameter_key
@@ -74,12 +69,12 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
         }
     }
 
-    foreach ($key in $exportedCmdlets.Keys){
+    foreach ($key in $exportedCmdlets.Keys) {
         $Cmdlet = $exportedCmdlets[$key]
 
         #attributes of cmdlets
-        foreach ($Attribute in $Cmdlet.ImplementingType.CustomAttributes){
-           if ($Attribute.AttributeType.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.AttributeType.Name -eq "GenericBreakingChangeAttribute"){
+        foreach ($Attribute in $Cmdlet.ImplementingType.CustomAttributes) {
+            if ($Attribute.AttributeType.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.AttributeType.Name -eq "GenericBreakingChangeAttribute") {
                 #$Attribute.AttributeType.Name
                 $result = New-Object -TypeName breakingchangeResult
                 $result.Name = $Cmdlet.Name
@@ -89,11 +84,11 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
         }
 
         #attributes of parameters in cmdlet
-        foreach ($parameter_key in $Cmdlet.Parameters.keys){
+        foreach ($parameter_key in $Cmdlet.Parameters.keys) {
             $parameter = $Cmdlet.Parameters[$parameter_key]
-            for ([int]$k = 0; $k -lt $parameter.Attributes.Count; $k++){
+            for ([int]$k = 0; $k -lt $parameter.Attributes.Count; $k++) {
                 $Attribute = $parameter.Attributes[$k]
-                if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute"){
+                if ($Attribute.TypeId.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.TypeId.Name -eq "GenericBreakingChangeAttribute") {
                     # $Attribute.TypeId.Name
                     $result = New-Object -TypeName breakingchangeParaCmdlet
                     $result.Name = $parameter_key
@@ -103,14 +98,7 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++){
                 }
             }
         }
-
-
     }
-    
-
-
 }
 $json = $results | ConvertTo-Json
 $json > BreakingchangeSpec.json
-
-

@@ -24,7 +24,7 @@ function Measure-AvoidAlias {
         [System.Management.Automation.Language.ScriptBlockAst]
         $scriptAst
     )
-    
+
     Process {
         $results = @()
         # import functions
@@ -39,7 +39,7 @@ function Measure-AvoidAlias {
 
         # get the commandAst in the file
         $cmdletUsingAlias = Find-CmdletsInFile -RootAstNode $scriptAst
-    
+
         #list of CorrectionExtents
         $corrections = (New-Object System.Collections.ObjectModel.Collection["Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent"])
 
@@ -53,19 +53,18 @@ function Measure-AvoidAlias {
                 [string]$CommandName = $cmdletReference.CommandName
                 [string]$correction = $AliasSpec.cmdlet.($CommandName)
                 [string]$filePath = $cmdletReference.FullPath
-                [string]$optionalDescription = 
+                [string]$optionalDescription =
                 "'$CommandName' is an alias of '$correction'. Alias can introduce possible problems and make scripts hard to maintain. Please consider changing alias to its full content."
 
                 $c = (New-Object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $corrections.Add($c)
-                
             }
 
             # If the cmdlet has one or more parameters having alias
-            if ($AliasSpec.para_cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count){
-                foreach ($para in $cmdletReference.parameters){
+            if ($AliasSpec.para_cmdlet.Psobject.Properties.Match($cmdletReference.CommandName).Count) {
+                foreach ($para in $cmdletReference.parameters) {
                     # If the cmdlet parameters list in alias spec contains the parameter
-                    if ($AliasSpec.para_cmdlet.($cmdletReference.CommandName).psobject.properties.match($para.Name).Count){
+                    if ($AliasSpec.para_cmdlet.($cmdletReference.CommandName).psobject.properties.match($para.Name).Count) {
                         [int]$startLineNumber = $para.StartLine
                         [int]$endLineNumber = $para.EndLine
                         [int]$startColumnNumber = $para.StartColumn
@@ -74,7 +73,7 @@ function Measure-AvoidAlias {
                         [string]$ParameterName = $para.Name
                         [string]$correction = $AliasSpec.para_cmdlet.($CommandName).($ParameterName)
                         [string]$filePath = $para.FullPath
-                        [string]$optionalDescription = 
+                        [string]$optionalDescription =
                         "'$ParameterName' is an alias of '$correction' in the cmdlet '$CommandName'. Alias can introduce possible problems and make scripts hard to maintain. Please consider changing alias to its full content."
 
                         $c = (New-Object  Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
@@ -83,13 +82,11 @@ function Measure-AvoidAlias {
                 }
             }
         }
-        
-
 
         $extent = $null
-        
+
         #returned anaylse results
-        $diagRecord  = New-Object  `
+        $diagRecord = New-Object  `
             -Typename "Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.DiagnosticRecord" `
             -ArgumentList "This arugment is not used.", $extent, $PSCmdlet.MyInvocation.InvocationName, Warning, "MyRuleSuppressionID", $corrections
         $diagRecord.SuggestedCorrections = $corrections

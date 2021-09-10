@@ -32,7 +32,6 @@ function Find-CmdletsInFile {
         $singleQuoteCharacter = ''''
         $orderedTypeName = 'ordered'
 
-        
         # search for variable assignment statements
         # the goal here is to build a table with the hastable variable sets (if any are present), to support splatted parameter names.
         $recurse = $true
@@ -54,7 +53,7 @@ function Find-CmdletsInFile {
                     $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
                     $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
 
-                    # capture the hashtable key name extents. 
+                    # capture the hashtable key name extents.
                     # -- the tuple's .Item1 contains the key name AST (which may represent a splatted parameter name).
                     # -- the tuple's .Item2 contains the key value AST (we dont need to capture this)
                     # -- also make sure to only grab hashtable key names that come from ConstantExpressionAst (to avoid unsupported subexpression keyname scenarios).
@@ -72,7 +71,7 @@ function Find-CmdletsInFile {
 
                     $htVariableName = $currentVarAstNode.Left.VariablePath.UserPath
                     $hashtableVariables[$htVariableName] = New-Object -TypeName 'System.Collections.Generic.List[System.Management.Automation.Language.StringConstantExpressionAst]'
-                    
+
                     foreach ($expressionAst in $currentVarAstNode.Right.Expression.Child.KeyValuePairs) {
                         if ($expressionAst.Item1 -is [System.Management.Automation.Language.StringConstantExpressionAst]) {
                             $hashtableVariables[$htVariableName].Add($expressionAst.Item1)
@@ -177,7 +176,6 @@ function Find-CmdletsInFile {
                         }
                     }
                 }
-
                 Write-Output -InputObject $cmdletRef
             }
         }

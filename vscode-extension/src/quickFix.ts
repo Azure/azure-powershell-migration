@@ -26,14 +26,20 @@ export class QuickFixProvider implements vscode.CodeActionProvider {
         vscode.CodeActionKind.QuickFix
     ];
 
-    public provideCodeActions(document: vscode.TextDocument, range: vscode.Range | vscode.Selection, context: vscode.CodeActionContext): vscode.CodeAction[] {
-
-        return context.diagnostics.map(diagnostic => this.getAutoFixCodeAction(diagnostic));
-
+    public provideCodeActions(
+        document: vscode.TextDocument,
+        range: vscode.Range | vscode.Selection,
+        context: vscode.CodeActionContext
+    ): vscode.CodeAction[] {
+        return context.diagnostics.map((diagnostic) =>
+            this.getAutoFixCodeAction(diagnostic)
+        );
     }
 
-    private getAutoFixCodeAction(diagnostic: vscode.Diagnostic): vscode.CodeAction {
-        const fix = new vscode.CodeAction("", vscode.CodeActionKind.QuickFix);
+    private getAutoFixCodeAction(
+        diagnostic: vscode.Diagnostic
+    ): vscode.CodeAction {
+        const fix = new vscode.CodeAction('', vscode.CodeActionKind.QuickFix);
         fix.edit = new vscode.WorkspaceEdit();
         const editor = vscode.window.activeTextEditor;
 
@@ -46,13 +52,13 @@ export class QuickFixProvider implements vscode.CodeActionProvider {
         const targetCmdletName: string = diagnostic.source;
 
         switch (diagnostic.code) {
-            case "RENAME": {
-                fix.title = "Auto fix to " + targetCmdletName;
+            case 'RENAME': {
+                fix.title = 'Auto fix to ' + targetCmdletName;
                 fix.edit.replace(document.uri, range, targetCmdletName);
                 break;
             }
-            case "Alias": {
-                fix.title = "Auto fix to " + targetCmdletName;
+            case 'Alias': {
+                fix.title = 'Auto fix to ' + targetCmdletName;
                 fix.edit.replace(document.uri, range, targetCmdletName);
                 break;
             }

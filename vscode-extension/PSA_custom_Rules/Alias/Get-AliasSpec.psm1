@@ -9,9 +9,10 @@ function Get-AliasSpec {
         [ValidateNotNullOrEmpty()]
         $AliasPath
     )
-    
+
     $aliasTocmdlets = Get-Content $AliasPath | ConvertFrom-Json
-    
+
     return $aliasTocmdlets
 }
+
 Export-ModuleMember -Function Get-AliasSpec
