@@ -14,6 +14,7 @@ import {
 } from './platform';
 import { Logger } from './logging';
 import { PowershellProcess } from './powershell';
+import { debounce } from './utils';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const PackageJSON = require('../package.json');
@@ -43,29 +44,31 @@ export async function activate(
     const azVersion = '6.1.0';
 
     //start a powershell process
+    log.write('Starting PowerShell process...');
     try {
         await powershell.start();
-        log.write('Start powershell successed!');
+        log.write('PowerShell process started successfully.');
     } catch (e) {
-        log.writeError("Can't start the powershell : " + e.message);
+        log.writeError(`Cannot start PowerShell process. Error: ${e.message}.`);
     }
 
     //check for existence of module
-    const moduleExistence = await checkModule(powershell, log);
-    if (moduleExistence) {
-        log.write('The module exist!');
+    log.write('Checking required modules...');
+    if (checkModule(powershell, log)) {
+        log.write('Required modules are installed.');
     } else {
+        log.writeError('Required modules are not installed.');
         return;
     }
 
-    //build the diagnastic
-    const diagcCollection =
+    //initialize the diagnastic collection
+    const diagCollection =
         vscode.languages.createDiagnosticCollection('azps-tools');
 
-    registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
+    registerHandlers(context, diagCollection, azureRmVersion, azVersion, log);
 
     //quick fix action
-    const quickFixProvider = new QuickFixProvider(diagcCollection);
+    const quickFixProvider = new QuickFixProvider(diagCollection);
     context.subscriptions.push(
         vscode.languages.registerCodeActionsProvider(
             { language: 'powershell' },
@@ -102,6 +105,7 @@ function registerHandlers(
     azVersion: string,
     log: Logger
 ): void {
+    // analyze current document - this should only be done once
     if (vscode.window.activeTextEditor) {
         updateDiagnostics(
             vscode.window.activeTextEditor.document.uri,
@@ -116,7 +120,7 @@ function registerHandlers(
     //do the analysis when the file is opened
     context.subscriptions.push(
         vscode.workspace.onDidOpenTextDocument((editor) => {
-            if (editor && editor.languageId == 'powershell') {
+            if (editor && editor.languageId === 'powershell') {
                 updateDiagnostics(
                     editor.uri,
                     diagcCollection,
@@ -132,7 +136,7 @@ function registerHandlers(
     //do the analysis when the file is saved
     context.subscriptions.push(
         vscode.workspace.onDidSaveTextDocument((editor) => {
-            if (editor && editor.languageId == 'powershell') {
+            if (editor && editor.languageId === 'powershell') {
                 updateDiagnostics(
                     editor.uri,
                     diagcCollection,
@@ -146,36 +150,25 @@ function registerHandlers(
     );
 
     //do the analysis when the file is changed
-    const immediate = false; //control immediate or debounce
-    let timer: NodeJS.Timeout;
     const delay = 1000;
+    const debouncedCallback = debounce(
+        (event: vscode.TextDocumentChangeEvent) => {
+            refreshDiagnosticsChange(
+                event.document.getText(),
+                event.document.uri,
+                diagcCollection,
+                powershell,
+                azureRmVersion,
+                azVersion,
+                log
+            );
+        },
+        delay
+    );
     context.subscriptions.push(
-        vscode.workspace.onDidChangeTextDocument((editor) => {
-            if (editor && editor.document.languageId == 'powershell') {
-                if (!immediate) {
-                    clearTimeout(timer);
-                    timer = setTimeout(() => {
-                        refreshDiagnosticsChange(
-                            editor.document.getText(),
-                            editor.document.uri,
-                            diagcCollection,
-                            powershell,
-                            azureRmVersion,
-                            azVersion,
-                            log
-                        );
-                    }, delay);
-                } else {
-                    refreshDiagnosticsChange(
-                        editor.document.getText(),
-                        editor.document.uri,
-                        diagcCollection,
-                        powershell,
-                        azureRmVersion,
-                        azVersion,
-                        log
-                    );
-                }
+        vscode.workspace.onDidChangeTextDocument((event) => {
+            if (event && event.document.languageId === 'powershell') {
+                debouncedCallback(event);
             }
         })
     );
@@ -190,16 +183,15 @@ function registerHandlers(
  */
 function checkModule(powershell: PowershellProcess, log: Logger): boolean {
     let moduleName = 'Az.Tools.Migration';
-    powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
         log.writeAndShowErrorWithActions(
-            'Please install Az.Tools.Migration firstly by yourself.',
+            'Please install the Az.Tools.Migration PowerShell module.',
             [
                 {
                     prompt: 'Get Az.Tools.Migration',
                     action: async () => {
                         const getPSUri = vscode.Uri.parse(
-                            'https://docs.microsoft.com/en-us/powershell/azure/quickstart-migrate-azurerm-to-az-automatically'
+                            'https://docs.microsoft.com/en-us/powershell/azure/quickstart-migrate-azurerm-to-az-automatically#requirements'
                         );
                         vscode.env.openExternal(getPSUri);
                     }
@@ -210,10 +202,9 @@ function checkModule(powershell: PowershellProcess, log: Logger): boolean {
     }
 
     moduleName = 'PSScriptAnalyzer';
-    powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
         log.writeAndShowErrorWithActions(
-            'Please install PSScriptAnalyzer firstly by yourself.',
+            'Please install the PSScriptAnalyzer PowerShell module.',
             [
                 {
                     prompt: 'Get PSScriptAnalyzer',
@@ -252,6 +243,7 @@ function checkPowershell(log: Logger): boolean {
     log.startNewLog('normal');
 
     //check whether the powershell exists
+    log.write('Checking if PowerShell is installed...');
     const powershellExeFinder = new PowerShellExeFinder();
     let powerShellExeDetails;
     try {
@@ -282,7 +274,7 @@ function checkPowershell(log: Logger): boolean {
         ]);
         return false;
     } else {
-        log.write('Have found powershell!');
+        log.write('PowerShell is installed.');
         return true;
     }
 }

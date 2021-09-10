@@ -114,6 +114,28 @@ export function readAliasFile(aliasFilePath: string): string {
     return fileContents;
 }
 
+/**
+ * Return a new function that when run multiple times within `delay`, only the last one will actually run.
+ * @param callback the function you want to debounce
+ * @param delay how long in ms will the callback be called
+ * @returns a new function that has the same input as callback but does not return
+ */
+export function debounce<T, Y extends unknown[]>(
+    callback: Action<T, Y>,
+    delay: number
+): Action<void, Y> {
+    let timer: NodeJS.Timeout;
+    return (...args: Y) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+            callback(...args);
+        }, delay);
+    };
+}
+
+type Action<T, Y extends unknown[]> = (...args: Y) => T;
+
+
 export const isMacOS: boolean = process.platform === 'darwin';
 export const isWindows: boolean = process.platform === 'win32';
 export const isLinux: boolean = !isMacOS && !isWindows;

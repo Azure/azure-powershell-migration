@@ -83,16 +83,14 @@ export class PowershellProcess {
     public async installModule(moduleName: string): Promise<void> {
         const command = `Install-Module "${moduleName}" -Repository PSGallery -Force`;
         this.powershell.addCommand(command);
-        await this.powershell.invoke().then(() => {
-            this.log.write(`Install "${moduleName}" successed`);
-        });
+        await this.powershell.invoke();
+        this.log.write(`Install "${moduleName}" successed`);
     }
 
     //get the env path of ps-modules
     public getSystemModulePath(): string[] {
         if (process.platform === 'win32') {
             //windows
-            //this.systemModulePath = homedir() + "\\Documents\\PowerShell\\Modules\\";
             const PsModulePathes = process.env.PSMODULEPATH.split(';');
             return PsModulePathes;
         } else if (
@@ -100,11 +98,10 @@ export class PowershellProcess {
             process.platform === 'linux'
         ) {
             //Linux or MacOS
-            //this.systemModulePath.push(homedir() + "/.local/share/powershell/Modules: usr/local/share/powershell/Modules");
             const PsModulePathes = process.env.PSMODULEPATH.split(':');
             return PsModulePathes;
         } else {
-            console.log('Unsupported operating system!');
+            this.log.writeError(`Unsupported operating system ${process.platform }`);
             return [];
         }
     }
@@ -117,7 +114,6 @@ export class PowershellProcess {
     //restart the powershell process
     public async restart(): Promise<void> {
         process.kill(this.powershell.pid);
-        //await this.powershell.dispose();
         await this.start();
     }
 }
