@@ -31,7 +31,7 @@ export class PowershellProcess {
             this.powershell.addCommand(`$pwd.Path`);
             const PSAExecPath = await this.powershell.invoke();
             //copy the custom rule files to powershell execution path
-            const mklinkCommand = `Copy-Item ${PSASourcePath} -Recurse "${PSAExecPath}"`;
+            const mklinkCommand = `Copy-Item ${PSASourcePath} -Recurse '${PSAExecPath.trim()}'`;
             this.powershell.addCommand(mklinkCommand);
             await this.powershell.invoke();
             const writeStream = fs.createWriteStream(flagFilePath);
@@ -101,7 +101,7 @@ export class PowershellProcess {
             const PsModulePathes = process.env.PSMODULEPATH.split(':');
             return PsModulePathes;
         } else {
-            this.log.writeError(`Unsupported operating system ${process.platform }`);
+            this.log.writeError(`Unsupported operating system ${process.platform}`);
             return [];
         }
     }
