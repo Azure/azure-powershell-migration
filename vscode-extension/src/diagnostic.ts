@@ -62,7 +62,7 @@ export async function updateDiagnostics(
         //update the content of diagnostic
         let diagnostics: vscode.Diagnostic[] = [];
         if (planResult) {
-            diagnostics = formatPlanstToDiag(planResult, log, diagnostics);
+            diagnostics = formatPlansToDiag(planResult, log, diagnostics);
         } else {
             log.write(`This file is not need to be migrated.`);
         }
@@ -86,14 +86,20 @@ export async function updateDiagnostics(
  * @param log : Logger
  * @returns : diagnostics
  */
-function formatPlanstToDiag(
+function formatPlansToDiag(
     plansStr: string,
     log: Logger,
     diagnostics: vscode.Diagnostic[]
 ): vscode.Diagnostic[] {
-    let plans: UpgradePlan[];
+    let plans: UpgradePlan[] = [];
     try {
-        plans = JSON.parse(plansStr);
+        const plansParsed = JSON.parse(plansStr);
+        if (plansParsed instanceof Array) {
+            plans = plansParsed;
+        }
+        else {
+            plans.push(plansParsed);
+        }
     } catch {
         log.writeError('The result of Migration is wrong!');
         return diagnostics;
@@ -248,7 +254,7 @@ export async function refreshDiagnosticsChange(
         //update the content of diagnostic
         let diagnostics: vscode.Diagnostic[] = [];
         if (planResult) {
-            diagnostics = formatPlanstToDiag(planResult, log, diagnostics);
+            diagnostics = formatPlansToDiag(planResult, log, diagnostics);
         } else {
             log.write(`This file is not need to be migrated.`);
         }
