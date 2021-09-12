@@ -78,6 +78,7 @@ function Measure-UpcomingBreakingChange {
                     $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                     $corrections.Add($c)
                 }
+                $explicitPara = 0
                 foreach ($para in $cmdletReference.parameters) {
                     if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name) {
                         $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
@@ -91,21 +92,21 @@ function Measure-UpcomingBreakingChange {
 
                         $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                         $corrections.Add($c)
+                        $explicitPara = 1
                     }
-                    else {
-                        $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
-                        [int]$startLineNumber = $cmdletReference.StartLine
-                        [int]$endLineNumber = $cmdletReference.EndLine
-                        [int]$startColumnNumber = $cmdletReference.StartColumn
-                        [int]$endColumnNumber = $cmdletReference.EndPosition
-                        [string]$correction = ""
-                        [string]$filePath = $cmdletReference.FullPath
-                        [string]$optionalDescription = $typesToMessages[$type]
+                }
+                if ($explicitPara -eq 0){
+                    $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                    [int]$startLineNumber = $cmdletReference.StartLine
+                    [int]$endLineNumber = $cmdletReference.EndLine
+                    [int]$startColumnNumber = $cmdletReference.StartColumn
+                    [int]$endColumnNumber = $cmdletReference.EndPosition
+                    [string]$correction = ""
+                    [string]$filePath = $cmdletReference.FullPath
+                    [string]$optionalDescription = $typesToMessages[$type]
 
-                        $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
-                        $corrections.Add($c)
-                        break
-                    }
+                    $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
+                    $corrections.Add($c)
                 }
             }
         }
