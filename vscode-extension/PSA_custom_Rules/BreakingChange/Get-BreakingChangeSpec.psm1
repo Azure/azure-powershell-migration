@@ -15,7 +15,7 @@ function Get-BreakingChangeSpec {
     $cmdletSet = @{}
     for ([int]$i = 0; $i -lt $breakingchange.cmdlet.Count; $i++) {
         $cmdlet = $breakingchange.cmdlet.Name[$i]
-        $cmdletSet[$cmdlet] = $breakingchange.cmdlet.TypeBreakingChange[$i]
+        $cmdletSet[$cmdlet] = $breakingchange.cmdlet.Message[$i]
     }
 
     $cmdlet_para_set = @{}
@@ -23,16 +23,15 @@ function Get-BreakingChangeSpec {
 
         $cmdlet = $breakingchange.para_cmdlet.CmdletName[$i]
         if ($cmdlet_para_set.Keys -notcontains $cmdlet) {
-            $cmdlet_para_set[$cmdlet] = @()
+            $cmdlet_para_set[$cmdlet] = @{}
         }
-        $cmdlet_para_set[$cmdlet] += $breakingchange.para_cmdlet.Name[$i]
+        $cmdlet_para_set[$cmdlet][$breakingchange.para_cmdlet.Name[$i]] = $breakingchange.para_cmdlet.Message[$i]
     }
 
     $breakingchanges = @{
         cmdlets     = $cmdletSet;
         paraCmdlets = $cmdlet_para_set
     }
-    $breakingchanges.paraCmdlets
 
     return $breakingchanges
 }

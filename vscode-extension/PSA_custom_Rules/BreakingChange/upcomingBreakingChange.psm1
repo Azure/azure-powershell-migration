@@ -51,14 +51,14 @@ function Measure-UpcomingBreakingChange {
 
         foreach ($cmdletReference in $cmdletBreakingchange) {
             if ($breakingchanges.cmdlets.Keys -contains $cmdletReference.CommandName) {
-                $type = $breakingchanges.cmdlets[$cmdletReference.CommandName]
+                $message = $breakingchanges.cmdlets[$cmdletReference.CommandName]
                 [int]$startLineNumber = $cmdletReference.StartLine
                 [int]$endLineNumber = $cmdletReference.EndLine
                 [int]$startColumnNumber = $cmdletReference.StartColumn
                 [int]$endColumnNumber = $cmdletReference.EndPosition
                 [string]$correction = ""
                 [string]$filePath = $cmdletReference.FullPath
-                [string]$optionalDescription = $typesToMessages[$type]
+                [string]$optionalDescription = $message
 
                 $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                 $corrections.Add($c)
@@ -66,44 +66,42 @@ function Measure-UpcomingBreakingChange {
 
             if ($breakingchanges.paraCmdlets.Keys -contains $cmdletReference.CommandName) {
                 if ($cmdletReference.parameters.Count -eq 0) {
-                    $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
                     [int]$startLineNumber = $cmdletReference.StartLine
                     [int]$endLineNumber = $cmdletReference.EndLine
                     [int]$startColumnNumber = $cmdletReference.StartColumn
                     [int]$endColumnNumber = $cmdletReference.EndPosition
                     [string]$correction = ""
                     [string]$filePath = $cmdletReference.FullPath
-                    [string]$optionalDescription = $typesToMessages[$type]
+                    [string]$optionalDescription = "The cmdlet has one or more parameter is changing."
 
                     $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                     $corrections.Add($c)
                 }
                 $explicitPara = 0
                 foreach ($para in $cmdletReference.parameters) {
-                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName] -contains $para.Name) {
-                        $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                    if ($breakingchanges.paraCmdlets[$cmdletReference.CommandName].Keys -contains $para.Name) {
+                        $message = $breakingchanges.paraCmdlets[$cmdletReference.CommandName][$para.Name]
                         [int]$startLineNumber = $para.StartLine
                         [int]$endLineNumber = $para.EndLine
                         [int]$startColumnNumber = $para.StartColumn
                         [int]$endColumnNumber = $para.EndPosition
                         [string]$correction = ""
                         [string]$filePath = $para.FullPath
-                        [string]$optionalDescription = $typesToMessages[$type]
+                        [string]$optionalDescription = $message
 
                         $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                         $corrections.Add($c)
                         $explicitPara = 1
                     }
                 }
-                if ($explicitPara -eq 0){
-                    $type = "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute"
+                if ($explicitPara -eq 0 -and $cmdletReference.parameters.Count -ne 0){
                     [int]$startLineNumber = $cmdletReference.StartLine
                     [int]$endLineNumber = $cmdletReference.EndLine
                     [int]$startColumnNumber = $cmdletReference.StartColumn
                     [int]$endColumnNumber = $cmdletReference.EndPosition
                     [string]$correction = ""
                     [string]$filePath = $cmdletReference.FullPath
-                    [string]$optionalDescription = $typesToMessages[$type]
+                    [string]$optionalDescription = "The cmdlet has one or more parameter is changing."
 
                     $c = (new-object Microsoft.Windows.PowerShell.ScriptAnalyzer.Generic.CorrectionExtent $startLineNumber, $endLineNumber, $startColumnNumber, $endColumnNumber, $correction, $filePath, $optionalDescription)
                     $corrections.Add($c)

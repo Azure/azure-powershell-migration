@@ -3,18 +3,21 @@
 class breakingchangeResult {
     [System.String] $Name
     [System.String] $TypeBreakingChange
+    [System.String] $Message
 }
 
 class breakingchangeParaFunc {
     [System.String] $Name
     [System.String] $TypeBreakingChange
     [System.String] $FuncName
+    [System.String] $Message
 }
 
 class breakingchangeParaCmdlet {
     [System.String] $Name
     [System.String] $TypeBreakingChange
     [System.String] $CmdletName
+    [System.String] $Message
 }
 
 $results = @{}
@@ -48,6 +51,7 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
                 $result = New-Object -TypeName breakingchangeResult
                 $result.Name = $func.name
                 $result.TypeBreakingChange = $Attribute.TypeId.FullName
+                $result.Message = $Attribute.ConstructorArguments.Value
                 $results["func"] += $result
             }
         }
@@ -63,6 +67,7 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
                     $result.Name = $parameter_key
                     $result.TypeBreakingChange = $Attribute.TypeId.FullName
                     $result.FuncName = $func.name
+                    $result.Message = $Attribute.ChangeDescription
                     $results["para_func"] += $result
                 }
             }
@@ -79,6 +84,12 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
                 $result = New-Object -TypeName breakingchangeResult
                 $result.Name = $Cmdlet.Name
                 $result.TypeBreakingChange = $Attribute.AttributeType.FullName
+                if ($result.TypeBreakingChange -eq "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"){
+                    $result.Message = "The cmdlet is being deprecated. There will be no replacement for it."
+                }
+                else{
+                    $result.Message = $Attribute.ConstructorArguments.Value
+                }
                 $results["cmdlet"] += $result
             }
         }
@@ -94,6 +105,7 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
                     $result.Name = $parameter_key
                     $result.TypeBreakingChange = $Attribute.TypeId.FullName
                     $result.CmdletName = $Cmdlet.Name
+                    $result.Message = $Attribute.ChangeDescription
                     $results["para_cmdlet"] += $result
                 }
             }
