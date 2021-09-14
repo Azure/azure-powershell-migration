@@ -1,5 +1,10 @@
 # Azure PowerShell Extension Release History
 
+## 0.3.0
+Add new features:
+- Detect alias cmdlets or parameters, then you can quick-fix it to formal name
+- Detect upcoming breaking change cmdlets or paramters and give some message about the change
+
 ## 0.2.0
 
 Code refactoring and user experience optimization:
