@@ -30,6 +30,19 @@ $results["cmdlet"] = $aliasResults
 $results["para_cmdlet"] = @{}
 $results["updateTime"] = $results["updateTime"].ToString()
 
+$paraBlockList = @("InformationVariable",
+                "OutVariable",
+                "WhatIf",
+                "PipelineVariable",
+                "OutBuffer",
+                "WarningVariable",
+                "ErrorVariable",
+                "InformationAction",
+                "Verbose",
+                "ErrorAction",
+                "Debug",
+                "WarningAction",
+                "Confirm")
 for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
     # import-module $az_modules[$i].name
     $module = get-module $az_modules[$i].name
@@ -48,7 +61,9 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
             for ([int]$j = 0; $j -lt $parameter.Aliases.Count; $j++) {
                 $paraAlias = $parameter.Aliases[$j]
                 $paraFormal = $parameter_key
-                $results["para_cmdlet"][$Cmdlet.Name][$paraAlias] = $paraFormal
+                if ($paraBlockList -notcontains $paraFormal){
+                    $results["para_cmdlet"][$Cmdlet.Name][$paraAlias] = $paraFormal
+                }
             }
         }
     }
