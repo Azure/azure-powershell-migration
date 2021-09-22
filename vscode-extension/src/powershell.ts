@@ -22,6 +22,7 @@ export class PowershellProcess {
             noProfile: true
         });
 
+        //TODO: Resolve the PSA Path question instead of copying PSA folder.
         const flagFilePath = path.resolve(__dirname, '../PSAExecPath.txt'); //if flagFile already exists, we've copied the CustomRules files to powershell execution path before
         if (!fs.existsSync(flagFilePath)) {
             const PSASourcePath = path.resolve(
