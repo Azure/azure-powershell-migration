@@ -78,18 +78,12 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
         $Cmdlet = $exportedCmdlets[$key]
 
         #attributes of cmdlets
-        foreach ($Attribute in $Cmdlet.ImplementingType.CustomAttributes) {
-            if ($Attribute.AttributeType.BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.AttributeType.Name -eq "GenericBreakingChangeAttribute") {
-                #$Attribute.AttributeType.Name
+        foreach ($Attribute in $Cmdlet.ImplementingType.GetCustomAttributes($true)) {
+            if ($Attribute.GetType().BaseType.Name -eq "GenericBreakingChangeAttribute" -or $Attribute.GetType().Name -eq "GenericBreakingChangeAttribute") {
                 $result = New-Object -TypeName breakingchangeResult
                 $result.Name = $Cmdlet.Name
-                $result.TypeBreakingChange = $Attribute.AttributeType.FullName
-                if ($result.TypeBreakingChange -eq "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute"){
-                    $result.Message = "The cmdlet is being deprecated. There will be no replacement for it."
-                }
-                else{
-                    $result.Message = $Attribute.ConstructorArguments.Value
-                }
+                $result.TypeBreakingChange = $Attribute.GetType().FullName
+                $result.Message = $Attribute.GetBreakingChangeTextFromAttribute($null, $false)
                 $results["cmdlet"] += $result
             }
         }
@@ -105,7 +99,7 @@ for ([int]$i = 0; $i -lt $az_modules.Count; $i++) {
                     $result.Name = $parameter_key
                     $result.TypeBreakingChange = $Attribute.TypeId.FullName
                     $result.CmdletName = $Cmdlet.Name
-                    $result.Message = $Attribute.ChangeDescription
+                    $result.Message = $Attribute.GetBreakingChangeTextFromAttribute($null, $false)
                     $results["para_cmdlet"] += $result
                 }
             }

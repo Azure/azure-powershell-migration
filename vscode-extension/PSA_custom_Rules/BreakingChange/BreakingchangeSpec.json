@@ -1,231 +1,224 @@
 {
+  "updateTime": "9/22/2021 11:25:00 AM",
+  "func": [],
   "para_cmdlet": [
-    {
-      "Name": "EndpointName",
-      "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
-      "CmdletName": "Get-AzCdnEndpointResourceUsage",
-      "Message": "Parameter is being deprecated in ByObjectParameterSet without being replaced"
-    },
     {
       "Name": "State",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Set-AzEventHubNamespace",
-      "Message": "'State' Parameter is being deprecated without being replaced"
+      "Message": "\r\n- The parameter : 'State' is changing.\r\n- Change description : 'State' Parameter is being deprecated without being replaced "
     },
     {
       "Name": "RdpCredential",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzHDInsightCluster",
-      "Message": "This parameter is being deprecated."
+      "Message": "\r\n- The parameter : 'RdpCredential' is changing.\r\n- Change description : This parameter is being deprecated. "
     },
     {
       "Name": "RdpAccessExpiry",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzHDInsightCluster",
-      "Message": "This parameter is being deprecated."
+      "Message": "\r\n- The parameter : 'RdpAccessExpiry' is changing.\r\n- Change description : This parameter is being deprecated. "
     },
     {
       "Name": "ContentType",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzIntegrationAccountMap",
-      "Message": "ContentType is being deprecated without being replaced. It will be inferred from MapType"
+      "Message": "\r\n- The parameter : 'ContentType' is changing.\r\n- Change description : ContentType is being deprecated without being replaced. It will be inferred from MapType "
     },
     {
       "Name": "ContentType",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Set-AzIntegrationAccountMap",
-      "Message": "ContentType is being deprecated without being replaced. It will be inferred from MapType"
+      "Message": "\r\n- The parameter : 'ContentType' is changing.\r\n- Change description : ContentType is being deprecated without being replaced. It will be inferred from MapType "
     },
     {
       "Name": "Snapshot",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzNetAppFilesVolume",
-      "Message": "Snapshot invalid and preserved for compatibility. Parameter SnapshotPolicyId should be used instead"
+      "Message": "\r\n- The parameter : 'Snapshot' is changing.\r\n- Change description : Snapshot invalid and preserved for compatibility. Parameter SnapshotPolicyId should be used instead "
     },
     {
       "Name": "ResourceId",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "Add-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-ResourceId\r\n\r\n# New\r\n-NatGatewayId\r\n```\r\n"
     },
     {
       "Name": "InputObject",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "Add-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-InputObject\r\n\r\n# New\r\n-NatGateway\r\n```\r\n"
     },
     {
       "Name": "Description",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Get-AzPrivateEndpointConnection",
-      "Message": "Parameter is being deprecated without being replaced"
+      "Message": "\r\n- The parameter : 'Description' is changing.\r\n- Change description : Parameter is being deprecated without being replaced "
     },
     {
       "Name": "UserAssignedIdentityId",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzApplicationGateway",
-      "Message": ""
+      "Message": "\r\n- The parameter : 'UserAssignedIdentityId' is being replaced by parameter : 'Identity'."
     },
     {
       "Name": "VirtualNetworkName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzFirewall",
-      "Message": "This parameter will be removed in an upcoming breaking change release. After this point the Virtual Network will be provided as an object instead of a string."
+      "Message": "\r\n- The parameter : 'VirtualNetworkName' is being replaced by parameter : 'VirtualNetwork'.\r\nThe type of the parameter is changing from 'System.String' to 'PSVirtualNetwork'.\r\n- Change description : This parameter will be removed in an upcoming breaking change release. After this point the Virtual Network will be provided as an object instead of a string. \r\n- The change is expected to take effect from the version : '2.0.0'```powershell\r\n# Old\r\nNew-AzFirewall -VirtualNetworkName \"vnet-name\"\r\n\r\n# New\r\nNew-AzFirewall -VirtualNetwork $vnet\r\n```\r\n"
     },
     {
       "Name": "PublicIpName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzFirewall",
-      "Message": "This parameter will be removed in an upcoming breaking change release. After this point the Public IP Address will be provided as a list of one or more objects instead of a string."
+      "Message": "\r\n- The parameter : 'PublicIpName' is being replaced by parameter : 'PublicIpAddress'.\r\nThe type of the parameter is changing from 'System.String' to 'List<PSPublicIpAddress>'.\r\n- Change description : This parameter will be removed in an upcoming breaking change release. After this point the Public IP Address will be provided as a list of one or more objects instead of a string. \r\n- The change is expected to take effect from the version : '2.0.0'```powershell\r\n# Old\r\nNew-AzFirewall -PublicIpName \"public-ip-name\"\r\n\r\n# New\r\nNew-AzFirewall -PublicIpAddress @($publicip1, $publicip2)\r\n```\r\n"
     },
     {
       "Name": "SourceAddress",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzFirewallPolicyApplicationRule",
-      "Message": "This parameter is becoming optional as SourceIpGroup can be provided without this."
+      "Message": "\r\n- The parameter : 'SourceAddress' is changing.\r\n- Change description : This parameter is becoming optional as SourceIpGroup can be provided without this. "
     },
     {
       "Name": "SourceAddress",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzFirewallPolicyNetworkRule",
-      "Message": "This parameter is becoming optional as SourceIpGroup can be provided without this."
+      "Message": "\r\n- The parameter : 'SourceAddress' is changing.\r\n- Change description : This parameter is becoming optional as SourceIpGroup can be provided without this. "
     },
     {
       "Name": "PublicIpAddress",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzPrivateLinkServiceIpConfig",
-      "Message": "Parameter is being deprecated without being replaced"
+      "Message": "\r\n- The parameter : 'PublicIpAddress' is changing.\r\n- Change description : Parameter is being deprecated without being replaced "
     },
     {
       "Name": "HubVnetConnection",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzVirtualHub",
-      "Message": "HubVnetConnection parameter is deprecated. Use *VirtualHubVnetConnection* commands"
+      "Message": "\r\n- The parameter : 'HubVnetConnection' is changing.\r\n- Change description : HubVnetConnection parameter is deprecated. Use *VirtualHubVnetConnection* commands "
     },
     {
       "Name": "RouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzVirtualHub",
-      "Message": "Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands."
+      "Message": "\r\n- The parameter : 'RouteTable' is changing.\r\n- Change description : Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands. "
     },
     {
       "Name": "EnableInternetSecurity",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzVirtualHubVnetConnection",
-      "Message": ""
+      "Message": "\r\n- The parameter : 'EnableInternetSecurity' is changing.\r\nThe type of the parameter is changing from 'System.Management.Automation.SwitchParameter' to 'EnableInternetSecurityFlag'."
     },
     {
       "Name": "ResourceId",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "New-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-ResourceId\r\n\r\n# New\r\n-NatGatewayId\r\n```\r\n"
     },
     {
       "Name": "InputObject",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "New-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-InputObject\r\n\r\n# New\r\n-NatGateway\r\n```\r\n"
     },
     {
       "Name": "Description",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Remove-AzPrivateEndpointConnection",
-      "Message": "Parameter is being deprecated without being replaced"
+      "Message": "\r\n- The parameter : 'Description' is changing.\r\n- Change description : Parameter is being deprecated without being replaced "
     },
     {
       "Name": "RouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Set-AzVirtualHub",
-      "Message": "Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands."
+      "Message": "\r\n- The parameter : 'RouteTable' is changing.\r\n- Change description : Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands. "
     },
     {
       "Name": "ResourceId",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "Set-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-ResourceId\r\n\r\n# New\r\n-NatGatewayId\r\n```\r\n"
     },
     {
       "Name": "InputObject",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
       "CmdletName": "Set-AzVirtualNetworkSubnetConfig",
-      "Message": ""
+      "Message": "Update Property Name```powershell\r\n# Old\r\n-InputObject\r\n\r\n# New\r\n-NatGateway\r\n```\r\n"
     },
     {
       "Name": "HubVnetConnection",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Update-AzVirtualHub",
-      "Message": "HubVnetConnection parameter is deprecated. Use *VirtualHubVnetConnection* commands"
+      "Message": "\r\n- The parameter : 'HubVnetConnection' is changing.\r\n- Change description : HubVnetConnection parameter is deprecated. Use *VirtualHubVnetConnection* commands "
     },
     {
       "Name": "RouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Update-AzVirtualHub",
-      "Message": "Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands."
+      "Message": "\r\n- The parameter : 'RouteTable' is changing.\r\n- Change description : Parameter is being deprecated without being replaced. Use *VHubRouteTable* commands. "
     },
     {
       "Name": "ApiVersion",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Export-AzResourceGroup",
-      "Message": "Parameter is being deprecated without being replaced. Using the lastest possible API version will become the default behavior."
+      "Message": "\r\n- The parameter : 'ApiVersion' is changing.\r\n- Change description : Parameter is being deprecated without being replaced. Using the lastest possible API version will become the default behavior. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Get-AzManagementGroup",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzManagementGroup",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "New-AzManagementGroupSubscription",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Remove-AzManagementGroup",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Remove-AzManagementGroupSubscription",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "GroupName",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Update-AzManagementGroup",
-      "Message": "We will repleace GroupName with GroupId to make it more clear."
+      "Message": "\r\n- The parameter : 'GroupName' is being replaced by parameter : 'GroupId'.\r\n- Change description : We will repleace GroupName with GroupId to make it more clear. "
     },
     {
       "Name": "InputObject",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Set-AzSecurityAlert",
-      "Message": ""
+      "Message": "\r\n- The parameter : 'InputObject' is changing.\r\nThe type of the parameter is changing from 'Microsoft.Azure.Commands.Security.Models.Alerts.PSSecurityAlert' to 'PSSecurityAlertV3'."
     },
     {
       "Name": "ResourceId",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Get-AzRmStorageShare",
-      "Message": "Will not allow to input '-ResourceId', '-Name' together in a future release, since name info is already inclouded in ResourceId."
+      "Message": "\r\n- The parameter : 'ResourceId' is changing.\r\n- Change description : Will not allow to input '-ResourceId', '-Name' together in a future release, since name info is already inclouded in ResourceId. "
     },
     {
       "Name": "InputObject",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletParameterBreakingChangeAttribute",
       "CmdletName": "Set-AzStorageSyncServerEndpoint",
-      "Message": "Alias RegisteredServer is invalid and preserved for compatibility. Alias ServerEndpoint should be used instead"
+      "Message": "\r\n- The parameter : 'InputObject' is changing.\r\n- Change description : Alias RegisteredServer is invalid and preserved for compatibility. Alias ServerEndpoint should be used instead "
     }
   ],
-  "updateTime": "9/14/2021 3:53:44 PM",
-  "func": [],
-  "para_func": [],
   "cmdlet": [
     {
       "Name": "Resolve-AzError",
@@ -235,67 +228,67 @@
     {
       "Name": "Get-AzAksCluster",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzAksCluster' is replacing this cmdlet."
     },
     {
       "Name": "New-AzAksCluster",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzAksCluster' is replacing this cmdlet."
     },
     {
       "Name": "Remove-AzAksCluster",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Remove-AzAksCluster' is replacing this cmdlet."
     },
     {
       "Name": "Set-AzAksCluster",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Set-AzAksCluster' is replacing this cmdlet."
     },
     {
       "Name": "Add-AzAnalysisServicesAccount",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet is being deprecated. There will be no replacement for it.\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchAccountKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchAccountKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchAccountKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchJobStatistic",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchJobStatistics alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchJobStatistics alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchLocationQuota",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchLocationQuotas alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchLocationQuotas alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchPoolNodeCount",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchPoolNodeCounts alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchPoolNodeCounts alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchPoolStatistic",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchPoolStatistics alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchPoolStatistics alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchPoolUsageMetric",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchPoolUsageMetrics alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchPoolUsageMetrics alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchRemoteLoginSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchRemoteLoginSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchRemoteLoginSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBatchTaskCount",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzBatchTaskCounts alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzBatchTaskCounts alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzBillingPeriod",
@@ -305,22 +298,22 @@
     {
       "Name": "Disable-AzCdnCustomDomain",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Disable-AzCdnCustomDomainHttps' is replacing this cmdlet."
     },
     {
       "Name": "Enable-AzCdnCustomDomain",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Enable-AzCdnCustomDomainHttps' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzCdnEdgeNode",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzCdnEdgeNodes alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzCdnEdgeNodes alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzCognitiveServicesAccountSku",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzCognitiveServicesAccountSkus alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzCognitiveServicesAccountSkus alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Add-AzVhd",
@@ -330,17 +323,17 @@
     {
       "Name": "Export-AzDataLakeStoreChildItemProperty",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Export-AzDataLakeStoreChildItemProperties alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Export-AzDataLakeStoreChildItemProperties alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Export-AzDataLakeStoreItem",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "For store side export failures, Export-AzDataLakeStoreItem will throw exception instead of printing message on screen 2.0.0 05/18/2020"
+      "Message": "For store side export failures, Export-AzDataLakeStoreItem will throw exception instead of printing message on screen\r\n- This change will take effect on '5/18/2020 12:00:00 AM'\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Import-AzDataLakeStoreItem",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "For store side import failures, Import-AzDataLakeStoreItem will throw exception instead of printing message on screen 2.0.0 05/18/2020"
+      "Message": "For store side import failures, Import-AzDataLakeStoreItem will throw exception instead of printing message on screen\r\n- This change will take effect on '5/18/2020 12:00:00 AM'\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "New-AzDataShareSubscription",
@@ -350,447 +343,448 @@
     {
       "Name": "Get-AzEventHubNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName' 'Tags'"
     },
     {
       "Name": "New-AzEventHubNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName' 'Tags'"
     },
     {
       "Name": "Set-AzEventHubNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName' 'Tags'"
     },
     {
       "Name": "Get-AzMlWebServiceKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzMlWebServiceKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzMlWebServiceKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzMediaServiceKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzMediaServiceKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzMediaServiceKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Sync-AzMediaServiceStorageKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Sync-AzMediaServiceStorageKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Sync-AzMediaServiceStorageKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzNetAppFilesVault",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy"
+      "Message": "\r\n- The output type is changing from the existing type :'Microsoft.Azure.Commands.NetAppFiles.Models.PSNetAppFilesBackupPolicy' to the new type :'PSNetAppFilesVault'"
     },
     {
       "Name": "Add-AzApplicationGatewayBackendHttpSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Add-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Add-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Add-AzExpressRouteCircuitAuthorization",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Add-AzExpressRouteCircuitConnectionConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Add-AzExpressRouteCircuitPeeringConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Add-AzVirtualHubRoute",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzVHubRoute' is replacing this cmdlet."
     },
     {
       "Name": "Add-AzVirtualHubRouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzVHubRouteTable' is replacing this cmdlet."
     },
     {
       "Name": "Add-AzVirtualRouterPeer",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Add-AzRouteServerPeer' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzApplicationGatewayAvailableSslOption",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzApplicationGatewayAvailableSslOptions alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzApplicationGatewayAvailableSslOptions alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzApplicationGatewayAvailableWafRuleSet",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzApplicationGatewayAvailableWafRuleSets alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzApplicationGatewayAvailableWafRuleSets alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzApplicationGatewayBackendHttpSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzExpressRouteCircuit",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Get-AzExpressRouteCircuitAuthorization",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Get-AzExpressRouteCircuitPeeringConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Get-AzExpressRouteCircuitStat",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzExpressRouteCircuitStats alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzExpressRouteCircuitStats alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzVirtualHubRouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzVHubRouteTable' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzVirtualRouter",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzRouteServer' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzVirtualRouterPeer",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzRouteServerPeer' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzVirtualRouterPeerAdvertisedRoute",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzRouteServerPeerAdvertisedRoute' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzVirtualRouterPeerLearnedRoute",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Get-AzRouteServerPeerLearnedRoute' is replacing this cmdlet."
     },
     {
       "Name": "Move-AzExpressRouteCircuit",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "New-AzApplicationGatewayBackendHttpSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "New-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "New-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "New-AzExpressRouteCircuit",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "New-AzLoadBalancerFrontendIpConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Default behaviour of Zone will be changed"
+      "Message": "Default behaviour of Zone will be changed```powershell\r\n# Old\r\nSku = Standard means the Standard FrontendIpConfig is zone-redundant.\r\n\r\n# New\r\nSku = Standard and Zone = {} means the Standard FrontendIpConfig has no zones. If you want to create a zone-redundant FrontendIpConfig, please specify all the zones in the region. For example, Zone = ['1', '2', '3'].\r\n```\r\n"
     },
     {
       "Name": "New-AzPrivateLinkServiceIpConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSPrivateLinkServiceIpConfiguration"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSPrivateLinkServiceIpConfiguration' is changing\r\n- The following properties in the output type are being deprecated : 'PublicIPAddress'\r\n- The following properties are being added to the output type : 'Primary'"
     },
     {
       "Name": "New-AzPublicIpAddress",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Default behaviour of Zone will be changed"
+      "Message": "Default behaviour of Zone will be changed```powershell\r\n# Old\r\nSku = Standard means the Standard Public IP is zone-redundant.\r\n\r\n# New\r\nSku = Standard and Zone = {} means the Standard Public IP has no zones. If you want to create a zone-redundant Public IP address, please specify all the zones in the region. For example, Zone = ['1', '2', '3'].\r\n```\r\n"
     },
     {
       "Name": "New-AzPublicIpPrefix",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Default behaviour of Zone will be changed"
+      "Message": "Default behaviour of Zone will be changed```powershell\r\n# Old\r\nSku = Standard means the Standard PublicIpPrefix is zone-redundant.\r\n\r\n# New\r\nSku = Standard and Zone = {} means the Standard PublicIpPrefix has no zones. If you want to create a zone-redundant PublicIpPrefix, please specify all the zones in the region. For example, Zone = ['1', '2', '3'].\r\n```\r\n"
     },
     {
       "Name": "New-AzVirtualHubRoute",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzVHubRoute' is replacing this cmdlet."
     },
     {
       "Name": "New-AzVirtualHubRouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzVHubRouteTable' is replacing this cmdlet."
     },
     {
       "Name": "New-AzVirtualRouter",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'New-AzRouteServer' is replacing this cmdlet."
     },
     {
       "Name": "Remove-AzApplicationGatewayBackendHttpSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Remove-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Remove-AzExpressRouteCircuitAuthorization",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Remove-AzExpressRouteCircuitConnectionConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Remove-AzExpressRouteCircuitPeeringConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Remove-AzVirtualHubRouteTable",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Remove-AzVHubRouteTable' is replacing this cmdlet."
     },
     {
       "Name": "Remove-AzVirtualRouter",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Remove-AzRouteServer' is replacing this cmdlet."
     },
     {
       "Name": "Remove-AzVirtualRouterPeer",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Remove-AzRouteServerPeer' is replacing this cmdlet."
     },
     {
       "Name": "Set-AzApplicationGatewayBackendHttpSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Set-AzApplicationGatewayBackendHttpSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Set-AzExpressRouteCircuit",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Set-AzExpressRouteCircuitConnectionConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Set-AzExpressRouteCircuitPeeringConfig",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit' is changing\r\n- The following properties in the output type are being deprecated : 'AllowGlobalReach'"
     },
     {
       "Name": "Update-AzVirtualRouter",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Update-AzRouteServer' is replacing this cmdlet."
     },
     {
       "Name": "Update-AzVirtualRouterPeer",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletDeprecationAttribute",
-      "Message": "The cmdlet is being deprecated. There will be no replacement for it."
+      "Message": "The cmdlet 'Update-AzRouteServerPeer' is replacing this cmdlet."
     },
     {
       "Name": "Get-AzNotificationHubAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzNotificationHubListKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzNotificationHubListKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzNotificationHubListKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzNotificationHubPNSCredential",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzNotificationHubPNSCredentials alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzNotificationHubPNSCredentials alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzNotificationHubsNamespaceAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzNotificationHubsNamespaceListKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzNotificationHubsNamespaceListKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzNotificationHubsNamespaceListKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "New-AzNotificationHubAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "New-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "New-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "New-AzNotificationHubsNamespaceAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "New-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "New-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Remove-AzNotificationHubAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Remove-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Remove-AzNotificationHubsNamespaceAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Remove-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Set-AzNotificationHubAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Set-AzNotificationHubAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Set-AzNotificationHubsNamespaceAuthorizationRule",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Set-AzNotificationHubsNamespaceAuthorizationRules alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzOperationalInsightsIntelligencePack",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzOperationalInsightsIntelligencePacks alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzOperationalInsightsIntelligencePacks alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzOperationalInsightsWorkspaceManagementGroup",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzOperationalInsightsWorkspaceManagementGroups alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzOperationalInsightsWorkspaceManagementGroups alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzOperationalInsightsWorkspaceSharedKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzOperationalInsightsWorkspaceSharedKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzOperationalInsightsWorkspaceSharedKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzPowerBIWorkspaceCollectionAccessKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzPowerBIWorkspaceCollectionAccessKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Get-AzPowerBIWorkspaceCollectionAccessKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Reset-AzPowerBIWorkspaceCollectionAccessKey",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Reset-AzPowerBIWorkspaceCollectionAccessKeys alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Reset-AzPowerBIWorkspaceCollectionAccessKeys alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Remove-AzRedisCacheDiagnostic",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzRedisCacheDiagnostics alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Remove-AzRedisCacheDiagnostics alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Set-AzRedisCacheDiagnostic",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzRedisCacheDiagnostics alias will be removed in an upcoming breaking change release 2.0.0"
+      "Message": "Set-AzRedisCacheDiagnostics alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '2.0.0'"
     },
     {
       "Name": "Get-AzSecurityAlert",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Security.Models.Alerts.PSSecurityAlert"
+      "Message": "\r\n- The output type is changing from the existing type :'Microsoft.Azure.Commands.Security.Models.Alerts.PSSecurityAlert' to the new type :'PSSecurityAlertV3'"
     },
     {
       "Name": "Get-AzServiceBusNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName'"
     },
     {
       "Name": "New-AzServiceBusNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName'"
     },
     {
       "Name": "Set-AzServiceBusNamespace",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes' is changing\r\n- The following properties in the output type are being deprecated : 'ResourceGroup'\r\n- The following properties are being added to the output type : 'ResourceGroupName'"
     },
     {
       "Name": "Get-AzSignalR",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource' is changing\r\n- The following properties in the output type are being deprecated : 'HostNamePrefix'"
     },
     {
       "Name": "New-AzSignalR",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource' is changing\r\n- The following properties in the output type are being deprecated : 'HostNamePrefix'"
     },
     {
       "Name": "Update-AzSignalR",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource' is changing\r\n- The following properties in the output type are being deprecated : 'HostNamePrefix'"
     },
     {
       "Name": "Clear-AzSqlDatabaseAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Remove-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Clear-AzSqlServerAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Remove-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Remove-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Get-AzSqlDatabase",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Get-AzSqlDatabaseAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Get-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Get-AzSqlDatabaseReplicationLink",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Get-AzSqlServerAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Get-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Get-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "New-AzSqlDatabase",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "New-AzSqlDatabaseCopy",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Replication.Model.AzureSqlDatabaseCopyModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Replication.Model.AzureSqlDatabaseCopyModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "New-AzSqlDatabaseSecondary",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Remove-AzSqlDatabase",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Remove-AzSqlDatabaseSecondary",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Set-AzSqlDatabase",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Database.Model.AzureSqlDatabaseModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Set-AzSqlDatabaseSecondary",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.CmdletOutputBreakingChangeAttribute",
-      "Message": "Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel 3.0.0"
+      "Message": "\r\n- The output type 'Microsoft.Azure.Commands.Sql.Replication.Model.AzureReplicationLinkModel' is changing\r\n- The following properties in the output type are being deprecated : 'BackupStorageRedundancy'\r\n- The following properties are being added to the output type : 'CurrentBackupStorageRedundancy' 'RequestedBackupStorageRedundancy'\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Update-AzSqlDatabaseAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Set-AzSqlDatabaseAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     },
     {
       "Name": "Update-AzSqlServerAdvancedThreatProtectionSetting",
       "TypeBreakingChange": "Microsoft.WindowsAzure.Commands.Common.CustomAttributes.GenericBreakingChangeAttribute",
-      "Message": "Set-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release 3.0.0"
+      "Message": "Set-AzSqlServerAdvancedThreatProtectionSettings alias will be removed in an upcoming breaking change release\r\n- The change is expected to take effect from the version : '3.0.0'"
     }
-  ]
+  ],
+  "para_func": []
 }
