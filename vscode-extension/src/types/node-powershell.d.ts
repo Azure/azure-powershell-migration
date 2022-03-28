@@ -13,4 +13,3 @@ declare module 'node-powershell' {
     }
     export = shell;
 }
-

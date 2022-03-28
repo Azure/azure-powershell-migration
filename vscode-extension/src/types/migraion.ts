@@ -20,45 +20,44 @@ export enum DiagnosticSeverity {
 }
 
 export interface CommandReferenceParameter {
-    FileName: string,
-    FullPath: string,
-    Name: string,
-    StartLine: number,
-    StartColumn: number,
-    EndLine: number,
-    EndPosition: number,
-    StartOffset: number,
-    EndOffset: number,
-    Location: string
+    FileName: string;
+    FullPath: string;
+    Name: string;
+    StartLine: number;
+    StartColumn: number;
+    EndLine: number;
+    EndPosition: number;
+    StartOffset: number;
+    EndOffset: number;
+    Location: string;
 }
 
 export interface CommandReference {
-    FileName: string,
-    FullPath: string,
-    StartLine: number,
-    StartColumn: number,
-    EndLine: number,
-    EndPosition: number,
-    StartOffset: number,
-    EndOffset: number,
-    Location: string,
-    HasSplattedArguments: boolean,
-    CommandName: string,
-    Parameters: CommandReferenceParameter[]
+    FileName: string;
+    FullPath: string;
+    StartLine: number;
+    StartColumn: number;
+    EndLine: number;
+    EndPosition: number;
+    StartOffset: number;
+    EndOffset: number;
+    Location: string;
+    HasSplattedArguments: boolean;
+    CommandName: string;
+    Parameters: CommandReferenceParameter[];
 }
 
-
 export interface UpgradePlan {
-    Order: number,
-    UpgradeType: UpgradeStepType,
-    PlanResult: PlanResultReasonCode,
-    PlanSeverity: DiagnosticSeverity,
-    PlanResultReason: string
-    SourceCommand: CommandReference,
-    SourceCommandParameter: CommandReferenceParameter,
-    Location: string,
-    FullPath: string,
-    StartOffset: number,
-    Original: string,
-    Replacement: string
+    Order: number;
+    UpgradeType: UpgradeStepType;
+    PlanResult: PlanResultReasonCode;
+    PlanSeverity: DiagnosticSeverity;
+    PlanResultReason: string;
+    SourceCommand: CommandReference;
+    SourceCommandParameter: CommandReferenceParameter;
+    Location: string;
+    FullPath: string;
+    StartOffset: number;
+    Original: string;
+    Replacement: string;
 }
