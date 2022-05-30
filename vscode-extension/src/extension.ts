@@ -37,7 +37,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
     //select azureRmVersion and azVersion(hard code)
     const azureRmVersion = "6.13.1";
-    const azVersion = "6.1.0";
+    const azVersion = "8.0.0";
 
     //start a powershell process
     try {

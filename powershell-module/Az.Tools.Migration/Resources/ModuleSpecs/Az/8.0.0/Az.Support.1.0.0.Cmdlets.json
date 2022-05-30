@@ -1,0 +1,460 @@
+[
+  {
+    "Command": "Get-AzSupportService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSupportProblemClassification",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "ServiceId",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ServiceObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSupportTicket",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSupportTicketCommunication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "SupportTicketName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SupportTicketObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "IncludeTotalCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Skip",
+        "Aliases": null
+      },
+      {
+        "Name": "First",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSupportTicketCommunication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "SupportTicketName",
+        "Aliases": null
+      },
+      {
+        "Name": "SupportTicketObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Subject",
+        "Aliases": null
+      },
+      {
+        "Name": "Body",
+        "Aliases": null
+      },
+      {
+        "Name": "Sender",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSupportTicket",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ProblemClassificationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerContactDetail",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerFirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerLastName",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredContactMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPrimaryEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPreferredTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerCountry",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPreferredSupportLanguage",
+        "Aliases": null
+      },
+      {
+        "Name": "ProblemStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "TechnicalTicketResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "QuotaTicketDetail",
+        "Aliases": null
+      },
+      {
+        "Name": "CSPHomeTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "Require24X7Response",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSupportContactProfileObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredContactMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Country",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredSupportLanguage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzSupportTicket",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Support",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerContactDetail",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerFirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerLastName",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredContactMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPrimaryEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPreferredTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerCountry",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomerPreferredSupportLanguage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3444 @@
+[
+  {
+    "Command": "Get-AzMetricDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "AggregationType",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "OrderBy",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultType",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": [
+          "MetricNames"
+        ]
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActivityLog",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "CorrelationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxRecord",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubAuthorizationRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DedicatedLogAnalyticsDestinationType",
+        "Aliases": null
+      },
+      {
+        "Name": "Setting",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticDetailSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Log",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubAuthorizationRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricCategory",
+        "Aliases": null
+      },
+      {
+        "Name": "Timegrain",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "ExportToResourceSpecific",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableLog",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableMetrics",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDiagnosticSettingCategory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscriptionDiagnosticSettingCategory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleNotification",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Webhook",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "SendEmailToSubscriptionAdministrator",
+        "Aliases": null
+      },
+      {
+        "Name": "SendEmailToSubscriptionCoAdministrator",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "MaximumCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimumCapacity",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTimeWindow",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTimeWindow",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeWindowTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleDay",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleHour",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleMinute",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Rule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricStatistic",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregationOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeWindow",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionCooldown",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionDirection",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionScaleType",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionValue",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "SettingSpec"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DisableSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoscaleProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": [
+          "TargetResourceUri"
+        ]
+      },
+      {
+        "Name": "Notification",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAutoscaleHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleWebhook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Property",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzMetricAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregationOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzWebtestAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "FailedLocationCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAlertHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAlertRuleEmail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "CustomEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "SendToServiceOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAlertRuleWebhook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Property",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableAlert",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ActionGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActivityLogAlertCondition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Field",
+        "Aliases": null
+      },
+      {
+        "Name": "Equal",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupReceiver",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubNameSpace",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "SmsReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "CountryCode",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "UseAadAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "ItsmReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionId",
+        "Aliases": null
+      },
+      {
+        "Name": "TicketConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "Region",
+        "Aliases": null
+      },
+      {
+        "Name": "VoiceReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "VoiceCountryCode",
+        "Aliases": null
+      },
+      {
+        "Name": "VoicePhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "ArmRoleReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureFunctionReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "FunctionAppResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpTriggerUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "FunctionName",
+        "Aliases": null
+      },
+      {
+        "Name": "LogicAppReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "CallbackUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationRunbookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "RunbookName",
+        "Aliases": null
+      },
+      {
+        "Name": "IsGlobalRunbook",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationRunbookServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAppPushReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAppPushEmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ShortName",
+        "Aliases": null
+      },
+      {
+        "Name": "Receiver",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricFilter",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Dimension",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "Frequency",
+        "Aliases": [
+          "EvaluationFrequency"
+        ]
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceScope",
+        "Aliases": [
+          "Scopes"
+        ]
+      },
+      {
+        "Name": "TargetResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceRegion",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": [
+          "Criteria"
+        ]
+      },
+      {
+        "Name": "AutoMitigate",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionGroup",
+        "Aliases": [
+          "Actions"
+        ]
+      },
+      {
+        "Name": "ActionGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricAlertRuleV2DimensionSelection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "DimensionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ValuesToInclude",
+        "Aliases": null
+      },
+      {
+        "Name": "ValuesToExclude",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricAlertRuleV2Criteria",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "DynamicThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "WebTest",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipMetricValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "DimensionSelection",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregation",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "ThresholdSensitivity",
+        "Aliases": [
+          "Sensitivity"
+        ]
+      },
+      {
+        "Name": "ViolationCount",
+        "Aliases": [
+          "FailingPeriod",
+          "NumberOfViolations"
+        ]
+      },
+      {
+        "Name": "ExaminedAggregatedPointCount",
+        "Aliases": [
+          "TotalPeriod",
+          "NumberOfExaminedAggregatedPoints"
+        ]
+      },
+      {
+        "Name": "IgnoreDataBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "WebTestId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationInsightsId",
+        "Aliases": [
+          "componentId"
+        ]
+      },
+      {
+        "Name": "FailedLocationCount",
+        "Aliases": [
+          "AlertLocationThreshold"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "RuleResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizedResource",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "FrequencyInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeWindowInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleTriggerCondition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ThresholdOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTrigger",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleLogMetricTrigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ThresholdOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerType",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricColumn",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleAznsActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ActionGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailSubject",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomWebhookPayload",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleAlertingAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "AznsAction",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "ThrottlingInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "Trigger",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "Schedule",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "Schedule",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tags",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tags",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "LinkedResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "RuleId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "RuleFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "RuleId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "RuleFile",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "RuleId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "TargetResourceId",
+        "Aliases": [
+          "ResourceUri"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleName",
+        "Aliases": [
+          "DataCollectionRuleName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "TargetResourceId",
+        "Aliases": [
+          "ResourceUri"
+        ]
+      },
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "RuleId",
+        "Aliases": [
+          "DataCollectionRuleId"
+        ]
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "TargetResourceId",
+        "Aliases": [
+          "ResourceUri"
+        ]
+      },
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AssociationId",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLog",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "3.0.1",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "CorrelationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxRecord",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

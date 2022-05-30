@@ -1,0 +1,2659 @@
+[
+  {
+    "Command": "Get-AzIntegrationAccountAgreement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountAssembly",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AssemblyName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountBatchConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "BatchConfigurationName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountCallbackUrl",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "NotAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountMap",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "MapName",
+        "Aliases": null
+      },
+      {
+        "Name": "MapType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountPartner",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "SchemaName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountGeneratedIcn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": [
+          "MessageType"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIntegrationAccountReceivedIcn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "ControlNumberValue",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": [
+          "MessageType"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountAgreement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestPartner",
+        "Aliases": null
+      },
+      {
+        "Name": "HostPartner",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestIdentityQualifier",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestIdentityQualifierValue",
+        "Aliases": null
+      },
+      {
+        "Name": "HostIdentityQualifier",
+        "Aliases": null
+      },
+      {
+        "Name": "HostIdentityQualifierValue",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementContent",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementContentFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountAssembly",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AssemblyName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AssemblyFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "AssemblyData",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentLink",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountBatchConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "BatchConfigurationName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "BatchConfigurationFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchConfigurationDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MessageCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicCertificateFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountMap",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "MapName",
+        "Aliases": null
+      },
+      {
+        "Name": "MapFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "MapDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "MapType",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountPartner",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerType",
+        "Aliases": null
+      },
+      {
+        "Name": "BusinessIdentities",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIntegrationAccountSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "SchemaName",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaType",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountAgreement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountAssembly",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AssemblyName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountBatchConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "BatchConfigurationName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountMap",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "MapName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountPartner",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "SchemaName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIntegrationAccountReceivedIcn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "ControlNumberValue",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": [
+          "MessageType"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountAgreement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestPartner",
+        "Aliases": null
+      },
+      {
+        "Name": "HostPartner",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestIdentityQualifier",
+        "Aliases": null
+      },
+      {
+        "Name": "GuestIdentityQualifierValue",
+        "Aliases": null
+      },
+      {
+        "Name": "HostIdentityQualifier",
+        "Aliases": null
+      },
+      {
+        "Name": "HostIdentityQualifierValue",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementContent",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementContentFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountAssembly",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AssemblyName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AssemblyFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "AssemblyData",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentLink",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountBatchConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentName",
+        "Aliases": [
+          "IntegrationAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "BatchConfigurationName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "BatchConfigurationFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchConfigurationDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MessageCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicCertificateFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountMap",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "MapName",
+        "Aliases": null
+      },
+      {
+        "Name": "MapFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "MapDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "MapType",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountPartner",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerType",
+        "Aliases": null
+      },
+      {
+        "Name": "BusinessIdentities",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationAccountName",
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "SchemaName",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaType",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzLogicAppRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "RunName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountGeneratedIcn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "ControlNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": [
+          "MessageType"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIntegrationAccountReceivedIcn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AgreementName",
+        "Aliases": null
+      },
+      {
+        "Name": "ControlNumberValue",
+        "Aliases": null
+      },
+      {
+        "Name": "IsMessageProcessingFailed",
+        "Aliases": null
+      },
+      {
+        "Name": "AgreementType",
+        "Aliases": [
+          "MessageType"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppRunAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "RunName",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionName",
+        "Aliases": null
+      },
+      {
+        "Name": "FollowNextPageLink",
+        "Aliases": [
+          "FL"
+        ]
+      },
+      {
+        "Name": "MaximumFollowNextPageLink",
+        "Aliases": [
+          "ML"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppRunHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "RunName",
+        "Aliases": null
+      },
+      {
+        "Name": "FollowNextPageLink",
+        "Aliases": [
+          "FL"
+        ]
+      },
+      {
+        "Name": "MaximumFollowNextPageLink",
+        "Aliases": [
+          "ML"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppTriggerCallbackUrl",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppTrigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppTriggerHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "HistoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "FollowNextPageLink",
+        "Aliases": [
+          "FL"
+        ]
+      },
+      {
+        "Name": "MaximumFollowNextPageLink",
+        "Aliases": [
+          "ML"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogicAppUpgradedDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "TargetSchemaVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Definition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefinitionFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "ParameterFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "AppServicePlan",
+        "Aliases": null
+      },
+      {
+        "Name": "UseConsumptionModel",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Definition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefinitionFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "ParameterFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzLogicApp",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.LogicApp",
+    "Version": "1.5.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ResourceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Definition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefinitionFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "ParameterFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
