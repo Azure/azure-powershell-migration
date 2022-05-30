@@ -19,6 +19,9 @@
 -->
 ## Upcoming Release
 ## 1.1.2
+* Upgrade Az version to 8.0.0
+
+## 1.1.2
 * Upgrade Az version to 6.1.0
 
 ## 1.1.1
