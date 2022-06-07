@@ -18,6 +18,10 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+
+## 1.1.3
+* Upgrade Az version to 8.0.0
+
 ## 1.1.2
 * Upgrade Az version to 8.0.0
 
