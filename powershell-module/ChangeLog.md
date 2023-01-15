@@ -19,10 +19,10 @@
 -->
 ## Upcoming Release
 
-## 1.1.3
-* Upgrade Az version to 8.0.0
+## 1.1.4
+* Upgraded Az Version to 9.3.0
 
-## 1.1.2
+## 1.1.3
 * Upgrade Az version to 8.0.0
 
 ## 1.1.2

@@ -53,7 +53,7 @@ Have the following installed on your system:
 
 1. Update the Az PowerShell module version listed in documentation, function help, function
    parameter validation, and unit tests. The easiest way to do this is to perform a search to find
-   and replace the old version. For example, search for '5.2.0' and replace with '5.6.0'.
+   and replace the previous version. The previous version can be found under `\powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az`. For example, search for '5.2.0' and replace with '5.6.0'. Please do not replace all because some files containing previous version, such as changelog, should not be replaced. 
 
 1. Remove the old module spec files from module resources:
    `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`.
@@ -73,5 +73,7 @@ Have the following installed on your system:
    ```
 
    Restart PowerShell if test is changed and module needs to be imported again.
+
+1. Add new version and release notes to `powershell-module/ChangeLog.md` and `powershell-module/Az.Tools.Migration/Az.Tools.Migration.psd1`. It is usually patch release because no API changes
 
 1. Submit a pull request to commit the new changes.
