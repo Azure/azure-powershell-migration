@@ -11,10 +11,10 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             $spec | Should Not Be $null
             $spec.Count | Should Be $expectedCommandCount
         }
-        It 'Should be able to import the Az 8.0.0 spec' {
+        It 'Should be able to import the Az 9.3.0 spec' {
             # arrange/act
-            $expectedCommandCount = 4642
-            $spec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "8.0.0"
+            $expectedCommandCount = 4979
+            $spec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "9.3.0"
 
             # assert
             $spec | Should Not Be $null

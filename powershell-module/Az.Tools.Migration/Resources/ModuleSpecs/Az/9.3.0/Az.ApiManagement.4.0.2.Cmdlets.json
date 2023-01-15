@@ -1,0 +1,6336 @@
+[
+  {
+    "Command": "Add-AzApiManagementApiToGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProvisioningState",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzApiManagementApiToProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzApiManagementProductToGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzApiManagementRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ApiManagement",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableGateway",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzApiManagementUserToGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContext",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetBlobName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Export-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "SpecificationFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "SaveAs",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementApiRelease",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleaseId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementApiRevision",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementApiSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementApiVersionSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementAuthorizationServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementAuthorizationServerClientSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementBackend",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementCache",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "CacheId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementDiagnostic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiagnosticId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGatewayKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementIdentityProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementIdentityProviderClientSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementLogger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementNetworkStatus",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ApiManagementObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementOpenIdConnectProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdConnectProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementOpenIdConnectProviderClientSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdConnectProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Format",
+        "Aliases": null
+      },
+      {
+        "Name": "SaveAs",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementNamedValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "NamedValueId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementNamedValueSecretValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "NamedValueId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementSsoToken",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementSubscriptionKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementTenantAccess",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementTenantAccessSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementTenantGitAccess",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementTenantGitAccessSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementTenantSyncState",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Email",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApiManagementUserSsoUrl",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "SpecificationFormat",
+        "Aliases": null
+      },
+      {
+        "Name": "SpecificationPath",
+        "Aliases": null
+      },
+      {
+        "Name": "SpecificationUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "WsdlServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "WsdlEndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiType",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocol",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Organization",
+        "Aliases": null
+      },
+      {
+        "Name": "AdminEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "VpnType",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalRegions",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomHostnameConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemCertificateConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "SslSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableClientCertificate",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableGateway",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimalControlPlaneApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocols",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationScope",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "BearerTokenSendingMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyHeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyQueryParamName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductIds",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionDescription",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiType",
+        "Aliases": null
+      },
+      {
+        "Name": "TermsOfServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactName",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseName",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementApiRelease",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleaseId",
+        "Aliases": null
+      },
+      {
+        "Name": "Note",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementApiRevision",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevisionDescription",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementApiSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocumentContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocument",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocumentFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementApiVersionSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scheme",
+        "Aliases": null
+      },
+      {
+        "Name": "HeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementAuthorizationServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientRegistrationPageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "TokenEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRequestMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "GrantTypes",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientAuthenticationMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "TokenBodyParameters",
+        "Aliases": null
+      },
+      {
+        "Name": "SupportState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultScope",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessTokenSendingMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceOwnerUsername",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceOwnerPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementBackend",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendId",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocol",
+        "Aliases": null
+      },
+      {
+        "Name": "Url",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipCertificateChainValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipCertificateNameValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceFabricCluster",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementBackendCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "CertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "Header",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationHeaderScheme",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationHeaderParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementBackendProxy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Url",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementBackendServiceFabric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ManagementEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxPartitionResolutionRetry",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerX509Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerCertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementCache",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CacheId",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureRedisResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "UseFromLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxBytes",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementCustomHostnameConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Hostname",
+        "Aliases": null
+      },
+      {
+        "Name": "HostnameType",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPath",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "HostNameCertificateInformation",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultSslBinding",
+        "Aliases": null
+      },
+      {
+        "Name": "NegotiateClientCertificate",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedCertificate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementDiagnostic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiagnosticId",
+        "Aliases": null
+      },
+      {
+        "Name": "AlwaysLog",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontEndSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LocationData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Hostname",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "NegotiateClientCertificate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "ExternalId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementHttpMessageDiagnostic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "HeadersToLog",
+        "Aliases": null
+      },
+      {
+        "Name": "BodyBytesToLog",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementIdentityProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowedTenants",
+        "Aliases": null
+      },
+      {
+        "Name": "Authority",
+        "Aliases": null
+      },
+      {
+        "Name": "SignupPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SigninPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProfileEditingPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordResetPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SigninTenant",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementLogger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "InstrumentationKey",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "IsBuffered",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementOpenIdConnectProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdConnectProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetadataEndpointUri",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Method",
+        "Aliases": null
+      },
+      {
+        "Name": "UrlTemplate",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameters",
+        "Aliases": null
+      },
+      {
+        "Name": "Request",
+        "Aliases": null
+      },
+      {
+        "Name": "Responses",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementPipelineDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Request",
+        "Aliases": null
+      },
+      {
+        "Name": "Response",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LegalTerms",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "ApprovalRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionsLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementResourceLocationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "City",
+        "Aliases": null
+      },
+      {
+        "Name": "District",
+        "Aliases": null
+      },
+      {
+        "Name": "CountryOrRegion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementNamedValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "NamedValueId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Secret",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableGateway",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementSamplingSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "SamplingType",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingPercentage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementSslSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "FrontendProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "CipherSuite",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "SecondaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowTracing",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementSystemCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "StoreName",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPath",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "Email",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Note",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementUserToken",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "Expiry",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementVirtualNetwork",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "SubnetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Publish-AzApiManagementTenantGitConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Branch",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ValidateOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiFromGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiFromProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiRelease",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleaseId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiRevision",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementApiVersionSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementAuthorizationServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementBackend",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementCache",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CacheId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementDiagnostic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiagnosticId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementGatewayHostnameConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayHostnameConfigurationId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementIdentityProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementLogger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementOpenIdConnectProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdConnectProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeleteSubscriptions",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementProductFromGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementNamedValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "NamedValueId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ApiManagement",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeleteSubscriptions",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApiManagementUserFromGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContext",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceBlobName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzApiManagementTenantGitConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Branch",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagement",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementApi",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocols",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationScope",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "BearerTokenSendingMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyHeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyQueryParamName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiType",
+        "Aliases": null
+      },
+      {
+        "Name": "TermsOfServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactName",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseName",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementApiRevision",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocols",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationScope",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "BearerTokenSendingMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyHeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionKeyQueryParamName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiType",
+        "Aliases": null
+      },
+      {
+        "Name": "TermsOfServiceUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactName",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseName",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementApiSchema",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocumentContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocument",
+        "Aliases": null
+      },
+      {
+        "Name": "SchemaDocumentFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementApiVersionSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersionSetId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scheme",
+        "Aliases": null
+      },
+      {
+        "Name": "HeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementAuthorizationServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientRegistrationPageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "TokenEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRequestMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "GrantTypes",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientAuthenticationMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "TokenBodyParameters",
+        "Aliases": null
+      },
+      {
+        "Name": "SupportState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultScope",
+        "Aliases": null
+      },
+      {
+        "Name": "AccessTokenSendingMethods",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceOwnerUsername",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceOwnerPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementBackend",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocol",
+        "Aliases": null
+      },
+      {
+        "Name": "Url",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipCertificateChainValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipCertificateNameValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceFabricCluster",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateId",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxBytes",
+        "Aliases": null
+      },
+      {
+        "Name": "PfxPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVault",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementDiagnostic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DiagnosticId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "AlwaysLog",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontEndSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApiManagementGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LocationData",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementIdentityProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowedTenants",
+        "Aliases": null
+      },
+      {
+        "Name": "Authority",
+        "Aliases": null
+      },
+      {
+        "Name": "SignupPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SigninPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProfileEditingPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "PasswordResetPolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SigninTenant",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementLogger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "LoggerId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "InstrumentationKey",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "IsBuffered",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementOpenIdConnectProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "OpenIdConnectProviderId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetadataEndpointUri",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Method",
+        "Aliases": null
+      },
+      {
+        "Name": "UrlTemplate",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateParameters",
+        "Aliases": null
+      },
+      {
+        "Name": "Request",
+        "Aliases": null
+      },
+      {
+        "Name": "Responses",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Format",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiRevision",
+        "Aliases": null
+      },
+      {
+        "Name": "OperationId",
+        "Aliases": null
+      },
+      {
+        "Name": "Policy",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementProduct",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ProductId",
+        "Aliases": null
+      },
+      {
+        "Name": "Title",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "LegalTerms",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "ApprovalRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionsLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementNamedValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "NamedValueId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Secret",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "SecondaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiresOn",
+        "Aliases": null
+      },
+      {
+        "Name": "StateComment",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementTenantAccess",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApiManagementUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "UserId",
+        "Aliases": null
+      },
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "Email",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Note",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApiManagementApiRelease",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleaseId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiId",
+        "Aliases": null
+      },
+      {
+        "Name": "Note",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApiManagementCache",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "CacheId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureRedisResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "UseFromLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApiManagementRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ApiManagement",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableGateway",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Sync-AzApiManagementKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObjectCert",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObjectNamedvalue",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApiManagementKeyVaultObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ApiManagement",
+    "Version": "4.0.2",
+    "Parameters": [
+      {
+        "Name": "SecretIdentifier",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
