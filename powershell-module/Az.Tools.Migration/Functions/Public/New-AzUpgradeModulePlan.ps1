@@ -171,7 +171,7 @@ function New-AzUpgradeModulePlan
         {
 
             Write-Verbose -Message "Importing cmdlet spec for Az $version"
-            $AzModuleSpec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion $ToAzVersion
+            $AzModuleSpec = Get-AzUpgradeCmdletSpec -Az -ModuleVersion $ToAzVersion
         }
         else
         {
