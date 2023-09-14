@@ -1,0 +1,2900 @@
+[
+  {
+    "Command": "Get-AzApplicationInsights",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Full",
+        "Aliases": [
+          "IncludeDailyCap",
+          "IncludeDailyCapStatus",
+          "IncludePricingPlan"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ApiKeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsMyWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "CanFetchContent",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsWebTest",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "WebTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AppInsightsName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "CanFetchContent",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsWorkbookRevision",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "RevisionId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzApplicationInsightsWorkbookTemplate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsights",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": [
+          "ApplicationKind"
+        ]
+      },
+      {
+        "Name": "ApplicationType",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableIPMasking",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "FlowType",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceCustomerStorageForProfiler",
+        "Aliases": null
+      },
+      {
+        "Name": "HockeyAppId",
+        "Aliases": null
+      },
+      {
+        "Name": "ImmediatePurgeDataOn30Day",
+        "Aliases": null
+      },
+      {
+        "Name": "IngestionMode",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForIngestion",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestSource",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingPercentage",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Permissions",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationType",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationQueueEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationQueueUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DocumentType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSASUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedStorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsMyWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SerializedData",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceTag",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWebTest",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "WebTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentIgnoreCase",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentPassIfTextFound",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Frequency",
+        "Aliases": null
+      },
+      {
+        "Name": "GeoLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestBody",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestFollowRedirect",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestHttpVerb",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestParseDependent",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "RetryEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleExpectedHttpStatusCode",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleIgnoreHttpsStatusCode",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleSslCertRemainingLifetimeCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleSslCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TestName",
+        "Aliases": null
+      },
+      {
+        "Name": "Timeout",
+        "Aliases": null
+      },
+      {
+        "Name": "Configuration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWebTestGeolocationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWebTestHeaderFieldObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityUserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "SerializedData",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceTag",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWorkbookTemplate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Author",
+        "Aliases": null
+      },
+      {
+        "Name": "Gallery",
+        "Aliases": null
+      },
+      {
+        "Name": "Localized",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzApplicationInsightsWorkbookTemplateGalleryObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Order",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsights",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsApiKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ApiKeyId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsMyWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsWebTest",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "WebTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzApplicationInsightsWorkbookTemplate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsContinuousExport",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ExportId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationType",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationQueueEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationQueueUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DocumentType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSASUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsDailyCap",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DailyCapGB",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotificationWhenHitCap",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzApplicationInsightsPricingPlan",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PricingPlan",
+        "Aliases": null
+      },
+      {
+        "Name": "DailyCapGB",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableNotificationWhenHitCap",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsights",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationType",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableIPMasking",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "FlowType",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceCustomerStorageForProfiler",
+        "Aliases": null
+      },
+      {
+        "Name": "HockeyAppId",
+        "Aliases": null
+      },
+      {
+        "Name": "ImmediatePurgeDataOn30Day",
+        "Aliases": null
+      },
+      {
+        "Name": "IngestionMode",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForIngestion",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccessForQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestSource",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingPercentage",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsightsLinkedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationInsightsComponentName",
+          "ComponentName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedStorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsightsMyWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkbookProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsightsWebTestTag",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsightsWorkbook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "LinkedSourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Revision",
+        "Aliases": null
+      },
+      {
+        "Name": "SerializedData",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzApplicationInsightsWorkbookTemplate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.ApplicationInsights",
+    "Version": "2.2.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Author",
+        "Aliases": null
+      },
+      {
+        "Name": "Gallery",
+        "Aliases": null
+      },
+      {
+        "Name": "Localized",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

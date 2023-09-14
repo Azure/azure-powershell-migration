@@ -1,0 +1,1980 @@
+[
+  {
+    "Command": "Get-AzMigrateDiscoveredServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplianceName",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "JobID",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupID",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateProject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "MigrateProjectName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateReplicationFabric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateReplicationPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateReplicationProtectionContainer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateReplicationProtectionContainerMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MappingName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateReplicationRecoveryServicesProvider",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "FabricName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProviderName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateRunAsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SiteName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "MachineName",
+        "Aliases": null
+      },
+      {
+        "Name": "DiscoveredMachineId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupID",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipToken",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateSite",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SiteName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMigrateSolution",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "MigrateProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SolutionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Initialize-AzMigrateReplicationInfrastructure",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scenario",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetRegion",
+        "Aliases": null
+      },
+      {
+        "Name": "CacheStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateDiskMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "DiskID",
+        "Aliases": null
+      },
+      {
+        "Name": "IsOSDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetID",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateNicMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "NicID",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNicSelectionType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNicSubnet",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNicName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNicIP",
+        "Aliases": null
+      },
+      {
+        "Name": "TestNicSubnet",
+        "Aliases": null
+      },
+      {
+        "Name": "TestNicIP",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateProject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ETag",
+        "Aliases": null
+      },
+      {
+        "Name": "Property",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateReplicationPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "PolicyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProviderSpecificInput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateReplicationProtectionContainerMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "FabricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MappingName",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectionContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProviderSpecificInput",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetProtectionContainerId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetVMName",
+        "Aliases": null
+      },
+      {
+        "Name": "MachineId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": null
+      },
+      {
+        "Name": "OSDiskID",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServerLicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "TestNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TestSubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicationContainerMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "VMWarerunasaccountID",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetVMSize",
+        "Aliases": null
+      },
+      {
+        "Name": "PerformAutoResync",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetAvailabilitySet",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetAvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "VMTag",
+        "Aliases": null
+      },
+      {
+        "Name": "NicTag",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetBootDiagnosticsStorageAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetID",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskToInclude",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMigrateTestNicMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "NicID",
+        "Aliases": null
+      },
+      {
+        "Name": "TestNicSubnet",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzMigrateProjectTool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "MigrateProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "AcceptLanguage",
+        "Aliases": null
+      },
+      {
+        "Name": "Tool",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzMigrateProject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "MigrateProjectName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "AcceptLanguage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRemove",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Restart-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Resume-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "DeleteMigratedResource",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzMigrateDiskMapping",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "DiskID",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "IsOSDisk",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetVMName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetDiskName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetVMSize",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TestNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceGroupID",
+        "Aliases": null
+      },
+      {
+        "Name": "NicToUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskToUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetAvailabilitySet",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetAvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServerLicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateTag",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateTagOperation",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateVMTag",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateVMTagOperation",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateNicTag",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateNicTagOperation",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateDiskTag",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateDiskTagOperation",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetBootDiagnosticsStorageAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzMigrateServerMigration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "OsUpgradeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "TurnOffSourceServer",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzMigrateTestMigration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TestNetworkID",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "OsUpgradeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NicToUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzMigrateTestMigrationCleanup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Suspend-AzMigrateServerReplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Migrate",
+    "Version": "2.2.0",
+    "Parameters": [
+      {
+        "Name": "TargetObjectID",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

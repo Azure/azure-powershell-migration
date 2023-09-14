@@ -5,7 +5,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         It 'Should be able to import the Az 9.3.0 alias mapping spec' {
             # arrange/act
             $expectedAliasCount = 2623
-            $spec = Get-AzUpgradeAliasSpec -ModuleVersion "9.3.0"
+            $spec = Get-AzUpgradeAliasSpec -ModuleVersion latest
 
             # assert
             $spec | Should Not Be $null

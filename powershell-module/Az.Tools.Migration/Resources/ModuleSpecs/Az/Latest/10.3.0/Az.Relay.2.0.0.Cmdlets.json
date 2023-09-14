@@ -1,0 +1,1607 @@
+[
+  {
+    "Command": "Get-AzRelayAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRelayHybridConnection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HybridConnectionName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRelayKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRelayNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzRelayNamespaceNetworkRuleSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "NamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzWcfRelay",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRelayAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "Rights",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRelayHybridConnection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HybridConnectionName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "RequiresClientAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRelayKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "RegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyValue",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRelayNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuTier",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzRelayNetworkRuleSetIPRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "IPMask",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzWcfRelay",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "RequiresClientAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "RequiresTransportSecurity",
+        "Aliases": null
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelayType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRelayAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRelayHybridConnection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HybridConnectionName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzRelayNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzWcfRelay",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRelayAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AuthorizationRuleName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "HybridConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelay",
+        "Aliases": null
+      },
+      {
+        "Name": "Rights",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRelayHybridConnection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HybridConnectionName"
+        ]
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzRelayNamespaceNetworkRuleSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "NamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "IPRule",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzWcfRelay",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "UserMetadata",
+        "Aliases": null
+      },
+      {
+        "Name": "WcfRelayType",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzRelayName",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzRelayNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Relay",
+    "Version": "2.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NamespaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2968 @@
+[
+  {
+    "Command": "Get-AzDataLakeAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataLakeAnalyticsCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "CredentialName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "DatabaseHost",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "Recurse",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataLakeAnalyticsCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "CredentialName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "NewPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "DatabaseHost",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzDataLakeAnalyticsCatalogItem",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsCatalogItem",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "UserOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataLakeAnalyticsCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "User",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "Other",
+        "Aliases": null
+      },
+      {
+        "Name": "UserOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Permissions",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "User",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataLakeAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "AccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Wait-AzDataLakeAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitIntervalInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeoutInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzDataLakeAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzDataLakeAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "AccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataLakeAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Include",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Submitter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Result",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Submit-AzDataLakeAnalyticsJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Script",
+        "Aliases": null
+      },
+      {
+        "Name": "Runtime",
+        "Aliases": null
+      },
+      {
+        "Name": "CompileMode",
+        "Aliases": null
+      },
+      {
+        "Name": "CompileOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "AnalyticsUnits",
+        "Aliases": [
+          "DegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineUri",
+        "Aliases": null
+      },
+      {
+        "Name": "RunId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataLakeAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultDataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnits",
+        "Aliases": [
+          "MaxDegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "MaxJobCount",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryStoreRetention",
+        "Aliases": null
+      },
+      {
+        "Name": "Tier",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataLakeAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnits",
+        "Aliases": [
+          "MaxDegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "MaxJobCount",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryStoreRetention",
+        "Aliases": null
+      },
+      {
+        "Name": "Tier",
+        "Aliases": null
+      },
+      {
+        "Name": "FirewallState",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowAzureIpState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzDataLakeAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StartIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "EndIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataLakeAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StartIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "EndIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataLakeAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectType",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnitsPerJob",
+        "Aliases": [
+          "MaxDegreeOfParallelismPerJob"
+        ]
+      },
+      {
+        "Name": "MinPriorityPerJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataLakeAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "MaxAnalyticsUnitsPerJob",
+        "Aliases": [
+          "MaxDegreeOfParallelismPerJob"
+        ]
+      },
+      {
+        "Name": "MinPriorityPerJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataLakeAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsJobPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataLakeAnalyticsJobRecurrence",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AdlCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "CredentialName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "DatabaseHost",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "Recurse",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AdlCatalogCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "CredentialName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "NewPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "DatabaseHost",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AdlCatalogItem",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlCatalogItem",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "UserOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AdlCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "User",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "Other",
+        "Aliases": null
+      },
+      {
+        "Name": "UserOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Permissions",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlCatalogItemAclEntry",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "User",
+        "Aliases": null
+      },
+      {
+        "Name": "Group",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ItemType",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AdlAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "AccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Wait-AdlJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitIntervalInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeoutInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AdlAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AdlAnalyticsDataSource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "DataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Blob",
+        "Aliases": [
+          "AzureBlob"
+        ]
+      },
+      {
+        "Name": "AccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AdlJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Include",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Submitter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Result",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Submit-AdlJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Script",
+        "Aliases": null
+      },
+      {
+        "Name": "Runtime",
+        "Aliases": null
+      },
+      {
+        "Name": "CompileMode",
+        "Aliases": null
+      },
+      {
+        "Name": "CompileOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "AnalyticsUnits",
+        "Aliases": [
+          "DegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineUri",
+        "Aliases": null
+      },
+      {
+        "Name": "RunId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AdlAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultDataLakeStore",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnits",
+        "Aliases": [
+          "MaxDegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "MaxJobCount",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryStoreRetention",
+        "Aliases": null
+      },
+      {
+        "Name": "Tier",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AdlAnalyticsAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnits",
+        "Aliases": [
+          "MaxDegreeOfParallelism"
+        ]
+      },
+      {
+        "Name": "MaxJobCount",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryStoreRetention",
+        "Aliases": null
+      },
+      {
+        "Name": "Tier",
+        "Aliases": null
+      },
+      {
+        "Name": "FirewallState",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowAzureIpState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AdlAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StartIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "EndIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AdlAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StartIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "EndIpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlAnalyticsFirewallRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AdlAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectType",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxAnalyticsUnitsPerJob",
+        "Aliases": [
+          "MaxDegreeOfParallelismPerJob"
+        ]
+      },
+      {
+        "Name": "MinPriorityPerJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AdlAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "MaxAnalyticsUnitsPerJob",
+        "Aliases": [
+          "MaxDegreeOfParallelismPerJob"
+        ]
+      },
+      {
+        "Name": "MinPriorityPerJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AdlAnalyticsComputePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ComputePolicyName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlJobPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "PipelineId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AdlJobRecurrence",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataLakeAnalytics",
+    "Version": "1.0.3",
+    "Parameters": [
+      {
+        "Name": "Account",
+        "Aliases": [
+          "AccountName"
+        ]
+      },
+      {
+        "Name": "RecurrenceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "SubmittedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "SubmittedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

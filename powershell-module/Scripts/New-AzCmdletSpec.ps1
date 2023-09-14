@@ -30,11 +30,9 @@ Param
     $AzVersion,
 
     [Parameter(
-        Mandatory=$true,
-        HelpMessage='Specify the output folder for where the files will be generated.')]
-    [System.String]
-    [ValidateNotNullOrEmpty()]
-    $OutputDirectory
+        HelpMessage='Mark this version as LTS version, otherwise latest version.')]
+    [System.Management.Automation.SwitchParameter]
+    $LTS
 )
 
 function New-ModuleCommandDefinitionsFile
@@ -59,7 +57,7 @@ function New-ModuleCommandDefinitionsFile
         Specify to use a 'minimumversion' flag when searching, instead of required version.
 
     .EXAMPLE
-        PS C:\> New-ModuleCommandDefinitionsFile -ModuleName "Azure.Storage" -ModuleVersion "9.3.0" -OutputDirectory "C:\users\user\desktop"
+        PS C:\> New-ModuleCommandDefinitionsFile -ModuleName "Az.Storage" -ModuleVersion "5.10.0" -OutputDirectory "C:\users\user\desktop"
         Creates a new module definition json file for the given module.
     #>
     [CmdletBinding()]
@@ -181,6 +179,13 @@ function New-ModuleCommandDefinitionsFile
 }
 
 # create the output directories if they do not exist.
+$OutputDirectory = Join-Path -Path $PSScriptRoot -ChildPath "..\Az.Tools.Migration\Resources\ModuleSpecs\Az"
+if ($PSBoundParameters.ContainsKey('LTS')) {
+    $OutputDirectory = Join-Path -Path $OutputDirectory -ChildPath "LTS"
+} else {
+    $OutputDirectory = Join-Path -Path $OutputDirectory -ChildPath "Latest"
+}
+$OutputDirectory = Join-Path -Path $OutputDirectory -ChildPath $AzVersion
 
 if (!(Test-Path $OutputDirectory))
 {

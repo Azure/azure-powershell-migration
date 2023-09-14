@@ -3,7 +3,7 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.1.4'
+    ModuleVersion = '1.1.5'
 
     # Supported PSEditions
     CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,7 +108,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Upgrade Az version to 9.3.0'
+            ReleaseNotes = '* Upgrade Az version to 10.0.0'
         }
     }
 

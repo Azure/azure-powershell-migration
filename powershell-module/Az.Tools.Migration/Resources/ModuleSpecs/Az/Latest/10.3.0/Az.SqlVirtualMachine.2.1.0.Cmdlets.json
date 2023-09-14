@@ -1,0 +1,1738 @@
+[
+  {
+    "Command": "Get-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AvailabilityGroupListenerName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSqlVM",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineName",
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupName",
+        "Aliases": [
+          "SqlVirtualMachineGroupName"
+        ]
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSqlVMGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineGroupName",
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzRedeploySqlVM",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzSqlVMTroubleshoot",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTimeUtc",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTimeUtc",
+        "Aliases": null
+      },
+      {
+        "Name": "TroubleshootingScenario",
+        "Aliases": null
+      },
+      {
+        "Name": "UnhealthyReplicaInfoAvailabilityGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AvailabilityGroupListenerName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "AvailabilityGroupConfigurationReplica",
+        "Aliases": null
+      },
+      {
+        "Name": "AvailabilityGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "CreateDefaultAvailabilityGroupIfNotExist",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ProbePort",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIpAddressResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiSubnetIPConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVirtualMachineAgReplicaObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Commit",
+        "Aliases": null
+      },
+      {
+        "Name": "Failover",
+        "Aliases": null
+      },
+      {
+        "Name": "ReadableSecondary",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineInstanceId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVirtualMachineMultiSubnetIPConfigurationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "SqlVirtualMachineInstance",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateIPAddressIpaddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateIPAddressSubnetResourceId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVM",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineName",
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalFeatureServerConfigurationIsRServicesEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "AssessmentSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AssessmentSettingRunImmediately",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingBackupScheduleType",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingBackupSystemDb",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingDaysOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingEnableEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupWindowHour",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingLogBackupFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingRetentionPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageAccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingDayOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingMaintenanceWindowDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingMaintenanceWindowStartingHour",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAdAuthenticationSettingClientId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutomaticUpgrade",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultCredentialSettingAzureKeyVaultUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultCredentialSettingCredentialName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultCredentialSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultCredentialSettingServicePrincipalName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultCredentialSettingServicePrincipalSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "LeastPrivilegeMode",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleDayOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleMonthlyOccurrence",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleWeeklyInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlConnectivityUpdateSettingConnectivityType",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlConnectivityUpdateSettingPort",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlConnectivityUpdateSettingSqlAuthUpdatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlConnectivityUpdateSettingSqlAuthUpdateUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlDataSettingDefaultFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlDataSettingLun",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingCollation",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingIsIfiEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingIsLpimEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingIsOptimizeForAdHocWorkloadsEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingMaxDop",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingMaxServerMemoryMb",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlInstanceSettingMinServerMemoryMb",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlLogSettingDefaultFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlLogSettingLun",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlStorageUpdateSettingDiskConfigurationType",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlStorageUpdateSettingDiskCount",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlStorageUpdateSettingStartingDeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingDataFileCount",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingDataFileSize",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingDataGrowth",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingDefaultFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingLogFileSize",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingLogGrowth",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingLun",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingPersistFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlTempDbSettingPersistFolderPath",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineGroupResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlWorkloadTypeUpdateSettingSqlWorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageConfigurationSettingDiskConfigurationType",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageConfigurationSettingSqlSystemDbOnDataDisk",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageConfigurationSettingStorageWorkloadType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualMachineResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsClusterBootstrapAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsClusterOperatorAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsSqlServiceAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcStaticIP",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSqlVMGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineGroupName",
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterBootstrapAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterOperatorAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterSubnetType",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainFqdn",
+        "Aliases": null
+      },
+      {
+        "Name": "FileShareWitnessPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "OuPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServiceAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountPrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAvailabilityGroupListener",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AvailabilityGroupListenerName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVMGroupName",
+        "Aliases": [
+          "GroupName"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSqlVM",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineName",
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSqlVMGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineGroupName",
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzSqlVMAssessment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzSqlVM",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineName",
+          "SqlVMName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "Offer",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlManagementType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingBackupScheduleType",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingBackupSystemDb",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingDaysOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingEnableEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingFullBackupWindowHour",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingLogBackupFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingRetentionPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageAccessKey",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoBackupSettingStorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingDayOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingMaintenanceWindowDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoPatchingSettingMaintenanceWindowStartingHour",
+        "Aliases": null
+      },
+      {
+        "Name": "AssessmentSettingEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "AssessmentSettingRunImmediately",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleDayOfWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleEnable",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleMonthlyOccurrence",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleWeeklyInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlVirtualMachineGroupResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualMachineResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsClusterBootstrapAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsClusterOperatorAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcDomainCredentialsSqlServiceAccountPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "WsfcStaticIP",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutomaticUpgrade",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzSqlVMGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.SqlVirtualMachine",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SqlVirtualMachineGroupName",
+          "SqlVMGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterBootstrapAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterOperatorAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterSubnetType",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainFqdn",
+        "Aliases": null
+      },
+      {
+        "Name": "FileShareWitnessPath",
+        "Aliases": null
+      },
+      {
+        "Name": "OuPath",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlServiceAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountPrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1620 @@
+[
+  {
+    "Command": "New-AzFrontDoor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RoutingRule",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPool",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontendEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancingSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthProbeSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableCertificateNameCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPoolsSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzFrontDoor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzFrontDoor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "RoutingRule",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPool",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontendEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancingSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthProbeSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableCertificateNameCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPoolsSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzFrontDoor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorRoutingRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontendEndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPoolName",
+        "Aliases": null
+      },
+      {
+        "Name": "AcceptedProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "PatternToMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomForwardingPath",
+        "Aliases": null
+      },
+      {
+        "Name": "ForwardingProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableCaching",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryParameterStripDirective",
+        "Aliases": null
+      },
+      {
+        "Name": "DynamicCompression",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectType",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomHost",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomPath",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomFragment",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomQueryString",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "RulesEngineName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorBackendObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Address",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPort",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpsPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendHostHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLinkAlias",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLinkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLinkLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLinkApprovalMessage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorBackendPoolObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Backend",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancingSettingsName",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthProbeSettingsName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorBackendPoolsSettingObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "EnforceCertificateNameCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "SendRecvTimeoutInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorFrontendEndpointObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "HostName",
+        "Aliases": null
+      },
+      {
+        "Name": "SessionAffinityEnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "SessionAffinityTtlInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "WebApplicationFirewallPolicyLink",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateSource",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimumTlsVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtocolType",
+        "Aliases": null
+      },
+      {
+        "Name": "Vault",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretName",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorHealthProbeSettingObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocol",
+        "Aliases": null
+      },
+      {
+        "Name": "IntervalInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthProbeMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorLoadBalancingSettingObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SampleSize",
+        "Aliases": null
+      },
+      {
+        "Name": "SuccessfulSamplesRequired",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalLatencyInMilliseconds",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafMatchConditionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "MatchVariable",
+        "Aliases": null
+      },
+      {
+        "Name": "OperatorProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchValue",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "NegateCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Transform",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafCustomRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleType",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "RateLimitDurationInMinutes",
+        "Aliases": null
+      },
+      {
+        "Name": "RateLimitThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafManagedRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "RuleGroupOverride",
+        "Aliases": null
+      },
+      {
+        "Name": "Exclusion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "Customrule",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedRule",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomBlockResponseStatusCode",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomBlockResponseBody",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestBodyCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzFrontDoorWafPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzFrontDoorWafPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledState",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "Customrule",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedRule",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomBlockResponseStatusCode",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomBlockResponseBody",
+        "Aliases": null
+      },
+      {
+        "Name": "RequestBodyCheck",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzFrontDoorWafManagedRuleSetDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzFrontDoorWafPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafRuleGroupOverrideObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "RuleGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ManagedRuleOverride",
+        "Aliases": null
+      },
+      {
+        "Name": "Exclusion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzFrontDoorContent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentPath",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzFrontDoorCustomDomainHttps",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontendEndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretName",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimumTlsVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzFrontDoorCustomDomainHttps",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontendEndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzFrontDoorFrontendEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafManagedRuleOverrideObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "RuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "Disabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Exclusion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorWafManagedRuleExclusionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Variable",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorRulesEngine",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Rule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorRulesEngineRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchProcessingBehavior",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorRulesEngineActionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "RequestHeaderAction",
+        "Aliases": null
+      },
+      {
+        "Name": "ResponseHeaderAction",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomForwardingPath",
+        "Aliases": null
+      },
+      {
+        "Name": "ForwardingProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "BackendPoolName",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableCaching",
+        "Aliases": null
+      },
+      {
+        "Name": "QueryParameterStripDirective",
+        "Aliases": null
+      },
+      {
+        "Name": "DynamicCompression",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectType",
+        "Aliases": null
+      },
+      {
+        "Name": "RedirectProtocol",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomHost",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomPath",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomFragment",
+        "Aliases": null
+      },
+      {
+        "Name": "CustomQueryString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorHeaderActionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "HeaderName",
+        "Aliases": null
+      },
+      {
+        "Name": "HeaderActionType",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzFrontDoorRulesEngineMatchConditionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "MatchVariable",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchValue",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "NegateCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Transform",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzFrontDoorRulesEngine",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzFrontDoorRulesEngine",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Rule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzFrontDoorRulesEngine",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.FrontDoor",
+    "Version": "1.10.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "FrontDoorName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

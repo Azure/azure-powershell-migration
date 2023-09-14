@@ -5,7 +5,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         It 'Should be able to import the AzureRM 6.13.1 spec' {
             # arrange/act
             $expectedCommandCount = 2346
-            $spec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+            $spec = Get-AzUpgradeCmdletSpec -AzureRM
 
             # assert
             $spec | Should Not Be $null
@@ -14,7 +14,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
         It 'Should be able to import the Az 9.3.0 spec' {
             # arrange/act
             $expectedCommandCount = 4979
-            $spec = Get-AzUpgradeCmdletSpec -ModuleName "Az" -ModuleVersion "9.3.0"
+            $spec = Get-AzUpgradeCmdletSpec -Az -ModuleVersion latest
 
             # assert
             $spec | Should Not Be $null
