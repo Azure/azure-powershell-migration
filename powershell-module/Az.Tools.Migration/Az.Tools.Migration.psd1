@@ -108,7 +108,15 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Supported AzureRM to Az 10.3 migration'
+            ReleaseNotes = "* Supported AzureRM to Az 10.3 migration
+            * `Get-AzUpgradeAliasSpec`
+                * Parameter `ModuleVersion` now accept value 'latest' only [BreakingChange]
+            * `Get-AzUpgradeCmdletSpec`
+                * Parameter `ModuleName` removed` [BreakingChange]
+                * Added switch parameters `AzureRM` and `Az`
+                * Parameter `ModuleVersion` now accept value 'latest' only and has to be used with `Az` [BreakingChange]
+            * `New-AzUpgradeModulePlan`
+                * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]"
         }
     }
 
