@@ -20,7 +20,7 @@
 ## Upcoming Release
 
 ## 1.1.5
-Upgraded Az Version to 10.X.X
+* Supported AzureRM to Az 10.3 migration
 
 ## 1.1.4
 * Upgraded Az Version to 9.3.0

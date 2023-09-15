@@ -12,7 +12,7 @@ function Get-AzUpgradeAliasSpec
 
     .EXAMPLE
         PS C:\> Get-AzUpgradeAliasSpec -ModuleVersion latest
-        Returns the cmdlet alias mappings table for current Az version which is 10.3.0.
+        Returns the cmdlet alias mappings table for latest Az version
     #>
     [CmdletBinding()]
     Param

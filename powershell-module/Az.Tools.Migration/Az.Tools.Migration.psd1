@@ -108,7 +108,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Upgrade Az version to 10.X.X'
+            ReleaseNotes = '* Supported AzureRM to Az 10.3 migration'
         }
     }
 
