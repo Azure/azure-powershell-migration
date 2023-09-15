@@ -108,7 +108,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Upgrade Az version to 10.0.0'
+            ReleaseNotes = '* Upgrade Az version to 10.X.X'
         }
     }
 

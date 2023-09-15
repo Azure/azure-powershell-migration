@@ -20,6 +20,7 @@
 ## Upcoming Release
 
 ## 1.1.5
+Upgraded Az Version to 10.X.X
 
 ## 1.1.4
 * Upgraded Az Version to 9.3.0
