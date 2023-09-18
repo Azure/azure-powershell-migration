@@ -37,7 +37,6 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
     //select azureRmVersion and azVersion(hard code)
     const azureRmVersion = "6.13.1";
-    const azVersion = "8.0.0";
 
     //start a powershell process
     try {
@@ -58,7 +57,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     //build the diagnastic
     const diagcCollection = vscode.languages.createDiagnosticCollection('azps-tools');
 
-    registerHandlers(context, diagcCollection, azureRmVersion, azVersion, log);
+    registerHandlers(context, diagcCollection, azureRmVersion, log);
 
     //quick fix action
     const quickFixProvider = new QuickFixProvider();
@@ -91,23 +90,22 @@ function registerHandlers(
     context: vscode.ExtensionContext,
     diagcCollection: vscode.DiagnosticCollection,
     azureRmVersion: string,
-    azVersion: string,
     log: Logger): void {
     if (vscode.window.activeTextEditor) {
-        updateDiagnostics(vscode.window.activeTextEditor.document.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+        updateDiagnostics(vscode.window.activeTextEditor.document.uri, diagcCollection, powershell, azureRmVersion, log);
     }
 
     //do the analysis when the file is opened
     context.subscriptions.push(vscode.workspace.onDidOpenTextDocument(editor => {
         if (editor && editor.languageId == "powershell") {
-            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, log);
         }
     }));
 
     //do the analysis when the file is saved
     context.subscriptions.push(vscode.workspace.onDidSaveTextDocument(editor => {
         if (editor && editor.languageId == "powershell") {
-            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, azVersion, log);
+            updateDiagnostics(editor.uri, diagcCollection, powershell, azureRmVersion, log);
         }
     }));
 }
@@ -123,7 +121,7 @@ function checkModule(powershell: PowershellProcess, log: Logger): boolean {
     const moduleName = "Az.Tools.Migration";
     powershell.getSystemModulePath();
     if (!powershell.checkModuleExist(moduleName)) {
-        log.writeAndShowErrorWithActions("You have to install Az.Tools.Migration firstly!", [
+        log.writeAndShowErrorWithActions("Please install Az.Tools.Migration and make sure the version >= 1.1.5", [
             {
                 prompt: "Get Az.Tools.Migration",
                 action: async () => {

@@ -20,18 +20,17 @@ export async function updateDiagnostics(
     diagcCollection: vscode.DiagnosticCollection,
     powershell: PowershellProcess,
     azureRmVersion: string,
-    azVersion: string,
     log: Logger): Promise<void> {
     if (documentUri) {
         //exec the migration powershell command
         let planResult: string;
         try {
             log.write(`Start analyzing ${documentUri.fsPath}`);
-            planResult = await powershell.getUpgradePlan(documentUri.fsPath, azureRmVersion, azVersion);
+            planResult = await powershell.getUpgradePlanToLatest(documentUri.fsPath, azureRmVersion);
             log.write(`Node-Powershell Success. -- ${documentUri.fsPath}`);
         }
         catch (e) {
-            log.writeError(`Error: Node-Powershell failed.`);
+            log.writeError(`Error: Node-Powershell failed.` + e.message);
         }
 
         //update the content of diagnostic

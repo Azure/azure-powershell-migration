@@ -24,19 +24,24 @@ export class PowershellProcess {
         });
     }
 
-    //exec the migration command and get the result
-    public async getUpgradePlan(filePath: string, azureRmVersion: string, azVersion: string): Promise<string> {
-        //const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json -depth 10`;
+    //exec the migration command and get the result to latest Az version
+    public async getUpgradePlanToLatest(filePath: string, azureRmVersion: string): Promise<string> {
         if (this.powershell.invocationStateInfo == "Running") {
             //the latter cancels the former powershell process
             await this.restart();
         }
 
-        const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "${azVersion}" | ConvertTo-Json`;
+        const command = `New-AzUpgradeModulePlan -FilePath "${filePath}" -FromAzureRmVersion "${azureRmVersion}" -ToAzVersion "latest" | ConvertTo-Json`;
         this.powershell.addCommand(command);
         const planResult = await this.powershell.invoke();
 
         return planResult;
+    }
+
+    //exec the migration command and get the result to LTS Az version
+    public async getUpgradePlanToLTS(filePath: string, azureRmVersion: string): Promise<string> {
+        //TODO: Implement this in the future when LTS ready
+        return;
     }
 
     //check whether the module exists
