@@ -29,6 +29,7 @@
     * Parameter `ModuleVersion` now accept value 'latest' only and has to be used with `Az` [BreakingChange]
 * `New-AzUpgradeModulePlan`
     * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]
+    * Parameter `FilePath` now accept relative file path
 
 ## 1.1.4
 * Upgraded Az Version to 9.3.0
