@@ -71,6 +71,7 @@ export class PowershellProcess {
         return latest;
     }
 
+    //TODO: handle more edge cases, e.g. -preview
     public versionCompare(v1, v2): number {
         v1 = v1.split('.');
         v2 = v2.split('.');
