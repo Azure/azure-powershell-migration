@@ -116,7 +116,8 @@
                 * Added switch parameters `AzureRM` and `Az`
                 * Parameter `ModuleVersion` now accept value 'latest' only and has to be used with `Az` [BreakingChange]
             * `New-AzUpgradeModulePlan`
-                * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]"
+                * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]
+                * Parameter `FilePath` now accept relative file path"
         }
     }
 
