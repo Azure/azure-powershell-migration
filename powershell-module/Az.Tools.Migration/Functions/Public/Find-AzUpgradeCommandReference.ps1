@@ -92,6 +92,7 @@ function Find-AzUpgradeCommandReference
     Process
     {
         $cmdStarted = Get-Date
+        $FilePath = (Resolve-Path $FilePath).Path
 
         if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec') -eq $false)
         {

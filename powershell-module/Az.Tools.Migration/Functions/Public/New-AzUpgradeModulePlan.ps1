@@ -122,6 +122,7 @@ function New-AzUpgradeModulePlan
     {
         $cmdStarted = Get-Date
 
+        $FilePath = (Resolve-Path $FilePath).Path
         $versionPath = Join-Path -Path $MyInvocation.MyCommand.Module.ModuleBase -ChildPath "\Resources\ModuleSpecs\Az\$ToAzVersion"
         $version = Get-ChildItem -Path $versionPath -Name
 
