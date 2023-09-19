@@ -51,10 +51,6 @@ Have the following installed on your system:
    .\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory (Join-Path -Path (Get-Location) -ChildPath 'powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\'$azModuleVersion)
    ```
 
-1. Update the Az PowerShell module version listed in documentation, function help, function
-   parameter validation, and unit tests. The easiest way to do this is to perform a search to find
-   and replace the previous version. The previous version can be found under `\powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az`. For example, search for '5.2.0' and replace with '5.6.0'. Please do not replace all because some files containing previous version, such as changelog, should not be replaced. 
-
 1. Remove the old module spec files from module resources:
    `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`.
 
