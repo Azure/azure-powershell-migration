@@ -54,6 +54,36 @@ export class PowershellProcess {
 
     }
 
+    //check the version of the installed module
+    public checkModuleVersion(moduleName: string): string {
+        const systemModulePath = this.getSystemModulePath();
+        let moduleFolder = systemModulePath.find(
+            moduleFolder => fs.existsSync(path.resolve(moduleFolder, moduleName))
+        );
+        moduleFolder = path.join(moduleFolder, moduleName);
+        const versions = fs.readdirSync(moduleFolder);
+        let latest = versions[0];
+        for (let i = 1; i < versions.length; i++) {
+            if (this.versionCompare(versions[i], latest) > 0) {
+                latest = versions[i];
+            }
+        }
+        return latest;
+    }
+
+    public versionCompare(v1, v2): number {
+        v1 = v1.split('.');
+        v2 = v2.split('.');
+        const k = Math.min(v1.length, v2.length);
+        for (let i = 0; i < k; i++) {
+            v1[i] = parseInt(v1[i], 10);
+            v2[i] = parseInt(v2[i], 10);
+            if (v1[i] > v2[i]) return 1;
+            if (v1[i] < v2[i]) return -1;        
+        }
+        return v1.length == v2.length ? 0: (v1.length < v2.length ? -1 : 1);
+    }
+
     //install the module automatically
     public async installModule(moduleName: string): Promise<void> {
         const command = `Install-Module "${moduleName}" -Repository PSGallery -Force`;

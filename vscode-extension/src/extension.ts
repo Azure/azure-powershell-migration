@@ -119,8 +119,7 @@ function registerHandlers(
  */
 function checkModule(powershell: PowershellProcess, log: Logger): boolean {
     const moduleName = "Az.Tools.Migration";
-    powershell.getSystemModulePath();
-    if (!powershell.checkModuleExist(moduleName)) {
+    if (!powershell.checkModuleExist(moduleName) || powershell.versionCompare(powershell.checkModuleVersion(moduleName), "1.1.5") < 0) {
         log.writeAndShowErrorWithActions("Please install Az.Tools.Migration and make sure the version >= 1.1.5", [
             {
                 prompt: "Get Az.Tools.Migration",
