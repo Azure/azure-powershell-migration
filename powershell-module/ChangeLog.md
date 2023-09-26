@@ -19,7 +19,7 @@
 -->
 ## Upcoming Release
 
-## 1.1.5
+## 2.0.0
 * Supported AzureRM to Az 10.3 migration
 * `Get-AzUpgradeAliasSpec`
     * Parameter `ModuleVersion` now accept value 'latest' only [BreakingChange]
