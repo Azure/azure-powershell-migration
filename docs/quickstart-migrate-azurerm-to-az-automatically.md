@@ -14,12 +14,6 @@ ms.date: 09/11/2020
 In this article, you'll learn how to use the Az.Tools.Migration PowerShell module to automatically
 upgrade your PowerShell scripts and script modules from AzureRM to the Az PowerShell module.
 
-> [!IMPORTANT]
-> The Az.Tools.Migration PowerShell module is currently in public preview. This preview version is
-> provided without a service level agreement. It's not recommended for production workloads. Certain
-> features might not be supported or might have constrained capabilities. For more information, see
-> [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
-
 Report feedback and issues about the Az.Tools.Migration PowerShell module via
 [a GitHub issue](https://github.com/Azure/azure-powershell-migration/issues) in the
 `azure-powershell-migration` repository.
