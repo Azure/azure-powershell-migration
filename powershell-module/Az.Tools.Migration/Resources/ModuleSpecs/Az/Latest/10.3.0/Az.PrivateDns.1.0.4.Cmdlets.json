@@ -1,0 +1,787 @@
+[
+  {
+    "Command": "Get-AzPrivateDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPrivateDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateZone",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPrivateDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPrivateDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPrivateDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPrivateDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPrivateDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPrivateDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "Ttl",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateDnsRecord",
+        "Aliases": [
+          "PrivateDnsRecords"
+        ]
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzPrivateDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPrivateDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPrivateDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzPrivateDnsVirtualNetworkLink",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzPrivateDnsVirtualNetworkLink",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzPrivateDnsVirtualNetworkLink",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IsRegistrationEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPrivateDnsVirtualNetworkLink",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.PrivateDns",
+    "Version": "1.0.4",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "RemoteVirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRegistration",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

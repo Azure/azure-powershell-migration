@@ -1,0 +1,3415 @@
+[
+  {
+    "Command": "New-AzEventGridTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TopicName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "InputSchema",
+        "Aliases": null
+      },
+      {
+        "Name": "InputMappingField",
+        "Aliases": null
+      },
+      {
+        "Name": "InputMappingDefaultValue",
+        "Aliases": null
+      },
+      {
+        "Name": "InboundIpRule",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEventGridTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "InboundIpRule",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridTopicKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "TopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridTopicKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TopicName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "TopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectCaseSensitive",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxDeliveryAttempt",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliverySchema",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationDate",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxEventsPerBatch",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredBatchSizeInKiloByte",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryTenantId",
+        "Aliases": [
+          "AliasAadTenantId"
+        ]
+      },
+      {
+        "Name": "AzureActiveDirectoryApplicationIdOrUri",
+        "Aliases": [
+          "AliasAadAppIdUri"
+        ]
+      },
+      {
+        "Name": "AdvancedFilteringOnArray",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageQueueMessageTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "TopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationDate",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxDeliveryAttempt",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxEventsPerBatch",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredBatchSizeInKiloByte",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryApplicationIdOrUri",
+        "Aliases": [
+          "AliasAadAppIdUri"
+        ]
+      },
+      {
+        "Name": "AzureActiveDirectoryTenantId",
+        "Aliases": [
+          "AliasAadTenantId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "TopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "TopicTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainTopicInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeFullEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridTopicType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeEventTypeData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "InputSchema",
+        "Aliases": null
+      },
+      {
+        "Name": "InputMappingField",
+        "Aliases": null
+      },
+      {
+        "Name": "InputMappingDefaultValue",
+        "Aliases": null
+      },
+      {
+        "Name": "InboundIpRule",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoCreateTopicWithFirstSubscription",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoDeleteTopicWithLastSubscription",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridDomainTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": [
+          "Domain"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainTopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridDomainKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainName"
+        ]
+      },
+      {
+        "Name": "DomainObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridDomainKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "DomainInputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridDomainTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": [
+          "Domain"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainTopicName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridDomainTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "DomainName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DomainTopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridSystemTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SystemTopicName"
+        ]
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridSystemTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "TopicType",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridSystemTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SystemTopicName"
+        ]
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridSystemTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SystemTopicName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridSystemTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryApplicationIdOrUri",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliverySchema",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxDeliveryAttempt",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxEventsPerBatch",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredBatchSizeInKiloByte",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageQueueMessageTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilteringOnArray",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectCaseSensitive",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridSystemTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageQueueMessageTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilteringOnArray",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectCaseSensitive",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridSystemTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeFullEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridSystemTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridSystemTopicEventSubscriptionDeliveryAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerTopicEventSubscriptionDeliveryAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridFullUrlForSystemTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "EventSubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridFullUrlForPartnerTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerNamespaceName"
+        ]
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerRegistration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerRegistrationName"
+        ]
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridVerifiedPartner",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridChannel",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ChannelName"
+        ]
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerNamespaceKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerTopicName"
+        ]
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventGridPartnerTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeFullEndpointUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ODataQuery",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "NextLink",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerRegistration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerRegistrationName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxExpirationTimeInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizedPartner",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerNamespaceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateEndpointConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "InboundIpRule",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerRegistrationFullyQualifiedId",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerTopicRoutingMode",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerTopicName"
+        ]
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerTopicFriendlyDescription",
+        "Aliases": null
+      },
+      {
+        "Name": "MessageForActivation",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationTimeIfNotActivatedUtc",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerRegistrationImmutableId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTypeKind",
+        "Aliases": null
+      },
+      {
+        "Name": "InlineEvent",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridChannel",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ChannelName"
+        ]
+      },
+      {
+        "Name": "ChannelType",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerTopicSource",
+        "Aliases": null
+      },
+      {
+        "Name": "MessageForActivation",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTypeKind",
+        "Aliases": null
+      },
+      {
+        "Name": "InlineEvent",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationTimeIfNotActivatedUtc",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryApplicationIdOrUri",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureActiveDirectoryTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliverySchema",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxDeliveryAttempt",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxEventsPerBatch",
+        "Aliases": null
+      },
+      {
+        "Name": "PreferredBatchSizeInKiloByte",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageQueueMessageTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilteringOnArray",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectCaseSensitive",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxExpirationTimeInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridChannel",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ChannelName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EventTypeKind",
+        "Aliases": null
+      },
+      {
+        "Name": "InlineEvent",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpirationTimeIfNotActivatedUtc",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridPartnerTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerTopicName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzEventGridPartnerTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DeadLetterEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DeliveryAttributeMapping",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageQueueMessageTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "AdvancedFilteringOnArray",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludedEventType",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectBeginsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectEndsWith",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectCaseSensitive",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridPartnerRegistration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerRegistrationName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridPartnerNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerNamespaceName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridChannel",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ChannelName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridPartnerTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerTopicName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEventGridPartnerTopicEventSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "EventSubscriptionName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerTopicName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Grant-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerRegistrationImmutableId",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationExpirationTime",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzEventGridPartnerTopic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PartnerTopicName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Revoke-AzEventGridPartnerConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerRegistrationImmutableId",
+        "Aliases": null
+      },
+      {
+        "Name": "PartnerName",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationExpirationTime",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventGridPartnerNamespaceKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.EventGrid",
+    "Version": "1.6.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "PartnerNamespaceName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

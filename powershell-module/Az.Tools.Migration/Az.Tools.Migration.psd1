@@ -3,7 +3,7 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '1.1.4'
+    ModuleVersion = '2.0.0'
 
     # Supported PSEditions
     CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,7 +108,16 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Upgrade Az version to 9.3.0'
+            ReleaseNotes = "* Supported AzureRM to Az 10.3 migration
+            * `Get-AzUpgradeAliasSpec`
+                * Parameter `ModuleVersion` now accept value 'latest' only [BreakingChange]
+            * `Get-AzUpgradeCmdletSpec`
+                * Parameter `ModuleName` removed` [BreakingChange]
+                * Added switch parameters `AzureRM` and `Az`
+                * Parameter `ModuleVersion` now accept value 'latest' only and has to be used with `Az` [BreakingChange]
+            * `New-AzUpgradeModulePlan`
+                * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]
+                * Parameter `FilePath` now accept relative file path"
         }
     }
 

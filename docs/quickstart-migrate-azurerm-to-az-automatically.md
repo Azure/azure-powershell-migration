@@ -14,12 +14,6 @@ ms.date: 09/11/2020
 In this article, you'll learn how to use the Az.Tools.Migration PowerShell module to automatically
 upgrade your PowerShell scripts and script modules from AzureRM to the Az PowerShell module.
 
-> [!IMPORTANT]
-> The Az.Tools.Migration PowerShell module is currently in public preview. This preview version is
-> provided without a service level agreement. It's not recommended for production workloads. Certain
-> features might not be supported or might have constrained capabilities. For more information, see
-> [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
-
 Report feedback and issues about the Az.Tools.Migration PowerShell module via
 [a GitHub issue](https://github.com/Azure/azure-powershell-migration/issues) in the
 `azure-powershell-migration` repository.
@@ -44,12 +38,12 @@ points that require changes when moving from AzureRM to the Az PowerShell cmdlet
 
 ```powershell
 #  Generate an upgrade plan for the specified PowerShell script and save it to a variable.
-$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 9.3.0 -FilePath 'C:\Scripts\my-azure-script.ps1'
+$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion latest -FilePath 'C:\Scripts\my-azure-script.ps1'
 ```
 
 ```powershell
 # Generate an upgrade plan for all the scripts and module files in the specified folder and save it to a variable.
-$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion 9.3.0 -DirectoryPath 'C:\Scripts'
+$Plan = New-AzUpgradeModulePlan -FromAzureRmVersion 6.13.1 -ToAzVersion latest -DirectoryPath 'C:\Scripts'
 ```
 
 Review the results of the upgrade plan.
@@ -106,7 +100,7 @@ $Results | Where-Object UpgradeResult -ne UpgradeCompleted | Format-List
 
 * File I/O operations use default encoding. Unusual file encoding situations may cause problems.
 * AzureRM cmdlets passed as arguments to Pester unit test mock statements aren't detected.
-* Currently, only Az PowerShell module version 9.3.0 is supported as a target.
+* Currently, only Az PowerShell module version 10.3 is supported as a target.
 
 ## Next steps
 

@@ -1,0 +1,326 @@
+[
+  {
+    "Command": "Get-AzLoad",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.LoadTesting",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LoadTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzLoad",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.LoadTesting",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LoadTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKey",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityUserAssigned",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzLoad",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.LoadTesting",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LoadTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzLoad",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.LoadTesting",
+    "Version": "1.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LoadTestName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKey",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityUserAssigned",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

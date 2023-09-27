@@ -1,0 +1,698 @@
+[
+  {
+    "Command": "Get-AzBillingInvoice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Latest",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "GenerateDownloadUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "BillingAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "BillingProfileName",
+        "Aliases": null
+      },
+      {
+        "Name": "PeriodStartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "PeriodEndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBillingPeriod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEnrollmentAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionBudget",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionMarketplace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "BillingPeriodName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionPriceSheet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "BillingPeriodName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandMeterDetail",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionReservationDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "ReservationOrderId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReservationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionReservationSummary",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Grain",
+        "Aliases": null
+      },
+      {
+        "Name": "ReservationOrderId",
+        "Aliases": null
+      },
+      {
+        "Name": "ReservationId",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzConsumptionUsageDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "BillingPeriodName",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeMeterDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeAdditionalProperties",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceName",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzConsumptionBudget",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Amount",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MeterFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationKey",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactRole",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzConsumptionBudget",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzConsumptionBudget",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Amount",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDate",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDate",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "MeterFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationKey",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "ContactRole",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-UsageAggregates",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "ReportedStartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ReportedEndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "AggregationGranularity",
+        "Aliases": null
+      },
+      {
+        "Name": "ShowDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "ContinuationToken",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBillingAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludeAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandBillingProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandInvoiceSection",
+        "Aliases": null
+      },
+      {
+        "Name": "ListEntitiesToCreateSubscription",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBillingProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "BillingAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpandInvoiceSection",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzInvoiceSection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Billing",
+    "Version": "2.0.3",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "BillingAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "BillingProfileName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

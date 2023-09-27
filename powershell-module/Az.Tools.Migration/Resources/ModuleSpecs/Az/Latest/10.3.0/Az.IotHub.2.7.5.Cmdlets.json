@@ -1,0 +1,4647 @@
+[
+  {
+    "Command": "Add-AzIotHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "HubId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "SecondaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "Rights",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubEventHubConsumerGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubConnectionString",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "HubId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubQuotaMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubRegistryStatistic",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubValidSku",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubEventHubConsumerGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Units",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Properties",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIotHubExportDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ExportBlobContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "ExcludeKeys",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIotHubImportDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputBlobContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputBlobContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubEventHubConsumerGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "HubId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuName",
+        "Aliases": null
+      },
+      {
+        "Name": "Units",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubRetentionTimeInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadStorageConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadSasUriTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadNotificationTtl",
+        "Aliases": null
+      },
+      {
+        "Name": "FileUploadNotificationMaxDeliveryCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableFileUploadNotifications",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudToDevice",
+        "Aliases": null
+      },
+      {
+        "Name": "RoutingProperties",
+        "Aliases": null
+      },
+      {
+        "Name": "Routes",
+        "Aliases": null
+      },
+      {
+        "Name": "FallbackRoute",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Reset",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubCertificateVerificationCode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubVerifiedCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubRoutingEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubRoutingEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointSubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubRoutingEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "EndpointName",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzIotHubRoute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RouteName",
+        "Aliases": null
+      },
+      {
+        "Name": "Source",
+        "Aliases": null
+      },
+      {
+        "Name": "Body",
+        "Aliases": null
+      },
+      {
+        "Name": "AppProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "SystemProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "ShowError",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIotHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "HubId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubManualFailover",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubMessageEnrichment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubMessageEnrichment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubMessageEnrichment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubMessageEnrichment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusReason",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentDeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDevice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusReason",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceConnectionString",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubModuleConnectionString",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceParent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDeviceParent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentDeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDeviceChildren",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDeviceChildren",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceChildren",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDistributedTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDistributedTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingMode",
+        "Aliases": [
+          "Mode"
+        ]
+      },
+      {
+        "Name": "SamplingRate",
+        "Aliases": [
+          "Rate"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeviceTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHubDeviceTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Desired",
+        "Aliases": null
+      },
+      {
+        "Name": "Partial",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubDeviceMethod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "ResponseTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubModuleTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzIotHubModuleTwin",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Desired",
+        "Aliases": null
+      },
+      {
+        "Name": "Partial",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceContent",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubModuleMethod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "ResponseTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "ConnectionTimeOut",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubQuery",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIotHubSasToken",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "Duration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubConfigurationMetricsQuery",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ModulesContent",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubDeployment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetCondition",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Label",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubDeploymentMetricsQuery",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubEdgeModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModulesContent",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Send-AzIotHubDevice2CloudMessage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Message",
+        "Aliases": null
+      },
+      {
+        "Name": "TransportType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubEHCG",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubEHCG",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubEHCG",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubConsumerGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubVC",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubCVC",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateName",
+        "Aliases": null
+      },
+      {
+        "Name": "Etag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubMsgEnrich",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Key",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Endpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDCS",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubMCS",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ModuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzIotHubDCL",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzIotHubDCL",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Children",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubDCL",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzIotHubTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzIotHubTracing",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingMode",
+        "Aliases": [
+          "Mode"
+        ]
+      },
+      {
+        "Name": "SamplingRate",
+        "Aliases": [
+          "Rate"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubConfigMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzIotHubDeployMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Send-AzIotHubD2CMessage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.IotHub",
+    "Version": "2.7.5",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IotHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DeviceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Message",
+        "Aliases": null
+      },
+      {
+        "Name": "TransportType",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

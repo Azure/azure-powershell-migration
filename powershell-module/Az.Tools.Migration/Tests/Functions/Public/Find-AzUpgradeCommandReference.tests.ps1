@@ -71,7 +71,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             }
 
             # act
-            $moduleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+            $moduleSpec = Get-AzUpgradeCmdletSpec -AzureRM
             $results = Find-AzUpgradeCommandReference -FilePath "testfile.ps1" -AzureRmModuleSpec $moduleSpec
 
             # assert
@@ -132,7 +132,7 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             }
 
             # act
-            $moduleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+            $moduleSpec = Get-AzUpgradeCmdletSpec -AzureRM
             $results = Find-AzUpgradeCommandReference -DirectoryPath "C:\test" -AzureRmModuleSpec $moduleSpec
 
             # assert

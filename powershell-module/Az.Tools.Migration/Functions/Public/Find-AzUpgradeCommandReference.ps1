@@ -34,7 +34,7 @@ function Find-AzUpgradeCommandReference
         The following example finds AzureRM PowerShell command references in the specified directory and subfolders but with a pre-loaded module specification.
         This is helpful to avoid reloading the module specification if the Find-AzUpgradeCommandReference command needs to be executed several times.
 
-        $moduleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+        $moduleSpec = Get-AzUpgradeCmdletSpec -AzureRM
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts1' -AzureRmModuleSpec $moduleSpec
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts2' -AzureRmModuleSpec $moduleSpec
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts3' -AzureRmModuleSpec $moduleSpec
@@ -92,12 +92,13 @@ function Find-AzUpgradeCommandReference
     Process
     {
         $cmdStarted = Get-Date
+        $FilePath = (Resolve-Path $FilePath).Path
 
         if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec') -eq $false)
         {
             # load the command specs
             Write-Verbose -Message "Loading cmdlet spec for AzureRM $AzureRmVersion"
-            $AzureRmModuleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
+            $AzureRmModuleSpec = Get-AzUpgradeCmdletSpec -AzureRM
         }
         else
         {
