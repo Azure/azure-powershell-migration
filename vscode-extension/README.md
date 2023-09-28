@@ -1,7 +1,7 @@
 # Azure Powershell Tools
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/azps-tools.azps-tools.svg)](https://marketplace.visualstudio.com/items?itemName=azps-tools.azps-tools)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/azps-tools.azps-tools.svg)](https://marketplace.visualstudio.com/items?itemName=azps-tools.azps-tools)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/azps-tools.azps-tools)](https://marketplace.visualstudio.com/items?itemName=azps-tools.azps-tools)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/azps-tools.azps-tools)](https://marketplace.visualstudio.com/items?itemName=azps-tools.azps-tools)
 
 Effortlessly migrate your PowerShell scripts from AzureRM to the Az PowerShell module.
 
