@@ -92,7 +92,6 @@ function Find-AzUpgradeCommandReference
     Process
     {
         $cmdStarted = Get-Date
-        $FilePath = (Resolve-Path $FilePath).Path
 
         if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec') -eq $false)
         {
@@ -112,6 +111,7 @@ function Find-AzUpgradeCommandReference
                 throw "File was not found or was not accessible: $FilePath"
             }
 
+            $FilePath = (Resolve-Path $FilePath).Path
             Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
             $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $AzureRmModuleSpec.ContainsKey($_.CommandName) -eq $true }
 
@@ -138,6 +138,7 @@ function Find-AzUpgradeCommandReference
                 throw "Directory was not found or was not accessible: $DirectoryPath"
             }
 
+            $DirectoryPath = (Resolve-Path $DirectoryPath).Path
             $filesToSearch = Get-ChildItem -Path $DirectoryPath -Recurse -Include *.ps1, *.psm1
             $commandCounter = 0
 

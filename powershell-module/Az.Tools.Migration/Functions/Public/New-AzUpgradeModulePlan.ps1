@@ -122,7 +122,6 @@ function New-AzUpgradeModulePlan
     {
         $cmdStarted = Get-Date
 
-        $FilePath = (Resolve-Path $FilePath).Path
         $versionPath = Join-Path -Path $MyInvocation.MyCommand.Module.ModuleBase -ChildPath "\Resources\ModuleSpecs\Az\$ToAzVersion"
         $version = Get-ChildItem -Path $versionPath -Name
 
@@ -131,6 +130,7 @@ function New-AzUpgradeModulePlan
 
         if ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByFile')
         {
+            $FilePath = (Resolve-Path $FilePath).Path
             if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec'))
             {
                 Write-Verbose -Message "Searching for commands to upgrade, by file, with pre-loaded module spec."
@@ -144,6 +144,7 @@ function New-AzUpgradeModulePlan
         }
         elseif ($PSCmdlet.ParameterSetName -eq 'FromNewSearchByDirectory')
         {
+            $DirectoryPath = (Resolve-Path $DirectoryPath).Path
             if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec'))
             {
                 Write-Verbose -Message "Searching for commands to upgrade, by directory, with pre-loaded module spec."

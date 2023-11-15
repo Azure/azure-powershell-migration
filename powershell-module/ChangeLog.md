@@ -19,6 +19,9 @@
 -->
 ## Upcoming Release
 
+## 2.0.1
+* Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]
+
 ## 2.0.0
 * Supported AzureRM to Az 10.3 migration
 * `Get-AzUpgradeAliasSpec`
