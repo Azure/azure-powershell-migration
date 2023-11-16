@@ -3,7 +3,7 @@
 Az.Tools.Migration is a PowerShell module for automatically upgrading your PowerShell scripts and
 script modules from AzureRM to the Az PowerShell module.
 
-The version of Az.Tools.Migration is aligned with the targeted Az Version. For example, if you would like to migrate to `Az 11.0.0`, you should use `Az.Tools.Migration 11.0.0`.
+The major version of Az.Tools.Migration is aligned with the targeted Az Version. For example, if you would like to migrate to `Az 11.0.0`, you should use `Az.Tools.Migration 11.x.x`.
 
 ## Contents
 

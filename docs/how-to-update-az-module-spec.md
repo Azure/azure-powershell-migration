@@ -73,6 +73,6 @@ Have the following installed on your system:
 
 1. Add new version and release notes to `powershell-module/ChangeLog.md` and `powershell-module/Az.Tools.Migration/Az.Tools.Migration.psd1`.
 
-   *Note: The version of Az.Tools.Migration should be equal to the targeted Az Version.*
+   *Note: The major version of Az.Tools.Migration should be the major version of targeted Az Version. *
 
 1. Submit a pull request to commit the new changes.

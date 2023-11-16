@@ -20,7 +20,7 @@
 ## Upcoming Release
 
 ## 11.0.0
-* Supported AzureRM to Az 11.0.0 migration
+* Supported AzureRM to Az 11.0.0 migration. Now the major version of Az.Tools.Migration is aligned with the targeted Az version.
 * Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]
 
 ## 2.0.0
