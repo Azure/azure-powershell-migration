@@ -3,6 +3,8 @@
 Az.Tools.Migration is a PowerShell module for automatically upgrading your PowerShell scripts and
 script modules from AzureRM to the Az PowerShell module.
 
+The major version of Az.Tools.Migration is aligned with the targeted Az Version. For example, if you would like to migrate to `Az 11.0.0`, you should use `Az.Tools.Migration 11.x.x`.
+
 ## Contents
 
 * [Getting started](#getting-started)
@@ -73,10 +75,10 @@ $plan | where PlanResult -ne ReadyToUpgrade | format-list
 
 ### Step 3: Execute the upgrade plan
 
-The upgrade plan is executed when you run the `Invoke-AzUpgradeModulePlan` cmdlet. This command performs 
+The upgrade plan is executed when you run the `Invoke-AzUpgradeModulePlan` cmdlet. This command performs
 an upgrade of the specified file or folders except for any errors that were identified by the `New-AzUpgradeModulePlan` cmdlet.
 
-This command requires you to specify if the files should be modified in place or if new files should be saved 
+This command requires you to specify if the files should be modified in place or if new files should be saved
 alongside your original files (leaving originals unmodified).
 
 ```powershell

@@ -1,0 +1,2629 @@
+[
+  {
+    "Command": "Disable-AzDataCollection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzContextAutosave",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzDataCollection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzContextAutosave",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzEnvironment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEnvironment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzEnvironment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PublishSettingsFileUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceEndpoint",
+        "Aliases": [
+          "ServiceManagement",
+          "ServiceManagementUrl"
+        ]
+      },
+      {
+        "Name": "ManagementPortalUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageEndpoint",
+        "Aliases": [
+          "StorageEndpointSuffix"
+        ]
+      },
+      {
+        "Name": "ActiveDirectoryEndpoint",
+        "Aliases": [
+          "AdEndpointUrl",
+          "ActiveDirectory",
+          "ActiveDirectoryAuthority"
+        ]
+      },
+      {
+        "Name": "ResourceManagerEndpoint",
+        "Aliases": [
+          "ResourceManager",
+          "ResourceManagerUrl"
+        ]
+      },
+      {
+        "Name": "ARMEndpoint",
+        "Aliases": [
+          "ArmUrl"
+        ]
+      },
+      {
+        "Name": "GalleryEndpoint",
+        "Aliases": [
+          "Gallery",
+          "GalleryUrl"
+        ]
+      },
+      {
+        "Name": "ActiveDirectoryServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphEndpoint",
+        "Aliases": [
+          "Graph",
+          "GraphUrl"
+        ]
+      },
+      {
+        "Name": "AzureKeyVaultDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureKeyVaultServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TrafficManagerDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlDatabaseDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureDataLakeStoreFileSystemEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAdfsAuthentication",
+        "Aliases": [
+          "OnPremise"
+        ]
+      },
+      {
+        "Name": "AdTenant",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphAudience",
+        "Aliases": [
+          "GraphEndpointResourceId",
+          "GraphResourceId"
+        ]
+      },
+      {
+        "Name": "DataLakeAudience",
+        "Aliases": [
+          "DataLakeEndpointResourceId",
+          "DataLakeResourceId"
+        ]
+      },
+      {
+        "Name": "BatchEndpointResourceId",
+        "Aliases": [
+          "BatchResourceId",
+          "BatchAudience"
+        ]
+      },
+      {
+        "Name": "AzureOperationalInsightsEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureOperationalInsightsEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAnalysisServicesEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAnalysisServicesEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAttestationServiceEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAttestationServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureSynapseAnalyticsEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "ContainerRegistryEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureSynapseAnalyticsEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzEnvironment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PublishSettingsFileUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceEndpoint",
+        "Aliases": [
+          "ServiceManagement",
+          "ServiceManagementUrl"
+        ]
+      },
+      {
+        "Name": "ManagementPortalUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageEndpoint",
+        "Aliases": [
+          "StorageEndpointSuffix"
+        ]
+      },
+      {
+        "Name": "ActiveDirectoryEndpoint",
+        "Aliases": [
+          "AdEndpointUrl",
+          "ActiveDirectory",
+          "ActiveDirectoryAuthority"
+        ]
+      },
+      {
+        "Name": "ResourceManagerEndpoint",
+        "Aliases": [
+          "ResourceManager",
+          "ResourceManagerUrl"
+        ]
+      },
+      {
+        "Name": "ARMEndpoint",
+        "Aliases": [
+          "ArmUrl"
+        ]
+      },
+      {
+        "Name": "GalleryEndpoint",
+        "Aliases": [
+          "Gallery",
+          "GalleryUrl"
+        ]
+      },
+      {
+        "Name": "ActiveDirectoryServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphEndpoint",
+        "Aliases": [
+          "Graph",
+          "GraphUrl"
+        ]
+      },
+      {
+        "Name": "AzureKeyVaultDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureKeyVaultServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TrafficManagerDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlDatabaseDnsSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureDataLakeStoreFileSystemEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAdfsAuthentication",
+        "Aliases": [
+          "OnPremise"
+        ]
+      },
+      {
+        "Name": "AdTenant",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphAudience",
+        "Aliases": [
+          "GraphEndpointResourceId",
+          "GraphResourceId"
+        ]
+      },
+      {
+        "Name": "DataLakeAudience",
+        "Aliases": [
+          "DataLakeEndpointResourceId",
+          "DataLakeResourceId"
+        ]
+      },
+      {
+        "Name": "BatchEndpointResourceId",
+        "Aliases": [
+          "BatchResourceId",
+          "BatchAudience"
+        ]
+      },
+      {
+        "Name": "AzureOperationalInsightsEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureOperationalInsightsEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAnalysisServicesEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAnalysisServicesEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAttestationServiceEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAttestationServiceEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureSynapseAnalyticsEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "ContainerRegistryEndpointSuffix",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureSynapseAnalyticsEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoDiscover",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphEndpointResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Connect-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Environment",
+        "Aliases": [
+          "EnvironmentName"
+        ]
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipal",
+        "Aliases": null
+      },
+      {
+        "Name": "Tenant",
+        "Aliases": [
+          "Domain",
+          "TenantId"
+        ]
+      },
+      {
+        "Name": "AccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Identity",
+        "Aliases": [
+          "MSI",
+          "ManagedService"
+        ]
+      },
+      {
+        "Name": "Subscription",
+        "Aliases": [
+          "SubscriptionName",
+          "SubscriptionId"
+        ]
+      },
+      {
+        "Name": "AuthScope",
+        "Aliases": [
+          "AuthScopeTypeName"
+        ]
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "UseDeviceAuthentication",
+        "Aliases": [
+          "DeviceCode",
+          "DeviceAuth",
+          "Device"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "SendCertificateChain",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "FederatedToken",
+        "Aliases": [
+          "ClientAssertion"
+        ]
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ListAvailable",
+        "Aliases": null
+      },
+      {
+        "Name": "RefreshContextFromTokenCache",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tenant",
+        "Aliases": [
+          "Domain",
+          "TenantId"
+        ]
+      },
+      {
+        "Name": "Subscription",
+        "Aliases": [
+          "SubscriptionId",
+          "SubscriptionName"
+        ]
+      },
+      {
+        "Name": "ExtendedProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "AzureContext",
+        "Aliases": [
+          "Profile"
+        ]
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Profile",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "WithCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzTenant",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "TenantId",
+        "Aliases": [
+          "Domain",
+          "Tenant"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Send-Feedback",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Resolve-AzError",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Error",
+        "Aliases": null
+      },
+      {
+        "Name": "Last",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Select-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Rename-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetName",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Clear-AzContext",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disconnect-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipal"
+        ]
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureContext",
+        "Aliases": null
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzContextAutosaveSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDefault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDefault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Clear-AzDefault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzModule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzureRmAlias",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Module",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzureRmAlias",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Module",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Uninstall-AzureRm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzRestMethod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProviderName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Method",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAccessToken",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "ResourceUrl",
+        "Aliases": [
+          "Resource",
+          "ResourceUri"
+        ]
+      },
+      {
+        "Name": "ResourceTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Open-AzSurveyLink",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": []
+  },
+  {
+    "Command": "Get-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "AppliesTo",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "CheckForUpgrade",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultSubscriptionForLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableErrorRecordsPersistence",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayBreakingChangeWarning",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayRegionIdentified",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplaySurveyMessage",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableDataCollection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableLoginByWam",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "AppliesTo",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "CheckForUpgrade",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultSubscriptionForLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableErrorRecordsPersistence",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayBreakingChangeWarning",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayRegionIdentified",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplaySurveyMessage",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableDataCollection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableLoginByWam",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Clear-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AppliesTo",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "CheckForUpgrade",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultSubscriptionForLogin",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableErrorRecordsPersistence",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayBreakingChangeWarning",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayRegionIdentified",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplaySurveyMessage",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableDataCollection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableLoginByWam",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Export-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Environment",
+        "Aliases": [
+          "EnvironmentName"
+        ]
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipal",
+        "Aliases": null
+      },
+      {
+        "Name": "Tenant",
+        "Aliases": [
+          "Domain",
+          "TenantId"
+        ]
+      },
+      {
+        "Name": "AccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Identity",
+        "Aliases": [
+          "MSI",
+          "ManagedService"
+        ]
+      },
+      {
+        "Name": "Subscription",
+        "Aliases": [
+          "SubscriptionName",
+          "SubscriptionId"
+        ]
+      },
+      {
+        "Name": "AuthScope",
+        "Aliases": [
+          "AuthScopeTypeName"
+        ]
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "UseDeviceAuthentication",
+        "Aliases": [
+          "DeviceCode",
+          "DeviceAuth",
+          "Device"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "SendCertificateChain",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "FederatedToken",
+        "Aliases": [
+          "ClientAssertion"
+        ]
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Login-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Environment",
+        "Aliases": [
+          "EnvironmentName"
+        ]
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipal",
+        "Aliases": null
+      },
+      {
+        "Name": "Tenant",
+        "Aliases": [
+          "Domain",
+          "TenantId"
+        ]
+      },
+      {
+        "Name": "AccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "GraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "MicrosoftGraphAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultAccessToken",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "Identity",
+        "Aliases": [
+          "MSI",
+          "ManagedService"
+        ]
+      },
+      {
+        "Name": "Subscription",
+        "Aliases": [
+          "SubscriptionName",
+          "SubscriptionId"
+        ]
+      },
+      {
+        "Name": "AuthScope",
+        "Aliases": [
+          "AuthScopeTypeName"
+        ]
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxContextPopulation",
+        "Aliases": null
+      },
+      {
+        "Name": "UseDeviceAuthentication",
+        "Aliases": [
+          "DeviceCode",
+          "DeviceAuth",
+          "Device"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "SendCertificateChain",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "FederatedToken",
+        "Aliases": [
+          "ClientAssertion"
+        ]
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipal"
+        ]
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureContext",
+        "Aliases": null
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Logout-AzAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Username",
+        "Aliases": [
+          "Id",
+          "UserId"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipal"
+        ]
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureContext",
+        "Aliases": null
+      },
+      {
+        "Name": "ContextName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Select-AzSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tenant",
+        "Aliases": [
+          "Domain",
+          "TenantId"
+        ]
+      },
+      {
+        "Name": "Subscription",
+        "Aliases": [
+          "SubscriptionId",
+          "SubscriptionName"
+        ]
+      },
+      {
+        "Name": "ExtendedProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Resolve-Error",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Error",
+        "Aliases": null
+      },
+      {
+        "Name": "Last",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "Profile",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "WithCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "TenantId",
+        "Aliases": [
+          "Domain",
+          "Tenant"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzRest",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProviderName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Method",
+        "Aliases": null
+      },
+      {
+        "Name": "Payload",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Accounts",
+    "Version": "2.13.2",
+    "Parameters": [
+      {
+        "Name": "AppliesTo",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]
