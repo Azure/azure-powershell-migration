@@ -1,0 +1,4649 @@
+[
+  {
+    "Command": "Set-AzDataFactoryV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id",
+          "DataFactoryId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultBaseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionUserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "GlobalParameterDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "RepositoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "CollaborationBranch",
+        "Aliases": null
+      },
+      {
+        "Name": "RootFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "LastCommitId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisablePublish",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "HostName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataFactoryV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultBaseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionUserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2LinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LinkedServiceName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2LinkedServiceEncryptedCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "IntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2LinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LinkedServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2LinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LinkedServiceName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2DataFlow",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFlowName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2DataFlow",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFlowName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2DataFlow",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFlowName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzDataFactoryV2DataFlowDebugSession",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "IntegrationRuntimeFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzDataFactoryV2DataFlowDebugSessionPackage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "PackageFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "SessionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzDataFactoryV2DataFlowDebugSessionCommand",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "SessionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Command",
+        "Aliases": null
+      },
+      {
+        "Name": "StreamName",
+        "Aliases": null
+      },
+      {
+        "Name": "RowLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "Expression",
+        "Aliases": null
+      },
+      {
+        "Name": "Column",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataFactoryV2DataFlowDebugSession",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "SessionId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2DataFlowDebugSession",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2Dataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DatasetName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2Dataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DatasetName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2Dataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DatasetName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2Pipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2Pipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2Pipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzDataFactoryV2Pipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineName",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "ParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "ReferencePipelineRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "IsRecovery",
+        "Aliases": null
+      },
+      {
+        "Name": "StartActivityName",
+        "Aliases": null
+      },
+      {
+        "Name": "StartFromFailure",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2PipelineRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "LastUpdatedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "LastUpdatedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataFactoryV2PipelineRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2ActivityRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "PipelineRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "RunStartedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "RunStartedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ActivityName",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2IntegrationRuntimeKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2IntegrationRuntimeKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "LinkedDataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "CatalogServerEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "CatalogAdminCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "CatalogPricingTier",
+        "Aliases": null
+      },
+      {
+        "Name": "VNetId",
+        "Aliases": null
+      },
+      {
+        "Name": "Subnet",
+        "Aliases": [
+          "SubnetName"
+        ]
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicIPs",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlowComputeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlowEnableQuickReuse",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlowCoreCount",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlowTimeToLive",
+        "Aliases": null
+      },
+      {
+        "Name": "SetupScriptContainerSasUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Edition",
+        "Aliases": null
+      },
+      {
+        "Name": "VNetInjectionMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpressCustomSetup",
+        "Aliases": null
+      },
+      {
+        "Name": "DataProxyIntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataProxyStagingLinkedServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataProxyStagingPath",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxParallelExecutionsPerNode",
+        "Aliases": null
+      },
+      {
+        "Name": "LicenseType",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthKey",
+        "Aliases": null
+      },
+      {
+        "Name": "SharedIntegrationRuntimeResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2IntegrationRuntimeMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2IntegrationRuntimeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataFactoryV2IntegrationRuntimeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ConcurrentJobsLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2IntegrationRuntimeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2IntegrationRuntimeOutboundNetworkDependenciesEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzDataFactoryV2IntegrationRuntimeUpgrade",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Sync-AzDataFactoryV2IntegrationRuntimeCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "IntegrationRuntimeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataFactoryV2IntegrationRuntime",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "AutoUpdate",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoUpdateDelayOffset",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IntegrationRuntimeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2TriggerRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "TriggerRunStartedAfter",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerRunStartedBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DatasetName",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactorySlice",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "EndDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DatasetName",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Save-AzDataFactoryLog",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "DownloadLogs",
+        "Aliases": null
+      },
+      {
+        "Name": "Output",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactorySliceStatus",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "EndDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "UpdateType",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DatasetName",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryEncryptValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "NonCredentialValue",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthenticationType",
+        "Aliases": null
+      },
+      {
+        "Name": "Server",
+        "Aliases": null
+      },
+      {
+        "Name": "Database",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryGatewayAuthkey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "DataFactory"
+        ]
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryGatewayAuthkey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "DataFactory"
+        ]
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "GatewayName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryGateway",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HubName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryLinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryActivityWindow",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DatasetName",
+        "Aliases": null
+      },
+      {
+        "Name": "PipelineName",
+        "Aliases": null
+      },
+      {
+        "Name": "ActivityName",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowState",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowSubstate",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "OrderBy",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowStart",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowEnd",
+        "Aliases": null
+      },
+      {
+        "Name": "RunStart",
+        "Aliases": null
+      },
+      {
+        "Name": "RunEnd",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryLinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryLinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LinkedServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Resume-AzDataFactoryPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDataFactoryPipelineActivePeriod",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "PipelineName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "StartDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndDateTime",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoResolve",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRecalculate",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Suspend-AzDataFactoryPipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryDataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryDataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryDataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DatasetName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzDataFactoryV2TriggerSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataFactoryV2TriggerSubscription",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataFactoryV2TriggerSubscriptionStatus",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzDataFactoryV2TriggerRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzDataFactoryV2TriggerRun",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerName",
+        "Aliases": null
+      },
+      {
+        "Name": "TriggerRunId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactory",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "Id",
+          "DataFactoryId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataFactoryName"
+        ]
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultBaseUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionUserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "GlobalParameterDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "RepositoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "CollaborationBranch",
+        "Aliases": null
+      },
+      {
+        "Name": "RootFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "LastCommitId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisablePublish",
+        "Aliases": null
+      },
+      {
+        "Name": "ProjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "HostName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2Dataset",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DatasetName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2LinkedService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "LinkedServiceName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2Pipeline",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "PipelineName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFactoryV2Trigger",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.DataFactory",
+    "Version": "1.17.1",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "TriggerName"
+        ]
+      },
+      {
+        "Name": "DefinitionFile",
+        "Aliases": [
+          "File"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFactoryName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

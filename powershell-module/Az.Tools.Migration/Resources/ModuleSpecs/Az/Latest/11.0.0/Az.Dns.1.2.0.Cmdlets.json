@@ -1,0 +1,981 @@
+[
+  {
+    "Command": "Get-AzDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Nsdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaFlags",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaTag",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaValue",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Algorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "DigestType",
+        "Aliases": null
+      },
+      {
+        "Name": "Digest",
+        "Aliases": null
+      },
+      {
+        "Name": "Usage",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchingType",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateAssociationData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Nsdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaFlags",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaTag",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaValue",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Algorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "DigestType",
+        "Aliases": null
+      },
+      {
+        "Name": "Digest",
+        "Aliases": null
+      },
+      {
+        "Name": "Usage",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchingType",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateAssociationData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzDnsRecordConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "RecordSet",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv4Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Ipv6Address",
+        "Aliases": null
+      },
+      {
+        "Name": "Nsdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Exchange",
+        "Aliases": null
+      },
+      {
+        "Name": "Preference",
+        "Aliases": null
+      },
+      {
+        "Name": "Ptrdname",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Target",
+        "Aliases": null
+      },
+      {
+        "Name": "Port",
+        "Aliases": null
+      },
+      {
+        "Name": "Weight",
+        "Aliases": null
+      },
+      {
+        "Name": "Cname",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaFlags",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaTag",
+        "Aliases": null
+      },
+      {
+        "Name": "CaaValue",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Algorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "DigestType",
+        "Aliases": null
+      },
+      {
+        "Name": "Digest",
+        "Aliases": null
+      },
+      {
+        "Name": "Usage",
+        "Aliases": null
+      },
+      {
+        "Name": "Selector",
+        "Aliases": null
+      },
+      {
+        "Name": "MatchingType",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateAssociationData",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDnsRecordSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "Ttl",
+        "Aliases": null
+      },
+      {
+        "Name": "RecordType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsRecords",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "RegistrationVirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResolutionVirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RegistrationVirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "ResolutionVirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "Overwrite",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDnsZone",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneType",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentZoneId",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "RegistrationVirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResolutionVirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "RegistrationVirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "ResolutionVirtualNetwork",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDnsDnssecConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDnsDnssecConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "IfNoneMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDnsDnssecConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Dns",
+    "Version": "1.2.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ZoneName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IfMatch",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

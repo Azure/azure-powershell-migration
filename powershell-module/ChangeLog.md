@@ -19,7 +19,8 @@
 -->
 ## Upcoming Release
 
-## 2.0.1
+## 11.0.0
+* Supported AzureRM to Az 11.0.0 migration
 * Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]
 
 ## 2.0.0

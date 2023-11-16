@@ -3,7 +3,7 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '2.0.1'
+    ModuleVersion = '11.0.0'
 
     # Supported PSEditions
     CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,7 +108,8 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = "* Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]"
+            ReleaseNotes = "* Supported AzureRM to Az 11.0.0 migration
+                            * Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]"
         }
     }
 
