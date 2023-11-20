@@ -6,6 +6,8 @@ InModuleScope -ModuleName Az.Tools.Migration -ScriptBlock {
             # arrange
             Mock -CommandName Test-Path -MockWith { Write-Output -InputObject $true }
 
+            Mock -CommandName Resolve-Path -MockWith { @{Path = $Path} }
+
             # ensure we don't send telemetry during tests.
             Mock -CommandName Send-MetricsIfDataCollectionEnabled -ModuleName Az.Tools.Migration -MockWith { }
 

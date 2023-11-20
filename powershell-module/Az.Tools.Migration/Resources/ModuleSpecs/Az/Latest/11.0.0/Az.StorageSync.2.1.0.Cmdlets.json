@@ -1,0 +1,1194 @@
+[
+  {
+    "Command": "Invoke-AzStorageSyncCompatibilityCheck",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipSystemChecks",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipNamespaceChecks",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageSyncService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageSyncServiceName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "IncomingTrafficPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStorageSyncService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageSyncServiceName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzStorageSyncService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageSyncServiceName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "IncomingTrafficPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStorageSyncService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageSyncServiceName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageSyncGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "StorageSyncService"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "StorageSyncServiceId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SyncGroupName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStorageSyncGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "StorageSyncService"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "StorageSyncServiceId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SyncGroupName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStorageSyncGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SyncGroupName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageSyncCloudEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "SyncGroup"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "SyncGroupId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CloudEndpointName"
+        ]
+      },
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureFileShareName",
+        "Aliases": [
+          "StorageAccountShareName"
+        ]
+      },
+      {
+        "Name": "StorageAccountTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStorageSyncCloudEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "SyncGroup"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "SyncGroupId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CloudEndpointName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStorageSyncCloudEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageSyncServerEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "SyncGroup"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "SyncGroupId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServerEndpointName"
+        ]
+      },
+      {
+        "Name": "ServerResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServerLocalPath",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudTiering",
+        "Aliases": null
+      },
+      {
+        "Name": "VolumeFreeSpacePercent",
+        "Aliases": null
+      },
+      {
+        "Name": "TierFilesOlderThanDays",
+        "Aliases": null
+      },
+      {
+        "Name": "InitialDownloadPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "LocalCacheMode",
+        "Aliases": null
+      },
+      {
+        "Name": "InitialUploadPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStorageSyncServerEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "SyncGroup"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "SyncGroupId"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServerEndpointName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzStorageSyncServerEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzStorageSyncServerEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServerEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "ServerEndpoint"
+        ]
+      },
+      {
+        "Name": "CloudTiering",
+        "Aliases": null
+      },
+      {
+        "Name": "VolumeFreeSpacePercent",
+        "Aliases": null
+      },
+      {
+        "Name": "OfflineDataTransfer",
+        "Aliases": null
+      },
+      {
+        "Name": "TierFilesOlderThanDays",
+        "Aliases": null
+      },
+      {
+        "Name": "LocalCacheMode",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Register-AzStorageSyncServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "StorageSyncService"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "StorageSyncServiceId"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Unregister-AzStorageSyncServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": [
+          "RegisteredServerName"
+        ]
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzStorageSyncServer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "StorageSyncService"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "StorageSyncServiceId"
+        ]
+      },
+      {
+        "Name": "ServerId",
+        "Aliases": [
+          "RegisteredServerName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Reset-AzStorageSyncServerCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "ParentObject",
+        "Aliases": [
+          "StorageSyncService"
+        ]
+      },
+      {
+        "Name": "ParentResourceId",
+        "Aliases": [
+          "StorageSyncServiceId"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzStorageSyncChangeDetection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.StorageSync",
+    "Version": "2.1.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageSyncServiceName",
+        "Aliases": [
+          "ParentName"
+        ]
+      },
+      {
+        "Name": "SyncGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CloudEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "CloudEndpointId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "CloudEndpoint"
+        ]
+      },
+      {
+        "Name": "DirectoryPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Recursive",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

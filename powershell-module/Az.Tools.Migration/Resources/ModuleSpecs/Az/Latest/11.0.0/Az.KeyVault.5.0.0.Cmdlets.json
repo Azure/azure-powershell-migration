@@ -1,0 +1,5423 @@
+[
+  {
+    "Command": "Add-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "CertificatePolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "CertificateVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzKeyVaultCertificateOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificateOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateString",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyObject",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateCollection",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultCertificateContact",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "CertificateVersion"
+        ]
+      },
+      {
+        "Name": "IncludeVersions",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "IncludePending",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificateContact",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificateIssuer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IssuerName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "IssuerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": [
+          "DnsNames"
+        ]
+      },
+      {
+        "Name": "RenewAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseKeyOnRenewal",
+        "Aliases": null
+      },
+      {
+        "Name": "Disabled",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyUsage",
+        "Aliases": null
+      },
+      {
+        "Name": "Ekus",
+        "Aliases": null
+      },
+      {
+        "Name": "ValidityInMonths",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateType",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "KeySize",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyNotExportable",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateTransparency",
+        "Aliases": null
+      },
+      {
+        "Name": "Curve",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificateContact",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificateIssuer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IssuerName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultCertificateOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificateIssuer",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "IssuerName"
+        ]
+      },
+      {
+        "Name": "IssuerProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiKey",
+        "Aliases": null
+      },
+      {
+        "Name": "OrganizationDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Issuer"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "CertificatePolicy"
+        ]
+      },
+      {
+        "Name": "RenewAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "RenewAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "ReuseKeyOnRenewal",
+        "Aliases": null
+      },
+      {
+        "Name": "Disabled",
+        "Aliases": null
+      },
+      {
+        "Name": "SubjectName",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": [
+          "DnsNames"
+        ]
+      },
+      {
+        "Name": "KeyUsage",
+        "Aliases": null
+      },
+      {
+        "Name": "Ekus",
+        "Aliases": null
+      },
+      {
+        "Name": "ValidityInMonths",
+        "Aliases": null
+      },
+      {
+        "Name": "IssuerName",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateType",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtNumberOfDaysBeforeExpiry",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAtPercentageLifetime",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "KeySize",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyNotExportable",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateTransparency",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Curve",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Administrator",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "SoftDeleteRetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultManagedHsmRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedHsm",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "VaultName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbacAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "SoftDeleteRetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "NetworkRuleSet",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SasToken",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "BackupFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerUri",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "SasToken",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultRoleDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Custom",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "RoleAssignmentName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultRoleDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultRoleDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleName",
+        "Aliases": [
+          "RoleDefinitionName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultRoleAssignment",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleDefinitionName",
+        "Aliases": [
+          "RoleName"
+        ]
+      },
+      {
+        "Name": "RoleDefinitionId",
+        "Aliases": [
+          "RoleId"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": [
+          "Id",
+          "PrincipalId"
+        ]
+      },
+      {
+        "Name": "SignInName",
+        "Aliases": [
+          "Email",
+          "UserPrincipalName"
+        ]
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": [
+          "SPN",
+          "ServicePrincipalName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleAssignmentName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultAccessPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultAccessPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalName",
+        "Aliases": [
+          "SPN"
+        ]
+      },
+      {
+        "Name": "UserPrincipalName",
+        "Aliases": [
+          "UPN"
+        ]
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToKeys",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToSecrets",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToCertificates",
+        "Aliases": null
+      },
+      {
+        "Name": "PermissionsToStorage",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForTemplateDeployment",
+        "Aliases": null
+      },
+      {
+        "Name": "EnabledForDiskEncryption",
+        "Aliases": null
+      },
+      {
+        "Name": "BypassObjectIdValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "IncludeVersions",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "OutFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "IncludeVersions",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "AsPlainText",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultRandomNumber",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Count",
+        "Aliases": null
+      },
+      {
+        "Name": "AsBase64String",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultKeyRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultSecretRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "KeyFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyFilePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "Destination",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "Size",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "CurveName",
+        "Aliases": null
+      },
+      {
+        "Name": "Exportable",
+        "Aliases": null
+      },
+      {
+        "Name": "Immutable",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleasePolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "UseDefaultCVMPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVault",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "VaultName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EnablePurgeProtection",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbacAuthorization",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultNetworkRuleSetObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "Bypass",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Immutable",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleasePolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzKeyVaultKeyRotation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultKeyRotationPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultKeyRotationPolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "KeyRotationPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiresIn",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyRotationLifetimeAction",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzKeyVaultKeyOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Operation",
+        "Aliases": null
+      },
+      {
+        "Name": "Algorithm",
+        "Aliases": [
+          "EncryptionAlgorithm",
+          "WrapAlgorithm"
+        ]
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Key"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SecretValue",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultCertificatePolicy",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificateAdministratorDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Aliases": null
+      },
+      {
+        "Name": "LastName",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzKeyVaultCertificateOrganizationDetail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "AdministratorDetails",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Secret"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "AccountResourceId",
+        "Aliases": [
+          "StorageAccountResourceId"
+        ]
+      },
+      {
+        "Name": "ActiveKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableAutoRegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "RegenerationPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ActiveKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoRegenerateKey",
+        "Aliases": null
+      },
+      {
+        "Name": "RegenerationPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultManagedStorageAccountKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName",
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InRemovedState",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "TemplateUri",
+        "Aliases": null
+      },
+      {
+        "Name": "SasType",
+        "Aliases": null
+      },
+      {
+        "Name": "Disable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ValidityPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedStorageSasDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultCertificateRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "Certificate"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Backup-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": [
+          "StorageAccount"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restore-AzKeyVaultManagedStorageAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultManagedStorageSasDefinitionRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SasDefinitionName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Undo-AzKeyVaultManagedStorageAccountRemoval",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "StorageAccountName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultNetworkRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultNetworkRuleSet",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultAction",
+        "Aliases": null
+      },
+      {
+        "Name": "Bypass",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultNetworkRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "IpAddressRange",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Export-AzKeyVaultSecurityDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Certificates",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Quorum",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzKeyVaultSecurityDomain",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HsmName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Keys",
+        "Aliases": null
+      },
+      {
+        "Name": "SecurityDomainPath",
+        "Aliases": [
+          "Path"
+        ]
+      },
+      {
+        "Name": "OutFile",
+        "Aliases": null
+      },
+      {
+        "Name": "ExchangeKeyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DownloadExchangeKey",
+        "Aliases": null
+      },
+      {
+        "Name": "RestoreBlob",
+        "Aliases": null
+      },
+      {
+        "Name": "ImportRestoredBlob",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzKeyVaultSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "HsmObject",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmId",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzKeyVaultManagedHsmRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Region",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzKeyVaultManagedHsmRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzKeyVaultManagedHsmRegion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Region",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzKeyVaultManagedHsmNameAvailability",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzKeyVaultNameAvailability",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Immutable",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleasePolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultRoleDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Role",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultSecretAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "SecretName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "SecretVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "ContentType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultKeyAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "HsmName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "KeyName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KeyVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Expires",
+        "Aliases": null
+      },
+      {
+        "Name": "NotBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyOps",
+        "Aliases": null
+      },
+      {
+        "Name": "Immutable",
+        "Aliases": null
+      },
+      {
+        "Name": "ReleasePolicyPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzKeyVaultCertificateAttribute",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.KeyVault",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "VaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "CertificateName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "CertificateVersion"
+        ]
+      },
+      {
+        "Name": "Enable",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

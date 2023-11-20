@@ -48,14 +48,15 @@ Have the following installed on your system:
    $azModuleVersion = '5.6.0'
 
    # execute
-   .\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion -OutputDirectory (Join-Path -Path (Get-Location) -ChildPath 'powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\'$azModuleVersion)
+   .\powershell-module\Scripts\New-AzCmdletSpec.ps1 -AzVersion $azModuleVersion
    ```
 
 1. Remove the old module spec files from module resources:
-   `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\{old-version}`.
+   `powershell-module\Az.Tools.Migration\Resources\ModuleSpecs\Az\Latest\{old-version}`.
 
-1. Run the unit tests to make sure all unit tests pass. It's not uncommon for some tests to fail
-   because the expected number of aliases or cmdlets from the specs has changed.
+1. Run the unit tests to make sure all unit tests pass.
+
+   It's common for some tests to fail because the expected number of aliases or cmdlets from the specs has changed. If so, please update the `$expectedAliasCount`/`$expectedCommandCount` in test files.
 
    Restart PowerShell Process and navigate to the root folder of cloned Github repository
    ```powershell
@@ -70,6 +71,8 @@ Have the following installed on your system:
 
    Restart PowerShell if test is changed and module needs to be imported again.
 
-1. Add new version and release notes to `powershell-module/ChangeLog.md` and `powershell-module/Az.Tools.Migration/Az.Tools.Migration.psd1`. It is usually patch release because no API changes
+1. Add new version and release notes to `powershell-module/ChangeLog.md` and `powershell-module/Az.Tools.Migration/Az.Tools.Migration.psd1`.
+
+   *Note: The major version of Az.Tools.Migration should be the major version of targeted Az Version. *
 
 1. Submit a pull request to commit the new changes.
