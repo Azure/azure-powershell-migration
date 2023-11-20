@@ -1,6 +1,6 @@
-﻿---
+---
 external help file: Az.Tools.Migration-help.xml
-Module Name: az.tools.migration
+Module Name: Az.Tools.Migration
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,6 @@ Generates a new upgrade plan for migrating to the **Az** PowerShell module.
 ## SYNTAX
 
 ### FromReferences
-
 ```
 New-AzUpgradeModulePlan -AzureRmCmdReference <CommandReference[]> -ToAzVersion <String>
  [-AzureRmModuleSpec <System.Collections.Generic.Dictionary`2[System.String,CommandDefinition]>]
@@ -23,7 +22,6 @@ New-AzUpgradeModulePlan -AzureRmCmdReference <CommandReference[]> -ToAzVersion <
 ```
 
 ### FromNewSearchByDirectory
-
 ```
 New-AzUpgradeModulePlan -FromAzureRmVersion <String> -DirectoryPath <String> -ToAzVersion <String>
  [-AzureRmModuleSpec <System.Collections.Generic.Dictionary`2[System.String,CommandDefinition]>]
@@ -33,7 +31,6 @@ New-AzUpgradeModulePlan -FromAzureRmVersion <String> -DirectoryPath <String> -To
 ```
 
 ### FromNewSearchByFile
-
 ```
 New-AzUpgradeModulePlan -FromAzureRmVersion <String> -FilePath <String> -ToAzVersion <String>
  [-AzureRmModuleSpec <System.Collections.Generic.Dictionary`2[System.String,CommandDefinition]>]
@@ -233,11 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
--InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,
--WarningAction, and -WarningVariable. For more information, see
-[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
