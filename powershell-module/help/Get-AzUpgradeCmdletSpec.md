@@ -1,6 +1,6 @@
-﻿---
+---
 external help file: Az.Tools.Migration-help.xml
-Module Name: az.tools.migration
+Module Name: Az.Tools.Migration
 online version:
 schema: 2.0.0
 ---
@@ -13,35 +13,29 @@ Returns a dictionary containing cmdlet specification objects for the specified m
 ## SYNTAX
 
 ### AzureRM
-
 ```
 Get-AzUpgradeCmdletSpec [-AzureRM] [<CommonParameters>]
 ```
 
 ### Az
-
 ```
 Get-AzUpgradeCmdletSpec [-Az] -ModuleVersion <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
 Returns a dictionary containing cmdlet specification objects for the specified module.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-
-Returns the dictionary containing cmdlet specification objects for **AzureRM** 6.13.1.
-
-```powershell
+```
 Get-AzUpgradeCmdletSpec -AzureRM
+Returns the dictionary containing cmdlet specification objects for AzureRM 6.13.1.
 ```
 
 ## PARAMETERS
 
 ### -Az
-
 Import command definitions from Az modules.
 
 ```yaml
@@ -57,8 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -AzureRM
-
-Import command definitions from **AzureRM** modules.
+Import command definitions from AzureRM modules.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -73,7 +66,6 @@ Accept wildcard characters: False
 ```
 
 ### -ModuleVersion
-
 Specify the version of the module to load command definitions from.
 
 ```yaml
@@ -89,11 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
--InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,
--WarningAction, and -WarningVariable. For more information, see
-[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
