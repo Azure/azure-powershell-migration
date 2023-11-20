@@ -1,8 +1,8 @@
 ---
 Module Name: Az.Tools.Migration
 Module Guid: cb471070-37cc-4484-9665-adf1502b4e3a
-Download Help Link: 
-Help Version: 1.0.0.0
+Download Help Link: https://learn.microsoft.com/powershell/module/az.tools.migration
+Help Version: 1.0.1.0
 Locale: en-US
 ---
 
