@@ -35,6 +35,13 @@ Returns the dictionary containing cmdlet specification objects for **AzureRM** 6
 ```powershell
 Get-AzUpgradeCmdletSpec -AzureRM
 ```
+### EXAMPLE 2
+
+Returns the dictionary containing cmdlet specification objects for latest Az major version.
+
+```powershell
+Get-AzUpgradeCmdletSpec -Az 'latest'
+```
 
 ## PARAMETERS
 
