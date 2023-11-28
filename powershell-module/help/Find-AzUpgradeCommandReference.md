@@ -1,6 +1,6 @@
-﻿---
+---
 external help file: Az.Tools.Migration-help.xml
-Module Name: az.tools.migration
+Module Name: Az.Tools.Migration
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,6 @@ Searches for **AzureRM** PowerShell command references in the specified file or 
 ## SYNTAX
 
 ### ByFileAndModuleSpec
-
 ```
 Find-AzUpgradeCommandReference -FilePath <String>
  -AzureRmModuleSpec <System.Collections.Generic.Dictionary`2[System.String,CommandDefinition]>
@@ -21,13 +20,11 @@ Find-AzUpgradeCommandReference -FilePath <String>
 ```
 
 ### ByFileAndModuleVersion
-
 ```
 Find-AzUpgradeCommandReference -FilePath <String> -AzureRmVersion <String> [<CommonParameters>]
 ```
 
 ### ByDirectoryAndModuleSpec
-
 ```
 Find-AzUpgradeCommandReference -DirectoryPath <String>
  -AzureRmModuleSpec <System.Collections.Generic.Dictionary`2[System.String,CommandDefinition]>
@@ -35,7 +32,6 @@ Find-AzUpgradeCommandReference -DirectoryPath <String>
 ```
 
 ### ByDirectoryAndModuleVersion
-
 ```
 Find-AzUpgradeCommandReference -DirectoryPath <String> -AzureRmVersion <String> [<CommonParameters>]
 ```
@@ -146,11 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,
--InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,
--WarningAction, and -WarningVariable. For more information, see
-[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
