@@ -215,7 +215,7 @@ Accept wildcard characters: False
 
 ### -ToAzVersion
 
-Specifies the **Az** module version to upgrade to. Currently, only Az version 10.3 is supported.
+Specifies the **Az** module version to upgrade to.
 
 ```yaml
 Type: System.String
