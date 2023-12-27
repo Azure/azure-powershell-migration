@@ -1,0 +1,6036 @@
+[
+  {
+    "Command": "Get-AzMetricDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "AggregationType",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Top",
+        "Aliases": null
+      },
+      {
+        "Name": "OrderBy",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "ResultType",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "Dimension",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": [
+          "MetricNames"
+        ]
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzLogProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionInDays",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActivityLog",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "CorrelationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxRecord",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAutoscaleHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzMetricAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregationOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzWebtestAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "FailedLocationCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAlertHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAlertRuleEmail",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CustomEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "SendToServiceOwner",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAlertRuleWebhook",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Property",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAlertRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricFilter",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Dimension",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "Frequency",
+        "Aliases": [
+          "EvaluationFrequency"
+        ]
+      },
+      {
+        "Name": "TargetResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceScope",
+        "Aliases": [
+          "Scopes"
+        ]
+      },
+      {
+        "Name": "TargetResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceRegion",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": [
+          "Criteria"
+        ]
+      },
+      {
+        "Name": "AutoMitigate",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionGroup",
+        "Aliases": [
+          "Actions"
+        ]
+      },
+      {
+        "Name": "ActionGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricAlertRuleV2DimensionSelection",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DimensionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ValuesToInclude",
+        "Aliases": null
+      },
+      {
+        "Name": "ValuesToExclude",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMetricAlertRuleV2Criteria",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DynamicThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "WebTest",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipMetricValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "DimensionSelection",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregation",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "ThresholdSensitivity",
+        "Aliases": [
+          "Sensitivity"
+        ]
+      },
+      {
+        "Name": "ViolationCount",
+        "Aliases": [
+          "FailingPeriod",
+          "NumberOfViolations"
+        ]
+      },
+      {
+        "Name": "ExaminedAggregatedPointCount",
+        "Aliases": [
+          "TotalPeriod",
+          "NumberOfExaminedAggregatedPoints"
+        ]
+      },
+      {
+        "Name": "IgnoreDataBefore",
+        "Aliases": null
+      },
+      {
+        "Name": "WebTestId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationInsightsId",
+        "Aliases": [
+          "componentId"
+        ]
+      },
+      {
+        "Name": "FailedLocationCount",
+        "Aliases": [
+          "AlertLocationThreshold"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzMetricAlertRuleV2",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": [
+          "RuleResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tags",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Tags",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzInsightsPrivateLinkScope",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "LinkedResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzInsightsPrivateLinkScopedResource",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScopeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActivityLogAlertName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActivityLogAlertName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Action",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActivityLogAlertName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzActivityLogAlert",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActivityLogAlertName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDiagnosticSettingCategory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzEventCategory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzSubscriptionDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubAuthorizationRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Log",
+        "Aliases": null
+      },
+      {
+        "Name": "LogAnalyticsDestinationType",
+        "Aliases": null
+      },
+      {
+        "Name": "MarketplacePartnerId",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSubscriptionDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubAuthorizationRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "Log",
+        "Aliases": null
+      },
+      {
+        "Name": "MarketplacePartnerId",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceBusRuleId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzSubscriptionDiagnosticSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionCustomProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionGroupResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoMitigate",
+        "Aliases": null
+      },
+      {
+        "Name": "CheckWorkspaceAlertsStorageConfigured",
+        "Aliases": null
+      },
+      {
+        "Name": "CriterionAllOf",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "EvaluationFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "MuteActionsDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "OverrideQueryTimeRange",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipQueryValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleConditionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Dimension",
+        "Aliases": null
+      },
+      {
+        "Name": "FailingPeriodMinFailingPeriodsToAlert",
+        "Aliases": null
+      },
+      {
+        "Name": "FailingPeriodNumberOfEvaluationPeriod",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricMeasureColumn",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceIdColumn",
+        "Aliases": null
+      },
+      {
+        "Name": "Threshold",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeAggregation",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzScheduledQueryRuleDimensionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzScheduledQueryRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionCustomProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "ActionGroupResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoMitigate",
+        "Aliases": null
+      },
+      {
+        "Name": "CheckWorkspaceAlertsStorageConfigured",
+        "Aliases": null
+      },
+      {
+        "Name": "CriterionAllOf",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "EvaluationFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "MuteActionsDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "OverrideQueryTimeRange",
+        "Aliases": null
+      },
+      {
+        "Name": "Scope",
+        "Aliases": null
+      },
+      {
+        "Name": "Severity",
+        "Aliases": null
+      },
+      {
+        "Name": "SkipQueryValidation",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowSize",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActivityLogAlertActionGroupObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookProperty",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActivityLogAlertAlertRuleAnyOfOrLeafConditionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AnyOf",
+        "Aliases": null
+      },
+      {
+        "Name": "ContainsAny",
+        "Aliases": null
+      },
+      {
+        "Name": "Equal",
+        "Aliases": null
+      },
+      {
+        "Name": "Field",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActivityLogAlertAlertRuleLeafConditionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ContainsAny",
+        "Aliases": null
+      },
+      {
+        "Name": "Equal",
+        "Aliases": null
+      },
+      {
+        "Name": "Field",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticSettingLogSettingsObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "CategoryGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicyDay",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicyEnabled",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticSettingMetricSettingsObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicyDay",
+        "Aliases": null
+      },
+      {
+        "Name": "RetentionPolicyEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeGrain",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDiagnosticSettingSubscriptionLogSettingsObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Category",
+        "Aliases": null
+      },
+      {
+        "Name": "CategoryGroup",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAutoscalePredictiveMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AutoscaleSettingName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Aggregation",
+        "Aliases": null
+      },
+      {
+        "Name": "Interval",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Timespan",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AutoscaleSettingName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleNotificationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EmailCustomEmail",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailSendToSubscriptionAdministrator",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailSendToSubscriptionCoAdministrator",
+        "Aliases": null
+      },
+      {
+        "Name": "Webhook",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleProfileObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CapacityDefault",
+        "Aliases": null
+      },
+      {
+        "Name": "CapacityMaximum",
+        "Aliases": null
+      },
+      {
+        "Name": "CapacityMinimum",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Rule",
+        "Aliases": null
+      },
+      {
+        "Name": "FixedDateEnd",
+        "Aliases": null
+      },
+      {
+        "Name": "FixedDateStart",
+        "Aliases": null
+      },
+      {
+        "Name": "FixedDateTimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "RecurrenceFrequency",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleDay",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleHour",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleMinute",
+        "Aliases": null
+      },
+      {
+        "Name": "ScheduleTimeZone",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleScaleRuleMetricDimensionObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "DimensionName",
+        "Aliases": null
+      },
+      {
+        "Name": "Operator",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleScaleRuleObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "MetricTriggerMetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerMetricResourceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerOperator",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerStatistic",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerThreshold",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerTimeAggregation",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerTimeGrain",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerTimeWindow",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionCooldown",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionDirection",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionType",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerDimension",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerDividePerInstance",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerMetricNamespace",
+        "Aliases": null
+      },
+      {
+        "Name": "MetricTriggerMetricResourceLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleActionValue",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AutoscaleSettingName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Profile",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Notification",
+        "Aliases": null
+      },
+      {
+        "Name": "PredictiveAutoscalePolicyScaleLookAheadTime",
+        "Aliases": null
+      },
+      {
+        "Name": "PredictiveAutoscalePolicyScaleMode",
+        "Aliases": null
+      },
+      {
+        "Name": "PropertiesName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAutoscaleWebhookNotificationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Property",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AutoscaleSettingName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzAutoscaleSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AutoscaleSettingName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "Notification",
+        "Aliases": null
+      },
+      {
+        "Name": "PredictiveAutoscalePolicyScaleLookAheadTime",
+        "Aliases": null
+      },
+      {
+        "Name": "PredictiveAutoscalePolicyScaleMode",
+        "Aliases": null
+      },
+      {
+        "Name": "Profile",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceLocation",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetResourceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzMonitorWorkspace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AzureMonitorWorkspaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMonitorWorkspace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AzureMonitorWorkspaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzMonitorWorkspace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AzureMonitorWorkspaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzMonitorWorkspace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "AzureMonitorWorkspaceName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataCollectionEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionRuleName",
+          "RuleName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceUri",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionRuleName",
+        "Aliases": [
+          "RuleName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionEndpointName",
+        "Aliases": [
+          "EndpointName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataCollectionEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "ImmutableId",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "NetworkAclsPublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionRuleName",
+          "RuleName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionEndpointId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlow",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubConsumerGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubStream",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceExtension",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceIisLog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceLogFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePerformanceCounter",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePlatformTelemetry",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePrometheusForwarder",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceSyslog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceWindowsEventLog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceWindowsFirewallLog",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationAzureMonitorMetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationEventHub",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationEventHubsDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationLogAnalytic",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationMonitoringAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageBlobsDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageTablesDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "StreamDeclaration",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceUri",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "DataCollectionEndpointId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionRuleId",
+        "Aliases": [
+          "RuleId"
+        ]
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzDataFlowObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "BuiltInTransform",
+        "Aliases": null
+      },
+      {
+        "Name": "Destination",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputStream",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "TransformKql",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EventHubResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzEventHubDirectDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EventHubResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzExtensionDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ExtensionName",
+        "Aliases": null
+      },
+      {
+        "Name": "ExtensionSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "InputDataSource",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzIisLogsDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "LogDirectory",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzLogAnalyticsDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzLogFilesDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "FilePattern",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SettingTextRecordStartTimestampFormat",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzMonitoringAccountDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPerfCounterDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CounterSpecifier",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SamplingFrequencyInSecond",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPlatformTelemetryDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzPrometheusForwarderDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "LabelIncludeFilter",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageBlobDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzStorageTableDestinationObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "TableName",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzSyslogDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "FacilityName",
+        "Aliases": null
+      },
+      {
+        "Name": "LogLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzWindowsEventLogDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "XPathQuery",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzWindowsFirewallLogsDataSourceObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Stream",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataCollectionEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionRuleName",
+          "RuleName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceUri",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataCollectionEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionEndpointName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataCollectionRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "DataCollectionRuleName",
+          "RuleName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionEndpointId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataFlow",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubConsumerGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceDataImportEventHubStream",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceExtension",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceIisLog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceLogFile",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePerformanceCounter",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePlatformTelemetry",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourcePrometheusForwarder",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceSyslog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceWindowsEventLog",
+        "Aliases": null
+      },
+      {
+        "Name": "DataSourceWindowsFirewallLog",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationAzureMonitorMetricName",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationEventHub",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationEventHubsDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationLogAnalytic",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationMonitoringAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageBlobsDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStorageTablesDirect",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "StreamDeclaration",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzDataCollectionRuleAssociation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AssociationName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceUri",
+        "Aliases": [
+          "TargetResourceId"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionEndpointId",
+        "Aliases": null
+      },
+      {
+        "Name": "DataCollectionRuleId",
+        "Aliases": [
+          "RuleId"
+        ]
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzActionGroupReceiver",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ActionGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ReceiverName",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActionGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActionGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ArmRoleReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationRunbookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAppPushReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureFunctionReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupShortName",
+        "Aliases": [
+          "ShortName"
+        ]
+      },
+      {
+        "Name": "ItsmReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "LogicAppReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "SmsReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "VoiceReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "JsonString",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupArmRoleReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "RoleId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupAutomationRunbookReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "AutomationAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "IsGlobalRunbook",
+        "Aliases": null
+      },
+      {
+        "Name": "RunbookName",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupAzureAppPushReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupAzureFunctionReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "FunctionAppResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "FunctionName",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpTriggerUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupEmailReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EmailAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupEventHubReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "EventHubName",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubNameSpace",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupItsmReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ConnectionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Region",
+        "Aliases": null
+      },
+      {
+        "Name": "TicketConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupLogicAppReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CallbackUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupSmsReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CountryCode",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupVoiceReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "CountryCode",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PhoneNumber",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzActionGroupWebhookReceiverObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceUri",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentifierUri",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "TenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "UseAadAuth",
+        "Aliases": null
+      },
+      {
+        "Name": "UseCommonAlertSchema",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActionGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ActionGroupName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ArmRoleReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AutomationRunbookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureAppPushReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "AzureFunctionReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "EmailReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "Enabled",
+        "Aliases": null
+      },
+      {
+        "Name": "EventHubReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupShortName",
+        "Aliases": [
+          "ShortName"
+        ]
+      },
+      {
+        "Name": "ItsmReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LogicAppReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "SmsReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "VoiceReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "WebhookReceiver",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzActionGroup",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "ActionGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AlertType",
+        "Aliases": null
+      },
+      {
+        "Name": "Receiver",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzLog",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Monitor",
+    "Version": "5.0.0",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Status",
+        "Aliases": null
+      },
+      {
+        "Name": "Caller",
+        "Aliases": null
+      },
+      {
+        "Name": "DetailedOutput",
+        "Aliases": null
+      },
+      {
+        "Name": "CorrelationId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": [
+          "ResourceGroup"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProvider",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxRecord",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

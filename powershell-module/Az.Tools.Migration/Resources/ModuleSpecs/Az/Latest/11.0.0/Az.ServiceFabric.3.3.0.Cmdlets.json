@@ -1,0 +1,3913 @@
+[
+  {
+    "Command": "Add-AzServiceFabricClientCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "Admin",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "AdminClientThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ReadonlyClientThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertificateCommonName",
+        "Aliases": [
+          "CertCommonName"
+        ]
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": [
+          "ClientCertificateThumbprint"
+        ]
+      },
+      {
+        "Name": "CommonName",
+        "Aliases": null
+      },
+      {
+        "Name": "IssuerThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "NumberOfNodesToAdd",
+        "Aliases": [
+          "Number"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "VmUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "VmPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSku",
+        "Aliases": null
+      },
+      {
+        "Name": "Tier",
+        "Aliases": null
+      },
+      {
+        "Name": "DurabilityLevel",
+        "Aliases": null
+      },
+      {
+        "Name": "IsPrimaryNodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "VMImagePublisher",
+        "Aliases": null
+      },
+      {
+        "Name": "VMImageOffer",
+        "Aliases": null
+      },
+      {
+        "Name": "VMImageSku",
+        "Aliases": null
+      },
+      {
+        "Name": "VMImageVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TemplateFile",
+        "Aliases": null
+      },
+      {
+        "Name": "ParameterFile",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFile",
+        "Aliases": [
+          "Source"
+        ]
+      },
+      {
+        "Name": "CertificateOutputFolder",
+        "Aliases": [
+          "Destination"
+        ]
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": [
+          "CertPassword"
+        ]
+      },
+      {
+        "Name": "SecondaryCertificateFile",
+        "Aliases": [
+          "SecSource"
+        ]
+      },
+      {
+        "Name": "SecondaryCertificatePassword",
+        "Aliases": [
+          "SecCertPassword"
+        ]
+      },
+      {
+        "Name": "KeyVaultResourceGroupName",
+        "Aliases": [
+          "KeyVaultResouceGroupName"
+        ]
+      },
+      {
+        "Name": "KeyVaultName",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateCommonName",
+        "Aliases": [
+          "CertCommonName"
+        ]
+      },
+      {
+        "Name": "CertificateIssuerThumbprint",
+        "Aliases": [
+          "CertIssuerThumbprint"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "VmUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterSize",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateSubjectName",
+        "Aliases": [
+          "Subject"
+        ]
+      },
+      {
+        "Name": "VmPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "OS",
+        "Aliases": [
+          "VmImage"
+        ]
+      },
+      {
+        "Name": "VmSku",
+        "Aliases": [
+          "Sku"
+        ]
+      },
+      {
+        "Name": "SecretIdentifier",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricClientCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "AdminClientThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ReadonlyClientThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertificateCommonName",
+        "Aliases": [
+          "CertCommonName"
+        ]
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": [
+          "ClientCertificateThumbprint"
+        ]
+      },
+      {
+        "Name": "CommonName",
+        "Aliases": null
+      },
+      {
+        "Name": "IssuerThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "NumberOfNodesToRemove",
+        "Aliases": [
+          "Number"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "Section",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "SettingsSectionDescription",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "Section",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Value",
+        "Aliases": null
+      },
+      {
+        "Name": "SettingsSectionDescription",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricUpgradeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "UpgradeMode",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ClusterCodeVersion"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzServiceFabricDurability",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DurabilityLevel",
+        "Aliases": [
+          "Level"
+        ]
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzServiceFabricReliability",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ReliabilityLevel",
+        "Aliases": [
+          "Level"
+        ]
+      },
+      {
+        "Name": "AutoAddNode",
+        "Aliases": [
+          "Auto"
+        ]
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationTypeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ApplicationParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "PackageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimumNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaximumNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "PackageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "Type",
+        "Aliases": [
+          "ServiceType"
+        ]
+      },
+      {
+        "Name": "Stateless",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Stateful",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "MinReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaRestartWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "QuorumLossWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "StandByReplicaKeepDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultMoveCost",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeSingleton",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeUniformInt64",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeNamed",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzServiceFabricApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ApplicationTypeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "MinimumNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaximumNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRestart",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeReplicaSetCheckTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "FailureAction",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckRetryTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckWaitDurationSec",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckStableDurationSec",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeDomainTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "ConsiderWarningAsError",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeMaxPercentUnhealthyPartitionsPerService",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeUnhealthyServicesMaxPercent",
+        "Aliases": null
+      },
+      {
+        "Name": "UnhealthyDeployedApplicationsMaxPercent",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceTypeHealthPolicyMap",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeMode",
+        "Aliases": [
+          "ClusterUpgradeMode"
+        ]
+      },
+      {
+        "Name": "CodeVersion",
+        "Aliases": [
+          "ClusterCodeVersion"
+        ]
+      },
+      {
+        "Name": "UpgradeCadence",
+        "Aliases": [
+          "ClusterUpgradeCadence"
+        ]
+      },
+      {
+        "Name": "ClientCertIsAdmin",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertCommonName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientCertIssuerThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "AdminPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AdminUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpGatewayConnectionPort",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientConnectionPort",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": null
+      },
+      {
+        "Name": "Sku",
+        "Aliases": null
+      },
+      {
+        "Name": "UseTestExtension",
+        "Aliases": null
+      },
+      {
+        "Name": "ZonalResiliency",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeMode",
+        "Aliases": null
+      },
+      {
+        "Name": "CodeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpGatewayConnectionPort",
+        "Aliases": null
+      },
+      {
+        "Name": "ClientConnectionPort",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsName",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricManagedClusterClientCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Admin",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "CommonName",
+        "Aliases": null
+      },
+      {
+        "Name": "IssuerThumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricManagedClusterNetworkSecurityRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Access",
+        "Aliases": null
+      },
+      {
+        "Name": "Description",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationAddressPrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationPortRange",
+        "Aliases": null
+      },
+      {
+        "Name": "Direction",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NetworkSecurityRuleName"
+        ]
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "Protocol",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceAddressPrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "SourcePortRange",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedClusterClientCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "CommonName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "InstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Primary",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskSize",
+        "Aliases": [
+          "DataDiskSize"
+        ]
+      },
+      {
+        "Name": "DiskType",
+        "Aliases": [
+          "DataDiskType"
+        ]
+      },
+      {
+        "Name": "ApplicationStartPort",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationEndPort",
+        "Aliases": null
+      },
+      {
+        "Name": "EphemeralStartPort",
+        "Aliases": null
+      },
+      {
+        "Name": "EphemeralEndPort",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "VmImagePublisher",
+        "Aliases": null
+      },
+      {
+        "Name": "VmImageOffer",
+        "Aliases": null
+      },
+      {
+        "Name": "VmImageSku",
+        "Aliases": null
+      },
+      {
+        "Name": "VmImageVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "PlacementProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "VmUserAssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "IsStateless",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiplePlacementGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "Reimage",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceReimage",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationStartPort",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationEndPort",
+        "Aliases": null
+      },
+      {
+        "Name": "EphemeralStartPort",
+        "Aliases": null
+      },
+      {
+        "Name": "EphemeralEndPort",
+        "Aliases": null
+      },
+      {
+        "Name": "Capacity",
+        "Aliases": null
+      },
+      {
+        "Name": "PlacementProperty",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRemoveNode",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricManagedNodeTypeVMExtension",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ExtensionName"
+        ]
+      },
+      {
+        "Name": "ForceUpdateTag",
+        "Aliases": null
+      },
+      {
+        "Name": "Publisher",
+        "Aliases": null
+      },
+      {
+        "Name": "Type",
+        "Aliases": null
+      },
+      {
+        "Name": "TypeHandlerVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoUpgradeMinorVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Setting",
+        "Aliases": null
+      },
+      {
+        "Name": "ProtectedSetting",
+        "Aliases": null
+      },
+      {
+        "Name": "ProvisionAfterExtension",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzServiceFabricManagedNodeTypeVMSecret",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "SourceVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateStore",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedNodeTypeVMExtension",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ExtensionName"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restart-AzServiceFabricManagedNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "NodeTypeName"
+        ]
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRestart",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzServiceFabricNodeType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "IsPrimaryNodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzServiceFabricVmImage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "VmImage",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedClusterApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationTypeName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationTypeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ApplicationParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "PackageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedClusterApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedClusterApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ApplicationTypeVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationParameter",
+        "Aliases": null
+      },
+      {
+        "Name": "ForceRestart",
+        "Aliases": null
+      },
+      {
+        "Name": "RecreateApplication",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeReplicaSetCheckTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceCloseDelayDurationSec",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeMode",
+        "Aliases": null
+      },
+      {
+        "Name": "FailureAction",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckRetryTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckWaitDurationSec",
+        "Aliases": null
+      },
+      {
+        "Name": "HealthCheckStableDurationSec",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeDomainTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "UpgradeTimeoutSec",
+        "Aliases": null
+      },
+      {
+        "Name": "ConsiderWarningAsError",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeMaxPercentUnhealthyPartitionsPerService",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultServiceTypeUnhealthyServicesMaxPercent",
+        "Aliases": null
+      },
+      {
+        "Name": "UnhealthyDeployedApplicationsMaxPercent",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceTypeHealthPolicyMap",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedClusterApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedClusterApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedClusterApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedClusterApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedClusterApplicationType",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedClusterApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "PackageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedClusterApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedClusterApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "PackageUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedClusterApplicationTypeVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ApplicationTypeName"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "ApplicationTypeVersion"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzServiceFabricManagedClusterService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "Type",
+        "Aliases": [
+          "ServiceType"
+        ]
+      },
+      {
+        "Name": "Stateless",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MinInstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MinInstancePercentage",
+        "Aliases": null
+      },
+      {
+        "Name": "Stateful",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "MinReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "HasPersistedState",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaRestartWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "QuorumLossWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "StandByReplicaKeepDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePlacementTimeLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultMoveCost",
+        "Aliases": null
+      },
+      {
+        "Name": "PlacementConstraint",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Correlation",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePackageActivationMode",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeSingleton",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeUniformInt64",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionCount",
+        "Aliases": null
+      },
+      {
+        "Name": "LowKey",
+        "Aliases": null
+      },
+      {
+        "Name": "HighKey",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionSchemeNamed",
+        "Aliases": null
+      },
+      {
+        "Name": "PartitionName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzServiceFabricManagedClusterService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzServiceFabricManagedClusterService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Stateless",
+        "Aliases": null
+      },
+      {
+        "Name": "InstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MinInstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MinInstancePercentage",
+        "Aliases": null
+      },
+      {
+        "Name": "Stateful",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "MinReplicaSetSize",
+        "Aliases": null
+      },
+      {
+        "Name": "HasPersistedState",
+        "Aliases": null
+      },
+      {
+        "Name": "ReplicaRestartWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "QuorumLossWaitDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "StandByReplicaKeepDuration",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePlacementTimeLimit",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultMoveCost",
+        "Aliases": null
+      },
+      {
+        "Name": "PlacementConstraint",
+        "Aliases": null
+      },
+      {
+        "Name": "Metric",
+        "Aliases": null
+      },
+      {
+        "Name": "Correlation",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePackageActivationMode",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzServiceFabricManagedClusterService",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.ServiceFabric",
+    "Version": "3.3.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ServiceName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

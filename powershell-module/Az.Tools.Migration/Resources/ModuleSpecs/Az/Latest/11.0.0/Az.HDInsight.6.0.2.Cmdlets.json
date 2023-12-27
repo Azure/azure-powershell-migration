@@ -1,0 +1,2264 @@
+[
+  {
+    "Command": "Get-AzHDInsightJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "NumOfJobs",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightSqoopJobDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Command",
+        "Aliases": null
+      },
+      {
+        "Name": "LibDir",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Wait-AzHDInsightJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeoutInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "WaitIntervalInSeconds",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightStreamingMapReduceJobDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Arguments",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "CommandEnvironment",
+        "Aliases": null
+      },
+      {
+        "Name": "Defines",
+        "Aliases": null
+      },
+      {
+        "Name": "InputPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Mapper",
+        "Aliases": null
+      },
+      {
+        "Name": "OutputPath",
+        "Aliases": null
+      },
+      {
+        "Name": "Reducer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightMapReduceJobDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Arguments",
+        "Aliases": null
+      },
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "ClassName",
+        "Aliases": null
+      },
+      {
+        "Name": "Defines",
+        "Aliases": null
+      },
+      {
+        "Name": "JarFile",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "LibJars",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightPigJobDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Arguments",
+        "Aliases": null
+      },
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightHiveJobDefinition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Arguments",
+        "Aliases": null
+      },
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "Defines",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "RunAsFileJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightJobOutput",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultStorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultStorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayOutputType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzHDInsightHiveJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Arguments",
+        "Aliases": null
+      },
+      {
+        "Name": "Files",
+        "Aliases": null
+      },
+      {
+        "Name": "StatusFolder",
+        "Aliases": null
+      },
+      {
+        "Name": "Defines",
+        "Aliases": null
+      },
+      {
+        "Name": "File",
+        "Aliases": null
+      },
+      {
+        "Name": "JobName",
+        "Aliases": null
+      },
+      {
+        "Name": "Query",
+        "Aliases": null
+      },
+      {
+        "Name": "RunAsFileJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultStorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultStorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Use-AzHDInsightCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzHDInsightJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzHDInsightJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "JobDefinition",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": [
+          "ClusterCredential"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightComponentVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentName",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightSecurityProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "DomainUserCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "OrganizationalUnitDN",
+        "Aliases": null
+      },
+      {
+        "Name": "LdapsUrls",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterUsersGroupDNs",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightDefaultStorage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightStorage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightScriptAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeType",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightMetastore",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "MetastoreType",
+        "Aliases": null
+      },
+      {
+        "Name": "SqlAzureServerName",
+        "Aliases": null
+      },
+      {
+        "Name": "DatabaseName",
+        "Aliases": null
+      },
+      {
+        "Name": "Credential",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightConfigValue",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "Core",
+        "Aliases": null
+      },
+      {
+        "Name": "HiveSite",
+        "Aliases": null
+      },
+      {
+        "Name": "HiveEnv",
+        "Aliases": null
+      },
+      {
+        "Name": "OozieSite",
+        "Aliases": null
+      },
+      {
+        "Name": "OozieEnv",
+        "Aliases": null
+      },
+      {
+        "Name": "WebHCat",
+        "Aliases": null
+      },
+      {
+        "Name": "HBaseSite",
+        "Aliases": null
+      },
+      {
+        "Name": "HBaseEnv",
+        "Aliases": null
+      },
+      {
+        "Name": "Storm",
+        "Aliases": null
+      },
+      {
+        "Name": "Yarn",
+        "Aliases": null
+      },
+      {
+        "Name": "MapRed",
+        "Aliases": null
+      },
+      {
+        "Name": "Tez",
+        "Aliases": null
+      },
+      {
+        "Name": "Hdfs",
+        "Aliases": null
+      },
+      {
+        "Name": "RServer",
+        "Aliases": null
+      },
+      {
+        "Name": "SparkDefaults",
+        "Aliases": null
+      },
+      {
+        "Name": "SparkThriftConf",
+        "Aliases": null
+      },
+      {
+        "Name": "Spark2Defaults",
+        "Aliases": null
+      },
+      {
+        "Name": "Spark2ThriftConf",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightProperty",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightGatewayCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightClusterConfig",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountType",
+        "Aliases": null
+      },
+      {
+        "Name": "OozieMetastore",
+        "Aliases": null
+      },
+      {
+        "Name": "HiveMetastore",
+        "Aliases": null
+      },
+      {
+        "Name": "HeadNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkerNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ZookeeperNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterType",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterTier",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFileContents",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AadTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "MinSupportedTlsVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionAlgorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultUri",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionInTransit",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionAtHost",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzHDInsightCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightClusterSize",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetInstanceCount",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightPersistedScriptAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightScriptActionHistory",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptExecutionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzHDInsightPersistedScriptAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightPersistedScriptAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptExecutionId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Submit-AzHDInsightScriptAction",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Uri",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeTypes",
+        "Aliases": null
+      },
+      {
+        "Name": "Parameters",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": null
+      },
+      {
+        "Name": "PersistOnSuccess",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterSizeInNodes",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountKey",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountType",
+        "Aliases": null
+      },
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "OozieMetastore",
+        "Aliases": null
+      },
+      {
+        "Name": "HiveMetastore",
+        "Aliases": null
+      },
+      {
+        "Name": "AmbariDatabase",
+        "Aliases": null
+      },
+      {
+        "Name": "AdditionalStorageAccounts",
+        "Aliases": null
+      },
+      {
+        "Name": "Configurations",
+        "Aliases": null
+      },
+      {
+        "Name": "ScriptActions",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainer",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageRootPath",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageFileSystem",
+        "Aliases": null
+      },
+      {
+        "Name": "Version",
+        "Aliases": null
+      },
+      {
+        "Name": "HeadNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkerNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "KafkaManagementNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ZookeeperNodeSize",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterType",
+        "Aliases": null
+      },
+      {
+        "Name": "ComponentVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualNetworkId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "OSType",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterTier",
+        "Aliases": null
+      },
+      {
+        "Name": "SshCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "SshPublicKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFileContents",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AadTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "SecurityProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "DisksPerWorkerNode",
+        "Aliases": null
+      },
+      {
+        "Name": "MinSupportedTlsVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageAccountManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionAlgorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultUri",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionInTransit",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionAtHost",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoscaleConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableIDBroker",
+        "Aliases": null
+      },
+      {
+        "Name": "KafkaClientGroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "KafkaClientGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceProviderConnection",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLink",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableComputeIsolation",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeIsolationHostSku",
+        "Aliases": null
+      },
+      {
+        "Name": "Zone",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateLinkConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Add-AzHDInsightClusterIdentity",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Config",
+        "Aliases": null
+      },
+      {
+        "Name": "ObjectId",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateFileContents",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificatePassword",
+        "Aliases": null
+      },
+      {
+        "Name": "AadTenantId",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzHDInsightMonitoring",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzHDInsightMonitoring",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightMonitoring",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightClusterDiskEncryptionKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyName",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionVaultUri",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightHost",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restart-AzHDInsightHost",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": [
+          "HostName"
+        ]
+      },
+      {
+        "Name": "AzureHDInsightHostInfo",
+        "Aliases": [
+          "Host"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightClusterAutoscaleScheduleCondition",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Time",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkerNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Day",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightClusterAutoscaleConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightClusterAutoscaleConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "MinWorkerNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxWorkerNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzHDInsightClusterAutoscaleConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "MinWorkerNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxWorkerNodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Condition",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoscaleConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "Schedule",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzHDInsightClusterAutoscaleConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzHDInsightAzureMonitor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzHDInsightAzureMonitor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceId",
+        "Aliases": null
+      },
+      {
+        "Name": "PrimaryKey",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzHDInsightAzureMonitor",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightIPConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Primary",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateIPAddress",
+        "Aliases": null
+      },
+      {
+        "Name": "PrivateIPAllocationMethod",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzHDInsightPrivateLinkConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.HDInsight",
+    "Version": "6.0.2",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "GroupId",
+        "Aliases": null
+      },
+      {
+        "Name": "IpConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]

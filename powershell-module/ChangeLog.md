@@ -19,6 +19,22 @@
 -->
 ## Upcoming Release
 
+## 11.0.0
+* Supported AzureRM to Az 11.0.0 migration. Now the major version of Az.Tools.Migration is aligned with the targeted Az version.
+* Fixed bug when using `Find-AzUpgradeCommandReference -DirectoryPath` #[121]
+
+## 2.0.0
+* Supported AzureRM to Az 10.3 migration
+* `Get-AzUpgradeAliasSpec`
+    * Parameter `ModuleVersion` now accept value 'latest' only [BreakingChange]
+* `Get-AzUpgradeCmdletSpec`
+    * Parameter `ModuleName` removed` [BreakingChange]
+    * Added switch parameters `AzureRM` and `Az`
+    * Parameter `ModuleVersion` now accept value 'latest' only and has to be used with `Az` [BreakingChange]
+* `New-AzUpgradeModulePlan`
+    * Parameter `ToAzVersion` now accept value 'latest' only [BreakingChange]
+    * Parameter `FilePath` now accept relative file path
+
 ## 1.1.4
 * Upgraded Az Version to 9.3.0
 

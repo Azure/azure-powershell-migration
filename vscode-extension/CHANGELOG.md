@@ -1,4 +1,6 @@
 # Azure PowerShell Extension Release History
+## 0.3.0
+- Integrated with latest Az.Tools.Migration instead of fixed version
 
 ## 0.2.0
 

@@ -1,0 +1,1334 @@
+[
+  {
+    "Command": "Get-AzNotificationHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubListKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubPNSCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHubObj",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyKey",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHubAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHub",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHubObj",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHubAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubsNamespaceAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubsNamespaceListKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubsNamespaceAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubsNamespaceKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "PolicyKey",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHubsNamespaceAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHubsNamespaceAuthorizationRule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubsNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubsNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuTier",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHubsNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHubsNamespace",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "State",
+        "Aliases": null
+      },
+      {
+        "Name": "Critical",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "SkuTier",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubListKeys",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubPNSCredentials",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubsNamespaceAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzNotificationHubsNamespaceListKeys",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzNotificationHubsNamespaceAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHubAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzNotificationHubsNamespaceAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "AuthorizationRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHubAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "NotificationHub",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzNotificationHubsNamespaceAuthorizationRules",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.NotificationHubs",
+    "Version": "1.1.2",
+    "Parameters": [
+      {
+        "Name": "ResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "Namespace",
+        "Aliases": null
+      },
+      {
+        "Name": "InputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "SASRule",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  }
+]

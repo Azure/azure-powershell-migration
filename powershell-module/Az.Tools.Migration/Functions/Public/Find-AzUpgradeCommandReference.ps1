@@ -34,7 +34,7 @@ function Find-AzUpgradeCommandReference
         The following example finds AzureRM PowerShell command references in the specified directory and subfolders but with a pre-loaded module specification.
         This is helpful to avoid reloading the module specification if the Find-AzUpgradeCommandReference command needs to be executed several times.
 
-        $moduleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion "6.13.1"
+        $moduleSpec = Get-AzUpgradeCmdletSpec -AzureRM
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts1' -AzureRmModuleSpec $moduleSpec
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts2' -AzureRmModuleSpec $moduleSpec
         Find-AzUpgradeCommandReference -DirectoryPath 'C:\Scripts3' -AzureRmModuleSpec $moduleSpec
@@ -97,7 +97,7 @@ function Find-AzUpgradeCommandReference
         {
             # load the command specs
             Write-Verbose -Message "Loading cmdlet spec for AzureRM $AzureRmVersion"
-            $AzureRmModuleSpec = Get-AzUpgradeCmdletSpec -ModuleName "AzureRM" -ModuleVersion $AzureRmVersion
+            $AzureRmModuleSpec = Get-AzUpgradeCmdletSpec -AzureRM
         }
         else
         {
@@ -111,6 +111,7 @@ function Find-AzUpgradeCommandReference
                 throw "File was not found or was not accessible: $FilePath"
             }
 
+            $FilePath = (Resolve-Path $FilePath).Path
             Write-Verbose -Message "Searching for AzureRM references in file: $FilePath"
             $foundCmdlets = Find-CmdletsInFile -FilePath $FilePath | Where-object -FilterScript { $AzureRmModuleSpec.ContainsKey($_.CommandName) -eq $true }
 
@@ -137,6 +138,7 @@ function Find-AzUpgradeCommandReference
                 throw "Directory was not found or was not accessible: $DirectoryPath"
             }
 
+            $DirectoryPath = (Resolve-Path $DirectoryPath).Path
             $filesToSearch = Get-ChildItem -Path $DirectoryPath -Recurse -Include *.ps1, *.psm1
             $commandCounter = 0
 

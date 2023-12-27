@@ -1,0 +1,2928 @@
+[
+  {
+    "Command": "Get-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "NodeVmSetType",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVnetSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxPodCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeSetPriority",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolMode",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsSKU",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "AddOnNameToBeEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableRbac",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowsProfileAdminUserName",
+        "Aliases": null
+      },
+      {
+        "Name": "NetworkPlugin",
+        "Aliases": null
+      },
+      {
+        "Name": "NetworkPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "PodCidr",
+        "Aliases": null
+      },
+      {
+        "Name": "ServiceCidr",
+        "Aliases": null
+      },
+      {
+        "Name": "DnsServiceIP",
+        "Aliases": null
+      },
+      {
+        "Name": "OutboundType",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerSku",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "GenerateSshKey",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodePublicIp",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePublicIPPrefixID",
+        "Aliases": null
+      },
+      {
+        "Name": "AvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeResourceGroup",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableEncryptionAtHost",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableUltraSSD",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeLinuxOSConfig",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeKubeletConfig",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxSurge",
+        "Aliases": null
+      },
+      {
+        "Name": "PPG",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableFIPS",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScalerProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "GpuInstanceProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableUptimeSLA",
+        "Aliases": null
+      },
+      {
+        "Name": "EdgeZone",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeHostGroupID",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePodSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableOidcIssuer",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalIdAndSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LinuxProfileAdminUserName",
+        "Aliases": [
+          "AdminUserName"
+        ]
+      },
+      {
+        "Name": "DnsNamePrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodeAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolLabel",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolTag",
+        "Aliases": null
+      },
+      {
+        "Name": "SshKeyValue",
+        "Aliases": [
+          "SshKeyPath"
+        ]
+      },
+      {
+        "Name": "AcrNameToAttach",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerAllocatedOutboundPort",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerManagedOutboundIpCount",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerOutboundIp",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerOutboundIpPrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerIdleTimeoutInMinute",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiServerAccessAuthorizedIpRange",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableApiServerAccessPrivateCluster",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiServerAccessPrivateDnsZone",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableApiServerAccessPrivateClusterPublicFQDN",
+        "Aliases": null
+      },
+      {
+        "Name": "FqdnSubdomain",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoUpgradeChannel",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpsProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxyConfigNoProxyEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxyConfigTrustedCa",
+        "Aliases": null
+      },
+      {
+        "Name": "AksCustomHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "AadProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowsProfileAdminUserPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAHUB",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Import-AzAksCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Admin",
+        "Aliases": null
+      },
+      {
+        "Name": "ConfigPath",
+        "Aliases": null
+      },
+      {
+        "Name": "PublicFqdn",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzAksDashboard",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableBrowser",
+        "Aliases": null
+      },
+      {
+        "Name": "ListenPort",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzAksDashboard",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolMode",
+        "Aliases": null
+      },
+      {
+        "Name": "AcrNameToDetach",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeImageOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "ControlPlaneOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "AutoScalerProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableUptimeSLA",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableOidcIssuer",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalIdAndSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "LinuxProfileAdminUserName",
+        "Aliases": [
+          "AdminUserName"
+        ]
+      },
+      {
+        "Name": "DnsNamePrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeMaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodeAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeOsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeVmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolLabel",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolTag",
+        "Aliases": null
+      },
+      {
+        "Name": "SshKeyValue",
+        "Aliases": [
+          "SshKeyPath"
+        ]
+      },
+      {
+        "Name": "AcrNameToAttach",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerAllocatedOutboundPort",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerManagedOutboundIpCount",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerOutboundIp",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerOutboundIpPrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "LoadBalancerIdleTimeoutInMinute",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiServerAccessAuthorizedIpRange",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableApiServerAccessPrivateCluster",
+        "Aliases": null
+      },
+      {
+        "Name": "ApiServerAccessPrivateDnsZone",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableApiServerAccessPrivateClusterPublicFQDN",
+        "Aliases": null
+      },
+      {
+        "Name": "FqdnSubdomain",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableManagedIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AssignIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoUpgradeChannel",
+        "Aliases": null
+      },
+      {
+        "Name": "DiskEncryptionSetID",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableLocalAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpsProxy",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxyConfigNoProxyEndpoint",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpProxyConfigTrustedCa",
+        "Aliases": null
+      },
+      {
+        "Name": "AksCustomHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "AadProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "WindowsProfileAdminUserPassword",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAHUB",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksNodePool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Count",
+        "Aliases": null
+      },
+      {
+        "Name": "OsDiskSize",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSize",
+        "Aliases": null
+      },
+      {
+        "Name": "VnetSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxPodCount",
+        "Aliases": null
+      },
+      {
+        "Name": "OsType",
+        "Aliases": null
+      },
+      {
+        "Name": "OsSKU",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableNodePublicIp",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePublicIPPrefixID",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleSetPriority",
+        "Aliases": null
+      },
+      {
+        "Name": "ScaleSetEvictionPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "VmSetType",
+        "Aliases": null
+      },
+      {
+        "Name": "AvailabilityZone",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableEncryptionAtHost",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableUltraSSD",
+        "Aliases": null
+      },
+      {
+        "Name": "LinuxOSConfig",
+        "Aliases": null
+      },
+      {
+        "Name": "KubeletConfig",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxSurge",
+        "Aliases": null
+      },
+      {
+        "Name": "PPG",
+        "Aliases": null
+      },
+      {
+        "Name": "SpotMaxPrice",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableFIPS",
+        "Aliases": null
+      },
+      {
+        "Name": "GpuInstanceProfile",
+        "Aliases": null
+      },
+      {
+        "Name": "HostGroupID",
+        "Aliases": null
+      },
+      {
+        "Name": "PodSubnetID",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "MinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeLabel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeTaint",
+        "Aliases": null
+      },
+      {
+        "Name": "AksCustomHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Update-AzAksNodePool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "NodeCount",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeImageOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxSurge",
+        "Aliases": null
+      },
+      {
+        "Name": "KubernetesVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "MinCount",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "EnableAutoScaling",
+        "Aliases": null
+      },
+      {
+        "Name": "Mode",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeLabel",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "NodeTaint",
+        "Aliases": null
+      },
+      {
+        "Name": "AksCustomHeader",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAksNodePool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksNodePool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzAksAddOn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "WorkspaceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SubnetName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzAksAddOn",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzAksClusterCredential",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "ServicePrincipalIdAndSecret",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzAksRunCommand",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": [
+          "ResourceId"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Command",
+        "Aliases": null
+      },
+      {
+        "Name": "CommandContextAttachment",
+        "Aliases": null
+      },
+      {
+        "Name": "CommandContextAttachmentZip",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksNodePoolUpgradeProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": null
+      },
+      {
+        "Name": "NodePoolName",
+        "Aliases": [
+          "AgentPoolName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksUpgradeProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksVersion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzAksCluster",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Aliases": [
+          "ClusterName"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Install-AzAksCliTool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Destination",
+        "Aliases": [
+          "KubectlInstallDestination"
+        ]
+      },
+      {
+        "Name": "Version",
+        "Aliases": [
+          "KubectlInstallVersion"
+        ]
+      },
+      {
+        "Name": "DownloadFromMirror",
+        "Aliases": [
+          "KubectlDownloadFromMirror"
+        ]
+      },
+      {
+        "Name": "KubeloginInstallDestination",
+        "Aliases": null
+      },
+      {
+        "Name": "KubeloginInstallVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "KubeloginDownloadFromMirror",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksMaintenanceConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ConfigName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksManagedClusterCommandResult",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "CommandId",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksManagedClusterOSOption",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksManagedClusterOutboundNetworkDependencyEndpoint",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksSnapshot",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzAksAbortAgentPoolLatestOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "AgentPoolName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzAksAbortManagedClusterLatestOperation",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Invoke-AzAksRotateManagedClusterServiceAccountSigningKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksMaintenanceConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ConfigName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "NotAllowedTime",
+        "Aliases": null
+      },
+      {
+        "Name": "TimeInWeek",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksSnapshot",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "CreationDataSourceResourceId",
+        "Aliases": null
+      },
+      {
+        "Name": "SnapshotType",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksTimeInWeekObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "Day",
+        "Aliases": null
+      },
+      {
+        "Name": "HourSlot",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "New-AzAksTimeSpanObject",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "End",
+        "Aliases": null
+      },
+      {
+        "Name": "Start",
+        "Aliases": null
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAksMaintenanceConfiguration",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ConfigName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzAksSnapshot",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "PassThru",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzAksManagedClusterCommand",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Command",
+        "Aliases": null
+      },
+      {
+        "Name": "ClusterToken",
+        "Aliases": null
+      },
+      {
+        "Name": "Context",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "AsJob",
+        "Aliases": null
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "NoWait",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzAksClusterUpgradeProfile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Aks",
+    "Version": "6.0.0",
+    "Parameters": [
+      {
+        "Name": "ClusterName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "SubscriptionId",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzureRMContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "Break",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelineAppend",
+        "Aliases": null
+      },
+      {
+        "Name": "HttpPipelinePrepend",
+        "Aliases": null
+      },
+      {
+        "Name": "Proxy",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyCredential",
+        "Aliases": null
+      },
+      {
+        "Name": "ProxyUseDefaultCredentials",
+        "Aliases": null
+      }
+    ]
+  }
+]

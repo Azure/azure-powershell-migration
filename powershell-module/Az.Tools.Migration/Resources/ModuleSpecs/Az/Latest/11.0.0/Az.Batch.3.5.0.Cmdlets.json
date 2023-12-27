@@ -1,0 +1,3195 @@
+[
+  {
+    "Command": "Remove-AzBatchAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchAccountKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "PoolAllocationMode",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultId",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyVaultUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "PublicNetworkAccess",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityType",
+        "Aliases": null
+      },
+      {
+        "Name": "IdentityId",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeySource",
+        "Aliases": null
+      },
+      {
+        "Name": "EncryptionKeyIdentifier",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchAccountKey",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "KeyType",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchAccount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "Tag",
+        "Aliases": [
+          "Tags"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoStorageAccountId",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchApplicationPackage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "ApplicationVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "Format",
+        "Aliases": null
+      },
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "ActivateOnly",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchApplicationPackage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "ApplicationVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchApplicationPackage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "ApplicationVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultVersion",
+        "Aliases": null
+      },
+      {
+        "Name": "AllowUpdates",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchApplication",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationName",
+        "Aliases": [
+          "ApplicationId"
+        ]
+      },
+      {
+        "Name": "AllowUpdates",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "ThumbprintAlgorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "ThumbprintAlgorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchCertificate",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "RawData",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "Kind",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzBatchCertificateDeletion",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "ThumbprintAlgorithm",
+        "Aliases": null
+      },
+      {
+        "Name": "Thumbprint",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzBatchComputeNodeScheduling",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableSchedulingOption",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzBatchComputeNodeScheduling",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchRemoteLoginSetting",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchComputeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Ids",
+        "Aliases": [
+          "Id"
+        ]
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "DeallocationOption",
+        "Aliases": null
+      },
+      {
+        "Name": "ResizeTimeout",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Reset-AzBatchComputeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "ReimageOption",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Restart-AzBatchComputeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "RebootOption",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchComputeNodeUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiryTime",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchNodeFile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "TaskId",
+        "Aliases": null
+      },
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Recursive",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchNodeFileContent",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "TaskId",
+        "Aliases": null
+      },
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationPath",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStream",
+        "Aliases": null
+      },
+      {
+        "Name": "ByteRangeStart",
+        "Aliases": null
+      },
+      {
+        "Name": "ByteRangeEnd",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchRemoteDesktopProtocolFile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationPath",
+        "Aliases": null
+      },
+      {
+        "Name": "DestinationStream",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchNodeFile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "TaskId",
+        "Aliases": null
+      },
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "Path",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "Recursive",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobSchedule",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "DisableJobOption",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "CommonEnvironmentSettings",
+        "Aliases": [
+          "CommonEnvironmentSetting"
+        ]
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Constraints",
+        "Aliases": null
+      },
+      {
+        "Name": "JobManagerTask",
+        "Aliases": null
+      },
+      {
+        "Name": "JobPreparationTask",
+        "Aliases": null
+      },
+      {
+        "Name": "JobReleaseTask",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "PoolInformation",
+        "Aliases": null
+      },
+      {
+        "Name": "Priority",
+        "Aliases": null
+      },
+      {
+        "Name": "UsesTaskDependencies",
+        "Aliases": null
+      },
+      {
+        "Name": "OnTaskFailure",
+        "Aliases": null
+      },
+      {
+        "Name": "OnAllTasksComplete",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "TerminateReason",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchJob",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "JobScheduleId",
+        "Aliases": null
+      },
+      {
+        "Name": "JobSchedule",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchJobPreparationAndReleaseTaskStatus",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Disable-AzBatchAutoScale",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzBatchAutoScale",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScaleFormula",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScaleEvaluationInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchPoolUsageMetric",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchPool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchSupportedImage",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchPool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "VirtualMachineSize",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "ResizeTimeout",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetDedicatedComputeNodes",
+        "Aliases": [
+          "TargetDedicated"
+        ]
+      },
+      {
+        "Name": "TargetLowPriorityComputeNodes",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScaleEvaluationInterval",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScaleFormula",
+        "Aliases": null
+      },
+      {
+        "Name": "TaskSlotsPerNode",
+        "Aliases": [
+          "MaxTasksPerComputeNode"
+        ]
+      },
+      {
+        "Name": "TaskSchedulingPolicy",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "InterComputeNodeCommunicationEnabled",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTask",
+        "Aliases": null
+      },
+      {
+        "Name": "CertificateReferences",
+        "Aliases": [
+          "CertificateReference"
+        ]
+      },
+      {
+        "Name": "ApplicationPackageReferences",
+        "Aliases": [
+          "ApplicationPackageReference"
+        ]
+      },
+      {
+        "Name": "ApplicationLicenses",
+        "Aliases": [
+          "ApplicationLicense"
+        ]
+      },
+      {
+        "Name": "VirtualMachineConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "CloudServiceConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "NetworkConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "MountConfiguration",
+        "Aliases": null
+      },
+      {
+        "Name": "UserAccount",
+        "Aliases": null
+      },
+      {
+        "Name": "CurrentNodeCommunicationMode",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetNodeCommunicationMode",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchPool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchPool",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Pool",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzBatchPoolResize",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "TargetDedicatedComputeNodes",
+        "Aliases": [
+          "TargetDedicated"
+        ]
+      },
+      {
+        "Name": "TargetLowPriorityComputeNodes",
+        "Aliases": null
+      },
+      {
+        "Name": "ResizeTimeout",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeDeallocationOption",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzBatchPoolResize",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Test-AzBatchAutoScale",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoScaleFormula",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchLocationQuota",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchSubtask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "TaskId",
+        "Aliases": null
+      },
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "CommandLine",
+        "Aliases": null
+      },
+      {
+        "Name": "ResourceFiles",
+        "Aliases": [
+          "ResourceFile"
+        ]
+      },
+      {
+        "Name": "EnvironmentSettings",
+        "Aliases": [
+          "EnvironmentSetting"
+        ]
+      },
+      {
+        "Name": "AuthenticationTokenSettings",
+        "Aliases": null
+      },
+      {
+        "Name": "UserIdentity",
+        "Aliases": null
+      },
+      {
+        "Name": "AffinityInformation",
+        "Aliases": null
+      },
+      {
+        "Name": "Constraints",
+        "Aliases": null
+      },
+      {
+        "Name": "MultiInstanceSettings",
+        "Aliases": null
+      },
+      {
+        "Name": "DependsOn",
+        "Aliases": null
+      },
+      {
+        "Name": "ApplicationPackageReferences",
+        "Aliases": [
+          "ApplicationPackageReference"
+        ]
+      },
+      {
+        "Name": "OutputFile",
+        "Aliases": null
+      },
+      {
+        "Name": "Tasks",
+        "Aliases": null
+      },
+      {
+        "Name": "ExitConditions",
+        "Aliases": null
+      },
+      {
+        "Name": "ContainerSettings",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "InputObject",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchComputeNodeUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Password",
+        "Aliases": null
+      },
+      {
+        "Name": "ExpiryTime",
+        "Aliases": null
+      },
+      {
+        "Name": "IsAdmin",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchComputeNodeUser",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Enable-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Set-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Stop-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchComputeNode",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Pool",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "Expand",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "DisplayName",
+        "Aliases": null
+      },
+      {
+        "Name": "Schedule",
+        "Aliases": null
+      },
+      {
+        "Name": "JobSpecification",
+        "Aliases": null
+      },
+      {
+        "Name": "Metadata",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Remove-AzBatchJobSchedule",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Force",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchTaskCount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchPoolNodeCount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Pool",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Start-AzBatchComputeNodeServiceLogUpload",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "ContainerUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "New-AzBatchResourceFile",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "HttpUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "FilePath",
+        "Aliases": null
+      },
+      {
+        "Name": "FileMode",
+        "Aliases": null
+      },
+      {
+        "Name": "AutoStorageContainerName",
+        "Aliases": null
+      },
+      {
+        "Name": "BlobPrefix",
+        "Aliases": null
+      },
+      {
+        "Name": "StorageContainerUrl",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchSupportedVirtualMachineSku",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxResultCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchTaskSlotCount",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchComputeNodeExtension",
+    "IsAlias": false,
+    "SupportsDynamicParameters": true,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Pool",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "Name",
+        "Aliases": null
+      },
+      {
+        "Name": "Select",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Reactivate-AzBatchTask",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Id",
+        "Aliases": null
+      },
+      {
+        "Name": "Task",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      },
+      {
+        "Name": "WhatIf",
+        "Aliases": [
+          "wi"
+        ]
+      },
+      {
+        "Name": "Confirm",
+        "Aliases": [
+          "cf"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchSubscriptionQuotas",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchAccountKeys",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "AccountName",
+        "Aliases": [
+          "Name"
+        ]
+      },
+      {
+        "Name": "ResourceGroupName",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchLocationQuotas",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchPoolNodeCounts",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "Pool",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxCount",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchPoolUsageMetrics",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "StartTime",
+        "Aliases": null
+      },
+      {
+        "Name": "EndTime",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchRemoteLoginSettings",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "PoolId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNodeId",
+        "Aliases": null
+      },
+      {
+        "Name": "ComputeNode",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchTaskCounts",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "JobId",
+        "Aliases": null
+      },
+      {
+        "Name": "Job",
+        "Aliases": null
+      },
+      {
+        "Name": "BatchContext",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  },
+  {
+    "Command": "Get-AzBatchSupportedVMSku",
+    "IsAlias": false,
+    "SupportsDynamicParameters": false,
+    "SourceModule": "Az.Batch",
+    "Version": "3.5.0",
+    "Parameters": [
+      {
+        "Name": "Location",
+        "Aliases": null
+      },
+      {
+        "Name": "MaxResultCount",
+        "Aliases": null
+      },
+      {
+        "Name": "Filter",
+        "Aliases": null
+      },
+      {
+        "Name": "DefaultProfile",
+        "Aliases": [
+          "AzContext",
+          "AzureRmContext",
+          "AzureCredential"
+        ]
+      }
+    ]
+  }
+]
