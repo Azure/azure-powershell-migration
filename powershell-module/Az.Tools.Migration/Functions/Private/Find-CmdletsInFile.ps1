@@ -27,7 +27,7 @@ function Find-CmdletsInFile
     Process
     {
         # constants
-        $matchPattern = "(\b[a-zA-z]+-[a-zA-z]+\b)"
+        $matchPattern = "(\b[a-zA-z]+-[a-zA-z0-9]+\b)"
         $doubleQuoteCharacter = '"'
         $singleQuoteCharacter = ''''
         $orderedTypeName = 'ordered'
