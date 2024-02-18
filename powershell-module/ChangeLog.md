@@ -18,6 +18,8 @@
         - Additional information about change #1
 -->
 ## Upcoming Release
+## 11.0.2
+* Added Support for AzureRm version 6.13.2 [#132]
 
 ## 11.0.1
 * Fixed bug DataFactory cmdlet name cannot be recognized [#117]

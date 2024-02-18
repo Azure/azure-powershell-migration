@@ -74,13 +74,12 @@ function New-AzUpgradeModulePlan
         [Parameter(
             Mandatory=$true,
             ParameterSetName="FromNewSearchByFile",
-            HelpMessage='Specify the Az module version to upgrade to.')]
+            HelpMessage='Specify the Az module version to upgrade to. Supported versions include: "6.13.1", "6.13.2"')]
         [Parameter(
             Mandatory=$true,
             ParameterSetName="FromNewSearchByDirectory",
-            HelpMessage='Specify the Az module version to upgrade to.')]
+            HelpMessage='Specify the Az module version to upgrade to. Supported versions include: "6.13.1", "6.13.2"')]
         [System.String]
-        [ValidateSet('6.13.1')]
         $FromAzureRmVersion,
 
         [Parameter(
@@ -120,6 +119,14 @@ function New-AzUpgradeModulePlan
     )
     Process
     {
+        # write warning if given azurerm version is not supported
+        $supportedAzureRmVersion = @('6.13.1', '6.13.2')
+        if (-not $supportedAzureRmVersion.Contains($FromAzureRmVersion)) {
+            Write-Error "AzureRm $FromAzureRmVersion is currently not supported. Supported AzureRm versions include '6.13.1', '6.13.2'." -ErrorAction Stop
+        } else {
+            $FromAzureRmVersion = '6.13.1'
+        }
+
         $cmdStarted = Get-Date
 
         $versionPath = Join-Path -Path $MyInvocation.MyCommand.Module.ModuleBase -ChildPath "\Resources\ModuleSpecs\Az\$ToAzVersion"

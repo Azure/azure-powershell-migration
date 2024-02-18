@@ -69,13 +69,12 @@ function Find-AzUpgradeCommandReference
         [Parameter(
             Mandatory=$true,
             ParameterSetName="ByFileAndModuleVersion",
-            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules.")]
+            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules. Supported versions include: '6.13.1', '6.13.2'")]
         [Parameter(
             Mandatory=$true,
             ParameterSetName="ByDirectoryAndModuleVersion",
-            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules.")]
+            HelpMessage="Specify the AzureRM module version used in your existing PowerShell file(s)/modules. Supported versions include: '6.13.1', '6.13.2'")]
         [System.String]
-        [ValidateSet("6.13.1")]
         $AzureRmVersion,
 
         [Parameter(
@@ -91,6 +90,14 @@ function Find-AzUpgradeCommandReference
     )
     Process
     {
+        # write warning if given azurerm version is not supported
+        $supportedAzureRmVersion = @('6.13.1', '6.13.2')
+        if (-not $supportedAzureRmVersion.Contains($FromAzureRmVersion)) {
+            Write-Error "AzureRm $FromAzureRmVersion is currently not supported. Supported AzureRm versions include '6.13.1', '6.13.2'." -ErrorAction Stop
+        } else {
+            $FromAzureRmVersion = '6.13.1'
+        }
+
         $cmdStarted = Get-Date
 
         if ($PSBoundParameters.ContainsKey('AzureRmModuleSpec') -eq $false)
