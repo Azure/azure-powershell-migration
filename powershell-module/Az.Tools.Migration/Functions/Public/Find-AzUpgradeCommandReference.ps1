@@ -92,10 +92,8 @@ function Find-AzUpgradeCommandReference
     {
         # write warning if given azurerm version is not supported
         $supportedAzureRmVersion = @('6.13.1', '6.13.2')
-        if (-not $supportedAzureRmVersion.Contains($FromAzureRmVersion)) {
-            Write-Error "AzureRm $FromAzureRmVersion is currently not supported. Supported AzureRm versions include '6.13.1', '6.13.2'." -ErrorAction Stop
-        } else {
-            $FromAzureRmVersion = '6.13.1'
+        if (-not $supportedAzureRmVersion.Contains($AzureRmVersion)) {
+            Write-Error "AzureRm $AzureRmVersion is currently not supported. Supported AzureRm versions include '6.13.1', '6.13.2'." -ErrorAction Stop
         }
 
         $cmdStarted = Get-Date
