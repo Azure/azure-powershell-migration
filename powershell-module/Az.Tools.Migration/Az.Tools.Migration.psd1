@@ -3,7 +3,7 @@
     RootModule = 'Az.Tools.Migration.psm1'
 
     # Version number of this module.
-    ModuleVersion = '11.0.1'
+    ModuleVersion = '11.0.2'
 
     # Supported PSEditions
     CompatiblePSEditions = 'Core', 'Desktop'
@@ -108,7 +108,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = "* Fixed bug DataFactory cmdlet name cannot be recognized [#117]"
+            ReleaseNotes = "* Added Support for AzureRm version 6.13.2 [#132]"
         }
     }
 

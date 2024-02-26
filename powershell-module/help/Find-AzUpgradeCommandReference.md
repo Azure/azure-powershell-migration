@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -AzureRmVersion
 
-Specifies the **AzureRM** module version used in your existing PowerShell file(s) or modules.
+Specifies the **AzureRM** module version used in your existing PowerShell file(s) or modules. Supported versions include: '6.13.1', '6.13.2'
 
 ```yaml
 Type: System.String

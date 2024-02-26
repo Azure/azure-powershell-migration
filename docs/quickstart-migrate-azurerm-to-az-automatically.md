@@ -20,7 +20,7 @@ Report feedback and issues about the Az.Tools.Migration PowerShell module via
 
 ## Requirements
 
-* Update your existing PowerShell scripts to the latest version of the [AzureRM PowerShell module (6.13.1)](https://github.com/Azure/azure-powershell/releases/tag/v6.13.1-November2018).
+* Update your existing PowerShell scripts to AzureRM PowerShell module version [6.13.1](https://github.com/Azure/azure-powershell/releases/tag/v6.13.1-November2018) or [6.13.2](https://github.com/Azure/azure-powershell/releases/tag/v6.13.2-March2021).
 * Install the Az.Tools.Migration PowerShell module.
 
   ```powershell
