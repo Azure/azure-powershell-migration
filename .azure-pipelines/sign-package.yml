@@ -24,7 +24,7 @@ steps:
     custom: msbuild
     arguments: 'build.proj /t:Build'
 
-- task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@1
+- task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@4
   displayName: 'Signing'
   inputs:
     ConnectedServiceName: $(signServiceConnection)
@@ -61,7 +61,7 @@ steps:
        }
      ]
 
-- task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@1
+- task: SFP.build-tasks.custom-build-task-1.EsrpCodeSigning@4
   displayName: '3rd Party Signing [Authenticode]'
   inputs:
     ConnectedServiceName: $(signServiceConnection)
