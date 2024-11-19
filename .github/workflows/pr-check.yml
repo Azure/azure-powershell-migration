@@ -1,0 +1,29 @@
+name: pr-check
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+jobs:
+   pr-check:
+     runs-on: ubuntu-latest
+     steps:
+       - name: Checkout
+         uses: actions/checkout@v4
+
+       - name: Install Node.js 14
+         uses: actions/setup-node@v4
+         with:
+           node-version: 14.x
+
+       - name: Lint and build
+         run: | 
+           pushd vscode-extension
+           npm install
+           npm run lint
+           npm run compile
+           if [ $? -ne 0 ]; then
+             exit 1
+           fi
+           popd
