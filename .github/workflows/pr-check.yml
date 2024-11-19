@@ -19,8 +19,6 @@ jobs:
 
        - name: Lint and build
          run: | 
-           git branch
-           git log -n 3
            pushd vscode-extension
            npm install
            npm run lint
