@@ -9,16 +9,18 @@ jobs:
    pr-check:
      runs-on: ubuntu-latest
      steps:
-       - name: Checkout from PR branch  
+       - name: Checkout
          uses: actions/checkout@v4
 
-       - name: Set Node.js 14.x for GitHub Action
+       - name: Install Node.js 14
          uses: actions/setup-node@v4
          with:
            node-version: 14.x
 
-       - name: installing node_modules
+       - name: Lint and build
          run: | 
+           git branch
+           git log -n 3
            pushd vscode-extension
            npm install
            npm run lint
